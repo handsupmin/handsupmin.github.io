@@ -1,0 +1,37 @@
+name: Notion Harvest → DB Sync
+
+on:
+  schedule:
+    - cron: "0 1 * * *" # 매일 10:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Cache deps
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.npm
+            node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - run: npm ci || npm i
+
+      - name: Harvest pages from root
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATA_SOURCE_ID: ${{ secrets.NOTION_DATA_SOURCE_ID }}
+          NOTION_ROOT_PAGE_ID: ${{ secrets.NOTION_ROOT_PAGE_ID }}
+          NOTION_VERSION: 2025-09-03
+        run: node scripts/notion-harvest.js
