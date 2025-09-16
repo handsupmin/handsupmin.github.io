@@ -1,0 +1,4 @@
+baseURL: https://handsupmin.github.io/
+languageCode: ko-kr
+title: HandsLog
+theme: ["PaperMod"]
