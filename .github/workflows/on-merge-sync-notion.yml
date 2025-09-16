@@ -1,0 +1,24 @@
+name: Sync Notion after merge
+
+on:
+  workflow_run:
+    workflows: ["Daily Notion → Blog"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci || npm i
+      - name: Update Notion flags
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATA_SOURCE_ID: ${{ secrets.NOTION_DATA_SOURCE_ID }}
+          NOTION_VERSION: 2025-09-03
+        run: node scripts/notion-sync.js
