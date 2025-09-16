@@ -1,22 +1,23 @@
 ### BLOG_SPEC: Notion → GitHub Pages 자동 발행 파이프라인
 
-- **목표**: 매일 1회 Notion에 아카이빙된 학습 노트 중, `블로그에 올림` 마크가 없는 페이지만 선별하여 LLM으로 지정 양식에 맞게 리라이트한 뒤, GitHub Pages(블로그)로 안전하게 발행한다.
+- **목표**: 매일 1회 Notion에 아카이빙된 학습 노트 중, `isUploaded` 마크가 없는 페이지만 선별하여 LLM으로 지정 양식에 맞게 리라이트한 뒤, GitHub Pages(블로그)로 안전하게 발행한다.
 - **핵심 가치**: 자동화(스케줄), 안전성(리뷰/PR/드래프트), 일관성(템플릿, 스타일가이드), 추적성(로그·알림·상태 동기화), 재시도/중복 방지.
 
 ---
 
 ## 1) 요구사항
 
-- **소스**: Notion 데이터베이스(학습 노트). 필수 속성
+- **소스**: Notion 데이터 소스(학습 노트). 필수 속성
   - **제목**: `title`
-  - **상태 플래그**: `블로그에 올림`(checkbox)
+  - **상태 플래그**: `isUploaded`(checkbox)
   - (선택) `태그`, `요약`, `카테고리`, `표지 이미지`, `원문 링크`, `초안 여부`
-- **필터**: `블로그에 올림 == false` 인 페이지만 대상
+- **필터**: `isUploaded == false` 인 페이지만 대상
 - **주기**: 매일 1회(KST 22:00)
 - **산출물**: GitHub Pages용 Markdown(프론트매터 + 본문)
 - **형식**: 팀 표준 템플릿(아래 5장에서 정의)으로 LLM이 리라이트
 - **발행 전략**: 기본은 PR 생성(리뷰 후 머지). 선택적으로 자동 머지/드래프트 지원
-- **상태 동기화**: 발행 성공 시 Notion의 `블로그에 올림`을 true로 갱신하고, 포스트 URL 백링크 저장
+- **상태 동기화**: 발행 성공 시 Notion의 `isUploaded`을 true로 갱신하고, 포스트 URL 백링크 저장
+  - 주의: Notion API 2025-09-03 이후 `database_id` 대신 `data_source_id`를 사용
 
 ---
 
@@ -54,7 +55,7 @@
 ## 3) 데이터 흐름(Flow)
 
 1. **스케줄 트리거**: GitHub Actions cron 또는 수동 실행(workflow_dispatch)
-2. **Notion 쿼리**: `블로그에 올림 == false` 인 페이지 목록 조회(최대 N개/회)
+2. **Notion 쿼리**: `isUploaded == false` 인 페이지 목록 조회(최대 N개/회)
 3. **콘텐츠 수집**: Notion Blocks → Markdown 변환(코드블록/이미지/수식 보존)
 4. **LLM 리라이트**:
    - 입력: 원문 Markdown, 메타(태그/카테고리), 스타일가이드, 템플릿 스펙(JSON Schema)
@@ -68,14 +69,14 @@
    - 리포지토리 체크아웃 → 브랜치 생성 → 포스트 추가 → 커밋/푸시 → PR 생성(`peter-evans/create-pull-request`)
    - 옵션: 자동 병합 또는 드래프트 폴더로 저장
 7. **상태 동기화**:
-   - 기본: PR 머지 후 워크플로가 Notion에 `블로그에 올림 = true`, `postUrl`(게시 URL) 업데이트
+   - 기본: PR 머지 후 워크플로가 Notion에 `isUploaded = true`, `postUrl`(게시 URL) 업데이트
    - 대안: PR 생성 시 임시로 PR URL 저장, 머지 후 게시 URL로 갱신
 8. **알림/로깅**: Slack/Telegram/Webhook으로 결과 요약(성공/건수/에러 링크)
 9. **재시도/중복방지**: Notion Page ID 기반 idempotency 키 관리
 
 사전 단계(권장): 실행 초기에 DB 스키마 보정 단계 수행
 
-- `블로그에 올림`(checkbox) 속성이 없으면 자동 생성
+- `isUploaded`(checkbox) 속성이 없으면 자동 생성
 - 페이지 필터는 `checkbox does_not_equal: true`로 구성(null 포함 미발행 인식)
 
 ---
@@ -85,8 +86,9 @@
 - **Notion**
 
   - 데이터베이스 스키마(예시)
-    - `title`(Title), `블로그에 올림`(Checkbox), `태그`(Multi-select), `요약`(Text), `카테고리`(Select), `표지`(URL), `원문 링크`(URL)
-  - 필터: `블로그에 올림 == false`
+    - `title`(Title), `isUploaded`(Checkbox), `태그`(Multi-select), `요약`(Text), `카테고리`(Select), `표지`(URL), `원문 링크`(URL)
+  - 필터: `isUploaded == false`
+  - 데이터 식별자: API v2025-09-03 기준 `data_source_id` 사용(단일 DB라도 discovery 필요)
   - 원천 구조: `SMS Dictionary` 데이터베이스 내부에 여러 주제(= 카테고리)가 있고, 각 노트는 해당 카테고리에 소속
     - 카테고리 추출: 기본은 DB의 `카테고리`(Select) 사용
     - (대안) `카테고리` 속성이 비어있다면 상위 페이지/뷰의 그룹명을 추론하여 보정
@@ -111,7 +113,7 @@
   - 워크플로: `.github/workflows/daily-blog.yml` (schedule + workflow_dispatch)
   - 스텝: checkout → setup-node → deps 설치 → ensure-notion-schema → notion-export → PR 생성(라벨: blog + 카테고리) → 자동 머지 → 알림
   - 라벨 규칙: `blog`, `cat:<category.toLowerCase()>`
-  - 권한/시크릿: `contents: write`, `pull-requests: write` / `NOTION_TOKEN`, `NOTION_DATABASE_ID`, `LLM_API_KEY`, `SLACK_WEBHOOK_URL`
+  - 권한/시크릿: `contents: write`, `pull-requests: write` / `NOTION_TOKEN`, `NOTION_DATA_SOURCE_ID`, `LLM_API_KEY`, `SLACK_WEBHOOK_URL`
   - 컨커런시/캐시: `concurrency` 설정, actions/cache 사용
 
 ---
@@ -138,17 +140,20 @@
       "properties": {
         "title": { "type": "string" },
         "description": { "type": "string" },
-        "keywords": { "type": "array", "items": { "type": "string" } },
-      },
+        "keywords": { "type": "array", "items": { "type": "string" } }
+      }
     },
-    "content": { "type": "string", "description": "Markdown 본문(헤더/목차/코드블록 포함)" },
+    "content": {
+      "type": "string",
+      "description": "Markdown 본문(헤더/목차/코드블록 포함)"
+    },
     "tldr": { "type": "array", "items": { "type": "string" }, "minItems": 3 },
     "references": {
       "type": "array",
       "items": { "type": "string", "format": "uri" },
-      "default": [],
-    },
-  },
+      "default": []
+    }
+  }
 }
 ```
 
@@ -238,7 +243,7 @@ Self-Review 프롬프트(선택):
 
 ## 9) 보안/시크릿
 
-- Notion API Key, LLM Provider 키는 GitHub Secrets 보관(`NOTION_TOKEN`, `NOTION_DATABASE_ID`, `LLM_API_KEY`, `SLACK_WEBHOOK_URL`)
+- Notion API Key, LLM Provider 키는 GitHub Secrets 보관(`NOTION_TOKEN`, `NOTION_DATA_SOURCE_ID`, `LLM_API_KEY`, `SLACK_WEBHOOK_URL`)
 - 최소 권한 원칙(리포지토리: 콘텐츠 전용)
 - LLM 프롬프트/응답에 민감정보가 포함되지 않도록 PII 스캐너(선택)
 
@@ -253,7 +258,7 @@ name: Daily Notion → Blog
 
 on:
   schedule:
-    - cron: '0 13 * * *' # 매일 22:00 KST
+    - cron: "0 13 * * *" # 매일 22:00 KST
   workflow_dispatch:
 
 permissions:
@@ -287,17 +292,17 @@ jobs:
       - name: Ensure Notion schema
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          NOTION_DATA_SOURCE_ID: ${{ secrets.NOTION_DATA_SOURCE_ID }}
         run: node scripts/ensure-notion-schema.js
 
       - name: Run notion export → rewrite → compose (Hugo)
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          NOTION_DATA_SOURCE_ID: ${{ secrets.NOTION_DATA_SOURCE_ID }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LLM_PROVIDER: openai
-          OPENAI_MODEL: gpt-4.1-mini
+          OPENAI_MODEL: gpt-5-mini
           GEMINI_MODEL: gemini-1.5-pro
         run: node scripts/notion-export.js # Hugo용으로 content/posts/<slug>/index.md 생성 (OpenAI 기본, Gemini 폴백)
 
@@ -311,8 +316,8 @@ jobs:
         id: cpr
         with:
           branch: chore/notion-to-blog
-          title: 'chore(blog): publish from Notion'
-          commit-message: 'chore(blog): add posts from Notion'
+          title: "chore(blog): publish from Notion"
+          commit-message: "chore(blog): add posts from Notion"
           delete-branch: true
           labels: |
             blog
@@ -336,7 +341,7 @@ jobs:
 
 ## 11) 머지 후 Notion 동기화(권장)
 
-- 목적: 실제 게시(머지) 이후에만 Notion의 `블로그에 올림`을 true로 보증
+- 목적: 실제 게시(머지) 이후에만 Notion의 `isUploaded`을 true로 보증
 - 방법: PR 머지 트리거 워크플로(`.github/workflows/on-merge-sync-notion.yml`)
 
 ```yaml
@@ -361,7 +366,7 @@ jobs:
         run: node scripts/notion-sync.js
 ```
 
-- 구현 아이디어: `notion-blog-index.json`에 {pageId → postPath/postUrl} 매핑 유지 → main에 포스트 반영되면 해당 pageId들을 찾아 Notion API로 `블로그에 올림=true` 및 `postUrl` 업데이트
+- 구현 아이디어: `notion-blog-index.json`에 {pageId → postPath/postUrl} 매핑 유지 → main에 포스트 반영되면 해당 pageId들을 찾아 Notion API로 `isUploaded=true` 및 `postUrl` 업데이트
 
 ---
 
@@ -377,8 +382,8 @@ jobs:
 
 ## 13) 체크리스트(최소 구성)
 
-- [ ] Notion DB에 `블로그에 올림`(checkbox) 속성 존재
-- [ ] GitHub Secrets 설정: `NOTION_TOKEN`, `NOTION_DATABASE_ID`, `LLM_API_KEY`, `SLACK_WEBHOOK_URL`
+- [ ] Notion DB에 `isUploaded`(checkbox) 속성 존재
+- [ ] GitHub Secrets 설정: `NOTION_TOKEN`, `NOTION_DATA_SOURCE_ID`, `LLM_API_KEY`, `SLACK_WEBHOOK_URL`
 - [ ] GitHub Actions에서 스키마 보정 스텝(`scripts/ensure-notion-schema.js`) 실행 확인
 - [ ] LLM 게이트웨이 `/rewrite` 엔드포인트 준비(JSON Schema 강제)
 - [ ] 블로그 리포 체크아웃/PR 권한 확인
