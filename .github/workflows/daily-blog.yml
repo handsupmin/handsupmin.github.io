@@ -1,0 +1,159 @@
+name: Daily Notion → Blog
+
+on:
+  schedule:
+    - cron: "0 13 * * *" # 매일 22:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: blog-daily
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.commit.outputs.has_changes }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Cache deps
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.npm
+            node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - run: npm ci || npm i
+
+      - name: Ensure Notion schema
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATA_SOURCE_ID: ${{ secrets.NOTION_DATA_SOURCE_ID }}
+          NOTION_VERSION: 2025-09-03
+        run: node scripts/ensure-notion-schema.js
+
+      - name: Run notion export → rewrite → compose (Hugo)
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATA_SOURCE_ID: ${{ secrets.NOTION_DATA_SOURCE_ID }}
+          NOTION_VERSION: 2025-09-03
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_PROVIDER: openai
+          OPENAI_MODEL: gpt-5-mini
+          GEMINI_MODEL: gemini-1.5-pro
+        run: |
+          set -e
+          node scripts/notion-export.js
+
+      - name: Detect changes (if any)
+        id: commit
+        run: |
+          set -e
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes to commit"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create PR
+        if: steps.commit.outputs.has_changes == 'true'
+        id: create_pr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/notion-to-blog
+          base: main
+          title: "chore(blog): publish from Notion"
+          commit-message: "chore(blog): add posts from Notion"
+          delete-branch: true
+          labels: |
+            blog
+          add-paths: |
+            content/**
+            data/notion-blog-index.json
+
+      - name: Enable auto-merge
+        if: steps.commit.outputs.has_changes == 'true'
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          pull-request-number: ${{ steps.create_pr.outputs.pull-request-number }}
+          merge-method: squash
+
+      - name: Wait for PR merge
+        if: steps.commit.outputs.has_changes == 'true'
+        env:
+          PR_NUMBER: ${{ steps.create_pr.outputs.pull-request-number }}
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          echo "Waiting for PR #${PR_NUMBER} to merge..."
+          for i in {1..60}; do
+            status=$(curl -s -o /dev/null -w "%{http_code}" \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${REPO}/pulls/${PR_NUMBER}/merge")
+            if [ "$status" = "204" ]; then echo "Merged."; exit 0; fi
+            echo "Not merged yet (HTTP $status). Retrying..."; sleep 10
+          done
+          echo "PR did not merge in time" >&2; exit 1
+
+  deploy_and_sync:
+    needs: publish
+    if: needs.publish.result == 'success' && needs.publish.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+          ref: main
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.146.0"
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Sync Notion flags (postUrl, uploaded)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci || npm i
+      - name: Update Notion flags
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATA_SOURCE_ID: ${{ secrets.NOTION_DATA_SOURCE_ID }}
+          NOTION_VERSION: 2025-09-03
+          BLOG_BASE_URL: ${{ vars.BLOG_BASE_URL || 'https://handsupmin.github.io' }}
+        run: node scripts/notion-sync.js
