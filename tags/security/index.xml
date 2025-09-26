@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Security on HandsLog</title><link>https://handsupmin.github.io/tags/security/</link><description>Recent content in Security on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Tue, 23 Sep 2025 13:09:26 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/security/index.xml" rel="self" type="application/rss+xml"/><item><title>커스토디얼 vs 논커스토디얼 월렛 비교</title><link>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</link><pubDate>Tue, 23 Sep 2025 13:09:26 +0000</pubDate><guid>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
+&lt;p>프라이빗키 관리 방식에 따라 암호화폐 월렛은 &lt;strong>커스토디얼(custodial)&lt;/strong> 과 &lt;strong>논커스토디얼(noncustodial)&lt;/strong> 로 구분됨
+각 방식의 차이와 선택 기준, 보안·운영 리스크와 대응 방안을 &lt;strong>초보자도 이해할 수 있게&lt;/strong> 정리하면서 &lt;strong>실무자가 바로 적용할 수 있는 체크리스트&lt;/strong>까지 제시함&lt;/p>
+&lt;hr>
+&lt;h3 id="핵심-개념">핵심 개념&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>커스토디얼 월렛&lt;/strong>
+제3자 서비스가 사용자의 프라이빗키를 보관하고 서명을 대행하는 구조
+로그인·출금 등은 서비스 인증 절차를 거쳐 처리됨&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>논커스토디얼 월렛&lt;/strong>
+사용자가 프라이빗키를 직접 보유·관리하는 구조
+브라우저 확장 지갑·모바일 앱 지갑·하드웨어 지갑이 대표적 사례임&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>핵심 차이 한 줄 정리&lt;/strong>
+키의 &lt;strong>소유·통제 주체&lt;/strong>가 제3자인가 사용자 본인인가의 차이&lt;/p></description></item></channel></rss>
