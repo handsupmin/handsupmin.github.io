@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blockchain on HandsLog</title><link>https://handsupmin.github.io/categories/blockchain/</link><description>Recent content in Blockchain on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Wed, 24 Sep 2025 13:09:24 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/categories/blockchain/index.xml" rel="self" type="application/rss+xml"/><item><title>Abstract 체인 개요 및 핵심 구성 요소 정리</title><link>https://handsupmin.github.io/posts/abstract-chain-overview-274b74/</link><pubDate>Wed, 24 Sep 2025 13:09:24 +0000</pubDate><guid>https://handsupmin.github.io/posts/abstract-chain-overview-274b74/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
+&lt;p>이 글은 &amp;lsquo;Abstract&amp;rsquo;로 지칭되는 ZK Rollup 기반 L2 체인의 구조와 핵심 컴포넌트를 실무 관점에서 정리한 문서. 목적은 해당 체인의 트랜잭션 흐름, 증명 생성·검증 과정, 네이티브 계정 추상화와 스마트 컨트랙트 지갑(글로벌 지갑)의 동작 방식에 대한 명확한 이해 제공.&lt;/p>
+&lt;h3 id="배경과-목적">배경과 목적&lt;/h3>
+&lt;ul>
+&lt;li>이더리움 기반의 확장성 한계(TPS, 가스비 부담) 보완을 위해 L2 솔루션 도입 필요성&lt;/li>
+&lt;li>ZK Rollup 계열은 메인넷의 보안성 유지하면서 트랜잭션 처리량을 늘리고 온체인 비용을 낮추는 목적&lt;/li>
+&lt;/ul>
+&lt;h3 id="핵심-개념과-정의">핵심 개념과 정의&lt;/h3>
+&lt;ul>
+&lt;li>ZK Rollup: 오프체인에서 트랜잭션을 집계하고, 집계 결과에 대한 유효성 증명을 온체인에 제출하여 상태 변경을 최종화하는 기술&lt;/li>
+&lt;li>ZK Stack: ZK Rollup 계열의 L2를 구축하기 위한 프레임워크 집합(증명 회로, 배포 파이프라인, 런타임 도구 등)&lt;/li>
+&lt;li>Sequencer: L2 트랜잭션 수신 및 블록화 담당 서비스&lt;/li>
+&lt;li>Prover/Verifier: 배치 단위의 트랜잭션 결과에 대해 영지식 증명을 생성하고, 온체인에서 검증하는 구성요소&lt;/li>
+&lt;li>Account Abstraction(네이티브): 체인상의 모든 계정을 스마트 컨트랙트 계정으로 통일하여 트랜잭션 검증·유연한 결제 방식 지원&lt;/li>
+&lt;/ul>
+&lt;h3 id="동작-원리--트랜잭션-생명주기">동작 원리 / 트랜잭션 생명주기&lt;/h3>
+&lt;ol>
+&lt;li>트랜잭션 제출&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>사용자 또는 클라이언트가 JSON-RPC로 트랜잭션 제출. 트랜잭션은 L2 멤풀에 적재&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>시퀀싱 및 실행&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>시퀀서가 멤풀에서 트랜잭션을 읽어 블록 단위로 정리&lt;/li>
+&lt;li>부트로더 또는 실행 환경이 각 트랜잭션을 실행하고 사용자에게 즉시 실행 결과(성공 여부, txId) 응답&lt;/li>
+&lt;/ul>
+&lt;ol start="3">
+&lt;li>배치 생성 및 증명 준비&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>시퀀서는 블록들을 prover에 전달하여 여러 블록을 포함하는 배치 생성&lt;/li>
+&lt;li>Prover는 배치에 대한 증인(witness) 생성, 회로 실행, 증명 생성 과정을 수행&lt;/li>
+&lt;li>생성된 증명은 크기가 클 수 있어 압축 과정을 거쳐 온체인 검증이 용이한 형태로 변환&lt;/li>
+&lt;/ul>
+&lt;ol start="4">
+&lt;li>L1에 배치 커밋 및 증명 제출&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>상태 변경만을 요약한 최적화된 데이터(예: blobs 형태, EIP-4844 표준)에 따라 L1에 배치 데이터 가용성 확보 및 커밋&lt;/li>
+&lt;li>최종적으로 압축된 ZK-SNARK(또는 유사한 간결 증명)를 L1의 롤업 컨트랙트에 제출하여 proveBatches 호출&lt;/li>
+&lt;/ul>
+&lt;ol start="5">
+&lt;li>검증 및 실행 확정&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>L1 스마트 컨트랙트에서 증명 검증. 검증 완료 시 executeBatches 호출로 상태 최종 확정&lt;/li>
+&lt;li>L2 로그 및 머클 트리 루트 저장&lt;/li>
+&lt;/ul>
+&lt;h3 id="구성요소-상세">구성요소 상세&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>Sequencer 영역&lt;/p></description></item></channel></rss>

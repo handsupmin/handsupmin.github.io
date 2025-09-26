@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>암호화폐 on HandsLog</title><link>https://handsupmin.github.io/tags/%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90/</link><description>Recent content in 암호화폐 on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Tue, 23 Sep 2025 13:09:26 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90/index.xml" rel="self" type="application/rss+xml"/><item><title>커스토디얼 vs 논커스토디얼 월렛 비교 및 실무 포인트</title><link>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</link><pubDate>Tue, 23 Sep 2025 13:09:26 +0000</pubDate><guid>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
+&lt;p>프라이빗키 관리 방식에 따라 암호화폐 월렛은 크게 커스토디얼(custodial)과 논커스토디얼(noncustodial)로 구분됨. 각 방식의 차이와 실무에서 고려해야 할 보안·운영 포인트를 정리함.&lt;/p>
+&lt;h3 id="핵심-개념과-정의">핵심 개념과 정의&lt;/h3>
+&lt;ul>
+&lt;li>커스토디얼 월렛: 제3자 서비스가 사용자의 프라이빗키를 보관하고 트랜잭션 서명을 대행하는 구조. 로그인·인출 등은 서비스 인증을 통해 이루어짐.&lt;/li>
+&lt;li>논커스토디얼 월렛: 사용자가 직접 프라이빗키를 보유하고 서명 권한을 직접 행사하는 구조. 브라우저 확장 지갑이나 하드웨어 지갑이 해당됨.&lt;/li>
+&lt;/ul>
+&lt;p>정리: 관리는 제3자 대 사용자 직접 소유의 차이.&lt;/p>
+&lt;h3 id="동작-원리-및-구조">동작 원리 및 구조&lt;/h3>
+&lt;p>커스토디얼은 중앙화된 키 보관소와 인증·권한 시스템을 포함. 서비스는 핫월렛/콜드월렛 분리, 접근 제어, 키 관리 정책으로 운영됨. 논커스토디얼은 키 생성·저장·복구를 사용자 환경에서 수행. 하드웨어 지갑은 기기 내 안전영역에서 서명 연산을 처리함. 일부 솔루션은 키 분할 또는 다중 서명 구조를 도입하여 중간 형태 제공.&lt;/p></description></item><item><title>블록체인 원리 집중정리 — 채굴·해시·합의의 핵심</title><link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link><pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid><description>&lt;p>개요&lt;/p>
+&lt;p>이 문서는 블록체인의 기본 원리와 거래가 실제로 어떻게 기록되는지, 채굴과 해시, 합의 알고리즘(PoW/PoS), 포크와 확장성 대책까지 실무 관점에서 정리한 글임. 기술적 배경이 필요하지만 복잡한 수식이나 그림 없이 핵심 개념과 운영 상 주의점을 중심으로 설명함.&lt;/p>
+&lt;h3 id="개념과-맥락">개념과 맥락&lt;/h3>
+&lt;p>블록체인은 분산 원장 기술로, 중앙 기관 없이 네트워크 참여자들이 거래 기록을 공유·검증하여 장부를 유지하는 방식. 블록 단위로 거래가 묶이고 블록들이 체인처럼 연결되어 불변성 유지가 용이한 구조를 가짐. 암호화폐는 이 구조 위에서 통화 또는 가치 전달 수단 역할을 하는 응용 사례.&lt;/p></description></item></channel></rss>

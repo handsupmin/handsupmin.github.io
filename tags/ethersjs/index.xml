@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ethersjs on HandsLog</title><link>https://handsupmin.github.io/tags/ethersjs/</link><description>Recent content in Ethersjs on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Sun, 21 Sep 2025 02:14:08 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/ethersjs/index.xml" rel="self" type="application/rss+xml"/><item><title>오프체인 서명 검증 페이마스터 (in ZkSync Era)</title><link>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</link><pubDate>Sun, 21 Sep 2025 02:14:08 +0000</pubDate><guid>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</guid><description>&lt;blockquote>
+&lt;p>&lt;strong>주의&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>아래는 “핵심 동작만 이해할 수 있는” &lt;strong>부분 스니펫&lt;/strong>과 설명임.&lt;/li>
+&lt;li>실제 배포 전에는 보안 리뷰·테스트 필수.&lt;/li>
+&lt;/ul>&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="개요">개요&lt;/h2>
+&lt;p>오프체인에서 생성한 EIP‑712 서명을 온체인에서 검증해 &lt;strong>가스비 대납(paymaster)&lt;/strong> 을 구현함. 메타트랜잭션·가스리스 UX 제공 목적. &lt;strong>ZkSync Era&lt;/strong> 환경 기준으로 컨트랙트/서버/클라이언트 최소 구성과 운영·보안 포인트를 정리함.&lt;/p>
+&lt;hr>
+&lt;h2 id="문제-정의--설계-의도">문제 정의 &amp;amp; 설계 의도&lt;/h2>
+&lt;h3 id="내가-당면한-문제">내가 당면한 문제&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>가스비 대납&lt;/strong> 필요함&lt;/li>
+&lt;li>&lt;strong>제한된 대상만&lt;/strong> 사용 가능해야 함 (우리 서비스 내에서만 사용 가능해야함)&lt;/li>
+&lt;li>&lt;strong>가스 낭비/잔고 소진&lt;/strong> 리스크 최소화해야 함 (악용·오구성·스팸 대비)&lt;/li>
+&lt;/ul>
+&lt;h3 id="단순-대안toaddresspaymaster에서-드러난-한계">단순 대안(toAddressPaymaster)에서 드러난 한계&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>신규 유저 온보딩 흐름과 충돌&lt;/strong>&lt;/p></description></item></channel></rss>
