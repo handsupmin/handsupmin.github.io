@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Data-Structures on HandsLog</title><link>https://handsupmin.github.io/tags/data-structures/</link><description>Recent content in Data-Structures on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Sun, 21 Sep 2025 13:05:50 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/data-structures/index.xml" rel="self" type="application/rss+xml"/><item><title>스마트 컨트랙트에서 O(n)을 피하고 O(1)을 지향해야 하는 이유와 실무 대처법</title><link>https://handsupmin.github.io/posts/why-avoid-o-n-in-smart-contracts-aim-for-o1-274b74/</link><pubDate>Sun, 21 Sep 2025 13:05:50 +0000</pubDate><guid>https://handsupmin.github.io/posts/why-avoid-o-n-in-smart-contracts-aim-for-o1-274b74/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
-&lt;p>스마트 컨트랙트 구현에서 반복문으로 인한 O(n) 연산은 단순한 성능 문제를 넘어 서비스 가용성에 직결되는 문제를 유발함. 블록 가스 한도와 트랜잭션 가스 비용 구조 때문에 선형 탐색이나 무제한 반복은 결국 특정 상태에서 함수가 더 이상 실행되지 못하는 상황(Exceeds block gas limit)으로 이어질 수 있음. 이유와 개선 방법, 실무에서 고려할 포인트를 정리함.&lt;/p>
+&lt;p>스마트 컨트랙트에서 무제한에 가까운 O(n) 반복문은 성능 저하를 넘어 &lt;strong>실행 불가&lt;/strong>로 이어질 수 있음
+블록당 가스 한도와 트랜잭션 가스 모델 때문에 선형 탐색이나 전수 루프는 특정 규모에서 &lt;strong>가스 한도 초과&lt;/strong>를 일으켜 서비스 가용성을 떨어뜨림
+이 문서는 원인과 개선 패턴, 실무 체크리스트를 정리함&lt;/p>
+&lt;hr>
 &lt;h3 id="문제-정의와-영향">문제 정의와 영향&lt;/h3>
 &lt;ul>
-&lt;li>상태 검증을 위해 배열을 전수 탐색하는 구현 사례. 예: 사용자 등록 시 users 배열을 처음부터 끝까지 비교하여 중복 체크하는 방식&lt;/li>
-&lt;li>문제점 요약: 가스 비용이 가입자 수에 비례해 증가. 블록 가스 한도를 넘기면 해당 함수 호출 불가. 서비스 정상성 저하 및 DoS 위험&lt;/li>
-&lt;li>정량적 예시: 개별 비교에 일정 가스가 소모되고 가입자 수가 수만 명대가 되면 단일 트랜잭션으로 처리 불가&lt;/li>
+&lt;li>배열 전수 탐색으로 중복 검사나 상태 검증을 수행하는 구현이 흔함
+예 users 배열을 처음부터 끝까지 훑어 가입자 중복을 확인하는 방식&lt;/li>
+&lt;li>가입자 수에 비례해 가스가 선형 증가하며 어느 시점부터 한 트랜잭션으로 처리 불가&lt;/li>
+&lt;li>공격자가 &lt;strong>가스 그리핑&lt;/strong>을 유도하거나 외부 입력으로 루프 길이를 키우면 사실상 &lt;strong>DoS&lt;/strong>가 될 수 있음&lt;/li>
+&lt;li>RPC 에러 메시지는 노드별로 다르지만 본질은 가스 예산 초과로 인한 &lt;strong>미포함·리버트&lt;/strong>임&lt;/li>
 &lt;/ul>
+&lt;hr>
 &lt;h3 id="핵심-개념과-대안">핵심 개념과 대안&lt;/h3>
-&lt;ol>
-&lt;li>매핑(mapping)을 이용한 존재 여부 체크. 키-값 해시 조회 특성으로 조회/삽입/삭제 모두 O(1)&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-solidity" data-lang="solidity">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">mapping&lt;/span>(&lt;span style="color:#66d9ef">address&lt;/span> &lt;span style="color:#f92672">=&amp;gt;&lt;/span> &lt;span style="color:#66d9ef">bool&lt;/span>) &lt;span style="color:#66d9ef">public&lt;/span> users;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">function&lt;/span> &lt;span style="color:#a6e22e">register&lt;/span>(&lt;span style="color:#66d9ef">address&lt;/span> user) &lt;span style="color:#66d9ef">public&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> require(&lt;span style="color:#f92672">!&lt;/span>users[user], &lt;span style="color:#e6db74">&amp;#34;already registered&amp;#34;&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> users[user] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>장점: 존재 여부 확인 비용 고정. 단점: 전체 열거 불가(온체인 인덱스 조회 불가)&lt;/p></description></item></channel></rss>
+&lt;p>&lt;strong>1) 매핑으로 존재 여부 O(1) 검사&lt;/strong>
+저장 키 기반 조회가 상수 시간으로 동작해 선형 탐색을 제거함&lt;/p></description></item></channel></rss>

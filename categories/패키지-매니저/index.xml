@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>패키지 매니저 on HandsLog</title><link>https://handsupmin.github.io/categories/%ED%8C%A8%ED%82%A4%EC%A7%80-%EB%A7%A4%EB%8B%88%EC%A0%80/</link><description>Recent content in 패키지 매니저 on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Sat, 20 Sep 2025 16:44:51 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/categories/%ED%8C%A8%ED%82%A4%EC%A7%80-%EB%A7%A4%EB%8B%88%EC%A0%80/index.xml" rel="self" type="application/rss+xml"/><item><title>pnpm 설치 방식과 워크스페이스 사용법</title><link>https://handsupmin.github.io/posts/pnpm/</link><pubDate>Sat, 20 Sep 2025 16:44:51 +0000</pubDate><guid>https://handsupmin.github.io/posts/pnpm/</guid><description>&lt;h3 id="서문">서문&lt;/h3>
-&lt;p>pnpm은 npm과 유사한 CLI를 제공하면서도 의존성 저장 구조에서 차별점을 둔 패키지 매니저입니다. 대규모 모노레포나 여러 프로젝트를 동시에 관리할 때 중복 패키지로 인한 디스크 낭비를 줄이고 설치 속도를 개선하는 것이 목적입니다. 이 글은 pnpm의 설치 동작 원리와 워크스페이스 활용 방법을 실무 관점에서 정리합니다.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>패키지 매니저 on HandsLog</title><link>https://handsupmin.github.io/categories/%ED%8C%A8%ED%82%A4%EC%A7%80-%EB%A7%A4%EB%8B%88%EC%A0%80/</link><description>Recent content in 패키지 매니저 on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Wed, 17 Sep 2025 16:44:51 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/categories/%ED%8C%A8%ED%82%A4%EC%A7%80-%EB%A7%A4%EB%8B%88%EC%A0%80/index.xml" rel="self" type="application/rss+xml"/><item><title>pnpm이란? pnpm의 개념과 사용방법 총정리</title><link>https://handsupmin.github.io/posts/pnpm-92fmw2/</link><pubDate>Wed, 17 Sep 2025 16:44:51 +0000</pubDate><guid>https://handsupmin.github.io/posts/pnpm-92fmw2/</guid><description>&lt;h3 id="서문">서문&lt;/h3>
+&lt;p>pnpm은 npm과 유사한 CLI를 제공하면서 &lt;strong>의존성 저장 구조&lt;/strong>를 혁신해 디스크 중복을 줄이고 설치 성능을 높인 패키지 매니저임
+대규모 모노레포와 여러 프로젝트를 동시에 운영할 때 &lt;strong>중복 패키지 최소화·설치 속도 개선·일관된 잠금 파일 관리&lt;/strong>를 목표로 함
+이 글은 pnpm의 &lt;strong>설치 동작 원리&lt;/strong>와 &lt;strong>워크스페이스 활용법&lt;/strong>을 실무 관점에서 정리함&lt;/p>
+&lt;hr>
 &lt;h3 id="개념-및-배경">개념 및 배경&lt;/h3>
-&lt;p>pnpm은 기본적으로 각 프로젝트의 package.json에 정의된 의존성만 설치합니다. 그러나 실제 패키지 파일은 사용자의 전용 글로벌 저장소(예: ~/.pnpm-store)에 다운로드되어 보관됩니다. 프로젝트의 node_modules에는 실제 파일 대신 글로벌 저장소의 패키지로 향하는 심볼릭 링크가 생성됩니다. 이 구조 덕분에 동일한 패키지가 여러 프로젝트에서 필요할 때 물리적 복제가 발생하지 않음.&lt;/p></description></item></channel></rss>
+&lt;p>핵심 아이디어는 &lt;strong>사용자 단위의 콘텐츠 주소 기반 저장소(Content‑Addressable Store)&lt;/strong> 와 &lt;strong>하드링크 + 심볼릭 링크&lt;/strong> 조합임&lt;/p>
+&lt;ul>
+&lt;li>패키지 실제 파일은 사용자 스토어에 &lt;strong>한 번만&lt;/strong> 저장됨&lt;/li>
+&lt;li>각 프로젝트의 &lt;code>node_modules&lt;/code>에는 스토어의 파일을 &lt;strong>하드링크&lt;/strong>로 연결하고, 패키지 간 의존 관계는 &lt;strong>심볼릭 링크&lt;/strong>로 구성함&lt;/li>
+&lt;li>결과적으로 동일 버전 패키지가 여러 프로젝트에서 필요해도 물리 복제가 발생하지 않음&lt;/li>
+&lt;/ul>
+&lt;p>스토어 기본 위치는 OS와 설정에 따라 달라지므로 명령으로 확인하는 것이 정확함&lt;/p></description></item></channel></rss>

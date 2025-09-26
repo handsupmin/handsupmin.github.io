@@ -1,9 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Zkrollup on HandsLog</title><link>https://handsupmin.github.io/tags/zkrollup/</link><description>Recent content in Zkrollup on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Thu, 25 Sep 2025 13:10:01 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/zkrollup/index.xml" rel="self" type="application/rss+xml"/><item><title>Off-chain 개념과 데이터 가용성: zkRollup vs Validium 비교</title><link>https://handsupmin.github.io/posts/off-chain-data-availability-zkrollup-validium-274b74/</link><pubDate>Thu, 25 Sep 2025 13:10:01 +0000</pubDate><guid>https://handsupmin.github.io/posts/off-chain-data-availability-zkrollup-validium-274b74/</guid><description>&lt;h3 id="개념-및-배경">개념 및 배경.&lt;/h3>
-&lt;p>Off-chain은 블록체인 외부에서 이루어지는 데이터 처리나 연산을 지칭함. 트랜잭션 원본이나 대량의 상태 변경을 메인넷에 전부 기록하지 않고, 체인 바깥의 별도 환경에서 처리한 뒤 필요한 증명이나 최종 결과만 온체인에 제출하는 방식. 목적은 비용 절감, 처리 속도 향상, 데이터 활용의 유연성 확보.&lt;/p>
-&lt;h3 id="핵심-개념과-정의">핵심 개념과 정의.&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Zkrollup on HandsLog</title><link>https://handsupmin.github.io/tags/zkrollup/</link><description>Recent content in Zkrollup on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Thu, 25 Sep 2025 13:10:01 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/zkrollup/index.xml" rel="self" type="application/rss+xml"/><item><title>Off-chain 개념과 데이터 가용성: zkRollup vs Validium 비교</title><link>https://handsupmin.github.io/posts/off-chain-data-availability-zkrollup-validium-274b74/</link><pubDate>Thu, 25 Sep 2025 13:10:01 +0000</pubDate><guid>https://handsupmin.github.io/posts/off-chain-data-availability-zkrollup-validium-274b74/</guid><description>&lt;h3 id="개념-및-배경">개념 및 배경&lt;/h3>
+&lt;p>Off‑chain은 블록체인 &lt;strong>외부&lt;/strong>에서 연산·저장을 수행하고 &lt;strong>필요한 증명 또는 요약만 온체인에 게시&lt;/strong>하는 접근을 말함
+목표는 &lt;strong>가스비 절감&lt;/strong>, &lt;strong>처리량 확대&lt;/strong>, &lt;strong>데이터 활용 유연성 확보&lt;/strong>임
+온체인은 합의와 정산의 최소 핵심만 유지하고, 나머지는 오프체인 시스템으로 이전하는 설계 철학임&lt;/p>
+&lt;hr>
+&lt;h3 id="핵심-개념과-정의">핵심 개념과 정의&lt;/h3>
 &lt;ul>
-&lt;li>Off-chain 처리: 트랜잭션 집계, 상태 채널 연산, 데이터 인덱싱 등 블록체인 외부에서 수행되는 연산 또는 저장 방식. 최종 정리본 또는 증명만 온체인에 올리는 구조.&lt;/li>
-&lt;li>Off-chain Data Availability: 트랜잭션 데이터 자체는 외부 저장소에 보관하고, 온체인에는 검증에 필요한 최소한의 증명(예: ZK 증명)만 제출하는 모델. 데이터 가용성 제공자 또는 분산 스토리지에 대한 의존성 존재.&lt;/li>
-&lt;/ul>
-&lt;h3 id="동작-원리-및-구조">동작 원리 및 구조.&lt;/h3>
-&lt;p>일반적인 흐름은 다음과 같음.&lt;/p></description></item></channel></rss>
+&lt;li>
+&lt;p>&lt;strong>Off‑chain 처리&lt;/strong>
+트랜잭션 집계·상태 채널 업데이트·인덱싱·분석 등을 체인 밖에서 수행하고 결과 요약만 온체인에 커밋하는 방식임&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Off‑chain Data Availability DA&lt;/strong>
+트랜잭션 본문은 오프체인에 보관하고 온체인에는 검증용 최소 데이터와 &lt;strong>유효성 또는 사기 증명&lt;/strong>만 올리는 모델임
+데이터 보관자나 분산 스토리지의 &lt;strong>지속 제공&lt;/strong>을 신뢰하거나 경제적 인센티브로 강제하는 설계가 필요함&lt;/p></description></item></channel></rss>
