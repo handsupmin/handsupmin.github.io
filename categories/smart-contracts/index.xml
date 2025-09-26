@@ -1,13 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Smart-Contracts on HandsLog</title><link>https://handsupmin.github.io/categories/smart-contracts/</link><description>Recent content in Smart-Contracts on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Sun, 21 Sep 2025 13:05:50 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/categories/smart-contracts/index.xml" rel="self" type="application/rss+xml"/><item><title>안전한 가스비 대납을 위한 오프체인 서명 검증 페이마스터 (in ZkSync Era)</title><link>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</link><pubDate>Sun, 21 Sep 2025 02:14:08 +0000</pubDate><guid>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
-&lt;p>블록체인 서비스에서 사용자가 겪는 가장 큰 장벽 중 하나는 단연 &lt;strong>가스비&lt;/strong>(Gas Fee)임
-아무리 좋은 서비스를 만들어도, 사용자가 지갑에 가스비로 쓸 코인(ETH 등)을 보유하고 있어야 한다는 점은 대중화를 가로막는 결정적인 요인임
-이 문제를 해결해 사용자가 가스비 걱정 없이 서비스 핵심 가치에만 집중하게 만드는 것, 즉 &lt;strong>가스리스 트랜잭션&lt;/strong>(Gasless Transaction)을 구현하는 것이 이번 개발의 최종 목표였음&lt;/p>
-&lt;p>zkSync Era는 이를 위해 &lt;strong>페이마스터&lt;/strong>(Paymaster)라는 강력한 시스템을 제공함. 페이마스터는 서비스 제공자 같은 제3자가 사용자를 대신해 트랜잭션 수수료를 지불할 수 있게 해주는 스마트 컨트랙트임&lt;/p></description></item><item><title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title><link>https://handsupmin.github.io/posts/off-chain-signature-verification-542a33/</link><pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate><guid>https://handsupmin.github.io/posts/off-chain-signature-verification-542a33/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
-&lt;p>블록체인 기술에서 모든 것을 온체인(On-chain)으로 처리하는 것은 비효율적이거나 불가능한 경우가 많음
-이때 &lt;strong>오프체인 서명 검증&lt;/strong>(Off-chain Signature Verification)은 오프체인(서버)의 유연성과 온체인(컨트랙트)의 신뢰성을 결합하는 강력한 해결책이 됨&lt;/p>
-&lt;p>쉽게 비유하자면, 클럽 매니저(서버)가 VIP 손님(사용자)에게만 특별한 싸인이 담긴 입장권(서명)을 발급하고, 입구의 가드(스마트 컨트랙트)는 그 싸인만 확인하고 들여보내는 것과 같음
-가드는 매번 매니저에게 연락할 필요 없이, 위조되지 않은 싸인인지 확인만 하면 됨&lt;/p>
-&lt;p>이 글에서는 오프체인 서명 검증이 무엇인지, 어떤 용어들이 사용되는지, 그리고 가장 중요하게는 어떤 원리로 동작하는지 상세히 알아봄&lt;/p></description></item><item><title>스마트 컨트랙트에서 O(n)을 피하고 O(1)을 지향해야 하는 이유와 실무 대처법</title><link>https://handsupmin.github.io/posts/why-avoid-o-n-in-smart-contracts-aim-for-o1-274b74/</link><pubDate>Sun, 21 Sep 2025 13:05:50 +0000</pubDate><guid>https://handsupmin.github.io/posts/why-avoid-o-n-in-smart-contracts-aim-for-o1-274b74/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Smart-Contracts on HandsLog</title><link>https://handsupmin.github.io/categories/smart-contracts/</link><description>Recent content in Smart-Contracts on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Sun, 21 Sep 2025 13:05:50 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/categories/smart-contracts/index.xml" rel="self" type="application/rss+xml"/><item><title>스마트 컨트랙트에서 O(n)을 피하고 O(1)을 지향해야 하는 이유와 실무 대처법</title><link>https://handsupmin.github.io/posts/why-avoid-o-n-in-smart-contracts-aim-for-o1-274b74/</link><pubDate>Sun, 21 Sep 2025 13:05:50 +0000</pubDate><guid>https://handsupmin.github.io/posts/why-avoid-o-n-in-smart-contracts-aim-for-o1-274b74/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
 &lt;p>스마트 컨트랙트에서 무제한에 가까운 O(n) 반복문은 성능 저하를 넘어 &lt;strong>실행 불가&lt;/strong>로 이어질 수 있음
 블록당 가스 한도와 트랜잭션 가스 모델 때문에 선형 탐색이나 전수 루프는 특정 규모에서 &lt;strong>가스 한도 초과&lt;/strong>를 일으켜 서비스 가용성을 떨어뜨림
 이 문서는 원인과 개선 패턴, 실무 체크리스트를 정리함&lt;/p>
@@ -23,4 +14,13 @@
 &lt;hr>
 &lt;h3 id="핵심-개념과-대안">핵심 개념과 대안&lt;/h3>
 &lt;p>&lt;strong>1) 매핑으로 존재 여부 O(1) 검사&lt;/strong>
-저장 키 기반 조회가 상수 시간으로 동작해 선형 탐색을 제거함&lt;/p></description></item></channel></rss>
+저장 키 기반 조회가 상수 시간으로 동작해 선형 탐색을 제거함&lt;/p></description></item><item><title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title><link>https://handsupmin.github.io/posts/off-chain-signature-verification-542a33/</link><pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate><guid>https://handsupmin.github.io/posts/off-chain-signature-verification-542a33/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
+&lt;p>블록체인 기술에서 모든 것을 온체인(On-chain)으로 처리하는 것은 비효율적이거나 불가능한 경우가 많음
+이때 &lt;strong>오프체인 서명 검증&lt;/strong>(Off-chain Signature Verification)은 오프체인(서버)의 유연성과 온체인(컨트랙트)의 신뢰성을 결합하는 강력한 해결책이 됨&lt;/p>
+&lt;p>쉽게 비유하자면, 클럽 매니저(서버)가 VIP 손님(사용자)에게만 특별한 싸인이 담긴 입장권(서명)을 발급하고, 입구의 가드(스마트 컨트랙트)는 그 싸인만 확인하고 들여보내는 것과 같음
+가드는 매번 매니저에게 연락할 필요 없이, 위조되지 않은 싸인인지 확인만 하면 됨&lt;/p>
+&lt;p>이 글에서는 오프체인 서명 검증이 무엇인지, 어떤 용어들이 사용되는지, 그리고 가장 중요하게는 어떤 원리로 동작하는지 상세히 알아봄&lt;/p></description></item><item><title>안전한 가스비 대납을 위한 오프체인 서명 검증 페이마스터 (in ZkSync Era)</title><link>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</link><pubDate>Sun, 21 Sep 2025 02:14:08 +0000</pubDate><guid>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
+&lt;p>블록체인 서비스에서 사용자가 겪는 가장 큰 장벽 중 하나는 단연 &lt;strong>가스비&lt;/strong>(Gas Fee)임
+아무리 좋은 서비스를 만들어도, 사용자가 지갑에 가스비로 쓸 코인(ETH 등)을 보유하고 있어야 한다는 점은 대중화를 가로막는 결정적인 요인임
+이 문제를 해결해 사용자가 가스비 걱정 없이 서비스 핵심 가치에만 집중하게 만드는 것, 즉 &lt;strong>가스리스 트랜잭션&lt;/strong>(Gasless Transaction)을 구현하는 것이 이번 개발의 최종 목표였음&lt;/p>
+&lt;p>zkSync Era는 이를 위해 &lt;strong>페이마스터&lt;/strong>(Paymaster)라는 강력한 시스템을 제공함. 페이마스터는 서비스 제공자 같은 제3자가 사용자를 대신해 트랜잭션 수수료를 지불할 수 있게 해주는 스마트 컨트랙트임&lt;/p></description></item></channel></rss>
