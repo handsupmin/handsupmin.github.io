@@ -12,4 +12,12 @@
 &lt;li>
 &lt;p>&lt;strong>메타데이터와 저장소&lt;/strong>
 토큰 URI가 가리키는 메타데이터는 IPFS나 Arweave 등 영속 스토리지 사용 권장
-중앙화 서버만 쓰면 리빌 이후 임의 변경 리스크가 커짐&lt;/p></description></item></channel></rss>
+중앙화 서버만 쓰면 리빌 이후 임의 변경 리스크가 커짐&lt;/p></description></item><item><title>NFT란? NFT 핵심 개념 정리</title><link>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</link><pubDate>Sat, 20 Sep 2025 16:41:07 +0000</pubDate><guid>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</guid><description>&lt;h3 id="서문">서문&lt;/h3>
+&lt;p>NFT는 몇 년 새 대중의 관심을 받았지만 개념과 절차가 분산돼 있어 입문자가 막히기 쉬움
+이 글은 &lt;strong>실무자 관점&lt;/strong>에서 NFT의 핵심 개념을 단계적으로 정리하고 &lt;strong>구매·발행·보관 시 유의사항&lt;/strong>과 &lt;strong>운영 관행&lt;/strong>을 담는 것을 목표로 함&lt;/p>
+&lt;hr>
+&lt;h3 id="개념과-배경">개념과 배경&lt;/h3>
+&lt;p>NFT는 Non‑Fungible Token의 약자이며 대체 불가능한 토큰을 의미함
+동일 단위끼리 교환 가능한 자산은 펀저블 토큰이라 부르고 NFT는 각 토큰이 &lt;strong>고유 식별자와 속성&lt;/strong>을 가져 상호 교환 시 동일 가치를 보장하지 않음
+블록체인에 기록된 소유권은 변경이 어렵고 거래 이력이 투명하게 남는다는 장점이 있음
+온체인 소유권이 &lt;strong>저작권·초상권 등 법적 권리와 자동 동치가 아님&lt;/strong>에 유의해야 함&lt;/p></description></item></channel></rss>
