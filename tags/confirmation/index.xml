@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Confirmation on HandsLog</title><link>https://handsupmin.github.io/tags/confirmation/</link><description>Recent content in Confirmation on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Sun, 28 Sep 2025 13:05:58 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/confirmation/index.xml" rel="self" type="application/rss+xml"/><item><title>블록체인 Reorg(체인 재구성) 이해</title><link>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</link><pubDate>Sun, 28 Sep 2025 13:05:58 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</guid><description>&lt;h2 id="개념과-배경">개념과 배경&lt;/h2>
+&lt;p>Reorg는 동시에 생성된 블록로 체인이 잠시 분기된 뒤 합의 규칙에 따라 더 우세한 분기로 갈아타는 상황을 뜻함
+짧아진 분기에 있던 블록은 활성 체인에서 제외되어 존재하지 않았던 것으로 취급됨
+노드는 자신의 로컬 관점에서 더 우세한 체인을 발견하면 그 체인으로 교체하는데 이 현상은 네트워크 전체가 동시에 일어나는 게 아니라 각 노드에서 국소적으로 발생함&lt;/p>
+&lt;h2 id="핵심-용어-정리">핵심 용어 정리&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>스테일 블록 best chain에 편입되지 못한 정상 블록을 말함&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>오펀 블록 전통적으로 부모를 모르는 블록을 의미하지만 커뮤니티에선 스테일 블록과 혼용되는 경우가 많음&lt;/p></description></item></channel></rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Cryptography on HandsLog</title><link>https://handsupmin.github.io/categories/cryptography/</link><description>Recent content in Cryptography on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Mon, 29 Sep 2025 13:10:22 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/categories/cryptography/index.xml" rel="self" type="application/rss+xml"/><item><title>영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이</title><link>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link><pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate><guid>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
+&lt;p>영지식 증명은 어떤 명제가 참임을 설득하면서도 그 근거가 되는 비밀은 끝까지 숨기는 절차를 말함
+블록체인과 프라이버시 보존 컴퓨팅에서 핵심 도구로 자리 잡았고 범용 계산의 유효성을 작은 증명으로 압축해 전달하는 현대 프로토콜의 기초로 쓰임
+이 글은 기본 개념과 직관, 수학적 성질, 대화형과 비대화형의 차이, 디지털 서명과의 구분, 이산로그 기반 간단 Σ-프로토콜까지 한 번에 정리함&lt;/p>
+&lt;h2 id="목적과-맥락">목적과 맥락&lt;/h2>
+&lt;ul>
+&lt;li>비밀을 공개하지 않고 유효성만 검증하려는 요구 증가&lt;/li>
+&lt;li>퍼블릭 블록체인에서 데이터 비공개 유지와 정합성 보장 필요 확대&lt;/li>
+&lt;li>오프체인 연산을 온체인에 작은 증명으로 제출해 확장성과 비용 개선 추구&lt;/li>
+&lt;/ul>
+&lt;h2 id="핵심-개념과-정의">핵심 개념과 정의&lt;/h2>
+&lt;ul>
+&lt;li>Prover 비밀을 가진 참여자. 비밀을 공개하지 않고 명제의 참을 설득하려는 주체&lt;/li>
+&lt;li>Verifier 검증자. Prover가 비밀을 가진 사실 또는 명제가 참이라는 사실만 확인하려는 주체&lt;/li>
+&lt;li>Witness 또는 Secret 명제의 참을 뒷받침하는 비밀 값 또는 비밀 지식&lt;/li>
+&lt;li>Statement 공개 가능한 명제 표현. 예 y = g^x mod p에서 x를 알고 있음을 증명&lt;/li>
+&lt;li>Challenge 검증자가 제시하는 무작위 도전값. 조작 불가와 예측 불가가 전제&lt;/li>
+&lt;li>Transcript 또는 View 대화형 상호작용의 기록. 시뮬레이터가 동일 분포로 재현 가능해야 영지식 성립&lt;/li>
+&lt;/ul>
+&lt;h2 id="영지식-증명의-세-가지-성질">영지식 증명의 세 가지 성질&lt;/h2>
+&lt;ul>
+&lt;li>완전성 Completeness 정직한 Prover가 비밀을 가지고 있으면 정직한 Verifier는 높은 확률로 설득됨&lt;/li>
+&lt;li>건전성 Soundness 비밀이 없으면 Prover가 속일 확률이 매우 낮음. 도전 공간 확대나 반복으로 속임 확률을 지수적으로 낮춤&lt;/li>
+&lt;li>영지식성 Zero-Knowledge Verifier는 명제가 참이라는 사실 외 추가 정보를 얻지 못함. 시뮬레이터가 실제와 구별 불가한 트랜스크립트를 비밀 없이 생성 가능해야 함&lt;/li>
+&lt;/ul>
+&lt;h2 id="직관적-예시-알리바바-동굴">직관적 예시 알리바바 동굴&lt;/h2>
+&lt;ul>
+&lt;li>동굴의 두 갈래 A와 B 사이를 가로막는 문이 있고 비밀 주문을 알면 반대편으로 넘어올 수 있음&lt;/li>
+&lt;li>검증자는 Prover가 들어간 뒤 무작위로 A 또는 B로 나오라고 요구함&lt;/li>
+&lt;li>Prover가 주문을 모르면 자신이 들어간 쪽을 요구받을 때만 성공 가능. 1회 성공 확률 1/2&lt;/li>
+&lt;li>k회 독립 반복하면 모두 속일 확률 2^-k로 급감&lt;/li>
+&lt;li>검증자는 주문 내용은 모르지만 Prover가 주문을 안다는 사실만 높은 확률로 확신 가능함&lt;/li>
+&lt;/ul>
+&lt;p>핵심 포인트&lt;/p></description></item></channel></rss>
