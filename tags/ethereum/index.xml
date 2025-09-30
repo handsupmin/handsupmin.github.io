@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ethereum on HandsLog</title><link>https://handsupmin.github.io/tags/ethereum/</link><description>Recent content in Ethereum on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Mon, 22 Sep 2025 13:10:11 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/ethereum/index.xml" rel="self" type="application/rss+xml"/><item><title>블록체인이란? 블록체인 개념 총정리</title><link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link><pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ethereum on HandsLog</title><link>https://handsupmin.github.io/tags/ethereum/</link><description>Recent content in Ethereum on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Tue, 30 Sep 2025 13:10:16 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/ethereum/index.xml" rel="self" type="application/rss+xml"/><item><title>스테이킹 핵심 개념과 이더리움 검증자 32 ETH 요건</title><link>https://handsupmin.github.io/posts/staking-basics-ethereum-validator-32eth-8cc2be/</link><pubDate>Tue, 30 Sep 2025 13:10:16 +0000</pubDate><guid>https://handsupmin.github.io/posts/staking-basics-ethereum-validator-32eth-8cc2be/</guid><description>&lt;h3 id="개념">개념&lt;/h3>
+&lt;p>스테이킹은 여러 사용자가 자금을 모아 검증자 노드를 운영하고 보상과 위험을 지분 비율로 공유하는 참여 모델&lt;/p>
+&lt;h3 id="동작">동작&lt;/h3>
+&lt;p>검증자에는 최소 예치금 필요
+이더리움은 32 ETH 요구
+풀에 위임하면 노드가 검증을 수행하고 발생 보상을 분배
+규정 위반이나 다운타임 발생 시 슬래싱으로 원금 일부 손실 위험&lt;/p>
+&lt;h3 id="참고자료">참고자료&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://ethereum.org/en/staking/">https://ethereum.org/en/staking/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://polkadot.network/learn/staking/">https://polkadot.network/learn/staking/&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>블록체인이란? 블록체인 개념 총정리</title><link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link><pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
 &lt;p>블록체인은 &lt;strong>중앙 기관 없이&lt;/strong> 참여자들이 거래를 기록·검증·공유하는 &lt;strong>분산 원장&lt;/strong> 기술임
 이 글은 블록체인을 &lt;strong>초보자 친화적으로&lt;/strong> 설명하고, &lt;strong>실무 체크리스트&lt;/strong>까지 정리함&lt;/p>
 &lt;hr>

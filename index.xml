@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>HandsLog</title><link>https://handsupmin.github.io/</link><description>Recent content on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Mon, 29 Sep 2025 13:10:22 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이</title><link>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link><pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate><guid>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>HandsLog</title><link>https://handsupmin.github.io/</link><description>Recent content on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Tue, 30 Sep 2025 13:10:16 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>스테이킹 핵심 개념과 이더리움 검증자 32 ETH 요건</title><link>https://handsupmin.github.io/posts/staking-basics-ethereum-validator-32eth-8cc2be/</link><pubDate>Tue, 30 Sep 2025 13:10:16 +0000</pubDate><guid>https://handsupmin.github.io/posts/staking-basics-ethereum-validator-32eth-8cc2be/</guid><description>&lt;h3 id="개념">개념&lt;/h3>
+&lt;p>스테이킹은 여러 사용자가 자금을 모아 검증자 노드를 운영하고 보상과 위험을 지분 비율로 공유하는 참여 모델&lt;/p>
+&lt;h3 id="동작">동작&lt;/h3>
+&lt;p>검증자에는 최소 예치금 필요
+이더리움은 32 ETH 요구
+풀에 위임하면 노드가 검증을 수행하고 발생 보상을 분배
+규정 위반이나 다운타임 발생 시 슬래싱으로 원금 일부 손실 위험&lt;/p>
+&lt;h3 id="참고자료">참고자료&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://ethereum.org/en/staking/">https://ethereum.org/en/staking/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://polkadot.network/learn/staking/">https://polkadot.network/learn/staking/&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이</title><link>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link><pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate><guid>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
 &lt;p>영지식 증명은 어떤 명제가 참임을 설득하면서도 그 근거가 되는 비밀은 끝까지 숨기는 절차를 말함
 블록체인과 프라이버시 보존 컴퓨팅에서 핵심 도구로 자리 잡았고 범용 계산의 유효성을 작은 증명으로 압축해 전달하는 현대 프로토콜의 기초로 쓰임
 이 글은 기본 개념과 직관, 수학적 성질, 대화형과 비대화형의 차이, 디지털 서명과의 구분, 이산로그 기반 간단 Σ-프로토콜까지 한 번에 정리함&lt;/p>
