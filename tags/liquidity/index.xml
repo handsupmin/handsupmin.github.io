@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Liquidity on HandsLog</title><link>https://handsupmin.github.io/tags/liquidity/</link><description>Recent content in Liquidity on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Wed, 01 Oct 2025 13:10:22 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/liquidity/index.xml" rel="self" type="application/rss+xml"/><item><title>WETH 이해와 활용 가이드 – ETH를 ERC-20로 포장하는 이유와 동작 원리</title><link>https://handsupmin.github.io/posts/weth-eth-erc20-guide-683552/</link><pubDate>Wed, 01 Oct 2025 13:10:22 +0000</pubDate><guid>https://handsupmin.github.io/posts/weth-eth-erc20-guide-683552/</guid><description>&lt;h3 id="개념배경">개념/배경&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Liquidity on HandsLog</title><link>https://handsupmin.github.io/tags/liquidity/</link><description>Recent content in Liquidity on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Sun, 05 Oct 2025 13:05:25 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/liquidity/index.xml" rel="self" type="application/rss+xml"/><item><title>디파이 DEX 가이드: 유니스왑과 AMM 이해, V1~V3 핵심 변화</title><link>https://handsupmin.github.io/posts/defi-dex-uniswap-amm-v1-v3-guide-4e209f/</link><pubDate>Sun, 05 Oct 2025 13:05:25 +0000</pubDate><guid>https://handsupmin.github.io/posts/defi-dex-uniswap-amm-v1-v3-guide-4e209f/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
+&lt;p>유니스왑은 AMM 기반 DEX의 표준을 사실상 정의한 프로토콜로 평가받음
+이 글은 유니스왑의 핵심 개념과 AMM 구조, V1→V2→V3로 이어진 변화의 맥락을 정리함
+오더북 기반 초창기 DEX의 한계를 짚고, 왜 AMM이 필요한지, 유동성과 슬리피지가 어떤 상관을 가지는지, V3에서 자본 효율성이 어떻게 극적으로 개선되었는지까지 실무 관점으로 설명함&lt;/p>
+&lt;h3 id="배경과-맥락">배경과 맥락&lt;/h3>
+&lt;p>CEX는 주문 매칭과 자산 보관을 중앙 시스템에서 수행하는 구조
+사용자는 체결 속도와 편의성은 얻지만, 온체인 투명성과 자기 보관이라는 블록체인의 장점을 활용하지 못함
+초기 DEX는 오더북을 온체인에 올리는 방식을 시도했으나 가스 비용, 확장성, 낮은 유동성으로 사용자 경험이 제한됨
+이 한계를 우회한 접근이 AMM 기반 모델이며, 유니스왑은 단순하고 검증 가능한 가격 결정 규칙을 온체인에 구현해 대중화에 성공함&lt;/p></description></item><item><title>WETH 이해와 활용 가이드 – ETH를 ERC-20로 포장하는 이유와 동작 원리</title><link>https://handsupmin.github.io/posts/weth-eth-erc20-guide-683552/</link><pubDate>Wed, 01 Oct 2025 13:10:22 +0000</pubDate><guid>https://handsupmin.github.io/posts/weth-eth-erc20-guide-683552/</guid><description>&lt;h3 id="개념배경">개념/배경&lt;/h3>
 &lt;p>WETH는 이더리움 네트워크의 기본 자산인 ETH를 ERC-20 표준과 호환되도록 포장한 토큰을 의미함
 ETH 자체는 계정 잔고 모델을 따르며 ERC-20 인터페이스를 구현하지 않음
 반면 대부분의 디파이 프로토콜과 토큰 간 상호작용은 ERC-20을 전제로 동작함
