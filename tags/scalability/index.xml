@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Scalability on HandsLog</title><link>https://handsupmin.github.io/tags/scalability/</link><description>Recent content in Scalability on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Tue, 07 Oct 2025 13:10:05 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/scalability/index.xml" rel="self" type="application/rss+xml"/><item><title>롤업 네트워크의 개념과 동작 원리, 옵티미스틱 vs ZK 롤업</title><link>https://handsupmin.github.io/posts/rollup-network-concepts-optimistic-vs-zk-1b9d9c/</link><pubDate>Tue, 07 Oct 2025 13:10:05 +0000</pubDate><guid>https://handsupmin.github.io/posts/rollup-network-concepts-optimistic-vs-zk-1b9d9c/</guid><description>&lt;h3 id="개념배경">개념/배경&lt;/h3>
+&lt;p>롤업은 레이어 2에서 다수 트랜잭션을 묶어 처리하고 요약 데이터만 레이어 1에 기록하는 확장 솔루션
+레이어 1의 보안을 그대로 이용하면서 처리량 증가와 수수료 절감 달성&lt;/p>
+&lt;h3 id="핵심-개념">핵심 개념&lt;/h3>
+&lt;p>옵티미스틱 롤업 기본 유효 가정, 이의 제기 기간에 사기 증명 사용, EVM 호환 유리
+ZK 롤업 영지식 증명으로 즉시 검증, 빠른 확정성과 출금, 증명 생성 복잡도와 비용 존재&lt;/p>
+&lt;h3 id="동작-원리">동작 원리&lt;/h3>
+&lt;p>시퀀서가 트랜잭션을 배치로 모아 데이터 가용성 형태로 L1에 게시
+검증은 사기 증명 또는 유효성 증명 사용
+출금 시간은 옵티미스틱은 챌린지 기간 필요, ZK는 증명 생성 시간에 좌우&lt;/p></description></item></channel></rss>
