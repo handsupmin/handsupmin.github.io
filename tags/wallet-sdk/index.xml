@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Web3 on HandsLog</title><link>https://handsupmin.github.io/categories/web3/</link><description>Recent content in Web3 on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Wed, 08 Oct 2025 13:10:01 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/categories/web3/index.xml" rel="self" type="application/rss+xml"/><item><title>Ramper에서 EIP-712 서명 우회하기: signMessage로 대체</title><link>https://handsupmin.github.io/posts/ramper-eip-712-signmessage-workaround-8bbbd6/</link><pubDate>Wed, 08 Oct 2025 13:10:01 +0000</pubDate><guid>https://handsupmin.github.io/posts/ramper-eip-712-signmessage-workaround-8bbbd6/</guid><description>&lt;h3 id="개념배경">개념/배경&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Wallet-Sdk on HandsLog</title><link>https://handsupmin.github.io/tags/wallet-sdk/</link><description>Recent content in Wallet-Sdk on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Wed, 08 Oct 2025 13:10:01 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/wallet-sdk/index.xml" rel="self" type="application/rss+xml"/><item><title>Ramper에서 EIP-712 서명 우회하기: signMessage로 대체</title><link>https://handsupmin.github.io/posts/ramper-eip-712-signmessage-workaround-8bbbd6/</link><pubDate>Wed, 08 Oct 2025 13:10:01 +0000</pubDate><guid>https://handsupmin.github.io/posts/ramper-eip-712-signmessage-workaround-8bbbd6/</guid><description>&lt;h3 id="개념배경">개념/배경&lt;/h3>
 &lt;p>일부 환경에서 signTypedData 호출이 막히거나 동작 불안정한 경우 있음
 EIP-712는 결국 0x1901 + 도메인 해시 + 구조체 해시를 keccak256 한 다이제스트를 ECDSA로 서명하는 절차임
 핵심은 동일 다이제스트를 만들고 프리픽스 없이 서명하는지 확인하는 것임&lt;/p>
@@ -13,18 +13,4 @@ signMessage가 raw 바이트 서명을 지원해야 personal_sign 접두어가 �
 &lt;p>signMessage가 personal_sign 방식이면 &amp;ldquo;\x19Ethereum Signed Message\n32&amp;rdquo; 접두어가 추가됨
 이 경우 검증도 동일 접두어 포함 다이제스트로 진행 필요
 스마트 계정은 EIP-1271 규약으로 검증 필요
-도메인과 타입 정의의 일관성 유지, 체인 ID와 verifyingContract 변경 시 도메인 해시 불일치 위험 있음&lt;/p></description></item><item><title>Viem으로 이더리움 읽기·쓰기 시작하기 가이드</title><link>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</link><pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate><guid>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
-&lt;p>Viem은 이더리움 계열 체인과 상호작용하는 경량 Web3 클라이언트 라이브러리임
-ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구지만, 모듈 분리 구조와 타입 안전성, 빌드 사이즈, 성능에서 강점이 있음
-프로덕션에서 자주 필요한 읽기와 쓰기 흐름을 중심으로, 설치부터 블록 조회, 컨트랙트 읽기, 컨트랙트 쓰기까지의 필수 개념과 실용 팁 정리&lt;/p>
-&lt;h3 id="핵심-개념과-정의">핵심 개념과 정의&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>Public Client&lt;/p>
-&lt;ul>
-&lt;li>퍼블릭 RPC를 통해 체인 데이터 읽기 전용 호출 수행하는 클라이언트&lt;/li>
-&lt;li>블록, 트랜잭션, 로그 조회, read-only 컨트랙트 호출 담당&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Wallet Client&lt;/p></description></item></channel></rss>
+도메인과 타입 정의의 일관성 유지, 체인 ID와 verifyingContract 변경 시 도메인 해시 불일치 위험 있음&lt;/p></description></item></channel></rss>
