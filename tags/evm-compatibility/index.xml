@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Scalability on HandsLog</title><link>https://handsupmin.github.io/tags/scalability/</link><description>Recent content in Scalability on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Thu, 09 Oct 2025 13:10:21 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/scalability/index.xml" rel="self" type="application/rss+xml"/><item><title>zkSync 생태계 정리, Era와 Elastic Chain으로 보는 ZK-Rollup 확장 전략</title><link>https://handsupmin.github.io/posts/zksync-ecosystem-era-elastic-chain-zk-rollup-84f049/</link><pubDate>Thu, 09 Oct 2025 13:10:21 +0000</pubDate><guid>https://handsupmin.github.io/posts/zksync-ecosystem-era-elastic-chain-zk-rollup-84f049/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Evm-Compatibility on HandsLog</title><link>https://handsupmin.github.io/tags/evm-compatibility/</link><description>Recent content in Evm-Compatibility on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Thu, 09 Oct 2025 13:10:21 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/evm-compatibility/index.xml" rel="self" type="application/rss+xml"/><item><title>zkSync 생태계 정리, Era와 Elastic Chain으로 보는 ZK-Rollup 확장 전략</title><link>https://handsupmin.github.io/posts/zksync-ecosystem-era-elastic-chain-zk-rollup-84f049/</link><pubDate>Thu, 09 Oct 2025 13:10:21 +0000</pubDate><guid>https://handsupmin.github.io/posts/zksync-ecosystem-era-elastic-chain-zk-rollup-84f049/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
 &lt;p>이더리움은 보안과 탈중앙성을 유지하는 대신 처리량과 비용에서 제약이 큼. zkSync는 ZK-Rollup 기반 Layer 2로 이 문제를 해결하는 접근. 본 글은 zkSync의 기술 맥락, Era와 Elastic Chain의 차이, 선택과 운영 시 고려사항까지 한 번에 정리&lt;/p>
 &lt;h3 id="핵심-개념">핵심 개념&lt;/h3>
 &lt;ul>
@@ -180,13 +180,4 @@
 &lt;li>규제, 거버넌스, 데이터 보존 요구가 명확하다면 모듈식 옵션을 비교 평가 후 결정&lt;/li>
 &lt;/ul>
 &lt;h3 id="마무리">마무리&lt;/h3>
-&lt;p>zkSync는 ZK-Rollup의 보안과 효율을 실사용 수준으로 끌어올린 생태계. Era는 당장 사용할 수 있는 범용 L2 환경을, Elastic Chain은 장기 확장을 위한 네트워크형 설계를 제시. 워크로드 특성과 조직의 리스크 허용도를 바탕으로 보안, 비용, 최종성, 운영 복잡성의 균형점을 잡는 것이 핵심&lt;/p></description></item><item><title>롤업 네트워크의 개념과 동작 원리, 옵티미스틱 vs ZK 롤업</title><link>https://handsupmin.github.io/posts/rollup-network-concepts-optimistic-vs-zk-1b9d9c/</link><pubDate>Tue, 07 Oct 2025 13:10:05 +0000</pubDate><guid>https://handsupmin.github.io/posts/rollup-network-concepts-optimistic-vs-zk-1b9d9c/</guid><description>&lt;h3 id="개념배경">개념/배경&lt;/h3>
-&lt;p>롤업은 레이어 2에서 다수 트랜잭션을 묶어 처리하고 요약 데이터만 레이어 1에 기록하는 확장 솔루션
-레이어 1의 보안을 그대로 이용하면서 처리량 증가와 수수료 절감 달성&lt;/p>
-&lt;h3 id="핵심-개념">핵심 개념&lt;/h3>
-&lt;p>옵티미스틱 롤업 기본 유효 가정, 이의 제기 기간에 사기 증명 사용, EVM 호환 유리
-ZK 롤업 영지식 증명으로 즉시 검증, 빠른 확정성과 출금, 증명 생성 복잡도와 비용 존재&lt;/p>
-&lt;h3 id="동작-원리">동작 원리&lt;/h3>
-&lt;p>시퀀서가 트랜잭션을 배치로 모아 데이터 가용성 형태로 L1에 게시
-검증은 사기 증명 또는 유효성 증명 사용
-출금 시간은 옵티미스틱은 챌린지 기간 필요, ZK는 증명 생성 시간에 좌우&lt;/p></description></item></channel></rss>
+&lt;p>zkSync는 ZK-Rollup의 보안과 효율을 실사용 수준으로 끌어올린 생태계. Era는 당장 사용할 수 있는 범용 L2 환경을, Elastic Chain은 장기 확장을 위한 네트워크형 설계를 제시. 워크로드 특성과 조직의 리스크 허용도를 바탕으로 보안, 비용, 최종성, 운영 복잡성의 균형점을 잡는 것이 핵심&lt;/p></description></item></channel></rss>
