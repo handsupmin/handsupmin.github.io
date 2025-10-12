@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Data-Availability on HandsLog</title><link>https://handsupmin.github.io/tags/data-availability/</link><description>Recent content in Data-Availability on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Thu, 25 Sep 2025 13:10:01 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/data-availability/index.xml" rel="self" type="application/rss+xml"/><item><title>Off-chain 개념과 데이터 가용성: zkRollup vs Validium 비교</title><link>https://handsupmin.github.io/posts/off-chain-data-availability-zkrollup-validium-274b74/</link><pubDate>Thu, 25 Sep 2025 13:10:01 +0000</pubDate><guid>https://handsupmin.github.io/posts/off-chain-data-availability-zkrollup-validium-274b74/</guid><description>&lt;h3 id="개념-및-배경">개념 및 배경&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Data-Availability on HandsLog</title><link>https://handsupmin.github.io/tags/data-availability/</link><description>Recent content in Data-Availability on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Sun, 12 Oct 2025 13:05:35 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/data-availability/index.xml" rel="self" type="application/rss+xml"/><item><title>이더리움 L2의 개념과 동작 원리, 선택 기준 정리</title><link>https://handsupmin.github.io/posts/ethereum-layer-2-overview-and-guide-8152a6/</link><pubDate>Sun, 12 Oct 2025 13:05:35 +0000</pubDate><guid>https://handsupmin.github.io/posts/ethereum-layer-2-overview-and-guide-8152a6/</guid><description>&lt;h3 id="개념과-배경">개념과 배경&lt;/h3>
+&lt;p>이더리움 같은 L1은 보안과 분산성 우선 설계로 처리량이 제한적임
+초당 트랜잭션 수가 낮고 수수료가 높아 단건 송금이나 소액 결제에 비효율 발생
+여러 트랜잭션을 묶어 처리하고 최소 정보만 L1에 게시해 확장성을 얻는 접근이 L2의 핵심 아이디어임
+최근 EIP-4844로 L2 데이터 게시 비용이 큰 폭으로 하락해 L2의 경제성이 더 높아짐&lt;/p>
+&lt;h3 id="계층-정리">계층 정리&lt;/h3>
+&lt;p>레이어 0 L0 블록체인 네트워킹·합의 인프라 기반, 체인 간 메시지 라우팅과 상호운용 지향
+레이어 1 L1 자체 합의로 트랜잭션 최종성 확보, 보안의 근간 역할
+레이어 2 L2 L1 위에서 실행되는 확장 계층, 트랜잭션을 모아 처리 후 압축 정보와 증명을 L1에 게시
+레이어 3 L3 L2 위 애플리케이션 레이어, Dapp과 도메인 특화 기능 집약
+참고 L2는 보안을 L1에 의존한다는 점이 핵심이며, 별도 합의로 운영되는 사이드체인은 보안 가정이 다름&lt;/p></description></item><item><title>Off-chain 개념과 데이터 가용성: zkRollup vs Validium 비교</title><link>https://handsupmin.github.io/posts/off-chain-data-availability-zkrollup-validium-274b74/</link><pubDate>Thu, 25 Sep 2025 13:10:01 +0000</pubDate><guid>https://handsupmin.github.io/posts/off-chain-data-availability-zkrollup-validium-274b74/</guid><description>&lt;h3 id="개념-및-배경">개념 및 배경&lt;/h3>
 &lt;p>Off‑chain은 블록체인 &lt;strong>외부&lt;/strong>에서 연산·저장을 수행하고 &lt;strong>필요한 증명 또는 요약만 온체인에 게시&lt;/strong>하는 접근을 말함
 목표는 &lt;strong>가스비 절감&lt;/strong>, &lt;strong>처리량 확대&lt;/strong>, &lt;strong>데이터 활용 유연성 확보&lt;/strong>임
 온체인은 합의와 정산의 최소 핵심만 유지하고, 나머지는 오프체인 시스템으로 이전하는 설계 철학임&lt;/p>

@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Rollups on HandsLog</title><link>https://handsupmin.github.io/tags/rollups/</link><description>Recent content in Rollups on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Tue, 07 Oct 2025 13:10:05 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/rollups/index.xml" rel="self" type="application/rss+xml"/><item><title>롤업 네트워크의 개념과 동작 원리, 옵티미스틱 vs ZK 롤업</title><link>https://handsupmin.github.io/posts/rollup-network-concepts-optimistic-vs-zk-1b9d9c/</link><pubDate>Tue, 07 Oct 2025 13:10:05 +0000</pubDate><guid>https://handsupmin.github.io/posts/rollup-network-concepts-optimistic-vs-zk-1b9d9c/</guid><description>&lt;h3 id="개념배경">개념/배경&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Rollups on HandsLog</title><link>https://handsupmin.github.io/tags/rollups/</link><description>Recent content in Rollups on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Sun, 12 Oct 2025 13:05:35 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/rollups/index.xml" rel="self" type="application/rss+xml"/><item><title>이더리움 L2의 개념과 동작 원리, 선택 기준 정리</title><link>https://handsupmin.github.io/posts/ethereum-layer-2-overview-and-guide-8152a6/</link><pubDate>Sun, 12 Oct 2025 13:05:35 +0000</pubDate><guid>https://handsupmin.github.io/posts/ethereum-layer-2-overview-and-guide-8152a6/</guid><description>&lt;h3 id="개념과-배경">개념과 배경&lt;/h3>
+&lt;p>이더리움 같은 L1은 보안과 분산성 우선 설계로 처리량이 제한적임
+초당 트랜잭션 수가 낮고 수수료가 높아 단건 송금이나 소액 결제에 비효율 발생
+여러 트랜잭션을 묶어 처리하고 최소 정보만 L1에 게시해 확장성을 얻는 접근이 L2의 핵심 아이디어임
+최근 EIP-4844로 L2 데이터 게시 비용이 큰 폭으로 하락해 L2의 경제성이 더 높아짐&lt;/p>
+&lt;h3 id="계층-정리">계층 정리&lt;/h3>
+&lt;p>레이어 0 L0 블록체인 네트워킹·합의 인프라 기반, 체인 간 메시지 라우팅과 상호운용 지향
+레이어 1 L1 자체 합의로 트랜잭션 최종성 확보, 보안의 근간 역할
+레이어 2 L2 L1 위에서 실행되는 확장 계층, 트랜잭션을 모아 처리 후 압축 정보와 증명을 L1에 게시
+레이어 3 L3 L2 위 애플리케이션 레이어, Dapp과 도메인 특화 기능 집약
+참고 L2는 보안을 L1에 의존한다는 점이 핵심이며, 별도 합의로 운영되는 사이드체인은 보안 가정이 다름&lt;/p></description></item><item><title>롤업 네트워크의 개념과 동작 원리, 옵티미스틱 vs ZK 롤업</title><link>https://handsupmin.github.io/posts/rollup-network-concepts-optimistic-vs-zk-1b9d9c/</link><pubDate>Tue, 07 Oct 2025 13:10:05 +0000</pubDate><guid>https://handsupmin.github.io/posts/rollup-network-concepts-optimistic-vs-zk-1b9d9c/</guid><description>&lt;h3 id="개념배경">개념/배경&lt;/h3>
 &lt;p>롤업은 레이어 2에서 다수 트랜잭션을 묶어 처리하고 요약 데이터만 레이어 1에 기록하는 확장 솔루션
 레이어 1의 보안을 그대로 이용하면서 처리량 증가와 수수료 절감 달성&lt;/p>
 &lt;h3 id="핵심-개념">핵심 개념&lt;/h3>
