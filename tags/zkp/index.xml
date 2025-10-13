@@ -31,19 +31,4 @@
 &lt;li>k회 독립 반복하면 모두 속일 확률 2^-k로 급감&lt;/li>
 &lt;li>검증자는 주문 내용은 모르지만 Prover가 주문을 안다는 사실만 높은 확률로 확신 가능함&lt;/li>
 &lt;/ul>
-&lt;p>핵심 포인트&lt;/p></description></item><item><title>재귀적 영지식 증명이란? (Recursion ZKP)</title><link>https://handsupmin.github.io/posts/recursion-zkp-basics-274b74/</link><pubDate>Sun, 21 Sep 2025 02:33:25 +0000</pubDate><guid>https://handsupmin.github.io/posts/recursion-zkp-basics-274b74/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
-&lt;p>재귀적 영지식 증명 Recursion ZKP 은 여러 개의 ZK 증명을 &lt;strong>계층적으로 합성&lt;/strong>해 &lt;strong>단일 증명&lt;/strong>으로 만드는 기법임
-목적은 온체인 검증 횟수와 가스를 줄이고, L2 등에서 생성한 다수 증명을 하나로 압축해 &lt;strong>검증 비용을 상수 수준으로 수렴&lt;/strong>시키는 데 있음&lt;/p>
-&lt;hr>
-&lt;h3 id="왜-필요한가">왜 필요한가&lt;/h3>
-&lt;ul>
-&lt;li>트랜잭션 단위로 개별 증명을 온체인 검증하면 &lt;strong>검증 비용이 선형 증가&lt;/strong>함&lt;/li>
-&lt;li>재귀를 쓰면 n개의 증명을 &lt;strong>트리 형태로 합성&lt;/strong>해 &lt;strong>한 번의 최종 검증&lt;/strong>으로 대체 가능함&lt;/li>
-&lt;li>롤업·배치 처리·프라이버시 워크로드에서 &lt;strong>확장성&lt;/strong>과 &lt;strong>최종성 지연 단축&lt;/strong>을 동시에 노림&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 id="핵심-개념">핵심 개념&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>내부 증명 Inner proofs&lt;/strong>
-원래 명제 트랜잭션, 상태 전이, 정책 검증 등에 대한 개별 ZK 증명 집합&lt;/p></description></item></channel></rss>
+&lt;p>핵심 포인트&lt;/p></description></item></channel></rss>
