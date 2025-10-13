@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Data-Indexing on HandsLog</title><link>https://handsupmin.github.io/tags/data-indexing/</link><description>Recent content in Data-Indexing on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Mon, 13 Oct 2025 13:10:20 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/data-indexing/index.xml" rel="self" type="application/rss+xml"/><item><title>블록체인 인덱서 개념과 동작 원리, 설계 체크리스트</title><link>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link><pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</guid><description>&lt;h3 id="개념과-배경">개념과 배경&lt;/h3>
+&lt;p>블록체인 인덱서는 블록체인에서 발생하는 데이터를 수집·정리·저장·제공하는 데이터 인프라
+원장은 블록 단위의 연속 구조이며 특정 주소나 이벤트만 빠르게 조회하기에는 비효율적 구조임
+디앱은 지갑 이력, 포지션, NFT 보유 내역 등 사용자 맥락 데이터를 저지연으로 요구함
+원장 전체를 순차 스캔하는 대신 목적형 인덱스를 사전에 만들어 API로 제공하는 것이 인덱서의 역할임&lt;/p>
+&lt;h3 id="핵심-개념과-정의">핵심 개념과 정의&lt;/h3>
+&lt;p>인덱싱 대상 데이터 유형&lt;/p>
+&lt;ul>
+&lt;li>블록 헤더와 트랜잭션 메타데이터&lt;/li>
+&lt;li>스마트 컨트랙트 이벤트 로그&lt;/li>
+&lt;li>컨트랙트 상태 스냅샷 또는 파생 지표&lt;/li>
+&lt;/ul>
+&lt;p>주요 구성 요소&lt;/p></description></item></channel></rss>
