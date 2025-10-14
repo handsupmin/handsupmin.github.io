@@ -1,30 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Bitcoin on HandsLog</title><link>https://handsupmin.github.io/tags/bitcoin/</link><description>Recent content in Bitcoin on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Mon, 22 Sep 2025 13:10:11 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/bitcoin/index.xml" rel="self" type="application/rss+xml"/><item><title>블록체인이란? 블록체인 개념 총정리</title><link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link><pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
-&lt;p>블록체인은 &lt;strong>중앙 기관 없이&lt;/strong> 참여자들이 거래를 기록·검증·공유하는 &lt;strong>분산 원장&lt;/strong> 기술임
-이 글은 블록체인을 &lt;strong>초보자 친화적으로&lt;/strong> 설명하고, &lt;strong>실무 체크리스트&lt;/strong>까지 정리함&lt;/p>
-&lt;hr>
-&lt;h2 id="큰-그림-시스템-구성">큰 그림: 시스템 구성&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>노드(Node)&lt;/strong>: 블록체인 소프트웨어 실행 주체&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>풀노드&lt;/strong>: 모든 블록·트랜잭션 검증·저장&lt;/li>
-&lt;li>&lt;strong>라이트 클라이언트&lt;/strong>: 헤더·머클 증명 기반 최소 검증&lt;/li>
-&lt;li>(참고) &lt;strong>아카이브 노드&lt;/strong>: 오래된 상태 포함 전체 상태 유지(필수 아님)&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>블록(Block)&lt;/strong>: 트랜잭션 묶음 + 메타데이터(블록헤더). 블록들이 선형 체인으로 연결됨&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>합의(Consensus)&lt;/strong>: 어떤 블록이 정식 이력인지 네트워크가 &lt;strong>공동으로&lt;/strong> 결정하는 규칙&lt;/p>
-&lt;ul>
-&lt;li>PoW: 작업증명(연산 경쟁)&lt;/li>
-&lt;li>PoS: 지분증명(검증자·보증금 기반)&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="해시hash와-위변조-방지">해시(Hash)와 위·변조 방지&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>해시 함수(SHA-256, Keccak-256 등)&lt;/strong>: 입력을 고정 길이로 압축하는 일방향 함수임&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bitcoin on HandsLog</title>
+    <link>https://handsupmin.github.io/tags/bitcoin/</link>
+    <description>Recent content in Bitcoin on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 22 Sep 2025 13:10:11 +0000</lastBuildDate>
+    <atom:link href="https://handsupmin.github.io/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>블록체인이란? 블록체인 개념 총정리</title>
+      <link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link>
+      <pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;블록체인은 &lt;strong&gt;중앙 기관 없이&lt;/strong&gt; 참여자들이 거래를 기록·검증·공유하는 &lt;strong&gt;분산 원장&lt;/strong&gt; 기술임
+이 글은 블록체인을 &lt;strong&gt;초보자 친화적으로&lt;/strong&gt; 설명하고, &lt;strong&gt;실무 체크리스트&lt;/strong&gt;까지 정리함&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;큰-그림-시스템-구성&#34;&gt;큰 그림: 시스템 구성&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;노드(Node)&lt;/strong&gt;: 블록체인 소프트웨어 실행 주체&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;풀노드&lt;/strong&gt;: 모든 블록·트랜잭션 검증·저장&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;라이트 클라이언트&lt;/strong&gt;: 헤더·머클 증명 기반 최소 검증&lt;/li&gt;
+&lt;li&gt;(참고) &lt;strong&gt;아카이브 노드&lt;/strong&gt;: 오래된 상태 포함 전체 상태 유지(필수 아님)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;블록(Block)&lt;/strong&gt;: 트랜잭션 묶음 + 메타데이터(블록헤더). 블록들이 선형 체인으로 연결됨&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;합의(Consensus)&lt;/strong&gt;: 어떤 블록이 정식 이력인지 네트워크가 &lt;strong&gt;공동으로&lt;/strong&gt; 결정하는 규칙&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PoW: 작업증명(연산 경쟁)&lt;/li&gt;
+&lt;li&gt;PoS: 지분증명(검증자·보증금 기반)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;해시hash와-위변조-방지&#34;&gt;해시(Hash)와 위·변조 방지&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;해시 함수(SHA-256, Keccak-256 등)&lt;/strong&gt;: 입력을 고정 길이로 압축하는 일방향 함수임&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

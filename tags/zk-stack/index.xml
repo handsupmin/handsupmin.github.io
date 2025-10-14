@@ -1,9 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Zk-Stack on HandsLog</title><link>https://handsupmin.github.io/tags/zk-stack/</link><description>Recent content in Zk-Stack on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Fri, 03 Oct 2025 13:07:57 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/zk-stack/index.xml" rel="self" type="application/rss+xml"/><item><title>Abstract L2 체인 개요와 설계 핵심: ZK Rollup, ZK Stack, 네이티브 계정 추상화, AGW</title><link>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</link><pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate><guid>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
-&lt;p>Abstract는 이더리움 보안을 상속하는 ZK Rollup 기반 L2 체인으로, 고비용·저처리량 한계를 완화하는 확장 층 제공 목표
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Zk-Stack on HandsLog</title>
+    <link>https://handsupmin.github.io/tags/zk-stack/</link>
+    <description>Recent content in Zk-Stack on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 03 Oct 2025 13:07:57 +0000</lastBuildDate>
+    <atom:link href="https://handsupmin.github.io/tags/zk-stack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Abstract L2 체인 개요와 설계 핵심: ZK Rollup, ZK Stack, 네이티브 계정 추상화, AGW</title>
+      <link>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</link>
+      <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Abstract는 이더리움 보안을 상속하는 ZK Rollup 기반 L2 체인으로, 고비용·저처리량 한계를 완화하는 확장 층 제공 목표
 ZK Stack으로 구축되어 체인 개발과 운영 구성 요소를 모듈화하고, 데이터 가용성은 EIP-4844 블롭을 활용해 비용을 절감하는 방향 추구
-핵심 차별점은 네이티브 계정 추상화 기반의 트랜잭션 수명주기와 글로벌 지갑 레이어를 통한 사용자 온보딩 간소화에 있음&lt;/p>
-&lt;h3 id="배경과-목적">배경과 목적&lt;/h3>
-&lt;p>이더리움 메인넷의 처리량은 대략 초당 수십 건 수준이며, 수수료 변동성도 큼
+핵심 차별점은 네이티브 계정 추상화 기반의 트랜잭션 수명주기와 글로벌 지갑 레이어를 통한 사용자 온보딩 간소화에 있음&lt;/p&gt;
+&lt;h3 id=&#34;배경과-목적&#34;&gt;배경과 목적&lt;/h3&gt;
+&lt;p&gt;이더리움 메인넷의 처리량은 대략 초당 수십 건 수준이며, 수수료 변동성도 큼
 저가치 대량 트랜잭션을 직접 L1에서 처리하는 것은 비현실적
 L2의 목표는 탈중앙성과 보안을 유지하면서 처리량과 비용 효율을 동시에 개선하는 것
-ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 온체인 데이터 요구량과 확정 시간을 줄이는 확장 경로 제공&lt;/p></description></item></channel></rss>
+ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 온체인 데이터 요구량과 확정 시간을 줄이는 확장 경로 제공&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

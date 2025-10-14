@@ -1,207 +1,288 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blockchain on HandsLog</title><link>https://handsupmin.github.io/tags/blockchain/</link><description>Recent content in Blockchain on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Mon, 13 Oct 2025 13:10:20 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/blockchain/index.xml" rel="self" type="application/rss+xml"/><item><title>블록체인 인덱서 가이드</title><link>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link><pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</guid><description>&lt;h1 id="블록체인-인덱서-가이드">블록체인 인덱서 가이드&lt;/h1>
-&lt;blockquote>
-&lt;p>인덱서는 원장 데이터를 제품 요구에 맞게 재구성해 저지연으로 제공하는 데이터 레이어임
-디앱 체감 속도와 신뢰도를 좌우하는 핵심 인프라임&lt;/p>&lt;/blockquote>
-&lt;hr>
-&lt;h2 id="왜-인덱서가-필요한가">왜 인덱서가 필요한가&lt;/h2>
-&lt;ul>
-&lt;li>블록체인 원장은 블록 단위 직렬 구조라 임의 접근과 조건 검색 비용 큼&lt;/li>
-&lt;li>디앱은 지갑 이력, 포지션, NFT 보유 등 사용자 맥락 데이터를 수십~수백 ms 내에 필요로 함&lt;/li>
-&lt;li>전체 원장을 매번 스캔하는 대신 목적형 보조 인덱스를 사전 구축해 API로 제공하는 전략이 효율적임&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="핵심-개념">핵심 개념&lt;/h2>
-&lt;h3 id="인덱싱-대상-데이터-유형">인덱싱 대상 데이터 유형&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>블록 헤더와 트랜잭션 메타데이터&lt;/p></description></item><item><title>블록체인 합의 알고리즘 가이드 — PoW, PoS와 영지식증명 활용</title><link>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link><pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
-&lt;p>퍼블릭 블록체인은 중앙 관리자 없이 다수 참여자가 같은 상태를 공유해야 함
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blockchain on HandsLog</title>
+    <link>https://handsupmin.github.io/tags/blockchain/</link>
+    <description>Recent content in Blockchain on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 13 Oct 2025 13:10:20 +0000</lastBuildDate>
+    <atom:link href="https://handsupmin.github.io/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>블록체인 인덱서 가이드</title>
+      <link>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link>
+      <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</guid>
+      <description>&lt;h1 id=&#34;블록체인-인덱서-가이드&#34;&gt;블록체인 인덱서 가이드&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;인덱서는 원장 데이터를 제품 요구에 맞게 재구성해 저지연으로 제공하는 데이터 레이어임
+디앱 체감 속도와 신뢰도를 좌우하는 핵심 인프라임&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;왜-인덱서가-필요한가&#34;&gt;왜 인덱서가 필요한가&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;블록체인 원장은 블록 단위 직렬 구조라 임의 접근과 조건 검색 비용 큼&lt;/li&gt;
+&lt;li&gt;디앱은 지갑 이력, 포지션, NFT 보유 등 사용자 맥락 데이터를 수십~수백 ms 내에 필요로 함&lt;/li&gt;
+&lt;li&gt;전체 원장을 매번 스캔하는 대신 목적형 보조 인덱스를 사전 구축해 API로 제공하는 전략이 효율적임&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h2&gt;
+&lt;h3 id=&#34;인덱싱-대상-데이터-유형&#34;&gt;인덱싱 대상 데이터 유형&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;블록 헤더와 트랜잭션 메타데이터&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>블록체인 합의 알고리즘 가이드 — PoW, PoS와 영지식증명 활용</title>
+      <link>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
+      <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;퍼블릭 블록체인은 중앙 관리자 없이 다수 참여자가 같은 상태를 공유해야 함
 이때 모두가 믿을 수 있는 하나의 기록을 선택하는 규칙이 필요하며 이를 합의 알고리즘이라 부름
 합의는 성능과 보안, 탈중앙화 사이의 균형 문제이기도 함
 PoW와 PoS는 대표적 합의 방식이며 최근에는 영지식증명 같은 암호 기법이 개인정보 보호와 검증 간소화에 결합되는 추세임
-실무 관점에서 각 방식의 원리와 트레이드오프, 영지식증명과의 접점을 정리함&lt;/p>
-&lt;h3 id="합의가-필요한-이유와-기준">합의가 필요한 이유와 기준&lt;/h3>
-&lt;ul>
-&lt;li>안전성 안전하게 하나의 정본을 고수하고 이중 지불 등 불변성 파괴가 발생하지 않음&lt;/li>
-&lt;li>활성 상태 네트워크 지연이나 일부 장애가 있어도 새 블록 생성이 지속됨&lt;/li>
-&lt;li>최종성 일단 확정된 거래가 되돌려지지 않음 확률적 또는 결정적 최종성으로 구분됨&lt;/li>
-&lt;li>시빌 내성 가짜 참여자 대량 생성 공격에 저항함 경제적 비용 또는 신원 검증 기반 메커니즘 필요&lt;/li>
-&lt;li>성능 처리량과 지연 시간 목표를 명확히 해야 함 블록 간격, 블록 크기, 검증 비용이 관건&lt;/li>
-&lt;li>탈중앙화 검증 참여 문턱을 낮춰 누구나 검증 가능하도록 설계 권장 풀 집중이나 소수 지배를 억제할 유인 설계 필요&lt;/li>
-&lt;/ul>
-&lt;h3 id="pow-작업증명-핵심">PoW 작업증명 핵심&lt;/h3>
-&lt;p>정의 특정 난이도의 해시 퍼즐을 풀어 블록 제안권을 얻는 방식 채굴자가 해시 연산을 반복해 목표값 미만의 해시를 찾는 구조
+실무 관점에서 각 방식의 원리와 트레이드오프, 영지식증명과의 접점을 정리함&lt;/p&gt;
+&lt;h3 id=&#34;합의가-필요한-이유와-기준&#34;&gt;합의가 필요한 이유와 기준&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;안전성 안전하게 하나의 정본을 고수하고 이중 지불 등 불변성 파괴가 발생하지 않음&lt;/li&gt;
+&lt;li&gt;활성 상태 네트워크 지연이나 일부 장애가 있어도 새 블록 생성이 지속됨&lt;/li&gt;
+&lt;li&gt;최종성 일단 확정된 거래가 되돌려지지 않음 확률적 또는 결정적 최종성으로 구분됨&lt;/li&gt;
+&lt;li&gt;시빌 내성 가짜 참여자 대량 생성 공격에 저항함 경제적 비용 또는 신원 검증 기반 메커니즘 필요&lt;/li&gt;
+&lt;li&gt;성능 처리량과 지연 시간 목표를 명확히 해야 함 블록 간격, 블록 크기, 검증 비용이 관건&lt;/li&gt;
+&lt;li&gt;탈중앙화 검증 참여 문턱을 낮춰 누구나 검증 가능하도록 설계 권장 풀 집중이나 소수 지배를 억제할 유인 설계 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;pow-작업증명-핵심&#34;&gt;PoW 작업증명 핵심&lt;/h3&gt;
+&lt;p&gt;정의 특정 난이도의 해시 퍼즐을 풀어 블록 제안권을 얻는 방식 채굴자가 해시 연산을 반복해 목표값 미만의 해시를 찾는 구조
 구성 요소 블록 헤더 난이도 목표값 논스 해시 함수 작업 증명 검증은 O(1)에 가까움 제안은 대량 계산 필요
 난이도 조정 네트워크 전체 해시 파워 변화를 따라 목표 블록 간격을 유지하도록 주기적 재조정 수행
 보안 모델 정직한 해시 파워가 과반을 차지하면 긴 사슬이 정본이 됨 51% 공격은 다수 해시력으로 과거 일부 구간을 재작성하는 위협을 의미
-장점&lt;/p></description></item><item><title>블록체인 채굴 개념과 동작 원리 PoW 보상 구조 이더리움 전환 사례</title><link>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link><pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
-&lt;p>채굴은 트랜잭션을 묶어 블록을 만들고 블록체인에 추가하는 행위이자, 네트워크를 공격으로부터 방어하는 핵심 보안 메커니즘임
+장점&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>블록체인 채굴 개념과 동작 원리 PoW 보상 구조 이더리움 전환 사례</title>
+      <link>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
+      <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;채굴은 트랜잭션을 묶어 블록을 만들고 블록체인에 추가하는 행위이자, 네트워크를 공격으로부터 방어하는 핵심 보안 메커니즘임
 역사적으로 비트코인과 이더리움은 작업증명 PoW 기반 채굴에 의존해 합의를 유지했음
 이더리움은 2022년 9월 The Merge로 지분증명 PoS로 전환하여 블록 생성에 소모되는 에너지를 크게 줄였고, 지금은 채굴 대신 검증자 스테이킹이 사용됨
-아래 내용은 채굴이 사용되던 시기의 개념과 동작 원리를 정리한 것으로, PoW 계열 네트워크나 역사적 맥락을 이해하는 데 목적이 있음&lt;/p>
-&lt;h3 id="핵심-개념과-정의">핵심 개념과 정의&lt;/h3>
-&lt;ul>
-&lt;li>블록체인 원장 네트워크 참여자가 공유하는 불변 기록 장부&lt;/li>
-&lt;li>트랜잭션 계정 상태를 변화시키는 요청 또는 메시지&lt;/li>
-&lt;li>채굴자 PoW 네트워크에서 블록을 제안하고 검증하는 주체&lt;/li>
-&lt;li>작업증명 PoW 특정 해시 조건을 만족하는 값을 찾는 계산을 통해 블록의 정당성을 증명하는 합의 규칙&lt;/li>
-&lt;li>난이도 difficulty 해시 조건의 엄격함을 조절하는 파라미터, 블록 생성 간격을 목표치로 수렴시키는 역할&lt;/li>
-&lt;li>넌스 nonce 해시 목표를 만족하기 위해 반복적으로 변경하는 값&lt;/li>
-&lt;li>메모리풀 mempool 블록에 포함되기 전 대기 중인 트랜잭션 집합&lt;/li>
-&lt;li>블록 보상 block reward 채굴자가 새 블록을 유효하게 제안했을 때 받는 기본 보상과 수수료 총합&lt;/li>
-&lt;/ul>
-&lt;h3 id="왜-채굴이-필요한가">왜 채굴이 필요한가&lt;/h3>
-&lt;p>탈중앙 시스템에서는 트랜잭션의 순서에 모두가 합의해야 이중지불을 막을 수 있음
+아래 내용은 채굴이 사용되던 시기의 개념과 동작 원리를 정리한 것으로, PoW 계열 네트워크나 역사적 맥락을 이해하는 데 목적이 있음&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;블록체인 원장 네트워크 참여자가 공유하는 불변 기록 장부&lt;/li&gt;
+&lt;li&gt;트랜잭션 계정 상태를 변화시키는 요청 또는 메시지&lt;/li&gt;
+&lt;li&gt;채굴자 PoW 네트워크에서 블록을 제안하고 검증하는 주체&lt;/li&gt;
+&lt;li&gt;작업증명 PoW 특정 해시 조건을 만족하는 값을 찾는 계산을 통해 블록의 정당성을 증명하는 합의 규칙&lt;/li&gt;
+&lt;li&gt;난이도 difficulty 해시 조건의 엄격함을 조절하는 파라미터, 블록 생성 간격을 목표치로 수렴시키는 역할&lt;/li&gt;
+&lt;li&gt;넌스 nonce 해시 목표를 만족하기 위해 반복적으로 변경하는 값&lt;/li&gt;
+&lt;li&gt;메모리풀 mempool 블록에 포함되기 전 대기 중인 트랜잭션 집합&lt;/li&gt;
+&lt;li&gt;블록 보상 block reward 채굴자가 새 블록을 유효하게 제안했을 때 받는 기본 보상과 수수료 총합&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;왜-채굴이-필요한가&#34;&gt;왜 채굴이 필요한가&lt;/h3&gt;
+&lt;p&gt;탈중앙 시스템에서는 트랜잭션의 순서에 모두가 합의해야 이중지불을 막을 수 있음
 예시 Alice가 Bob에게 1 단위를 보내고 Bob이 그 1 단위를 Charlie에게 보낼 때, 순서가 뒤섞이면 Bob이 실제 보유하지 않은 금액을 전송하려 시도하는 문제가 발생함
 채굴자는 유효한 트랜잭션을 모아 순서 있게 블록에 넣고, 작업증명으로 해당 블록이 정당함을 증명함
-PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 쉬움&lt;/p></description></item><item><title>영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이</title><link>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link><pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate><guid>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
-&lt;p>영지식 증명은 어떤 명제가 참임을 설득하면서도 그 근거가 되는 비밀은 끝까지 숨기는 절차를 말함
+PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 쉬움&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이</title>
+      <link>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link>
+      <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;영지식 증명은 어떤 명제가 참임을 설득하면서도 그 근거가 되는 비밀은 끝까지 숨기는 절차를 말함
 블록체인과 프라이버시 보존 컴퓨팅에서 핵심 도구로 자리 잡았고 범용 계산의 유효성을 작은 증명으로 압축해 전달하는 현대 프로토콜의 기초로 쓰임
-이 글은 기본 개념과 직관, 수학적 성질, 대화형과 비대화형의 차이, 디지털 서명과의 구분, 이산로그 기반 간단 Σ-프로토콜까지 한 번에 정리함&lt;/p>
-&lt;h2 id="목적과-맥락">목적과 맥락&lt;/h2>
-&lt;ul>
-&lt;li>비밀을 공개하지 않고 유효성만 검증하려는 요구 증가&lt;/li>
-&lt;li>퍼블릭 블록체인에서 데이터 비공개 유지와 정합성 보장 필요 확대&lt;/li>
-&lt;li>오프체인 연산을 온체인에 작은 증명으로 제출해 확장성과 비용 개선 추구&lt;/li>
-&lt;/ul>
-&lt;h2 id="핵심-개념과-정의">핵심 개념과 정의&lt;/h2>
-&lt;ul>
-&lt;li>Prover 비밀을 가진 참여자. 비밀을 공개하지 않고 명제의 참을 설득하려는 주체&lt;/li>
-&lt;li>Verifier 검증자. Prover가 비밀을 가진 사실 또는 명제가 참이라는 사실만 확인하려는 주체&lt;/li>
-&lt;li>Witness 또는 Secret 명제의 참을 뒷받침하는 비밀 값 또는 비밀 지식&lt;/li>
-&lt;li>Statement 공개 가능한 명제 표현. 예 y = g^x mod p에서 x를 알고 있음을 증명&lt;/li>
-&lt;li>Challenge 검증자가 제시하는 무작위 도전값. 조작 불가와 예측 불가가 전제&lt;/li>
-&lt;li>Transcript 또는 View 대화형 상호작용의 기록. 시뮬레이터가 동일 분포로 재현 가능해야 영지식 성립&lt;/li>
-&lt;/ul>
-&lt;h2 id="영지식-증명의-세-가지-성질">영지식 증명의 세 가지 성질&lt;/h2>
-&lt;ul>
-&lt;li>완전성 Completeness 정직한 Prover가 비밀을 가지고 있으면 정직한 Verifier는 높은 확률로 설득됨&lt;/li>
-&lt;li>건전성 Soundness 비밀이 없으면 Prover가 속일 확률이 매우 낮음. 도전 공간 확대나 반복으로 속임 확률을 지수적으로 낮춤&lt;/li>
-&lt;li>영지식성 Zero-Knowledge Verifier는 명제가 참이라는 사실 외 추가 정보를 얻지 못함. 시뮬레이터가 실제와 구별 불가한 트랜스크립트를 비밀 없이 생성 가능해야 함&lt;/li>
-&lt;/ul>
-&lt;h2 id="직관적-예시-알리바바-동굴">직관적 예시 알리바바 동굴&lt;/h2>
-&lt;ul>
-&lt;li>동굴의 두 갈래 A와 B 사이를 가로막는 문이 있고 비밀 주문을 알면 반대편으로 넘어올 수 있음&lt;/li>
-&lt;li>검증자는 Prover가 들어간 뒤 무작위로 A 또는 B로 나오라고 요구함&lt;/li>
-&lt;li>Prover가 주문을 모르면 자신이 들어간 쪽을 요구받을 때만 성공 가능. 1회 성공 확률 1/2&lt;/li>
-&lt;li>k회 독립 반복하면 모두 속일 확률 2^-k로 급감&lt;/li>
-&lt;li>검증자는 주문 내용은 모르지만 Prover가 주문을 안다는 사실만 높은 확률로 확신 가능함&lt;/li>
-&lt;/ul>
-&lt;p>핵심 포인트&lt;/p></description></item><item><title>블록체인 Reorg(체인 재구성) 이해</title><link>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</link><pubDate>Sun, 28 Sep 2025 13:05:58 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</guid><description>&lt;h2 id="개념과-배경">개념과 배경&lt;/h2>
-&lt;p>Reorg는 동시에 생성된 블록로 체인이 잠시 분기된 뒤 합의 규칙에 따라 더 우세한 분기로 갈아타는 상황을 뜻함
+이 글은 기본 개념과 직관, 수학적 성질, 대화형과 비대화형의 차이, 디지털 서명과의 구분, 이산로그 기반 간단 Σ-프로토콜까지 한 번에 정리함&lt;/p&gt;
+&lt;h2 id=&#34;목적과-맥락&#34;&gt;목적과 맥락&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;비밀을 공개하지 않고 유효성만 검증하려는 요구 증가&lt;/li&gt;
+&lt;li&gt;퍼블릭 블록체인에서 데이터 비공개 유지와 정합성 보장 필요 확대&lt;/li&gt;
+&lt;li&gt;오프체인 연산을 온체인에 작은 증명으로 제출해 확장성과 비용 개선 추구&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Prover 비밀을 가진 참여자. 비밀을 공개하지 않고 명제의 참을 설득하려는 주체&lt;/li&gt;
+&lt;li&gt;Verifier 검증자. Prover가 비밀을 가진 사실 또는 명제가 참이라는 사실만 확인하려는 주체&lt;/li&gt;
+&lt;li&gt;Witness 또는 Secret 명제의 참을 뒷받침하는 비밀 값 또는 비밀 지식&lt;/li&gt;
+&lt;li&gt;Statement 공개 가능한 명제 표현. 예 y = g^x mod p에서 x를 알고 있음을 증명&lt;/li&gt;
+&lt;li&gt;Challenge 검증자가 제시하는 무작위 도전값. 조작 불가와 예측 불가가 전제&lt;/li&gt;
+&lt;li&gt;Transcript 또는 View 대화형 상호작용의 기록. 시뮬레이터가 동일 분포로 재현 가능해야 영지식 성립&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;영지식-증명의-세-가지-성질&#34;&gt;영지식 증명의 세 가지 성질&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;완전성 Completeness 정직한 Prover가 비밀을 가지고 있으면 정직한 Verifier는 높은 확률로 설득됨&lt;/li&gt;
+&lt;li&gt;건전성 Soundness 비밀이 없으면 Prover가 속일 확률이 매우 낮음. 도전 공간 확대나 반복으로 속임 확률을 지수적으로 낮춤&lt;/li&gt;
+&lt;li&gt;영지식성 Zero-Knowledge Verifier는 명제가 참이라는 사실 외 추가 정보를 얻지 못함. 시뮬레이터가 실제와 구별 불가한 트랜스크립트를 비밀 없이 생성 가능해야 함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;직관적-예시-알리바바-동굴&#34;&gt;직관적 예시 알리바바 동굴&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;동굴의 두 갈래 A와 B 사이를 가로막는 문이 있고 비밀 주문을 알면 반대편으로 넘어올 수 있음&lt;/li&gt;
+&lt;li&gt;검증자는 Prover가 들어간 뒤 무작위로 A 또는 B로 나오라고 요구함&lt;/li&gt;
+&lt;li&gt;Prover가 주문을 모르면 자신이 들어간 쪽을 요구받을 때만 성공 가능. 1회 성공 확률 1/2&lt;/li&gt;
+&lt;li&gt;k회 독립 반복하면 모두 속일 확률 2^-k로 급감&lt;/li&gt;
+&lt;li&gt;검증자는 주문 내용은 모르지만 Prover가 주문을 안다는 사실만 높은 확률로 확신 가능함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;핵심 포인트&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>블록체인 Reorg(체인 재구성) 이해</title>
+      <link>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</link>
+      <pubDate>Sun, 28 Sep 2025 13:05:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</guid>
+      <description>&lt;h2 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h2&gt;
+&lt;p&gt;Reorg는 동시에 생성된 블록로 체인이 잠시 분기된 뒤 합의 규칙에 따라 더 우세한 분기로 갈아타는 상황을 뜻함
 짧아진 분기에 있던 블록은 활성 체인에서 제외되어 존재하지 않았던 것으로 취급됨
-노드는 자신의 로컬 관점에서 더 우세한 체인을 발견하면 그 체인으로 교체하는데 이 현상은 네트워크 전체가 동시에 일어나는 게 아니라 각 노드에서 국소적으로 발생함&lt;/p>
-&lt;h2 id="핵심-용어-정리">핵심 용어 정리&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>스테일 블록 best chain에 편입되지 못한 정상 블록을 말함&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>오펀 블록 전통적으로 부모를 모르는 블록을 의미하지만 커뮤니티에선 스테일 블록과 혼용되는 경우가 많음&lt;/p></description></item><item><title>커스토디얼 vs 논커스토디얼 월렛 비교</title><link>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</link><pubDate>Tue, 23 Sep 2025 13:09:26 +0000</pubDate><guid>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
-&lt;p>프라이빗키 관리 방식에 따라 암호화폐 월렛은 &lt;strong>커스토디얼(custodial)&lt;/strong> 과 &lt;strong>논커스토디얼(noncustodial)&lt;/strong> 로 구분됨
-각 방식의 차이와 선택 기준, 보안·운영 리스크와 대응 방안을 &lt;strong>초보자도 이해할 수 있게&lt;/strong> 정리하면서 &lt;strong>실무자가 바로 적용할 수 있는 체크리스트&lt;/strong>까지 제시함&lt;/p>
-&lt;hr>
-&lt;h3 id="핵심-개념">핵심 개념&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>커스토디얼 월렛&lt;/strong>
+노드는 자신의 로컬 관점에서 더 우세한 체인을 발견하면 그 체인으로 교체하는데 이 현상은 네트워크 전체가 동시에 일어나는 게 아니라 각 노드에서 국소적으로 발생함&lt;/p&gt;
+&lt;h2 id=&#34;핵심-용어-정리&#34;&gt;핵심 용어 정리&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;스테일 블록 best chain에 편입되지 못한 정상 블록을 말함&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;오펀 블록 전통적으로 부모를 모르는 블록을 의미하지만 커뮤니티에선 스테일 블록과 혼용되는 경우가 많음&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>커스토디얼 vs 논커스토디얼 월렛 비교</title>
+      <link>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</link>
+      <pubDate>Tue, 23 Sep 2025 13:09:26 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;프라이빗키 관리 방식에 따라 암호화폐 월렛은 &lt;strong&gt;커스토디얼(custodial)&lt;/strong&gt; 과 &lt;strong&gt;논커스토디얼(noncustodial)&lt;/strong&gt; 로 구분됨
+각 방식의 차이와 선택 기준, 보안·운영 리스크와 대응 방안을 &lt;strong&gt;초보자도 이해할 수 있게&lt;/strong&gt; 정리하면서 &lt;strong&gt;실무자가 바로 적용할 수 있는 체크리스트&lt;/strong&gt;까지 제시함&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;커스토디얼 월렛&lt;/strong&gt;
 제3자 서비스가 사용자의 프라이빗키를 보관하고 서명을 대행하는 구조
-로그인·출금 등은 서비스 인증 절차를 거쳐 처리됨&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>논커스토디얼 월렛&lt;/strong>
+로그인·출금 등은 서비스 인증 절차를 거쳐 처리됨&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;논커스토디얼 월렛&lt;/strong&gt;
 사용자가 프라이빗키를 직접 보유·관리하는 구조
-브라우저 확장 지갑·모바일 앱 지갑·하드웨어 지갑이 대표적 사례임&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>핵심 차이 한 줄 정리&lt;/strong>
-키의 &lt;strong>소유·통제 주체&lt;/strong>가 제3자인가 사용자 본인인가의 차이&lt;/p></description></item><item><title>블록체인이란? 블록체인 개념 총정리</title><link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link><pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid><description>&lt;h2 id="개요">개요&lt;/h2>
-&lt;p>블록체인은 &lt;strong>중앙 기관 없이&lt;/strong> 참여자들이 거래를 기록·검증·공유하는 &lt;strong>분산 원장&lt;/strong> 기술임
-이 글은 블록체인을 &lt;strong>초보자 친화적으로&lt;/strong> 설명하고, &lt;strong>실무 체크리스트&lt;/strong>까지 정리함&lt;/p>
-&lt;hr>
-&lt;h2 id="큰-그림-시스템-구성">큰 그림: 시스템 구성&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>노드(Node)&lt;/strong>: 블록체인 소프트웨어 실행 주체&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>풀노드&lt;/strong>: 모든 블록·트랜잭션 검증·저장&lt;/li>
-&lt;li>&lt;strong>라이트 클라이언트&lt;/strong>: 헤더·머클 증명 기반 최소 검증&lt;/li>
-&lt;li>(참고) &lt;strong>아카이브 노드&lt;/strong>: 오래된 상태 포함 전체 상태 유지(필수 아님)&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>블록(Block)&lt;/strong>: 트랜잭션 묶음 + 메타데이터(블록헤더). 블록들이 선형 체인으로 연결됨&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>합의(Consensus)&lt;/strong>: 어떤 블록이 정식 이력인지 네트워크가 &lt;strong>공동으로&lt;/strong> 결정하는 규칙&lt;/p>
-&lt;ul>
-&lt;li>PoW: 작업증명(연산 경쟁)&lt;/li>
-&lt;li>PoS: 지분증명(검증자·보증금 기반)&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="해시hash와-위변조-방지">해시(Hash)와 위·변조 방지&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>해시 함수(SHA-256, Keccak-256 등)&lt;/strong>: 입력을 고정 길이로 압축하는 일방향 함수임&lt;/p></description></item><item><title>머클트리(Merkle Tree)란? 머클트리의 개념과 블록체인에서의 역할</title><link>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</link><pubDate>Sat, 20 Sep 2025 17:15:26 +0000</pubDate><guid>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
-&lt;p>머클트리는 블록체인에서 거래 집합을 &lt;strong>안전하고 효율적으로 요약·검증&lt;/strong>하기 위해 쓰이는 핵심 자료구조임
-블록 헤더에 머클루트가 포함되는 이유는 블록 안의 모든 거래를 &lt;strong>고정 크기 해시 하나&lt;/strong>로 대표해 무결성 확인과 경량 검증을 가능하게 하기 때문임
-이 글은 머클트리의 구조와 동작 원리, 블록체인에서의 실무적 의미와 구현 주의사항까지 초보자도 이해할 수 있도록 상세히 설명함&lt;/p>
-&lt;hr>
-&lt;h3 id="핵심-개념과-구조">핵심 개념과 구조&lt;/h3>
-&lt;ul>
-&lt;li>머클트리는 보통 &lt;strong>이진 트리&lt;/strong> 형태로 구현함&lt;/li>
-&lt;li>거래들을 &lt;strong>리프(leaf)&lt;/strong> 로 두고 인접 두 리프의 해시를 이어 붙여 부모 해시를 만들며 이 과정을 반복해 &lt;strong>루트 해시&lt;/strong>를 얻음&lt;/li>
-&lt;li>해시 함수는 체인별로 다르며 비트코인은 &lt;strong>더블 SHA‑256&lt;/strong>, 이더리움은 트라이 구조에서 &lt;strong>Keccak‑256&lt;/strong> 을 사용함&lt;/li>
-&lt;li>최상단 해시를 &lt;strong>머클루트(Merkle root)&lt;/strong> 라 부르며 크기는 해시 함수에 따라 고정됨&lt;/li>
-&lt;li>리프 수가 홀수일 때는 마지막 리프를 &lt;strong>복제해 짝을 맞추는 방식&lt;/strong>이 일반적이며 비트코인은 이 규칙을 사용함&lt;/li>
-&lt;li>트리 깊이는 리프 수 N에 대해 &lt;strong>⌈log₂ N⌉&lt;/strong> 에 비례하므로 대량의 거래를 효율적으로 요약할 수 있음&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 id="동작-원리와-장점">동작 원리와 장점&lt;/h3>
-&lt;ul>
-&lt;li>인접 노드 해시 &lt;strong>H_left || H_right&lt;/strong> 를 순서대로 연결해 해시를 계산하고 이를 위로 올려가며 루트 해시를 얻음&lt;/li>
-&lt;li>&lt;strong>무결성 검증&lt;/strong>
-단일 거래가 바뀌면 해당 리프에서 루트까지의 모든 경로 해시가 바뀌어 변조를 즉시 탐지할 수 있음&lt;/li>
-&lt;li>&lt;strong>효율적 포함 증명&lt;/strong>
-특정 거래가 블록에 포함되었음을 증명하려면 그 거래와 경로상의 &lt;strong>형제 해시들만&lt;/strong> 있으면 됨
-필요한 해시 개수는 &lt;strong>O(log N)&lt;/strong> 으로 작아 대역폭과 검증 비용이 작음&lt;/li>
-&lt;li>&lt;strong>확장성 보조&lt;/strong>
-리프가 1,000,000개여도 증명에 필요한 형제 해시는 약 20개 수준으로 32바이트 해시 기준 약 640바이트에 불과함&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 id="블록-헤더와-경량-노드spv">블록 헤더와 경량 노드(SPV)&lt;/h3>
-&lt;ul>
-&lt;li>비트코인 블록 헤더는 이전 블록 해시, 머클루트, 난스 등 합의 관련 메타데이터를 포함함&lt;/li>
-&lt;li>경량 노드(SPV)는 &lt;strong>블록 전체가 아니라 헤더 체인만&lt;/strong> 받아 신뢰성을 확보하고, 개별 거래에 대해서는 풀노드로부터 &lt;strong>머클 증명&lt;/strong> 을 받아 포함 여부를 검증함&lt;/li>
-&lt;li>이 방식은 모바일·임베디드 환경에서도 실사용이 가능하게 하는 기반이 됨&lt;/li>
-&lt;li>이더리움은 전통적인 이진 머클트리 대신 &lt;strong>머클‑패트리샤 트라이(MPT)&lt;/strong> 를 사용해 거래·영수증·상태 루트를 헤더에 담아 유사한 목적을 달성함&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 id="구현-세부와-체인별-차이">구현 세부와 체인별 차이&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>비트코인&lt;/strong>&lt;/p></description></item><item><title>NFT 핵심 용어 정리</title><link>https://handsupmin.github.io/posts/nft-23q12akw/</link><pubDate>Sat, 20 Sep 2025 16:56:17 +0000</pubDate><guid>https://handsupmin.github.io/posts/nft-23q12akw/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
-&lt;p>NFT 커뮤니티 초입에서 마주치는 용어 장벽을 낮추기 위해 &lt;strong>리빌&lt;/strong>, &lt;strong>에어드롭&lt;/strong>, &lt;strong>화이트리스트&lt;/strong>, &lt;strong>마켓플레이스&lt;/strong>를 실무 관점으로 정리함
-핵심은 개념 이해를 넘어 &lt;strong>운영 체크리스트&lt;/strong>, &lt;strong>보안 리스크&lt;/strong>, &lt;strong>가격 형성 메커니즘&lt;/strong>까지 파악해 프로젝트 참여와 거래 판단에 바로 쓰도록 하는 것임&lt;/p>
-&lt;hr>
-&lt;h2 id="공통-전제와-기본-개념">공통 전제와 기본 개념&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>NFT 표준&lt;/strong>
+브라우저 확장 지갑·모바일 앱 지갑·하드웨어 지갑이 대표적 사례임&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;핵심 차이 한 줄 정리&lt;/strong&gt;
+키의 &lt;strong&gt;소유·통제 주체&lt;/strong&gt;가 제3자인가 사용자 본인인가의 차이&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>블록체인이란? 블록체인 개념 총정리</title>
+      <link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link>
+      <pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;블록체인은 &lt;strong&gt;중앙 기관 없이&lt;/strong&gt; 참여자들이 거래를 기록·검증·공유하는 &lt;strong&gt;분산 원장&lt;/strong&gt; 기술임
+이 글은 블록체인을 &lt;strong&gt;초보자 친화적으로&lt;/strong&gt; 설명하고, &lt;strong&gt;실무 체크리스트&lt;/strong&gt;까지 정리함&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;큰-그림-시스템-구성&#34;&gt;큰 그림: 시스템 구성&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;노드(Node)&lt;/strong&gt;: 블록체인 소프트웨어 실행 주체&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;풀노드&lt;/strong&gt;: 모든 블록·트랜잭션 검증·저장&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;라이트 클라이언트&lt;/strong&gt;: 헤더·머클 증명 기반 최소 검증&lt;/li&gt;
+&lt;li&gt;(참고) &lt;strong&gt;아카이브 노드&lt;/strong&gt;: 오래된 상태 포함 전체 상태 유지(필수 아님)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;블록(Block)&lt;/strong&gt;: 트랜잭션 묶음 + 메타데이터(블록헤더). 블록들이 선형 체인으로 연결됨&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;합의(Consensus)&lt;/strong&gt;: 어떤 블록이 정식 이력인지 네트워크가 &lt;strong&gt;공동으로&lt;/strong&gt; 결정하는 규칙&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PoW: 작업증명(연산 경쟁)&lt;/li&gt;
+&lt;li&gt;PoS: 지분증명(검증자·보증금 기반)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;해시hash와-위변조-방지&#34;&gt;해시(Hash)와 위·변조 방지&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;해시 함수(SHA-256, Keccak-256 등)&lt;/strong&gt;: 입력을 고정 길이로 압축하는 일방향 함수임&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>머클트리(Merkle Tree)란? 머클트리의 개념과 블록체인에서의 역할</title>
+      <link>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</link>
+      <pubDate>Sat, 20 Sep 2025 17:15:26 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;머클트리는 블록체인에서 거래 집합을 &lt;strong&gt;안전하고 효율적으로 요약·검증&lt;/strong&gt;하기 위해 쓰이는 핵심 자료구조임
+블록 헤더에 머클루트가 포함되는 이유는 블록 안의 모든 거래를 &lt;strong&gt;고정 크기 해시 하나&lt;/strong&gt;로 대표해 무결성 확인과 경량 검증을 가능하게 하기 때문임
+이 글은 머클트리의 구조와 동작 원리, 블록체인에서의 실무적 의미와 구현 주의사항까지 초보자도 이해할 수 있도록 상세히 설명함&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;핵심-개념과-구조&#34;&gt;핵심 개념과 구조&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;머클트리는 보통 &lt;strong&gt;이진 트리&lt;/strong&gt; 형태로 구현함&lt;/li&gt;
+&lt;li&gt;거래들을 &lt;strong&gt;리프(leaf)&lt;/strong&gt; 로 두고 인접 두 리프의 해시를 이어 붙여 부모 해시를 만들며 이 과정을 반복해 &lt;strong&gt;루트 해시&lt;/strong&gt;를 얻음&lt;/li&gt;
+&lt;li&gt;해시 함수는 체인별로 다르며 비트코인은 &lt;strong&gt;더블 SHA‑256&lt;/strong&gt;, 이더리움은 트라이 구조에서 &lt;strong&gt;Keccak‑256&lt;/strong&gt; 을 사용함&lt;/li&gt;
+&lt;li&gt;최상단 해시를 &lt;strong&gt;머클루트(Merkle root)&lt;/strong&gt; 라 부르며 크기는 해시 함수에 따라 고정됨&lt;/li&gt;
+&lt;li&gt;리프 수가 홀수일 때는 마지막 리프를 &lt;strong&gt;복제해 짝을 맞추는 방식&lt;/strong&gt;이 일반적이며 비트코인은 이 규칙을 사용함&lt;/li&gt;
+&lt;li&gt;트리 깊이는 리프 수 N에 대해 &lt;strong&gt;⌈log₂ N⌉&lt;/strong&gt; 에 비례하므로 대량의 거래를 효율적으로 요약할 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;동작-원리와-장점&#34;&gt;동작 원리와 장점&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;인접 노드 해시 &lt;strong&gt;H_left || H_right&lt;/strong&gt; 를 순서대로 연결해 해시를 계산하고 이를 위로 올려가며 루트 해시를 얻음&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;무결성 검증&lt;/strong&gt;
+단일 거래가 바뀌면 해당 리프에서 루트까지의 모든 경로 해시가 바뀌어 변조를 즉시 탐지할 수 있음&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;효율적 포함 증명&lt;/strong&gt;
+특정 거래가 블록에 포함되었음을 증명하려면 그 거래와 경로상의 &lt;strong&gt;형제 해시들만&lt;/strong&gt; 있으면 됨
+필요한 해시 개수는 &lt;strong&gt;O(log N)&lt;/strong&gt; 으로 작아 대역폭과 검증 비용이 작음&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;확장성 보조&lt;/strong&gt;
+리프가 1,000,000개여도 증명에 필요한 형제 해시는 약 20개 수준으로 32바이트 해시 기준 약 640바이트에 불과함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;블록-헤더와-경량-노드spv&#34;&gt;블록 헤더와 경량 노드(SPV)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;비트코인 블록 헤더는 이전 블록 해시, 머클루트, 난스 등 합의 관련 메타데이터를 포함함&lt;/li&gt;
+&lt;li&gt;경량 노드(SPV)는 &lt;strong&gt;블록 전체가 아니라 헤더 체인만&lt;/strong&gt; 받아 신뢰성을 확보하고, 개별 거래에 대해서는 풀노드로부터 &lt;strong&gt;머클 증명&lt;/strong&gt; 을 받아 포함 여부를 검증함&lt;/li&gt;
+&lt;li&gt;이 방식은 모바일·임베디드 환경에서도 실사용이 가능하게 하는 기반이 됨&lt;/li&gt;
+&lt;li&gt;이더리움은 전통적인 이진 머클트리 대신 &lt;strong&gt;머클‑패트리샤 트라이(MPT)&lt;/strong&gt; 를 사용해 거래·영수증·상태 루트를 헤더에 담아 유사한 목적을 달성함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;구현-세부와-체인별-차이&#34;&gt;구현 세부와 체인별 차이&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NFT 핵심 용어 정리</title>
+      <link>https://handsupmin.github.io/posts/nft-23q12akw/</link>
+      <pubDate>Sat, 20 Sep 2025 16:56:17 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/nft-23q12akw/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;NFT 커뮤니티 초입에서 마주치는 용어 장벽을 낮추기 위해 &lt;strong&gt;리빌&lt;/strong&gt;, &lt;strong&gt;에어드롭&lt;/strong&gt;, &lt;strong&gt;화이트리스트&lt;/strong&gt;, &lt;strong&gt;마켓플레이스&lt;/strong&gt;를 실무 관점으로 정리함
+핵심은 개념 이해를 넘어 &lt;strong&gt;운영 체크리스트&lt;/strong&gt;, &lt;strong&gt;보안 리스크&lt;/strong&gt;, &lt;strong&gt;가격 형성 메커니즘&lt;/strong&gt;까지 파악해 프로젝트 참여와 거래 판단에 바로 쓰도록 하는 것임&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;공통-전제와-기본-개념&#34;&gt;공통 전제와 기본 개념&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;NFT 표준&lt;/strong&gt;
 주로 ERC‑721과 ERC‑1155를 사용함
-721은 1토큰 1소유 형태에 적합, 1155는 대량 발행·세미펀지블에 유리함&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>메타데이터와 저장소&lt;/strong>
+721은 1토큰 1소유 형태에 적합, 1155는 대량 발행·세미펀지블에 유리함&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;메타데이터와 저장소&lt;/strong&gt;
 토큰 URI가 가리키는 메타데이터는 IPFS나 Arweave 등 영속 스토리지 사용 권장
-중앙화 서버만 쓰면 리빌 이후 임의 변경 리스크가 커짐&lt;/p></description></item><item><title>NFT란? NFT 핵심 개념 정리</title><link>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</link><pubDate>Sat, 20 Sep 2025 16:41:07 +0000</pubDate><guid>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</guid><description>&lt;h3 id="서문">서문&lt;/h3>
-&lt;p>NFT는 몇 년 새 대중의 관심을 받았지만 개념과 절차가 분산돼 있어 입문자가 막히기 쉬움
-이 글은 &lt;strong>실무자 관점&lt;/strong>에서 NFT의 핵심 개념을 단계적으로 정리하고 &lt;strong>구매·발행·보관 시 유의사항&lt;/strong>과 &lt;strong>운영 관행&lt;/strong>을 담는 것을 목표로 함&lt;/p>
-&lt;hr>
-&lt;h3 id="개념과-배경">개념과 배경&lt;/h3>
-&lt;p>NFT는 Non‑Fungible Token의 약자이며 대체 불가능한 토큰을 의미함
-동일 단위끼리 교환 가능한 자산은 펀저블 토큰이라 부르고 NFT는 각 토큰이 &lt;strong>고유 식별자와 속성&lt;/strong>을 가져 상호 교환 시 동일 가치를 보장하지 않음
+중앙화 서버만 쓰면 리빌 이후 임의 변경 리스크가 커짐&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NFT란? NFT 핵심 개념 정리</title>
+      <link>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</link>
+      <pubDate>Sat, 20 Sep 2025 16:41:07 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</guid>
+      <description>&lt;h3 id=&#34;서문&#34;&gt;서문&lt;/h3&gt;
+&lt;p&gt;NFT는 몇 년 새 대중의 관심을 받았지만 개념과 절차가 분산돼 있어 입문자가 막히기 쉬움
+이 글은 &lt;strong&gt;실무자 관점&lt;/strong&gt;에서 NFT의 핵심 개념을 단계적으로 정리하고 &lt;strong&gt;구매·발행·보관 시 유의사항&lt;/strong&gt;과 &lt;strong&gt;운영 관행&lt;/strong&gt;을 담는 것을 목표로 함&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h3&gt;
+&lt;p&gt;NFT는 Non‑Fungible Token의 약자이며 대체 불가능한 토큰을 의미함
+동일 단위끼리 교환 가능한 자산은 펀저블 토큰이라 부르고 NFT는 각 토큰이 &lt;strong&gt;고유 식별자와 속성&lt;/strong&gt;을 가져 상호 교환 시 동일 가치를 보장하지 않음
 블록체인에 기록된 소유권은 변경이 어렵고 거래 이력이 투명하게 남는다는 장점이 있음
-온체인 소유권이 &lt;strong>저작권·초상권 등 법적 권리와 자동 동치가 아님&lt;/strong>에 유의해야 함&lt;/p></description></item></channel></rss>
+온체인 소유권이 &lt;strong&gt;저작권·초상권 등 법적 권리와 자동 동치가 아님&lt;/strong&gt;에 유의해야 함&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

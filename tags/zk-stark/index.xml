@@ -1,21 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Zk-Stark on HandsLog</title><link>https://handsupmin.github.io/tags/zk-stark/</link><description>Recent content in Zk-Stark on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Sat, 11 Oct 2025 13:05:12 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/zk-stark/index.xml" rel="self" type="application/rss+xml"/><item><title>블록체인 합의 알고리즘 가이드 — PoW, PoS와 영지식증명 활용</title><link>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link><pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid><description>&lt;h3 id="개요">개요&lt;/h3>
-&lt;p>퍼블릭 블록체인은 중앙 관리자 없이 다수 참여자가 같은 상태를 공유해야 함
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Zk-Stark on HandsLog</title>
+    <link>https://handsupmin.github.io/tags/zk-stark/</link>
+    <description>Recent content in Zk-Stark on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 11 Oct 2025 13:05:12 +0000</lastBuildDate>
+    <atom:link href="https://handsupmin.github.io/tags/zk-stark/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>블록체인 합의 알고리즘 가이드 — PoW, PoS와 영지식증명 활용</title>
+      <link>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
+      <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;퍼블릭 블록체인은 중앙 관리자 없이 다수 참여자가 같은 상태를 공유해야 함
 이때 모두가 믿을 수 있는 하나의 기록을 선택하는 규칙이 필요하며 이를 합의 알고리즘이라 부름
 합의는 성능과 보안, 탈중앙화 사이의 균형 문제이기도 함
 PoW와 PoS는 대표적 합의 방식이며 최근에는 영지식증명 같은 암호 기법이 개인정보 보호와 검증 간소화에 결합되는 추세임
-실무 관점에서 각 방식의 원리와 트레이드오프, 영지식증명과의 접점을 정리함&lt;/p>
-&lt;h3 id="합의가-필요한-이유와-기준">합의가 필요한 이유와 기준&lt;/h3>
-&lt;ul>
-&lt;li>안전성 안전하게 하나의 정본을 고수하고 이중 지불 등 불변성 파괴가 발생하지 않음&lt;/li>
-&lt;li>활성 상태 네트워크 지연이나 일부 장애가 있어도 새 블록 생성이 지속됨&lt;/li>
-&lt;li>최종성 일단 확정된 거래가 되돌려지지 않음 확률적 또는 결정적 최종성으로 구분됨&lt;/li>
-&lt;li>시빌 내성 가짜 참여자 대량 생성 공격에 저항함 경제적 비용 또는 신원 검증 기반 메커니즘 필요&lt;/li>
-&lt;li>성능 처리량과 지연 시간 목표를 명확히 해야 함 블록 간격, 블록 크기, 검증 비용이 관건&lt;/li>
-&lt;li>탈중앙화 검증 참여 문턱을 낮춰 누구나 검증 가능하도록 설계 권장 풀 집중이나 소수 지배를 억제할 유인 설계 필요&lt;/li>
-&lt;/ul>
-&lt;h3 id="pow-작업증명-핵심">PoW 작업증명 핵심&lt;/h3>
-&lt;p>정의 특정 난이도의 해시 퍼즐을 풀어 블록 제안권을 얻는 방식 채굴자가 해시 연산을 반복해 목표값 미만의 해시를 찾는 구조
+실무 관점에서 각 방식의 원리와 트레이드오프, 영지식증명과의 접점을 정리함&lt;/p&gt;
+&lt;h3 id=&#34;합의가-필요한-이유와-기준&#34;&gt;합의가 필요한 이유와 기준&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;안전성 안전하게 하나의 정본을 고수하고 이중 지불 등 불변성 파괴가 발생하지 않음&lt;/li&gt;
+&lt;li&gt;활성 상태 네트워크 지연이나 일부 장애가 있어도 새 블록 생성이 지속됨&lt;/li&gt;
+&lt;li&gt;최종성 일단 확정된 거래가 되돌려지지 않음 확률적 또는 결정적 최종성으로 구분됨&lt;/li&gt;
+&lt;li&gt;시빌 내성 가짜 참여자 대량 생성 공격에 저항함 경제적 비용 또는 신원 검증 기반 메커니즘 필요&lt;/li&gt;
+&lt;li&gt;성능 처리량과 지연 시간 목표를 명확히 해야 함 블록 간격, 블록 크기, 검증 비용이 관건&lt;/li&gt;
+&lt;li&gt;탈중앙화 검증 참여 문턱을 낮춰 누구나 검증 가능하도록 설계 권장 풀 집중이나 소수 지배를 억제할 유인 설계 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;pow-작업증명-핵심&#34;&gt;PoW 작업증명 핵심&lt;/h3&gt;
+&lt;p&gt;정의 특정 난이도의 해시 퍼즐을 풀어 블록 제안권을 얻는 방식 채굴자가 해시 연산을 반복해 목표값 미만의 해시를 찾는 구조
 구성 요소 블록 헤더 난이도 목표값 논스 해시 함수 작업 증명 검증은 O(1)에 가까움 제안은 대량 계산 필요
 난이도 조정 네트워크 전체 해시 파워 변화를 따라 목표 블록 간격을 유지하도록 주기적 재조정 수행
 보안 모델 정직한 해시 파워가 과반을 차지하면 긴 사슬이 정본이 됨 51% 공격은 다수 해시력으로 과거 일부 구간을 재작성하는 위협을 의미
-장점&lt;/p></description></item></channel></rss>
+장점&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

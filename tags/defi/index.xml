@@ -1,17 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Defi on HandsLog</title><link>https://handsupmin.github.io/tags/defi/</link><description>Recent content in Defi on HandsLog</description><generator>Hugo -- 0.146.0</generator><language>ko-kr</language><lastBuildDate>Mon, 13 Oct 2025 13:10:20 +0000</lastBuildDate><atom:link href="https://handsupmin.github.io/tags/defi/index.xml" rel="self" type="application/rss+xml"/><item><title>블록체인 인덱서 가이드</title><link>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link><pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate><guid>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</guid><description>&lt;h1 id="블록체인-인덱서-가이드">블록체인 인덱서 가이드&lt;/h1>
-&lt;blockquote>
-&lt;p>인덱서는 원장 데이터를 제품 요구에 맞게 재구성해 저지연으로 제공하는 데이터 레이어임
-디앱 체감 속도와 신뢰도를 좌우하는 핵심 인프라임&lt;/p>&lt;/blockquote>
-&lt;hr>
-&lt;h2 id="왜-인덱서가-필요한가">왜 인덱서가 필요한가&lt;/h2>
-&lt;ul>
-&lt;li>블록체인 원장은 블록 단위 직렬 구조라 임의 접근과 조건 검색 비용 큼&lt;/li>
-&lt;li>디앱은 지갑 이력, 포지션, NFT 보유 등 사용자 맥락 데이터를 수십~수백 ms 내에 필요로 함&lt;/li>
-&lt;li>전체 원장을 매번 스캔하는 대신 목적형 보조 인덱스를 사전 구축해 API로 제공하는 전략이 효율적임&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="핵심-개념">핵심 개념&lt;/h2>
-&lt;h3 id="인덱싱-대상-데이터-유형">인덱싱 대상 데이터 유형&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>블록 헤더와 트랜잭션 메타데이터&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Defi on HandsLog</title>
+    <link>https://handsupmin.github.io/tags/defi/</link>
+    <description>Recent content in Defi on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 13 Oct 2025 13:10:20 +0000</lastBuildDate>
+    <atom:link href="https://handsupmin.github.io/tags/defi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>블록체인 인덱서 가이드</title>
+      <link>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link>
+      <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</guid>
+      <description>&lt;h1 id=&#34;블록체인-인덱서-가이드&#34;&gt;블록체인 인덱서 가이드&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;인덱서는 원장 데이터를 제품 요구에 맞게 재구성해 저지연으로 제공하는 데이터 레이어임
+디앱 체감 속도와 신뢰도를 좌우하는 핵심 인프라임&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;왜-인덱서가-필요한가&#34;&gt;왜 인덱서가 필요한가&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;블록체인 원장은 블록 단위 직렬 구조라 임의 접근과 조건 검색 비용 큼&lt;/li&gt;
+&lt;li&gt;디앱은 지갑 이력, 포지션, NFT 보유 등 사용자 맥락 데이터를 수십~수백 ms 내에 필요로 함&lt;/li&gt;
+&lt;li&gt;전체 원장을 매번 스캔하는 대신 목적형 보조 인덱스를 사전 구축해 API로 제공하는 전략이 효율적임&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h2&gt;
+&lt;h3 id=&#34;인덱싱-대상-데이터-유형&#34;&gt;인덱싱 대상 데이터 유형&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;블록 헤더와 트랜잭션 메타데이터&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
