@@ -1,6 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://handsupmin.github.io/tags/as-const/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/build-tooling/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/categories/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/const-enum/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/discriminated-union/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/enum/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/literal-types/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/tree-shaking/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/type-inference/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/categories/typescript/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/typescript/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-guide-3817af/</loc>
+    <lastmod>2025-10-14T13:11:16+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://handsupmin.github.io/categories/blockchain/</loc>
     <lastmod>2025-10-13T13:10:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -11,12 +101,6 @@
     <lastmod>2025-10-13T13:10:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/dapp/</loc>
@@ -49,28 +133,10 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://handsupmin.github.io/tags/indexer/</loc>
     <lastmod>2025-10-13T13:10:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/posts/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</loc>
@@ -266,12 +332,6 @@
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/smart-contracts/</loc>
-    <lastmod>2025-10-02T13:07:56+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/typescript/</loc>
     <lastmod>2025-10-02T13:07:56+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>

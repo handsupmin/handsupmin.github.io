@@ -6,8 +6,28 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 13 Oct 2025 13:10:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Oct 2025 13:11:16 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TypeScript enum, const enum, as const의 차이와 선택 가이드</title>
+      <link>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-guide-3817af/</link>
+      <pubDate>Tue, 14 Oct 2025 13:11:16 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-guide-3817af/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;TypeScript에서 값 집합을 식별자에 묶어 표현할 때 가장 먼저 떠오르는 도구가 enum임
+여기에 컴파일 결과를 가볍게 하려는 const enum, 값 자체를 타입으로 고정하는 as const가 더해지며 선택지가 많아짐
+실무에서는 번들러와 트랜스파일러 조합, 배포 산출물 정책, 팀의 코딩 규칙까지 함께 고려해야 함
+이 글은 각각의 개념과 동작 원리를 짚고, 장단점과 함정을 실무 맥락에서 정리하여 목적에 맞는 선택 기준을 제시함&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;enum  값 집합을 열거하는 타입 기능, 숫자형과 문자열형 지원, 컴파일 시 양방향 매핑이 생김&lt;/li&gt;
+&lt;li&gt;const enum  enum을 inline하는 형태, 사용처에 값이 치환되어 구현 코드가 제거되는 특성&lt;/li&gt;
+&lt;li&gt;as const  const assertion 문법, 값의 리터럴 타입화와 readonly 부여로 상수성 보장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;여기서 가장 큰 차이는 컴파일 결과와 타입 추론 방식임
+enum은 런타임에 역매핑 테이블이 남는 반면, const enum은 값이 사용 지점에 치환되고 테이블이 남지 않음
+as const는 타입 시스템에서 값의 범위를 리터럴로 좁히고, 객체의 경우 프로퍼티를 readonly로 고정함&lt;/p&gt;</description>
+    </item>
     <item>
       <title>블록체인 인덱서 가이드</title>
       <link>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link>
