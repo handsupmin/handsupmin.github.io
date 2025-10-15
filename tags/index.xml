@@ -6,69 +6,41 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 14 Oct 2025 13:11:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Oct 2025 13:10:54 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>As-Const</title>
-      <link>https://handsupmin.github.io/tags/as-const/</link>
-      <pubDate>Tue, 14 Oct 2025 13:11:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/as-const/</guid>
+      <title>Explain</title>
+      <link>https://handsupmin.github.io/tags/explain/</link>
+      <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/explain/</guid>
       <description></description>
     </item>
     <item>
-      <title>Build-Tooling</title>
-      <link>https://handsupmin.github.io/tags/build-tooling/</link>
-      <pubDate>Tue, 14 Oct 2025 13:11:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/build-tooling/</guid>
+      <title>Indexing</title>
+      <link>https://handsupmin.github.io/tags/indexing/</link>
+      <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/indexing/</guid>
       <description></description>
     </item>
     <item>
-      <title>Const-Enum</title>
-      <link>https://handsupmin.github.io/tags/const-enum/</link>
-      <pubDate>Tue, 14 Oct 2025 13:11:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/const-enum/</guid>
+      <title>Mysql</title>
+      <link>https://handsupmin.github.io/tags/mysql/</link>
+      <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     <item>
-      <title>Discriminated-Union</title>
-      <link>https://handsupmin.github.io/tags/discriminated-union/</link>
-      <pubDate>Tue, 14 Oct 2025 13:11:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/discriminated-union/</guid>
+      <title>Performance-Tuning</title>
+      <link>https://handsupmin.github.io/tags/performance-tuning/</link>
+      <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/performance-tuning/</guid>
       <description></description>
     </item>
     <item>
-      <title>Enum</title>
-      <link>https://handsupmin.github.io/tags/enum/</link>
-      <pubDate>Tue, 14 Oct 2025 13:11:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/enum/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Literal-Types</title>
-      <link>https://handsupmin.github.io/tags/literal-types/</link>
-      <pubDate>Tue, 14 Oct 2025 13:11:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/literal-types/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tree-Shaking</title>
-      <link>https://handsupmin.github.io/tags/tree-shaking/</link>
-      <pubDate>Tue, 14 Oct 2025 13:11:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/tree-shaking/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Type-Inference</title>
-      <link>https://handsupmin.github.io/tags/type-inference/</link>
-      <pubDate>Tue, 14 Oct 2025 13:11:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/type-inference/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://handsupmin.github.io/tags/typescript/</link>
-      <pubDate>Tue, 14 Oct 2025 13:11:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/typescript/</guid>
+      <title>Query-Plan</title>
+      <link>https://handsupmin.github.io/tags/query-plan/</link>
+      <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/query-plan/</guid>
       <description></description>
     </item>
     <item>
@@ -321,6 +293,13 @@
       <link>https://handsupmin.github.io/tags/smart-contracts/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/smart-contracts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://handsupmin.github.io/tags/typescript/</link>
+      <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
