@@ -6,8 +6,78 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 15 Oct 2025 13:10:54 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Oct 2025 13:10:58 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cgroup</title>
+      <link>https://handsupmin.github.io/tags/cgroup/</link>
+      <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/cgroup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cni</title>
+      <link>https://handsupmin.github.io/tags/cni/</link>
+      <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/cni/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Container-Runtime</title>
+      <link>https://handsupmin.github.io/tags/container-runtime/</link>
+      <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/container-runtime/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Control-Plane</title>
+      <link>https://handsupmin.github.io/tags/control-plane/</link>
+      <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/control-plane/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Etcd</title>
+      <link>https://handsupmin.github.io/tags/etcd/</link>
+      <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/etcd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kube-Apiserver</title>
+      <link>https://handsupmin.github.io/tags/kube-apiserver/</link>
+      <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/kube-apiserver/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kube-Proxy</title>
+      <link>https://handsupmin.github.io/tags/kube-proxy/</link>
+      <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/kube-proxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubelet</title>
+      <link>https://handsupmin.github.io/tags/kubelet/</link>
+      <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/kubelet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>https://handsupmin.github.io/tags/kubernetes/</link>
+      <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scheduler</title>
+      <link>https://handsupmin.github.io/tags/scheduler/</link>
+      <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/scheduler/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Explain</title>
       <link>https://handsupmin.github.io/tags/explain/</link>
