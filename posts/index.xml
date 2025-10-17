@@ -6,8 +6,22 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 16 Oct 2025 13:10:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Oct 2025 13:09:19 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NestJS Guard로 요청 보호하기 — CanActivate, UseGuards, Bearer 인증 예시</title>
+      <link>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</link>
+      <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;가드 Guard를 이용해 NestJS 애플리케이션을 위험한 요청으로부터 차단하는 방법 정리
+컨트롤러에 도달하기 전 단계에서 인증과 접근 제어 수행하는 패턴 중심으로 설명&lt;/p&gt;
+&lt;h3 id=&#34;가드란&#34;&gt;가드란&lt;/h3&gt;
+&lt;p&gt;NestJS에서 가드는 애플리케이션에 들어오는 요청을 컨트롤러로 보내기 전에 통과 여부를 결정하는 구성 요소
+미들웨어와 유사한 역할이지만 라우트 핸들러 실행 여부를 명시적으로 결정하는 책임에 초점
+요청 수명주기에서 미들웨어 다음, 컨트롤러 이전에 실행됨
+canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하면 다음 단계로 진행, false면 기본적으로 403 Forbidden 응답 발생&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Kubernetes 핵심 구성요소와 동작 흐름</title>
       <link>https://handsupmin.github.io/posts/kubernetes-core-components-and-flow-915d3a/</link>
