@@ -6,20 +6,20 @@
     <description>Recent content in Categories on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 17 Oct 2025 13:09:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Oct 2025 13:06:16 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes</title>
+      <link>https://handsupmin.github.io/categories/kubernetes/</link>
+      <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
+      <guid>https://handsupmin.github.io/categories/kubernetes/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Nestjs</title>
       <link>https://handsupmin.github.io/categories/nestjs/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
       <guid>https://handsupmin.github.io/categories/nestjs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kubernetes</title>
-      <link>https://handsupmin.github.io/categories/kubernetes/</link>
-      <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/categories/kubernetes/</guid>
       <description></description>
     </item>
     <item>

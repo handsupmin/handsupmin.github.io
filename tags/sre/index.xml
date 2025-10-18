@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sre on HandsLog</title>
+    <link>https://handsupmin.github.io/tags/sre/</link>
+    <description>Recent content in Sre on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 18 Oct 2025 13:06:16 +0000</lastBuildDate>
+    <atom:link href="https://handsupmin.github.io/tags/sre/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>쿠버네티스 컨트롤 플레인 핵심 개념과 EKS 비교</title>
+      <link>https://handsupmin.github.io/posts/kubernetes-control-plane-eks-2af164/</link>
+      <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/kubernetes-control-plane-eks-2af164/</guid>
+      <description>&lt;p&gt;컨트롤 플레인은 쿠버네티스 클러스터의 두뇌이자 의사결정 계층으로, 워커 노드가 실제 워크로드를 돌리는 동안 전체 상태를 정의하고 조율하는 역할을 맡음
+조직 비유로 보면 컨트롤 플레인은 본사와 경영진, 워커 노드는 지점과 현장 직원에 해당함&lt;/p&gt;
+&lt;h3 id=&#34;개념과-정의&#34;&gt;개념과 정의&lt;/h3&gt;
+&lt;p&gt;컨트롤 플레인은 Desired State를 선언적으로 저장하고, Observed State와 비교해 일치하도록 끊임없이 조정하는 계층
+사용자는 API를 통해 상태를 선언하고, 컨트롤 플레인은 스케줄링과 컨트롤 루프로 이를 만족하도록 시스템을 수렴시킴&lt;/p&gt;
+&lt;h3 id=&#34;핵심-구성요소&#34;&gt;핵심 구성요소&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;API 서버 kube-apiserver — 모든 요청의 진입점, 인증·인가·어드미션 수행 후 상태 변경을 etcd에 반영&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
