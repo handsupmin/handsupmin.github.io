@@ -1,16 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://handsupmin.github.io/tags/aws/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
+    <loc>https://handsupmin.github.io/categories/</loc>
+    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/chrome-devtools/</loc>
+    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/categories/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
+    <loc>https://handsupmin.github.io/tags/debugging/</loc>
+    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/</loc>
+    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/node-inspect/</loc>
+    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/nodejs-v8-inspector-debugging-guide-inspect-node-inspect-2e5ae9/</loc>
+    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/categories/nodejs/</loc>
+    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/nodejs/</loc>
+    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/</loc>
+    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/</loc>
+    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/v8-inspector/</loc>
+    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/aws/</loc>
+    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/cloud/</loc>
@@ -37,12 +97,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://handsupmin.github.io/categories/kubernetes/</loc>
     <lastmod>2025-10-18T13:06:16+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -55,22 +109,10 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/posts/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://handsupmin.github.io/tags/sre/</loc>
     <lastmod>2025-10-18T13:06:16+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/kubernetes-control-plane-eks-2af164/</loc>
@@ -125,12 +167,6 @@
     <lastmod>2025-10-17T13:09:19+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/nodejs/</loc>
-    <lastmod>2025-10-17T13:09:19+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/typescript/</loc>
