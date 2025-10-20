@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Database on HandsLog</title>
-    <link>https://handsupmin.github.io/categories/database/</link>
-    <description>Recent content in Database on HandsLog</description>
+    <title>Pagination on HandsLog</title>
+    <link>https://handsupmin.github.io/tags/pagination/</link>
+    <description>Recent content in Pagination on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 20 Oct 2025 13:10:30 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/categories/database/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://handsupmin.github.io/tags/pagination/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQL LIMIT와 OFFSET 사용법 정리: 행 개수 제한과 페이징</title>
       <link>https://handsupmin.github.io/posts/sql-limit-offset-basics-4a9880/</link>
@@ -36,79 +36,6 @@ WHERE와 ORDER BY 뒤, 즉 SELECT 문 끝에 위치&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;LIMIT&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;현재 정렬 기준에서 맨 위 행 1개만 반환
 ORDER BY가 없으면 반환되는 행은 비결정적일 수 있음&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>MySQL EXPLAIN 실행 계획 해석 가이드</title>
-      <link>https://handsupmin.github.io/posts/mysql-explain-execution-plan-guide-b7fb65/</link>
-      <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/mysql-explain-execution-plan-guide-b7fb65/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;EXPLAIN은 SELECT가 어떤 경로로 데이터를 읽는지 드러내는 도구
-병목 파악과 인덱스 전략 점검에 사용&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;select_type
-&lt;ul&gt;
-&lt;li&gt;SIMPLE 단순 SELECT, 서브쿼리나 UNION 없음&lt;/li&gt;
-&lt;li&gt;PRIMARY 가장 바깥쪽 SELECT&lt;/li&gt;
-&lt;li&gt;SUBQUERY 서브쿼리&lt;/li&gt;
-&lt;li&gt;DERIVED FROM 절의 서브쿼리&lt;/li&gt;
-&lt;li&gt;UNION UNION의 두 번째 이후 SELECT&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;type 실행 품질 지표, 위에서 아래로 유리
-&lt;ul&gt;
-&lt;li&gt;system 테이블에 단 하나의 행&lt;/li&gt;
-&lt;li&gt;const PRIMARY KEY 또는 UNIQUE 인덱스 단건 조회&lt;/li&gt;
-&lt;li&gt;eq_ref 조인에서 PRIMARY KEY 또는 UNIQUE로 정확히 1행 매칭&lt;/li&gt;
-&lt;li&gt;ref 인덱스를 사용한 동등 조건 검색&lt;/li&gt;
-&lt;li&gt;range 인덱스를 사용한 범위 검색&lt;/li&gt;
-&lt;li&gt;index 인덱스 전체 스캔&lt;/li&gt;
-&lt;li&gt;ALL 테이블 전체 스캔, 최악&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;possible_keys 사용 가능한 인덱스 목록, NULL이면 후보 없음&lt;/li&gt;
-&lt;li&gt;key 실제 사용된 인덱스, NULL이면 인덱스 미사용&lt;/li&gt;
-&lt;li&gt;rows 옵티마이저가 읽을 것으로 추정한 행 수, 낮을수록 유리&lt;/li&gt;
-&lt;li&gt;filtered 조건 후 남는 행 비율 추정치, 높을수록 유리&lt;/li&gt;
-&lt;li&gt;Extra 추가 단서
-&lt;ul&gt;
-&lt;li&gt;Using index 커버링 인덱스 사용, 유리&lt;/li&gt;
-&lt;li&gt;Using where WHERE 조건으로 필터링 수행&lt;/li&gt;
-&lt;li&gt;Using filesort 추가 정렬 필요, 비용 큼&lt;/li&gt;
-&lt;li&gt;Using temporary 임시 테이블 사용, 비용 큼&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;해석-기준&#34;&gt;해석 기준&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;type이 const, ref, range 범주에 위치&lt;/li&gt;
-&lt;li&gt;key가 NULL이 아니고 적절한 인덱스 선택&lt;/li&gt;
-&lt;li&gt;rows 추정치가 작고 filtered 비율이 높음&lt;/li&gt;
-&lt;li&gt;Extra에 Using filesort, Using temporary 부재&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;예시와-해석&#34;&gt;예시와 해석&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;type: ALL
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;possible_keys: NULL
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rows: 3527425
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Extra: Using where; Using filesort
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;테이블 전체 스캔으로 많은 행을 읽게 됨&lt;/li&gt;
-&lt;li&gt;인덱스 후보와 실제 사용 인덱스가 없음&lt;/li&gt;
-&lt;li&gt;WHERE로 필터링하고 추가 정렬까지 수행하여 비용 상승&lt;/li&gt;
-&lt;li&gt;현재 계획은 인덱스 설계와 조건식 재검토 필요&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;주의와-팁&#34;&gt;주의와 팁&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;rows와 filtered는 통계 기반 추정치라 실제와 오차 가능&lt;/li&gt;
-&lt;li&gt;filtered는 대략 rows × filtered%로 남는 행 규모 가늠에 사용&lt;/li&gt;
-&lt;li&gt;Using filesort가 항상 나쁜 것은 아님, 결과 집합이 매우 작으면 영향 미미할 수 있음&lt;/li&gt;
-&lt;li&gt;인덱스 생성 시 조건 컬럼의 선택도와 정렬·조인 키 우선 고려&lt;/li&gt;
-&lt;li&gt;커버링 인덱스 구성 시 Extra의 Using index로 확인 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
-&lt;p&gt;EXPLAIN은 증상 관찰 도구, 원인은 스키마 설계와 조건식, 인덱스 전략에서 찾기
-위 지표를 기준으로 스캔 범위를 줄이고 불필요한 정렬과 임시 테이블을 제거하는 방향으로 개선 시도 권장&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
