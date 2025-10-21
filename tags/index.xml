@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 20 Oct 2025 13:10:30 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Oct 2025 13:12:21 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>As-Const</title>
+      <link>https://handsupmin.github.io/tags/as-const/</link>
+      <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/as-const/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Const-Enum</title>
+      <link>https://handsupmin.github.io/tags/const-enum/</link>
+      <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/const-enum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Discriminated-Unions</title>
+      <link>https://handsupmin.github.io/tags/discriminated-unions/</link>
+      <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/discriminated-unions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Enum</title>
+      <link>https://handsupmin.github.io/tags/enum/</link>
+      <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/enum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Literal-Types</title>
+      <link>https://handsupmin.github.io/tags/literal-types/</link>
+      <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/literal-types/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tree-Shaking</title>
+      <link>https://handsupmin.github.io/tags/tree-shaking/</link>
+      <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/tree-shaking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://handsupmin.github.io/tags/typescript/</link>
+      <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Database</title>
       <link>https://handsupmin.github.io/tags/database/</link>
@@ -160,13 +209,6 @@
       <link>https://handsupmin.github.io/tags/nestjs/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/nestjs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://handsupmin.github.io/tags/typescript/</link>
-      <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
