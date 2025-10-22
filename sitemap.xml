@@ -1,16 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://handsupmin.github.io/tags/as-const/</loc>
-    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
+    <loc>https://handsupmin.github.io/categories/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/database-tuning/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/categories/</loc>
-    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
+    <loc>https://handsupmin.github.io/categories/databases/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/indexing/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/innodb/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/mvcc/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/mysql/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/oltp/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/storage-engine/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/transaction/</loc>
+    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/as-const/</loc>
+    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/const-enum/</loc>
@@ -31,28 +109,10 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/</loc>
-    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://handsupmin.github.io/tags/literal-types/</loc>
     <lastmod>2025-10-21T13:12:21+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/posts/</loc>
-    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/</loc>
-    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/tree-shaking/</loc>
@@ -314,18 +374,6 @@
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/explain/</loc>
-    <lastmod>2025-10-15T13:10:54+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/indexing/</loc>
-    <lastmod>2025-10-15T13:10:54+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/mysql/</loc>
     <lastmod>2025-10-15T13:10:54+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
