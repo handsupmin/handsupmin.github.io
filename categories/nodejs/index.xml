@@ -6,8 +6,23 @@
     <description>Recent content in Nodejs on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 19 Oct 2025 13:06:18 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Oct 2025 13:11:27 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/categories/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js 환경에서 디버깅하기</title>
+      <link>https://handsupmin.github.io/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</link>
+      <pubDate>Thu, 23 Oct 2025 13:11:27 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Node.js에서 디버깅은 문제를 재현 가능한 최소 단위로 축소하고, 실행 흐름과 상태를 관찰해 원인을 단정하는 과정임. 이 글은 디버깅 기본 원리와 함께 Node.js 환경에서 자주 쓰는 세 가지 방법인 Chrome DevTools, node-inspect CLI, VS Code 디버거 사용법을 정리함&lt;/p&gt;
+&lt;h3 id=&#34;문제를-명확히-하기&#34;&gt;문제를 명확히 하기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;작성한 코드의 기대 동작 정의&lt;/li&gt;
+&lt;li&gt;실제 관측된 동작과의 차이 정리&lt;/li&gt;
+&lt;li&gt;실패 조건과 재현 절차 고정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;문제 정의가 모호하면 디버깅 범위가 불필요하게 커짐. 입력, 환경 변수, 의존성 버전, 네트워크 상태 등 외부 요인도 고정하는 편이 좋음&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Node.js v8-inspector 디버깅 가이드 — --inspect와 node-inspect 사용법</title>
       <link>https://handsupmin.github.io/posts/nodejs-v8-inspector-debugging-guide-inspect-node-inspect-2e5ae9/</link>
