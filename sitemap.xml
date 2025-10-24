@@ -1,16 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://handsupmin.github.io/tags/backend/</loc>
-    <lastmod>2025-10-23T13:11:27+00:00</lastmod>
+    <loc>https://handsupmin.github.io/categories/</loc>
+    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/functional-programming/</loc>
+    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/categories/</loc>
-    <lastmod>2025-10-23T13:11:27+00:00</lastmod>
+    <loc>https://handsupmin.github.io/</loc>
+    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/immutability/</loc>
+    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/</loc>
+    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/categories/programming-paradigms/</loc>
+    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/pure-functions/</loc>
+    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/</loc>
+    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/functional-programming-core-concepts-17a1eb/</loc>
+    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/backend/</loc>
+    <lastmod>2025-10-23T13:11:27+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/chrome-devtools/</loc>
@@ -23,12 +71,6 @@
     <lastmod>2025-10-23T13:11:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/</loc>
-    <lastmod>2025-10-23T13:11:27+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/javascript/</loc>
@@ -53,18 +95,6 @@
     <lastmod>2025-10-23T13:11:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/posts/</loc>
-    <lastmod>2025-10-23T13:11:27+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/</loc>
-    <lastmod>2025-10-23T13:11:27+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/vscode/</loc>

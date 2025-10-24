@@ -6,8 +6,29 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 23 Oct 2025 13:11:27 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Oct 2025 13:10:56 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Functional-Programming</title>
+      <link>https://handsupmin.github.io/tags/functional-programming/</link>
+      <pubDate>Fri, 24 Oct 2025 13:10:56 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/functional-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Immutability</title>
+      <link>https://handsupmin.github.io/tags/immutability/</link>
+      <pubDate>Fri, 24 Oct 2025 13:10:56 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/immutability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pure-Functions</title>
+      <link>https://handsupmin.github.io/tags/pure-functions/</link>
+      <pubDate>Fri, 24 Oct 2025 13:10:56 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/pure-functions/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Backend</title>
       <link>https://handsupmin.github.io/tags/backend/</link>
