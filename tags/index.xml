@@ -6,8 +6,64 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 24 Oct 2025 13:10:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Oct 2025 13:06:24 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend-Architecture</title>
+      <link>https://handsupmin.github.io/tags/backend-architecture/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/backend-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>https://handsupmin.github.io/tags/kubernetes/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nestjs</title>
+      <link>https://handsupmin.github.io/tags/nestjs/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/nestjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pub-Sub</title>
+      <link>https://handsupmin.github.io/tags/pub-sub/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/pub-sub/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Real-Time</title>
+      <link>https://handsupmin.github.io/tags/real-time/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/real-time/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redis</title>
+      <link>https://handsupmin.github.io/tags/redis/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/redis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Server-Sent-Events</title>
+      <link>https://handsupmin.github.io/tags/server-sent-events/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/server-sent-events/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sse</title>
+      <link>https://handsupmin.github.io/tags/sse/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/sse/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Functional-Programming</title>
       <link>https://handsupmin.github.io/tags/functional-programming/</link>
@@ -254,13 +310,6 @@
       <description></description>
     </item>
     <item>
-      <title>Kubernetes</title>
-      <link>https://handsupmin.github.io/tags/kubernetes/</link>
-      <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Sre</title>
       <link>https://handsupmin.github.io/tags/sre/</link>
       <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
@@ -300,13 +349,6 @@
       <link>https://handsupmin.github.io/tags/middleware/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/middleware/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nestjs</title>
-      <link>https://handsupmin.github.io/tags/nestjs/</link>
-      <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/nestjs/</guid>
       <description></description>
     </item>
     <item>

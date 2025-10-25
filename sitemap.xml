@@ -1,8 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://handsupmin.github.io/categories/backend/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/backend-architecture/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://handsupmin.github.io/categories/</loc>
-    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/kubernetes/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/nestjs/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/pub-sub/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/real-time/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/redis/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/server-sent-events/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/sse/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -13,22 +91,10 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/</loc>
-    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://handsupmin.github.io/tags/immutability/</loc>
     <lastmod>2025-10-24T13:10:56+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/posts/</loc>
-    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/categories/programming-paradigms/</loc>
@@ -41,12 +107,6 @@
     <lastmod>2025-10-24T13:10:56+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/</loc>
-    <lastmod>2025-10-24T13:10:56+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/functional-programming-core-concepts-17a1eb/</loc>
@@ -307,12 +367,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/tags/kubernetes/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://handsupmin.github.io/tags/sre/</loc>
     <lastmod>2025-10-18T13:06:16+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -356,12 +410,6 @@
   </url>
   <url>
     <loc>https://handsupmin.github.io/categories/nestjs/</loc>
-    <lastmod>2025-10-17T13:09:19+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/nestjs/</loc>
     <lastmod>2025-10-17T13:09:19+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>

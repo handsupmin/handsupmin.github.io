@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Nestjs on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/nestjs/</link>
-    <description>Recent content in Nestjs on HandsLog</description>
+    <title>Pub-Sub on HandsLog</title>
+    <link>https://handsupmin.github.io/tags/pub-sub/</link>
+    <description>Recent content in Pub-Sub on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sat, 25 Oct 2025 13:06:24 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/nestjs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://handsupmin.github.io/tags/pub-sub/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSE 기반 실시간 알림 아키텍처 설계 NestJS &#43; Redis Pub/Sub</title>
       <link>https://handsupmin.github.io/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</link>
@@ -29,20 +29,6 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;SSE Server‑Sent Events&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NestJS Guard로 요청 보호하기 — CanActivate, UseGuards, Bearer 인증 예시</title>
-      <link>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</link>
-      <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;가드 Guard를 이용해 NestJS 애플리케이션을 위험한 요청으로부터 차단하는 방법 정리
-컨트롤러에 도달하기 전 단계에서 인증과 접근 제어 수행하는 패턴 중심으로 설명&lt;/p&gt;
-&lt;h3 id=&#34;가드란&#34;&gt;가드란&lt;/h3&gt;
-&lt;p&gt;NestJS에서 가드는 애플리케이션에 들어오는 요청을 컨트롤러로 보내기 전에 통과 여부를 결정하는 구성 요소
-미들웨어와 유사한 역할이지만 라우트 핸들러 실행 여부를 명시적으로 결정하는 책임에 초점
-요청 수명주기에서 미들웨어 다음, 컨트롤러 이전에 실행됨
-canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하면 다음 단계로 진행, false면 기본적으로 403 Forbidden 응답 발생&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
