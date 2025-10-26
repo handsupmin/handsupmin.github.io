@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 25 Oct 2025 13:06:24 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Oct 2025 13:07:10 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clustered-Index</title>
+      <link>https://handsupmin.github.io/tags/clustered-index/</link>
+      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/clustered-index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database-Design</title>
+      <link>https://handsupmin.github.io/tags/database-design/</link>
+      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/database-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foreign-Key</title>
+      <link>https://handsupmin.github.io/tags/foreign-key/</link>
+      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/foreign-key/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Innodb</title>
+      <link>https://handsupmin.github.io/tags/innodb/</link>
+      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/innodb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mysql</title>
+      <link>https://handsupmin.github.io/tags/mysql/</link>
+      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oltp</title>
+      <link>https://handsupmin.github.io/tags/oltp/</link>
+      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/oltp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Primary-Key</title>
+      <link>https://handsupmin.github.io/tags/primary-key/</link>
+      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/primary-key/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Backend-Architecture</title>
       <link>https://handsupmin.github.io/tags/backend-architecture/</link>
@@ -142,31 +191,10 @@
       <description></description>
     </item>
     <item>
-      <title>Innodb</title>
-      <link>https://handsupmin.github.io/tags/innodb/</link>
-      <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/innodb/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Mvcc</title>
       <link>https://handsupmin.github.io/tags/mvcc/</link>
       <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/mvcc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mysql</title>
-      <link>https://handsupmin.github.io/tags/mysql/</link>
-      <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/mysql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Oltp</title>
-      <link>https://handsupmin.github.io/tags/oltp/</link>
-      <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/oltp/</guid>
       <description></description>
     </item>
     <item>

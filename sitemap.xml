@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://handsupmin.github.io/categories/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/clustered-index/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/categories/database-design/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/database-design/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/foreign-key/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/innodb/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/innodb-pk-less-tables-trade-offs-2dc695/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/mysql/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/oltp/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/primary-key/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/</loc>
+    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://handsupmin.github.io/categories/backend/</loc>
     <lastmod>2025-10-25T13:06:24+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -13,18 +91,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/categories/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://handsupmin.github.io/tags/kubernetes/</loc>
     <lastmod>2025-10-25T13:06:24+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -35,12 +101,6 @@
     <lastmod>2025-10-25T13:06:24+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/posts/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/pub-sub/</loc>
@@ -77,12 +137,6 @@
     <lastmod>2025-10-25T13:06:24+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/functional-programming/</loc>
@@ -181,19 +235,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/tags/innodb/</loc>
-    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://handsupmin.github.io/tags/mvcc/</loc>
-    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/mysql/</loc>
     <lastmod>2025-10-22T13:12:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
@@ -203,12 +245,6 @@
     <lastmod>2025-10-22T13:12:18+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/oltp/</loc>
-    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/storage-engine/</loc>
