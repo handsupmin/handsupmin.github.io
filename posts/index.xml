@@ -6,8 +6,32 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 26 Oct 2025 13:07:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Oct 2025 13:11:11 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript 함수는 왜 일급 객체인가 — 의미와 활용</title>
+      <link>https://handsupmin.github.io/posts/javascript-first-class-functions-5dcc7e/</link>
+      <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/javascript-first-class-functions-5dcc7e/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;JavaScript에서 함수는 일급 객체로 취급됨
+이는 함수가 값처럼 변수에 담기고, 인수로 전달되고, 반환값으로 나오며, 객체의 프로퍼티로 저장될 수 있음을 의미함
+이 특성 덕분에 고차 함수, 콜백, 클로저, 함수 합성 같은 패턴이 자연스럽게 구현됨&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;변수에 할당 가능&lt;/li&gt;
+&lt;li&gt;다른 함수의 인수로 전달 가능&lt;/li&gt;
+&lt;li&gt;다른 함수의 반환값으로 사용 가능&lt;/li&gt;
+&lt;li&gt;객체의 프로퍼티로 저장 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;간단-예시&#34;&gt;간단 예시&lt;/h3&gt;
+&lt;p&gt;변수에 할당&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;greet&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`Hello, &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;인수로 전달&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;run&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;fn&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fn&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;run&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;greet&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;반환값으로 사용 및 클로저&lt;/p&gt;</description>
+    </item>
     <item>
       <title>InnoDB에서 PK 없는 테이블의 동작과 트레이드오프</title>
       <link>https://handsupmin.github.io/posts/innodb-pk-less-tables-trade-offs-2dc695/</link>
