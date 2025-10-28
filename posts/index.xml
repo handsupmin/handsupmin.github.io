@@ -6,8 +6,34 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 27 Oct 2025 13:11:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Oct 2025 13:10:28 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prisma findMany 가이드: where, select/include, 정렬·페이징, in/비교 연산자</title>
+      <link>https://handsupmin.github.io/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</link>
+      <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Prisma의 findMany는 다중 레코드 조회용 메서드
+기본값은 대상 모델의 모든 레코드 반환
+where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
+옵션 조합으로 조건 기반 조회를 간결하게 구성 가능&lt;/p&gt;
+&lt;h3 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h3&gt;
+&lt;p&gt;가장 단순한 호출 형태&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;users&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주요-옵션&#34;&gt;주요 옵션&lt;/h3&gt;
+&lt;p&gt;옵션은 필요한 것만 선택적으로 사용&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;where: 조건 필터링&lt;/li&gt;
+&lt;li&gt;select: 필드 서브셋 선택&lt;/li&gt;
+&lt;li&gt;include: 관계 데이터 로드&lt;/li&gt;
+&lt;li&gt;orderBy: 정렬 기준 지정&lt;/li&gt;
+&lt;li&gt;skip, take: 오프셋 기반 페이징&lt;/li&gt;
+&lt;li&gt;distinct: 특정 필드 기준 중복 제거&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;where로-조건-필터링&#34;&gt;where로 조건 필터링&lt;/h3&gt;
+&lt;p&gt;단일 조건부터 복합 조건까지 표현 가능&lt;/p&gt;</description>
+    </item>
     <item>
       <title>JavaScript 함수는 왜 일급 객체인가 — 의미와 활용</title>
       <link>https://handsupmin.github.io/posts/javascript-first-class-functions-5dcc7e/</link>

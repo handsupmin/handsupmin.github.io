@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 27 Oct 2025 13:11:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Oct 2025 13:10:28 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database</title>
+      <link>https://handsupmin.github.io/tags/database/</link>
+      <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orm</title>
+      <link>https://handsupmin.github.io/tags/orm/</link>
+      <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/orm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prisma</title>
+      <link>https://handsupmin.github.io/tags/prisma/</link>
+      <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/prisma/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Query</title>
+      <link>https://handsupmin.github.io/tags/query/</link>
+      <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/query/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sql</title>
+      <link>https://handsupmin.github.io/tags/sql/</link>
+      <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://handsupmin.github.io/tags/typescript/</link>
+      <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Closures</title>
       <link>https://handsupmin.github.io/tags/closures/</link>
@@ -268,38 +310,10 @@
       <description></description>
     </item>
     <item>
-      <title>Typescript</title>
-      <link>https://handsupmin.github.io/tags/typescript/</link>
-      <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/typescript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://handsupmin.github.io/tags/database/</link>
-      <pubDate>Mon, 20 Oct 2025 13:10:30 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/database/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Pagination</title>
       <link>https://handsupmin.github.io/tags/pagination/</link>
       <pubDate>Mon, 20 Oct 2025 13:10:30 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/pagination/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Query</title>
-      <link>https://handsupmin.github.io/tags/query/</link>
-      <pubDate>Mon, 20 Oct 2025 13:10:30 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/query/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sql</title>
-      <link>https://handsupmin.github.io/tags/sql/</link>
-      <pubDate>Mon, 20 Oct 2025 13:10:30 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/sql/</guid>
       <description></description>
     </item>
     <item>
