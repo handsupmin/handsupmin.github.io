@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Nestjs on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/nestjs/</link>
-    <description>Recent content in Nestjs on HandsLog</description>
+    <title>Swagger on HandsLog</title>
+    <link>https://handsupmin.github.io/tags/swagger/</link>
+    <description>Recent content in Swagger on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 30 Oct 2025 13:11:03 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/nestjs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://handsupmin.github.io/tags/swagger/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
       <link>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
@@ -27,33 +27,6 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SSE란? 실시간 이벤트 전달 프로토콜 (Server-Sent Events)</title>
-      <link>https://handsupmin.github.io/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</link>
-      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</guid>
-      <description>&lt;h1 id=&#34;sseserver-sent-events란-무엇인가&#34;&gt;SSE(Server-Sent Events)란 무엇인가&lt;/h1&gt;
-&lt;p&gt;SSE는 &lt;strong&gt;Server-Sent Events&lt;/strong&gt;의 약자로, 서버가 클라이언트로 &lt;strong&gt;실시간 데이터를 단방향으로 푸시&lt;/strong&gt;(push)할 수 있게 해주는 웹 기술임
-클라이언트가 먼저 요청을 보내고 서버는 그 연결을 끊지 않은 채, 새로운 데이터가 생길 때마다 지속적으로 응답을 보내는 방식임&lt;/p&gt;
-&lt;p&gt;주로 실시간 알림, 주식 시세 업데이트, 라이브 피드 등 서버에서 클라이언트로 일방적인 데이터 전송이 필요한 경우에 매우 유용함&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;sse-vs-웹소켓-그리고-한계&#34;&gt;SSE vs 웹소켓, 그리고 한계&lt;/h2&gt;
-&lt;p&gt;SSE는 실시간 이벤트 전송에 유용하지만 만능은 아님. 웹소켓과 비교했을 때 명확한 장단점이 존재함&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NestJS Guard로 요청 보호하기 — CanActivate, UseGuards, Bearer 인증 예시</title>
-      <link>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</link>
-      <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;가드 Guard를 이용해 NestJS 애플리케이션을 위험한 요청으로부터 차단하는 방법 정리
-컨트롤러에 도달하기 전 단계에서 인증과 접근 제어 수행하는 패턴 중심으로 설명&lt;/p&gt;
-&lt;h3 id=&#34;가드란&#34;&gt;가드란&lt;/h3&gt;
-&lt;p&gt;NestJS에서 가드는 애플리케이션에 들어오는 요청을 컨트롤러로 보내기 전에 통과 여부를 결정하는 구성 요소
-미들웨어와 유사한 역할이지만 라우트 핸들러 실행 여부를 명시적으로 결정하는 책임에 초점
-요청 수명주기에서 미들웨어 다음, 컨트롤러 이전에 실행됨
-canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하면 다음 단계로 진행, false면 기본적으로 403 Forbidden 응답 발생&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

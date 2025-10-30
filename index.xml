@@ -6,8 +6,28 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 29 Oct 2025 13:11:51 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Oct 2025 13:11:03 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
+      <link>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
+      <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;@nestjs/swagger는 NestJS와 Swagger(OpenAPI) 스펙을 연결해 API 문서를 자동 생성하는 모듈임
+DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 예시, 설명 등을 Swagger UI에 노출하는 흐름으로 작동함
+핵심 도구는 @ApiProperty와 DTO 유틸리티 타입들(PickType, OmitType, PartialType)임&lt;/p&gt;
+&lt;h3 id=&#34;apiproperty-개념과-사용&#34;&gt;ApiProperty 개념과 사용&lt;/h3&gt;
+&lt;p&gt;@ApiProperty는 DTO 속성 단위로 문서화 메타데이터를 부여하는 데코레이터임
+타입, 설명, 예시, 필수 여부 등을 정의해 Swagger UI에 명확한 스키마 제공
+코드와 문서가 한 소스에서 유지되어 일관성 확보에 유리함&lt;/p&gt;
+&lt;p&gt;간단 사용 예시&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CreateUserDto&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;@ApiProperty&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;사용자 이름&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;John Doe&amp;#39;&lt;/span&gt; })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Prisma cursor 기반 페이지네이션 동작 원리와 skip: 1의 의미</title>
       <link>https://handsupmin.github.io/posts/prisma-cursor-pagination-and-skip-1-a14080/</link>
