@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 30 Oct 2025 13:11:03 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Oct 2025 13:10:20 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buffer-Pool</title>
+      <link>https://handsupmin.github.io/tags/buffer-pool/</link>
+      <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/buffer-pool/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Caching</title>
+      <link>https://handsupmin.github.io/tags/caching/</link>
+      <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/caching/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://handsupmin.github.io/tags/database/</link>
+      <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Innodb</title>
+      <link>https://handsupmin.github.io/tags/innodb/</link>
+      <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/innodb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mysql</title>
+      <link>https://handsupmin.github.io/tags/mysql/</link>
+      <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://handsupmin.github.io/tags/performance/</link>
+      <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/performance/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Decorators</title>
       <link>https://handsupmin.github.io/tags/decorators/</link>
@@ -62,13 +104,6 @@
       <link>https://handsupmin.github.io/tags/cursor-pagination/</link>
       <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/cursor-pagination/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://handsupmin.github.io/tags/database/</link>
-      <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/database/</guid>
       <description></description>
     </item>
     <item>
@@ -167,20 +202,6 @@
       <link>https://handsupmin.github.io/tags/foreign-key/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/foreign-key/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Innodb</title>
-      <link>https://handsupmin.github.io/tags/innodb/</link>
-      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/innodb/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mysql</title>
-      <link>https://handsupmin.github.io/tags/mysql/</link>
-      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     <item>

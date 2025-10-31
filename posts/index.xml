@@ -6,8 +6,40 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 30 Oct 2025 13:11:03 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Oct 2025 13:10:20 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL InnoDB 버퍼 풀 개념과 동작 원리, 크기 설정 가이드</title>
+      <link>https://handsupmin.github.io/posts/mysql-innodb-buffer-pool-c63a29/</link>
+      <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/mysql-innodb-buffer-pool-c63a29/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;InnoDB 버퍼 풀은 MySQL InnoDB 스토리지 엔진의 메모리 캐시 영역으로 데이터와 인덱스 페이지를 담아 디스크 I/O를 줄이고 지연 시간을 낮추는 역할 수행
+InnoDB는 트랜잭션, 로우 레벨 락, 복구 기능을 제공하며 버퍼 풀은 그 성능의 핵심 구성요소임&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;페이지 캐싱: 테이블 데이터와 인덱스 페이지를 메모리에 유지, 기본 16KB 페이지 단위 운용&lt;/li&gt;
+&lt;li&gt;쓰기 지연: 변경된 페이지는 메모리에서 더티 페이지로 남고 백그라운드 플러시로 디스크 반영&lt;/li&gt;
+&lt;li&gt;트랜잭션 로그: 변경 내용은 먼저 리두 로그에 기록되어 크래시 시 일관성과 복구 보장&lt;/li&gt;
+&lt;li&gt;LRU 교체: Least Recently Used 기반으로 오래 사용되지 않은 페이지부터 축출하여 자주 쓰는 페이지 유지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리&#34;&gt;동작 원리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;읽기 경로: 요청한 페이지가 메모리에 있으면 히트, 없으면 디스크에서 로드 후 버퍼 풀에 적재&lt;/li&gt;
+&lt;li&gt;쓰기 경로: 커밋 시 로그 동기화 우선, 데이터 페이지는 지연 플러시로 배치 처리하여 디스크 쓰기 부담 완화&lt;/li&gt;
+&lt;li&gt;교체 정책: 메모리 압박 시 LRU에서 덜 사용된 페이지 제거, 워크로드에 따라 캐시 효율 크게 좌우됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;크기-설정과-운영-기준&#34;&gt;크기 설정과 운영 기준&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;innodb_buffer_pool_size는 워크로드와 시스템 메모리 여유를 기준으로 결정&lt;/li&gt;
+&lt;li&gt;단일 데이터베이스 서버에서는 전체 RAM의 큰 비중을 할당하는 경우가 많으나 운영체제 캐시와 공존 프로세스를 감안해 스왑 발생을 피하는 선 유지 권장&lt;/li&gt;
+&lt;li&gt;관찰 지표: 버퍼 풀 히트 비율, 더티 페이지 비율, 플러시 대기 시간 등으로 튜닝 효과 검증&lt;/li&gt;
+&lt;li&gt;최신 버전에서는 버퍼 풀 크기 동적 조정 지원, 부하 패턴 변화에 맞춘 점진적 조정 권장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;정리&#34;&gt;정리&lt;/h3&gt;
+&lt;p&gt;적절히 설정된 InnoDB 버퍼 풀은 읽기 히트율 상승과 쓰기 배치 처리로 일관된 성능을 제공함
+메모리 제약과 워크로드 특성을 기반으로 보수적으로 시작하고 관측 지표를 바탕으로 점진적 조정 권장&lt;/p&gt;</description>
+    </item>
     <item>
       <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
       <link>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
