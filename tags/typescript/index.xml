@@ -6,8 +6,26 @@
     <description>Recent content in Typescript on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 30 Oct 2025 13:11:03 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Nov 2025 13:06:40 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TypeScript Parameters 유틸리티 타입 개념과 안전한 활용</title>
+      <link>https://handsupmin.github.io/posts/typescript-parameters-utility-type-913b5f/</link>
+      <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/typescript-parameters-utility-type-913b5f/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;Parameters는 TypeScript가 제공하는 제네릭 유틸리티 타입으로, 특정 함수 타입의 매개변수 타입들을 튜플로 추출하는 데 사용됨
+함수 래핑, 고차 함수, 어댑터 계층에서 기존 함수 시그니처를 재사용해 타입 안정성을 유지하고 중복 선언을 줄이는 목적에 적합함&lt;/p&gt;
+&lt;h3 id=&#34;문법&#34;&gt;문법&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Parameters&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;...args&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; (...&lt;span style=&#34;color:#a6e22e&#34;&gt;args&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;infer&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt; : &lt;span style=&#34;color:#66d9ef&#34;&gt;never&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;T가 함수 타입이면 매개변수 목록을 튜플 타입 P로 추출&lt;/li&gt;
+&lt;li&gt;T가 함수 타입이 아니면 never 반환&lt;/li&gt;
+&lt;li&gt;추출 결과는 튜플이므로 인덱스 접근, 스프레드, 부분 적용 등 튜플 연산과 조합 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;사용-예시&#34;&gt;사용 예시&lt;/h3&gt;
+&lt;p&gt;기본 추출&lt;/p&gt;</description>
+    </item>
     <item>
       <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
       <link>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>

@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 31 Oct 2025 13:10:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Nov 2025 13:06:40 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generics</title>
+      <link>https://handsupmin.github.io/tags/generics/</link>
+      <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/generics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tuples</title>
+      <link>https://handsupmin.github.io/tags/tuples/</link>
+      <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/tuples/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type-Level-Programming</title>
+      <link>https://handsupmin.github.io/tags/type-level-programming/</link>
+      <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/type-level-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://handsupmin.github.io/tags/typescript/</link>
+      <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/typescript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Utility-Types</title>
+      <link>https://handsupmin.github.io/tags/utility-types/</link>
+      <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/utility-types/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Buffer-Pool</title>
       <link>https://handsupmin.github.io/tags/buffer-pool/</link>
@@ -83,13 +118,6 @@
       <link>https://handsupmin.github.io/tags/swagger/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/swagger/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://handsupmin.github.io/tags/typescript/</link>
-      <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/typescript/</guid>
       <description></description>
     </item>
     <item>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Typescript on HandsLog</title>
-    <link>https://handsupmin.github.io/categories/typescript/</link>
-    <description>Recent content in Typescript on HandsLog</description>
+    <title>Tuples on HandsLog</title>
+    <link>https://handsupmin.github.io/tags/tuples/</link>
+    <description>Recent content in Tuples on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sat, 01 Nov 2025 13:06:40 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://handsupmin.github.io/tags/tuples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TypeScript Parameters 유틸리티 타입 개념과 안전한 활용</title>
       <link>https://handsupmin.github.io/posts/typescript-parameters-utility-type-913b5f/</link>
@@ -25,31 +25,6 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;사용-예시&#34;&gt;사용 예시&lt;/h3&gt;
 &lt;p&gt;기본 추출&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>TypeScript enum, const enum, as const 차이와 선택 기준</title>
-      <link>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-3817af/</link>
-      <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-3817af/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;TypeScript에서 enum, const enum, as const는 값 집합을 선언하고 타입으로 활용하기 위한 서로 다른 도구임
-각 특성의 차이와 트레이드오프를 이해하면 가독성과 안정성을 챙기면서 번들 크기와 도구 호환성 문제도 피할 수 있음&lt;/p&gt;
-&lt;h3 id=&#34;enum-개념과-동작&#34;&gt;enum 개념과 동작&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;열거형 타입을 선언하는 문법&lt;/li&gt;
-&lt;li&gt;숫자 기반과 문자열 기반 모두 지원&lt;/li&gt;
-&lt;li&gt;컴파일 결과로 양방향 매핑을 담은 JS 객체 생성
-&lt;ul&gt;
-&lt;li&gt;키로 값 조회, 값으로 키 역조회 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;예시&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;enum&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;BooleanType&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;False&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;True&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;컴파일 결과는 즉시실행함수 형태로 양방향 맵 객체 생성됨&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
