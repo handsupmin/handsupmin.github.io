@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Npm on HandsLog</title>
+    <link>https://handsupmin.github.io/tags/npm/</link>
+    <description>Recent content in Npm on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 02 Nov 2025 13:06:12 +0000</lastBuildDate>
+    <atom:link href="https://handsupmin.github.io/tags/npm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>npm, npx, yarn 비교와 사용 맥락 정리</title>
+      <link>https://handsupmin.github.io/posts/npm-npx-yarn-overview-compare-db8c4d/</link>
+      <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/npm-npx-yarn-overview-compare-db8c4d/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;JavaScript와 Node.js 생태계에서 패키지 관리 도구 선택은 빌드 재현성, 설치 속도, 운영 안정성에 직접 영향 있음
+현업 기준으로 npm, npx, yarn의 목적과 차이를 맥락 중심으로 정리&lt;/p&gt;
+&lt;h3 id=&#34;npm&#34;&gt;npm&lt;/h3&gt;
+&lt;p&gt;Node.js 설치 시 기본 포함되는 패키지 관리자
+&lt;code&gt;package.json&lt;/code&gt;을 기준으로 의존성 설치 및 업데이트 수행
+스크립트 실행, 버전 잠금, 캐시 활용 등 프로젝트 기본 워크플로의 중심 도구 역할
+&lt;code&gt;package-lock.json&lt;/code&gt;으로 하위 의존성까지 고정해 재현성 확보
+CI에서는 &lt;code&gt;npm ci&lt;/code&gt;로 lock 파일 기준 클린 설치 권장&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

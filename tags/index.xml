@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 01 Nov 2025 13:06:40 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Nov 2025 13:06:12 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nodejs</title>
+      <link>https://handsupmin.github.io/tags/nodejs/</link>
+      <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Npm</title>
+      <link>https://handsupmin.github.io/tags/npm/</link>
+      <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/npm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Npx</title>
+      <link>https://handsupmin.github.io/tags/npx/</link>
+      <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/npx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Package-Manager</title>
+      <link>https://handsupmin.github.io/tags/package-manager/</link>
+      <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/package-manager/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yarn</title>
+      <link>https://handsupmin.github.io/tags/yarn/</link>
+      <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/yarn/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Generics</title>
       <link>https://handsupmin.github.io/tags/generics/</link>
@@ -132,13 +167,6 @@
       <link>https://handsupmin.github.io/tags/cursor-pagination/</link>
       <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/cursor-pagination/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://handsupmin.github.io/tags/nodejs/</link>
-      <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/nodejs/</guid>
       <description></description>
     </item>
     <item>

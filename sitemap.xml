@@ -2,33 +2,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://handsupmin.github.io/categories/</loc>
-    <lastmod>2025-11-01T13:06:40+00:00</lastmod>
+    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/</loc>
+    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/categories/nodejs/</loc>
+    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/nodejs/</loc>
+    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/npm/</loc>
+    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/npm-npx-yarn-overview-compare-db8c4d/</loc>
+    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/npx/</loc>
+    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/package-manager/</loc>
+    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/</loc>
+    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/</loc>
+    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/yarn/</loc>
+    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/generics/</loc>
     <lastmod>2025-11-01T13:06:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/</loc>
-    <lastmod>2025-11-01T13:06:40+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/posts/</loc>
-    <lastmod>2025-11-01T13:06:40+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/</loc>
-    <lastmod>2025-11-01T13:06:40+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/tuples/</loc>
@@ -170,12 +212,6 @@
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/cursor-pagination/</loc>
-    <lastmod>2025-10-29T13:11:51+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/nodejs/</loc>
     <lastmod>2025-10-29T13:11:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
@@ -377,12 +413,6 @@
     <lastmod>2025-10-23T13:11:27+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/nodejs/</loc>
-    <lastmod>2025-10-23T13:11:27+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/vscode/</loc>
