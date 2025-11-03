@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 02 Nov 2025 13:06:12 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Nov 2025 13:10:46 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean-Code</title>
+      <link>https://handsupmin.github.io/tags/clean-code/</link>
+      <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/clean-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Engineering-Principles</title>
+      <link>https://handsupmin.github.io/tags/engineering-principles/</link>
+      <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/engineering-principles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maintainability</title>
+      <link>https://handsupmin.github.io/tags/maintainability/</link>
+      <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/maintainability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Simplicity</title>
+      <link>https://handsupmin.github.io/tags/simplicity/</link>
+      <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/simplicity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software-Design</title>
+      <link>https://handsupmin.github.io/tags/software-design/</link>
+      <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/software-design/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Nodejs</title>
       <link>https://handsupmin.github.io/tags/nodejs/</link>
