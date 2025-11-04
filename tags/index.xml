@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 03 Nov 2025 13:10:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Nov 2025 13:12:55 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Discrete-Log</title>
+      <link>https://handsupmin.github.io/tags/discrete-log/</link>
+      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/discrete-log/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ecc</title>
+      <link>https://handsupmin.github.io/tags/ecc/</link>
+      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/ecc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ecdh</title>
+      <link>https://handsupmin.github.io/tags/ecdh/</link>
+      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/ecdh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elgamal</title>
+      <link>https://handsupmin.github.io/tags/elgamal/</link>
+      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/elgamal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elliptic-Curve</title>
+      <link>https://handsupmin.github.io/tags/elliptic-curve/</link>
+      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/elliptic-curve/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Finite-Field</title>
+      <link>https://handsupmin.github.io/tags/finite-field/</link>
+      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/finite-field/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Public-Key-Cryptography</title>
+      <link>https://handsupmin.github.io/tags/public-key-cryptography/</link>
+      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/public-key-cryptography/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Clean-Code</title>
       <link>https://handsupmin.github.io/tags/clean-code/</link>
@@ -895,13 +944,6 @@
       <link>https://handsupmin.github.io/tags/cryptography/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/cryptography/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Elliptic-Curve</title>
-      <link>https://handsupmin.github.io/tags/elliptic-curve/</link>
-      <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/elliptic-curve/</guid>
       <description></description>
     </item>
     <item>
