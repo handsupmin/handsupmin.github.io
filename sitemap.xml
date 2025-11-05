@@ -1,22 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://handsupmin.github.io/tags/arthur-merlin/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://handsupmin.github.io/categories/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://handsupmin.github.io/tags/complexity-theory/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://handsupmin.github.io/categories/cryptography/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/cryptography/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/discrete-log/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/fiat-shamir/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/graph-coloring/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/interactive-proofs/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/nizk/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/np/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/pspace/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/random-oracle/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/tags/zero-knowledge/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://handsupmin.github.io/posts/zero-knowledge-proof-intro-1-372f3d/</loc>
+    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/ecc/</loc>
@@ -49,28 +139,10 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/posts/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://handsupmin.github.io/tags/public-key-cryptography/</loc>
     <lastmod>2025-11-04T13:12:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</loc>
@@ -1057,12 +1129,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://handsupmin.github.io/tags/cryptography/</loc>
-    <lastmod>2025-09-29T13:10:22+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://handsupmin.github.io/tags/snark/</loc>
     <lastmod>2025-09-29T13:10:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1070,12 +1136,6 @@
   </url>
   <url>
     <loc>https://handsupmin.github.io/tags/stark/</loc>
-    <lastmod>2025-09-29T13:10:22+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/zero-knowledge/</loc>
     <lastmod>2025-09-29T13:10:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>

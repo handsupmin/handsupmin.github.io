@@ -6,13 +6,90 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 04 Nov 2025 13:12:55 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Nov 2025 13:11:36 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arthur-Merlin</title>
+      <link>https://handsupmin.github.io/tags/arthur-merlin/</link>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/arthur-merlin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Complexity-Theory</title>
+      <link>https://handsupmin.github.io/tags/complexity-theory/</link>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/complexity-theory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cryptography</title>
+      <link>https://handsupmin.github.io/tags/cryptography/</link>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/cryptography/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Discrete-Log</title>
       <link>https://handsupmin.github.io/tags/discrete-log/</link>
-      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/discrete-log/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fiat-Shamir</title>
+      <link>https://handsupmin.github.io/tags/fiat-shamir/</link>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/fiat-shamir/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Graph-Coloring</title>
+      <link>https://handsupmin.github.io/tags/graph-coloring/</link>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/graph-coloring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interactive-Proofs</title>
+      <link>https://handsupmin.github.io/tags/interactive-proofs/</link>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/interactive-proofs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nizk</title>
+      <link>https://handsupmin.github.io/tags/nizk/</link>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/nizk/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Np</title>
+      <link>https://handsupmin.github.io/tags/np/</link>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/np/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pspace</title>
+      <link>https://handsupmin.github.io/tags/pspace/</link>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/pspace/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Random-Oracle</title>
+      <link>https://handsupmin.github.io/tags/random-oracle/</link>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/random-oracle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zero-Knowledge</title>
+      <link>https://handsupmin.github.io/tags/zero-knowledge/</link>
+      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/zero-knowledge/</guid>
       <description></description>
     </item>
     <item>
@@ -940,13 +1017,6 @@
       <description></description>
     </item>
     <item>
-      <title>Cryptography</title>
-      <link>https://handsupmin.github.io/tags/cryptography/</link>
-      <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/cryptography/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Snark</title>
       <link>https://handsupmin.github.io/tags/snark/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
@@ -958,13 +1028,6 @@
       <link>https://handsupmin.github.io/tags/stark/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/stark/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Zero-Knowledge</title>
-      <link>https://handsupmin.github.io/tags/zero-knowledge/</link>
-      <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/zero-knowledge/</guid>
       <description></description>
     </item>
     <item>
