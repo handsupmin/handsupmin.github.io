@@ -1,1365 +1,196 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://handsupmin.github.io/tags/arthur-merlin/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/complexity-theory/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/cryptography/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/cryptography/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/discrete-log/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/fiat-shamir/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/graph-coloring/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://handsupmin.github.io/</loc>
     <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/interactive-proofs/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/nizk/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/np/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/</loc>
     <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/pspace/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/random-oracle/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/zero-knowledge/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/zero-knowledge-proof-intro-1-372f3d/</loc>
     <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/ecc/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/ecdh/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/elgamal/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/elliptic-curve/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/finite-field/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/public-key-cryptography/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</loc>
     <lastmod>2025-11-04T13:12:55+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/clean-code/</loc>
-    <lastmod>2025-11-03T13:10:46+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/engineering-principles/</loc>
-    <lastmod>2025-11-03T13:10:46+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/kiss-principle-software-design-799a74/</loc>
     <lastmod>2025-11-03T13:10:46+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/maintainability/</loc>
-    <lastmod>2025-11-03T13:10:46+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/simplicity/</loc>
-    <lastmod>2025-11-03T13:10:46+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/software-design/</loc>
-    <lastmod>2025-11-03T13:10:46+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/software-engineering/</loc>
-    <lastmod>2025-11-03T13:10:46+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/nodejs/</loc>
-    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/nodejs/</loc>
-    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/npm/</loc>
-    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/npm-npx-yarn-overview-compare-db8c4d/</loc>
     <lastmod>2025-11-02T13:06:12+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/npx/</loc>
-    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/package-manager/</loc>
-    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/yarn/</loc>
-    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/generics/</loc>
-    <lastmod>2025-11-01T13:06:40+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/tuples/</loc>
-    <lastmod>2025-11-01T13:06:40+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/type-level-programming/</loc>
-    <lastmod>2025-11-01T13:06:40+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/typescript/</loc>
-    <lastmod>2025-11-01T13:06:40+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/typescript/</loc>
-    <lastmod>2025-11-01T13:06:40+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/typescript-parameters-utility-type-913b5f/</loc>
     <lastmod>2025-11-01T13:06:40+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/utility-types/</loc>
-    <lastmod>2025-11-01T13:06:40+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/buffer-pool/</loc>
-    <lastmod>2025-10-31T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/caching/</loc>
-    <lastmod>2025-10-31T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/database/</loc>
-    <lastmod>2025-10-31T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/databases/</loc>
-    <lastmod>2025-10-31T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/innodb/</loc>
-    <lastmod>2025-10-31T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/mysql/</loc>
-    <lastmod>2025-10-31T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/mysql-innodb-buffer-pool-c63a29/</loc>
     <lastmod>2025-10-31T13:10:20+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/performance/</loc>
-    <lastmod>2025-10-31T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/decorators/</loc>
-    <lastmod>2025-10-30T13:11:03+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/dto/</loc>
-    <lastmod>2025-10-30T13:11:03+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/nestjs/</loc>
-    <lastmod>2025-10-30T13:11:03+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/nestjs/</loc>
-    <lastmod>2025-10-30T13:11:03+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</loc>
     <lastmod>2025-10-30T13:11:03+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/openapi/</loc>
-    <lastmod>2025-10-30T13:11:03+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/swagger/</loc>
-    <lastmod>2025-10-30T13:11:03+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/backend/</loc>
-    <lastmod>2025-10-29T13:11:51+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/backend/</loc>
-    <lastmod>2025-10-29T13:11:51+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/cursor-pagination/</loc>
-    <lastmod>2025-10-29T13:11:51+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/prisma/</loc>
-    <lastmod>2025-10-29T13:11:51+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/prisma-cursor-pagination-and-skip-1-a14080/</loc>
     <lastmod>2025-10-29T13:11:51+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/sql/</loc>
-    <lastmod>2025-10-29T13:11:51+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/orm/</loc>
-    <lastmod>2025-10-28T13:10:28+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/orm/</loc>
-    <lastmod>2025-10-28T13:10:28+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</loc>
     <lastmod>2025-10-28T13:10:28+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/query/</loc>
-    <lastmod>2025-10-28T13:10:28+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/closures/</loc>
-    <lastmod>2025-10-27T13:11:11+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/first-class-functions/</loc>
-    <lastmod>2025-10-27T13:11:11+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/functional-programming/</loc>
-    <lastmod>2025-10-27T13:11:11+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/functions/</loc>
-    <lastmod>2025-10-27T13:11:11+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/higher-order-functions/</loc>
-    <lastmod>2025-10-27T13:11:11+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/javascript/</loc>
-    <lastmod>2025-10-27T13:11:11+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/javascript/</loc>
-    <lastmod>2025-10-27T13:11:11+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/javascript-first-class-functions-5dcc7e/</loc>
     <lastmod>2025-10-27T13:11:11+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/clustered-index/</loc>
-    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/database-design/</loc>
-    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/database-design/</loc>
-    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/foreign-key/</loc>
-    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/innodb-pk-less-tables-trade-offs-2dc695/</loc>
     <lastmod>2025-10-26T13:07:10+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/oltp/</loc>
-    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/primary-key/</loc>
-    <lastmod>2025-10-26T13:07:10+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/backend-architecture/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/kubernetes/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/pub-sub/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/real-time/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/redis/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/server-sent-events/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/sse/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</loc>
     <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/chrome-devtools/</loc>
-    <lastmod>2025-10-23T13:11:27+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/debugging/</loc>
-    <lastmod>2025-10-23T13:11:27+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</loc>
     <lastmod>2025-10-23T13:11:27+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/vscode/</loc>
-    <lastmod>2025-10-23T13:11:27+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/database-tuning/</loc>
-    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/indexing/</loc>
-    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/mvcc/</loc>
-    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</loc>
     <lastmod>2025-10-22T13:12:18+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/storage-engine/</loc>
-    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/transaction/</loc>
-    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/as-const/</loc>
-    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/const-enum/</loc>
-    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/discriminated-unions/</loc>
-    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/enum/</loc>
-    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/literal-types/</loc>
-    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/tree-shaking/</loc>
-    <lastmod>2025-10-21T13:12:21+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-3817af/</loc>
     <lastmod>2025-10-21T13:12:21+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/database/</loc>
-    <lastmod>2025-10-20T13:10:30+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/pagination/</loc>
-    <lastmod>2025-10-20T13:10:30+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/sql-limit-offset-basics-4a9880/</loc>
     <lastmod>2025-10-20T13:10:30+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/node-inspect/</loc>
-    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/nodejs-v8-inspector-debugging-guide-inspect-node-inspect-2e5ae9/</loc>
     <lastmod>2025-10-19T13:06:18+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/v8-inspector/</loc>
-    <lastmod>2025-10-19T13:06:18+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/aws/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/cloud/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/control-plane/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/devops/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/eks/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/kubernetes/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/sre/</loc>
-    <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/kubernetes-control-plane-eks-2af164/</loc>
     <lastmod>2025-10-18T13:06:16+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/authentication/</loc>
-    <lastmod>2025-10-17T13:09:19+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/authorization/</loc>
-    <lastmod>2025-10-17T13:09:19+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/curl/</loc>
-    <lastmod>2025-10-17T13:09:19+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/guard/</loc>
-    <lastmod>2025-10-17T13:09:19+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/middleware/</loc>
-    <lastmod>2025-10-17T13:09:19+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</loc>
     <lastmod>2025-10-17T13:09:19+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/cgroup/</loc>
-    <lastmod>2025-10-16T13:10:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/cni/</loc>
-    <lastmod>2025-10-16T13:10:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/container-runtime/</loc>
-    <lastmod>2025-10-16T13:10:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/etcd/</loc>
-    <lastmod>2025-10-16T13:10:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/kube-apiserver/</loc>
-    <lastmod>2025-10-16T13:10:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/kube-proxy/</loc>
-    <lastmod>2025-10-16T13:10:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/kubelet/</loc>
-    <lastmod>2025-10-16T13:10:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/kubernetes-core-components-and-flow-915d3a/</loc>
     <lastmod>2025-10-16T13:10:58+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/scheduler/</loc>
-    <lastmod>2025-10-16T13:10:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/explain/</loc>
-    <lastmod>2025-10-15T13:10:54+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/mysql-explain-execution-plan-guide-b7fb65/</loc>
     <lastmod>2025-10-15T13:10:54+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/performance-tuning/</loc>
-    <lastmod>2025-10-15T13:10:54+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/query-plan/</loc>
-    <lastmod>2025-10-15T13:10:54+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/blockchain/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/blockchain/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/dapp/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/data-engineering/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/data-indexing/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/defi/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/graphql/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/indexer/</loc>
-    <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</loc>
     <lastmod>2025-10-13T13:10:20+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/consensus-algorithms/</loc>
-    <lastmod>2025-10-11T13:05:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/did/</loc>
-    <lastmod>2025-10-11T13:05:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/pos/</loc>
-    <lastmod>2025-10-11T13:05:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/pow/</loc>
-    <lastmod>2025-10-11T13:05:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/privacy/</loc>
-    <lastmod>2025-10-11T13:05:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/scalability/</loc>
-    <lastmod>2025-10-11T13:05:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/zero-knowledge-proofs/</loc>
-    <lastmod>2025-10-11T13:05:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/zk-snark/</loc>
-    <lastmod>2025-10-11T13:05:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/zk-stark/</loc>
-    <lastmod>2025-10-11T13:05:12+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</loc>
     <lastmod>2025-10-11T13:05:12+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/asic/</loc>
-    <lastmod>2025-10-06T13:09:34+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/consensus/</loc>
-    <lastmod>2025-10-06T13:09:34+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/ethereum/</loc>
-    <lastmod>2025-10-06T13:09:34+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/gpu/</loc>
-    <lastmod>2025-10-06T13:09:34+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/mining/</loc>
-    <lastmod>2025-10-06T13:09:34+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/mining-pool/</loc>
-    <lastmod>2025-10-06T13:09:34+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/proof-of-work/</loc>
-    <lastmod>2025-10-06T13:09:34+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/security/</loc>
-    <lastmod>2025-10-06T13:09:34+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</loc>
     <lastmod>2025-10-06T13:09:34+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</loc>
     <lastmod>2025-10-03T13:07:57+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/account-abstraction/</loc>
-    <lastmod>2025-10-03T13:07:57+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/eip-1271/</loc>
-    <lastmod>2025-10-03T13:07:57+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/eip-4844/</loc>
-    <lastmod>2025-10-03T13:07:57+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/layer-2/</loc>
-    <lastmod>2025-10-03T13:07:57+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/paymaster/</loc>
-    <lastmod>2025-10-03T13:07:57+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/smart-contract-wallet/</loc>
-    <lastmod>2025-10-03T13:07:57+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/zk-rollup/</loc>
-    <lastmod>2025-10-03T13:07:57+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/zk-stack/</loc>
-    <lastmod>2025-10-03T13:07:57+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/rpc/</loc>
-    <lastmod>2025-10-02T13:07:56+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/smart-contracts/</loc>
-    <lastmod>2025-10-02T13:07:56+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/viem/</loc>
-    <lastmod>2025-10-02T13:07:56+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</loc>
     <lastmod>2025-10-02T13:07:56+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/wallet/</loc>
-    <lastmod>2025-10-02T13:07:56+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/web3/</loc>
-    <lastmod>2025-10-02T13:07:56+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/web3/</loc>
-    <lastmod>2025-10-02T13:07:56+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/snark/</loc>
-    <lastmod>2025-09-29T13:10:22+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/stark/</loc>
-    <lastmod>2025-09-29T13:10:22+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/zkp/</loc>
-    <lastmod>2025-09-29T13:10:22+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</loc>
     <lastmod>2025-09-29T13:10:22+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/chain-reorganization/</loc>
-    <lastmod>2025-09-28T13:05:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/confirmation/</loc>
-    <lastmod>2025-09-28T13:05:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/reorg/</loc>
-    <lastmod>2025-09-28T13:05:58+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</loc>
     <lastmod>2025-09-28T13:05:58+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/cryptocurrency/</loc>
-    <lastmod>2025-09-23T13:09:26+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</loc>
     <lastmod>2025-09-23T13:09:26+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/bitcoin/</loc>
-    <lastmod>2025-09-22T13:10:11+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/consensus-algorithm/</loc>
-    <lastmod>2025-09-22T13:10:11+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</loc>
     <lastmod>2025-09-22T13:10:11+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/eip-712/</loc>
-    <lastmod>2025-09-21T03:11:23+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/ethersjs/</loc>
-    <lastmod>2025-09-21T03:11:23+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/off-chain-signature/</loc>
-    <lastmod>2025-09-21T03:11:23+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/solidity/</loc>
-    <lastmod>2025-09-21T03:11:23+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/zksync/</loc>
-    <lastmod>2025-09-21T03:11:23+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/off-chain-signature-verification-542a33/</loc>
     <lastmod>2025-09-21T03:11:23+00:00</lastmod>
-    <priority>1.0</priority>
     <changefreq>daily</changefreq>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</loc>
     <lastmod>2025-09-21T02:14:08+00:00</lastmod>
-    <priority>1.0</priority>
     <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/data-structure/</loc>
-    <lastmod>2025-09-20T17:15:26+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/light-node/</loc>
-    <lastmod>2025-09-20T17:15:26+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/merkle-tree/</loc>
-    <lastmod>2025-09-20T17:15:26+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</loc>
     <lastmod>2025-09-20T17:15:26+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/beacon-chain/</loc>
-    <lastmod>2025-09-20T17:04:48+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/epoch/</loc>
-    <lastmod>2025-09-20T17:04:48+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/slot/</loc>
-    <lastmod>2025-09-20T17:04:48+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/staking/</loc>
-    <lastmod>2025-09-20T17:04:48+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/validator/</loc>
-    <lastmod>2025-09-20T17:04:48+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/ethereum-pos-proof-of-stake-274b74/</loc>
     <lastmod>2025-09-20T17:04:48+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/airdrop/</loc>
-    <lastmod>2025-09-20T16:56:17+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/allowlist/</loc>
-    <lastmod>2025-09-20T16:56:17+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/marketplace/</loc>
-    <lastmod>2025-09-20T16:56:17+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/categories/nft/</loc>
-    <lastmod>2025-09-20T16:56:17+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/nft/</loc>
-    <lastmod>2025-09-20T16:56:17+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/nft-23q12akw/</loc>
     <lastmod>2025-09-20T16:56:17+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/reveal/</loc>
-    <lastmod>2025-09-20T16:56:17+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://handsupmin.github.io/tags/minting/</loc>
-    <lastmod>2025-09-20T16:41:07+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</loc>
     <lastmod>2025-09-20T16:41:07+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
-</urlset>
+  </urlset>
