@@ -6,13 +6,48 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 06 Nov 2025 13:11:04 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Nov 2025 13:09:50 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dependency-Injection</title>
+      <link>https://handsupmin.github.io/tags/dependency-injection/</link>
+      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/dependency-injection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ioc</title>
+      <link>https://handsupmin.github.io/tags/ioc/</link>
+      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/ioc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Moduleref</title>
+      <link>https://handsupmin.github.io/tags/moduleref/</link>
+      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/moduleref/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nestjs</title>
+      <link>https://handsupmin.github.io/tags/nestjs/</link>
+      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/nestjs/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Nodejs</title>
       <link>https://handsupmin.github.io/tags/nodejs/</link>
-      <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
+      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://handsupmin.github.io/tags/typescript/</link>
+      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -41,13 +76,6 @@
       <link>https://handsupmin.github.io/tags/sql-aggregation/</link>
       <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/sql-aggregation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://handsupmin.github.io/tags/typescript/</link>
-      <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -321,13 +349,6 @@
       <link>https://handsupmin.github.io/tags/dto/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/dto/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nestjs</title>
-      <link>https://handsupmin.github.io/tags/nestjs/</link>
-      <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/nestjs/</guid>
       <description></description>
     </item>
     <item>
