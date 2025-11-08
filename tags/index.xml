@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 07 Nov 2025 13:09:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Nov 2025 13:06:44 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cryptography</title>
+      <link>https://handsupmin.github.io/tags/cryptography/</link>
+      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/cryptography/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Diffie-Hellman</title>
+      <link>https://handsupmin.github.io/tags/diffie-hellman/</link>
+      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/diffie-hellman/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Discrete-Log</title>
+      <link>https://handsupmin.github.io/tags/discrete-log/</link>
+      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/discrete-log/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elgamal</title>
+      <link>https://handsupmin.github.io/tags/elgamal/</link>
+      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/elgamal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Key-Exchange</title>
+      <link>https://handsupmin.github.io/tags/key-exchange/</link>
+      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/key-exchange/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Number-Theory</title>
+      <link>https://handsupmin.github.io/tags/number-theory/</link>
+      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/number-theory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Public-Key</title>
+      <link>https://handsupmin.github.io/tags/public-key/</link>
+      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/public-key/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Dependency-Injection</title>
       <link>https://handsupmin.github.io/tags/dependency-injection/</link>
@@ -93,20 +142,6 @@
       <description></description>
     </item>
     <item>
-      <title>Cryptography</title>
-      <link>https://handsupmin.github.io/tags/cryptography/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/cryptography/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Discrete-Log</title>
-      <link>https://handsupmin.github.io/tags/discrete-log/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/discrete-log/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Fiat-Shamir</title>
       <link>https://handsupmin.github.io/tags/fiat-shamir/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
@@ -174,13 +209,6 @@
       <link>https://handsupmin.github.io/tags/ecdh/</link>
       <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/ecdh/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Elgamal</title>
-      <link>https://handsupmin.github.io/tags/elgamal/</link>
-      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/elgamal/</guid>
       <description></description>
     </item>
     <item>

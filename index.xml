@@ -6,8 +6,28 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 07 Nov 2025 13:09:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Nov 2025 13:06:44 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>디피-헬만 키 교환과 ElGamal 암호 핵심 정리</title>
+      <link>https://handsupmin.github.io/posts/diffie-hellman-and-elgamal-basics-e62139/</link>
+      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/diffie-hellman-and-elgamal-basics-e62139/</guid>
+      <description>&lt;p&gt;이전 글에서 DLP를 다룸
+이번 글에서는 DLP에 기반한 공개키 암호 ElGamal을 설명하기 전에, 토대가 되는 디피-헬만 키 교환을 간단히 정리함&lt;/p&gt;
+&lt;h3 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h3&gt;
+&lt;p&gt;디피-헬만 키 교환은 초기 공개키 암호 기법 중 하나로 두 당사자가 안전하지 않은 채널에서 공동의 비밀값을 합의하기 위한 방법
+큰 소수 p와 그 위에서 곱셈군 F_p*를 생성하는 원소 g 사용이 전형적이며, g는 보통 원시근 또는 큰 순서를 갖는 원소를 선택
+안전성은 이산로그 문제 DLP의 어려움과 연관됨&lt;/p&gt;
+&lt;h3 id=&#34;디피-헬만-키-교환-요약&#34;&gt;디피-헬만 키 교환 요약&lt;/h3&gt;
+&lt;p&gt;공개 파라미터 p, g를 합의해 모두가 공유
+앨리스는 비밀 정수 a를, 밥은 비밀 정수 b를 선택
+각자 A = g^a mod p, B = g^b mod p를 계산해 공개
+공유 비밀 K는 K = B^a ≡ A^b mod p로 합의됨
+이브는 p, g, A, B를 모두 보더라도 a 또는 b를 알기 어렵기 때문에 K를 계산하기 곤란함
+매 세션마다 a, b를 새로 뽑는 것이 핵심으로, 동일 평문이라도 암호 재사용 위험을 줄이는 효과가 있음
+이 합의된 K를 대칭키 파생에 사용해 메시지 암복호 키로 활용 가능&lt;/p&gt;</description>
+    </item>
     <item>
       <title>NestJS ModuleRef로 런타임 의존성 주입 제어하기</title>
       <link>https://handsupmin.github.io/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
