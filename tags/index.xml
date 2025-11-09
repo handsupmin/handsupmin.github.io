@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 08 Nov 2025 13:06:44 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Nov 2025 13:06:58 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coupling</title>
+      <link>https://handsupmin.github.io/tags/coupling/</link>
+      <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/coupling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dependency-Injection</title>
+      <link>https://handsupmin.github.io/tags/dependency-injection/</link>
+      <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/dependency-injection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design-Patterns</title>
+      <link>https://handsupmin.github.io/tags/design-patterns/</link>
+      <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/design-patterns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ioc</title>
+      <link>https://handsupmin.github.io/tags/ioc/</link>
+      <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/ioc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://handsupmin.github.io/tags/javascript/</link>
+      <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>https://handsupmin.github.io/tags/testing/</link>
+      <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/tags/testing/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cryptography</title>
       <link>https://handsupmin.github.io/tags/cryptography/</link>
@@ -55,20 +97,6 @@
       <link>https://handsupmin.github.io/tags/public-key/</link>
       <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/public-key/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dependency-Injection</title>
-      <link>https://handsupmin.github.io/tags/dependency-injection/</link>
-      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/dependency-injection/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ioc</title>
-      <link>https://handsupmin.github.io/tags/ioc/</link>
-      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/ioc/</guid>
       <description></description>
     </item>
     <item>
@@ -454,13 +482,6 @@
       <link>https://handsupmin.github.io/tags/higher-order-functions/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
       <guid>https://handsupmin.github.io/tags/higher-order-functions/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://handsupmin.github.io/tags/javascript/</link>
-      <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     <item>

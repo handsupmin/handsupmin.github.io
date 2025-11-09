@@ -6,8 +6,33 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 08 Nov 2025 13:06:44 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Nov 2025 13:06:58 +0000</lastBuildDate>
     <atom:link href="https://handsupmin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DI가 결합도를 낮추는 원리와 최소 예시</title>
+      <link>https://handsupmin.github.io/posts/why-di-reduces-coupling-b59160/</link>
+      <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
+      <guid>https://handsupmin.github.io/posts/why-di-reduces-coupling-b59160/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;DI(의존성 주입)의 요지는 간단함
+객체가 스스로 의존 대상을 생성하지 않고 외부에서 받은 것을 사용함
+이 작은 차이가 변경 용이성, 테스트 편의, 확장성에서 큰 차이를 만듦&lt;/p&gt;
+&lt;h3 id=&#34;문제-상황-강한-결합&#34;&gt;문제 상황: 강한 결합&lt;/h3&gt;
+&lt;p&gt;문제 패턴&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;클래스 내부에서 new로 구체 클래스를 직접 생성함&lt;/li&gt;
+&lt;li&gt;변경 시 내부 코드를 같이 수정해야 함&lt;/li&gt;
+&lt;li&gt;단위 테스트 시 실제 의존체까지 끌려와 테스트가 무거워짐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;예시 요약&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gamer가 BlueSwitchKeyboard를 생성해 사용한다고 가정&lt;/li&gt;
+&lt;li&gt;Gamer는 BlueSwitchKeyboard라는 구체 구현에 고정됨&lt;/li&gt;
+&lt;li&gt;키보드 종류를 바꾸려면 Gamer 코드를 수정해야 함
+이 상태를 결합도가 높음이라 부름&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;간단 스니펫&lt;/p&gt;</description>
+    </item>
     <item>
       <title>디피-헬만 키 교환과 ElGamal 암호 핵심 정리</title>
       <link>https://handsupmin.github.io/posts/diffie-hellman-and-elgamal-basics-e62139/</link>
