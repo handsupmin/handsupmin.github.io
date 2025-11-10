@@ -6,8 +6,113 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 09 Nov 2025 13:06:58 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Nov 2025 13:11:11 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aws-Lambda</title>
+      <link>https://blog.jsontapose.com/tags/aws-lambda/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/aws-lambda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distributed-Systems</title>
+      <link>https://blog.jsontapose.com/tags/distributed-systems/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/distributed-systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dynamodb-Streams</title>
+      <link>https://blog.jsontapose.com/tags/dynamodb-streams/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dynamodb-streams/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fan-In</title>
+      <link>https://blog.jsontapose.com/tags/fan-in/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/fan-in/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fan-Out</title>
+      <link>https://blog.jsontapose.com/tags/fan-out/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/fan-out/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kinesis</title>
+      <link>https://blog.jsontapose.com/tags/kinesis/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/kinesis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>https://blog.jsontapose.com/tags/kubernetes/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nestjs</title>
+      <link>https://blog.jsontapose.com/tags/nestjs/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pub-Sub</title>
+      <link>https://blog.jsontapose.com/tags/pub-sub/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/pub-sub/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redis</title>
+      <link>https://blog.jsontapose.com/tags/redis/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/redis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redis-Streams</title>
+      <link>https://blog.jsontapose.com/tags/redis-streams/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/redis-streams/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Serverless</title>
+      <link>https://blog.jsontapose.com/tags/serverless/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/serverless/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sns</title>
+      <link>https://blog.jsontapose.com/tags/sns/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sqs</title>
+      <link>https://blog.jsontapose.com/tags/sqs/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sqs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sse</title>
+      <link>https://blog.jsontapose.com/tags/sse/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sse/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Coupling</title>
       <link>https://blog.jsontapose.com/tags/coupling/</link>
@@ -104,13 +209,6 @@
       <link>https://blog.jsontapose.com/tags/moduleref/</link>
       <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/moduleref/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nestjs</title>
-      <link>https://blog.jsontapose.com/tags/nestjs/</link>
-      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
       <description></description>
     </item>
     <item>
@@ -527,20 +625,6 @@
       <description></description>
     </item>
     <item>
-      <title>Kubernetes</title>
-      <link>https://blog.jsontapose.com/tags/kubernetes/</link>
-      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pub-Sub</title>
-      <link>https://blog.jsontapose.com/tags/pub-sub/</link>
-      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/pub-sub/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Real-Time</title>
       <link>https://blog.jsontapose.com/tags/real-time/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
@@ -548,24 +632,10 @@
       <description></description>
     </item>
     <item>
-      <title>Redis</title>
-      <link>https://blog.jsontapose.com/tags/redis/</link>
-      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/redis/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Server-Sent-Events</title>
       <link>https://blog.jsontapose.com/tags/server-sent-events/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/server-sent-events/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sse</title>
-      <link>https://blog.jsontapose.com/tags/sse/</link>
-      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sse/</guid>
       <description></description>
     </item>
     <item>
