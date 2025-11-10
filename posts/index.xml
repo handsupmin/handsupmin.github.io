@@ -6,8 +6,22 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 09 Nov 2025 13:06:58 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Nov 2025 13:11:11 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS Lambda의 팬아웃·팬인 패턴과 NestJS·Redis로 현재 파드 전부에 안전한 팬아웃 구현</title>
+      <link>https://blog.jsontapose.com/posts/fan-out-fan-in-aws-lambda-nestjs-redis-3737c4/</link>
+      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/fan-out-fan-in-aws-lambda-nestjs-redis-3737c4/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;fan-out/fan-in은 push-pull 계열 메시징 패턴을 조합한 형태로 보는 게 정확함&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fan-out: 메시지를 여러 워커에 분산, 각 메시지는 한 워커가 처리하는 경쟁 소비자 모델 혹은 높은 병렬 처리 목표의 브로드캐스트 계열 사용&lt;/li&gt;
+&lt;li&gt;fan-in: 분할된 서브태스크의 결과를 수집·집계하여 상위 작업의 완료를 도출&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;서버리스에서 fan-out은 처리량과 동시성 확보, fan-in은 결과 집계와 진행 추적을 위한 상태 관리가 핵심 포인트임&lt;/p&gt;
+&lt;p&gt;참고로 현재 Lambda 최대 실행 시간은 15분임. 과거 5분 제한 기준의 논의와 다를 수 있음&lt;/p&gt;</description>
+    </item>
     <item>
       <title>DI가 결합도를 낮추는 원리와 최소 예시</title>
       <link>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</link>
