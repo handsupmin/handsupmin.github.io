@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Wallet on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/wallet/</link>
+    <link>https://blog.jsontapose.com/tags/wallet/</link>
     <description>Recent content in Wallet on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 02 Oct 2025 13:07:56 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/wallet/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/wallet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Viem으로 이더리움 읽기·쓰기 시작하기 가이드</title>
-      <link>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</link>
+      <link>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</guid>
+      <guid>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Viem은 이더리움 계열 체인과 상호작용하는 경량 Web3 클라이언트 라이브러리임
 ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구지만, 모듈 분리 구조와 타입 안전성, 빌드 사이즈, 성능에서 강점이 있음
@@ -31,9 +31,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>커스토디얼 vs 논커스토디얼 월렛 비교</title>
-      <link>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</link>
       <pubDate>Tue, 23 Sep 2025 13:09:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;프라이빗키 관리 방식에 따라 암호화폐 월렛은 &lt;strong&gt;커스토디얼(custodial)&lt;/strong&gt; 과 &lt;strong&gt;논커스토디얼(noncustodial)&lt;/strong&gt; 로 구분됨
 각 방식의 차이와 선택 기준, 보안·운영 리스크와 대응 방안을 &lt;strong&gt;초보자도 이해할 수 있게&lt;/strong&gt; 정리하면서 &lt;strong&gt;실무자가 바로 적용할 수 있는 체크리스트&lt;/strong&gt;까지 제시함&lt;/p&gt;
@@ -56,9 +56,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>NFT란? NFT 핵심 개념 정리</title>
-      <link>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</link>
+      <link>https://blog.jsontapose.com/posts/nft-concept-20gd0fl/</link>
       <pubDate>Sat, 20 Sep 2025 16:41:07 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</guid>
+      <guid>https://blog.jsontapose.com/posts/nft-concept-20gd0fl/</guid>
       <description>&lt;h3 id=&#34;서문&#34;&gt;서문&lt;/h3&gt;
 &lt;p&gt;NFT는 몇 년 새 대중의 관심을 받았지만 개념과 절차가 분산돼 있어 입문자가 막히기 쉬움
 이 글은 &lt;strong&gt;실무자 관점&lt;/strong&gt;에서 NFT의 핵심 개념을 단계적으로 정리하고 &lt;strong&gt;구매·발행·보관 시 유의사항&lt;/strong&gt;과 &lt;strong&gt;운영 관행&lt;/strong&gt;을 담는 것을 목표로 함&lt;/p&gt;

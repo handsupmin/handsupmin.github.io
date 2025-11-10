@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nestjs on HandsLog</title>
-    <link>https://handsupmin.github.io/categories/nestjs/</link>
+    <link>https://blog.jsontapose.com/categories/nestjs/</link>
     <description>Recent content in Nestjs on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Fri, 07 Nov 2025 13:09:50 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/categories/nestjs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/categories/nestjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NestJS ModuleRef로 런타임 의존성 주입 제어하기</title>
-      <link>https://handsupmin.github.io/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
       <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
       <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
 &lt;p&gt;ModuleRef는 NestJS에서 런타임에 의존성을 직접 조회·생성할 때 쓰는 유틸리티 클래스
 정적 DI로 풀기 어려운 동적 흐름 제어에 사용&lt;/p&gt;
@@ -32,9 +32,9 @@
     </item>
     <item>
       <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
-      <link>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;@nestjs/swagger는 NestJS와 Swagger(OpenAPI) 스펙을 연결해 API 문서를 자동 생성하는 모듈임
 DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 예시, 설명 등을 Swagger UI에 노출하는 흐름으로 작동함
@@ -52,9 +52,9 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
     </item>
     <item>
       <title>NestJS Guard로 요청 보호하기 — CanActivate, UseGuards, Bearer 인증 예시</title>
-      <link>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;가드 Guard를 이용해 NestJS 애플리케이션을 위험한 요청으로부터 차단하는 방법 정리
 컨트롤러에 도달하기 전 단계에서 인증과 접근 제어 수행하는 패턴 중심으로 설명&lt;/p&gt;

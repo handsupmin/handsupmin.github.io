@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Security on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/security/</link>
+    <link>https://blog.jsontapose.com/tags/security/</link>
     <description>Recent content in Security on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 06 Oct 2025 13:09:34 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>블록체인 채굴 개념과 동작 원리 PoW 보상 구조 이더리움 전환 사례</title>
-      <link>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;채굴은 트랜잭션을 묶어 블록을 만들고 블록체인에 추가하는 행위이자, 네트워크를 공격으로부터 방어하는 핵심 보안 메커니즘임
 역사적으로 비트코인과 이더리움은 작업증명 PoW 기반 채굴에 의존해 합의를 유지했음
@@ -37,9 +37,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이</title>
-      <link>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link>
+      <link>https://blog.jsontapose.com/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid>
+      <guid>https://blog.jsontapose.com/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;영지식 증명은 어떤 명제가 참임을 설득하면서도 그 근거가 되는 비밀은 끝까지 숨기는 절차를 말함
 블록체인과 프라이버시 보존 컴퓨팅에서 핵심 도구로 자리 잡았고 범용 계산의 유효성을 작은 증명으로 압축해 전달하는 현대 프로토콜의 기초로 쓰임
@@ -77,9 +77,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>커스토디얼 vs 논커스토디얼 월렛 비교</title>
-      <link>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</link>
       <pubDate>Tue, 23 Sep 2025 13:09:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;프라이빗키 관리 방식에 따라 암호화폐 월렛은 &lt;strong&gt;커스토디얼(custodial)&lt;/strong&gt; 과 &lt;strong&gt;논커스토디얼(noncustodial)&lt;/strong&gt; 로 구분됨
 각 방식의 차이와 선택 기준, 보안·운영 리스크와 대응 방안을 &lt;strong&gt;초보자도 이해할 수 있게&lt;/strong&gt; 정리하면서 &lt;strong&gt;실무자가 바로 적용할 수 있는 체크리스트&lt;/strong&gt;까지 제시함&lt;/p&gt;

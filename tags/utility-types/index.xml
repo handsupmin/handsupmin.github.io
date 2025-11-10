@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Utility-Types on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/utility-types/</link>
+    <link>https://blog.jsontapose.com/tags/utility-types/</link>
     <description>Recent content in Utility-Types on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sat, 01 Nov 2025 13:06:40 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/utility-types/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/utility-types/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TypeScript Parameters 유틸리티 타입 개념과 안전한 활용</title>
-      <link>https://handsupmin.github.io/posts/typescript-parameters-utility-type-913b5f/</link>
+      <link>https://blog.jsontapose.com/posts/typescript-parameters-utility-type-913b5f/</link>
       <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/typescript-parameters-utility-type-913b5f/</guid>
+      <guid>https://blog.jsontapose.com/posts/typescript-parameters-utility-type-913b5f/</guid>
       <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
 &lt;p&gt;Parameters는 TypeScript가 제공하는 제네릭 유틸리티 타입으로, 특정 함수 타입의 매개변수 타입들을 튜플로 추출하는 데 사용됨
 함수 래핑, 고차 함수, 어댑터 계층에서 기존 함수 시그니처를 재사용해 타입 안정성을 유지하고 중복 선언을 줄이는 목적에 적합함&lt;/p&gt;

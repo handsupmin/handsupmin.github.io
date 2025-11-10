@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cgroup on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/cgroup/</link>
+    <link>https://blog.jsontapose.com/tags/cgroup/</link>
     <description>Recent content in Cgroup on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 16 Oct 2025 13:10:58 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/cgroup/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/cgroup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes 핵심 구성요소와 동작 흐름</title>
-      <link>https://handsupmin.github.io/posts/kubernetes-core-components-and-flow-915d3a/</link>
+      <link>https://blog.jsontapose.com/posts/kubernetes-core-components-and-flow-915d3a/</link>
       <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/kubernetes-core-components-and-flow-915d3a/</guid>
+      <guid>https://blog.jsontapose.com/posts/kubernetes-core-components-and-flow-915d3a/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;쿠버네티스는 제어 평면과 워커 노드, 그리고 그 사이를 매개하는 런타임과 커널 메커니즘이 맞물려 동작하는 분산 시스템
 핵심은 단일 진실 소스에 원하는 상태를 기록하고, 이를 지속적으로 감시하고 조정해 실제 상태를 일치시키는 루프

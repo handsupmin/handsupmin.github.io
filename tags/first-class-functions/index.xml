@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>First-Class-Functions on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/first-class-functions/</link>
+    <link>https://blog.jsontapose.com/tags/first-class-functions/</link>
     <description>Recent content in First-Class-Functions on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 27 Oct 2025 13:11:11 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/first-class-functions/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/first-class-functions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript 함수는 왜 일급 객체인가 — 의미와 활용</title>
-      <link>https://handsupmin.github.io/posts/javascript-first-class-functions-5dcc7e/</link>
+      <link>https://blog.jsontapose.com/posts/javascript-first-class-functions-5dcc7e/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/javascript-first-class-functions-5dcc7e/</guid>
+      <guid>https://blog.jsontapose.com/posts/javascript-first-class-functions-5dcc7e/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;JavaScript에서 함수는 일급 객체로 취급됨
 이는 함수가 값처럼 변수에 담기고, 인수로 전달되고, 반환값으로 나오며, 객체의 프로퍼티로 저장될 수 있음을 의미함

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Zk-Rollup on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/zk-rollup/</link>
+    <link>https://blog.jsontapose.com/tags/zk-rollup/</link>
     <description>Recent content in Zk-Rollup on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Fri, 03 Oct 2025 13:07:57 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/zk-rollup/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/zk-rollup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Abstract L2 체인 개요와 설계 핵심: ZK Rollup, ZK Stack, 네이티브 계정 추상화, AGW</title>
-      <link>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</link>
+      <link>https://blog.jsontapose.com/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</guid>
+      <guid>https://blog.jsontapose.com/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Abstract는 이더리움 보안을 상속하는 ZK Rollup 기반 L2 체인으로, 고비용·저처리량 한계를 완화하는 확장 층 제공 목표
 ZK Stack으로 구축되어 체인 개발과 운영 구성 요소를 모듈화하고, 데이터 가용성은 EIP-4844 블롭을 활용해 비용을 절감하는 방향 추구

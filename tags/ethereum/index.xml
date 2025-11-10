@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ethereum on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/ethereum/</link>
+    <link>https://blog.jsontapose.com/tags/ethereum/</link>
     <description>Recent content in Ethereum on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 06 Oct 2025 13:09:34 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/ethereum/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/ethereum/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>블록체인 채굴 개념과 동작 원리 PoW 보상 구조 이더리움 전환 사례</title>
-      <link>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;채굴은 트랜잭션을 묶어 블록을 만들고 블록체인에 추가하는 행위이자, 네트워크를 공격으로부터 방어하는 핵심 보안 메커니즘임
 역사적으로 비트코인과 이더리움은 작업증명 PoW 기반 채굴에 의존해 합의를 유지했음
@@ -37,9 +37,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>Abstract L2 체인 개요와 설계 핵심: ZK Rollup, ZK Stack, 네이티브 계정 추상화, AGW</title>
-      <link>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</link>
+      <link>https://blog.jsontapose.com/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</guid>
+      <guid>https://blog.jsontapose.com/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Abstract는 이더리움 보안을 상속하는 ZK Rollup 기반 L2 체인으로, 고비용·저처리량 한계를 완화하는 확장 층 제공 목표
 ZK Stack으로 구축되어 체인 개발과 운영 구성 요소를 모듈화하고, 데이터 가용성은 EIP-4844 블롭을 활용해 비용을 절감하는 방향 추구
@@ -52,9 +52,9 @@ ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 �
     </item>
     <item>
       <title>Viem으로 이더리움 읽기·쓰기 시작하기 가이드</title>
-      <link>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</link>
+      <link>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</guid>
+      <guid>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Viem은 이더리움 계열 체인과 상호작용하는 경량 Web3 클라이언트 라이브러리임
 ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구지만, 모듈 분리 구조와 타입 안전성, 빌드 사이즈, 성능에서 강점이 있음
@@ -73,9 +73,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>블록체인이란? 블록체인 개념 총정리</title>
-      <link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-principles-mining-hash-274b74/</link>
       <pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-principles-mining-hash-274b74/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;블록체인은 &lt;strong&gt;중앙 기관 없이&lt;/strong&gt; 참여자들이 거래를 기록·검증·공유하는 &lt;strong&gt;분산 원장&lt;/strong&gt; 기술임
 이 글은 블록체인을 &lt;strong&gt;초보자 친화적으로&lt;/strong&gt; 설명하고, &lt;strong&gt;실무 체크리스트&lt;/strong&gt;까지 정리함&lt;/p&gt;
@@ -109,9 +109,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>이더리움 PoS(Proof of Stake) 소개</title>
-      <link>https://handsupmin.github.io/posts/ethereum-pos-proof-of-stake-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/ethereum-pos-proof-of-stake-274b74/</link>
       <pubDate>Sat, 20 Sep 2025 17:04:48 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/ethereum-pos-proof-of-stake-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/ethereum-pos-proof-of-stake-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;이 문서는 이더리움의 PoS 합의 구조와 구성 요소를 정리함
 개념 정의에 그치지 않고 &lt;strong&gt;운영 시 주의점&lt;/strong&gt;, &lt;strong&gt;보상·출금 흐름&lt;/strong&gt;, &lt;strong&gt;짧은 체인 재구성(Reorg) 원인과 완화책&lt;/strong&gt;까지 다룸&lt;/p&gt;

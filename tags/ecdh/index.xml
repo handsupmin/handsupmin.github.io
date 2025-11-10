@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ecdh on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/ecdh/</link>
+    <link>https://blog.jsontapose.com/tags/ecdh/</link>
     <description>Recent content in Ecdh on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Tue, 04 Nov 2025 13:12:55 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/ecdh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/ecdh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>타원곡선암호 기초: 곡선 정의, EC-DLP, 도메인 파라미터, ECDH·EC-ElGamal</title>
-      <link>https://handsupmin.github.io/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</link>
+      <link>https://blog.jsontapose.com/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</link>
       <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</guid>
+      <guid>https://blog.jsontapose.com/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;RSA와 ElGamal은 보안 강도를 유지하려면 시간이 갈수록 키 길이와 연산 복잡도가 커지는 경향이 있음. 계산 성능 향상과 공격 알고리즘 발전으로, 패딩 도입과 긴 키가 필수화되는 흐름이 생김. 이에 대한 대안으로 1985년에 제안된 타원곡선암호 ECC가 짧은 키 길이로 동등한 보안 수준과 빠른 연산을 제공함. ECC는 새로운 수학적 난제를 도입한 것이 아니라, 이산 로그 문제 DLP를 타원곡선 위에서 풀기가 더 어렵다는 점을 활용하는 구조임&lt;/p&gt;
 &lt;p&gt;이 글에서는 타원곡선의 정의와 군 구조, 유한체 위 곡선, EC-DLP, 도메인 파라미터, 그리고 ECDH·EC-ElGamal까지 핵심 흐름을 정리함&lt;/p&gt;</description>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Query on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/query/</link>
+    <link>https://blog.jsontapose.com/tags/query/</link>
     <description>Recent content in Query on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Tue, 28 Oct 2025 13:10:28 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/query/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/query/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prisma findMany 가이드: where, select/include, 정렬·페이징, in/비교 연산자</title>
-      <link>https://handsupmin.github.io/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</link>
+      <link>https://blog.jsontapose.com/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</link>
       <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</guid>
+      <guid>https://blog.jsontapose.com/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Prisma의 findMany는 다중 레코드 조회용 메서드
 기본값은 대상 모델의 모든 레코드 반환
@@ -36,9 +36,9 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
     </item>
     <item>
       <title>SQL LIMIT와 OFFSET 사용법 정리: 행 개수 제한과 페이징</title>
-      <link>https://handsupmin.github.io/posts/sql-limit-offset-basics-4a9880/</link>
+      <link>https://blog.jsontapose.com/posts/sql-limit-offset-basics-4a9880/</link>
       <pubDate>Mon, 20 Oct 2025 13:10:30 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/sql-limit-offset-basics-4a9880/</guid>
+      <guid>https://blog.jsontapose.com/posts/sql-limit-offset-basics-4a9880/</guid>
       <description>&lt;h3 id=&#34;기본-문법&#34;&gt;기본 문법&lt;/h3&gt;
 &lt;p&gt;LIMIT는 SELECT 결과에서 반환할 행 수를 제한하는 구문
 WHERE와 ORDER BY 뒤, 즉 SELECT 문 끝에 위치&lt;/p&gt;

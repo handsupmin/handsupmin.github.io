@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Query-Plan on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/query-plan/</link>
+    <link>https://blog.jsontapose.com/tags/query-plan/</link>
     <description>Recent content in Query-Plan on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Wed, 15 Oct 2025 13:10:54 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/query-plan/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/query-plan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MySQL EXPLAIN 실행 계획 해석 가이드</title>
-      <link>https://handsupmin.github.io/posts/mysql-explain-execution-plan-guide-b7fb65/</link>
+      <link>https://blog.jsontapose.com/posts/mysql-explain-execution-plan-guide-b7fb65/</link>
       <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/mysql-explain-execution-plan-guide-b7fb65/</guid>
+      <guid>https://blog.jsontapose.com/posts/mysql-explain-execution-plan-guide-b7fb65/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;EXPLAIN은 SELECT가 어떤 경로로 데이터를 읽는지 드러내는 도구
 병목 파악과 인덱스 전략 점검에 사용&lt;/p&gt;

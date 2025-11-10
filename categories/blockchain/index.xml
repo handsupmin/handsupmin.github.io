@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blockchain on HandsLog</title>
-    <link>https://handsupmin.github.io/categories/blockchain/</link>
+    <link>https://blog.jsontapose.com/categories/blockchain/</link>
     <description>Recent content in Blockchain on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 13 Oct 2025 13:10:20 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>블록체인 인덱서 가이드</title>
-      <link>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link>
       <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</guid>
       <description>&lt;h1 id=&#34;블록체인-인덱서-가이드&#34;&gt;블록체인 인덱서 가이드&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;인덱서는 원장 데이터를 제품 요구에 맞게 재구성해 저지연으로 제공하는 데이터 레이어임
@@ -33,9 +33,9 @@
     </item>
     <item>
       <title>블록체인 합의 알고리즘 가이드 — PoW, PoS와 영지식증명 활용</title>
-      <link>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;퍼블릭 블록체인은 중앙 관리자 없이 다수 참여자가 같은 상태를 공유해야 함
 이때 모두가 믿을 수 있는 하나의 기록을 선택하는 규칙이 필요하며 이를 합의 알고리즘이라 부름
@@ -60,9 +60,9 @@ PoW와 PoS는 대표적 합의 방식이며 최근에는 영지식증명 같은 
     </item>
     <item>
       <title>블록체인 채굴 개념과 동작 원리 PoW 보상 구조 이더리움 전환 사례</title>
-      <link>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;채굴은 트랜잭션을 묶어 블록을 만들고 블록체인에 추가하는 행위이자, 네트워크를 공격으로부터 방어하는 핵심 보안 메커니즘임
 역사적으로 비트코인과 이더리움은 작업증명 PoW 기반 채굴에 의존해 합의를 유지했음
@@ -87,9 +87,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>Abstract L2 체인 개요와 설계 핵심: ZK Rollup, ZK Stack, 네이티브 계정 추상화, AGW</title>
-      <link>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</link>
+      <link>https://blog.jsontapose.com/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</guid>
+      <guid>https://blog.jsontapose.com/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Abstract는 이더리움 보안을 상속하는 ZK Rollup 기반 L2 체인으로, 고비용·저처리량 한계를 완화하는 확장 층 제공 목표
 ZK Stack으로 구축되어 체인 개발과 운영 구성 요소를 모듈화하고, 데이터 가용성은 EIP-4844 블롭을 활용해 비용을 절감하는 방향 추구
@@ -102,9 +102,9 @@ ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 �
     </item>
     <item>
       <title>블록체인 Reorg(체인 재구성) 이해</title>
-      <link>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-reorg-chain-reorganization-f4966a/</link>
       <pubDate>Sun, 28 Sep 2025 13:05:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-reorg-chain-reorganization-f4966a/</guid>
       <description>&lt;h2 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h2&gt;
 &lt;p&gt;Reorg는 동시에 생성된 블록로 체인이 잠시 분기된 뒤 합의 규칙에 따라 더 우세한 분기로 갈아타는 상황을 뜻함
 짧아진 분기에 있던 블록은 활성 체인에서 제외되어 존재하지 않았던 것으로 취급됨
@@ -119,9 +119,9 @@ ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 �
     </item>
     <item>
       <title>커스토디얼 vs 논커스토디얼 월렛 비교</title>
-      <link>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</link>
       <pubDate>Tue, 23 Sep 2025 13:09:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;프라이빗키 관리 방식에 따라 암호화폐 월렛은 &lt;strong&gt;커스토디얼(custodial)&lt;/strong&gt; 과 &lt;strong&gt;논커스토디얼(noncustodial)&lt;/strong&gt; 로 구분됨
 각 방식의 차이와 선택 기준, 보안·운영 리스크와 대응 방안을 &lt;strong&gt;초보자도 이해할 수 있게&lt;/strong&gt; 정리하면서 &lt;strong&gt;실무자가 바로 적용할 수 있는 체크리스트&lt;/strong&gt;까지 제시함&lt;/p&gt;
@@ -144,9 +144,9 @@ ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 �
     </item>
     <item>
       <title>블록체인이란? 블록체인 개념 총정리</title>
-      <link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-principles-mining-hash-274b74/</link>
       <pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-principles-mining-hash-274b74/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;블록체인은 &lt;strong&gt;중앙 기관 없이&lt;/strong&gt; 참여자들이 거래를 기록·검증·공유하는 &lt;strong&gt;분산 원장&lt;/strong&gt; 기술임
 이 글은 블록체인을 &lt;strong&gt;초보자 친화적으로&lt;/strong&gt; 설명하고, &lt;strong&gt;실무 체크리스트&lt;/strong&gt;까지 정리함&lt;/p&gt;
@@ -180,9 +180,9 @@ ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 �
     </item>
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
-      <link>https://handsupmin.github.io/posts/off-chain-signature-verification-542a33/</link>
+      <link>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</link>
       <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/off-chain-signature-verification-542a33/</guid>
+      <guid>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;블록체인 기술에서 모든 것을 온체인(On-chain)으로 처리하는 것은 비효율적이거나 불가능한 경우가 많음
 이때 &lt;strong&gt;오프체인 서명 검증&lt;/strong&gt;(Off-chain Signature Verification)은 오프체인(서버)의 유연성과 온체인(컨트랙트)의 신뢰성을 결합하는 강력한 해결책이 됨&lt;/p&gt;
@@ -192,9 +192,9 @@ ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 �
     </item>
     <item>
       <title>안전한 가스비 대납을 위한 오프체인 서명 검증 페이마스터 (in ZkSync Era)</title>
-      <link>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</link>
       <pubDate>Sun, 21 Sep 2025 02:14:08 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;블록체인 서비스에서 사용자가 겪는 가장 큰 장벽 중 하나는 단연 &lt;strong&gt;가스비&lt;/strong&gt;(Gas Fee)임
 아무리 좋은 서비스를 만들어도, 사용자가 지갑에 가스비로 쓸 코인(ETH 등)을 보유하고 있어야 한다는 점은 대중화를 가로막는 결정적인 요인임
@@ -203,9 +203,9 @@ ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 �
     </item>
     <item>
       <title>머클트리(Merkle Tree)란? 머클트리의 개념과 블록체인에서의 역할</title>
-      <link>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</link>
       <pubDate>Sat, 20 Sep 2025 17:15:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;머클트리는 블록체인에서 거래 집합을 &lt;strong&gt;안전하고 효율적으로 요약·검증&lt;/strong&gt;하기 위해 쓰이는 핵심 자료구조임
 블록 헤더에 머클루트가 포함되는 이유는 블록 안의 모든 거래를 &lt;strong&gt;고정 크기 해시 하나&lt;/strong&gt;로 대표해 무결성 확인과 경량 검증을 가능하게 하기 때문임
@@ -248,9 +248,9 @@ ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 �
     </item>
     <item>
       <title>이더리움 PoS(Proof of Stake) 소개</title>
-      <link>https://handsupmin.github.io/posts/ethereum-pos-proof-of-stake-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/ethereum-pos-proof-of-stake-274b74/</link>
       <pubDate>Sat, 20 Sep 2025 17:04:48 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/ethereum-pos-proof-of-stake-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/ethereum-pos-proof-of-stake-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;이 문서는 이더리움의 PoS 합의 구조와 구성 요소를 정리함
 개념 정의에 그치지 않고 &lt;strong&gt;운영 시 주의점&lt;/strong&gt;, &lt;strong&gt;보상·출금 흐름&lt;/strong&gt;, &lt;strong&gt;짧은 체인 재구성(Reorg) 원인과 완화책&lt;/strong&gt;까지 다룸&lt;/p&gt;

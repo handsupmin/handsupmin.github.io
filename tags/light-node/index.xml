@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Light-Node on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/light-node/</link>
+    <link>https://blog.jsontapose.com/tags/light-node/</link>
     <description>Recent content in Light-Node on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sat, 20 Sep 2025 17:15:26 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/light-node/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/light-node/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>머클트리(Merkle Tree)란? 머클트리의 개념과 블록체인에서의 역할</title>
-      <link>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</link>
       <pubDate>Sat, 20 Sep 2025 17:15:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;머클트리는 블록체인에서 거래 집합을 &lt;strong&gt;안전하고 효율적으로 요약·검증&lt;/strong&gt;하기 위해 쓰이는 핵심 자료구조임
 블록 헤더에 머클루트가 포함되는 이유는 블록 안의 모든 거래를 &lt;strong&gt;고정 크기 해시 하나&lt;/strong&gt;로 대표해 무결성 확인과 경량 검증을 가능하게 하기 때문임

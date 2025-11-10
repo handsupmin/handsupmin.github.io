@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Minting on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/minting/</link>
+    <link>https://blog.jsontapose.com/tags/minting/</link>
     <description>Recent content in Minting on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sat, 20 Sep 2025 16:41:07 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/minting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/minting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NFT란? NFT 핵심 개념 정리</title>
-      <link>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</link>
+      <link>https://blog.jsontapose.com/posts/nft-concept-20gd0fl/</link>
       <pubDate>Sat, 20 Sep 2025 16:41:07 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</guid>
+      <guid>https://blog.jsontapose.com/posts/nft-concept-20gd0fl/</guid>
       <description>&lt;h3 id=&#34;서문&#34;&gt;서문&lt;/h3&gt;
 &lt;p&gt;NFT는 몇 년 새 대중의 관심을 받았지만 개념과 절차가 분산돼 있어 입문자가 막히기 쉬움
 이 글은 &lt;strong&gt;실무자 관점&lt;/strong&gt;에서 NFT의 핵심 개념을 단계적으로 정리하고 &lt;strong&gt;구매·발행·보관 시 유의사항&lt;/strong&gt;과 &lt;strong&gt;운영 관행&lt;/strong&gt;을 담는 것을 목표로 함&lt;/p&gt;

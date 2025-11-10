@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on HandsLog</title>
-    <link>https://handsupmin.github.io/posts/</link>
+    <link>https://blog.jsontapose.com/posts/</link>
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 09 Nov 2025 13:06:58 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DI가 결합도를 낮추는 원리와 최소 예시</title>
-      <link>https://handsupmin.github.io/posts/why-di-reduces-coupling-b59160/</link>
+      <link>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/why-di-reduces-coupling-b59160/</guid>
+      <guid>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</guid>
       <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
 &lt;p&gt;DI(의존성 주입)의 요지는 간단함
 객체가 스스로 의존 대상을 생성하지 않고 외부에서 받은 것을 사용함
@@ -35,9 +35,9 @@
     </item>
     <item>
       <title>디피-헬만 키 교환과 ElGamal 암호 핵심 정리</title>
-      <link>https://handsupmin.github.io/posts/diffie-hellman-and-elgamal-basics-e62139/</link>
+      <link>https://blog.jsontapose.com/posts/diffie-hellman-and-elgamal-basics-e62139/</link>
       <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/diffie-hellman-and-elgamal-basics-e62139/</guid>
+      <guid>https://blog.jsontapose.com/posts/diffie-hellman-and-elgamal-basics-e62139/</guid>
       <description>&lt;p&gt;이전 글에서 DLP를 다룸
 이번 글에서는 DLP에 기반한 공개키 암호 ElGamal을 설명하기 전에, 토대가 되는 디피-헬만 키 교환을 간단히 정리함&lt;/p&gt;
 &lt;h3 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h3&gt;
@@ -55,9 +55,9 @@
     </item>
     <item>
       <title>NestJS ModuleRef로 런타임 의존성 주입 제어하기</title>
-      <link>https://handsupmin.github.io/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
       <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
       <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
 &lt;p&gt;ModuleRef는 NestJS에서 런타임에 의존성을 직접 조회·생성할 때 쓰는 유틸리티 클래스
 정적 DI로 풀기 어려운 동적 흐름 제어에 사용&lt;/p&gt;
@@ -77,9 +77,9 @@
     </item>
     <item>
       <title>Prisma OrderByWithAggregationInput로 집계 기반 정렬하기와 올바른 사용 맥락</title>
-      <link>https://handsupmin.github.io/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</link>
+      <link>https://blog.jsontapose.com/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</link>
       <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</guid>
+      <guid>https://blog.jsontapose.com/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;OrderByWithAggregationInput은 일반 필드뿐 아니라 _count, _avg, _sum 같은 집계 결과를 기준으로 정렬을 정의하는 Prisma 입력 타입임
 핵심은 이 타입이 findMany가 아니라 groupBy에서 사용하는 것이라는 점임
@@ -109,9 +109,9 @@
     </item>
     <item>
       <title>영지식 증명 입문 1편: NP·IP·AM, 알리바바 동굴, 3색 칠하기, Fiat–Shamir</title>
-      <link>https://handsupmin.github.io/posts/zero-knowledge-proof-intro-1-372f3d/</link>
+      <link>https://blog.jsontapose.com/posts/zero-knowledge-proof-intro-1-372f3d/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/zero-knowledge-proof-intro-1-372f3d/</guid>
+      <guid>https://blog.jsontapose.com/posts/zero-knowledge-proof-intro-1-372f3d/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;블라인드 서명은 내용을 숨긴 채 서명을 얻는 특성 덕에 영지식성의 일부를 직관적으로 보여줌. 본 글은 영지식 증명 전반을 개념 정리 관점에서 다룸. NP 증명 시스템과 대화형 증명 시스템, AM 프로토콜과 IP=PSPACE 결과, 직관적 비유인 알리바바의 동굴, 대표적 구현 예시 몇 가지, 그리고 비대화형 영지식 증명과 Fiat–Shamir 휴리스틱까지의 흐름 정리&lt;/p&gt;
 &lt;h3 id=&#34;np-증명-시스템&#34;&gt;NP 증명 시스템&lt;/h3&gt;
@@ -119,18 +119,18 @@
     </item>
     <item>
       <title>타원곡선암호 기초: 곡선 정의, EC-DLP, 도메인 파라미터, ECDH·EC-ElGamal</title>
-      <link>https://handsupmin.github.io/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</link>
+      <link>https://blog.jsontapose.com/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</link>
       <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</guid>
+      <guid>https://blog.jsontapose.com/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;RSA와 ElGamal은 보안 강도를 유지하려면 시간이 갈수록 키 길이와 연산 복잡도가 커지는 경향이 있음. 계산 성능 향상과 공격 알고리즘 발전으로, 패딩 도입과 긴 키가 필수화되는 흐름이 생김. 이에 대한 대안으로 1985년에 제안된 타원곡선암호 ECC가 짧은 키 길이로 동등한 보안 수준과 빠른 연산을 제공함. ECC는 새로운 수학적 난제를 도입한 것이 아니라, 이산 로그 문제 DLP를 타원곡선 위에서 풀기가 더 어렵다는 점을 활용하는 구조임&lt;/p&gt;
 &lt;p&gt;이 글에서는 타원곡선의 정의와 군 구조, 유한체 위 곡선, EC-DLP, 도메인 파라미터, 그리고 ECDH·EC-ElGamal까지 핵심 흐름을 정리함&lt;/p&gt;</description>
     </item>
     <item>
       <title>KISS 원리: 소프트웨어 설계에서 불필요한 복잡성 줄이기</title>
-      <link>https://handsupmin.github.io/posts/kiss-principle-software-design-799a74/</link>
+      <link>https://blog.jsontapose.com/posts/kiss-principle-software-design-799a74/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/kiss-principle-software-design-799a74/</guid>
+      <guid>https://blog.jsontapose.com/posts/kiss-principle-software-design-799a74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;KISS는 Keep It Simple, Stupid 또는 Keep It Simple and Straightforward의 약자이며 1960년대 미 해군에서 출발한 설계 원칙입니다. 소프트웨어에서는 불필요한 복잡성을 제거하고 이해와 변경이 쉬운 구조를 지향합니다. 목표는 적은 개념과 짧은 경로로 같은 가치를 제공하는 시스템을 만드는 것임&lt;/p&gt;
 &lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
@@ -156,9 +156,9 @@
     </item>
     <item>
       <title>npm, npx, yarn 비교와 사용 맥락 정리</title>
-      <link>https://handsupmin.github.io/posts/npm-npx-yarn-overview-compare-db8c4d/</link>
+      <link>https://blog.jsontapose.com/posts/npm-npx-yarn-overview-compare-db8c4d/</link>
       <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/npm-npx-yarn-overview-compare-db8c4d/</guid>
+      <guid>https://blog.jsontapose.com/posts/npm-npx-yarn-overview-compare-db8c4d/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;JavaScript와 Node.js 생태계에서 패키지 관리 도구 선택은 빌드 재현성, 설치 속도, 운영 안정성에 직접 영향 있음
 현업 기준으로 npm, npx, yarn의 목적과 차이를 맥락 중심으로 정리&lt;/p&gt;
@@ -171,9 +171,9 @@ CI에서는 &lt;code&gt;npm ci&lt;/code&gt;로 lock 파일 기준 클린 설치 
     </item>
     <item>
       <title>TypeScript Parameters 유틸리티 타입 개념과 안전한 활용</title>
-      <link>https://handsupmin.github.io/posts/typescript-parameters-utility-type-913b5f/</link>
+      <link>https://blog.jsontapose.com/posts/typescript-parameters-utility-type-913b5f/</link>
       <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/typescript-parameters-utility-type-913b5f/</guid>
+      <guid>https://blog.jsontapose.com/posts/typescript-parameters-utility-type-913b5f/</guid>
       <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
 &lt;p&gt;Parameters는 TypeScript가 제공하는 제네릭 유틸리티 타입으로, 특정 함수 타입의 매개변수 타입들을 튜플로 추출하는 데 사용됨
 함수 래핑, 고차 함수, 어댑터 계층에서 기존 함수 시그니처를 재사용해 타입 안정성을 유지하고 중복 선언을 줄이는 목적에 적합함&lt;/p&gt;
@@ -189,9 +189,9 @@ CI에서는 &lt;code&gt;npm ci&lt;/code&gt;로 lock 파일 기준 클린 설치 
     </item>
     <item>
       <title>MySQL InnoDB 버퍼 풀 개념과 동작 원리, 크기 설정 가이드</title>
-      <link>https://handsupmin.github.io/posts/mysql-innodb-buffer-pool-c63a29/</link>
+      <link>https://blog.jsontapose.com/posts/mysql-innodb-buffer-pool-c63a29/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/mysql-innodb-buffer-pool-c63a29/</guid>
+      <guid>https://blog.jsontapose.com/posts/mysql-innodb-buffer-pool-c63a29/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;InnoDB 버퍼 풀은 MySQL InnoDB 스토리지 엔진의 메모리 캐시 영역으로 데이터와 인덱스 페이지를 담아 디스크 I/O를 줄이고 지연 시간을 낮추는 역할 수행
 InnoDB는 트랜잭션, 로우 레벨 락, 복구 기능을 제공하며 버퍼 풀은 그 성능의 핵심 구성요소임&lt;/p&gt;
@@ -221,9 +221,9 @@ InnoDB는 트랜잭션, 로우 레벨 락, 복구 기능을 제공하며 버퍼 
     </item>
     <item>
       <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
-      <link>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;@nestjs/swagger는 NestJS와 Swagger(OpenAPI) 스펙을 연결해 API 문서를 자동 생성하는 모듈임
 DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 예시, 설명 등을 Swagger UI에 노출하는 흐름으로 작동함
@@ -241,9 +241,9 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
     </item>
     <item>
       <title>Prisma cursor 기반 페이지네이션 동작 원리와 skip: 1의 의미</title>
-      <link>https://handsupmin.github.io/posts/prisma-cursor-pagination-and-skip-1-a14080/</link>
+      <link>https://blog.jsontapose.com/posts/prisma-cursor-pagination-and-skip-1-a14080/</link>
       <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/prisma-cursor-pagination-and-skip-1-a14080/</guid>
+      <guid>https://blog.jsontapose.com/posts/prisma-cursor-pagination-and-skip-1-a14080/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Prisma에서 cursor는 특정 레코드 지점부터 결과를 읽기 시작하는 기준점으로 동작함
 skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으로, 페이지 간 중복을 제거하는 데 사용함&lt;/p&gt;
@@ -272,9 +272,9 @@ skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으
     </item>
     <item>
       <title>Prisma findMany 가이드: where, select/include, 정렬·페이징, in/비교 연산자</title>
-      <link>https://handsupmin.github.io/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</link>
+      <link>https://blog.jsontapose.com/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</link>
       <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</guid>
+      <guid>https://blog.jsontapose.com/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Prisma의 findMany는 다중 레코드 조회용 메서드
 기본값은 대상 모델의 모든 레코드 반환
@@ -298,9 +298,9 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
     </item>
     <item>
       <title>JavaScript 함수는 왜 일급 객체인가 — 의미와 활용</title>
-      <link>https://handsupmin.github.io/posts/javascript-first-class-functions-5dcc7e/</link>
+      <link>https://blog.jsontapose.com/posts/javascript-first-class-functions-5dcc7e/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/javascript-first-class-functions-5dcc7e/</guid>
+      <guid>https://blog.jsontapose.com/posts/javascript-first-class-functions-5dcc7e/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;JavaScript에서 함수는 일급 객체로 취급됨
 이는 함수가 값처럼 변수에 담기고, 인수로 전달되고, 반환값으로 나오며, 객체의 프로퍼티로 저장될 수 있음을 의미함
@@ -322,9 +322,9 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
     </item>
     <item>
       <title>InnoDB에서 PK 없는 테이블의 동작과 트레이드오프</title>
-      <link>https://handsupmin.github.io/posts/innodb-pk-less-tables-trade-offs-2dc695/</link>
+      <link>https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/innodb-pk-less-tables-trade-offs-2dc695/</guid>
+      <guid>https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/</guid>
       <description>&lt;h3 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h3&gt;
 &lt;p&gt;InnoDB는 데이터를 클러스터형 인덱스 기준으로 저장하는 스토리지 엔진임
 대부분의 테이블에서 이 클러스터형 인덱스는 프라이머리 키가 담당함
@@ -339,9 +339,9 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
     </item>
     <item>
       <title>SSE란? 실시간 이벤트 전달 프로토콜 (Server-Sent Events)</title>
-      <link>https://handsupmin.github.io/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</link>
+      <link>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</guid>
+      <guid>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</guid>
       <description>&lt;h1 id=&#34;sseserver-sent-events란-무엇인가&#34;&gt;SSE(Server-Sent Events)란 무엇인가&lt;/h1&gt;
 &lt;p&gt;SSE는 &lt;strong&gt;Server-Sent Events&lt;/strong&gt;의 약자로, 서버가 클라이언트로 &lt;strong&gt;실시간 데이터를 단방향으로 푸시&lt;/strong&gt;(push)할 수 있게 해주는 웹 기술임
 클라이언트가 먼저 요청을 보내고 서버는 그 연결을 끊지 않은 채, 새로운 데이터가 생길 때마다 지속적으로 응답을 보내는 방식임&lt;/p&gt;
@@ -352,9 +352,9 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
     </item>
     <item>
       <title>Node.js 환경에서 디버깅하기</title>
-      <link>https://handsupmin.github.io/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</link>
+      <link>https://blog.jsontapose.com/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</link>
       <pubDate>Thu, 23 Oct 2025 13:11:27 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</guid>
+      <guid>https://blog.jsontapose.com/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Node.js에서 디버깅은 문제를 재현 가능한 최소 단위로 축소하고, 실행 흐름과 상태를 관찰해 원인을 단정하는 과정임. 이 글은 디버깅 기본 원리와 함께 Node.js 환경에서 자주 쓰는 세 가지 방법인 Chrome DevTools, node-inspect CLI, VS Code 디버거 사용법을 정리함&lt;/p&gt;
 &lt;h3 id=&#34;문제를-명확히-하기&#34;&gt;문제를 명확히 하기&lt;/h3&gt;
@@ -367,9 +367,9 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
     </item>
     <item>
       <title>MySQL InnoDB 장단점과 운영 시 주의사항 정리</title>
-      <link>https://handsupmin.github.io/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</link>
+      <link>https://blog.jsontapose.com/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</link>
       <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</guid>
+      <guid>https://blog.jsontapose.com/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;MySQL InnoDB는 ACID 트랜잭션을 기본으로 지원하는 스토리지 엔진으로 데이터 무결성과 동시성 보장을 목표로 설계됨
 Row-level lock, MVCC, 클러스터형 인덱스, 외래 키, 크래시 리커버리 등 기능을 통해 OLTP 환경에서 안정적인 처리 성능 제공
@@ -580,9 +580,9 @@ Row-level lock, MVCC, 클러스터형 인덱스, 외래 키, 크래시 리커버
     </item>
     <item>
       <title>TypeScript enum, const enum, as const 차이와 선택 기준</title>
-      <link>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-3817af/</link>
+      <link>https://blog.jsontapose.com/posts/typescript-enum-const-enum-as-const-3817af/</link>
       <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-3817af/</guid>
+      <guid>https://blog.jsontapose.com/posts/typescript-enum-const-enum-as-const-3817af/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;TypeScript에서 enum, const enum, as const는 값 집합을 선언하고 타입으로 활용하기 위한 서로 다른 도구임
 각 특성의 차이와 트레이드오프를 이해하면 가독성과 안정성을 챙기면서 번들 크기와 도구 호환성 문제도 피할 수 있음&lt;/p&gt;
@@ -605,9 +605,9 @@ Row-level lock, MVCC, 클러스터형 인덱스, 외래 키, 크래시 리커버
     </item>
     <item>
       <title>SQL LIMIT와 OFFSET 사용법 정리: 행 개수 제한과 페이징</title>
-      <link>https://handsupmin.github.io/posts/sql-limit-offset-basics-4a9880/</link>
+      <link>https://blog.jsontapose.com/posts/sql-limit-offset-basics-4a9880/</link>
       <pubDate>Mon, 20 Oct 2025 13:10:30 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/sql-limit-offset-basics-4a9880/</guid>
+      <guid>https://blog.jsontapose.com/posts/sql-limit-offset-basics-4a9880/</guid>
       <description>&lt;h3 id=&#34;기본-문법&#34;&gt;기본 문법&lt;/h3&gt;
 &lt;p&gt;LIMIT는 SELECT 결과에서 반환할 행 수를 제한하는 구문
 WHERE와 ORDER BY 뒤, 즉 SELECT 문 끝에 위치&lt;/p&gt;
@@ -634,9 +634,9 @@ ORDER BY가 없으면 반환되는 행은 비결정적일 수 있음&lt;/p&gt;</
     </item>
     <item>
       <title>Node.js v8-inspector 디버깅 가이드 — --inspect와 node-inspect 사용법</title>
-      <link>https://handsupmin.github.io/posts/nodejs-v8-inspector-debugging-guide-inspect-node-inspect-2e5ae9/</link>
+      <link>https://blog.jsontapose.com/posts/nodejs-v8-inspector-debugging-guide-inspect-node-inspect-2e5ae9/</link>
       <pubDate>Sun, 19 Oct 2025 13:06:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nodejs-v8-inspector-debugging-guide-inspect-node-inspect-2e5ae9/</guid>
+      <guid>https://blog.jsontapose.com/posts/nodejs-v8-inspector-debugging-guide-inspect-node-inspect-2e5ae9/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Node.js 디버깅 환경은 V8 인스펙터 도입 이후 일관된 방식으로 수렴했음
 Node.js v6부터 V8 네이티브 인스펙터가 들어왔고 v8.0.0에서 v8-inspector를 본격 지원하면서 기존 &amp;ndash;debug는 폐기, &amp;ndash;inspect로 통일됨
@@ -680,9 +680,9 @@ CLI 디버거 node-inspect가 코어에 통합되어 브라우저 개발자도�
     </item>
     <item>
       <title>쿠버네티스 컨트롤 플레인 핵심 개념과 EKS 비교</title>
-      <link>https://handsupmin.github.io/posts/kubernetes-control-plane-eks-2af164/</link>
+      <link>https://blog.jsontapose.com/posts/kubernetes-control-plane-eks-2af164/</link>
       <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/kubernetes-control-plane-eks-2af164/</guid>
+      <guid>https://blog.jsontapose.com/posts/kubernetes-control-plane-eks-2af164/</guid>
       <description>&lt;p&gt;컨트롤 플레인은 쿠버네티스 클러스터의 두뇌이자 의사결정 계층으로, 워커 노드가 실제 워크로드를 돌리는 동안 전체 상태를 정의하고 조율하는 역할을 맡음
 조직 비유로 보면 컨트롤 플레인은 본사와 경영진, 워커 노드는 지점과 현장 직원에 해당함&lt;/p&gt;
 &lt;h3 id=&#34;개념과-정의&#34;&gt;개념과 정의&lt;/h3&gt;
@@ -695,9 +695,9 @@ CLI 디버거 node-inspect가 코어에 통합되어 브라우저 개발자도�
     </item>
     <item>
       <title>NestJS Guard로 요청 보호하기 — CanActivate, UseGuards, Bearer 인증 예시</title>
-      <link>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;가드 Guard를 이용해 NestJS 애플리케이션을 위험한 요청으로부터 차단하는 방법 정리
 컨트롤러에 도달하기 전 단계에서 인증과 접근 제어 수행하는 패턴 중심으로 설명&lt;/p&gt;
@@ -709,9 +709,9 @@ canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하�
     </item>
     <item>
       <title>Kubernetes 핵심 구성요소와 동작 흐름</title>
-      <link>https://handsupmin.github.io/posts/kubernetes-core-components-and-flow-915d3a/</link>
+      <link>https://blog.jsontapose.com/posts/kubernetes-core-components-and-flow-915d3a/</link>
       <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/kubernetes-core-components-and-flow-915d3a/</guid>
+      <guid>https://blog.jsontapose.com/posts/kubernetes-core-components-and-flow-915d3a/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;쿠버네티스는 제어 평면과 워커 노드, 그리고 그 사이를 매개하는 런타임과 커널 메커니즘이 맞물려 동작하는 분산 시스템
 핵심은 단일 진실 소스에 원하는 상태를 기록하고, 이를 지속적으로 감시하고 조정해 실제 상태를 일치시키는 루프
@@ -777,9 +777,9 @@ canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하�
     </item>
     <item>
       <title>MySQL EXPLAIN 실행 계획 해석 가이드</title>
-      <link>https://handsupmin.github.io/posts/mysql-explain-execution-plan-guide-b7fb65/</link>
+      <link>https://blog.jsontapose.com/posts/mysql-explain-execution-plan-guide-b7fb65/</link>
       <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/mysql-explain-execution-plan-guide-b7fb65/</guid>
+      <guid>https://blog.jsontapose.com/posts/mysql-explain-execution-plan-guide-b7fb65/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;EXPLAIN은 SELECT가 어떤 경로로 데이터를 읽는지 드러내는 도구
 병목 파악과 인덱스 전략 점검에 사용&lt;/p&gt;
@@ -850,9 +850,9 @@ canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하�
     </item>
     <item>
       <title>블록체인 인덱서 가이드</title>
-      <link>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link>
       <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</guid>
       <description>&lt;h1 id=&#34;블록체인-인덱서-가이드&#34;&gt;블록체인 인덱서 가이드&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;인덱서는 원장 데이터를 제품 요구에 맞게 재구성해 저지연으로 제공하는 데이터 레이어임
@@ -873,9 +873,9 @@ canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하�
     </item>
     <item>
       <title>블록체인 합의 알고리즘 가이드 — PoW, PoS와 영지식증명 활용</title>
-      <link>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;퍼블릭 블록체인은 중앙 관리자 없이 다수 참여자가 같은 상태를 공유해야 함
 이때 모두가 믿을 수 있는 하나의 기록을 선택하는 규칙이 필요하며 이를 합의 알고리즘이라 부름
@@ -900,9 +900,9 @@ PoW와 PoS는 대표적 합의 방식이며 최근에는 영지식증명 같은 
     </item>
     <item>
       <title>블록체인 채굴 개념과 동작 원리 PoW 보상 구조 이더리움 전환 사례</title>
-      <link>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;채굴은 트랜잭션을 묶어 블록을 만들고 블록체인에 추가하는 행위이자, 네트워크를 공격으로부터 방어하는 핵심 보안 메커니즘임
 역사적으로 비트코인과 이더리움은 작업증명 PoW 기반 채굴에 의존해 합의를 유지했음
@@ -927,9 +927,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>Abstract L2 체인 개요와 설계 핵심: ZK Rollup, ZK Stack, 네이티브 계정 추상화, AGW</title>
-      <link>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</link>
+      <link>https://blog.jsontapose.com/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</guid>
+      <guid>https://blog.jsontapose.com/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Abstract는 이더리움 보안을 상속하는 ZK Rollup 기반 L2 체인으로, 고비용·저처리량 한계를 완화하는 확장 층 제공 목표
 ZK Stack으로 구축되어 체인 개발과 운영 구성 요소를 모듈화하고, 데이터 가용성은 EIP-4844 블롭을 활용해 비용을 절감하는 방향 추구
@@ -942,9 +942,9 @@ ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 �
     </item>
     <item>
       <title>Viem으로 이더리움 읽기·쓰기 시작하기 가이드</title>
-      <link>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</link>
+      <link>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</guid>
+      <guid>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Viem은 이더리움 계열 체인과 상호작용하는 경량 Web3 클라이언트 라이브러리임
 ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구지만, 모듈 분리 구조와 타입 안전성, 빌드 사이즈, 성능에서 강점이 있음
@@ -963,9 +963,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이</title>
-      <link>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link>
+      <link>https://blog.jsontapose.com/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid>
+      <guid>https://blog.jsontapose.com/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;영지식 증명은 어떤 명제가 참임을 설득하면서도 그 근거가 되는 비밀은 끝까지 숨기는 절차를 말함
 블록체인과 프라이버시 보존 컴퓨팅에서 핵심 도구로 자리 잡았고 범용 계산의 유효성을 작은 증명으로 압축해 전달하는 현대 프로토콜의 기초로 쓰임
@@ -1003,9 +1003,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>블록체인 Reorg(체인 재구성) 이해</title>
-      <link>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-reorg-chain-reorganization-f4966a/</link>
       <pubDate>Sun, 28 Sep 2025 13:05:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-reorg-chain-reorganization-f4966a/</guid>
       <description>&lt;h2 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h2&gt;
 &lt;p&gt;Reorg는 동시에 생성된 블록로 체인이 잠시 분기된 뒤 합의 규칙에 따라 더 우세한 분기로 갈아타는 상황을 뜻함
 짧아진 분기에 있던 블록은 활성 체인에서 제외되어 존재하지 않았던 것으로 취급됨
@@ -1020,9 +1020,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>커스토디얼 vs 논커스토디얼 월렛 비교</title>
-      <link>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</link>
       <pubDate>Tue, 23 Sep 2025 13:09:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;프라이빗키 관리 방식에 따라 암호화폐 월렛은 &lt;strong&gt;커스토디얼(custodial)&lt;/strong&gt; 과 &lt;strong&gt;논커스토디얼(noncustodial)&lt;/strong&gt; 로 구분됨
 각 방식의 차이와 선택 기준, 보안·운영 리스크와 대응 방안을 &lt;strong&gt;초보자도 이해할 수 있게&lt;/strong&gt; 정리하면서 &lt;strong&gt;실무자가 바로 적용할 수 있는 체크리스트&lt;/strong&gt;까지 제시함&lt;/p&gt;
@@ -1045,9 +1045,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>블록체인이란? 블록체인 개념 총정리</title>
-      <link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-principles-mining-hash-274b74/</link>
       <pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-principles-mining-hash-274b74/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;블록체인은 &lt;strong&gt;중앙 기관 없이&lt;/strong&gt; 참여자들이 거래를 기록·검증·공유하는 &lt;strong&gt;분산 원장&lt;/strong&gt; 기술임
 이 글은 블록체인을 &lt;strong&gt;초보자 친화적으로&lt;/strong&gt; 설명하고, &lt;strong&gt;실무 체크리스트&lt;/strong&gt;까지 정리함&lt;/p&gt;
@@ -1081,9 +1081,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
-      <link>https://handsupmin.github.io/posts/off-chain-signature-verification-542a33/</link>
+      <link>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</link>
       <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/off-chain-signature-verification-542a33/</guid>
+      <guid>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;블록체인 기술에서 모든 것을 온체인(On-chain)으로 처리하는 것은 비효율적이거나 불가능한 경우가 많음
 이때 &lt;strong&gt;오프체인 서명 검증&lt;/strong&gt;(Off-chain Signature Verification)은 오프체인(서버)의 유연성과 온체인(컨트랙트)의 신뢰성을 결합하는 강력한 해결책이 됨&lt;/p&gt;
@@ -1093,9 +1093,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>안전한 가스비 대납을 위한 오프체인 서명 검증 페이마스터 (in ZkSync Era)</title>
-      <link>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</link>
       <pubDate>Sun, 21 Sep 2025 02:14:08 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;블록체인 서비스에서 사용자가 겪는 가장 큰 장벽 중 하나는 단연 &lt;strong&gt;가스비&lt;/strong&gt;(Gas Fee)임
 아무리 좋은 서비스를 만들어도, 사용자가 지갑에 가스비로 쓸 코인(ETH 등)을 보유하고 있어야 한다는 점은 대중화를 가로막는 결정적인 요인임
@@ -1104,9 +1104,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>머클트리(Merkle Tree)란? 머클트리의 개념과 블록체인에서의 역할</title>
-      <link>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</link>
       <pubDate>Sat, 20 Sep 2025 17:15:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;머클트리는 블록체인에서 거래 집합을 &lt;strong&gt;안전하고 효율적으로 요약·검증&lt;/strong&gt;하기 위해 쓰이는 핵심 자료구조임
 블록 헤더에 머클루트가 포함되는 이유는 블록 안의 모든 거래를 &lt;strong&gt;고정 크기 해시 하나&lt;/strong&gt;로 대표해 무결성 확인과 경량 검증을 가능하게 하기 때문임
@@ -1149,9 +1149,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>이더리움 PoS(Proof of Stake) 소개</title>
-      <link>https://handsupmin.github.io/posts/ethereum-pos-proof-of-stake-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/ethereum-pos-proof-of-stake-274b74/</link>
       <pubDate>Sat, 20 Sep 2025 17:04:48 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/ethereum-pos-proof-of-stake-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/ethereum-pos-proof-of-stake-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;이 문서는 이더리움의 PoS 합의 구조와 구성 요소를 정리함
 개념 정의에 그치지 않고 &lt;strong&gt;운영 시 주의점&lt;/strong&gt;, &lt;strong&gt;보상·출금 흐름&lt;/strong&gt;, &lt;strong&gt;짧은 체인 재구성(Reorg) 원인과 완화책&lt;/strong&gt;까지 다룸&lt;/p&gt;
@@ -1171,9 +1171,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>NFT 핵심 용어 정리</title>
-      <link>https://handsupmin.github.io/posts/nft-23q12akw/</link>
+      <link>https://blog.jsontapose.com/posts/nft-23q12akw/</link>
       <pubDate>Sat, 20 Sep 2025 16:56:17 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nft-23q12akw/</guid>
+      <guid>https://blog.jsontapose.com/posts/nft-23q12akw/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;NFT 커뮤니티 초입에서 마주치는 용어 장벽을 낮추기 위해 &lt;strong&gt;리빌&lt;/strong&gt;, &lt;strong&gt;에어드롭&lt;/strong&gt;, &lt;strong&gt;화이트리스트&lt;/strong&gt;, &lt;strong&gt;마켓플레이스&lt;/strong&gt;를 실무 관점으로 정리함
 핵심은 개념 이해를 넘어 &lt;strong&gt;운영 체크리스트&lt;/strong&gt;, &lt;strong&gt;보안 리스크&lt;/strong&gt;, &lt;strong&gt;가격 형성 메커니즘&lt;/strong&gt;까지 파악해 프로젝트 참여와 거래 판단에 바로 쓰도록 하는 것임&lt;/p&gt;
@@ -1192,9 +1192,9 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
     </item>
     <item>
       <title>NFT란? NFT 핵심 개념 정리</title>
-      <link>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</link>
+      <link>https://blog.jsontapose.com/posts/nft-concept-20gd0fl/</link>
       <pubDate>Sat, 20 Sep 2025 16:41:07 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</guid>
+      <guid>https://blog.jsontapose.com/posts/nft-concept-20gd0fl/</guid>
       <description>&lt;h3 id=&#34;서문&#34;&gt;서문&lt;/h3&gt;
 &lt;p&gt;NFT는 몇 년 새 대중의 관심을 받았지만 개념과 절차가 분산돼 있어 입문자가 막히기 쉬움
 이 글은 &lt;strong&gt;실무자 관점&lt;/strong&gt;에서 NFT의 핵심 개념을 단계적으로 정리하고 &lt;strong&gt;구매·발행·보관 시 유의사항&lt;/strong&gt;과 &lt;strong&gt;운영 관행&lt;/strong&gt;을 담는 것을 목표로 함&lt;/p&gt;

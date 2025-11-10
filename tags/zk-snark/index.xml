@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Zk-Snark on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/zk-snark/</link>
+    <link>https://blog.jsontapose.com/tags/zk-snark/</link>
     <description>Recent content in Zk-Snark on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sat, 11 Oct 2025 13:05:12 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/zk-snark/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/zk-snark/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>블록체인 합의 알고리즘 가이드 — PoW, PoS와 영지식증명 활용</title>
-      <link>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;퍼블릭 블록체인은 중앙 관리자 없이 다수 참여자가 같은 상태를 공유해야 함
 이때 모두가 믿을 수 있는 하나의 기록을 선택하는 규칙이 필요하며 이를 합의 알고리즘이라 부름

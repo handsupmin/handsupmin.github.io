@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cryptocurrency on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/cryptocurrency/</link>
+    <link>https://blog.jsontapose.com/tags/cryptocurrency/</link>
     <description>Recent content in Cryptocurrency on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Tue, 23 Sep 2025 13:09:26 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/cryptocurrency/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/cryptocurrency/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>커스토디얼 vs 논커스토디얼 월렛 비교</title>
-      <link>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</link>
       <pubDate>Tue, 23 Sep 2025 13:09:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;프라이빗키 관리 방식에 따라 암호화폐 월렛은 &lt;strong&gt;커스토디얼(custodial)&lt;/strong&gt; 과 &lt;strong&gt;논커스토디얼(noncustodial)&lt;/strong&gt; 로 구분됨
 각 방식의 차이와 선택 기준, 보안·운영 리스크와 대응 방안을 &lt;strong&gt;초보자도 이해할 수 있게&lt;/strong&gt; 정리하면서 &lt;strong&gt;실무자가 바로 적용할 수 있는 체크리스트&lt;/strong&gt;까지 제시함&lt;/p&gt;
@@ -35,9 +35,9 @@
     </item>
     <item>
       <title>블록체인이란? 블록체인 개념 총정리</title>
-      <link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-principles-mining-hash-274b74/</link>
       <pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-principles-mining-hash-274b74/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;블록체인은 &lt;strong&gt;중앙 기관 없이&lt;/strong&gt; 참여자들이 거래를 기록·검증·공유하는 &lt;strong&gt;분산 원장&lt;/strong&gt; 기술임
 이 글은 블록체인을 &lt;strong&gt;초보자 친화적으로&lt;/strong&gt; 설명하고, &lt;strong&gt;실무 체크리스트&lt;/strong&gt;까지 정리함&lt;/p&gt;

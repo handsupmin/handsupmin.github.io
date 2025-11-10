@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Typescript on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/typescript/</link>
+    <link>https://blog.jsontapose.com/tags/typescript/</link>
     <description>Recent content in Typescript on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Fri, 07 Nov 2025 13:09:50 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NestJS ModuleRef로 런타임 의존성 주입 제어하기</title>
-      <link>https://handsupmin.github.io/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
       <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
       <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
 &lt;p&gt;ModuleRef는 NestJS에서 런타임에 의존성을 직접 조회·생성할 때 쓰는 유틸리티 클래스
 정적 DI로 풀기 어려운 동적 흐름 제어에 사용&lt;/p&gt;
@@ -32,9 +32,9 @@
     </item>
     <item>
       <title>Prisma OrderByWithAggregationInput로 집계 기반 정렬하기와 올바른 사용 맥락</title>
-      <link>https://handsupmin.github.io/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</link>
+      <link>https://blog.jsontapose.com/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</link>
       <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</guid>
+      <guid>https://blog.jsontapose.com/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;OrderByWithAggregationInput은 일반 필드뿐 아니라 _count, _avg, _sum 같은 집계 결과를 기준으로 정렬을 정의하는 Prisma 입력 타입임
 핵심은 이 타입이 findMany가 아니라 groupBy에서 사용하는 것이라는 점임
@@ -64,9 +64,9 @@
     </item>
     <item>
       <title>TypeScript Parameters 유틸리티 타입 개념과 안전한 활용</title>
-      <link>https://handsupmin.github.io/posts/typescript-parameters-utility-type-913b5f/</link>
+      <link>https://blog.jsontapose.com/posts/typescript-parameters-utility-type-913b5f/</link>
       <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/typescript-parameters-utility-type-913b5f/</guid>
+      <guid>https://blog.jsontapose.com/posts/typescript-parameters-utility-type-913b5f/</guid>
       <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
 &lt;p&gt;Parameters는 TypeScript가 제공하는 제네릭 유틸리티 타입으로, 특정 함수 타입의 매개변수 타입들을 튜플로 추출하는 데 사용됨
 함수 래핑, 고차 함수, 어댑터 계층에서 기존 함수 시그니처를 재사용해 타입 안정성을 유지하고 중복 선언을 줄이는 목적에 적합함&lt;/p&gt;
@@ -82,9 +82,9 @@
     </item>
     <item>
       <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
-      <link>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;@nestjs/swagger는 NestJS와 Swagger(OpenAPI) 스펙을 연결해 API 문서를 자동 생성하는 모듈임
 DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 예시, 설명 등을 Swagger UI에 노출하는 흐름으로 작동함
@@ -102,9 +102,9 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
     </item>
     <item>
       <title>Prisma cursor 기반 페이지네이션 동작 원리와 skip: 1의 의미</title>
-      <link>https://handsupmin.github.io/posts/prisma-cursor-pagination-and-skip-1-a14080/</link>
+      <link>https://blog.jsontapose.com/posts/prisma-cursor-pagination-and-skip-1-a14080/</link>
       <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/prisma-cursor-pagination-and-skip-1-a14080/</guid>
+      <guid>https://blog.jsontapose.com/posts/prisma-cursor-pagination-and-skip-1-a14080/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Prisma에서 cursor는 특정 레코드 지점부터 결과를 읽기 시작하는 기준점으로 동작함
 skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으로, 페이지 간 중복을 제거하는 데 사용함&lt;/p&gt;
@@ -133,9 +133,9 @@ skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으
     </item>
     <item>
       <title>Prisma findMany 가이드: where, select/include, 정렬·페이징, in/비교 연산자</title>
-      <link>https://handsupmin.github.io/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</link>
+      <link>https://blog.jsontapose.com/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</link>
       <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</guid>
+      <guid>https://blog.jsontapose.com/posts/prisma-findmany-guide-where-select-include-orderby-pagination-e52110/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Prisma의 findMany는 다중 레코드 조회용 메서드
 기본값은 대상 모델의 모든 레코드 반환
@@ -159,9 +159,9 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
     </item>
     <item>
       <title>TypeScript enum, const enum, as const 차이와 선택 기준</title>
-      <link>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-3817af/</link>
+      <link>https://blog.jsontapose.com/posts/typescript-enum-const-enum-as-const-3817af/</link>
       <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-3817af/</guid>
+      <guid>https://blog.jsontapose.com/posts/typescript-enum-const-enum-as-const-3817af/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;TypeScript에서 enum, const enum, as const는 값 집합을 선언하고 타입으로 활용하기 위한 서로 다른 도구임
 각 특성의 차이와 트레이드오프를 이해하면 가독성과 안정성을 챙기면서 번들 크기와 도구 호환성 문제도 피할 수 있음&lt;/p&gt;
@@ -184,9 +184,9 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
     </item>
     <item>
       <title>NestJS Guard로 요청 보호하기 — CanActivate, UseGuards, Bearer 인증 예시</title>
-      <link>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;가드 Guard를 이용해 NestJS 애플리케이션을 위험한 요청으로부터 차단하는 방법 정리
 컨트롤러에 도달하기 전 단계에서 인증과 접근 제어 수행하는 패턴 중심으로 설명&lt;/p&gt;
@@ -198,9 +198,9 @@ canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하�
     </item>
     <item>
       <title>Viem으로 이더리움 읽기·쓰기 시작하기 가이드</title>
-      <link>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</link>
+      <link>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</guid>
+      <guid>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Viem은 이더리움 계열 체인과 상호작용하는 경량 Web3 클라이언트 라이브러리임
 ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구지만, 모듈 분리 구조와 타입 안전성, 빌드 사이즈, 성능에서 강점이 있음
