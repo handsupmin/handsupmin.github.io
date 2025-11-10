@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Staking on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/staking/</link>
+    <link>https://blog.jsontapose.com/tags/staking/</link>
     <description>Recent content in Staking on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sat, 20 Sep 2025 17:04:48 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/staking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/staking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>이더리움 PoS(Proof of Stake) 소개</title>
-      <link>https://handsupmin.github.io/posts/ethereum-pos-proof-of-stake-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/ethereum-pos-proof-of-stake-274b74/</link>
       <pubDate>Sat, 20 Sep 2025 17:04:48 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/ethereum-pos-proof-of-stake-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/ethereum-pos-proof-of-stake-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;이 문서는 이더리움의 PoS 합의 구조와 구성 요소를 정리함
 개념 정의에 그치지 않고 &lt;strong&gt;운영 시 주의점&lt;/strong&gt;, &lt;strong&gt;보상·출금 흐름&lt;/strong&gt;, &lt;strong&gt;짧은 체인 재구성(Reorg) 원인과 완화책&lt;/strong&gt;까지 다룸&lt;/p&gt;

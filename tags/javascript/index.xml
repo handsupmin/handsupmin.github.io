@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Javascript on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/javascript/</link>
+    <link>https://blog.jsontapose.com/tags/javascript/</link>
     <description>Recent content in Javascript on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 09 Nov 2025 13:06:58 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DI가 결합도를 낮추는 원리와 최소 예시</title>
-      <link>https://handsupmin.github.io/posts/why-di-reduces-coupling-b59160/</link>
+      <link>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/why-di-reduces-coupling-b59160/</guid>
+      <guid>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</guid>
       <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
 &lt;p&gt;DI(의존성 주입)의 요지는 간단함
 객체가 스스로 의존 대상을 생성하지 않고 외부에서 받은 것을 사용함
@@ -35,9 +35,9 @@
     </item>
     <item>
       <title>JavaScript 함수는 왜 일급 객체인가 — 의미와 활용</title>
-      <link>https://handsupmin.github.io/posts/javascript-first-class-functions-5dcc7e/</link>
+      <link>https://blog.jsontapose.com/posts/javascript-first-class-functions-5dcc7e/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/javascript-first-class-functions-5dcc7e/</guid>
+      <guid>https://blog.jsontapose.com/posts/javascript-first-class-functions-5dcc7e/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;JavaScript에서 함수는 일급 객체로 취급됨
 이는 함수가 값처럼 변수에 담기고, 인수로 전달되고, 반환값으로 나오며, 객체의 프로퍼티로 저장될 수 있음을 의미함
@@ -59,9 +59,9 @@
     </item>
     <item>
       <title>Node.js 환경에서 디버깅하기</title>
-      <link>https://handsupmin.github.io/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</link>
+      <link>https://blog.jsontapose.com/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</link>
       <pubDate>Thu, 23 Oct 2025 13:11:27 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</guid>
+      <guid>https://blog.jsontapose.com/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Node.js에서 디버깅은 문제를 재현 가능한 최소 단위로 축소하고, 실행 흐름과 상태를 관찰해 원인을 단정하는 과정임. 이 글은 디버깅 기본 원리와 함께 Node.js 환경에서 자주 쓰는 세 가지 방법인 Chrome DevTools, node-inspect CLI, VS Code 디버거 사용법을 정리함&lt;/p&gt;
 &lt;h3 id=&#34;문제를-명확히-하기&#34;&gt;문제를 명확히 하기&lt;/h3&gt;
@@ -74,9 +74,9 @@
     </item>
     <item>
       <title>Viem으로 이더리움 읽기·쓰기 시작하기 가이드</title>
-      <link>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</link>
+      <link>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</guid>
+      <guid>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Viem은 이더리움 계열 체인과 상호작용하는 경량 Web3 클라이언트 라이브러리임
 ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구지만, 모듈 분리 구조와 타입 안전성, 빌드 사이즈, 성능에서 강점이 있음

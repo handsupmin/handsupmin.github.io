@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Vscode on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/vscode/</link>
+    <link>https://blog.jsontapose.com/tags/vscode/</link>
     <description>Recent content in Vscode on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 23 Oct 2025 13:11:27 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Node.js 환경에서 디버깅하기</title>
-      <link>https://handsupmin.github.io/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</link>
+      <link>https://blog.jsontapose.com/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</link>
       <pubDate>Thu, 23 Oct 2025 13:11:27 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</guid>
+      <guid>https://blog.jsontapose.com/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Node.js에서 디버깅은 문제를 재현 가능한 최소 단위로 축소하고, 실행 흐름과 상태를 관찰해 원인을 단정하는 과정임. 이 글은 디버깅 기본 원리와 함께 Node.js 환경에서 자주 쓰는 세 가지 방법인 Chrome DevTools, node-inspect CLI, VS Code 디버거 사용법을 정리함&lt;/p&gt;
 &lt;h3 id=&#34;문제를-명확히-하기&#34;&gt;문제를 명확히 하기&lt;/h3&gt;

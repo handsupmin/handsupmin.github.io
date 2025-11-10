@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Consensus on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/consensus/</link>
+    <link>https://blog.jsontapose.com/tags/consensus/</link>
     <description>Recent content in Consensus on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 06 Oct 2025 13:09:34 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/consensus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/consensus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>블록체인 채굴 개념과 동작 원리 PoW 보상 구조 이더리움 전환 사례</title>
-      <link>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;채굴은 트랜잭션을 묶어 블록을 만들고 블록체인에 추가하는 행위이자, 네트워크를 공격으로부터 방어하는 핵심 보안 메커니즘임
 역사적으로 비트코인과 이더리움은 작업증명 PoW 기반 채굴에 의존해 합의를 유지했음
@@ -37,9 +37,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>블록체인 Reorg(체인 재구성) 이해</title>
-      <link>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-reorg-chain-reorganization-f4966a/</link>
       <pubDate>Sun, 28 Sep 2025 13:05:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-reorg-chain-reorganization-f4966a/</guid>
       <description>&lt;h2 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h2&gt;
 &lt;p&gt;Reorg는 동시에 생성된 블록로 체인이 잠시 분기된 뒤 합의 규칙에 따라 더 우세한 분기로 갈아타는 상황을 뜻함
 짧아진 분기에 있던 블록은 활성 체인에서 제외되어 존재하지 않았던 것으로 취급됨

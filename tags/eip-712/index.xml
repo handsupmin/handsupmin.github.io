@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Eip-712 on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/eip-712/</link>
+    <link>https://blog.jsontapose.com/tags/eip-712/</link>
     <description>Recent content in Eip-712 on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 21 Sep 2025 03:11:23 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/eip-712/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/eip-712/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
-      <link>https://handsupmin.github.io/posts/off-chain-signature-verification-542a33/</link>
+      <link>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</link>
       <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/off-chain-signature-verification-542a33/</guid>
+      <guid>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;블록체인 기술에서 모든 것을 온체인(On-chain)으로 처리하는 것은 비효율적이거나 불가능한 경우가 많음
 이때 &lt;strong&gt;오프체인 서명 검증&lt;/strong&gt;(Off-chain Signature Verification)은 오프체인(서버)의 유연성과 온체인(컨트랙트)의 신뢰성을 결합하는 강력한 해결책이 됨&lt;/p&gt;
@@ -22,9 +22,9 @@
     </item>
     <item>
       <title>안전한 가스비 대납을 위한 오프체인 서명 검증 페이마스터 (in ZkSync Era)</title>
-      <link>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</link>
       <pubDate>Sun, 21 Sep 2025 02:14:08 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;블록체인 서비스에서 사용자가 겪는 가장 큰 장벽 중 하나는 단연 &lt;strong&gt;가스비&lt;/strong&gt;(Gas Fee)임
 아무리 좋은 서비스를 만들어도, 사용자가 지갑에 가스비로 쓸 코인(ETH 등)을 보유하고 있어야 한다는 점은 대중화를 가로막는 결정적인 요인임

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Dependency-Injection on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/dependency-injection/</link>
+    <link>https://blog.jsontapose.com/tags/dependency-injection/</link>
     <description>Recent content in Dependency-Injection on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 09 Nov 2025 13:06:58 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/dependency-injection/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/dependency-injection/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DI가 결합도를 낮추는 원리와 최소 예시</title>
-      <link>https://handsupmin.github.io/posts/why-di-reduces-coupling-b59160/</link>
+      <link>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/why-di-reduces-coupling-b59160/</guid>
+      <guid>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</guid>
       <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
 &lt;p&gt;DI(의존성 주입)의 요지는 간단함
 객체가 스스로 의존 대상을 생성하지 않고 외부에서 받은 것을 사용함
@@ -35,9 +35,9 @@
     </item>
     <item>
       <title>NestJS ModuleRef로 런타임 의존성 주입 제어하기</title>
-      <link>https://handsupmin.github.io/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
       <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
       <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
 &lt;p&gt;ModuleRef는 NestJS에서 런타임에 의존성을 직접 조회·생성할 때 쓰는 유틸리티 클래스
 정적 DI로 풀기 어려운 동적 흐름 제어에 사용&lt;/p&gt;

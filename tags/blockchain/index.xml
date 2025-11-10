@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blockchain on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/blockchain/</link>
+    <link>https://blog.jsontapose.com/tags/blockchain/</link>
     <description>Recent content in Blockchain on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 13 Oct 2025 13:10:20 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>블록체인 인덱서 가이드</title>
-      <link>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</link>
       <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-indexer-concepts-architecture-checklist-e452a9/</guid>
       <description>&lt;h1 id=&#34;블록체인-인덱서-가이드&#34;&gt;블록체인 인덱서 가이드&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;인덱서는 원장 데이터를 제품 요구에 맞게 재구성해 저지연으로 제공하는 데이터 레이어임
@@ -33,9 +33,9 @@
     </item>
     <item>
       <title>블록체인 합의 알고리즘 가이드 — PoW, PoS와 영지식증명 활용</title>
-      <link>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;퍼블릭 블록체인은 중앙 관리자 없이 다수 참여자가 같은 상태를 공유해야 함
 이때 모두가 믿을 수 있는 하나의 기록을 선택하는 규칙이 필요하며 이를 합의 알고리즘이라 부름
@@ -60,9 +60,9 @@ PoW와 PoS는 대표적 합의 방식이며 최근에는 영지식증명 같은 
     </item>
     <item>
       <title>블록체인 채굴 개념과 동작 원리 PoW 보상 구조 이더리움 전환 사례</title>
-      <link>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;채굴은 트랜잭션을 묶어 블록을 만들고 블록체인에 추가하는 행위이자, 네트워크를 공격으로부터 방어하는 핵심 보안 메커니즘임
 역사적으로 비트코인과 이더리움은 작업증명 PoW 기반 채굴에 의존해 합의를 유지했음
@@ -87,9 +87,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이</title>
-      <link>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link>
+      <link>https://blog.jsontapose.com/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid>
+      <guid>https://blog.jsontapose.com/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;영지식 증명은 어떤 명제가 참임을 설득하면서도 그 근거가 되는 비밀은 끝까지 숨기는 절차를 말함
 블록체인과 프라이버시 보존 컴퓨팅에서 핵심 도구로 자리 잡았고 범용 계산의 유효성을 작은 증명으로 압축해 전달하는 현대 프로토콜의 기초로 쓰임
@@ -127,9 +127,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>블록체인 Reorg(체인 재구성) 이해</title>
-      <link>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-reorg-chain-reorganization-f4966a/</link>
       <pubDate>Sun, 28 Sep 2025 13:05:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-reorg-chain-reorganization-f4966a/</guid>
       <description>&lt;h2 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h2&gt;
 &lt;p&gt;Reorg는 동시에 생성된 블록로 체인이 잠시 분기된 뒤 합의 규칙에 따라 더 우세한 분기로 갈아타는 상황을 뜻함
 짧아진 분기에 있던 블록은 활성 체인에서 제외되어 존재하지 않았던 것으로 취급됨
@@ -144,9 +144,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>커스토디얼 vs 논커스토디얼 월렛 비교</title>
-      <link>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</link>
       <pubDate>Tue, 23 Sep 2025 13:09:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/custodial-vs-noncustodial-wallets-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;프라이빗키 관리 방식에 따라 암호화폐 월렛은 &lt;strong&gt;커스토디얼(custodial)&lt;/strong&gt; 과 &lt;strong&gt;논커스토디얼(noncustodial)&lt;/strong&gt; 로 구분됨
 각 방식의 차이와 선택 기준, 보안·운영 리스크와 대응 방안을 &lt;strong&gt;초보자도 이해할 수 있게&lt;/strong&gt; 정리하면서 &lt;strong&gt;실무자가 바로 적용할 수 있는 체크리스트&lt;/strong&gt;까지 제시함&lt;/p&gt;
@@ -169,9 +169,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>블록체인이란? 블록체인 개념 총정리</title>
-      <link>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-principles-mining-hash-274b74/</link>
       <pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-principles-mining-hash-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-principles-mining-hash-274b74/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;블록체인은 &lt;strong&gt;중앙 기관 없이&lt;/strong&gt; 참여자들이 거래를 기록·검증·공유하는 &lt;strong&gt;분산 원장&lt;/strong&gt; 기술임
 이 글은 블록체인을 &lt;strong&gt;초보자 친화적으로&lt;/strong&gt; 설명하고, &lt;strong&gt;실무 체크리스트&lt;/strong&gt;까지 정리함&lt;/p&gt;
@@ -205,9 +205,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>머클트리(Merkle Tree)란? 머클트리의 개념과 블록체인에서의 역할</title>
-      <link>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</link>
+      <link>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</link>
       <pubDate>Sat, 20 Sep 2025 17:15:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/merkle-tree-blockchain-role-274b74/</guid>
+      <guid>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;머클트리는 블록체인에서 거래 집합을 &lt;strong&gt;안전하고 효율적으로 요약·검증&lt;/strong&gt;하기 위해 쓰이는 핵심 자료구조임
 블록 헤더에 머클루트가 포함되는 이유는 블록 안의 모든 거래를 &lt;strong&gt;고정 크기 해시 하나&lt;/strong&gt;로 대표해 무결성 확인과 경량 검증을 가능하게 하기 때문임
@@ -250,9 +250,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>NFT 핵심 용어 정리</title>
-      <link>https://handsupmin.github.io/posts/nft-23q12akw/</link>
+      <link>https://blog.jsontapose.com/posts/nft-23q12akw/</link>
       <pubDate>Sat, 20 Sep 2025 16:56:17 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nft-23q12akw/</guid>
+      <guid>https://blog.jsontapose.com/posts/nft-23q12akw/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;NFT 커뮤니티 초입에서 마주치는 용어 장벽을 낮추기 위해 &lt;strong&gt;리빌&lt;/strong&gt;, &lt;strong&gt;에어드롭&lt;/strong&gt;, &lt;strong&gt;화이트리스트&lt;/strong&gt;, &lt;strong&gt;마켓플레이스&lt;/strong&gt;를 실무 관점으로 정리함
 핵심은 개념 이해를 넘어 &lt;strong&gt;운영 체크리스트&lt;/strong&gt;, &lt;strong&gt;보안 리스크&lt;/strong&gt;, &lt;strong&gt;가격 형성 메커니즘&lt;/strong&gt;까지 파악해 프로젝트 참여와 거래 판단에 바로 쓰도록 하는 것임&lt;/p&gt;
@@ -271,9 +271,9 @@ PoW의 설계는 두 가지 속성을 가짐 생성은 어렵지만 검증은 �
     </item>
     <item>
       <title>NFT란? NFT 핵심 개념 정리</title>
-      <link>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</link>
+      <link>https://blog.jsontapose.com/posts/nft-concept-20gd0fl/</link>
       <pubDate>Sat, 20 Sep 2025 16:41:07 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nft-concept-20gd0fl/</guid>
+      <guid>https://blog.jsontapose.com/posts/nft-concept-20gd0fl/</guid>
       <description>&lt;h3 id=&#34;서문&#34;&gt;서문&lt;/h3&gt;
 &lt;p&gt;NFT는 몇 년 새 대중의 관심을 받았지만 개념과 절차가 분산돼 있어 입문자가 막히기 쉬움
 이 글은 &lt;strong&gt;실무자 관점&lt;/strong&gt;에서 NFT의 핵심 개념을 단계적으로 정리하고 &lt;strong&gt;구매·발행·보관 시 유의사항&lt;/strong&gt;과 &lt;strong&gt;운영 관행&lt;/strong&gt;을 담는 것을 목표로 함&lt;/p&gt;

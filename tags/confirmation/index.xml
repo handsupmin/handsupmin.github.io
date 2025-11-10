@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Confirmation on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/confirmation/</link>
+    <link>https://blog.jsontapose.com/tags/confirmation/</link>
     <description>Recent content in Confirmation on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 28 Sep 2025 13:05:58 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/confirmation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/confirmation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>블록체인 Reorg(체인 재구성) 이해</title>
-      <link>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-reorg-chain-reorganization-f4966a/</link>
       <pubDate>Sun, 28 Sep 2025 13:05:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-reorg-chain-reorganization-f4966a/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-reorg-chain-reorganization-f4966a/</guid>
       <description>&lt;h2 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h2&gt;
 &lt;p&gt;Reorg는 동시에 생성된 블록로 체인이 잠시 분기된 뒤 합의 규칙에 따라 더 우세한 분기로 갈아타는 상황을 뜻함
 짧아진 분기에 있던 블록은 활성 체인에서 제외되어 존재하지 않았던 것으로 취급됨

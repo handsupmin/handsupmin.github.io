@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Privacy on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/privacy/</link>
+    <link>https://blog.jsontapose.com/tags/privacy/</link>
     <description>Recent content in Privacy on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sat, 11 Oct 2025 13:05:12 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>블록체인 합의 알고리즘 가이드 — PoW, PoS와 영지식증명 활용</title>
-      <link>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
+      <link>https://blog.jsontapose.com/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
+      <guid>https://blog.jsontapose.com/posts/blockchain-consensus-algorithms-pow-pos-and-zero-knowledge-proofs-2946e5/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;퍼블릭 블록체인은 중앙 관리자 없이 다수 참여자가 같은 상태를 공유해야 함
 이때 모두가 믿을 수 있는 하나의 기록을 선택하는 규칙이 필요하며 이를 합의 알고리즘이라 부름
@@ -37,9 +37,9 @@ PoW와 PoS는 대표적 합의 방식이며 최근에는 영지식증명 같은 
     </item>
     <item>
       <title>영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이</title>
-      <link>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link>
+      <link>https://blog.jsontapose.com/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid>
+      <guid>https://blog.jsontapose.com/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/</guid>
       <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
 &lt;p&gt;영지식 증명은 어떤 명제가 참임을 설득하면서도 그 근거가 되는 비밀은 끝까지 숨기는 절차를 말함
 블록체인과 프라이버시 보존 컴퓨팅에서 핵심 도구로 자리 잡았고 범용 계산의 유효성을 작은 증명으로 압축해 전달하는 현대 프로토콜의 기초로 쓰임

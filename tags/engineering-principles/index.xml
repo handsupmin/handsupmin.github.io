@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Engineering-Principles on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/engineering-principles/</link>
+    <link>https://blog.jsontapose.com/tags/engineering-principles/</link>
     <description>Recent content in Engineering-Principles on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 03 Nov 2025 13:10:46 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/engineering-principles/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/engineering-principles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KISS 원리: 소프트웨어 설계에서 불필요한 복잡성 줄이기</title>
-      <link>https://handsupmin.github.io/posts/kiss-principle-software-design-799a74/</link>
+      <link>https://blog.jsontapose.com/posts/kiss-principle-software-design-799a74/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/kiss-principle-software-design-799a74/</guid>
+      <guid>https://blog.jsontapose.com/posts/kiss-principle-software-design-799a74/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;KISS는 Keep It Simple, Stupid 또는 Keep It Simple and Straightforward의 약자이며 1960년대 미 해군에서 출발한 설계 원칙입니다. 소프트웨어에서는 불필요한 복잡성을 제거하고 이해와 변경이 쉬운 구조를 지향합니다. 목표는 적은 개념과 짧은 경로로 같은 가치를 제공하는 시스템을 만드는 것임&lt;/p&gt;
 &lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;

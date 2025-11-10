@@ -2,1298 +2,1298 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/</link>
+    <link>https://blog.jsontapose.com/tags/</link>
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 09 Nov 2025 13:06:58 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Coupling</title>
-      <link>https://handsupmin.github.io/tags/coupling/</link>
+      <link>https://blog.jsontapose.com/tags/coupling/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/coupling/</guid>
+      <guid>https://blog.jsontapose.com/tags/coupling/</guid>
       <description></description>
     </item>
     <item>
       <title>Dependency-Injection</title>
-      <link>https://handsupmin.github.io/tags/dependency-injection/</link>
+      <link>https://blog.jsontapose.com/tags/dependency-injection/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/dependency-injection/</guid>
+      <guid>https://blog.jsontapose.com/tags/dependency-injection/</guid>
       <description></description>
     </item>
     <item>
       <title>Design-Patterns</title>
-      <link>https://handsupmin.github.io/tags/design-patterns/</link>
+      <link>https://blog.jsontapose.com/tags/design-patterns/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/design-patterns/</guid>
+      <guid>https://blog.jsontapose.com/tags/design-patterns/</guid>
       <description></description>
     </item>
     <item>
       <title>Ioc</title>
-      <link>https://handsupmin.github.io/tags/ioc/</link>
+      <link>https://blog.jsontapose.com/tags/ioc/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/ioc/</guid>
+      <guid>https://blog.jsontapose.com/tags/ioc/</guid>
       <description></description>
     </item>
     <item>
       <title>Javascript</title>
-      <link>https://handsupmin.github.io/tags/javascript/</link>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/javascript/</guid>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>Testing</title>
-      <link>https://handsupmin.github.io/tags/testing/</link>
+      <link>https://blog.jsontapose.com/tags/testing/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/testing/</guid>
+      <guid>https://blog.jsontapose.com/tags/testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptography</title>
-      <link>https://handsupmin.github.io/tags/cryptography/</link>
+      <link>https://blog.jsontapose.com/tags/cryptography/</link>
       <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/cryptography/</guid>
+      <guid>https://blog.jsontapose.com/tags/cryptography/</guid>
       <description></description>
     </item>
     <item>
       <title>Diffie-Hellman</title>
-      <link>https://handsupmin.github.io/tags/diffie-hellman/</link>
+      <link>https://blog.jsontapose.com/tags/diffie-hellman/</link>
       <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/diffie-hellman/</guid>
+      <guid>https://blog.jsontapose.com/tags/diffie-hellman/</guid>
       <description></description>
     </item>
     <item>
       <title>Discrete-Log</title>
-      <link>https://handsupmin.github.io/tags/discrete-log/</link>
+      <link>https://blog.jsontapose.com/tags/discrete-log/</link>
       <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/discrete-log/</guid>
+      <guid>https://blog.jsontapose.com/tags/discrete-log/</guid>
       <description></description>
     </item>
     <item>
       <title>Elgamal</title>
-      <link>https://handsupmin.github.io/tags/elgamal/</link>
+      <link>https://blog.jsontapose.com/tags/elgamal/</link>
       <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/elgamal/</guid>
+      <guid>https://blog.jsontapose.com/tags/elgamal/</guid>
       <description></description>
     </item>
     <item>
       <title>Key-Exchange</title>
-      <link>https://handsupmin.github.io/tags/key-exchange/</link>
+      <link>https://blog.jsontapose.com/tags/key-exchange/</link>
       <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/key-exchange/</guid>
+      <guid>https://blog.jsontapose.com/tags/key-exchange/</guid>
       <description></description>
     </item>
     <item>
       <title>Number-Theory</title>
-      <link>https://handsupmin.github.io/tags/number-theory/</link>
+      <link>https://blog.jsontapose.com/tags/number-theory/</link>
       <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/number-theory/</guid>
+      <guid>https://blog.jsontapose.com/tags/number-theory/</guid>
       <description></description>
     </item>
     <item>
       <title>Public-Key</title>
-      <link>https://handsupmin.github.io/tags/public-key/</link>
+      <link>https://blog.jsontapose.com/tags/public-key/</link>
       <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/public-key/</guid>
+      <guid>https://blog.jsontapose.com/tags/public-key/</guid>
       <description></description>
     </item>
     <item>
       <title>Moduleref</title>
-      <link>https://handsupmin.github.io/tags/moduleref/</link>
+      <link>https://blog.jsontapose.com/tags/moduleref/</link>
       <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/moduleref/</guid>
+      <guid>https://blog.jsontapose.com/tags/moduleref/</guid>
       <description></description>
     </item>
     <item>
       <title>Nestjs</title>
-      <link>https://handsupmin.github.io/tags/nestjs/</link>
+      <link>https://blog.jsontapose.com/tags/nestjs/</link>
       <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/nestjs/</guid>
+      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
       <description></description>
     </item>
     <item>
       <title>Nodejs</title>
-      <link>https://handsupmin.github.io/tags/nodejs/</link>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
       <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/nodejs/</guid>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
       <description></description>
     </item>
     <item>
       <title>Typescript</title>
-      <link>https://handsupmin.github.io/tags/typescript/</link>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
       <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/typescript/</guid>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
       <title>Orm</title>
-      <link>https://handsupmin.github.io/tags/orm/</link>
+      <link>https://blog.jsontapose.com/tags/orm/</link>
       <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/orm/</guid>
+      <guid>https://blog.jsontapose.com/tags/orm/</guid>
       <description></description>
     </item>
     <item>
       <title>Prisma</title>
-      <link>https://handsupmin.github.io/tags/prisma/</link>
+      <link>https://blog.jsontapose.com/tags/prisma/</link>
       <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/prisma/</guid>
+      <guid>https://blog.jsontapose.com/tags/prisma/</guid>
       <description></description>
     </item>
     <item>
       <title>Sorting</title>
-      <link>https://handsupmin.github.io/tags/sorting/</link>
+      <link>https://blog.jsontapose.com/tags/sorting/</link>
       <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/sorting/</guid>
+      <guid>https://blog.jsontapose.com/tags/sorting/</guid>
       <description></description>
     </item>
     <item>
       <title>Sql-Aggregation</title>
-      <link>https://handsupmin.github.io/tags/sql-aggregation/</link>
+      <link>https://blog.jsontapose.com/tags/sql-aggregation/</link>
       <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/sql-aggregation/</guid>
+      <guid>https://blog.jsontapose.com/tags/sql-aggregation/</guid>
       <description></description>
     </item>
     <item>
       <title>Arthur-Merlin</title>
-      <link>https://handsupmin.github.io/tags/arthur-merlin/</link>
+      <link>https://blog.jsontapose.com/tags/arthur-merlin/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/arthur-merlin/</guid>
+      <guid>https://blog.jsontapose.com/tags/arthur-merlin/</guid>
       <description></description>
     </item>
     <item>
       <title>Complexity-Theory</title>
-      <link>https://handsupmin.github.io/tags/complexity-theory/</link>
+      <link>https://blog.jsontapose.com/tags/complexity-theory/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/complexity-theory/</guid>
+      <guid>https://blog.jsontapose.com/tags/complexity-theory/</guid>
       <description></description>
     </item>
     <item>
       <title>Fiat-Shamir</title>
-      <link>https://handsupmin.github.io/tags/fiat-shamir/</link>
+      <link>https://blog.jsontapose.com/tags/fiat-shamir/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/fiat-shamir/</guid>
+      <guid>https://blog.jsontapose.com/tags/fiat-shamir/</guid>
       <description></description>
     </item>
     <item>
       <title>Graph-Coloring</title>
-      <link>https://handsupmin.github.io/tags/graph-coloring/</link>
+      <link>https://blog.jsontapose.com/tags/graph-coloring/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/graph-coloring/</guid>
+      <guid>https://blog.jsontapose.com/tags/graph-coloring/</guid>
       <description></description>
     </item>
     <item>
       <title>Interactive-Proofs</title>
-      <link>https://handsupmin.github.io/tags/interactive-proofs/</link>
+      <link>https://blog.jsontapose.com/tags/interactive-proofs/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/interactive-proofs/</guid>
+      <guid>https://blog.jsontapose.com/tags/interactive-proofs/</guid>
       <description></description>
     </item>
     <item>
       <title>Nizk</title>
-      <link>https://handsupmin.github.io/tags/nizk/</link>
+      <link>https://blog.jsontapose.com/tags/nizk/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/nizk/</guid>
+      <guid>https://blog.jsontapose.com/tags/nizk/</guid>
       <description></description>
     </item>
     <item>
       <title>Np</title>
-      <link>https://handsupmin.github.io/tags/np/</link>
+      <link>https://blog.jsontapose.com/tags/np/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/np/</guid>
+      <guid>https://blog.jsontapose.com/tags/np/</guid>
       <description></description>
     </item>
     <item>
       <title>Pspace</title>
-      <link>https://handsupmin.github.io/tags/pspace/</link>
+      <link>https://blog.jsontapose.com/tags/pspace/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/pspace/</guid>
+      <guid>https://blog.jsontapose.com/tags/pspace/</guid>
       <description></description>
     </item>
     <item>
       <title>Random-Oracle</title>
-      <link>https://handsupmin.github.io/tags/random-oracle/</link>
+      <link>https://blog.jsontapose.com/tags/random-oracle/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/random-oracle/</guid>
+      <guid>https://blog.jsontapose.com/tags/random-oracle/</guid>
       <description></description>
     </item>
     <item>
       <title>Zero-Knowledge</title>
-      <link>https://handsupmin.github.io/tags/zero-knowledge/</link>
+      <link>https://blog.jsontapose.com/tags/zero-knowledge/</link>
       <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/zero-knowledge/</guid>
+      <guid>https://blog.jsontapose.com/tags/zero-knowledge/</guid>
       <description></description>
     </item>
     <item>
       <title>Ecc</title>
-      <link>https://handsupmin.github.io/tags/ecc/</link>
+      <link>https://blog.jsontapose.com/tags/ecc/</link>
       <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/ecc/</guid>
+      <guid>https://blog.jsontapose.com/tags/ecc/</guid>
       <description></description>
     </item>
     <item>
       <title>Ecdh</title>
-      <link>https://handsupmin.github.io/tags/ecdh/</link>
+      <link>https://blog.jsontapose.com/tags/ecdh/</link>
       <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/ecdh/</guid>
+      <guid>https://blog.jsontapose.com/tags/ecdh/</guid>
       <description></description>
     </item>
     <item>
       <title>Elliptic-Curve</title>
-      <link>https://handsupmin.github.io/tags/elliptic-curve/</link>
+      <link>https://blog.jsontapose.com/tags/elliptic-curve/</link>
       <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/elliptic-curve/</guid>
+      <guid>https://blog.jsontapose.com/tags/elliptic-curve/</guid>
       <description></description>
     </item>
     <item>
       <title>Finite-Field</title>
-      <link>https://handsupmin.github.io/tags/finite-field/</link>
+      <link>https://blog.jsontapose.com/tags/finite-field/</link>
       <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/finite-field/</guid>
+      <guid>https://blog.jsontapose.com/tags/finite-field/</guid>
       <description></description>
     </item>
     <item>
       <title>Public-Key-Cryptography</title>
-      <link>https://handsupmin.github.io/tags/public-key-cryptography/</link>
+      <link>https://blog.jsontapose.com/tags/public-key-cryptography/</link>
       <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/public-key-cryptography/</guid>
+      <guid>https://blog.jsontapose.com/tags/public-key-cryptography/</guid>
       <description></description>
     </item>
     <item>
       <title>Clean-Code</title>
-      <link>https://handsupmin.github.io/tags/clean-code/</link>
+      <link>https://blog.jsontapose.com/tags/clean-code/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/clean-code/</guid>
+      <guid>https://blog.jsontapose.com/tags/clean-code/</guid>
       <description></description>
     </item>
     <item>
       <title>Engineering-Principles</title>
-      <link>https://handsupmin.github.io/tags/engineering-principles/</link>
+      <link>https://blog.jsontapose.com/tags/engineering-principles/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/engineering-principles/</guid>
+      <guid>https://blog.jsontapose.com/tags/engineering-principles/</guid>
       <description></description>
     </item>
     <item>
       <title>Maintainability</title>
-      <link>https://handsupmin.github.io/tags/maintainability/</link>
+      <link>https://blog.jsontapose.com/tags/maintainability/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/maintainability/</guid>
+      <guid>https://blog.jsontapose.com/tags/maintainability/</guid>
       <description></description>
     </item>
     <item>
       <title>Simplicity</title>
-      <link>https://handsupmin.github.io/tags/simplicity/</link>
+      <link>https://blog.jsontapose.com/tags/simplicity/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/simplicity/</guid>
+      <guid>https://blog.jsontapose.com/tags/simplicity/</guid>
       <description></description>
     </item>
     <item>
       <title>Software-Design</title>
-      <link>https://handsupmin.github.io/tags/software-design/</link>
+      <link>https://blog.jsontapose.com/tags/software-design/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/software-design/</guid>
+      <guid>https://blog.jsontapose.com/tags/software-design/</guid>
       <description></description>
     </item>
     <item>
       <title>Npm</title>
-      <link>https://handsupmin.github.io/tags/npm/</link>
+      <link>https://blog.jsontapose.com/tags/npm/</link>
       <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/npm/</guid>
+      <guid>https://blog.jsontapose.com/tags/npm/</guid>
       <description></description>
     </item>
     <item>
       <title>Npx</title>
-      <link>https://handsupmin.github.io/tags/npx/</link>
+      <link>https://blog.jsontapose.com/tags/npx/</link>
       <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/npx/</guid>
+      <guid>https://blog.jsontapose.com/tags/npx/</guid>
       <description></description>
     </item>
     <item>
       <title>Package-Manager</title>
-      <link>https://handsupmin.github.io/tags/package-manager/</link>
+      <link>https://blog.jsontapose.com/tags/package-manager/</link>
       <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/package-manager/</guid>
+      <guid>https://blog.jsontapose.com/tags/package-manager/</guid>
       <description></description>
     </item>
     <item>
       <title>Yarn</title>
-      <link>https://handsupmin.github.io/tags/yarn/</link>
+      <link>https://blog.jsontapose.com/tags/yarn/</link>
       <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/yarn/</guid>
+      <guid>https://blog.jsontapose.com/tags/yarn/</guid>
       <description></description>
     </item>
     <item>
       <title>Generics</title>
-      <link>https://handsupmin.github.io/tags/generics/</link>
+      <link>https://blog.jsontapose.com/tags/generics/</link>
       <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/generics/</guid>
+      <guid>https://blog.jsontapose.com/tags/generics/</guid>
       <description></description>
     </item>
     <item>
       <title>Tuples</title>
-      <link>https://handsupmin.github.io/tags/tuples/</link>
+      <link>https://blog.jsontapose.com/tags/tuples/</link>
       <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/tuples/</guid>
+      <guid>https://blog.jsontapose.com/tags/tuples/</guid>
       <description></description>
     </item>
     <item>
       <title>Type-Level-Programming</title>
-      <link>https://handsupmin.github.io/tags/type-level-programming/</link>
+      <link>https://blog.jsontapose.com/tags/type-level-programming/</link>
       <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/type-level-programming/</guid>
+      <guid>https://blog.jsontapose.com/tags/type-level-programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Utility-Types</title>
-      <link>https://handsupmin.github.io/tags/utility-types/</link>
+      <link>https://blog.jsontapose.com/tags/utility-types/</link>
       <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/utility-types/</guid>
+      <guid>https://blog.jsontapose.com/tags/utility-types/</guid>
       <description></description>
     </item>
     <item>
       <title>Buffer-Pool</title>
-      <link>https://handsupmin.github.io/tags/buffer-pool/</link>
+      <link>https://blog.jsontapose.com/tags/buffer-pool/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/buffer-pool/</guid>
+      <guid>https://blog.jsontapose.com/tags/buffer-pool/</guid>
       <description></description>
     </item>
     <item>
       <title>Caching</title>
-      <link>https://handsupmin.github.io/tags/caching/</link>
+      <link>https://blog.jsontapose.com/tags/caching/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/caching/</guid>
+      <guid>https://blog.jsontapose.com/tags/caching/</guid>
       <description></description>
     </item>
     <item>
       <title>Database</title>
-      <link>https://handsupmin.github.io/tags/database/</link>
+      <link>https://blog.jsontapose.com/tags/database/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/database/</guid>
+      <guid>https://blog.jsontapose.com/tags/database/</guid>
       <description></description>
     </item>
     <item>
       <title>Innodb</title>
-      <link>https://handsupmin.github.io/tags/innodb/</link>
+      <link>https://blog.jsontapose.com/tags/innodb/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/innodb/</guid>
+      <guid>https://blog.jsontapose.com/tags/innodb/</guid>
       <description></description>
     </item>
     <item>
       <title>Mysql</title>
-      <link>https://handsupmin.github.io/tags/mysql/</link>
+      <link>https://blog.jsontapose.com/tags/mysql/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/mysql/</guid>
+      <guid>https://blog.jsontapose.com/tags/mysql/</guid>
       <description></description>
     </item>
     <item>
       <title>Performance</title>
-      <link>https://handsupmin.github.io/tags/performance/</link>
+      <link>https://blog.jsontapose.com/tags/performance/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/performance/</guid>
+      <guid>https://blog.jsontapose.com/tags/performance/</guid>
       <description></description>
     </item>
     <item>
       <title>Decorators</title>
-      <link>https://handsupmin.github.io/tags/decorators/</link>
+      <link>https://blog.jsontapose.com/tags/decorators/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/decorators/</guid>
+      <guid>https://blog.jsontapose.com/tags/decorators/</guid>
       <description></description>
     </item>
     <item>
       <title>Dto</title>
-      <link>https://handsupmin.github.io/tags/dto/</link>
+      <link>https://blog.jsontapose.com/tags/dto/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/dto/</guid>
+      <guid>https://blog.jsontapose.com/tags/dto/</guid>
       <description></description>
     </item>
     <item>
       <title>Openapi</title>
-      <link>https://handsupmin.github.io/tags/openapi/</link>
+      <link>https://blog.jsontapose.com/tags/openapi/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/openapi/</guid>
+      <guid>https://blog.jsontapose.com/tags/openapi/</guid>
       <description></description>
     </item>
     <item>
       <title>Swagger</title>
-      <link>https://handsupmin.github.io/tags/swagger/</link>
+      <link>https://blog.jsontapose.com/tags/swagger/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/swagger/</guid>
+      <guid>https://blog.jsontapose.com/tags/swagger/</guid>
       <description></description>
     </item>
     <item>
       <title>Backend</title>
-      <link>https://handsupmin.github.io/tags/backend/</link>
+      <link>https://blog.jsontapose.com/tags/backend/</link>
       <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/backend/</guid>
+      <guid>https://blog.jsontapose.com/tags/backend/</guid>
       <description></description>
     </item>
     <item>
       <title>Cursor-Pagination</title>
-      <link>https://handsupmin.github.io/tags/cursor-pagination/</link>
+      <link>https://blog.jsontapose.com/tags/cursor-pagination/</link>
       <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/cursor-pagination/</guid>
+      <guid>https://blog.jsontapose.com/tags/cursor-pagination/</guid>
       <description></description>
     </item>
     <item>
       <title>Sql</title>
-      <link>https://handsupmin.github.io/tags/sql/</link>
+      <link>https://blog.jsontapose.com/tags/sql/</link>
       <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/sql/</guid>
+      <guid>https://blog.jsontapose.com/tags/sql/</guid>
       <description></description>
     </item>
     <item>
       <title>Query</title>
-      <link>https://handsupmin.github.io/tags/query/</link>
+      <link>https://blog.jsontapose.com/tags/query/</link>
       <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/query/</guid>
+      <guid>https://blog.jsontapose.com/tags/query/</guid>
       <description></description>
     </item>
     <item>
       <title>Closures</title>
-      <link>https://handsupmin.github.io/tags/closures/</link>
+      <link>https://blog.jsontapose.com/tags/closures/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/closures/</guid>
+      <guid>https://blog.jsontapose.com/tags/closures/</guid>
       <description></description>
     </item>
     <item>
       <title>First-Class-Functions</title>
-      <link>https://handsupmin.github.io/tags/first-class-functions/</link>
+      <link>https://blog.jsontapose.com/tags/first-class-functions/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/first-class-functions/</guid>
+      <guid>https://blog.jsontapose.com/tags/first-class-functions/</guid>
       <description></description>
     </item>
     <item>
       <title>Functional-Programming</title>
-      <link>https://handsupmin.github.io/tags/functional-programming/</link>
+      <link>https://blog.jsontapose.com/tags/functional-programming/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/functional-programming/</guid>
+      <guid>https://blog.jsontapose.com/tags/functional-programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Functions</title>
-      <link>https://handsupmin.github.io/tags/functions/</link>
+      <link>https://blog.jsontapose.com/tags/functions/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/functions/</guid>
+      <guid>https://blog.jsontapose.com/tags/functions/</guid>
       <description></description>
     </item>
     <item>
       <title>Higher-Order-Functions</title>
-      <link>https://handsupmin.github.io/tags/higher-order-functions/</link>
+      <link>https://blog.jsontapose.com/tags/higher-order-functions/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/higher-order-functions/</guid>
+      <guid>https://blog.jsontapose.com/tags/higher-order-functions/</guid>
       <description></description>
     </item>
     <item>
       <title>Clustered-Index</title>
-      <link>https://handsupmin.github.io/tags/clustered-index/</link>
+      <link>https://blog.jsontapose.com/tags/clustered-index/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/clustered-index/</guid>
+      <guid>https://blog.jsontapose.com/tags/clustered-index/</guid>
       <description></description>
     </item>
     <item>
       <title>Database-Design</title>
-      <link>https://handsupmin.github.io/tags/database-design/</link>
+      <link>https://blog.jsontapose.com/tags/database-design/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/database-design/</guid>
+      <guid>https://blog.jsontapose.com/tags/database-design/</guid>
       <description></description>
     </item>
     <item>
       <title>Foreign-Key</title>
-      <link>https://handsupmin.github.io/tags/foreign-key/</link>
+      <link>https://blog.jsontapose.com/tags/foreign-key/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/foreign-key/</guid>
+      <guid>https://blog.jsontapose.com/tags/foreign-key/</guid>
       <description></description>
     </item>
     <item>
       <title>Oltp</title>
-      <link>https://handsupmin.github.io/tags/oltp/</link>
+      <link>https://blog.jsontapose.com/tags/oltp/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/oltp/</guid>
+      <guid>https://blog.jsontapose.com/tags/oltp/</guid>
       <description></description>
     </item>
     <item>
       <title>Primary-Key</title>
-      <link>https://handsupmin.github.io/tags/primary-key/</link>
+      <link>https://blog.jsontapose.com/tags/primary-key/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/primary-key/</guid>
+      <guid>https://blog.jsontapose.com/tags/primary-key/</guid>
       <description></description>
     </item>
     <item>
       <title>Backend-Architecture</title>
-      <link>https://handsupmin.github.io/tags/backend-architecture/</link>
+      <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/backend-architecture/</guid>
+      <guid>https://blog.jsontapose.com/tags/backend-architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubernetes</title>
-      <link>https://handsupmin.github.io/tags/kubernetes/</link>
+      <link>https://blog.jsontapose.com/tags/kubernetes/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/kubernetes/</guid>
+      <guid>https://blog.jsontapose.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>
       <title>Pub-Sub</title>
-      <link>https://handsupmin.github.io/tags/pub-sub/</link>
+      <link>https://blog.jsontapose.com/tags/pub-sub/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/pub-sub/</guid>
+      <guid>https://blog.jsontapose.com/tags/pub-sub/</guid>
       <description></description>
     </item>
     <item>
       <title>Real-Time</title>
-      <link>https://handsupmin.github.io/tags/real-time/</link>
+      <link>https://blog.jsontapose.com/tags/real-time/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/real-time/</guid>
+      <guid>https://blog.jsontapose.com/tags/real-time/</guid>
       <description></description>
     </item>
     <item>
       <title>Redis</title>
-      <link>https://handsupmin.github.io/tags/redis/</link>
+      <link>https://blog.jsontapose.com/tags/redis/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/redis/</guid>
+      <guid>https://blog.jsontapose.com/tags/redis/</guid>
       <description></description>
     </item>
     <item>
       <title>Server-Sent-Events</title>
-      <link>https://handsupmin.github.io/tags/server-sent-events/</link>
+      <link>https://blog.jsontapose.com/tags/server-sent-events/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/server-sent-events/</guid>
+      <guid>https://blog.jsontapose.com/tags/server-sent-events/</guid>
       <description></description>
     </item>
     <item>
       <title>Sse</title>
-      <link>https://handsupmin.github.io/tags/sse/</link>
+      <link>https://blog.jsontapose.com/tags/sse/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/sse/</guid>
+      <guid>https://blog.jsontapose.com/tags/sse/</guid>
       <description></description>
     </item>
     <item>
       <title>Chrome-Devtools</title>
-      <link>https://handsupmin.github.io/tags/chrome-devtools/</link>
+      <link>https://blog.jsontapose.com/tags/chrome-devtools/</link>
       <pubDate>Thu, 23 Oct 2025 13:11:27 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/chrome-devtools/</guid>
+      <guid>https://blog.jsontapose.com/tags/chrome-devtools/</guid>
       <description></description>
     </item>
     <item>
       <title>Debugging</title>
-      <link>https://handsupmin.github.io/tags/debugging/</link>
+      <link>https://blog.jsontapose.com/tags/debugging/</link>
       <pubDate>Thu, 23 Oct 2025 13:11:27 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/debugging/</guid>
+      <guid>https://blog.jsontapose.com/tags/debugging/</guid>
       <description></description>
     </item>
     <item>
       <title>Vscode</title>
-      <link>https://handsupmin.github.io/tags/vscode/</link>
+      <link>https://blog.jsontapose.com/tags/vscode/</link>
       <pubDate>Thu, 23 Oct 2025 13:11:27 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/vscode/</guid>
+      <guid>https://blog.jsontapose.com/tags/vscode/</guid>
       <description></description>
     </item>
     <item>
       <title>Database-Tuning</title>
-      <link>https://handsupmin.github.io/tags/database-tuning/</link>
+      <link>https://blog.jsontapose.com/tags/database-tuning/</link>
       <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/database-tuning/</guid>
+      <guid>https://blog.jsontapose.com/tags/database-tuning/</guid>
       <description></description>
     </item>
     <item>
       <title>Indexing</title>
-      <link>https://handsupmin.github.io/tags/indexing/</link>
+      <link>https://blog.jsontapose.com/tags/indexing/</link>
       <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/indexing/</guid>
+      <guid>https://blog.jsontapose.com/tags/indexing/</guid>
       <description></description>
     </item>
     <item>
       <title>Mvcc</title>
-      <link>https://handsupmin.github.io/tags/mvcc/</link>
+      <link>https://blog.jsontapose.com/tags/mvcc/</link>
       <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/mvcc/</guid>
+      <guid>https://blog.jsontapose.com/tags/mvcc/</guid>
       <description></description>
     </item>
     <item>
       <title>Storage-Engine</title>
-      <link>https://handsupmin.github.io/tags/storage-engine/</link>
+      <link>https://blog.jsontapose.com/tags/storage-engine/</link>
       <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/storage-engine/</guid>
+      <guid>https://blog.jsontapose.com/tags/storage-engine/</guid>
       <description></description>
     </item>
     <item>
       <title>Transaction</title>
-      <link>https://handsupmin.github.io/tags/transaction/</link>
+      <link>https://blog.jsontapose.com/tags/transaction/</link>
       <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/transaction/</guid>
+      <guid>https://blog.jsontapose.com/tags/transaction/</guid>
       <description></description>
     </item>
     <item>
       <title>As-Const</title>
-      <link>https://handsupmin.github.io/tags/as-const/</link>
+      <link>https://blog.jsontapose.com/tags/as-const/</link>
       <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/as-const/</guid>
+      <guid>https://blog.jsontapose.com/tags/as-const/</guid>
       <description></description>
     </item>
     <item>
       <title>Const-Enum</title>
-      <link>https://handsupmin.github.io/tags/const-enum/</link>
+      <link>https://blog.jsontapose.com/tags/const-enum/</link>
       <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/const-enum/</guid>
+      <guid>https://blog.jsontapose.com/tags/const-enum/</guid>
       <description></description>
     </item>
     <item>
       <title>Discriminated-Unions</title>
-      <link>https://handsupmin.github.io/tags/discriminated-unions/</link>
+      <link>https://blog.jsontapose.com/tags/discriminated-unions/</link>
       <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/discriminated-unions/</guid>
+      <guid>https://blog.jsontapose.com/tags/discriminated-unions/</guid>
       <description></description>
     </item>
     <item>
       <title>Enum</title>
-      <link>https://handsupmin.github.io/tags/enum/</link>
+      <link>https://blog.jsontapose.com/tags/enum/</link>
       <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/enum/</guid>
+      <guid>https://blog.jsontapose.com/tags/enum/</guid>
       <description></description>
     </item>
     <item>
       <title>Literal-Types</title>
-      <link>https://handsupmin.github.io/tags/literal-types/</link>
+      <link>https://blog.jsontapose.com/tags/literal-types/</link>
       <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/literal-types/</guid>
+      <guid>https://blog.jsontapose.com/tags/literal-types/</guid>
       <description></description>
     </item>
     <item>
       <title>Tree-Shaking</title>
-      <link>https://handsupmin.github.io/tags/tree-shaking/</link>
+      <link>https://blog.jsontapose.com/tags/tree-shaking/</link>
       <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/tree-shaking/</guid>
+      <guid>https://blog.jsontapose.com/tags/tree-shaking/</guid>
       <description></description>
     </item>
     <item>
       <title>Pagination</title>
-      <link>https://handsupmin.github.io/tags/pagination/</link>
+      <link>https://blog.jsontapose.com/tags/pagination/</link>
       <pubDate>Mon, 20 Oct 2025 13:10:30 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/pagination/</guid>
+      <guid>https://blog.jsontapose.com/tags/pagination/</guid>
       <description></description>
     </item>
     <item>
       <title>Node-Inspect</title>
-      <link>https://handsupmin.github.io/tags/node-inspect/</link>
+      <link>https://blog.jsontapose.com/tags/node-inspect/</link>
       <pubDate>Sun, 19 Oct 2025 13:06:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/node-inspect/</guid>
+      <guid>https://blog.jsontapose.com/tags/node-inspect/</guid>
       <description></description>
     </item>
     <item>
       <title>V8-Inspector</title>
-      <link>https://handsupmin.github.io/tags/v8-inspector/</link>
+      <link>https://blog.jsontapose.com/tags/v8-inspector/</link>
       <pubDate>Sun, 19 Oct 2025 13:06:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/v8-inspector/</guid>
+      <guid>https://blog.jsontapose.com/tags/v8-inspector/</guid>
       <description></description>
     </item>
     <item>
       <title>Aws</title>
-      <link>https://handsupmin.github.io/tags/aws/</link>
+      <link>https://blog.jsontapose.com/tags/aws/</link>
       <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/aws/</guid>
+      <guid>https://blog.jsontapose.com/tags/aws/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud</title>
-      <link>https://handsupmin.github.io/tags/cloud/</link>
+      <link>https://blog.jsontapose.com/tags/cloud/</link>
       <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/cloud/</guid>
+      <guid>https://blog.jsontapose.com/tags/cloud/</guid>
       <description></description>
     </item>
     <item>
       <title>Control-Plane</title>
-      <link>https://handsupmin.github.io/tags/control-plane/</link>
+      <link>https://blog.jsontapose.com/tags/control-plane/</link>
       <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/control-plane/</guid>
+      <guid>https://blog.jsontapose.com/tags/control-plane/</guid>
       <description></description>
     </item>
     <item>
       <title>Devops</title>
-      <link>https://handsupmin.github.io/tags/devops/</link>
+      <link>https://blog.jsontapose.com/tags/devops/</link>
       <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/devops/</guid>
+      <guid>https://blog.jsontapose.com/tags/devops/</guid>
       <description></description>
     </item>
     <item>
       <title>Eks</title>
-      <link>https://handsupmin.github.io/tags/eks/</link>
+      <link>https://blog.jsontapose.com/tags/eks/</link>
       <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/eks/</guid>
+      <guid>https://blog.jsontapose.com/tags/eks/</guid>
       <description></description>
     </item>
     <item>
       <title>Sre</title>
-      <link>https://handsupmin.github.io/tags/sre/</link>
+      <link>https://blog.jsontapose.com/tags/sre/</link>
       <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/sre/</guid>
+      <guid>https://blog.jsontapose.com/tags/sre/</guid>
       <description></description>
     </item>
     <item>
       <title>Authentication</title>
-      <link>https://handsupmin.github.io/tags/authentication/</link>
+      <link>https://blog.jsontapose.com/tags/authentication/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/authentication/</guid>
+      <guid>https://blog.jsontapose.com/tags/authentication/</guid>
       <description></description>
     </item>
     <item>
       <title>Authorization</title>
-      <link>https://handsupmin.github.io/tags/authorization/</link>
+      <link>https://blog.jsontapose.com/tags/authorization/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/authorization/</guid>
+      <guid>https://blog.jsontapose.com/tags/authorization/</guid>
       <description></description>
     </item>
     <item>
       <title>Curl</title>
-      <link>https://handsupmin.github.io/tags/curl/</link>
+      <link>https://blog.jsontapose.com/tags/curl/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/curl/</guid>
+      <guid>https://blog.jsontapose.com/tags/curl/</guid>
       <description></description>
     </item>
     <item>
       <title>Guard</title>
-      <link>https://handsupmin.github.io/tags/guard/</link>
+      <link>https://blog.jsontapose.com/tags/guard/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/guard/</guid>
+      <guid>https://blog.jsontapose.com/tags/guard/</guid>
       <description></description>
     </item>
     <item>
       <title>Middleware</title>
-      <link>https://handsupmin.github.io/tags/middleware/</link>
+      <link>https://blog.jsontapose.com/tags/middleware/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/middleware/</guid>
+      <guid>https://blog.jsontapose.com/tags/middleware/</guid>
       <description></description>
     </item>
     <item>
       <title>Cgroup</title>
-      <link>https://handsupmin.github.io/tags/cgroup/</link>
+      <link>https://blog.jsontapose.com/tags/cgroup/</link>
       <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/cgroup/</guid>
+      <guid>https://blog.jsontapose.com/tags/cgroup/</guid>
       <description></description>
     </item>
     <item>
       <title>Cni</title>
-      <link>https://handsupmin.github.io/tags/cni/</link>
+      <link>https://blog.jsontapose.com/tags/cni/</link>
       <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/cni/</guid>
+      <guid>https://blog.jsontapose.com/tags/cni/</guid>
       <description></description>
     </item>
     <item>
       <title>Container-Runtime</title>
-      <link>https://handsupmin.github.io/tags/container-runtime/</link>
+      <link>https://blog.jsontapose.com/tags/container-runtime/</link>
       <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/container-runtime/</guid>
+      <guid>https://blog.jsontapose.com/tags/container-runtime/</guid>
       <description></description>
     </item>
     <item>
       <title>Etcd</title>
-      <link>https://handsupmin.github.io/tags/etcd/</link>
+      <link>https://blog.jsontapose.com/tags/etcd/</link>
       <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/etcd/</guid>
+      <guid>https://blog.jsontapose.com/tags/etcd/</guid>
       <description></description>
     </item>
     <item>
       <title>Kube-Apiserver</title>
-      <link>https://handsupmin.github.io/tags/kube-apiserver/</link>
+      <link>https://blog.jsontapose.com/tags/kube-apiserver/</link>
       <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/kube-apiserver/</guid>
+      <guid>https://blog.jsontapose.com/tags/kube-apiserver/</guid>
       <description></description>
     </item>
     <item>
       <title>Kube-Proxy</title>
-      <link>https://handsupmin.github.io/tags/kube-proxy/</link>
+      <link>https://blog.jsontapose.com/tags/kube-proxy/</link>
       <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/kube-proxy/</guid>
+      <guid>https://blog.jsontapose.com/tags/kube-proxy/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubelet</title>
-      <link>https://handsupmin.github.io/tags/kubelet/</link>
+      <link>https://blog.jsontapose.com/tags/kubelet/</link>
       <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/kubelet/</guid>
+      <guid>https://blog.jsontapose.com/tags/kubelet/</guid>
       <description></description>
     </item>
     <item>
       <title>Scheduler</title>
-      <link>https://handsupmin.github.io/tags/scheduler/</link>
+      <link>https://blog.jsontapose.com/tags/scheduler/</link>
       <pubDate>Thu, 16 Oct 2025 13:10:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/scheduler/</guid>
+      <guid>https://blog.jsontapose.com/tags/scheduler/</guid>
       <description></description>
     </item>
     <item>
       <title>Explain</title>
-      <link>https://handsupmin.github.io/tags/explain/</link>
+      <link>https://blog.jsontapose.com/tags/explain/</link>
       <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/explain/</guid>
+      <guid>https://blog.jsontapose.com/tags/explain/</guid>
       <description></description>
     </item>
     <item>
       <title>Performance-Tuning</title>
-      <link>https://handsupmin.github.io/tags/performance-tuning/</link>
+      <link>https://blog.jsontapose.com/tags/performance-tuning/</link>
       <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/performance-tuning/</guid>
+      <guid>https://blog.jsontapose.com/tags/performance-tuning/</guid>
       <description></description>
     </item>
     <item>
       <title>Query-Plan</title>
-      <link>https://handsupmin.github.io/tags/query-plan/</link>
+      <link>https://blog.jsontapose.com/tags/query-plan/</link>
       <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/query-plan/</guid>
+      <guid>https://blog.jsontapose.com/tags/query-plan/</guid>
       <description></description>
     </item>
     <item>
       <title>Blockchain</title>
-      <link>https://handsupmin.github.io/tags/blockchain/</link>
+      <link>https://blog.jsontapose.com/tags/blockchain/</link>
       <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/blockchain/</guid>
+      <guid>https://blog.jsontapose.com/tags/blockchain/</guid>
       <description></description>
     </item>
     <item>
       <title>Dapp</title>
-      <link>https://handsupmin.github.io/tags/dapp/</link>
+      <link>https://blog.jsontapose.com/tags/dapp/</link>
       <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/dapp/</guid>
+      <guid>https://blog.jsontapose.com/tags/dapp/</guid>
       <description></description>
     </item>
     <item>
       <title>Data-Engineering</title>
-      <link>https://handsupmin.github.io/tags/data-engineering/</link>
+      <link>https://blog.jsontapose.com/tags/data-engineering/</link>
       <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/data-engineering/</guid>
+      <guid>https://blog.jsontapose.com/tags/data-engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>Data-Indexing</title>
-      <link>https://handsupmin.github.io/tags/data-indexing/</link>
+      <link>https://blog.jsontapose.com/tags/data-indexing/</link>
       <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/data-indexing/</guid>
+      <guid>https://blog.jsontapose.com/tags/data-indexing/</guid>
       <description></description>
     </item>
     <item>
       <title>Defi</title>
-      <link>https://handsupmin.github.io/tags/defi/</link>
+      <link>https://blog.jsontapose.com/tags/defi/</link>
       <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/defi/</guid>
+      <guid>https://blog.jsontapose.com/tags/defi/</guid>
       <description></description>
     </item>
     <item>
       <title>Graphql</title>
-      <link>https://handsupmin.github.io/tags/graphql/</link>
+      <link>https://blog.jsontapose.com/tags/graphql/</link>
       <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/graphql/</guid>
+      <guid>https://blog.jsontapose.com/tags/graphql/</guid>
       <description></description>
     </item>
     <item>
       <title>Indexer</title>
-      <link>https://handsupmin.github.io/tags/indexer/</link>
+      <link>https://blog.jsontapose.com/tags/indexer/</link>
       <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/indexer/</guid>
+      <guid>https://blog.jsontapose.com/tags/indexer/</guid>
       <description></description>
     </item>
     <item>
       <title>Consensus-Algorithms</title>
-      <link>https://handsupmin.github.io/tags/consensus-algorithms/</link>
+      <link>https://blog.jsontapose.com/tags/consensus-algorithms/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/consensus-algorithms/</guid>
+      <guid>https://blog.jsontapose.com/tags/consensus-algorithms/</guid>
       <description></description>
     </item>
     <item>
       <title>Did</title>
-      <link>https://handsupmin.github.io/tags/did/</link>
+      <link>https://blog.jsontapose.com/tags/did/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/did/</guid>
+      <guid>https://blog.jsontapose.com/tags/did/</guid>
       <description></description>
     </item>
     <item>
       <title>PoS</title>
-      <link>https://handsupmin.github.io/tags/pos/</link>
+      <link>https://blog.jsontapose.com/tags/pos/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/pos/</guid>
+      <guid>https://blog.jsontapose.com/tags/pos/</guid>
       <description></description>
     </item>
     <item>
       <title>Pow</title>
-      <link>https://handsupmin.github.io/tags/pow/</link>
+      <link>https://blog.jsontapose.com/tags/pow/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/pow/</guid>
+      <guid>https://blog.jsontapose.com/tags/pow/</guid>
       <description></description>
     </item>
     <item>
       <title>Privacy</title>
-      <link>https://handsupmin.github.io/tags/privacy/</link>
+      <link>https://blog.jsontapose.com/tags/privacy/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/privacy/</guid>
+      <guid>https://blog.jsontapose.com/tags/privacy/</guid>
       <description></description>
     </item>
     <item>
       <title>Scalability</title>
-      <link>https://handsupmin.github.io/tags/scalability/</link>
+      <link>https://blog.jsontapose.com/tags/scalability/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/scalability/</guid>
+      <guid>https://blog.jsontapose.com/tags/scalability/</guid>
       <description></description>
     </item>
     <item>
       <title>Zero-Knowledge-Proofs</title>
-      <link>https://handsupmin.github.io/tags/zero-knowledge-proofs/</link>
+      <link>https://blog.jsontapose.com/tags/zero-knowledge-proofs/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/zero-knowledge-proofs/</guid>
+      <guid>https://blog.jsontapose.com/tags/zero-knowledge-proofs/</guid>
       <description></description>
     </item>
     <item>
       <title>Zk-Snark</title>
-      <link>https://handsupmin.github.io/tags/zk-snark/</link>
+      <link>https://blog.jsontapose.com/tags/zk-snark/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/zk-snark/</guid>
+      <guid>https://blog.jsontapose.com/tags/zk-snark/</guid>
       <description></description>
     </item>
     <item>
       <title>Zk-Stark</title>
-      <link>https://handsupmin.github.io/tags/zk-stark/</link>
+      <link>https://blog.jsontapose.com/tags/zk-stark/</link>
       <pubDate>Sat, 11 Oct 2025 13:05:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/zk-stark/</guid>
+      <guid>https://blog.jsontapose.com/tags/zk-stark/</guid>
       <description></description>
     </item>
     <item>
       <title>Asic</title>
-      <link>https://handsupmin.github.io/tags/asic/</link>
+      <link>https://blog.jsontapose.com/tags/asic/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/asic/</guid>
+      <guid>https://blog.jsontapose.com/tags/asic/</guid>
       <description></description>
     </item>
     <item>
       <title>Consensus</title>
-      <link>https://handsupmin.github.io/tags/consensus/</link>
+      <link>https://blog.jsontapose.com/tags/consensus/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/consensus/</guid>
+      <guid>https://blog.jsontapose.com/tags/consensus/</guid>
       <description></description>
     </item>
     <item>
       <title>Ethereum</title>
-      <link>https://handsupmin.github.io/tags/ethereum/</link>
+      <link>https://blog.jsontapose.com/tags/ethereum/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/ethereum/</guid>
+      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
       <description></description>
     </item>
     <item>
       <title>Gpu</title>
-      <link>https://handsupmin.github.io/tags/gpu/</link>
+      <link>https://blog.jsontapose.com/tags/gpu/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/gpu/</guid>
+      <guid>https://blog.jsontapose.com/tags/gpu/</guid>
       <description></description>
     </item>
     <item>
       <title>Mining</title>
-      <link>https://handsupmin.github.io/tags/mining/</link>
+      <link>https://blog.jsontapose.com/tags/mining/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/mining/</guid>
+      <guid>https://blog.jsontapose.com/tags/mining/</guid>
       <description></description>
     </item>
     <item>
       <title>Mining-Pool</title>
-      <link>https://handsupmin.github.io/tags/mining-pool/</link>
+      <link>https://blog.jsontapose.com/tags/mining-pool/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/mining-pool/</guid>
+      <guid>https://blog.jsontapose.com/tags/mining-pool/</guid>
       <description></description>
     </item>
     <item>
       <title>Proof-of-Work</title>
-      <link>https://handsupmin.github.io/tags/proof-of-work/</link>
+      <link>https://blog.jsontapose.com/tags/proof-of-work/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/proof-of-work/</guid>
+      <guid>https://blog.jsontapose.com/tags/proof-of-work/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>https://handsupmin.github.io/tags/security/</link>
+      <link>https://blog.jsontapose.com/tags/security/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/security/</guid>
+      <guid>https://blog.jsontapose.com/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Account-Abstraction</title>
-      <link>https://handsupmin.github.io/tags/account-abstraction/</link>
+      <link>https://blog.jsontapose.com/tags/account-abstraction/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/account-abstraction/</guid>
+      <guid>https://blog.jsontapose.com/tags/account-abstraction/</guid>
       <description></description>
     </item>
     <item>
       <title>Eip-1271</title>
-      <link>https://handsupmin.github.io/tags/eip-1271/</link>
+      <link>https://blog.jsontapose.com/tags/eip-1271/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/eip-1271/</guid>
+      <guid>https://blog.jsontapose.com/tags/eip-1271/</guid>
       <description></description>
     </item>
     <item>
       <title>Eip-4844</title>
-      <link>https://handsupmin.github.io/tags/eip-4844/</link>
+      <link>https://blog.jsontapose.com/tags/eip-4844/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/eip-4844/</guid>
+      <guid>https://blog.jsontapose.com/tags/eip-4844/</guid>
       <description></description>
     </item>
     <item>
       <title>Layer-2</title>
-      <link>https://handsupmin.github.io/tags/layer-2/</link>
+      <link>https://blog.jsontapose.com/tags/layer-2/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/layer-2/</guid>
+      <guid>https://blog.jsontapose.com/tags/layer-2/</guid>
       <description></description>
     </item>
     <item>
       <title>Paymaster</title>
-      <link>https://handsupmin.github.io/tags/paymaster/</link>
+      <link>https://blog.jsontapose.com/tags/paymaster/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/paymaster/</guid>
+      <guid>https://blog.jsontapose.com/tags/paymaster/</guid>
       <description></description>
     </item>
     <item>
       <title>Smart-Contract-Wallet</title>
-      <link>https://handsupmin.github.io/tags/smart-contract-wallet/</link>
+      <link>https://blog.jsontapose.com/tags/smart-contract-wallet/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/smart-contract-wallet/</guid>
+      <guid>https://blog.jsontapose.com/tags/smart-contract-wallet/</guid>
       <description></description>
     </item>
     <item>
       <title>Zk-Rollup</title>
-      <link>https://handsupmin.github.io/tags/zk-rollup/</link>
+      <link>https://blog.jsontapose.com/tags/zk-rollup/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/zk-rollup/</guid>
+      <guid>https://blog.jsontapose.com/tags/zk-rollup/</guid>
       <description></description>
     </item>
     <item>
       <title>Zk-Stack</title>
-      <link>https://handsupmin.github.io/tags/zk-stack/</link>
+      <link>https://blog.jsontapose.com/tags/zk-stack/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/zk-stack/</guid>
+      <guid>https://blog.jsontapose.com/tags/zk-stack/</guid>
       <description></description>
     </item>
     <item>
       <title>Rpc</title>
-      <link>https://handsupmin.github.io/tags/rpc/</link>
+      <link>https://blog.jsontapose.com/tags/rpc/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/rpc/</guid>
+      <guid>https://blog.jsontapose.com/tags/rpc/</guid>
       <description></description>
     </item>
     <item>
       <title>Smart-Contracts</title>
-      <link>https://handsupmin.github.io/tags/smart-contracts/</link>
+      <link>https://blog.jsontapose.com/tags/smart-contracts/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/smart-contracts/</guid>
+      <guid>https://blog.jsontapose.com/tags/smart-contracts/</guid>
       <description></description>
     </item>
     <item>
       <title>Viem</title>
-      <link>https://handsupmin.github.io/tags/viem/</link>
+      <link>https://blog.jsontapose.com/tags/viem/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/viem/</guid>
+      <guid>https://blog.jsontapose.com/tags/viem/</guid>
       <description></description>
     </item>
     <item>
       <title>Wallet</title>
-      <link>https://handsupmin.github.io/tags/wallet/</link>
+      <link>https://blog.jsontapose.com/tags/wallet/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/wallet/</guid>
+      <guid>https://blog.jsontapose.com/tags/wallet/</guid>
       <description></description>
     </item>
     <item>
       <title>Web3</title>
-      <link>https://handsupmin.github.io/tags/web3/</link>
+      <link>https://blog.jsontapose.com/tags/web3/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/web3/</guid>
+      <guid>https://blog.jsontapose.com/tags/web3/</guid>
       <description></description>
     </item>
     <item>
       <title>Snark</title>
-      <link>https://handsupmin.github.io/tags/snark/</link>
+      <link>https://blog.jsontapose.com/tags/snark/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/snark/</guid>
+      <guid>https://blog.jsontapose.com/tags/snark/</guid>
       <description></description>
     </item>
     <item>
       <title>Stark</title>
-      <link>https://handsupmin.github.io/tags/stark/</link>
+      <link>https://blog.jsontapose.com/tags/stark/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/stark/</guid>
+      <guid>https://blog.jsontapose.com/tags/stark/</guid>
       <description></description>
     </item>
     <item>
       <title>Zkp</title>
-      <link>https://handsupmin.github.io/tags/zkp/</link>
+      <link>https://blog.jsontapose.com/tags/zkp/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/zkp/</guid>
+      <guid>https://blog.jsontapose.com/tags/zkp/</guid>
       <description></description>
     </item>
     <item>
       <title>Chain Reorganization</title>
-      <link>https://handsupmin.github.io/tags/chain-reorganization/</link>
+      <link>https://blog.jsontapose.com/tags/chain-reorganization/</link>
       <pubDate>Sun, 28 Sep 2025 13:05:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/chain-reorganization/</guid>
+      <guid>https://blog.jsontapose.com/tags/chain-reorganization/</guid>
       <description></description>
     </item>
     <item>
       <title>Confirmation</title>
-      <link>https://handsupmin.github.io/tags/confirmation/</link>
+      <link>https://blog.jsontapose.com/tags/confirmation/</link>
       <pubDate>Sun, 28 Sep 2025 13:05:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/confirmation/</guid>
+      <guid>https://blog.jsontapose.com/tags/confirmation/</guid>
       <description></description>
     </item>
     <item>
       <title>Reorg</title>
-      <link>https://handsupmin.github.io/tags/reorg/</link>
+      <link>https://blog.jsontapose.com/tags/reorg/</link>
       <pubDate>Sun, 28 Sep 2025 13:05:58 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/reorg/</guid>
+      <guid>https://blog.jsontapose.com/tags/reorg/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptocurrency</title>
-      <link>https://handsupmin.github.io/tags/cryptocurrency/</link>
+      <link>https://blog.jsontapose.com/tags/cryptocurrency/</link>
       <pubDate>Tue, 23 Sep 2025 13:09:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/cryptocurrency/</guid>
+      <guid>https://blog.jsontapose.com/tags/cryptocurrency/</guid>
       <description></description>
     </item>
     <item>
       <title>Bitcoin</title>
-      <link>https://handsupmin.github.io/tags/bitcoin/</link>
+      <link>https://blog.jsontapose.com/tags/bitcoin/</link>
       <pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/bitcoin/</guid>
+      <guid>https://blog.jsontapose.com/tags/bitcoin/</guid>
       <description></description>
     </item>
     <item>
       <title>Consensus-Algorithm</title>
-      <link>https://handsupmin.github.io/tags/consensus-algorithm/</link>
+      <link>https://blog.jsontapose.com/tags/consensus-algorithm/</link>
       <pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/consensus-algorithm/</guid>
+      <guid>https://blog.jsontapose.com/tags/consensus-algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Eip-712</title>
-      <link>https://handsupmin.github.io/tags/eip-712/</link>
+      <link>https://blog.jsontapose.com/tags/eip-712/</link>
       <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/eip-712/</guid>
+      <guid>https://blog.jsontapose.com/tags/eip-712/</guid>
       <description></description>
     </item>
     <item>
       <title>Ethersjs</title>
-      <link>https://handsupmin.github.io/tags/ethersjs/</link>
+      <link>https://blog.jsontapose.com/tags/ethersjs/</link>
       <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/ethersjs/</guid>
+      <guid>https://blog.jsontapose.com/tags/ethersjs/</guid>
       <description></description>
     </item>
     <item>
       <title>Off-Chain-Signature</title>
-      <link>https://handsupmin.github.io/tags/off-chain-signature/</link>
+      <link>https://blog.jsontapose.com/tags/off-chain-signature/</link>
       <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/off-chain-signature/</guid>
+      <guid>https://blog.jsontapose.com/tags/off-chain-signature/</guid>
       <description></description>
     </item>
     <item>
       <title>Solidity</title>
-      <link>https://handsupmin.github.io/tags/solidity/</link>
+      <link>https://blog.jsontapose.com/tags/solidity/</link>
       <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/solidity/</guid>
+      <guid>https://blog.jsontapose.com/tags/solidity/</guid>
       <description></description>
     </item>
     <item>
       <title>Zksync</title>
-      <link>https://handsupmin.github.io/tags/zksync/</link>
+      <link>https://blog.jsontapose.com/tags/zksync/</link>
       <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/zksync/</guid>
+      <guid>https://blog.jsontapose.com/tags/zksync/</guid>
       <description></description>
     </item>
     <item>
       <title>Data-Structure</title>
-      <link>https://handsupmin.github.io/tags/data-structure/</link>
+      <link>https://blog.jsontapose.com/tags/data-structure/</link>
       <pubDate>Sat, 20 Sep 2025 17:15:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/data-structure/</guid>
+      <guid>https://blog.jsontapose.com/tags/data-structure/</guid>
       <description></description>
     </item>
     <item>
       <title>Light-Node</title>
-      <link>https://handsupmin.github.io/tags/light-node/</link>
+      <link>https://blog.jsontapose.com/tags/light-node/</link>
       <pubDate>Sat, 20 Sep 2025 17:15:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/light-node/</guid>
+      <guid>https://blog.jsontapose.com/tags/light-node/</guid>
       <description></description>
     </item>
     <item>
       <title>Merkle-Tree</title>
-      <link>https://handsupmin.github.io/tags/merkle-tree/</link>
+      <link>https://blog.jsontapose.com/tags/merkle-tree/</link>
       <pubDate>Sat, 20 Sep 2025 17:15:26 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/merkle-tree/</guid>
+      <guid>https://blog.jsontapose.com/tags/merkle-tree/</guid>
       <description></description>
     </item>
     <item>
       <title>Beacon-Chain</title>
-      <link>https://handsupmin.github.io/tags/beacon-chain/</link>
+      <link>https://blog.jsontapose.com/tags/beacon-chain/</link>
       <pubDate>Sat, 20 Sep 2025 17:04:48 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/beacon-chain/</guid>
+      <guid>https://blog.jsontapose.com/tags/beacon-chain/</guid>
       <description></description>
     </item>
     <item>
       <title>Epoch</title>
-      <link>https://handsupmin.github.io/tags/epoch/</link>
+      <link>https://blog.jsontapose.com/tags/epoch/</link>
       <pubDate>Sat, 20 Sep 2025 17:04:48 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/epoch/</guid>
+      <guid>https://blog.jsontapose.com/tags/epoch/</guid>
       <description></description>
     </item>
     <item>
       <title>Slot</title>
-      <link>https://handsupmin.github.io/tags/slot/</link>
+      <link>https://blog.jsontapose.com/tags/slot/</link>
       <pubDate>Sat, 20 Sep 2025 17:04:48 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/slot/</guid>
+      <guid>https://blog.jsontapose.com/tags/slot/</guid>
       <description></description>
     </item>
     <item>
       <title>Staking</title>
-      <link>https://handsupmin.github.io/tags/staking/</link>
+      <link>https://blog.jsontapose.com/tags/staking/</link>
       <pubDate>Sat, 20 Sep 2025 17:04:48 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/staking/</guid>
+      <guid>https://blog.jsontapose.com/tags/staking/</guid>
       <description></description>
     </item>
     <item>
       <title>Validator</title>
-      <link>https://handsupmin.github.io/tags/validator/</link>
+      <link>https://blog.jsontapose.com/tags/validator/</link>
       <pubDate>Sat, 20 Sep 2025 17:04:48 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/validator/</guid>
+      <guid>https://blog.jsontapose.com/tags/validator/</guid>
       <description></description>
     </item>
     <item>
       <title>Airdrop</title>
-      <link>https://handsupmin.github.io/tags/airdrop/</link>
+      <link>https://blog.jsontapose.com/tags/airdrop/</link>
       <pubDate>Sat, 20 Sep 2025 16:56:17 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/airdrop/</guid>
+      <guid>https://blog.jsontapose.com/tags/airdrop/</guid>
       <description></description>
     </item>
     <item>
       <title>Allowlist</title>
-      <link>https://handsupmin.github.io/tags/allowlist/</link>
+      <link>https://blog.jsontapose.com/tags/allowlist/</link>
       <pubDate>Sat, 20 Sep 2025 16:56:17 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/allowlist/</guid>
+      <guid>https://blog.jsontapose.com/tags/allowlist/</guid>
       <description></description>
     </item>
     <item>
       <title>Marketplace</title>
-      <link>https://handsupmin.github.io/tags/marketplace/</link>
+      <link>https://blog.jsontapose.com/tags/marketplace/</link>
       <pubDate>Sat, 20 Sep 2025 16:56:17 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/marketplace/</guid>
+      <guid>https://blog.jsontapose.com/tags/marketplace/</guid>
       <description></description>
     </item>
     <item>
       <title>NFT</title>
-      <link>https://handsupmin.github.io/tags/nft/</link>
+      <link>https://blog.jsontapose.com/tags/nft/</link>
       <pubDate>Sat, 20 Sep 2025 16:56:17 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/nft/</guid>
+      <guid>https://blog.jsontapose.com/tags/nft/</guid>
       <description></description>
     </item>
     <item>
       <title>Reveal</title>
-      <link>https://handsupmin.github.io/tags/reveal/</link>
+      <link>https://blog.jsontapose.com/tags/reveal/</link>
       <pubDate>Sat, 20 Sep 2025 16:56:17 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/reveal/</guid>
+      <guid>https://blog.jsontapose.com/tags/reveal/</guid>
       <description></description>
     </item>
     <item>
       <title>Minting</title>
-      <link>https://handsupmin.github.io/tags/minting/</link>
+      <link>https://blog.jsontapose.com/tags/minting/</link>
       <pubDate>Sat, 20 Sep 2025 16:41:07 +0000</pubDate>
-      <guid>https://handsupmin.github.io/tags/minting/</guid>
+      <guid>https://blog.jsontapose.com/tags/minting/</guid>
       <description></description>
     </item>
   </channel>

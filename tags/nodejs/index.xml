@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nodejs on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/nodejs/</link>
+    <link>https://blog.jsontapose.com/tags/nodejs/</link>
     <description>Recent content in Nodejs on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Fri, 07 Nov 2025 13:09:50 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NestJS ModuleRef로 런타임 의존성 주입 제어하기</title>
-      <link>https://handsupmin.github.io/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
       <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
       <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
 &lt;p&gt;ModuleRef는 NestJS에서 런타임에 의존성을 직접 조회·생성할 때 쓰는 유틸리티 클래스
 정적 DI로 풀기 어려운 동적 흐름 제어에 사용&lt;/p&gt;
@@ -32,9 +32,9 @@
     </item>
     <item>
       <title>Prisma OrderByWithAggregationInput로 집계 기반 정렬하기와 올바른 사용 맥락</title>
-      <link>https://handsupmin.github.io/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</link>
+      <link>https://blog.jsontapose.com/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</link>
       <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</guid>
+      <guid>https://blog.jsontapose.com/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;OrderByWithAggregationInput은 일반 필드뿐 아니라 _count, _avg, _sum 같은 집계 결과를 기준으로 정렬을 정의하는 Prisma 입력 타입임
 핵심은 이 타입이 findMany가 아니라 groupBy에서 사용하는 것이라는 점임
@@ -64,9 +64,9 @@
     </item>
     <item>
       <title>npm, npx, yarn 비교와 사용 맥락 정리</title>
-      <link>https://handsupmin.github.io/posts/npm-npx-yarn-overview-compare-db8c4d/</link>
+      <link>https://blog.jsontapose.com/posts/npm-npx-yarn-overview-compare-db8c4d/</link>
       <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/npm-npx-yarn-overview-compare-db8c4d/</guid>
+      <guid>https://blog.jsontapose.com/posts/npm-npx-yarn-overview-compare-db8c4d/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;JavaScript와 Node.js 생태계에서 패키지 관리 도구 선택은 빌드 재현성, 설치 속도, 운영 안정성에 직접 영향 있음
 현업 기준으로 npm, npx, yarn의 목적과 차이를 맥락 중심으로 정리&lt;/p&gt;
@@ -79,9 +79,9 @@ CI에서는 &lt;code&gt;npm ci&lt;/code&gt;로 lock 파일 기준 클린 설치 
     </item>
     <item>
       <title>Prisma cursor 기반 페이지네이션 동작 원리와 skip: 1의 의미</title>
-      <link>https://handsupmin.github.io/posts/prisma-cursor-pagination-and-skip-1-a14080/</link>
+      <link>https://blog.jsontapose.com/posts/prisma-cursor-pagination-and-skip-1-a14080/</link>
       <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/prisma-cursor-pagination-and-skip-1-a14080/</guid>
+      <guid>https://blog.jsontapose.com/posts/prisma-cursor-pagination-and-skip-1-a14080/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Prisma에서 cursor는 특정 레코드 지점부터 결과를 읽기 시작하는 기준점으로 동작함
 skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으로, 페이지 간 중복을 제거하는 데 사용함&lt;/p&gt;
@@ -110,9 +110,9 @@ skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으
     </item>
     <item>
       <title>Node.js 환경에서 디버깅하기</title>
-      <link>https://handsupmin.github.io/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</link>
+      <link>https://blog.jsontapose.com/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</link>
       <pubDate>Thu, 23 Oct 2025 13:11:27 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</guid>
+      <guid>https://blog.jsontapose.com/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Node.js에서 디버깅은 문제를 재현 가능한 최소 단위로 축소하고, 실행 흐름과 상태를 관찰해 원인을 단정하는 과정임. 이 글은 디버깅 기본 원리와 함께 Node.js 환경에서 자주 쓰는 세 가지 방법인 Chrome DevTools, node-inspect CLI, VS Code 디버거 사용법을 정리함&lt;/p&gt;
 &lt;h3 id=&#34;문제를-명확히-하기&#34;&gt;문제를 명확히 하기&lt;/h3&gt;
@@ -125,9 +125,9 @@ skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으
     </item>
     <item>
       <title>Node.js v8-inspector 디버깅 가이드 — --inspect와 node-inspect 사용법</title>
-      <link>https://handsupmin.github.io/posts/nodejs-v8-inspector-debugging-guide-inspect-node-inspect-2e5ae9/</link>
+      <link>https://blog.jsontapose.com/posts/nodejs-v8-inspector-debugging-guide-inspect-node-inspect-2e5ae9/</link>
       <pubDate>Sun, 19 Oct 2025 13:06:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nodejs-v8-inspector-debugging-guide-inspect-node-inspect-2e5ae9/</guid>
+      <guid>https://blog.jsontapose.com/posts/nodejs-v8-inspector-debugging-guide-inspect-node-inspect-2e5ae9/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Node.js 디버깅 환경은 V8 인스펙터 도입 이후 일관된 방식으로 수렴했음
 Node.js v6부터 V8 네이티브 인스펙터가 들어왔고 v8.0.0에서 v8-inspector를 본격 지원하면서 기존 &amp;ndash;debug는 폐기, &amp;ndash;inspect로 통일됨
@@ -171,9 +171,9 @@ CLI 디버거 node-inspect가 코어에 통합되어 브라우저 개발자도�
     </item>
     <item>
       <title>NestJS Guard로 요청 보호하기 — CanActivate, UseGuards, Bearer 인증 예시</title>
-      <link>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</link>
+      <link>https://blog.jsontapose.com/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</guid>
+      <guid>https://blog.jsontapose.com/posts/nestjs-guard-canactivate-useguards-bearer-auth-427051/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;가드 Guard를 이용해 NestJS 애플리케이션을 위험한 요청으로부터 차단하는 방법 정리
 컨트롤러에 도달하기 전 단계에서 인증과 접근 제어 수행하는 패턴 중심으로 설명&lt;/p&gt;
@@ -185,9 +185,9 @@ canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하�
     </item>
     <item>
       <title>Viem으로 이더리움 읽기·쓰기 시작하기 가이드</title>
-      <link>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</link>
+      <link>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/viem-ethereum-read-write-guide-4a5336/</guid>
+      <guid>https://blog.jsontapose.com/posts/viem-ethereum-read-write-guide-4a5336/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;Viem은 이더리움 계열 체인과 상호작용하는 경량 Web3 클라이언트 라이브러리임
 ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구지만, 모듈 분리 구조와 타입 안전성, 빌드 사이즈, 성능에서 강점이 있음

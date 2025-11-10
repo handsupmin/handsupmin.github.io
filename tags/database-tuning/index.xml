@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Database-Tuning on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/database-tuning/</link>
+    <link>https://blog.jsontapose.com/tags/database-tuning/</link>
     <description>Recent content in Database-Tuning on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Wed, 22 Oct 2025 13:12:18 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/database-tuning/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/database-tuning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MySQL InnoDB 장단점과 운영 시 주의사항 정리</title>
-      <link>https://handsupmin.github.io/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</link>
+      <link>https://blog.jsontapose.com/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</link>
       <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</guid>
+      <guid>https://blog.jsontapose.com/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;MySQL InnoDB는 ACID 트랜잭션을 기본으로 지원하는 스토리지 엔진으로 데이터 무결성과 동시성 보장을 목표로 설계됨
 Row-level lock, MVCC, 클러스터형 인덱스, 외래 키, 크래시 리커버리 등 기능을 통해 OLTP 환경에서 안정적인 처리 성능 제공

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Enum on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/enum/</link>
+    <link>https://blog.jsontapose.com/tags/enum/</link>
     <description>Recent content in Enum on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Tue, 21 Oct 2025 13:12:21 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/enum/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/enum/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TypeScript enum, const enum, as const 차이와 선택 기준</title>
-      <link>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-3817af/</link>
+      <link>https://blog.jsontapose.com/posts/typescript-enum-const-enum-as-const-3817af/</link>
       <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/typescript-enum-const-enum-as-const-3817af/</guid>
+      <guid>https://blog.jsontapose.com/posts/typescript-enum-const-enum-as-const-3817af/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;TypeScript에서 enum, const enum, as const는 값 집합을 선언하고 타입으로 활용하기 위한 서로 다른 도구임
 각 특성의 차이와 트레이드오프를 이해하면 가독성과 안정성을 챙기면서 번들 크기와 도구 호환성 문제도 피할 수 있음&lt;/p&gt;

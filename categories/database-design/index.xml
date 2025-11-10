@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Database-Design on HandsLog</title>
-    <link>https://handsupmin.github.io/categories/database-design/</link>
+    <link>https://blog.jsontapose.com/categories/database-design/</link>
     <description>Recent content in Database-Design on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 26 Oct 2025 13:07:10 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/categories/database-design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/categories/database-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>InnoDB에서 PK 없는 테이블의 동작과 트레이드오프</title>
-      <link>https://handsupmin.github.io/posts/innodb-pk-less-tables-trade-offs-2dc695/</link>
+      <link>https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/innodb-pk-less-tables-trade-offs-2dc695/</guid>
+      <guid>https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/</guid>
       <description>&lt;h3 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h3&gt;
 &lt;p&gt;InnoDB는 데이터를 클러스터형 인덱스 기준으로 저장하는 스토리지 엔진임
 대부분의 테이블에서 이 클러스터형 인덱스는 프라이머리 키가 담당함

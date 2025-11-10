@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Performance on HandsLog</title>
-    <link>https://handsupmin.github.io/tags/performance/</link>
+    <link>https://blog.jsontapose.com/tags/performance/</link>
     <description>Recent content in Performance on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Fri, 31 Oct 2025 13:10:20 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MySQL InnoDB 버퍼 풀 개념과 동작 원리, 크기 설정 가이드</title>
-      <link>https://handsupmin.github.io/posts/mysql-innodb-buffer-pool-c63a29/</link>
+      <link>https://blog.jsontapose.com/posts/mysql-innodb-buffer-pool-c63a29/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/mysql-innodb-buffer-pool-c63a29/</guid>
+      <guid>https://blog.jsontapose.com/posts/mysql-innodb-buffer-pool-c63a29/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;InnoDB 버퍼 풀은 MySQL InnoDB 스토리지 엔진의 메모리 캐시 영역으로 데이터와 인덱스 페이지를 담아 디스크 I/O를 줄이고 지연 시간을 낮추는 역할 수행
 InnoDB는 트랜잭션, 로우 레벨 락, 복구 기능을 제공하며 버퍼 풀은 그 성능의 핵심 구성요소임&lt;/p&gt;

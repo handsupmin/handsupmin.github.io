@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Database on HandsLog</title>
-    <link>https://handsupmin.github.io/categories/database/</link>
+    <link>https://blog.jsontapose.com/categories/database/</link>
     <description>Recent content in Database on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 20 Oct 2025 13:10:30 +0000</lastBuildDate>
-    <atom:link href="https://handsupmin.github.io/categories/database/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/categories/database/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQL LIMIT와 OFFSET 사용법 정리: 행 개수 제한과 페이징</title>
-      <link>https://handsupmin.github.io/posts/sql-limit-offset-basics-4a9880/</link>
+      <link>https://blog.jsontapose.com/posts/sql-limit-offset-basics-4a9880/</link>
       <pubDate>Mon, 20 Oct 2025 13:10:30 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/sql-limit-offset-basics-4a9880/</guid>
+      <guid>https://blog.jsontapose.com/posts/sql-limit-offset-basics-4a9880/</guid>
       <description>&lt;h3 id=&#34;기본-문법&#34;&gt;기본 문법&lt;/h3&gt;
 &lt;p&gt;LIMIT는 SELECT 결과에서 반환할 행 수를 제한하는 구문
 WHERE와 ORDER BY 뒤, 즉 SELECT 문 끝에 위치&lt;/p&gt;
@@ -39,9 +39,9 @@ ORDER BY가 없으면 반환되는 행은 비결정적일 수 있음&lt;/p&gt;</
     </item>
     <item>
       <title>MySQL EXPLAIN 실행 계획 해석 가이드</title>
-      <link>https://handsupmin.github.io/posts/mysql-explain-execution-plan-guide-b7fb65/</link>
+      <link>https://blog.jsontapose.com/posts/mysql-explain-execution-plan-guide-b7fb65/</link>
       <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
-      <guid>https://handsupmin.github.io/posts/mysql-explain-execution-plan-guide-b7fb65/</guid>
+      <guid>https://blog.jsontapose.com/posts/mysql-explain-execution-plan-guide-b7fb65/</guid>
       <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;EXPLAIN은 SELECT가 어떤 경로로 데이터를 읽는지 드러내는 도구
 병목 파악과 인덱스 전략 점검에 사용&lt;/p&gt;
