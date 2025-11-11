@@ -6,139 +6,27 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 10 Nov 2025 13:11:11 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Nov 2025 13:06:58 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AWS Lambda의 팬아웃·팬인 패턴과 NestJS·Redis로 현재 파드 전부에 안전한 팬아웃 구현</title>
-      <link>https://blog.jsontapose.com/posts/fan-out-fan-in-aws-lambda-nestjs-redis-3737c4/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/fan-out-fan-in-aws-lambda-nestjs-redis-3737c4/</guid>
-      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
-&lt;p&gt;fan-out/fan-in은 push-pull 계열 메시징 패턴을 조합한 형태로 보는 게 정확함&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;fan-out: 메시지를 여러 워커에 분산, 각 메시지는 한 워커가 처리하는 경쟁 소비자 모델 혹은 높은 병렬 처리 목표의 브로드캐스트 계열 사용&lt;/li&gt;
-&lt;li&gt;fan-in: 분할된 서브태스크의 결과를 수집·집계하여 상위 작업의 완료를 도출&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;서버리스에서 fan-out은 처리량과 동시성 확보, fan-in은 결과 집계와 진행 추적을 위한 상태 관리가 핵심 포인트임&lt;/p&gt;
-&lt;p&gt;참고로 현재 Lambda 최대 실행 시간은 15분임. 과거 5분 제한 기준의 논의와 다를 수 있음&lt;/p&gt;</description>
-    </item>
     <item>
       <title>DI가 결합도를 낮추는 원리와 최소 예시</title>
       <link>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
       <guid>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</guid>
-      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
-&lt;p&gt;DI(의존성 주입)의 요지는 간단함
-객체가 스스로 의존 대상을 생성하지 않고 외부에서 받은 것을 사용함
-이 작은 차이가 변경 용이성, 테스트 편의, 확장성에서 큰 차이를 만듦&lt;/p&gt;
-&lt;h3 id=&#34;문제-상황-강한-결합&#34;&gt;문제 상황: 강한 결합&lt;/h3&gt;
-&lt;p&gt;문제 패턴&lt;/p&gt;
+      <description>&lt;h2 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h2&gt;
+&lt;p&gt;DI(Dependency Injection, 의존성 주입)의 핵심 아이디어는 명확함
+&lt;strong&gt;객체가 자신이 사용할 의존 객체를 스스로 생성하지 않고, 외부로부터 전달받아 사용&lt;/strong&gt;하는 것임
+이 단순한 설계 변경만으로도 코드의 변경 용이성, 테스트 편의성, 그리고 전체 시스템의 확장성에서 거대한 차이가 발생함&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;문제-상황-강한-결합-tight-coupling&#34;&gt;문제 상황: 강한 결합 (Tight Coupling)&lt;/h2&gt;
+&lt;p&gt;전형적인 문제 패턴은 클래스 내부에서 다른 &lt;strong&gt;구체적인 클래스&lt;/strong&gt;(Concrete Class)를 &lt;code&gt;new&lt;/code&gt; 키워드로 직접 생성하여 사용하는 것임&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;클래스 내부에서 new로 구체 클래스를 직접 생성함&lt;/li&gt;
-&lt;li&gt;변경 시 내부 코드를 같이 수정해야 함&lt;/li&gt;
-&lt;li&gt;단위 테스트 시 실제 의존체까지 끌려와 테스트가 무거워짐&lt;/li&gt;
+&lt;li&gt;의존 대상의 구현이 변경되면, 해당 객체를 사용하는 클래스 내부 코드도 &lt;strong&gt;반드시 함께 수정&lt;/strong&gt;해야 함&lt;/li&gt;
+&lt;li&gt;단위 테스트(Unit Test)를 작성할 때, 테스트 대상 객체가 의존하는 실제 객체들까지 모두 함께 엮여 들어와 테스트가 복잡하고 무거워짐&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;예시 요약&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Gamer가 BlueSwitchKeyboard를 생성해 사용한다고 가정&lt;/li&gt;
-&lt;li&gt;Gamer는 BlueSwitchKeyboard라는 구체 구현에 고정됨&lt;/li&gt;
-&lt;li&gt;키보드 종류를 바꾸려면 Gamer 코드를 수정해야 함
-이 상태를 결합도가 높음이라 부름&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;간단 스니펫&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>디피-헬만 키 교환과 ElGamal 암호 핵심 정리</title>
-      <link>https://blog.jsontapose.com/posts/diffie-hellman-and-elgamal-basics-e62139/</link>
-      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/diffie-hellman-and-elgamal-basics-e62139/</guid>
-      <description>&lt;p&gt;이전 글에서 DLP를 다룸
-이번 글에서는 DLP에 기반한 공개키 암호 ElGamal을 설명하기 전에, 토대가 되는 디피-헬만 키 교환을 간단히 정리함&lt;/p&gt;
-&lt;h3 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h3&gt;
-&lt;p&gt;디피-헬만 키 교환은 초기 공개키 암호 기법 중 하나로 두 당사자가 안전하지 않은 채널에서 공동의 비밀값을 합의하기 위한 방법
-큰 소수 p와 그 위에서 곱셈군 F_p*를 생성하는 원소 g 사용이 전형적이며, g는 보통 원시근 또는 큰 순서를 갖는 원소를 선택
-안전성은 이산로그 문제 DLP의 어려움과 연관됨&lt;/p&gt;
-&lt;h3 id=&#34;디피-헬만-키-교환-요약&#34;&gt;디피-헬만 키 교환 요약&lt;/h3&gt;
-&lt;p&gt;공개 파라미터 p, g를 합의해 모두가 공유
-앨리스는 비밀 정수 a를, 밥은 비밀 정수 b를 선택
-각자 A = g^a mod p, B = g^b mod p를 계산해 공개
-공유 비밀 K는 K = B^a ≡ A^b mod p로 합의됨
-이브는 p, g, A, B를 모두 보더라도 a 또는 b를 알기 어렵기 때문에 K를 계산하기 곤란함
-매 세션마다 a, b를 새로 뽑는 것이 핵심으로, 동일 평문이라도 암호 재사용 위험을 줄이는 효과가 있음
-이 합의된 K를 대칭키 파생에 사용해 메시지 암복호 키로 활용 가능&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NestJS ModuleRef로 런타임 의존성 주입 제어하기</title>
-      <link>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
-      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
-      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
-&lt;p&gt;ModuleRef는 NestJS에서 런타임에 의존성을 직접 조회·생성할 때 쓰는 유틸리티 클래스
-정적 DI로 풀기 어려운 동적 흐름 제어에 사용&lt;/p&gt;
-&lt;h3 id=&#34;핵심-기능&#34;&gt;핵심 기능&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;get: 현재 모듈 컨텍스트의 정적으로 선언된 프로바이더 인스턴스 조회&lt;/li&gt;
-&lt;li&gt;resolve: 스코프를 고려해 새로운 프로바이더 인스턴스 동적 생성&lt;/li&gt;
-&lt;li&gt;create: 클래스의 새 인스턴스를 의존성 주입과 함께 동적 생성&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;주의&#34;&gt;주의&lt;/h3&gt;
-&lt;p&gt;프로바이더 스코프에 따라 반환 인스턴스가 달라질 수 있음
-과도한 사용은 테스트와 구성 복잡도 증가&lt;/p&gt;
-&lt;h3 id=&#34;참고자료&#34;&gt;참고자료&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.nestjs.com/fundamentals/module-ref&#34;&gt;https://docs.nestjs.com/fundamentals/module-ref&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Prisma OrderByWithAggregationInput로 집계 기반 정렬하기와 올바른 사용 맥락</title>
-      <link>https://blog.jsontapose.com/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</link>
-      <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;OrderByWithAggregationInput은 일반 필드뿐 아니라 _count, _avg, _sum 같은 집계 결과를 기준으로 정렬을 정의하는 Prisma 입력 타입임
-핵심은 이 타입이 findMany가 아니라 groupBy에서 사용하는 것이라는 점임
-집계 결과를 섞어 정렬하려면 groupBy 컨텍스트에서만 가능하며, 일반 목록 조회(findMany)에서는 관계 수 기준(_count) 정도만 지원하고 이는 별도 타입 경로를 통해 처리됨&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;대상 연산
-&lt;ul&gt;
-&lt;li&gt;groupBy에서만 OrderByWithAggregationInput 사용 가능&lt;/li&gt;
-&lt;li&gt;일반 목록 조회는 ModelOrderByWithRelationInput 또는 OrderByRelationAggregateInput 사용&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;정렬 기준 구성
-&lt;ul&gt;
-&lt;li&gt;스칼라 필드 정렬 + 집계 결과 정렬을 함께 배열로 전달 가능&lt;/li&gt;
-&lt;li&gt;orderBy는 하나 또는 배열, 우선순위는 배열 순서대로 적용&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;타입 안전성
-&lt;ul&gt;
-&lt;li&gt;집계 키(_count, _avg, _sum, _min, _max)와 필드명이 스키마와 정합되도록 컴파일 타임 검증됨&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;사용법과-예시&#34;&gt;사용법과 예시&lt;/h3&gt;
-&lt;p&gt;아래 예시는 Inventory 모델을 기준으로 설명함&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>영지식 증명 입문 1편: NP·IP·AM, 알리바바 동굴, 3색 칠하기, Fiat–Shamir</title>
-      <link>https://blog.jsontapose.com/posts/zero-knowledge-proof-intro-1-372f3d/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/zero-knowledge-proof-intro-1-372f3d/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;블라인드 서명은 내용을 숨긴 채 서명을 얻는 특성 덕에 영지식성의 일부를 직관적으로 보여줌. 본 글은 영지식 증명 전반을 개념 정리 관점에서 다룸. NP 증명 시스템과 대화형 증명 시스템, AM 프로토콜과 IP=PSPACE 결과, 직관적 비유인 알리바바의 동굴, 대표적 구현 예시 몇 가지, 그리고 비대화형 영지식 증명과 Fiat–Shamir 휴리스틱까지의 흐름 정리&lt;/p&gt;
-&lt;h3 id=&#34;np-증명-시스템&#34;&gt;NP 증명 시스템&lt;/h3&gt;
-&lt;p&gt;결정 문제는 예 또는 아니오로 답할 수 있는 문제를 의미함. 명제 x를 이진 문자열로 보는 형식 언어 L ⊆ {0,1}*의 원소로 놓고, 증명자 P는 x ∈ L임을 보이며 검증자 V는 이를 다항 시간에 확인하는 역할을 가짐&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>타원곡선암호 기초: 곡선 정의, EC-DLP, 도메인 파라미터, ECDH·EC-ElGamal</title>
-      <link>https://blog.jsontapose.com/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</link>
-      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</guid>
-      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
-&lt;p&gt;RSA와 ElGamal은 보안 강도를 유지하려면 시간이 갈수록 키 길이와 연산 복잡도가 커지는 경향이 있음. 계산 성능 향상과 공격 알고리즘 발전으로, 패딩 도입과 긴 키가 필수화되는 흐름이 생김. 이에 대한 대안으로 1985년에 제안된 타원곡선암호 ECC가 짧은 키 길이로 동등한 보안 수준과 빠른 연산을 제공함. ECC는 새로운 수학적 난제를 도입한 것이 아니라, 이산 로그 문제 DLP를 타원곡선 위에서 풀기가 더 어렵다는 점을 활용하는 구조임&lt;/p&gt;
-&lt;p&gt;이 글에서는 타원곡선의 정의와 군 구조, 유한체 위 곡선, EC-DLP, 도메인 파라미터, 그리고 ECDH·EC-ElGamal까지 핵심 흐름을 정리함&lt;/p&gt;</description>
+&lt;p&gt;예를 들어 &lt;code&gt;Gamer&lt;/code&gt;가 &lt;code&gt;BlueSwitchKeyboard&lt;/code&gt;를 직접 생성해 사용한다면, &lt;code&gt;Gamer&lt;/code&gt;는 &lt;code&gt;BlueSwitchKeyboard&lt;/code&gt;라는 구체적인 구현에 영구적으로 고정됨
+만약 키보드 종류를 &lt;code&gt;RedSwitchSilentKeyboard&lt;/code&gt;로 바꾸려면 &lt;code&gt;Gamer&lt;/code&gt; 클래스의 내부 코드를 직접 수정해야 함
+이 상태를 &lt;strong&gt;결합도가 높다&lt;/strong&gt;고 부름&lt;/p&gt;</description>
     </item>
     <item>
       <title>KISS 원리: 소프트웨어 설계에서 불필요한 복잡성 줄이기</title>
@@ -169,21 +57,6 @@
 &lt;p&gt;모든 옵션을 받는 doSomething(config) 하나로 처리하려는 유혹을 경계. 대신 doSimpleA, doSimpleB처럼 명확한 역할의 작은 함수로 분리하고 기본 동작을 안전하게 설계함. 설정이 꼭 필요할 때만 제한된 형태로 노출&lt;/p&gt;</description>
     </item>
     <item>
-      <title>npm, npx, yarn 비교와 사용 맥락 정리</title>
-      <link>https://blog.jsontapose.com/posts/npm-npx-yarn-overview-compare-db8c4d/</link>
-      <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/npm-npx-yarn-overview-compare-db8c4d/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;JavaScript와 Node.js 생태계에서 패키지 관리 도구 선택은 빌드 재현성, 설치 속도, 운영 안정성에 직접 영향 있음
-현업 기준으로 npm, npx, yarn의 목적과 차이를 맥락 중심으로 정리&lt;/p&gt;
-&lt;h3 id=&#34;npm&#34;&gt;npm&lt;/h3&gt;
-&lt;p&gt;Node.js 설치 시 기본 포함되는 패키지 관리자
-&lt;code&gt;package.json&lt;/code&gt;을 기준으로 의존성 설치 및 업데이트 수행
-스크립트 실행, 버전 잠금, 캐시 활용 등 프로젝트 기본 워크플로의 중심 도구 역할
-&lt;code&gt;package-lock.json&lt;/code&gt;으로 하위 의존성까지 고정해 재현성 확보
-CI에서는 &lt;code&gt;npm ci&lt;/code&gt;로 lock 파일 기준 클린 설치 권장&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>TypeScript Parameters 유틸리티 타입 개념과 안전한 활용</title>
       <link>https://blog.jsontapose.com/posts/typescript-parameters-utility-type-913b5f/</link>
       <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
@@ -206,32 +79,25 @@ CI에서는 &lt;code&gt;npm ci&lt;/code&gt;로 lock 파일 기준 클린 설치 
       <link>https://blog.jsontapose.com/posts/mysql-innodb-buffer-pool-c63a29/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
       <guid>https://blog.jsontapose.com/posts/mysql-innodb-buffer-pool-c63a29/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;InnoDB 버퍼 풀은 MySQL InnoDB 스토리지 엔진의 메모리 캐시 영역으로 데이터와 인덱스 페이지를 담아 디스크 I/O를 줄이고 지연 시간을 낮추는 역할 수행
-InnoDB는 트랜잭션, 로우 레벨 락, 복구 기능을 제공하며 버퍼 풀은 그 성능의 핵심 구성요소임&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;InnoDB 버퍼 풀은 데이터와 인덱스 페이지를 &lt;strong&gt;메모리에 캐싱&lt;/strong&gt;하는 영역임
+디스크 I/O를 획기적으로 줄여 지연 시간을 낮추는 게 목적임
+InnoDB 스토리지 엔진(트랜잭션, MVCC, 행 단위 락 지원) 성능의 &lt;strong&gt;심장부&lt;/strong&gt;라 할 수 있음&lt;/p&gt;
+&lt;p&gt;쉽게 말해, 자주 쓰는 데이터와 인덱스를 디스크 대신 메모리에 올려두고 처리하는 구조임&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;버퍼-풀-구성-요소&#34;&gt;버퍼 풀 구성 요소&lt;/h2&gt;
+&lt;p&gt;버퍼 풀에는 주로 이런 페이지(기본 16KB)가 올라옴&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;페이지 캐싱: 테이블 데이터와 인덱스 페이지를 메모리에 유지, 기본 16KB 페이지 단위 운용&lt;/li&gt;
-&lt;li&gt;쓰기 지연: 변경된 페이지는 메모리에서 더티 페이지로 남고 백그라운드 플러시로 디스크 반영&lt;/li&gt;
-&lt;li&gt;트랜잭션 로그: 변경 내용은 먼저 리두 로그에 기록되어 크래시 시 일관성과 복구 보장&lt;/li&gt;
-&lt;li&gt;LRU 교체: Least Recently Used 기반으로 오래 사용되지 않은 페이지부터 축출하여 자주 쓰는 페이지 유지&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;데이터 페이지&lt;/strong&gt;: 실제 테이블 로우(Row)가 저장된 페이지&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;인덱스 페이지&lt;/strong&gt;: B-Tree 인덱스 노드 페이지 (PK 및 세컨더리 인덱스 포함)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;기타 관리 페이지&lt;/strong&gt;: UNDO 페이지, 트랜잭션/MVCC 관리에 필요한 메타데이터 등&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;동작-원리&#34;&gt;동작 원리&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;읽기 경로: 요청한 페이지가 메모리에 있으면 히트, 없으면 디스크에서 로드 후 버퍼 풀에 적재&lt;/li&gt;
-&lt;li&gt;쓰기 경로: 커밋 시 로그 동기화 우선, 데이터 페이지는 지연 플러시로 배치 처리하여 디스크 쓰기 부담 완화&lt;/li&gt;
-&lt;li&gt;교체 정책: 메모리 압박 시 LRU에서 덜 사용된 페이지 제거, 워크로드에 따라 캐시 효율 크게 좌우됨&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;크기-설정과-운영-기준&#34;&gt;크기 설정과 운영 기준&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;innodb_buffer_pool_size는 워크로드와 시스템 메모리 여유를 기준으로 결정&lt;/li&gt;
-&lt;li&gt;단일 데이터베이스 서버에서는 전체 RAM의 큰 비중을 할당하는 경우가 많으나 운영체제 캐시와 공존 프로세스를 감안해 스왑 발생을 피하는 선 유지 권장&lt;/li&gt;
-&lt;li&gt;관찰 지표: 버퍼 풀 히트 비율, 더티 페이지 비율, 플러시 대기 시간 등으로 튜닝 효과 검증&lt;/li&gt;
-&lt;li&gt;최신 버전에서는 버퍼 풀 크기 동적 조정 지원, 부하 패턴 변화에 맞춘 점진적 조정 권장&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;정리&#34;&gt;정리&lt;/h3&gt;
-&lt;p&gt;적절히 설정된 InnoDB 버퍼 풀은 읽기 히트율 상승과 쓰기 배치 처리로 일관된 성능을 제공함
-메모리 제약과 워크로드 특성을 기반으로 보수적으로 시작하고 관측 지표를 바탕으로 점진적 조정 권장&lt;/p&gt;</description>
+&lt;hr&gt;
+&lt;h2 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h2&gt;
+&lt;h3 id=&#34;페이지-캐싱&#34;&gt;페이지 캐싱&lt;/h3&gt;
+&lt;p&gt;InnoDB는 디스크 데이터를 페이지 단위로 다룸
+클라이언트가 특정 로우를 읽고 싶어 하면, 그 로우가 속한 &lt;strong&gt;페이지 전체&lt;/strong&gt;를 버퍼 풀로 가져옴
+이후 같은 페이지에 있는 다른 로우를 읽을 때는 디스크를 다시 보지 않고 버퍼 풀(메모리)에서 바로 조회함&lt;/p&gt;</description>
     </item>
     <item>
       <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
@@ -248,8 +114,8 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
 코드와 문서가 한 소스에서 유지되어 일관성 확보에 유리함&lt;/p&gt;
 &lt;p&gt;간단 사용 예시&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CreateUserDto&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;@ApiProperty&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;사용자 이름&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;John Doe&amp;#39;&lt;/span&gt; })
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;@ApiProperty&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;사용자 이름&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;John Doe&amp;#34;&lt;/span&gt; })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
     </item>

@@ -2,58 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.jsontapose.com/posts/fan-out-fan-in-aws-lambda-nestjs-redis-3737c4/</loc>
-    <lastmod>2025-11-10T13:11:11+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2025-11-10T13:11:11+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/posts/</loc>
-    <lastmod>2025-11-10T13:11:11+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</loc>
     <lastmod>2025-11-09T13:06:58+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/diffie-hellman-and-elgamal-basics-e62139/</loc>
-    <lastmod>2025-11-08T13:06:44+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/</loc>
+    <lastmod>2025-11-09T13:06:58+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</loc>
-    <lastmod>2025-11-07T13:09:50+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</loc>
-    <lastmod>2025-11-06T13:11:04+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/posts/zero-knowledge-proof-intro-1-372f3d/</loc>
-    <lastmod>2025-11-05T13:11:36+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/posts/ecc-basics-curve-ec-dlp-domain-parameters-ecdh-elgamal-df0d98/</loc>
-    <lastmod>2025-11-04T13:12:55+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2025-11-09T13:06:58+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/kiss-principle-software-design-799a74/</loc>
     <lastmod>2025-11-03T13:10:46+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/posts/npm-npx-yarn-overview-compare-db8c4d/</loc>
-    <lastmod>2025-11-02T13:06:12+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>

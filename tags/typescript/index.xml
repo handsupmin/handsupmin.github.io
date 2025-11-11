@@ -6,62 +6,8 @@
     <description>Recent content in Typescript on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 07 Nov 2025 13:09:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Nov 2025 13:06:40 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>NestJS ModuleRef로 런타임 의존성 주입 제어하기</title>
-      <link>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
-      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
-      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
-&lt;p&gt;ModuleRef는 NestJS에서 런타임에 의존성을 직접 조회·생성할 때 쓰는 유틸리티 클래스
-정적 DI로 풀기 어려운 동적 흐름 제어에 사용&lt;/p&gt;
-&lt;h3 id=&#34;핵심-기능&#34;&gt;핵심 기능&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;get: 현재 모듈 컨텍스트의 정적으로 선언된 프로바이더 인스턴스 조회&lt;/li&gt;
-&lt;li&gt;resolve: 스코프를 고려해 새로운 프로바이더 인스턴스 동적 생성&lt;/li&gt;
-&lt;li&gt;create: 클래스의 새 인스턴스를 의존성 주입과 함께 동적 생성&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;주의&#34;&gt;주의&lt;/h3&gt;
-&lt;p&gt;프로바이더 스코프에 따라 반환 인스턴스가 달라질 수 있음
-과도한 사용은 테스트와 구성 복잡도 증가&lt;/p&gt;
-&lt;h3 id=&#34;참고자료&#34;&gt;참고자료&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.nestjs.com/fundamentals/module-ref&#34;&gt;https://docs.nestjs.com/fundamentals/module-ref&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Prisma OrderByWithAggregationInput로 집계 기반 정렬하기와 올바른 사용 맥락</title>
-      <link>https://blog.jsontapose.com/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</link>
-      <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/prisma-orderbywithaggregationinput-aggregation-sorting-7e02ce/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;OrderByWithAggregationInput은 일반 필드뿐 아니라 _count, _avg, _sum 같은 집계 결과를 기준으로 정렬을 정의하는 Prisma 입력 타입임
-핵심은 이 타입이 findMany가 아니라 groupBy에서 사용하는 것이라는 점임
-집계 결과를 섞어 정렬하려면 groupBy 컨텍스트에서만 가능하며, 일반 목록 조회(findMany)에서는 관계 수 기준(_count) 정도만 지원하고 이는 별도 타입 경로를 통해 처리됨&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;대상 연산
-&lt;ul&gt;
-&lt;li&gt;groupBy에서만 OrderByWithAggregationInput 사용 가능&lt;/li&gt;
-&lt;li&gt;일반 목록 조회는 ModelOrderByWithRelationInput 또는 OrderByRelationAggregateInput 사용&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;정렬 기준 구성
-&lt;ul&gt;
-&lt;li&gt;스칼라 필드 정렬 + 집계 결과 정렬을 함께 배열로 전달 가능&lt;/li&gt;
-&lt;li&gt;orderBy는 하나 또는 배열, 우선순위는 배열 순서대로 적용&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;타입 안전성
-&lt;ul&gt;
-&lt;li&gt;집계 키(_count, _avg, _sum, _min, _max)와 필드명이 스키마와 정합되도록 컴파일 타임 검증됨&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;사용법과-예시&#34;&gt;사용법과 예시&lt;/h3&gt;
-&lt;p&gt;아래 예시는 Inventory 모델을 기준으로 설명함&lt;/p&gt;</description>
-    </item>
     <item>
       <title>TypeScript Parameters 유틸리티 타입 개념과 안전한 활용</title>
       <link>https://blog.jsontapose.com/posts/typescript-parameters-utility-type-913b5f/</link>
@@ -95,8 +41,8 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
 코드와 문서가 한 소스에서 유지되어 일관성 확보에 유리함&lt;/p&gt;
 &lt;p&gt;간단 사용 예시&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CreateUserDto&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;@ApiProperty&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;사용자 이름&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;John Doe&amp;#39;&lt;/span&gt; })
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;@ApiProperty&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;사용자 이름&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;John Doe&amp;#34;&lt;/span&gt; })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
     </item>

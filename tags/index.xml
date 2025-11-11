@@ -6,113 +6,8 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 10 Nov 2025 13:11:11 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Nov 2025 13:06:58 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Aws-Lambda</title>
-      <link>https://blog.jsontapose.com/tags/aws-lambda/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/aws-lambda/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Distributed-Systems</title>
-      <link>https://blog.jsontapose.com/tags/distributed-systems/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/distributed-systems/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dynamodb-Streams</title>
-      <link>https://blog.jsontapose.com/tags/dynamodb-streams/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/dynamodb-streams/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Fan-In</title>
-      <link>https://blog.jsontapose.com/tags/fan-in/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/fan-in/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Fan-Out</title>
-      <link>https://blog.jsontapose.com/tags/fan-out/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/fan-out/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kinesis</title>
-      <link>https://blog.jsontapose.com/tags/kinesis/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/kinesis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kubernetes</title>
-      <link>https://blog.jsontapose.com/tags/kubernetes/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nestjs</title>
-      <link>https://blog.jsontapose.com/tags/nestjs/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pub-Sub</title>
-      <link>https://blog.jsontapose.com/tags/pub-sub/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/pub-sub/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Redis</title>
-      <link>https://blog.jsontapose.com/tags/redis/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/redis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Redis-Streams</title>
-      <link>https://blog.jsontapose.com/tags/redis-streams/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/redis-streams/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Serverless</title>
-      <link>https://blog.jsontapose.com/tags/serverless/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/serverless/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sns</title>
-      <link>https://blog.jsontapose.com/tags/sns/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sns/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sqs</title>
-      <link>https://blog.jsontapose.com/tags/sqs/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sqs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sse</title>
-      <link>https://blog.jsontapose.com/tags/sse/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sse/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Coupling</title>
       <link>https://blog.jsontapose.com/tags/coupling/</link>
@@ -156,209 +51,6 @@
       <description></description>
     </item>
     <item>
-      <title>Cryptography</title>
-      <link>https://blog.jsontapose.com/tags/cryptography/</link>
-      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/cryptography/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Diffie-Hellman</title>
-      <link>https://blog.jsontapose.com/tags/diffie-hellman/</link>
-      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/diffie-hellman/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Discrete-Log</title>
-      <link>https://blog.jsontapose.com/tags/discrete-log/</link>
-      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/discrete-log/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Elgamal</title>
-      <link>https://blog.jsontapose.com/tags/elgamal/</link>
-      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/elgamal/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Key-Exchange</title>
-      <link>https://blog.jsontapose.com/tags/key-exchange/</link>
-      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/key-exchange/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Number-Theory</title>
-      <link>https://blog.jsontapose.com/tags/number-theory/</link>
-      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/number-theory/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Public-Key</title>
-      <link>https://blog.jsontapose.com/tags/public-key/</link>
-      <pubDate>Sat, 08 Nov 2025 13:06:44 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/public-key/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Moduleref</title>
-      <link>https://blog.jsontapose.com/tags/moduleref/</link>
-      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/moduleref/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Orm</title>
-      <link>https://blog.jsontapose.com/tags/orm/</link>
-      <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/orm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Prisma</title>
-      <link>https://blog.jsontapose.com/tags/prisma/</link>
-      <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/prisma/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sorting</title>
-      <link>https://blog.jsontapose.com/tags/sorting/</link>
-      <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sorting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sql-Aggregation</title>
-      <link>https://blog.jsontapose.com/tags/sql-aggregation/</link>
-      <pubDate>Thu, 06 Nov 2025 13:11:04 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sql-aggregation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Arthur-Merlin</title>
-      <link>https://blog.jsontapose.com/tags/arthur-merlin/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/arthur-merlin/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Complexity-Theory</title>
-      <link>https://blog.jsontapose.com/tags/complexity-theory/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/complexity-theory/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Fiat-Shamir</title>
-      <link>https://blog.jsontapose.com/tags/fiat-shamir/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/fiat-shamir/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Graph-Coloring</title>
-      <link>https://blog.jsontapose.com/tags/graph-coloring/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/graph-coloring/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Interactive-Proofs</title>
-      <link>https://blog.jsontapose.com/tags/interactive-proofs/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/interactive-proofs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nizk</title>
-      <link>https://blog.jsontapose.com/tags/nizk/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nizk/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Np</title>
-      <link>https://blog.jsontapose.com/tags/np/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/np/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pspace</title>
-      <link>https://blog.jsontapose.com/tags/pspace/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/pspace/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Random-Oracle</title>
-      <link>https://blog.jsontapose.com/tags/random-oracle/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/random-oracle/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Zero-Knowledge</title>
-      <link>https://blog.jsontapose.com/tags/zero-knowledge/</link>
-      <pubDate>Wed, 05 Nov 2025 13:11:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/zero-knowledge/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ecc</title>
-      <link>https://blog.jsontapose.com/tags/ecc/</link>
-      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/ecc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ecdh</title>
-      <link>https://blog.jsontapose.com/tags/ecdh/</link>
-      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/ecdh/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Elliptic-Curve</title>
-      <link>https://blog.jsontapose.com/tags/elliptic-curve/</link>
-      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/elliptic-curve/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Finite-Field</title>
-      <link>https://blog.jsontapose.com/tags/finite-field/</link>
-      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/finite-field/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Public-Key-Cryptography</title>
-      <link>https://blog.jsontapose.com/tags/public-key-cryptography/</link>
-      <pubDate>Tue, 04 Nov 2025 13:12:55 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/public-key-cryptography/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Clean-Code</title>
       <link>https://blog.jsontapose.com/tags/clean-code/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
@@ -394,34 +86,6 @@
       <description></description>
     </item>
     <item>
-      <title>Npm</title>
-      <link>https://blog.jsontapose.com/tags/npm/</link>
-      <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/npm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Npx</title>
-      <link>https://blog.jsontapose.com/tags/npx/</link>
-      <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/npx/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Package-Manager</title>
-      <link>https://blog.jsontapose.com/tags/package-manager/</link>
-      <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/package-manager/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Yarn</title>
-      <link>https://blog.jsontapose.com/tags/yarn/</link>
-      <pubDate>Sun, 02 Nov 2025 13:06:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/yarn/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Generics</title>
       <link>https://blog.jsontapose.com/tags/generics/</link>
       <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
@@ -440,6 +104,13 @@
       <link>https://blog.jsontapose.com/tags/type-level-programming/</link>
       <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/type-level-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -506,6 +177,13 @@
       <description></description>
     </item>
     <item>
+      <title>Nestjs</title>
+      <link>https://blog.jsontapose.com/tags/nestjs/</link>
+      <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Openapi</title>
       <link>https://blog.jsontapose.com/tags/openapi/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
@@ -534,10 +212,31 @@
       <description></description>
     </item>
     <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prisma</title>
+      <link>https://blog.jsontapose.com/tags/prisma/</link>
+      <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/prisma/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Sql</title>
       <link>https://blog.jsontapose.com/tags/sql/</link>
       <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orm</title>
+      <link>https://blog.jsontapose.com/tags/orm/</link>
+      <pubDate>Tue, 28 Oct 2025 13:10:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/orm/</guid>
       <description></description>
     </item>
     <item>
@@ -625,6 +324,20 @@
       <description></description>
     </item>
     <item>
+      <title>Kubernetes</title>
+      <link>https://blog.jsontapose.com/tags/kubernetes/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pub-Sub</title>
+      <link>https://blog.jsontapose.com/tags/pub-sub/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/pub-sub/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Real-Time</title>
       <link>https://blog.jsontapose.com/tags/real-time/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
@@ -632,10 +345,24 @@
       <description></description>
     </item>
     <item>
+      <title>Redis</title>
+      <link>https://blog.jsontapose.com/tags/redis/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/redis/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Server-Sent-Events</title>
       <link>https://blog.jsontapose.com/tags/server-sent-events/</link>
       <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/server-sent-events/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sse</title>
+      <link>https://blog.jsontapose.com/tags/sse/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sse/</guid>
       <description></description>
     </item>
     <item>
@@ -1171,6 +898,20 @@
       <description></description>
     </item>
     <item>
+      <title>Cryptography</title>
+      <link>https://blog.jsontapose.com/tags/cryptography/</link>
+      <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/cryptography/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elliptic-Curve</title>
+      <link>https://blog.jsontapose.com/tags/elliptic-curve/</link>
+      <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/elliptic-curve/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Snark</title>
       <link>https://blog.jsontapose.com/tags/snark/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
@@ -1182,6 +923,13 @@
       <link>https://blog.jsontapose.com/tags/stark/</link>
       <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/stark/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zero-Knowledge</title>
+      <link>https://blog.jsontapose.com/tags/zero-knowledge/</link>
+      <pubDate>Mon, 29 Sep 2025 13:10:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/zero-knowledge/</guid>
       <description></description>
     </item>
     <item>

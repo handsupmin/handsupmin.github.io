@@ -6,44 +6,8 @@
     <description>Recent content in Nestjs on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 10 Nov 2025 13:11:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Oct 2025 13:11:03 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/nestjs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AWS Lambda의 팬아웃·팬인 패턴과 NestJS·Redis로 현재 파드 전부에 안전한 팬아웃 구현</title>
-      <link>https://blog.jsontapose.com/posts/fan-out-fan-in-aws-lambda-nestjs-redis-3737c4/</link>
-      <pubDate>Mon, 10 Nov 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/fan-out-fan-in-aws-lambda-nestjs-redis-3737c4/</guid>
-      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
-&lt;p&gt;fan-out/fan-in은 push-pull 계열 메시징 패턴을 조합한 형태로 보는 게 정확함&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;fan-out: 메시지를 여러 워커에 분산, 각 메시지는 한 워커가 처리하는 경쟁 소비자 모델 혹은 높은 병렬 처리 목표의 브로드캐스트 계열 사용&lt;/li&gt;
-&lt;li&gt;fan-in: 분할된 서브태스크의 결과를 수집·집계하여 상위 작업의 완료를 도출&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;서버리스에서 fan-out은 처리량과 동시성 확보, fan-in은 결과 집계와 진행 추적을 위한 상태 관리가 핵심 포인트임&lt;/p&gt;
-&lt;p&gt;참고로 현재 Lambda 최대 실행 시간은 15분임. 과거 5분 제한 기준의 논의와 다를 수 있음&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NestJS ModuleRef로 런타임 의존성 주입 제어하기</title>
-      <link>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</link>
-      <pubDate>Fri, 07 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/nestjs-moduleref-runtime-dependency-injection-b44120/</guid>
-      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
-&lt;p&gt;ModuleRef는 NestJS에서 런타임에 의존성을 직접 조회·생성할 때 쓰는 유틸리티 클래스
-정적 DI로 풀기 어려운 동적 흐름 제어에 사용&lt;/p&gt;
-&lt;h3 id=&#34;핵심-기능&#34;&gt;핵심 기능&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;get: 현재 모듈 컨텍스트의 정적으로 선언된 프로바이더 인스턴스 조회&lt;/li&gt;
-&lt;li&gt;resolve: 스코프를 고려해 새로운 프로바이더 인스턴스 동적 생성&lt;/li&gt;
-&lt;li&gt;create: 클래스의 새 인스턴스를 의존성 주입과 함께 동적 생성&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;주의&#34;&gt;주의&lt;/h3&gt;
-&lt;p&gt;프로바이더 스코프에 따라 반환 인스턴스가 달라질 수 있음
-과도한 사용은 테스트와 구성 복잡도 증가&lt;/p&gt;
-&lt;h3 id=&#34;참고자료&#34;&gt;참고자료&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.nestjs.com/fundamentals/module-ref&#34;&gt;https://docs.nestjs.com/fundamentals/module-ref&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
     <item>
       <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
       <link>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
@@ -59,8 +23,8 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
 코드와 문서가 한 소스에서 유지되어 일관성 확보에 유리함&lt;/p&gt;
 &lt;p&gt;간단 사용 예시&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CreateUserDto&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;@ApiProperty&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;사용자 이름&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;John Doe&amp;#39;&lt;/span&gt; })
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;@ApiProperty&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;사용자 이름&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;John Doe&amp;#34;&lt;/span&gt; })
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
     </item>
