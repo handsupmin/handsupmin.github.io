@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Async on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/async/</link>
+    <description>Recent content in Async on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 11 Nov 2025 13:11:22 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/async/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js 실행 흐름과 이벤트 루프 단계 정리</title>
+      <link>https://blog.jsontapose.com/posts/nodejs-execution-flow-event-loop-b04459/</link>
+      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/nodejs-execution-flow-event-loop-b04459/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Node.js가 스크립트를 실행할 때 어떤 구성요소가 어떤 순서로 초기화되고 동작하는지 정리
+바이너리 기동부터 모듈 로딩, V8 파싱과 실행, 이벤트 루프와 비동기 작업 처리까지의 전체 흐름을 개발자 관점에서 간결하게 설명&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;V8 엔진, Ignition 바이트코드와 JIT 최적화&lt;/li&gt;
+&lt;li&gt;libuv, 비동기 I O 백엔드와 이벤트 루프 단계&lt;/li&gt;
+&lt;li&gt;모듈 시스템, CommonJS와 ES Module의 로딩 차이&lt;/li&gt;
+&lt;li&gt;전역 실행 컨텍스트와 런타임 내장 객체&lt;/li&gt;
+&lt;li&gt;마이크로태스크 큐와 process.nextTick의 우선순위&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;실행-순서-요약&#34;&gt;실행 순서 요약&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Node 바이너리 시작&lt;/li&gt;
+&lt;li&gt;런타임 초기화와 내부 바인딩 준비&lt;/li&gt;
+&lt;li&gt;모듈 로더 기동 및 엔트리 파일 로드&lt;/li&gt;
+&lt;li&gt;V8 파싱과 바이트코드 컴파일&lt;/li&gt;
+&lt;li&gt;전역 실행 컨텍스트 구성과 최상위 코드 실행&lt;/li&gt;
+&lt;li&gt;비동기 작업 등록&lt;/li&gt;
+&lt;li&gt;이벤트 루프 진입&lt;/li&gt;
+&lt;li&gt;비동기 콜백 처리 반복&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD
+A[Node 시작] --&amp;gt; B[V8, libuv 초기화]
+B --&amp;gt; C[모듈 로딩]
+C --&amp;gt; D[파싱 및 컴파일]
+D --&amp;gt; E[최상위 코드 실행]
+E --&amp;gt; F[이벤트 루프]
+F --&amp;gt; G[비동기 처리 반복]
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;단계별-동작&#34;&gt;단계별 동작&lt;/h3&gt;
+&lt;h4 id=&#34;1단계-node-바이너리-시작&#34;&gt;1단계 Node 바이너리 시작&lt;/h4&gt;
+&lt;p&gt;node yourfile.js 실행으로 C++ 엔트리 포인트가 기동됨
+V8, libuv, 내부 바인딩 계층이 초기화되고 런타임 전역 상태가 준비됨&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
