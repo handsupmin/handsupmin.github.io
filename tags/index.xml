@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 09 Nov 2025 13:06:58 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Nov 2025 13:11:22 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Async</title>
+      <link>https://blog.jsontapose.com/tags/async/</link>
+      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/async/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Commonjs</title>
+      <link>https://blog.jsontapose.com/tags/commonjs/</link>
+      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/commonjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Es-Modules</title>
+      <link>https://blog.jsontapose.com/tags/es-modules/</link>
+      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/es-modules/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event-Loop</title>
+      <link>https://blog.jsontapose.com/tags/event-loop/</link>
+      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/event-loop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Libuv</title>
+      <link>https://blog.jsontapose.com/tags/libuv/</link>
+      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/libuv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>V8</title>
+      <link>https://blog.jsontapose.com/tags/v8/</link>
+      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/v8/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Coupling</title>
       <link>https://blog.jsontapose.com/tags/coupling/</link>
@@ -209,13 +258,6 @@
       <link>https://blog.jsontapose.com/tags/cursor-pagination/</link>
       <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/cursor-pagination/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
       <description></description>
     </item>
     <item>
