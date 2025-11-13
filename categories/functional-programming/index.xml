@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Functional-Programming on HandsLog</title>
+    <link>https://blog.jsontapose.com/categories/functional-programming/</link>
+    <description>Recent content in Functional-Programming on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 13 Nov 2025 13:11:48 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/categories/functional-programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>커링과 부분 적용 이해하기: 함수형 자바스크립트 핵심 패턴</title>
+      <link>https://blog.jsontapose.com/posts/currying-and-partial-application-e5bae4/</link>
+      <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/currying-and-partial-application-e5bae4/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;커링 Currying은 여러 개의 인자를 받는 함수를 단일 인자 함수들의 연속으로 변환하는 기법
+n개의 인자를 받는 함수 → n번에 걸쳐 한 개 인자씩 받는 함수 체인으로 분해
+함수형 프로그래밍 맥락에서 재사용성과 조합성 향상 목적&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;커링 currying: f(a, b, c) 형태를 f(a)(b)(c)로 바꾸는 변환&lt;/li&gt;
+&lt;li&gt;부분 적용 partial application: 전체 인자 중 일부를 고정해 새로운 함수를 만드는 기법&lt;/li&gt;
+&lt;li&gt;관계: 커링된 함수는 부분 적용을 자연스럽게 지원함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;동작-원리와-간단-예시&#34;&gt;동작 원리와 간단 예시&lt;/h3&gt;
+&lt;p&gt;일반 함수&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
