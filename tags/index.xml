@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 12 Nov 2025 13:12:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Nov 2025 13:11:48 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Currying</title>
+      <link>https://blog.jsontapose.com/tags/currying/</link>
+      <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/currying/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Functional-Programming</title>
+      <link>https://blog.jsontapose.com/tags/functional-programming/</link>
+      <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/functional-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Partial-Application</title>
+      <link>https://blog.jsontapose.com/tags/partial-application/</link>
+      <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/partial-application/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ramda</title>
+      <link>https://blog.jsontapose.com/tags/ramda/</link>
+      <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ramda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Nodejs</title>
       <link>https://blog.jsontapose.com/tags/nodejs/</link>
@@ -41,13 +83,6 @@
       <link>https://blog.jsontapose.com/tags/sql/</link>
       <pubDate>Wed, 12 Nov 2025 13:12:19 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Wed, 12 Nov 2025 13:12:19 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -118,13 +153,6 @@
       <link>https://blog.jsontapose.com/tags/ioc/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/ioc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -307,13 +335,6 @@
       <link>https://blog.jsontapose.com/tags/first-class-functions/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/first-class-functions/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Functional-Programming</title>
-      <link>https://blog.jsontapose.com/tags/functional-programming/</link>
-      <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/functional-programming/</guid>
       <description></description>
     </item>
     <item>
