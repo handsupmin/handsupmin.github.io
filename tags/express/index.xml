@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Backend-Architecture on HandsLog</title>
-    <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
-    <description>Recent content in Backend-Architecture on HandsLog</description>
+    <title>Express on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/express/</link>
+    <description>Recent content in Express on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Fri, 14 Nov 2025 13:10:09 +0000</lastBuildDate>
-    <atom:link href="https://blog.jsontapose.com/tags/backend-architecture/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/express/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Express vs NestJS 비교 가이드: 유지보수성과 팀 협업 관점에서의 선택</title>
       <link>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</link>
@@ -30,19 +30,6 @@
 &lt;p&gt;정형화된 아키텍처
 NestJS는 모듈, 컨트롤러, 서비스로 책임을 분리해 구조를 한눈에 파악 가능
 역할 경계를 통해 변경 영향 범위 예측 용이하며 새 인원이 빠르게 적응 가능&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SSE란? 실시간 이벤트 전달 프로토콜 (Server-Sent Events)</title>
-      <link>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</link>
-      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</guid>
-      <description>&lt;h1 id=&#34;sseserver-sent-events란-무엇인가&#34;&gt;SSE(Server-Sent Events)란 무엇인가&lt;/h1&gt;
-&lt;p&gt;SSE는 &lt;strong&gt;Server-Sent Events&lt;/strong&gt;의 약자로, 서버가 클라이언트로 &lt;strong&gt;실시간 데이터를 단방향으로 푸시&lt;/strong&gt;(push)할 수 있게 해주는 웹 기술임
-클라이언트가 먼저 요청을 보내고 서버는 그 연결을 끊지 않은 채, 새로운 데이터가 생길 때마다 지속적으로 응답을 보내는 방식임&lt;/p&gt;
-&lt;p&gt;주로 실시간 알림, 주식 시세 업데이트, 라이브 피드 등 서버에서 클라이언트로 일방적인 데이터 전송이 필요한 경우에 매우 유용함&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;sse-vs-웹소켓-그리고-한계&#34;&gt;SSE vs 웹소켓, 그리고 한계&lt;/h2&gt;
-&lt;p&gt;SSE는 실시간 이벤트 전송에 유용하지만 만능은 아님. 웹소켓과 비교했을 때 명확한 장단점이 존재함&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -6,8 +6,78 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 13 Nov 2025 13:11:48 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Nov 2025 13:10:09 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend-Architecture</title>
+      <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
+      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/backend-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dependency-Injection</title>
+      <link>https://blog.jsontapose.com/tags/dependency-injection/</link>
+      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dependency-injection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Express</title>
+      <link>https://blog.jsontapose.com/tags/express/</link>
+      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/express/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maintainability</title>
+      <link>https://blog.jsontapose.com/tags/maintainability/</link>
+      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/maintainability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microservices</title>
+      <link>https://blog.jsontapose.com/tags/microservices/</link>
+      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/microservices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nestjs</title>
+      <link>https://blog.jsontapose.com/tags/nestjs/</link>
+      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scaling</title>
+      <link>https://blog.jsontapose.com/tags/scaling/</link>
+      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/scaling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>https://blog.jsontapose.com/tags/testing/</link>
+      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Currying</title>
       <link>https://blog.jsontapose.com/tags/currying/</link>
@@ -41,20 +111,6 @@
       <link>https://blog.jsontapose.com/tags/ramda/</link>
       <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/ramda/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Wed, 12 Nov 2025 13:12:19 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
       <description></description>
     </item>
     <item>
@@ -135,13 +191,6 @@
       <description></description>
     </item>
     <item>
-      <title>Dependency-Injection</title>
-      <link>https://blog.jsontapose.com/tags/dependency-injection/</link>
-      <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/dependency-injection/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Design-Patterns</title>
       <link>https://blog.jsontapose.com/tags/design-patterns/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
@@ -156,13 +205,6 @@
       <description></description>
     </item>
     <item>
-      <title>Testing</title>
-      <link>https://blog.jsontapose.com/tags/testing/</link>
-      <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/testing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Clean-Code</title>
       <link>https://blog.jsontapose.com/tags/clean-code/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
@@ -174,13 +216,6 @@
       <link>https://blog.jsontapose.com/tags/engineering-principles/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/engineering-principles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Maintainability</title>
-      <link>https://blog.jsontapose.com/tags/maintainability/</link>
-      <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/maintainability/</guid>
       <description></description>
     </item>
     <item>
@@ -282,13 +317,6 @@
       <description></description>
     </item>
     <item>
-      <title>Nestjs</title>
-      <link>https://blog.jsontapose.com/tags/nestjs/</link>
-      <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Openapi</title>
       <link>https://blog.jsontapose.com/tags/openapi/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
@@ -384,13 +412,6 @@
       <link>https://blog.jsontapose.com/tags/primary-key/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/primary-key/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Backend-Architecture</title>
-      <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
-      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/backend-architecture/</guid>
       <description></description>
     </item>
     <item>
