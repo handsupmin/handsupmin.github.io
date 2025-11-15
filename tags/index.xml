@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 14 Nov 2025 13:10:09 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Nov 2025 13:07:01 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Array-Methods</title>
+      <link>https://blog.jsontapose.com/tags/array-methods/</link>
+      <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/array-methods/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Es6</title>
+      <link>https://blog.jsontapose.com/tags/es6/</link>
+      <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/es6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frontend</title>
+      <link>https://blog.jsontapose.com/tags/frontend/</link>
+      <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/frontend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Functional-Programming</title>
+      <link>https://blog.jsontapose.com/tags/functional-programming/</link>
+      <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/functional-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Backend-Architecture</title>
       <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
@@ -83,20 +118,6 @@
       <link>https://blog.jsontapose.com/tags/currying/</link>
       <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/currying/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Functional-Programming</title>
-      <link>https://blog.jsontapose.com/tags/functional-programming/</link>
-      <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/functional-programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
