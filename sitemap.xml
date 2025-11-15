@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</loc>
-    <lastmod>2025-11-14T13:10:09+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/</loc>
+    <lastmod>2025-11-15T13:07:01+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2025-11-14T13:10:09+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/javascript-array-prototype-map-01352e/</loc>
+    <lastmod>2025-11-15T13:07:01+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2025-11-15T13:07:01+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</loc>
     <lastmod>2025-11-14T13:10:09+00:00</lastmod>
     <priority>0.5</priority>
   </url>
