@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.jsontapose.com/posts/commonjs-vs-esm-exports-guide-967844/</loc>
-    <lastmod>2025-11-16T13:06:40+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2025-11-16T13:06:40+00:00</lastmod>
+    <lastmod>2025-11-17T13:11:31+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2025-11-17T13:11:31+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/prisma-some-vs-every-relationship-filter-dcd175/</loc>
+    <lastmod>2025-11-17T13:11:31+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/commonjs-vs-esm-exports-guide-967844/</loc>
     <lastmod>2025-11-16T13:06:40+00:00</lastmod>
     <priority>0.5</priority>
   </url>
