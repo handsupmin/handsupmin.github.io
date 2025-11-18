@@ -9,7 +9,7 @@
     <lastBuildDate>Thu, 30 Oct 2025 13:11:03 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/dto/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
+      <title>NestJS Swagger 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
       <link>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</guid>

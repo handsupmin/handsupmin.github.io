@@ -82,11 +82,11 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;용어-핵심-정리&#34;&gt;용어 핵심 정리&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;control plane  apiserver 권위와 입구, scheduler 배치, controller-manager 조율, etcd 단일 진실 저장소&lt;/li&gt;
-&lt;li&gt;worker node  파드를 실제로 실행하는 머신 풀&lt;/li&gt;
-&lt;li&gt;kubelet  각 노드의 현장 에이전트, 파드 라이프사이클 관리와 apiserver 동기화 담당&lt;/li&gt;
-&lt;li&gt;container runtime  kubelet 지시로 컨테이너 생성과 삭제를 수행하는 실행기, CRI 인터페이스 준수&lt;/li&gt;
-&lt;li&gt;cgroup  컨테이너 자원 격리와 제한의 커널 메커니즘, OCI 런타임이 설정&lt;/li&gt;
+&lt;li&gt;control plane apiserver 권위와 입구, scheduler 배치, controller-manager 조율, etcd 단일 진실 저장소&lt;/li&gt;
+&lt;li&gt;worker node 파드를 실제로 실행하는 머신 풀&lt;/li&gt;
+&lt;li&gt;kubelet 각 노드의 현장 에이전트, 파드 라이프사이클 관리와 apiserver 동기화 담당&lt;/li&gt;
+&lt;li&gt;container runtime kubelet 지시로 컨테이너 생성과 삭제를 수행하는 실행기, CRI 인터페이스 준수&lt;/li&gt;
+&lt;li&gt;cgroup 컨테이너 자원 격리와 제한의 커널 메커니즘, OCI 런타임이 설정&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
 &lt;p&gt;apiserver는 진실의 관문, etcd는 진실의 저장소, 스케줄러와 컨트롤러는 계획과 조율, kubelet은 현장 실행, runtime과 OCI는 컨테이너 생성, cgroup은 자원 격리 담당&lt;/p&gt;</description>

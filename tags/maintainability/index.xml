@@ -6,31 +6,8 @@
     <description>Recent content in Maintainability on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 14 Nov 2025 13:10:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Nov 2025 13:10:46 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/maintainability/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Express vs NestJS 비교 가이드: 유지보수성과 팀 협업 관점에서의 선택</title>
-      <link>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</link>
-      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;Express는 유연하고 자유도가 높아 소규모 프로젝트나 빠른 프로토타이핑에 적합함
-정해진 구조가 없어 팀 역량과 합의된 컨벤션에 따라 코드 품질 편차 발생 가능
-규모가 커질수록 구조 복잡도와 일관성 문제로 유지보수 난이도 상승&lt;/p&gt;
-&lt;p&gt;NestJS는 체계적인 아키텍처를 강제해 코드 일관성과 예측 가능성을 높이는 선택지임
-팀 온보딩 속도와 변화 영향 범위 파악을 개선해 장기 운영에 유리함&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Express: 최소한의 코어만 제공하는 비의견적 프레임워크, 구조 자율성 높음&lt;/li&gt;
-&lt;li&gt;NestJS: 의견 있는 프레임워크, 모듈·컨트롤러·서비스로 역할 분리, 타입스크립트 기본 채택&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;동작-원리와-구조&#34;&gt;동작 원리와 구조&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;정형화된 아키텍처
-NestJS는 모듈, 컨트롤러, 서비스로 책임을 분리해 구조를 한눈에 파악 가능
-역할 경계를 통해 변경 영향 범위 예측 용이하며 새 인원이 빠르게 적응 가능&lt;/p&gt;</description>
-    </item>
     <item>
       <title>KISS 원리: 소프트웨어 설계에서 불필요한 복잡성 줄이기</title>
       <link>https://blog.jsontapose.com/posts/kiss-principle-software-design-799a74/</link>

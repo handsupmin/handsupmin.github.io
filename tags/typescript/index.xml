@@ -52,52 +52,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;댓글 text가 &amp;lsquo;interesting&amp;rsquo;인 항목을 기준으로 게시글을 거르는 케이스를 가정&lt;/p&gt;</description>
     </item>
     <item>
-      <title>CommonJS vs ESM 정리와 듀얼 번들 구축 가이드 exports 필드 중심</title>
-      <link>https://blog.jsontapose.com/posts/commonjs-vs-esm-exports-guide-967844/</link>
-      <pubDate>Sun, 16 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/commonjs-vs-esm-exports-guide-967844/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;JavaScript 모듈 시스템은 CommonJS와 ECMAScript Modules 두 축으로 운용되어 왔음
-CommonJS는 커뮤니티 주도의 비표준 모듈 시스템으로 Node.js 생태계를 이끌었고, ESM은 ECMAScript 표준으로 채택된 정적 분석 기반 모듈 시스템임
-현대 툴체인과 브라우저 친화성, 최적화 요구로 인해 ESM 채택이 확대 중이나, 서버 스크립트와 레거시 호환성 관점에서 CommonJS의 실용성 또한 여전함
-라이브러리 배포 측면에서는 두 시스템 모두 대응하는 듀얼 번들이 요구되는 상황 증가&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;CommonJS CJS&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;require, module.exports 기반 동적 로더&lt;/li&gt;
-&lt;li&gt;모듈 로드와 평가가 호출 지점에서 동기 수행&lt;/li&gt;
-&lt;li&gt;Node.js 생태계에 널리 보급, 레거시 호환성 강함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;ECMAScript Modules ESM&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Express vs NestJS 비교 가이드: 유지보수성과 팀 협업 관점에서의 선택</title>
-      <link>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</link>
-      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;Express는 유연하고 자유도가 높아 소규모 프로젝트나 빠른 프로토타이핑에 적합함
-정해진 구조가 없어 팀 역량과 합의된 컨벤션에 따라 코드 품질 편차 발생 가능
-규모가 커질수록 구조 복잡도와 일관성 문제로 유지보수 난이도 상승&lt;/p&gt;
-&lt;p&gt;NestJS는 체계적인 아키텍처를 강제해 코드 일관성과 예측 가능성을 높이는 선택지임
-팀 온보딩 속도와 변화 영향 범위 파악을 개선해 장기 운영에 유리함&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Express: 최소한의 코어만 제공하는 비의견적 프레임워크, 구조 자율성 높음&lt;/li&gt;
-&lt;li&gt;NestJS: 의견 있는 프레임워크, 모듈·컨트롤러·서비스로 역할 분리, 타입스크립트 기본 채택&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;동작-원리와-구조&#34;&gt;동작 원리와 구조&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;정형화된 아키텍처
-NestJS는 모듈, 컨트롤러, 서비스로 책임을 분리해 구조를 한눈에 파악 가능
-역할 경계를 통해 변경 영향 범위 예측 용이하며 새 인원이 빠르게 적응 가능&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>커링과 부분 적용 이해하기: 함수형 자바스크립트 핵심 패턴</title>
       <link>https://blog.jsontapose.com/posts/currying-and-partial-application-e5bae4/</link>
       <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
@@ -173,7 +127,11 @@ n개의 인자를 받는 함수 → n번에 걸쳐 한 개 인자씩 받는 함�
 &lt;p&gt;Parameters는 TypeScript가 제공하는 제네릭 유틸리티 타입으로, 특정 함수 타입의 매개변수 타입들을 튜플로 추출하는 데 사용됨
 함수 래핑, 고차 함수, 어댑터 계층에서 기존 함수 시그니처를 재사용해 타입 안정성을 유지하고 중복 선언을 줄이는 목적에 적합함&lt;/p&gt;
 &lt;h3 id=&#34;문법&#34;&gt;문법&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Parameters&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;...args&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; (...&lt;span style=&#34;color:#a6e22e&#34;&gt;args&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;infer&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt; : &lt;span style=&#34;color:#66d9ef&#34;&gt;never&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Parameters&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;...args&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...&lt;span style=&#34;color:#a6e22e&#34;&gt;args&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;infer&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  : &lt;span style=&#34;color:#66d9ef&#34;&gt;never&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;T가 함수 타입이면 매개변수 목록을 튜플 타입 P로 추출&lt;/li&gt;
 &lt;li&gt;T가 함수 타입이 아니면 never 반환&lt;/li&gt;
@@ -183,7 +141,7 @@ n개의 인자를 받는 함수 → n번에 걸쳐 한 개 인자씩 받는 함�
 &lt;p&gt;기본 추출&lt;/p&gt;</description>
     </item>
     <item>
-      <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
+      <title>NestJS Swagger 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
       <link>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</guid>
@@ -217,8 +175,8 @@ skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;({
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;cursor&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;100&lt;/span&gt; },
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;take&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;5&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;asc&amp;#39;&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;asc&amp;#34;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 결과: 100부터 시작해 5개 반환
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;skip: 1은 cursor에 해당하는 레코드를 건너뜀&lt;/li&gt;
@@ -227,8 +185,8 @@ skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;cursor&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;100&lt;/span&gt; },
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;skip&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;1&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;take&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;5&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;asc&amp;#39;&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;asc&amp;#34;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 결과: 101부터 5개 반환
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;예시로-보는-차이&#34;&gt;예시로 보는 차이&lt;/h3&gt;
 &lt;p&gt;데이터가 아래와 같다고 가정&lt;/p&gt;</description>
@@ -245,7 +203,7 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
 옵션 조합으로 조건 기반 조회를 간결하게 구성 가능&lt;/p&gt;
 &lt;h3 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h3&gt;
 &lt;p&gt;가장 단순한 호출 형태&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;users&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;()
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;users&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;();
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주요-옵션&#34;&gt;주요 옵션&lt;/h3&gt;
 &lt;p&gt;옵션은 필요한 것만 선택적으로 사용&lt;/p&gt;
 &lt;ul&gt;

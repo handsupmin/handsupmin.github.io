@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</loc>
+    <lastmod>2025-09-21T03:11:23+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</loc>
+    <lastmod>2025-09-21T02:14:08+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</loc>
+    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</loc>
+    <lastmod>2025-09-20T17:15:26+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://blog.jsontapose.com/</loc>
     <lastmod>2025-11-17T13:11:31+00:00</lastmod>
     <priority>0.5</priority>
@@ -17,18 +39,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/commonjs-vs-esm-exports-guide-967844/</loc>
-    <lastmod>2025-11-16T13:06:40+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://blog.jsontapose.com/posts/javascript-array-prototype-map-01352e/</loc>
     <lastmod>2025-11-15T13:07:01+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</loc>
-    <lastmod>2025-11-14T13:10:09+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -92,18 +104,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</loc>
-    <lastmod>2025-10-25T13:06:24+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://blog.jsontapose.com/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</loc>
     <lastmod>2025-10-23T13:11:27+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</loc>
-    <lastmod>2025-10-22T13:12:18+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -184,23 +186,6 @@
   <url>
     <loc>https://blog.jsontapose.com/posts/blockchain-principles-mining-hash-274b74/</loc>
     <lastmod>2025-09-22T13:10:11+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</loc>
-    <lastmod>2025-09-21T03:11:23+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</loc>
-    <lastmod>2025-09-21T02:14:08+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</loc>
-    <lastmod>2025-09-20T17:15:26+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>

@@ -6,33 +6,23 @@
     <description>Recent content in Nestjs on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 14 Nov 2025 13:10:09 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Oct 2025 13:11:03 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/nestjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Express vs NestJS 비교 가이드: 유지보수성과 팀 협업 관점에서의 선택</title>
-      <link>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</link>
-      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;Express는 유연하고 자유도가 높아 소규모 프로젝트나 빠른 프로토타이핑에 적합함
-정해진 구조가 없어 팀 역량과 합의된 컨벤션에 따라 코드 품질 편차 발생 가능
-규모가 커질수록 구조 복잡도와 일관성 문제로 유지보수 난이도 상승&lt;/p&gt;
-&lt;p&gt;NestJS는 체계적인 아키텍처를 강제해 코드 일관성과 예측 가능성을 높이는 선택지임
-팀 온보딩 속도와 변화 영향 범위 파악을 개선해 장기 운영에 유리함&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Express: 최소한의 코어만 제공하는 비의견적 프레임워크, 구조 자율성 높음&lt;/li&gt;
-&lt;li&gt;NestJS: 의견 있는 프레임워크, 모듈·컨트롤러·서비스로 역할 분리, 타입스크립트 기본 채택&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;동작-원리와-구조&#34;&gt;동작 원리와 구조&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;정형화된 아키텍처
-NestJS는 모듈, 컨트롤러, 서비스로 책임을 분리해 구조를 한눈에 파악 가능
-역할 경계를 통해 변경 영향 범위 예측 용이하며 새 인원이 빠르게 적응 가능&lt;/p&gt;</description>
+      <title>SSE란? 실시간 이벤트 전달 프로토콜 (Server-Sent Events)</title>
+      <link>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</guid>
+      <description>&lt;h1 id=&#34;sseserver-sent-events란-무엇인가&#34;&gt;SSE(Server-Sent Events)란 무엇인가&lt;/h1&gt;
+&lt;p&gt;SSE는 &lt;strong&gt;Server-Sent Events&lt;/strong&gt;의 약자로, 서버가 클라이언트로 &lt;strong&gt;실시간 데이터를 단방향으로 푸시&lt;/strong&gt;(push)할 수 있게 해주는 웹 기술임
+클라이언트가 먼저 요청을 보내고 서버는 그 연결을 끊지 않은 채, 새로운 데이터가 생길 때마다 지속적으로 응답을 보내는 방식임&lt;/p&gt;
+&lt;p&gt;주로 실시간 알림, 주식 시세 업데이트, 라이브 피드 등 서버에서 클라이언트로 일방적인 데이터 전송이 필요한 경우에 매우 유용함&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;sse-vs-웹소켓-그리고-한계&#34;&gt;SSE vs 웹소켓, 그리고 한계&lt;/h2&gt;
+&lt;p&gt;SSE는 실시간 이벤트 전송에 유용하지만 만능은 아님. 웹소켓과 비교했을 때 명확한 장단점이 존재함&lt;/p&gt;</description>
     </item>
     <item>
-      <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
+      <title>NestJS Swagger 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
       <link>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</guid>
@@ -50,19 +40,6 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SSE란? 실시간 이벤트 전달 프로토콜 (Server-Sent Events)</title>
-      <link>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</link>
-      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</guid>
-      <description>&lt;h1 id=&#34;sseserver-sent-events란-무엇인가&#34;&gt;SSE(Server-Sent Events)란 무엇인가&lt;/h1&gt;
-&lt;p&gt;SSE는 &lt;strong&gt;Server-Sent Events&lt;/strong&gt;의 약자로, 서버가 클라이언트로 &lt;strong&gt;실시간 데이터를 단방향으로 푸시&lt;/strong&gt;(push)할 수 있게 해주는 웹 기술임
-클라이언트가 먼저 요청을 보내고 서버는 그 연결을 끊지 않은 채, 새로운 데이터가 생길 때마다 지속적으로 응답을 보내는 방식임&lt;/p&gt;
-&lt;p&gt;주로 실시간 알림, 주식 시세 업데이트, 라이브 피드 등 서버에서 클라이언트로 일방적인 데이터 전송이 필요한 경우에 매우 유용함&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;sse-vs-웹소켓-그리고-한계&#34;&gt;SSE vs 웹소켓, 그리고 한계&lt;/h2&gt;
-&lt;p&gt;SSE는 실시간 이벤트 전송에 유용하지만 만능은 아님. 웹소켓과 비교했을 때 명확한 장단점이 존재함&lt;/p&gt;</description>
     </item>
     <item>
       <title>NestJS Guard로 요청 보호하기 — CanActivate, UseGuards, Bearer 인증 예시</title>

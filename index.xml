@@ -9,6 +9,87 @@
     <lastBuildDate>Mon, 17 Nov 2025 13:11:31 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
+      <link>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</link>
+      <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;블록체인 기술에서 모든 것을 온체인(On-chain)으로 처리하는 것은 비효율적이거나 불가능한 경우가 많음
+이때 &lt;strong&gt;오프체인 서명 검증&lt;/strong&gt;(Off-chain Signature Verification)은 오프체인(서버)의 유연성과 온체인(컨트랙트)의 신뢰성을 결합하는 강력한 해결책이 됨&lt;/p&gt;
+&lt;p&gt;쉽게 비유하자면, 클럽 매니저(서버)가 VIP 손님(사용자)에게만 특별한 싸인이 담긴 입장권(서명)을 발급하고, 입구의 가드(스마트 컨트랙트)는 그 싸인만 확인하고 들여보내는 것과 같음
+가드는 매번 매니저에게 연락할 필요 없이, 위조되지 않은 싸인인지 확인만 하면 됨&lt;/p&gt;
+&lt;p&gt;이 글에서는 오프체인 서명 검증이 무엇인지, 어떤 용어들이 사용되는지, 그리고 가장 중요하게는 어떤 원리로 동작하는지 상세히 알아봄&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>안전한 가스비 대납을 위한 오프체인 서명 검증 페이마스터 (in ZkSync Era)</title>
+      <link>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</link>
+      <pubDate>Sun, 21 Sep 2025 02:14:08 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;블록체인 서비스에서 사용자가 겪는 가장 큰 장벽 중 하나는 단연 &lt;strong&gt;가스비&lt;/strong&gt;(Gas Fee)임
+아무리 좋은 서비스를 만들어도, 사용자가 지갑에 가스비로 쓸 코인(ETH 등)을 보유하고 있어야 한다는 점은 대중화를 가로막는 결정적인 요인임
+이 문제를 해결해 사용자가 가스비 걱정 없이 서비스 핵심 가치에만 집중하게 만드는 것, 즉 &lt;strong&gt;가스리스 트랜잭션&lt;/strong&gt;(Gasless Transaction)을 구현하는 것이 이번 개발의 최종 목표였음&lt;/p&gt;
+&lt;p&gt;zkSync Era는 이를 위해 &lt;strong&gt;페이마스터&lt;/strong&gt;(Paymaster)라는 강력한 시스템을 제공함. 페이마스터는 서비스 제공자 같은 제3자가 사용자를 대신해 트랜잭션 수수료를 지불할 수 있게 해주는 스마트 컨트랙트임&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SSE란? 실시간 이벤트 전달 프로토콜 (Server-Sent Events)</title>
+      <link>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</link>
+      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</guid>
+      <description>&lt;h1 id=&#34;sseserver-sent-events란-무엇인가&#34;&gt;SSE(Server-Sent Events)란 무엇인가&lt;/h1&gt;
+&lt;p&gt;SSE는 &lt;strong&gt;Server-Sent Events&lt;/strong&gt;의 약자로, 서버가 클라이언트로 &lt;strong&gt;실시간 데이터를 단방향으로 푸시&lt;/strong&gt;(push)할 수 있게 해주는 웹 기술임
+클라이언트가 먼저 요청을 보내고 서버는 그 연결을 끊지 않은 채, 새로운 데이터가 생길 때마다 지속적으로 응답을 보내는 방식임&lt;/p&gt;
+&lt;p&gt;주로 실시간 알림, 주식 시세 업데이트, 라이브 피드 등 서버에서 클라이언트로 일방적인 데이터 전송이 필요한 경우에 매우 유용함&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;sse-vs-웹소켓-그리고-한계&#34;&gt;SSE vs 웹소켓, 그리고 한계&lt;/h2&gt;
+&lt;p&gt;SSE는 실시간 이벤트 전송에 유용하지만 만능은 아님. 웹소켓과 비교했을 때 명확한 장단점이 존재함&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>머클트리(Merkle Tree)란? 머클트리의 개념과 블록체인에서의 역할</title>
+      <link>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</link>
+      <pubDate>Sat, 20 Sep 2025 17:15:26 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;머클트리는 블록체인에서 거래 집합을 &lt;strong&gt;안전하고 효율적으로 요약·검증&lt;/strong&gt;하기 위해 쓰이는 핵심 자료구조임
+블록 헤더에 머클루트가 포함되는 이유는 블록 안의 모든 거래를 &lt;strong&gt;고정 크기 해시 하나&lt;/strong&gt;로 대표해 무결성 확인과 경량 검증을 가능하게 하기 때문임
+이 글은 머클트리의 구조와 동작 원리, 블록체인에서의 실무적 의미와 구현 주의사항까지 초보자도 이해할 수 있도록 상세히 설명함&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;핵심-개념과-구조&#34;&gt;핵심 개념과 구조&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;머클트리는 보통 &lt;strong&gt;이진 트리&lt;/strong&gt; 형태로 구현함&lt;/li&gt;
+&lt;li&gt;거래들을 &lt;strong&gt;리프(leaf)&lt;/strong&gt; 로 두고 인접 두 리프의 해시를 이어 붙여 부모 해시를 만들며 이 과정을 반복해 &lt;strong&gt;루트 해시&lt;/strong&gt;를 얻음&lt;/li&gt;
+&lt;li&gt;해시 함수는 체인별로 다르며 비트코인은 &lt;strong&gt;더블 SHA‑256&lt;/strong&gt;, 이더리움은 트라이 구조에서 &lt;strong&gt;Keccak‑256&lt;/strong&gt; 을 사용함&lt;/li&gt;
+&lt;li&gt;최상단 해시를 &lt;strong&gt;머클루트(Merkle root)&lt;/strong&gt; 라 부르며 크기는 해시 함수에 따라 고정됨&lt;/li&gt;
+&lt;li&gt;리프 수가 홀수일 때는 마지막 리프를 &lt;strong&gt;복제해 짝을 맞추는 방식&lt;/strong&gt;이 일반적이며 비트코인은 이 규칙을 사용함&lt;/li&gt;
+&lt;li&gt;트리 깊이는 리프 수 N에 대해 &lt;strong&gt;⌈log₂ N⌉&lt;/strong&gt; 에 비례하므로 대량의 거래를 효율적으로 요약할 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;동작-원리와-장점&#34;&gt;동작 원리와 장점&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;인접 노드 해시 &lt;strong&gt;H_left || H_right&lt;/strong&gt; 를 순서대로 연결해 해시를 계산하고 이를 위로 올려가며 루트 해시를 얻음&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;무결성 검증&lt;/strong&gt;
+단일 거래가 바뀌면 해당 리프에서 루트까지의 모든 경로 해시가 바뀌어 변조를 즉시 탐지할 수 있음&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;효율적 포함 증명&lt;/strong&gt;
+특정 거래가 블록에 포함되었음을 증명하려면 그 거래와 경로상의 &lt;strong&gt;형제 해시들만&lt;/strong&gt; 있으면 됨
+필요한 해시 개수는 &lt;strong&gt;O(log N)&lt;/strong&gt; 으로 작아 대역폭과 검증 비용이 작음&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;확장성 보조&lt;/strong&gt;
+리프가 1,000,000개여도 증명에 필요한 형제 해시는 약 20개 수준으로 32바이트 해시 기준 약 640바이트에 불과함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;블록-헤더와-경량-노드spv&#34;&gt;블록 헤더와 경량 노드(SPV)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;비트코인 블록 헤더는 이전 블록 해시, 머클루트, 난스 등 합의 관련 메타데이터를 포함함&lt;/li&gt;
+&lt;li&gt;경량 노드(SPV)는 &lt;strong&gt;블록 전체가 아니라 헤더 체인만&lt;/strong&gt; 받아 신뢰성을 확보하고, 개별 거래에 대해서는 풀노드로부터 &lt;strong&gt;머클 증명&lt;/strong&gt; 을 받아 포함 여부를 검증함&lt;/li&gt;
+&lt;li&gt;이 방식은 모바일·임베디드 환경에서도 실사용이 가능하게 하는 기반이 됨&lt;/li&gt;
+&lt;li&gt;이더리움은 전통적인 이진 머클트리 대신 &lt;strong&gt;머클‑패트리샤 트라이(MPT)&lt;/strong&gt; 를 사용해 거래·영수증·상태 루트를 헤더에 담아 유사한 목적을 달성함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;구현-세부와-체인별-차이&#34;&gt;구현 세부와 체인별 차이&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Prisma where 관계 필터 some vs every 동작 차이와 주의점</title>
       <link>https://blog.jsontapose.com/posts/prisma-some-vs-every-relationship-filter-dcd175/</link>
       <pubDate>Mon, 17 Nov 2025 13:11:31 +0000</pubDate>
@@ -52,29 +133,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;댓글 text가 &amp;lsquo;interesting&amp;rsquo;인 항목을 기준으로 게시글을 거르는 케이스를 가정&lt;/p&gt;</description>
     </item>
     <item>
-      <title>CommonJS vs ESM 정리와 듀얼 번들 구축 가이드 exports 필드 중심</title>
-      <link>https://blog.jsontapose.com/posts/commonjs-vs-esm-exports-guide-967844/</link>
-      <pubDate>Sun, 16 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/commonjs-vs-esm-exports-guide-967844/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;JavaScript 모듈 시스템은 CommonJS와 ECMAScript Modules 두 축으로 운용되어 왔음
-CommonJS는 커뮤니티 주도의 비표준 모듈 시스템으로 Node.js 생태계를 이끌었고, ESM은 ECMAScript 표준으로 채택된 정적 분석 기반 모듈 시스템임
-현대 툴체인과 브라우저 친화성, 최적화 요구로 인해 ESM 채택이 확대 중이나, 서버 스크립트와 레거시 호환성 관점에서 CommonJS의 실용성 또한 여전함
-라이브러리 배포 측면에서는 두 시스템 모두 대응하는 듀얼 번들이 요구되는 상황 증가&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;CommonJS CJS&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;require, module.exports 기반 동적 로더&lt;/li&gt;
-&lt;li&gt;모듈 로드와 평가가 호출 지점에서 동기 수행&lt;/li&gt;
-&lt;li&gt;Node.js 생태계에 널리 보급, 레거시 호환성 강함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;ECMAScript Modules ESM&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>JavaScript Array.prototype.map 개념과 사용법 정리</title>
       <link>https://blog.jsontapose.com/posts/javascript-array-prototype-map-01352e/</link>
       <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
@@ -84,8 +142,8 @@ CommonJS는 커뮤니티 주도의 비표준 모듈 시스템으로 Node.js 생�
 원본 배열 불변 유지, 동일 길이의 새 배열 생성이 핵심 특징임&lt;/p&gt;
 &lt;h3 id=&#34;기본-문법&#34;&gt;기본 문법&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;newArray&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;((&lt;span style=&#34;color:#a6e22e&#34;&gt;element&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;) =&amp;gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;element&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;element&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;element 현재 요소&lt;/li&gt;
 &lt;li&gt;index 현재 인덱스&lt;/li&gt;
@@ -94,33 +152,10 @@ CommonJS는 커뮤니티 주도의 비표준 모듈 시스템으로 Node.js 생�
 &lt;p&gt;콜백은 요소 수만큼 호출되고, 콜백의 반환값이 새 배열의 같은 위치에 배치됨&lt;/p&gt;
 &lt;h3 id=&#34;사용-예시&#34;&gt;사용 예시&lt;/h3&gt;
 &lt;p&gt;숫자 배열 변환&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;numbers&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;doubled&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;numbers&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;numbers&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;doubled&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;numbers&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;((&lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// [2, 4, 6, 8, 10]
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;객체 배열에서 특정 속성 추출&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Express vs NestJS 비교 가이드: 유지보수성과 팀 협업 관점에서의 선택</title>
-      <link>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</link>
-      <pubDate>Fri, 14 Nov 2025 13:10:09 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/express-vs-nestjs-maintainability-team-guide-d0f6e1/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;Express는 유연하고 자유도가 높아 소규모 프로젝트나 빠른 프로토타이핑에 적합함
-정해진 구조가 없어 팀 역량과 합의된 컨벤션에 따라 코드 품질 편차 발생 가능
-규모가 커질수록 구조 복잡도와 일관성 문제로 유지보수 난이도 상승&lt;/p&gt;
-&lt;p&gt;NestJS는 체계적인 아키텍처를 강제해 코드 일관성과 예측 가능성을 높이는 선택지임
-팀 온보딩 속도와 변화 영향 범위 파악을 개선해 장기 운영에 유리함&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Express: 최소한의 코어만 제공하는 비의견적 프레임워크, 구조 자율성 높음&lt;/li&gt;
-&lt;li&gt;NestJS: 의견 있는 프레임워크, 모듈·컨트롤러·서비스로 역할 분리, 타입스크립트 기본 채택&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;동작-원리와-구조&#34;&gt;동작 원리와 구조&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;정형화된 아키텍처
-NestJS는 모듈, 컨트롤러, 서비스로 책임을 분리해 구조를 한눈에 파악 가능
-역할 경계를 통해 변경 영향 범위 예측 용이하며 새 인원이 빠르게 적응 가능&lt;/p&gt;</description>
     </item>
     <item>
       <title>커링과 부분 적용 이해하기: 함수형 자바스크립트 핵심 패턴</title>
@@ -285,7 +320,11 @@ V8, libuv, 내부 바인딩 계층이 초기화되고 런타임 전역 상태가
 &lt;p&gt;Parameters는 TypeScript가 제공하는 제네릭 유틸리티 타입으로, 특정 함수 타입의 매개변수 타입들을 튜플로 추출하는 데 사용됨
 함수 래핑, 고차 함수, 어댑터 계층에서 기존 함수 시그니처를 재사용해 타입 안정성을 유지하고 중복 선언을 줄이는 목적에 적합함&lt;/p&gt;
 &lt;h3 id=&#34;문법&#34;&gt;문법&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Parameters&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;...args&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; (...&lt;span style=&#34;color:#a6e22e&#34;&gt;args&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;infer&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt; : &lt;span style=&#34;color:#66d9ef&#34;&gt;never&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Parameters&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;...args&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...&lt;span style=&#34;color:#a6e22e&#34;&gt;args&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;infer&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  : &lt;span style=&#34;color:#66d9ef&#34;&gt;never&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;T가 함수 타입이면 매개변수 목록을 튜플 타입 P로 추출&lt;/li&gt;
 &lt;li&gt;T가 함수 타입이 아니면 never 반환&lt;/li&gt;
@@ -320,7 +359,7 @@ InnoDB 스토리지 엔진(트랜잭션, MVCC, 행 단위 락 지원) 성능의 
 이후 같은 페이지에 있는 다른 로우를 읽을 때는 디스크를 다시 보지 않고 버퍼 풀(메모리)에서 바로 조회함&lt;/p&gt;</description>
     </item>
     <item>
-      <title>NestJS Swagger 실무 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
+      <title>NestJS Swagger 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
       <link>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</guid>
@@ -354,8 +393,8 @@ skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;({
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;cursor&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;100&lt;/span&gt; },
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;take&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;5&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;asc&amp;#39;&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;asc&amp;#34;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 결과: 100부터 시작해 5개 반환
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;skip: 1은 cursor에 해당하는 레코드를 건너뜀&lt;/li&gt;
@@ -364,8 +403,8 @@ skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;cursor&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;100&lt;/span&gt; },
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;skip&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;1&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;take&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;5&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;asc&amp;#39;&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;asc&amp;#34;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 결과: 101부터 5개 반환
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;예시로-보는-차이&#34;&gt;예시로 보는 차이&lt;/h3&gt;
 &lt;p&gt;데이터가 아래와 같다고 가정&lt;/p&gt;</description>
@@ -382,7 +421,7 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
 옵션 조합으로 조건 기반 조회를 간결하게 구성 가능&lt;/p&gt;
 &lt;h3 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h3&gt;
 &lt;p&gt;가장 단순한 호출 형태&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;users&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;()
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;users&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;();
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주요-옵션&#34;&gt;주요 옵션&lt;/h3&gt;
 &lt;p&gt;옵션은 필요한 것만 선택적으로 사용&lt;/p&gt;
 &lt;ul&gt;
@@ -414,10 +453,10 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
 &lt;/ul&gt;
 &lt;h3 id=&#34;간단-예시&#34;&gt;간단 예시&lt;/h3&gt;
 &lt;p&gt;변수에 할당&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;greet&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`Hello, &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;greet&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`Hello, &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;인수로 전달&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;run&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;fn&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fn&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;run&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;greet&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Bob&amp;#39;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;run&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;fn&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fn&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;run&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;greet&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;반환값으로 사용 및 클로저&lt;/p&gt;</description>
     </item>
     <item>
@@ -438,19 +477,6 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
 따라서 명시적 PK가 없더라도 내부적으로는 클러스터 키가 존재하며 저장과 탐색 경로의 기준으로 동작함&lt;/p&gt;</description>
     </item>
     <item>
-      <title>SSE란? 실시간 이벤트 전달 프로토콜 (Server-Sent Events)</title>
-      <link>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</link>
-      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/sse-realtime-notification-architecture-nestjs-redis-pub-sub-f4346d/</guid>
-      <description>&lt;h1 id=&#34;sseserver-sent-events란-무엇인가&#34;&gt;SSE(Server-Sent Events)란 무엇인가&lt;/h1&gt;
-&lt;p&gt;SSE는 &lt;strong&gt;Server-Sent Events&lt;/strong&gt;의 약자로, 서버가 클라이언트로 &lt;strong&gt;실시간 데이터를 단방향으로 푸시&lt;/strong&gt;(push)할 수 있게 해주는 웹 기술임
-클라이언트가 먼저 요청을 보내고 서버는 그 연결을 끊지 않은 채, 새로운 데이터가 생길 때마다 지속적으로 응답을 보내는 방식임&lt;/p&gt;
-&lt;p&gt;주로 실시간 알림, 주식 시세 업데이트, 라이브 피드 등 서버에서 클라이언트로 일방적인 데이터 전송이 필요한 경우에 매우 유용함&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;sse-vs-웹소켓-그리고-한계&#34;&gt;SSE vs 웹소켓, 그리고 한계&lt;/h2&gt;
-&lt;p&gt;SSE는 실시간 이벤트 전송에 유용하지만 만능은 아님. 웹소켓과 비교했을 때 명확한 장단점이 존재함&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Node.js 환경에서 디버깅하기</title>
       <link>https://blog.jsontapose.com/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</link>
       <pubDate>Thu, 23 Oct 2025 13:11:27 +0000</pubDate>
@@ -464,219 +490,6 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
 &lt;li&gt;실패 조건과 재현 절차 고정&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;문제 정의가 모호하면 디버깅 범위가 불필요하게 커짐. 입력, 환경 변수, 의존성 버전, 네트워크 상태 등 외부 요인도 고정하는 편이 좋음&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>MySQL InnoDB 장단점과 운영 시 주의사항 정리</title>
-      <link>https://blog.jsontapose.com/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</link>
-      <pubDate>Wed, 22 Oct 2025 13:12:18 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/mysql-innodb-pros-cons-and-cautions-4b2d90/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;MySQL InnoDB는 ACID 트랜잭션을 기본으로 지원하는 스토리지 엔진으로 데이터 무결성과 동시성 보장을 목표로 설계됨
-Row-level lock, MVCC, 클러스터형 인덱스, 외래 키, 크래시 리커버리 등 기능을 통해 OLTP 환경에서 안정적인 처리 성능 제공
-아래는 InnoDB의 장단점과 운영 시 주의사항을 정리한 내용임&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;클러스터형 인덱스 기반 저장 구조
-&lt;ul&gt;
-&lt;li&gt;기본 키(PK) 순서대로 데이터 페이지에 정렬 저장&lt;/li&gt;
-&lt;li&gt;보조 인덱스는 리프에 PK를 포함하여 PK 탐색으로 실제 레코드 접근&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MVCC와 일관 읽기
-&lt;ul&gt;
-&lt;li&gt;Undo 로그 기반 버전 관리로 일관 읽기 제공&lt;/li&gt;
-&lt;li&gt;쓰기와 읽기 동시 처리 시 경합을 줄여 높은 동시성 달성&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;트랜잭션과 크래시 리커버리
-&lt;ul&gt;
-&lt;li&gt;Redo 로그로 커밋 데이터의 내구성 확보&lt;/li&gt;
-&lt;li&gt;Doublewrite 버퍼로 부분 쓰기 방지&lt;/li&gt;
-&lt;li&gt;비정상 종료 후 복구 경로 확보&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;장점&#34;&gt;장점&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;트랜잭션 ACID 보장&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;COMMIT, ROLLBACK, SAVEPOINT로 안전한 트랜잭션 경계 관리 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Row-level lock 기반 높은 동시성&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;필요한 행만 잠금으로 쓰기 경합을 최소화&lt;/li&gt;
-&lt;li&gt;테이블 락 기반 엔진 대비 OLTP에 유리&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;외래 키 제약으로 참조 무결성 유지&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;부모 자식 간 참조 일관성 DB 레벨에서 강제&lt;/li&gt;
-&lt;li&gt;애플리케이션 측 검증 부담 감소&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;크래시 리커버리 안정성&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Redo/Undo 로그와 Doublewrite로 장애 상황에서도 데이터 무결성 유지&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;클러스터형 인덱스의 빠른 PK 접근과 범위 스캔 효율&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;PK 기반 조회 및 순차 범위 스캔에서 강점&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;MVCC로 읽기 일관성과 동시 처리 성능 확보&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;롱 리드와 빈번한 쓰기가 공존하는 시나리오에 적합&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;대규모 OLTP 워크로드에 적합&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;대량의 INSERT/UPDATE/DELETE 처리에서 일관된 성능과 안정성 제공&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;단점&#34;&gt;단점&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;메모리 사용량 큼&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Buffer Pool 등 캐시 구조로 메모리 요구량 높음&lt;/li&gt;
-&lt;li&gt;메모리 부족 시 디스크 I/O 증가로 성능 저하 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;클러스터형 인덱스 특성에 따른 PK 설계 민감도 높음&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;PK 업데이트는 물리 재배치와 페이지 분할 유발 가능&lt;/li&gt;
-&lt;li&gt;긴 문자열 PK 사용 시 저장 비효율 및 분할 증가 위험&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;디스크 공간 사용량 상대적으로 큼&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Undo/Redo, Doublewrite, 각종 메타데이터로 파일 규모 증가 가능&lt;/li&gt;
-&lt;li&gt;대량 갱신 후 조각화 우려&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;파라미터가 많아 운영 난이도 존재&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;innodb_buffer_pool_size, innodb_log_file_size, innodb_flush_method 등 튜닝 필요&lt;/li&gt;
-&lt;li&gt;부적절한 설정 시 기대 성능 미달 위험&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;외래 키로 인한 잠금 경합과 데드락 리스크 증가&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;다중 FK 검증 경로가 얽히면 경합 심화&lt;/li&gt;
-&lt;li&gt;삽입·삭제 순서 제약으로 트랜잭션 복잡도 증가&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;Read-heavy 분석형 워크로드 적합성 한계&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;대규모 단순 조회 중심 OLAP 성격은 컬럼 지향 분석 시스템이 유리한 경우 존재&lt;/li&gt;
-&lt;li&gt;과거 일부 읽기 패턴에서 MyISAM이 빠른 사례가 있었으나 현재는 InnoDB가 기본 선택지로 자리함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;운영-시-주의사항과-베스트-프랙티스&#34;&gt;운영 시 주의사항과 베스트 프랙티스&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;명시적 PK 또는 고유 인덱스 필수&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;명시적 PK 없으면 숨은 Row ID 사용으로 비효율 발생 가능&lt;/li&gt;
-&lt;li&gt;변경이 드문 짧은 정수형 PK 선호 예) INT AUTO_INCREMENT, BIGINT&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Buffer Pool 사이즈 적정화&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;innodb_buffer_pool_size는 핵심 파라미터&lt;/li&gt;
-&lt;li&gt;가능한 많은 데이터 페이지를 메모리에 유지할수록 I/O 절감 효과 큼&lt;/li&gt;
-&lt;li&gt;서버 메모리 대비 높은 비중 할당 권장하나 워크로드와 여유 메모리 고려하여 점진 조정&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;FK 사용 최소화 및 인덱스 정합성 확보&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;꼭 필요한 관계에만 FK 적용&lt;/li&gt;
-&lt;li&gt;FK 컬럼에 적절한 인덱스 부여로 잠금 경합과 테이블 스캔 방지&lt;/li&gt;
-&lt;li&gt;트랜잭션 내 잠금 순서 일관성 유지로 데드락 확률 낮추기&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Row format과 페이지 전략 선택&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;ROW_FORMAT=DYNAMIC 등으로 긴 TEXT/BLOB를 오프페이지화하여 저장 효율 개선&lt;/li&gt;
-&lt;li&gt;크게 보이지 않는 설정이라도 대규모 테이블에서 성능과 공간 효율에 영향 큼&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;Auto-increment 충돌 방지&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;레플리케이션 또는 멀티 라이터 시나리오에서 키 충돌 방지 전략 필요&lt;/li&gt;
-&lt;li&gt;innodb_autoinc_lock_mode 값 검토 및 키 공간 분할 또는 시퀀스 전략 병행&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;통계 갱신과 조각화 대응&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;ANALYZE TABLE로 옵티마이저 통계 최신화&lt;/li&gt;
-&lt;li&gt;OPTIMIZE TABLE 또는 테이블 리빌드로 심한 조각화 해소와 공간 회수 검토&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;데드락 모니터링 루틴화&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;SHOW ENGINE INNODB STATUS와 information_schema의 INNODB_TRX, INNODB_LOCKS, INNODB_LOCK_WAITS로 원인 추적&lt;/li&gt;
-&lt;li&gt;쿼리 접근 순서 정렬, 트랜잭션 단위 축소, 적절한 인덱싱으로 예방&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;8&#34;&gt;
-&lt;li&gt;로그 크기와 플러시 정책의 트레이드오프 이해&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;innodb_log_file_size, innodb_flush_log_at_trx_commit, sync_binlog 설정이 지연 시간과 내구성에 직접 영향&lt;/li&gt;
-&lt;li&gt;허용 가능한 데이터 손실 범위와 지연 요구사항에 맞춰 설정 조정&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;장점 요약
-&lt;ul&gt;
-&lt;li&gt;ACID 트랜잭션, Row-level lock, MVCC, FK, 클러스터형 인덱스, 안정적 크래시 리커버리&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;단점 요약
-&lt;ul&gt;
-&lt;li&gt;메모리와 디스크 사용량 큼, 설정 복잡도 존재, PK 설계 민감, FK로 인한 경합과 데드락 리스크&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;운영 체크리스트
-&lt;ul&gt;
-&lt;li&gt;짧은 정수형 명시적 PK 설계&lt;/li&gt;
-&lt;li&gt;Buffer Pool 및 로그 정책 튜닝&lt;/li&gt;
-&lt;li&gt;FK 최소화와 인덱스 정합성 확보&lt;/li&gt;
-&lt;li&gt;정기 통계 갱신과 조각화 관리, 데드락 모니터링
-적절한 설정과 스키마 설계를 병행하면 OLTP 환경에서 높은 안정성과 성능을 동시에 달성 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;참고자료&#34;&gt;참고자료&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/innodb-storage-engine.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/innodb-storage-engine.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/innodb-introduction.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/innodb-introduction.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-model.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-model.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/innodb-multi-versioning.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/innodb-multi-versioning.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/innodb-locking.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/innodb-locking.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/innodb-buffer-pool.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/innodb-buffer-pool.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/innodb-file-system-architecture.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/innodb-file-system-architecture.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/innodb-parameters.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/innodb-parameters.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/innodb-optimizing-innodb-operations.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/innodb-optimizing-innodb-operations.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
     <item>
       <title>TypeScript enum, const enum, as const 차이와 선택 기준</title>
@@ -866,11 +679,11 @@ canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하�
 &lt;/ul&gt;
 &lt;h3 id=&#34;용어-핵심-정리&#34;&gt;용어 핵심 정리&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;control plane  apiserver 권위와 입구, scheduler 배치, controller-manager 조율, etcd 단일 진실 저장소&lt;/li&gt;
-&lt;li&gt;worker node  파드를 실제로 실행하는 머신 풀&lt;/li&gt;
-&lt;li&gt;kubelet  각 노드의 현장 에이전트, 파드 라이프사이클 관리와 apiserver 동기화 담당&lt;/li&gt;
-&lt;li&gt;container runtime  kubelet 지시로 컨테이너 생성과 삭제를 수행하는 실행기, CRI 인터페이스 준수&lt;/li&gt;
-&lt;li&gt;cgroup  컨테이너 자원 격리와 제한의 커널 메커니즘, OCI 런타임이 설정&lt;/li&gt;
+&lt;li&gt;control plane apiserver 권위와 입구, scheduler 배치, controller-manager 조율, etcd 단일 진실 저장소&lt;/li&gt;
+&lt;li&gt;worker node 파드를 실제로 실행하는 머신 풀&lt;/li&gt;
+&lt;li&gt;kubelet 각 노드의 현장 에이전트, 파드 라이프사이클 관리와 apiserver 동기화 담당&lt;/li&gt;
+&lt;li&gt;container runtime kubelet 지시로 컨테이너 생성과 삭제를 수행하는 실행기, CRI 인터페이스 준수&lt;/li&gt;
+&lt;li&gt;cgroup 컨테이너 자원 격리와 제한의 커널 메커니즘, OCI 런타임이 설정&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
 &lt;p&gt;apiserver는 진실의 관문, etcd는 진실의 저장소, 스케줄러와 컨트롤러는 계획과 조율, kubelet은 현장 실행, runtime과 OCI는 컨테이너 생성, cgroup은 자원 격리 담당&lt;/p&gt;</description>
@@ -1178,74 +991,6 @@ ethers나 web3.js와 같은 범용 라이브러리와 동일한 범주의 도구
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;해시 함수(SHA-256, Keccak-256 등)&lt;/strong&gt;: 입력을 고정 길이로 압축하는 일방향 함수임&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
-      <link>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</link>
-      <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/off-chain-signature-verification-542a33/</guid>
-      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
-&lt;p&gt;블록체인 기술에서 모든 것을 온체인(On-chain)으로 처리하는 것은 비효율적이거나 불가능한 경우가 많음
-이때 &lt;strong&gt;오프체인 서명 검증&lt;/strong&gt;(Off-chain Signature Verification)은 오프체인(서버)의 유연성과 온체인(컨트랙트)의 신뢰성을 결합하는 강력한 해결책이 됨&lt;/p&gt;
-&lt;p&gt;쉽게 비유하자면, 클럽 매니저(서버)가 VIP 손님(사용자)에게만 특별한 싸인이 담긴 입장권(서명)을 발급하고, 입구의 가드(스마트 컨트랙트)는 그 싸인만 확인하고 들여보내는 것과 같음
-가드는 매번 매니저에게 연락할 필요 없이, 위조되지 않은 싸인인지 확인만 하면 됨&lt;/p&gt;
-&lt;p&gt;이 글에서는 오프체인 서명 검증이 무엇인지, 어떤 용어들이 사용되는지, 그리고 가장 중요하게는 어떤 원리로 동작하는지 상세히 알아봄&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>안전한 가스비 대납을 위한 오프체인 서명 검증 페이마스터 (in ZkSync Era)</title>
-      <link>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</link>
-      <pubDate>Sun, 21 Sep 2025 02:14:08 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/zksync-era-paymaster-off-chain-signature-verification-274b74/</guid>
-      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
-&lt;p&gt;블록체인 서비스에서 사용자가 겪는 가장 큰 장벽 중 하나는 단연 &lt;strong&gt;가스비&lt;/strong&gt;(Gas Fee)임
-아무리 좋은 서비스를 만들어도, 사용자가 지갑에 가스비로 쓸 코인(ETH 등)을 보유하고 있어야 한다는 점은 대중화를 가로막는 결정적인 요인임
-이 문제를 해결해 사용자가 가스비 걱정 없이 서비스 핵심 가치에만 집중하게 만드는 것, 즉 &lt;strong&gt;가스리스 트랜잭션&lt;/strong&gt;(Gasless Transaction)을 구현하는 것이 이번 개발의 최종 목표였음&lt;/p&gt;
-&lt;p&gt;zkSync Era는 이를 위해 &lt;strong&gt;페이마스터&lt;/strong&gt;(Paymaster)라는 강력한 시스템을 제공함. 페이마스터는 서비스 제공자 같은 제3자가 사용자를 대신해 트랜잭션 수수료를 지불할 수 있게 해주는 스마트 컨트랙트임&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>머클트리(Merkle Tree)란? 머클트리의 개념과 블록체인에서의 역할</title>
-      <link>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</link>
-      <pubDate>Sat, 20 Sep 2025 17:15:26 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/merkle-tree-blockchain-role-274b74/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;머클트리는 블록체인에서 거래 집합을 &lt;strong&gt;안전하고 효율적으로 요약·검증&lt;/strong&gt;하기 위해 쓰이는 핵심 자료구조임
-블록 헤더에 머클루트가 포함되는 이유는 블록 안의 모든 거래를 &lt;strong&gt;고정 크기 해시 하나&lt;/strong&gt;로 대표해 무결성 확인과 경량 검증을 가능하게 하기 때문임
-이 글은 머클트리의 구조와 동작 원리, 블록체인에서의 실무적 의미와 구현 주의사항까지 초보자도 이해할 수 있도록 상세히 설명함&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;핵심-개념과-구조&#34;&gt;핵심 개념과 구조&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;머클트리는 보통 &lt;strong&gt;이진 트리&lt;/strong&gt; 형태로 구현함&lt;/li&gt;
-&lt;li&gt;거래들을 &lt;strong&gt;리프(leaf)&lt;/strong&gt; 로 두고 인접 두 리프의 해시를 이어 붙여 부모 해시를 만들며 이 과정을 반복해 &lt;strong&gt;루트 해시&lt;/strong&gt;를 얻음&lt;/li&gt;
-&lt;li&gt;해시 함수는 체인별로 다르며 비트코인은 &lt;strong&gt;더블 SHA‑256&lt;/strong&gt;, 이더리움은 트라이 구조에서 &lt;strong&gt;Keccak‑256&lt;/strong&gt; 을 사용함&lt;/li&gt;
-&lt;li&gt;최상단 해시를 &lt;strong&gt;머클루트(Merkle root)&lt;/strong&gt; 라 부르며 크기는 해시 함수에 따라 고정됨&lt;/li&gt;
-&lt;li&gt;리프 수가 홀수일 때는 마지막 리프를 &lt;strong&gt;복제해 짝을 맞추는 방식&lt;/strong&gt;이 일반적이며 비트코인은 이 규칙을 사용함&lt;/li&gt;
-&lt;li&gt;트리 깊이는 리프 수 N에 대해 &lt;strong&gt;⌈log₂ N⌉&lt;/strong&gt; 에 비례하므로 대량의 거래를 효율적으로 요약할 수 있음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;동작-원리와-장점&#34;&gt;동작 원리와 장점&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;인접 노드 해시 &lt;strong&gt;H_left || H_right&lt;/strong&gt; 를 순서대로 연결해 해시를 계산하고 이를 위로 올려가며 루트 해시를 얻음&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;무결성 검증&lt;/strong&gt;
-단일 거래가 바뀌면 해당 리프에서 루트까지의 모든 경로 해시가 바뀌어 변조를 즉시 탐지할 수 있음&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;효율적 포함 증명&lt;/strong&gt;
-특정 거래가 블록에 포함되었음을 증명하려면 그 거래와 경로상의 &lt;strong&gt;형제 해시들만&lt;/strong&gt; 있으면 됨
-필요한 해시 개수는 &lt;strong&gt;O(log N)&lt;/strong&gt; 으로 작아 대역폭과 검증 비용이 작음&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;확장성 보조&lt;/strong&gt;
-리프가 1,000,000개여도 증명에 필요한 형제 해시는 약 20개 수준으로 32바이트 해시 기준 약 640바이트에 불과함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;블록-헤더와-경량-노드spv&#34;&gt;블록 헤더와 경량 노드(SPV)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;비트코인 블록 헤더는 이전 블록 해시, 머클루트, 난스 등 합의 관련 메타데이터를 포함함&lt;/li&gt;
-&lt;li&gt;경량 노드(SPV)는 &lt;strong&gt;블록 전체가 아니라 헤더 체인만&lt;/strong&gt; 받아 신뢰성을 확보하고, 개별 거래에 대해서는 풀노드로부터 &lt;strong&gt;머클 증명&lt;/strong&gt; 을 받아 포함 여부를 검증함&lt;/li&gt;
-&lt;li&gt;이 방식은 모바일·임베디드 환경에서도 실사용이 가능하게 하는 기반이 됨&lt;/li&gt;
-&lt;li&gt;이더리움은 전통적인 이진 머클트리 대신 &lt;strong&gt;머클‑패트리샤 트라이(MPT)&lt;/strong&gt; 를 사용해 거래·영수증·상태 루트를 헤더에 담아 유사한 목적을 달성함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;구현-세부와-체인별-차이&#34;&gt;구현 세부와 체인별 차이&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>이더리움 PoS(Proof of Stake) 소개</title>
