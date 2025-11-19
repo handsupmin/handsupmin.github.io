@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Saga on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/saga/</link>
+    <description>Recent content in Saga on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 19 Nov 2025 13:11:33 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/saga/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MSA 설계와 운영의 핵심 난제 3가지와 실전 해결 전략</title>
+      <link>https://blog.jsontapose.com/posts/msa-core-challenges-and-practical-solutions-90cf31/</link>
+      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/msa-core-challenges-and-practical-solutions-90cf31/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;MSA의 기술적 어려움은 결국 분산 시스템의 어려움과 동일함
+네트워크는 불안정, 데이터는 서비스별로 분산, 한 번의 요청이 여러 프로세스를 통과하는 구조 특성상 실패와 지연이 쉽게 전파됨
+리더급 실무 경험을 검증하려면 이 분산 시스템의 고통을 직접 다뤄본 흔적이 있는지 확인해야 함
+아래는 실무 난이도가 높은 세 영역과 면접 시 검증 포인트, 실전형 답변 예시 정리&lt;/p&gt;
+&lt;h3 id=&#34;분산-트랜잭션과-데이터-정합성&#34;&gt;분산 트랜잭션과 데이터 정합성&lt;/h3&gt;
+&lt;p&gt;핵심 맥락&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;모놀리식에서는 단일 DB 트랜잭션으로 주문·결제·재고 감소를 한 번에 처리 가능&lt;/li&gt;
+&lt;li&gt;MSA에서는 주문 서비스 DB, 결제 서비스 DB, 재고 서비스 DB가 분리되어 원자적 커밋 불가&lt;/li&gt;
+&lt;li&gt;일부 단계 성공 후 후속 단계 실패 시 이미 성공한 작업을 어떻게 보상할지 정의 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;면접에서 확인할 질문&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

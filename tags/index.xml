@@ -6,8 +6,78 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 18 Nov 2025 13:11:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Nov 2025 13:11:33 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Centralized-Logging</title>
+      <link>https://blog.jsontapose.com/tags/centralized-logging/</link>
+      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/centralized-logging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Circuit-Breaker</title>
+      <link>https://blog.jsontapose.com/tags/circuit-breaker/</link>
+      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/circuit-breaker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distributed-Systems</title>
+      <link>https://blog.jsontapose.com/tags/distributed-systems/</link>
+      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/distributed-systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distributed-Tracing</title>
+      <link>https://blog.jsontapose.com/tags/distributed-tracing/</link>
+      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/distributed-tracing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eventual-Consistency</title>
+      <link>https://blog.jsontapose.com/tags/eventual-consistency/</link>
+      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/eventual-consistency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microservices</title>
+      <link>https://blog.jsontapose.com/tags/microservices/</link>
+      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/microservices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Observability</title>
+      <link>https://blog.jsontapose.com/tags/observability/</link>
+      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/observability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Resiliency</title>
+      <link>https://blog.jsontapose.com/tags/resiliency/</link>
+      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/resiliency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retry-Timeout</title>
+      <link>https://blog.jsontapose.com/tags/retry-timeout/</link>
+      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/retry-timeout/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Saga</title>
+      <link>https://blog.jsontapose.com/tags/saga/</link>
+      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/saga/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Aes</title>
       <link>https://blog.jsontapose.com/tags/aes/</link>
