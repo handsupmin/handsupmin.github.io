@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 20 Nov 2025 13:10:44 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Nov 2025 13:09:50 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Async</title>
+      <link>https://blog.jsontapose.com/tags/async/</link>
+      <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/async/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Concurrency</title>
+      <link>https://blog.jsontapose.com/tags/concurrency/</link>
+      <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/concurrency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Map</title>
+      <link>https://blog.jsontapose.com/tags/map/</link>
+      <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Promise</title>
+      <link>https://blog.jsontapose.com/tags/promise/</link>
+      <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/promise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Analysis</title>
       <link>https://blog.jsontapose.com/tags/analysis/</link>
@@ -205,13 +247,6 @@
       <description></description>
     </item>
     <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Mon, 17 Nov 2025 13:11:31 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Array-Methods</title>
       <link>https://blog.jsontapose.com/tags/array-methods/</link>
       <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
@@ -237,13 +272,6 @@
       <link>https://blog.jsontapose.com/tags/functional-programming/</link>
       <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/functional-programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -286,13 +314,6 @@
       <link>https://blog.jsontapose.com/tags/sql/</link>
       <pubDate>Wed, 12 Nov 2025 13:12:19 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Async</title>
-      <link>https://blog.jsontapose.com/tags/async/</link>
-      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/async/</guid>
       <description></description>
     </item>
     <item>

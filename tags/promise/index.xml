@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Promise on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/promise/</link>
+    <description>Recent content in Promise on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 21 Nov 2025 13:09:50 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/promise/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript Promise.all과 Map 정리 – 동시 비동기 처리와 키-값 컬렉션 기본</title>
+      <link>https://blog.jsontapose.com/posts/javascript-promise-all-and-map-d2295e/</link>
+      <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/javascript-promise-all-and-map-d2295e/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;여러 비동기 작업을 한 번에 묶어 처리하거나 결과를 모아야 하는 경우가 잦음
+키-값 기반으로 데이터를 구조화해 저장하고 순회해야 하는 요구도 흔함
+이 글은 Promise.all의 동작과 주의점, Map의 핵심 사용법을 개발자 관점에서 요약 정리함&lt;/p&gt;
+&lt;h3 id=&#34;promiseall-개념과-정의&#34;&gt;Promise.all 개념과 정의&lt;/h3&gt;
+&lt;p&gt;여러 Promise를 단일 Promise로 집계하는 유틸리티
+모든 입력이 이행되면 결과를 같은 순서의 배열로 반환
+하나라도 거부되면 즉시 거부로 끝나는 fail fast 특성 보유
+입력은 Promise와 값 혼합 가능하며 값은 내부적으로 Promise.resolve로 이행 처리됨&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
