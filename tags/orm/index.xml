@@ -6,8 +6,111 @@
     <description>Recent content in Orm on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 17 Nov 2025 13:11:31 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Nov 2025 13:06:38 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/orm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prisma Client index.d.ts로 읽는 ObjektInventory 집계·그룹화 타입 구조</title>
+      <link>https://blog.jsontapose.com/posts/prisma-client-index-d-ts-objektinventory-aggregation-groupby-types-fec621/</link>
+      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/prisma-client-index-d-ts-objektinventory-aggregation-groupby-types-fec621/</guid>
+      <description>&lt;h2 id=&#34;prismaclient의-indexdts-개요&#34;&gt;@prisma/client의 index.d.ts 개요&lt;/h2&gt;
+&lt;p&gt;Prisma Client가 생성하는 index.d.ts는 모델별 쿼리 메서드와 그 입출력 타입을 정의하는 타입 소스임
+여기서는 예시 모델 ObjektInventory를 기준으로 집계 aggregation, 그룹화 groupBy, 카운트 count, 조회 find 계열 메서드의 타입 구조와 사용 맥락 정리
+핵심은 타입 안전성과 결과 형태의 명시적 제어이며, 모든 타입은 Prisma 스키마를 기반으로 자동 생성됨&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Aggregation 집계
+평균, 합, 최소, 최대, 카운트 같은 통계 요약 계산
+결과 형태를 명확히 보장하는 Output 타입과 어떤 필드를 집계할지 지정하는 Input 타입으로 구성&lt;/li&gt;
+&lt;li&gt;Group By 그룹화
+특정 필드 기준으로 그룹 묶음 생성 후 각 그룹에 집계 적용
+입력 인자 검증이 엄격하며 by, orderBy, having, take, skip 조합 규칙 존재&lt;/li&gt;
+&lt;li&gt;Count 카운트
+조건에 맞는 레코드 개수 반환
+_count를 다른 집계와 함께 요청하거나 단독 count 메서드로 호출 가능&lt;/li&gt;
+&lt;li&gt;Find 조회
+findUnique, findFirst, findMany로 조건, 정렬, 페이징, select, include를 조합해 조회
+반환 타입은 선택한 필드와 관계에 따라 좁혀짐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;타입-구조와-동작&#34;&gt;타입 구조와 동작&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;집계 결과 타입
+ObjektInventoryAvgAggregateOutputType, ObjektInventorySumAggregateOutputType, ObjektInventoryMinAggregateOutputType, ObjektInventoryMaxAggregateOutputType, ObjektInventoryCountAggregateOutputType 등으로 구성
+각 필드는 해당 타입의 스칼라값 또는 null을 가질 수 있음&lt;/li&gt;
+&lt;li&gt;집계 입력 타입
+ObjektInventoryAvgAggregateInputType, ObjektInventorySumAggregateInputType 등에서 true로 지정한 필드만 결과에 포함됨&lt;/li&gt;
+&lt;li&gt;그룹화 인자와 출력 타입
+ObjektInventoryGroupByArgs에 by로 그룹 기준 필드 지정, _count, _avg, _sum, _min, _max 중 필요한 집계 선택
+출력은 ObjektInventoryGroupByOutputType으로 각 그룹 키 필드 + 선택한 집계 결과 반환&lt;/li&gt;
+&lt;li&gt;조회 인자 타입
+ObjektInventoryFindUniqueArgs, ObjektInventoryFindFirstArgs, ObjektInventoryFindManyArgs에서 where, orderBy, cursor, take, skip, select, include 등을 타입 안전하게 지정&lt;/li&gt;
+&lt;li&gt;메서드 반환 타입 추론
+제네릭과 조건부 타입을 통해 선택한 select 또는 집계 키에 맞춰 반환 타입이 자동으로 좁혀짐
+_count를 true로 둘 경우 숫자 반환, 객체 형태를 원하면 _count { _all: true } 형태 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;사용-예시&#34;&gt;사용 예시&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;집계 예시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;aggregationResult&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;objektInventory&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;aggregate&lt;/span&gt;({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;_avg&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;objektId&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;_sum&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;lenticularPairTokenId&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;owner&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;john&amp;#39;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;그룹화 예시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;groupByResult&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;objektInventory&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;groupBy&lt;/span&gt;({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;by&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;status&amp;#39;&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;_count&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;_all&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;_avg&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;objektId&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;카운트 예시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;totalCount&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;objektInventory&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;count&lt;/span&gt;({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;owner&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;john&amp;#39;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;조건부 조회 예시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;inventories&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;objektInventory&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;owner&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;john&amp;#39;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;updatedAt&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;desc&amp;#39;&lt;/span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;take&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;10&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;제약과-주의-사항&#34;&gt;제약과 주의 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;groupBy 규칙
+by에 포함되지 않은 필드로 orderBy 또는 having을 사용할 수 없음
+take 또는 skip을 사용하는 경우 orderBy 필수
+런타임 전 타입 레벨에서 오류로 차단되어 쿼리 일관성 확보&lt;/li&gt;
+&lt;li&gt;null 가능성
+집계 결과는 조건에 맞는 레코드가 없으면 각 필드가 null이 될 수 있음
+연산 전 null 체크 필요&lt;/li&gt;
+&lt;li&gt;_count 반환 형태
+_count: true는 숫자 단일 값, _count: { _all: true }는 카운트 내역을 가진 객체 반환
+사용 목적에 맞는 형태 선택 권장&lt;/li&gt;
+&lt;li&gt;성능 고려
+불필요한 필드 조회 지양, select로 최소화
+where 조건에 인덱스 친화적 필드 사용 권장
+대규모 groupBy는 데이터베이스 리소스 부담 가능, 필요한 필드와 조건만 사용&lt;/li&gt;
+&lt;li&gt;타입 안전성
+스키마 변경 시 재생성된 index.d.ts를 기준으로 컴파일 타임 검증 수행
+any 캐스팅으로 타입 보호 우회 금지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;맥락과-활용-포인트&#34;&gt;맥락과 활용 포인트&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;데이터 분석 워크로드에서 서버 측 집계 활용으로 불필요한 애플리케이션 레벨 후처리 감소&lt;/li&gt;
+&lt;li&gt;리포트, 대시보드, 통계 API에서 groupBy + 다중 집계 조합이 유용&lt;/li&gt;
+&lt;li&gt;타입 정의가 강제하는 인자 조합 규칙으로 런타임 쿼리 오류를 사전에 방지 가능&lt;/li&gt;
+&lt;li&gt;반환 타입이 선택된 입력에 따라 좁혀지므로 응답 스키마를 명확히 설계 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
+&lt;p&gt;ObjektInventory를 예로 본 index.d.ts의 집계와 그룹화 타입은 Prisma Client가 제공하는 타입 안전 쿼리의 핵심 축임
+입력 타입으로 의도를 명시하고, 출력 타입으로 결과 스키마를 보장하는 흐름이 데이터 품질과 안정성을 높임
+그룹화 규칙과 _count 반환 형태, null 가능성 같은 세부 제약만 지키면 복잡한 통계 요구사항도 간결하게 커버 가능&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Prisma where 관계 필터 some vs every 동작 차이와 주의점</title>
       <link>https://blog.jsontapose.com/posts/prisma-some-vs-every-relationship-filter-dcd175/</link>

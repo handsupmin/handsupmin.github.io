@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 21 Nov 2025 13:09:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Nov 2025 13:06:38 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aggregation</title>
+      <link>https://blog.jsontapose.com/tags/aggregation/</link>
+      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/aggregation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://blog.jsontapose.com/tags/database/</link>
+      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Group-By</title>
+      <link>https://blog.jsontapose.com/tags/group-by/</link>
+      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/group-by/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orm</title>
+      <link>https://blog.jsontapose.com/tags/orm/</link>
+      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/orm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prisma</title>
+      <link>https://blog.jsontapose.com/tags/prisma/</link>
+      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/prisma/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type-Safety</title>
+      <link>https://blog.jsontapose.com/tags/type-safety/</link>
+      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/type-safety/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Async</title>
       <link>https://blog.jsontapose.com/tags/async/</link>
@@ -41,13 +90,6 @@
       <link>https://blog.jsontapose.com/tags/promise/</link>
       <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/promise/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -209,27 +251,6 @@
       <link>https://blog.jsontapose.com/tags/trapdoor-function/</link>
       <pubDate>Tue, 18 Nov 2025 13:11:23 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/trapdoor-function/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://blog.jsontapose.com/tags/database/</link>
-      <pubDate>Mon, 17 Nov 2025 13:11:31 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/database/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Orm</title>
-      <link>https://blog.jsontapose.com/tags/orm/</link>
-      <pubDate>Mon, 17 Nov 2025 13:11:31 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/orm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Prisma</title>
-      <link>https://blog.jsontapose.com/tags/prisma/</link>
-      <pubDate>Mon, 17 Nov 2025 13:11:31 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/prisma/</guid>
       <description></description>
     </item>
     <item>
