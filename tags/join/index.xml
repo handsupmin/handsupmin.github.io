@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Join on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/join/</link>
+    <description>Recent content in Join on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 23 Nov 2025 13:06:21 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/join/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prisma에는 왜 JOIN이 없을까: ORM 패턴, 스키마, 내부 동작 정리</title>
+      <link>https://blog.jsontapose.com/posts/why-prisma-has-no-join-ed7155/</link>
+      <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/why-prisma-has-no-join-ed7155/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Prisma로 관계형 데이터베이스를 다루다 보면 자연스럽게 드는 질문이 있음
+Prisma에서는 JOIN이 어디로 갔나 하는 질문임
+개발자가 작성하는 Prisma Client API에는 JOIN이 없고, 서브쿼리도 보이지 않음
+정말로 없는지, 없다면 왜 그런지, 어떤 트레이드오프가 있는지 정리함&lt;/p&gt;
+&lt;h3 id=&#34;orm이란-무엇인가&#34;&gt;ORM이란 무엇인가&lt;/h3&gt;
+&lt;p&gt;ORM은 객체와 관계형 데이터베이스 간의 매핑을 제공하는 아이디어이자 구현체 집합을 의미함
+애플리케이션에서 모델을 통해 데이터베이스 테이블을 간접 제어하는 추상화 계층 제공
+SQL을 직접 작성하지 않고 데이터 접근 로직을 일관된 API로 수행 가능
+데이터베이스 의존성 완화 효과 기대&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

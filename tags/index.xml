@@ -6,8 +6,64 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 22 Nov 2025 13:06:38 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Nov 2025 13:06:21 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Active-Record</title>
+      <link>https://blog.jsontapose.com/tags/active-record/</link>
+      <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/active-record/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Mapper</title>
+      <link>https://blog.jsontapose.com/tags/data-mapper/</link>
+      <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/data-mapper/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://blog.jsontapose.com/tags/database/</link>
+      <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Join</title>
+      <link>https://blog.jsontapose.com/tags/join/</link>
+      <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/join/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orm</title>
+      <link>https://blog.jsontapose.com/tags/orm/</link>
+      <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/orm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prisma</title>
+      <link>https://blog.jsontapose.com/tags/prisma/</link>
+      <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/prisma/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sql</title>
+      <link>https://blog.jsontapose.com/tags/sql/</link>
+      <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sql/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Aggregation</title>
       <link>https://blog.jsontapose.com/tags/aggregation/</link>
@@ -16,31 +72,10 @@
       <description></description>
     </item>
     <item>
-      <title>Database</title>
-      <link>https://blog.jsontapose.com/tags/database/</link>
-      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/database/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Group-By</title>
       <link>https://blog.jsontapose.com/tags/group-by/</link>
       <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/group-by/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Orm</title>
-      <link>https://blog.jsontapose.com/tags/orm/</link>
-      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/orm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Prisma</title>
-      <link>https://blog.jsontapose.com/tags/prisma/</link>
-      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/prisma/</guid>
       <description></description>
     </item>
     <item>
@@ -317,24 +352,10 @@
       <description></description>
     </item>
     <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Wed, 12 Nov 2025 13:12:19 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Query-Patterns</title>
       <link>https://blog.jsontapose.com/tags/query-patterns/</link>
       <pubDate>Wed, 12 Nov 2025 13:12:19 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/query-patterns/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sql</title>
-      <link>https://blog.jsontapose.com/tags/sql/</link>
-      <pubDate>Wed, 12 Nov 2025 13:12:19 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sql/</guid>
       <description></description>
     </item>
     <item>
