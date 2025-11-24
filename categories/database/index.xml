@@ -6,8 +6,55 @@
     <description>Recent content in Database on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 20 Oct 2025 13:10:30 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Nov 2025 13:12:08 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL 테이블 이름 변경 RENAME TABLE vs ALTER TABLE 정리</title>
+      <link>https://blog.jsontapose.com/posts/mysql-rename-table-vs-alter-table-470e90/</link>
+      <pubDate>Mon, 24 Nov 2025 13:12:08 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/mysql-rename-table-vs-alter-table-470e90/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;테이블 이름 변경은 ALTER TABLE로도 가능하지만, RENAME TABLE을 쓰면 다수 테이블을 한 번에 처리 가능하며 같은 서버 내 다른 데이터베이스로 이동까지 가능함&lt;/p&gt;
+&lt;h3 id=&#34;핵심-차이&#34;&gt;핵심 차이&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ALTER TABLE RENAME은 단일 테이블 대상&lt;/li&gt;
+&lt;li&gt;RENAME TABLE은 여러 테이블을 한 문장으로 변경 가능&lt;/li&gt;
+&lt;li&gt;스키마 간 이동 지원 current_db.table에서 other_db.table로 변경 가능&lt;/li&gt;
+&lt;li&gt;동일 트랜잭션처럼 동작하는 원자성 제공, 다중 변경 중 하나라도 실패 시 전체 미적용&lt;/li&gt;
+&lt;li&gt;권한 요구 사항 존재, 원본 테이블에 ALTER와 DROP, 대상 스키마에 CREATE 권한 필요&lt;/li&gt;
+&lt;li&gt;트리거와 외래키 메타데이터는 함께 유지되나, 뷰나 저장 프로시저의 하드코딩된 참조는 자동 갱신되지 않음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;사용법&#34;&gt;사용법&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;단일 테이블 이름 변경&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;RENAME&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; old_table &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; new_table;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;단일 테이블 이름 변경 ALTER 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ALTER&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; old_table &lt;span style=&#34;color:#66d9ef&#34;&gt;RENAME&lt;/span&gt; new_table;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;다수 테이블 이름 일괄 변경&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;RENAME&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; old_table1 &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; new_table1,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;             old_table2 &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; new_table2,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;             old_table3 &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; new_table3;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;다른 데이터베이스로 이동 같은 서버 내&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;RENAME&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; current_db.&lt;span style=&#34;color:#66d9ef&#34;&gt;table_name&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; other_db.&lt;span style=&#34;color:#66d9ef&#34;&gt;table_name&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주의-사항&#34;&gt;주의 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;대상 이름이 이미 존재하면 실패&lt;/li&gt;
+&lt;li&gt;교차 서버 이동 불가, 같은 서버 인스턴스 내 스키마 간 이동만 가능&lt;/li&gt;
+&lt;li&gt;실행 시 메타데이터 락 획득, 짧은 구간 동안 읽기나 쓰기 대기 가능&lt;/li&gt;
+&lt;li&gt;배치 변경 전 사전 검증 권장, 이름 충돌 여부와 권한 확인&lt;/li&gt;
+&lt;li&gt;뷰나 프로시저 참조는 수동 점검 필요, 린트나 간단한 탐색 쿼리로 영향 범위 확인 권장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;정리&#34;&gt;정리&lt;/h3&gt;
+&lt;p&gt;단일 변경만 필요하면 ALTER로 충분하나, 다수 변경이나 스키마 이동까지 고려하면 RENAME TABLE이 더 실용적 선택
+원자적 일괄 변경과 스키마 간 이동을 활용하되, 권한과 의존성 영향 검증을 선행할 것&lt;/p&gt;</description>
+    </item>
     <item>
       <title>SQL LIMIT와 OFFSET 사용법 정리: 행 개수 제한과 페이징</title>
       <link>https://blog.jsontapose.com/posts/sql-limit-offset-basics-4a9880/</link>
