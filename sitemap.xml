@@ -24,17 +24,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2025-11-24T13:12:08+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/amm-dex-slippage-4c7cd0/</loc>
+    <lastmod>2025-11-25T13:11:46+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/mysql-rename-table-vs-alter-table-470e90/</loc>
-    <lastmod>2025-11-24T13:12:08+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/</loc>
+    <lastmod>2025-11-25T13:11:46+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2025-11-25T13:11:46+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/mysql-rename-table-vs-alter-table-470e90/</loc>
     <lastmod>2025-11-24T13:12:08+00:00</lastmod>
     <priority>0.5</priority>
   </url>

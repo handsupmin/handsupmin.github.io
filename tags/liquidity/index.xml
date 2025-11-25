@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Liquidity on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/liquidity/</link>
+    <description>Recent content in Liquidity on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 25 Nov 2025 13:11:46 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/liquidity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMM DEX에서 슬리피지 이해와 허용치 설정</title>
+      <link>https://blog.jsontapose.com/posts/amm-dex-slippage-4c7cd0/</link>
+      <pubDate>Tue, 25 Nov 2025 13:11:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/amm-dex-slippage-4c7cd0/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;슬리피지(slippage)는 내가 예상한 가격과 실제 체결 가격의 차이를 의미함
+분산형 거래소 환경에서는 블록 포함 지연과 유동성 구조 때문에 발생 빈도가 높음&lt;/p&gt;
+&lt;h3 id=&#34;슬리피지가-발생하는-이유&#34;&gt;슬리피지가 발생하는 이유&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;유동성 부족
+특정 토큰 페어의 유동성 풀이 얕으면 작은 주문에도 가격 영향 커짐&lt;/li&gt;
+&lt;li&gt;대량 주문
+시장 규모 대비 큰 금액을 한 번에 실행 시 풀 내 토큰 비율이 급격히 변해 체결 평균가가 악화됨&lt;/li&gt;
+&lt;li&gt;시장 변동성
+트랜잭션 제출 시점과 블록에 포함되는 시점 사이 외부 가격 급변으로 기대 가격과 괴리 발생&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;amm에서의-동작&#34;&gt;AMM에서의 동작&lt;/h3&gt;
+&lt;p&gt;대부분의 DEX는 AMM을 사용하며 풀 내 두 토큰의 비율로 가격이 정해짐. 단순화된 상수곱 x·y=k 모델 기준으로 설명함&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
