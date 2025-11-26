@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 25 Nov 2025 13:11:46 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Nov 2025 13:13:16 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,56 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RSA 암호의 원리와 키 생성, 암복호화 정리</title>
+      <link>https://blog.jsontapose.com/posts/rsa-principles-key-generation-encryption-decryption-789bd1/</link>
+      <pubDate>Wed, 26 Nov 2025 13:13:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/rsa-principles-key-generation-encryption-decryption-789bd1/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;비대칭 암호에서 말하는 어려운 문제와 그 활용을 RSA를 통해 개념 위주로 정리함
+핵심은 소인수분해의 어려움과 모듈러 거듭제곱의 성질을 결합한 설계임&lt;/p&gt;
+&lt;h3 id=&#34;rsa-암호&#34;&gt;RSA 암호&lt;/h3&gt;
+&lt;p&gt;RSA는 IFP(Integer Factorization Problem), 즉 정수 소인수분해 문제에 기반함
+n = p × q로 구성된 큰 합성수 n에 대해 p, q를 곱해 n을 만드는 일은 쉽지만 n만으로 p, q를 찾는 일은 어려움
+이 비대칭성이 공개키로 암호화하고 개인키로 복호화하는 구조를 가능하게 함&lt;/p&gt;
+&lt;h3 id=&#34;수론-기초&#34;&gt;수론 기초&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;소수 정의
+1보다 크고 ±1, ±p만을 약수로 가지는 정수 p를 소수라 함&lt;/li&gt;
+&lt;li&gt;소인수분해의 유일성
+1보다 큰 모든 정수 a는 소수의 거듭제곱 곱 a = p1^α1 · p2^α2 · … · pt^αt 로 단 한 가지 방식으로 표현 가능&lt;/li&gt;
+&lt;li&gt;서로소와 최대공약수
+gcd(a, b) = 1이면 a와 b는 서로소 관계&lt;/li&gt;
+&lt;li&gt;모듈러 연산과 합동
+임의의 정수 a와 양의 정수 n에 대해 a = qn + r, 0 ≤ r &amp;lt; n, a mod n = r
+a ≡ b (mod n)은 a mod n과 b mod n이 같음을 의미함&lt;/li&gt;
+&lt;li&gt;오일러 피 함수 ϕ(n)
+1 ≤ k ≤ n 중 n과 서로소인 정수의 개수
+p, q가 서로 다른 소수일 때 ϕ(pq) = (p − 1)(q − 1)&lt;/li&gt;
+&lt;li&gt;페르마의 소정리
+p가 소수이고 gcd(a, p) = 1이면 a^(p−1) ≡ 1 (mod p)&lt;/li&gt;
+&lt;li&gt;오일러의 정리
+gcd(a, n) = 1이면 a^ϕ(n) ≡ 1 (mod n)
+따라서 n = pq에서 gcd(m, n) = 1이면 m^(k·ϕ(n) + 1) ≡ m (mod n) 성립&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;키-생성&#34;&gt;키 생성&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;서로 다른 큰 소수 p, q 선택&lt;/li&gt;
+&lt;li&gt;n = p × q, ϕ(n) = (p − 1)(q − 1) 계산&lt;/li&gt;
+&lt;li&gt;1 &amp;lt; e &amp;lt; ϕ(n)이고 gcd(e, ϕ(n)) = 1인 e 선택&lt;/li&gt;
+&lt;li&gt;ed ≡ 1 (mod ϕ(n))을 만족하는 d 계산, 즉 d = e의 모듈러 역원&lt;/li&gt;
+&lt;li&gt;공개키 (n, e), 개인키 (n, d)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;암호화와-복호화&#34;&gt;암호화와 복호화&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;암호화 C = M^e mod n, 0 &amp;lt; M &amp;lt; n에서 M은 평문, C는 암호문&lt;/li&gt;
+&lt;li&gt;복호화 M = C^d mod n&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;왜-복호화가-성립하는가&#34;&gt;왜 복호화가 성립하는가&lt;/h3&gt;
+&lt;p&gt;C^d = (M^e)^d = M^(ed)이며 키 생성에서 ed = k·ϕ(n) + 1을 만족
+gcd(M, n) = 1이면 오일러의 정리로 M^ϕ(n) ≡ 1 (mod n) 이므로 M^(k·ϕ(n) + 1) ≡ M (mod n) 성립
+M이 n과 서로소가 아닌 특수한 경우에도 p, q 각각에 대한 합동을 보아 중국인의 나머지 정리로 같은 결론에 도달 가능이라는 점만 언급&lt;/p&gt;</description>
     </item>
     <item>
       <title>AMM DEX에서 슬리피지 이해와 허용치 설정</title>
