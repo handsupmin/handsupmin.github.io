@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 25 Nov 2025 13:11:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Nov 2025 13:11:13 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean-Code</title>
+      <link>https://blog.jsontapose.com/tags/clean-code/</link>
+      <pubDate>Thu, 27 Nov 2025 13:11:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/clean-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Control-Flow</title>
+      <link>https://blog.jsontapose.com/tags/control-flow/</link>
+      <pubDate>Thu, 27 Nov 2025 13:11:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/control-flow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Thu, 27 Nov 2025 13:11:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Patterns</title>
+      <link>https://blog.jsontapose.com/tags/patterns/</link>
+      <pubDate>Thu, 27 Nov 2025 13:11:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/patterns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Refactoring</title>
+      <link>https://blog.jsontapose.com/tags/refactoring/</link>
+      <pubDate>Thu, 27 Nov 2025 13:11:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/refactoring/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Amm</title>
       <link>https://blog.jsontapose.com/tags/amm/</link>
@@ -139,13 +174,6 @@
       <link>https://blog.jsontapose.com/tags/concurrency/</link>
       <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/concurrency/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -342,13 +370,6 @@
       <link>https://blog.jsontapose.com/tags/testing/</link>
       <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Clean-Code</title>
-      <link>https://blog.jsontapose.com/tags/clean-code/</link>
-      <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/clean-code/</guid>
       <description></description>
     </item>
     <item>

@@ -6,8 +6,18 @@
     <description>Recent content in Javascript on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 21 Nov 2025 13:09:50 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Nov 2025 13:11:13 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript에서 switch를 표현식처럼 쓰는 방법과 switch(true) 패턴</title>
+      <link>https://blog.jsontapose.com/posts/javascript-switch-expression-and-switch-true-pattern-c85564/</link>
+      <pubDate>Thu, 27 Nov 2025 13:11:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/javascript-switch-expression-and-switch-true-pattern-c85564/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;조건 분기에서 switch는 여전히 많이 쓰이는 구문임. 다만 switch는 문(statement)라서 값을 곧바로 반환하기엔 번거로운 경우가 있음. 이 글은 두 가지 실용 패턴을 정리함. 객체 매핑으로 switch를 표현식처럼 다루는 방식과, 여러 불리언 조건을 깔끔하게 열거하는 switch(true) 패턴임. 둘 다 기존 if/else 또는 전통적 switch를 대체하는 선택지로 가독성과 유지보수에 이점이 있는 케이스가 존재함&lt;/p&gt;
+&lt;h3 id=&#34;전통적-switch-vs-객체-매핑&#34;&gt;전통적 switch vs 객체 매핑&lt;/h3&gt;
+&lt;p&gt;전통적 switch는 명령형으로 흐름을 기술하는 데 적합함. 그러나 단순 키-값 대응이라면 객체 매핑이 더 짧고 의도를 드러냄&lt;/p&gt;</description>
+    </item>
     <item>
       <title>JavaScript Promise.all과 Map 정리 – 동시 비동기 처리와 키-값 컬렉션 기본</title>
       <link>https://blog.jsontapose.com/posts/javascript-promise-all-and-map-d2295e/</link>
