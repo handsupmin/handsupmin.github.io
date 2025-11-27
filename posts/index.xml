@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 26 Nov 2025 13:13:16 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Nov 2025 13:11:46 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,56 +88,6 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>RSA 암호의 원리와 키 생성, 암복호화 정리</title>
-      <link>https://blog.jsontapose.com/posts/rsa-principles-key-generation-encryption-decryption-789bd1/</link>
-      <pubDate>Wed, 26 Nov 2025 13:13:16 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/rsa-principles-key-generation-encryption-decryption-789bd1/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;비대칭 암호에서 말하는 어려운 문제와 그 활용을 RSA를 통해 개념 위주로 정리함
-핵심은 소인수분해의 어려움과 모듈러 거듭제곱의 성질을 결합한 설계임&lt;/p&gt;
-&lt;h3 id=&#34;rsa-암호&#34;&gt;RSA 암호&lt;/h3&gt;
-&lt;p&gt;RSA는 IFP(Integer Factorization Problem), 즉 정수 소인수분해 문제에 기반함
-n = p × q로 구성된 큰 합성수 n에 대해 p, q를 곱해 n을 만드는 일은 쉽지만 n만으로 p, q를 찾는 일은 어려움
-이 비대칭성이 공개키로 암호화하고 개인키로 복호화하는 구조를 가능하게 함&lt;/p&gt;
-&lt;h3 id=&#34;수론-기초&#34;&gt;수론 기초&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;소수 정의
-1보다 크고 ±1, ±p만을 약수로 가지는 정수 p를 소수라 함&lt;/li&gt;
-&lt;li&gt;소인수분해의 유일성
-1보다 큰 모든 정수 a는 소수의 거듭제곱 곱 a = p1^α1 · p2^α2 · … · pt^αt 로 단 한 가지 방식으로 표현 가능&lt;/li&gt;
-&lt;li&gt;서로소와 최대공약수
-gcd(a, b) = 1이면 a와 b는 서로소 관계&lt;/li&gt;
-&lt;li&gt;모듈러 연산과 합동
-임의의 정수 a와 양의 정수 n에 대해 a = qn + r, 0 ≤ r &amp;lt; n, a mod n = r
-a ≡ b (mod n)은 a mod n과 b mod n이 같음을 의미함&lt;/li&gt;
-&lt;li&gt;오일러 피 함수 ϕ(n)
-1 ≤ k ≤ n 중 n과 서로소인 정수의 개수
-p, q가 서로 다른 소수일 때 ϕ(pq) = (p − 1)(q − 1)&lt;/li&gt;
-&lt;li&gt;페르마의 소정리
-p가 소수이고 gcd(a, p) = 1이면 a^(p−1) ≡ 1 (mod p)&lt;/li&gt;
-&lt;li&gt;오일러의 정리
-gcd(a, n) = 1이면 a^ϕ(n) ≡ 1 (mod n)
-따라서 n = pq에서 gcd(m, n) = 1이면 m^(k·ϕ(n) + 1) ≡ m (mod n) 성립&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;키-생성&#34;&gt;키 생성&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;서로 다른 큰 소수 p, q 선택&lt;/li&gt;
-&lt;li&gt;n = p × q, ϕ(n) = (p − 1)(q − 1) 계산&lt;/li&gt;
-&lt;li&gt;1 &amp;lt; e &amp;lt; ϕ(n)이고 gcd(e, ϕ(n)) = 1인 e 선택&lt;/li&gt;
-&lt;li&gt;ed ≡ 1 (mod ϕ(n))을 만족하는 d 계산, 즉 d = e의 모듈러 역원&lt;/li&gt;
-&lt;li&gt;공개키 (n, e), 개인키 (n, d)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;암호화와-복호화&#34;&gt;암호화와 복호화&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;암호화 C = M^e mod n, 0 &amp;lt; M &amp;lt; n에서 M은 평문, C는 암호문&lt;/li&gt;
-&lt;li&gt;복호화 M = C^d mod n&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;왜-복호화가-성립하는가&#34;&gt;왜 복호화가 성립하는가&lt;/h3&gt;
-&lt;p&gt;C^d = (M^e)^d = M^(ed)이며 키 생성에서 ed = k·ϕ(n) + 1을 만족
-gcd(M, n) = 1이면 오일러의 정리로 M^ϕ(n) ≡ 1 (mod n) 이므로 M^(k·ϕ(n) + 1) ≡ M (mod n) 성립
-M이 n과 서로소가 아닌 특수한 경우에도 p, q 각각에 대한 합동을 보아 중국인의 나머지 정리로 같은 결론에 도달 가능이라는 점만 언급&lt;/p&gt;</description>
     </item>
     <item>
       <title>AMM DEX에서 슬리피지 이해와 허용치 설정</title>
@@ -223,109 +173,6 @@ SQL을 직접 작성하지 않고 데이터 접근 로직을 일관된 API로 �
 데이터베이스 의존성 완화 효과 기대&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Prisma Client index.d.ts로 읽는 ObjektInventory 집계·그룹화 타입 구조</title>
-      <link>https://blog.jsontapose.com/posts/prisma-client-index-d-ts-objektinventory-aggregation-groupby-types-fec621/</link>
-      <pubDate>Sat, 22 Nov 2025 13:06:38 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/prisma-client-index-d-ts-objektinventory-aggregation-groupby-types-fec621/</guid>
-      <description>&lt;h2 id=&#34;prismaclient의-indexdts-개요&#34;&gt;@prisma/client의 index.d.ts 개요&lt;/h2&gt;
-&lt;p&gt;Prisma Client가 생성하는 index.d.ts는 모델별 쿼리 메서드와 그 입출력 타입을 정의하는 타입 소스임
-여기서는 예시 모델 ObjektInventory를 기준으로 집계 aggregation, 그룹화 groupBy, 카운트 count, 조회 find 계열 메서드의 타입 구조와 사용 맥락 정리
-핵심은 타입 안전성과 결과 형태의 명시적 제어이며, 모든 타입은 Prisma 스키마를 기반으로 자동 생성됨&lt;/p&gt;
-&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Aggregation 집계
-평균, 합, 최소, 최대, 카운트 같은 통계 요약 계산
-결과 형태를 명확히 보장하는 Output 타입과 어떤 필드를 집계할지 지정하는 Input 타입으로 구성&lt;/li&gt;
-&lt;li&gt;Group By 그룹화
-특정 필드 기준으로 그룹 묶음 생성 후 각 그룹에 집계 적용
-입력 인자 검증이 엄격하며 by, orderBy, having, take, skip 조합 규칙 존재&lt;/li&gt;
-&lt;li&gt;Count 카운트
-조건에 맞는 레코드 개수 반환
-_count를 다른 집계와 함께 요청하거나 단독 count 메서드로 호출 가능&lt;/li&gt;
-&lt;li&gt;Find 조회
-findUnique, findFirst, findMany로 조건, 정렬, 페이징, select, include를 조합해 조회
-반환 타입은 선택한 필드와 관계에 따라 좁혀짐&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;타입-구조와-동작&#34;&gt;타입 구조와 동작&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;집계 결과 타입
-ObjektInventoryAvgAggregateOutputType, ObjektInventorySumAggregateOutputType, ObjektInventoryMinAggregateOutputType, ObjektInventoryMaxAggregateOutputType, ObjektInventoryCountAggregateOutputType 등으로 구성
-각 필드는 해당 타입의 스칼라값 또는 null을 가질 수 있음&lt;/li&gt;
-&lt;li&gt;집계 입력 타입
-ObjektInventoryAvgAggregateInputType, ObjektInventorySumAggregateInputType 등에서 true로 지정한 필드만 결과에 포함됨&lt;/li&gt;
-&lt;li&gt;그룹화 인자와 출력 타입
-ObjektInventoryGroupByArgs에 by로 그룹 기준 필드 지정, _count, _avg, _sum, _min, _max 중 필요한 집계 선택
-출력은 ObjektInventoryGroupByOutputType으로 각 그룹 키 필드 + 선택한 집계 결과 반환&lt;/li&gt;
-&lt;li&gt;조회 인자 타입
-ObjektInventoryFindUniqueArgs, ObjektInventoryFindFirstArgs, ObjektInventoryFindManyArgs에서 where, orderBy, cursor, take, skip, select, include 등을 타입 안전하게 지정&lt;/li&gt;
-&lt;li&gt;메서드 반환 타입 추론
-제네릭과 조건부 타입을 통해 선택한 select 또는 집계 키에 맞춰 반환 타입이 자동으로 좁혀짐
-_count를 true로 둘 경우 숫자 반환, 객체 형태를 원하면 _count { _all: true } 형태 사용&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;사용-예시&#34;&gt;사용 예시&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;집계 예시&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;aggregationResult&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;objektInventory&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;aggregate&lt;/span&gt;({
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;_avg&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;objektId&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;_sum&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;lenticularPairTokenId&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;owner&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;john&amp;#39;&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;그룹화 예시&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;groupByResult&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;objektInventory&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;groupBy&lt;/span&gt;({
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;by&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;status&amp;#39;&lt;/span&gt;],
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;_count&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;_all&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;_avg&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;objektId&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;카운트 예시&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;totalCount&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;objektInventory&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;count&lt;/span&gt;({
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;owner&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;john&amp;#39;&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;조건부 조회 예시&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;inventories&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;objektInventory&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;({
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;owner&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;john&amp;#39;&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;updatedAt&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;desc&amp;#39;&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;take&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;10&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;})
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;제약과-주의-사항&#34;&gt;제약과 주의 사항&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;groupBy 규칙
-by에 포함되지 않은 필드로 orderBy 또는 having을 사용할 수 없음
-take 또는 skip을 사용하는 경우 orderBy 필수
-런타임 전 타입 레벨에서 오류로 차단되어 쿼리 일관성 확보&lt;/li&gt;
-&lt;li&gt;null 가능성
-집계 결과는 조건에 맞는 레코드가 없으면 각 필드가 null이 될 수 있음
-연산 전 null 체크 필요&lt;/li&gt;
-&lt;li&gt;_count 반환 형태
-_count: true는 숫자 단일 값, _count: { _all: true }는 카운트 내역을 가진 객체 반환
-사용 목적에 맞는 형태 선택 권장&lt;/li&gt;
-&lt;li&gt;성능 고려
-불필요한 필드 조회 지양, select로 최소화
-where 조건에 인덱스 친화적 필드 사용 권장
-대규모 groupBy는 데이터베이스 리소스 부담 가능, 필요한 필드와 조건만 사용&lt;/li&gt;
-&lt;li&gt;타입 안전성
-스키마 변경 시 재생성된 index.d.ts를 기준으로 컴파일 타임 검증 수행
-any 캐스팅으로 타입 보호 우회 금지&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;맥락과-활용-포인트&#34;&gt;맥락과 활용 포인트&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;데이터 분석 워크로드에서 서버 측 집계 활용으로 불필요한 애플리케이션 레벨 후처리 감소&lt;/li&gt;
-&lt;li&gt;리포트, 대시보드, 통계 API에서 groupBy + 다중 집계 조합이 유용&lt;/li&gt;
-&lt;li&gt;타입 정의가 강제하는 인자 조합 규칙으로 런타임 쿼리 오류를 사전에 방지 가능&lt;/li&gt;
-&lt;li&gt;반환 타입이 선택된 입력에 따라 좁혀지므로 응답 스키마를 명확히 설계 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
-&lt;p&gt;ObjektInventory를 예로 본 index.d.ts의 집계와 그룹화 타입은 Prisma Client가 제공하는 타입 안전 쿼리의 핵심 축임
-입력 타입으로 의도를 명시하고, 출력 타입으로 결과 스키마를 보장하는 흐름이 데이터 품질과 안정성을 높임
-그룹화 규칙과 _count 반환 형태, null 가능성 같은 세부 제약만 지키면 복잡한 통계 요구사항도 간결하게 커버 가능&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>JavaScript Promise.all과 Map 정리 – 동시 비동기 처리와 키-값 컬렉션 기본</title>
       <link>https://blog.jsontapose.com/posts/javascript-promise-all-and-map-d2295e/</link>
       <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
@@ -355,42 +202,6 @@ any 캐스팅으로 타입 보호 우회 금지&lt;/li&gt;
 중복 없이 하나의 요소가 정확히 하나의 범주에만 속함
 전체포괄은 분류된 요소들을 모두 합치면 전체 모수를 빠짐없이 덮는 상태를 의미함
 누락 없이 전체 공간을 커버하는 분할이 목표임&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>MSA 설계와 운영의 핵심 난제 3가지와 실전 해결 전략</title>
-      <link>https://blog.jsontapose.com/posts/msa-core-challenges-and-practical-solutions-90cf31/</link>
-      <pubDate>Wed, 19 Nov 2025 13:11:33 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/msa-core-challenges-and-practical-solutions-90cf31/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;MSA의 기술적 어려움은 결국 분산 시스템의 어려움과 동일함
-네트워크는 불안정, 데이터는 서비스별로 분산, 한 번의 요청이 여러 프로세스를 통과하는 구조 특성상 실패와 지연이 쉽게 전파됨
-리더급 실무 경험을 검증하려면 이 분산 시스템의 고통을 직접 다뤄본 흔적이 있는지 확인해야 함
-아래는 실무 난이도가 높은 세 영역과 면접 시 검증 포인트, 실전형 답변 예시 정리&lt;/p&gt;
-&lt;h3 id=&#34;분산-트랜잭션과-데이터-정합성&#34;&gt;분산 트랜잭션과 데이터 정합성&lt;/h3&gt;
-&lt;p&gt;핵심 맥락&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;모놀리식에서는 단일 DB 트랜잭션으로 주문·결제·재고 감소를 한 번에 처리 가능&lt;/li&gt;
-&lt;li&gt;MSA에서는 주문 서비스 DB, 결제 서비스 DB, 재고 서비스 DB가 분리되어 원자적 커밋 불가&lt;/li&gt;
-&lt;li&gt;일부 단계 성공 후 후속 단계 실패 시 이미 성공한 작업을 어떻게 보상할지 정의 필요&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;면접에서 확인할 질문&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>암호 시스템 기초: 대칭·비대칭 암호, 키와 트랩도어 함수</title>
-      <link>https://blog.jsontapose.com/posts/crypto-basics-symmetric-asymmetric-trapdoor-functions-69a493/</link>
-      <pubDate>Tue, 18 Nov 2025 13:11:23 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/crypto-basics-symmetric-asymmetric-trapdoor-functions-69a493/</guid>
-      <description>&lt;p&gt;본 글은 정보보호 개론 맥락에서 암호 시스템의 기본 개념과 동작 방식을 정리한 내용임&lt;/p&gt;
-&lt;h3 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h3&gt;
-&lt;p&gt;암호학은 정보의 안전한 전달과 저장을 위한 방법론을 다루는 학문임
-정보 보안의 목표는 CIA로 요약됨&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;무결성 중간 위조·변조 불가&lt;/li&gt;
-&lt;li&gt;기밀성 허용되지 않은 자는 내용 파악 불가&lt;/li&gt;
-&lt;li&gt;가용성 적절한 시점에 허가된 사용자만 접근 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;현대 보안에서는 암호 알고리즘이 공개되어도 안전해야 한다는 전제를 둠 즉 안전성은 비밀 알고리즘이 아니라 키에 의존함
-컴퓨터가 다루는 모든 정보는 이진수이므로 보호는 결국 비트열을 다른 형태로 변환하는 문제로 귀결됨&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prisma where 관계 필터 some vs every 동작 차이와 주의점</title>
