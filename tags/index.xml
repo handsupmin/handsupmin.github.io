@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 25 Nov 2025 13:11:46 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Nov 2025 13:10:38 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend</title>
+      <link>https://blog.jsontapose.com/tags/backend/</link>
+      <pubDate>Fri, 28 Nov 2025 13:10:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backoff</title>
+      <link>https://blog.jsontapose.com/tags/backoff/</link>
+      <pubDate>Fri, 28 Nov 2025 13:10:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/backoff/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exponential-Backoff</title>
+      <link>https://blog.jsontapose.com/tags/exponential-backoff/</link>
+      <pubDate>Fri, 28 Nov 2025 13:10:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/exponential-backoff/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jitter</title>
+      <link>https://blog.jsontapose.com/tags/jitter/</link>
+      <pubDate>Fri, 28 Nov 2025 13:10:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/jitter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Resilience</title>
+      <link>https://blog.jsontapose.com/tags/resilience/</link>
+      <pubDate>Fri, 28 Nov 2025 13:10:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/resilience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retry</title>
+      <link>https://blog.jsontapose.com/tags/retry/</link>
+      <pubDate>Fri, 28 Nov 2025 13:10:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/retry/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Amm</title>
       <link>https://blog.jsontapose.com/tags/amm/</link>
@@ -468,13 +510,6 @@
       <link>https://blog.jsontapose.com/tags/swagger/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/swagger/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Backend</title>
-      <link>https://blog.jsontapose.com/tags/backend/</link>
-      <pubDate>Wed, 29 Oct 2025 13:11:51 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/backend/</guid>
       <description></description>
     </item>
     <item>
