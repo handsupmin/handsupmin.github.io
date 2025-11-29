@@ -6,8 +6,36 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 28 Nov 2025 13:10:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Nov 2025 13:08:21 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Sat, 29 Nov 2025 13:08:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Language-Basics</title>
+      <link>https://blog.jsontapose.com/tags/language-basics/</link>
+      <pubDate>Sat, 29 Nov 2025 13:08:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/language-basics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Truthy-Falsy</title>
+      <link>https://blog.jsontapose.com/tags/truthy-falsy/</link>
+      <pubDate>Sat, 29 Nov 2025 13:08:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/truthy-falsy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type-Coercion</title>
+      <link>https://blog.jsontapose.com/tags/type-coercion/</link>
+      <pubDate>Sat, 29 Nov 2025 13:08:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/type-coercion/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Backend</title>
       <link>https://blog.jsontapose.com/tags/backend/</link>
@@ -181,13 +209,6 @@
       <link>https://blog.jsontapose.com/tags/concurrency/</link>
       <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/concurrency/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
