@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Innodb on HandsLog</title>
-    <link>https://blog.jsontapose.com/tags/innodb/</link>
-    <description>Recent content in Innodb on HandsLog</description>
+    <title>Query-Optimization on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/query-optimization/</link>
+    <description>Recent content in Query-Optimization on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 30 Nov 2025 13:07:58 +0000</lastBuildDate>
-    <atom:link href="https://blog.jsontapose.com/tags/innodb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/query-optimization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>InnoDB 복합 인덱스와 Left-most Prefix 원칙 정리</title>
       <link>https://blog.jsontapose.com/posts/innodb-composite-index-left-most-prefix-cb4ef3/</link>
@@ -77,48 +77,6 @@
 &lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/innodb-index-types.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/innodb-index-types.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/covering-indexes.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/covering-indexes.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>MySQL InnoDB 버퍼 풀 개념과 동작 원리, 크기 설정 가이드</title>
-      <link>https://blog.jsontapose.com/posts/mysql-innodb-buffer-pool-c63a29/</link>
-      <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/mysql-innodb-buffer-pool-c63a29/</guid>
-      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
-&lt;p&gt;InnoDB 버퍼 풀은 데이터와 인덱스 페이지를 &lt;strong&gt;메모리에 캐싱&lt;/strong&gt;하는 영역임
-디스크 I/O를 획기적으로 줄여 지연 시간을 낮추는 게 목적임
-InnoDB 스토리지 엔진(트랜잭션, MVCC, 행 단위 락 지원) 성능의 &lt;strong&gt;심장부&lt;/strong&gt;라 할 수 있음&lt;/p&gt;
-&lt;p&gt;쉽게 말해, 자주 쓰는 데이터와 인덱스를 디스크 대신 메모리에 올려두고 처리하는 구조임&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;버퍼-풀-구성-요소&#34;&gt;버퍼 풀 구성 요소&lt;/h2&gt;
-&lt;p&gt;버퍼 풀에는 주로 이런 페이지(기본 16KB)가 올라옴&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;데이터 페이지&lt;/strong&gt;: 실제 테이블 로우(Row)가 저장된 페이지&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;인덱스 페이지&lt;/strong&gt;: B-Tree 인덱스 노드 페이지 (PK 및 세컨더리 인덱스 포함)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;기타 관리 페이지&lt;/strong&gt;: UNDO 페이지, 트랜잭션/MVCC 관리에 필요한 메타데이터 등&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h2&gt;
-&lt;h3 id=&#34;페이지-캐싱&#34;&gt;페이지 캐싱&lt;/h3&gt;
-&lt;p&gt;InnoDB는 디스크 데이터를 페이지 단위로 다룸
-클라이언트가 특정 로우를 읽고 싶어 하면, 그 로우가 속한 &lt;strong&gt;페이지 전체&lt;/strong&gt;를 버퍼 풀로 가져옴
-이후 같은 페이지에 있는 다른 로우를 읽을 때는 디스크를 다시 보지 않고 버퍼 풀(메모리)에서 바로 조회함&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>InnoDB에서 PK 없는 테이블의 동작과 트레이드오프</title>
-      <link>https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/</link>
-      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/</guid>
-      <description>&lt;h3 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h3&gt;
-&lt;p&gt;InnoDB는 데이터를 클러스터형 인덱스 기준으로 저장하는 스토리지 엔진임
-대부분의 테이블에서 이 클러스터형 인덱스는 프라이머리 키가 담당함
-사용자가 명시적으로 PK를 정의하지 않은 경우에도 InnoDB는 테이블에 클러스터 키를 반드시 갖도록 함
-이때 결정 규칙이 존재함&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;먼저 NOT NULL 제약을 가진 유니크 인덱스가 있으면 그것을 클러스터형 인덱스로 사용&lt;/li&gt;
-&lt;li&gt;그런 인덱스가 없으면 내부 6바이트 row_id를 생성해 숨김 PK로 사용&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;세컨더리 인덱스는 항상 클러스터 키를 포함하여 룩업을 수행함
-따라서 명시적 PK가 없더라도 내부적으로는 클러스터 키가 존재하며 저장과 탐색 경로의 기준으로 동작함&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

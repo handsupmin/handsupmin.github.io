@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 29 Nov 2025 13:08:21 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Nov 2025 13:07:58 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>B-Tree</title>
+      <link>https://blog.jsontapose.com/tags/b-tree/</link>
+      <pubDate>Sun, 30 Nov 2025 13:07:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/b-tree/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Indexing</title>
+      <link>https://blog.jsontapose.com/tags/indexing/</link>
+      <pubDate>Sun, 30 Nov 2025 13:07:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/indexing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Innodb</title>
+      <link>https://blog.jsontapose.com/tags/innodb/</link>
+      <pubDate>Sun, 30 Nov 2025 13:07:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/innodb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mysql</title>
+      <link>https://blog.jsontapose.com/tags/mysql/</link>
+      <pubDate>Sun, 30 Nov 2025 13:07:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/mysql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Query-Optimization</title>
+      <link>https://blog.jsontapose.com/tags/query-optimization/</link>
+      <pubDate>Sun, 30 Nov 2025 13:07:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/query-optimization/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Javascript</title>
       <link>https://blog.jsontapose.com/tags/javascript/</link>
@@ -125,13 +160,6 @@
       <link>https://blog.jsontapose.com/tags/ddl/</link>
       <pubDate>Mon, 24 Nov 2025 13:12:08 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/ddl/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mysql</title>
-      <link>https://blog.jsontapose.com/tags/mysql/</link>
-      <pubDate>Mon, 24 Nov 2025 13:12:08 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/mysql/</guid>
       <description></description>
     </item>
     <item>
@@ -482,13 +510,6 @@
       <link>https://blog.jsontapose.com/tags/caching/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/caching/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Innodb</title>
-      <link>https://blog.jsontapose.com/tags/innodb/</link>
-      <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/innodb/</guid>
       <description></description>
     </item>
     <item>
@@ -881,13 +902,6 @@
       <link>https://blog.jsontapose.com/tags/explain/</link>
       <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/explain/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Indexing</title>
-      <link>https://blog.jsontapose.com/tags/indexing/</link>
-      <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/indexing/</guid>
       <description></description>
     </item>
     <item>
