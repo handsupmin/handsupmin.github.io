@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 01 Dec 2025 13:13:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Dec 2025 13:13:21 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Index-Signature</title>
+      <link>https://blog.jsontapose.com/tags/index-signature/</link>
+      <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/index-signature/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mapped-Types</title>
+      <link>https://blog.jsontapose.com/tags/mapped-types/</link>
+      <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/mapped-types/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Record</title>
+      <link>https://blog.jsontapose.com/tags/record/</link>
+      <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/record/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type-vs-Interface</title>
+      <link>https://blog.jsontapose.com/tags/type-vs-interface/</link>
+      <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/type-vs-interface/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Utility-Types</title>
+      <link>https://blog.jsontapose.com/tags/utility-types/</link>
+      <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/utility-types/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Array</title>
       <link>https://blog.jsontapose.com/tags/array/</link>
@@ -41,13 +83,6 @@
       <link>https://blog.jsontapose.com/tags/spread-operator/</link>
       <pubDate>Mon, 01 Dec 2025 13:13:20 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/spread-operator/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Mon, 01 Dec 2025 13:13:20 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -517,13 +552,6 @@
       <link>https://blog.jsontapose.com/tags/type-level-programming/</link>
       <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/type-level-programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Utility-Types</title>
-      <link>https://blog.jsontapose.com/tags/utility-types/</link>
-      <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/utility-types/</guid>
       <description></description>
     </item>
     <item>

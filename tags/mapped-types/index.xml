@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mapped-Types on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/mapped-types/</link>
+    <description>Recent content in Mapped-Types on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 02 Dec 2025 13:13:21 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/mapped-types/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TypeScript Record 제대로 이해하기 — 인덱스 시그니처와 맵드 타입 비교, 선택 기준</title>
+      <link>https://blog.jsontapose.com/posts/typescript-record-mapped-type-index-signature-d67f80/</link>
+      <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/typescript-record-mapped-type-index-signature-d67f80/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Record&amp;lt;Key, Value&amp;gt;는 키와 값 타입을 고정해 객체 형태를 만드는 타입스크립트 유틸리티 타입임
+인덱스 시그니처와 유사하지만 문자열 리터럴 유니온을 키로 직접 사용할 수 있고, 맵드 타입으로도 같은 효과를 낼 수 있음&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Record&amp;lt;Key, Value&amp;gt;
+&lt;ul&gt;
+&lt;li&gt;키 타입 Key, 값 타입 Value를 갖는 객체 타입 생성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;인덱스 시그니처와의 차이
+&lt;ul&gt;
+&lt;li&gt;[key: string]: T 형태는 키 집합을 특정 리터럴 유니온으로 제한 불가&lt;/li&gt;
+&lt;li&gt;Record는 &amp;lsquo;A&amp;rsquo; | &amp;lsquo;B&amp;rsquo; 같은 리터럴 유니온을 키로 직접 지정 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;맵드 타입과의 관계
+&lt;ul&gt;
+&lt;li&gt;{ [K in Keys]: V }와 Record&amp;lt;Keys, V&amp;gt;는 구조적으로 동일한 결과를 만들 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;간단 스니펫&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
