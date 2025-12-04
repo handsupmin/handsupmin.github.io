@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Karpenter on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/karpenter/</link>
+    <description>Recent content in Karpenter on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 04 Dec 2025 13:13:58 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/karpenter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Controllers 핵심 개념과 실전 가이드</title>
+      <link>https://blog.jsontapose.com/posts/kubernetes-controllers-core-practical-guide-ecd5cd/</link>
+      <pubDate>Thu, 04 Dec 2025 13:13:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/kubernetes-controllers-core-practical-guide-ecd5cd/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;쿠버네티스에서 컨트롤러는 제어 루프를 통해 원하는 상태와 현재 상태를 맞추는 두뇌 역할 수행
+사용자가 선언한 스펙을 지속 관찰하고 차이를 줄이기 위해 리소스를 생성·수정·삭제하는 자동화 구성 요소
+이 문서는 주요 컨트롤러를 실무 맥락과 비유를 곁들여 정리하며, 디버깅 관점에서의 관계와 주의점을 함께 정리&lt;/p&gt;
+&lt;h3 id=&#34;워크로드-컨트롤러&#34;&gt;워크로드 컨트롤러&lt;/h3&gt;
+&lt;p&gt;Deployment&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;역할: 상태 비저장 앱의 표준 배포 단위, 버전 관리와 롤링 업데이트 담당&lt;/li&gt;
+&lt;li&gt;특기: 롤링 업데이트로 무중단에 가까운 배포, 이슈 시 손쉬운 롤백&lt;/li&gt;
+&lt;li&gt;관계: 파드 직접 관리 대신 ReplicaSet을 통해 간접 관리&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ReplicaSet&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

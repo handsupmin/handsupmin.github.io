@@ -25,16 +25,21 @@
   </url>
   <url>
     <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2025-12-03T13:13:33+00:00</lastmod>
+    <lastmod>2025-12-04T13:13:58+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/nestjs-axios-vs-fetch-choose-guide-4fb655/</loc>
-    <lastmod>2025-12-03T13:13:33+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/kubernetes-controllers-core-practical-guide-ecd5cd/</loc>
+    <lastmod>2025-12-04T13:13:58+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2025-12-04T13:13:58+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/nestjs-axios-vs-fetch-choose-guide-4fb655/</loc>
     <lastmod>2025-12-03T13:13:33+00:00</lastmod>
     <priority>0.5</priority>
   </url>
