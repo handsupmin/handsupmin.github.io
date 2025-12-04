@@ -37,19 +37,18 @@
 &lt;li&gt;특히 자식이 없는 경우 every는 기본적으로 참으로 평가되어 부모가 포함됨. 빈 결과를 제외하려면 추가 조건 필요&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;간단-예시&#34;&gt;간단 예시&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model Post {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  id       Int       @id @default(autoincrement())
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  title    String
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  comments Comment[]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model Comment {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  id     Int    @id @default(autoincrement())
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  text   String
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  postId Int
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  post   Post   @relation(fields: [postId], references: [id])
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;댓글 text가 &amp;lsquo;interesting&amp;rsquo;인 항목을 기준으로 게시글을 거르는 케이스를 가정&lt;/p&gt;</description>
+&lt;pre&gt;&lt;code class=&#34;language-plain&#34;&gt;model Post {
+  id       Int       @id @default(autoincrement())
+  title    String
+  comments Comment[]
+}
+
+model Comment {
+  id     Int    @id @default(autoincrement())
+  text   String
+  postId Int
+  post   Post   @relation(fields: [postId], references: [id])
+}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;댓글 text가 &amp;lsquo;interesting&amp;rsquo;인 항목을 기준으로 게시글을 거르는 케이스를 가정&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -16,10 +16,10 @@
       <description></description>
     </item>
     <item>
-      <title>Backend</title>
-      <link>https://blog.jsontapose.com/categories/backend/</link>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/categories/nodejs/</link>
       <pubDate>Wed, 03 Dec 2025 13:13:33 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/categories/backend/</guid>
+      <guid>https://blog.jsontapose.com/categories/nodejs/</guid>
       <description></description>
     </item>
     <item>
@@ -41,6 +41,13 @@
       <link>https://blog.jsontapose.com/categories/database/</link>
       <pubDate>Sun, 30 Nov 2025 13:07:58 +0000</pubDate>
       <guid>https://blog.jsontapose.com/categories/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backend</title>
+      <link>https://blog.jsontapose.com/categories/backend/</link>
+      <pubDate>Fri, 28 Nov 2025 13:10:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/categories/backend/</guid>
       <description></description>
     </item>
     <item>
@@ -69,13 +76,6 @@
       <link>https://blog.jsontapose.com/categories/functional-programming/</link>
       <pubDate>Thu, 13 Nov 2025 13:11:48 +0000</pubDate>
       <guid>https://blog.jsontapose.com/categories/functional-programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/categories/nodejs/</link>
-      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/categories/nodejs/</guid>
       <description></description>
     </item>
     <item>

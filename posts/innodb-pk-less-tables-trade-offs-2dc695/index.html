@@ -9,7 +9,74 @@ InnoDB는 데이터를 클러스터형 인덱스 기준으로 저장하는 스�
 그런 인덱스가 없으면 내부 6바이트 row_id를 생성해 숨김 PK로 사용
 
 세컨더리 인덱스는 항상 클러스터 키를 포함하여 룩업을 수행함
-따라서 명시적 PK가 없더라도 내부적으로는 클러스터 키가 존재하며 저장과 탐색 경로의 기준으로 동작함"><meta name=author content><link rel=canonical href=https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/><link crossorigin=anonymous href=/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.jsontapose.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.jsontapose.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.jsontapose.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.jsontapose.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.jsontapose.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/json href=https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/index.json><link rel=alternate hreflang=en href=https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NKJRT1NC1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6NKJRT1NC1")</script><meta name=google-adsense-account content="ca-pub-6022353980017733"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022353980017733" crossorigin=anonymous></script><meta property="og:url" content="https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/"><meta property="og:site_name" content="HandsLog"><meta property="og:title" content="InnoDB에서 PK 없는 테이블의 동작과 트레이드오프"><meta property="og:description" content="개념과 배경 InnoDB는 데이터를 클러스터형 인덱스 기준으로 저장하는 스토리지 엔진임 대부분의 테이블에서 이 클러스터형 인덱스는 프라이머리 키가 담당함 사용자가 명시적으로 PK를 정의하지 않은 경우에도 InnoDB는 테이블에 클러스터 키를 반드시 갖도록 함 이때 결정 규칙이 존재함
+따라서 명시적 PK가 없더라도 내부적으로는 클러스터 키가 존재하며 저장과 탐색 경로의 기준으로 동작함"><meta name=author content><link rel=canonical href=https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/><link crossorigin=anonymous href=/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.jsontapose.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.jsontapose.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.jsontapose.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.jsontapose.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.jsontapose.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/json href=https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/index.json><link rel=alternate hreflang=en href=https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=module>
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+
+  const isDark = () =>
+    document.body.classList.contains("dark") ||
+    window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+
+  const getThemeOptions = () => {
+    const dark = isDark();
+    return {
+      startOnLoad: false,
+      securityLevel: "loose", 
+      theme: dark ? "dark" : "default",
+      themeVariables: dark
+        ? {
+            primaryColor: "#0f172a"  ,
+            primaryTextColor: "#e5e7eb"  ,
+            primaryBorderColor: "#94a3b8"  ,
+            lineColor: "#94a3b8",
+            textColor: "#e5e7eb",
+            nodeTextColor: "#e5e7eb",
+            edgeLabelBackground: "#0f172a",
+          }
+        : {
+            primaryColor: "#f8fafc"  ,
+            primaryTextColor: "#111827",
+            primaryBorderColor: "#374151",
+            lineColor: "#374151",
+            textColor: "#111827",
+            nodeTextColor: "#111827",
+            edgeLabelBackground: "#ffffff",
+          },
+    };
+  };
+
+  const renderMermaid = () => {
+    
+    document.querySelectorAll(".mermaid[data-processed]").forEach((el) => {
+      el.removeAttribute("data-processed");
+    });
+    mermaid.initialize(getThemeOptions());
+    mermaid.run({ querySelector: ".mermaid" });
+  };
+
+  
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderMermaid, {
+      once: true,
+    });
+  } else {
+    renderMermaid();
+  }
+
+  
+  const btn = document.getElementById("theme-toggle");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      
+      setTimeout(renderMermaid, 0);
+    });
+  }
+
+  
+  const mql = window.matchMedia?.("(prefers-color-scheme: dark)");
+  if (mql && mql.addEventListener) {
+    mql.addEventListener("change", renderMermaid);
+  }
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NKJRT1NC1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6NKJRT1NC1")</script><meta name=google-adsense-account content="ca-pub-6022353980017733"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022353980017733" crossorigin=anonymous></script><meta property="og:url" content="https://blog.jsontapose.com/posts/innodb-pk-less-tables-trade-offs-2dc695/"><meta property="og:site_name" content="HandsLog"><meta property="og:title" content="InnoDB에서 PK 없는 테이블의 동작과 트레이드오프"><meta property="og:description" content="개념과 배경 InnoDB는 데이터를 클러스터형 인덱스 기준으로 저장하는 스토리지 엔진임 대부분의 테이블에서 이 클러스터형 인덱스는 프라이머리 키가 담당함 사용자가 명시적으로 PK를 정의하지 않은 경우에도 InnoDB는 테이블에 클러스터 키를 반드시 갖도록 함 이때 결정 규칙이 존재함
 먼저 NOT NULL 제약을 가진 유니크 인덱스가 있으면 그것을 클러스터형 인덱스로 사용 그런 인덱스가 없으면 내부 6바이트 row_id를 생성해 숨김 PK로 사용 세컨더리 인덱스는 항상 클러스터 키를 포함하여 룩업을 수행함 따라서 명시적 PK가 없더라도 내부적으로는 클러스터 키가 존재하며 저장과 탐색 경로의 기준으로 동작함"><meta property="og:locale" content="ko-kr"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-10-26T13:07:10+00:00"><meta property="article:modified_time" content="2025-10-26T13:07:10+00:00"><meta property="article:tag" content="Mysql"><meta property="article:tag" content="Innodb"><meta property="article:tag" content="Primary-Key"><meta property="article:tag" content="Clustered-Index"><meta property="article:tag" content="Foreign-Key"><meta property="article:tag" content="Database-Design"><meta name=twitter:card content="summary"><meta name=twitter:title content="InnoDB에서 PK 없는 테이블의 동작과 트레이드오프"><meta name=twitter:description content="개념과 배경
 InnoDB는 데이터를 클러스터형 인덱스 기준으로 저장하는 스토리지 엔진임
 대부분의 테이블에서 이 클러스터형 인덱스는 프라이머리 키가 담당함

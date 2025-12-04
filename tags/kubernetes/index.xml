@@ -64,22 +64,21 @@
 핵심은 단일 진실 소스에 원하는 상태를 기록하고, 이를 지속적으로 감시하고 조정해 실제 상태를 일치시키는 루프
 각 컴포넌트의 역할과 상호작용을 이해하면 장애 대응, 스케일링, 성능 튜닝의 기준점 확보 가능&lt;/p&gt;
 &lt;h3 id=&#34;구성요소-관계-한눈에&#34;&gt;구성요소 관계 한눈에&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kubectl / CI
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    │
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ▼
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kube-apiserver ──&amp;gt; etcd
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    │  ▲
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    │  └(상태 영속)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    │
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├─ kube-scheduler(어디 배치할지 결정)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    └─ kube-controller-manager(원하는 상태로 맞춤: ReplicaSet 등)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[각 워커 노드]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kubelet ──(CRI gRPC)──&amp;gt; container runtime ──(OCI)──&amp;gt; runc/crun ──&amp;gt; cgroup 설정 + 컨테이너 시작
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    │                                        │
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├─(CNI 호출) 네트워크/IP 할당            └─ 네임스페이스/마운트 등 격리
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    └─ kube-proxy(서비스 라우팅: iptables/ipvs)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-plain&#34;&gt;kubectl / CI
+    │
+    ▼
+kube-apiserver ──&amp;gt; etcd
+    │  ▲
+    │  └(상태 영속)
+    │
+    ├─ kube-scheduler(어디 배치할지 결정)
+    └─ kube-controller-manager(원하는 상태로 맞춤: ReplicaSet 등)
+
+[각 워커 노드]
+kubelet ──(CRI gRPC)──&amp;gt; container runtime ──(OCI)──&amp;gt; runc/crun ──&amp;gt; cgroup 설정 + 컨테이너 시작
+    │                                        │
+    ├─(CNI 호출) 네트워크/IP 할당            └─ 네임스페이스/마운트 등 격리
+    └─ kube-proxy(서비스 라우팅: iptables/ipvs)&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;모든 컴포넌트의 권위자이자 입구는 apiserver&lt;/li&gt;
 &lt;li&gt;etcd와 직접 통신하는 주체는 apiserver만 존재&lt;/li&gt;
 &lt;li&gt;kubelet은 apiserver를 watch하여 자신에게 배정된 파드 감지&lt;/li&gt;

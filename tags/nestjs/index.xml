@@ -6,7 +6,7 @@
     <description>Recent content in Nestjs on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 03 Dec 2025 13:13:33 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Oct 2025 13:11:03 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/nestjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSE란? 실시간 이벤트 전달 프로토콜 (Server-Sent Events)</title>
@@ -22,25 +22,6 @@
 &lt;p&gt;SSE는 실시간 이벤트 전송에 유용하지만 만능은 아님. 웹소켓과 비교했을 때 명확한 장단점이 존재함&lt;/p&gt;</description>
     </item>
     <item>
-      <title>NestJS에서 Axios vs Fetch 선택 가이드 — RxJS 통합 vs 표준 가벼움</title>
-      <link>https://blog.jsontapose.com/posts/nestjs-axios-vs-fetch-choose-guide-4fb655/</link>
-      <pubDate>Wed, 03 Dec 2025 13:13:33 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/nestjs-axios-vs-fetch-choose-guide-4fb655/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;NestJS 환경에서 Axios와 Fetch 선택은 RxJS 중심의 생태계 통합성 vs 표준 API의 가벼움 사이 트레이드오프 이슈임
-Node.js 18 이상부터 fetch가 내장되면서 의존성 없이도 표준 HTTP 클라이언트를 쓸 수 있게 되었음&lt;/p&gt;
-&lt;h3 id=&#34;axios--nestjs-권장-경로&#34;&gt;Axios — NestJS 권장 경로&lt;/h3&gt;
-&lt;p&gt;NestJS는 @nestjs/axios 기반 HttpModule을 제공하며 HttpService로 Observable 응답을 다루는 흐름을 권장함. Nest 애플리케이션 전반에서 RxJS를 쓰는 경우 자연스럽게 결합됨&lt;/p&gt;
-&lt;p&gt;장점&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;RxJS와 자연스러운 통합. HttpService 응답이 Observable 형태라 스트림 연산자(map, tap, catchError) 조합 용이&lt;/li&gt;
-&lt;li&gt;인터셉터 지원 강력. 요청/응답 로깅, 공통 헤더 삽입, 에러 표준화 같은 횡단 관심사 구현이 쉬움&lt;/li&gt;
-&lt;li&gt;편의 기능 제공. 자동 JSON 변환, 4xx/5xx 발생 시 예외 throw, 타임아웃과 요청 취소 지원&lt;/li&gt;
-&lt;li&gt;테스트 용이성 우수. HttpService mocking이 쉬워 단위 테스트 작성 비용 낮음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;단점&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>NestJS Swagger 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
       <link>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
       <pubDate>Thu, 30 Oct 2025 13:11:03 +0000</pubDate>
@@ -54,11 +35,10 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
 타입, 설명, 예시, 필수 여부 등을 정의해 Swagger UI에 명확한 스키마 제공
 코드와 문서가 한 소스에서 유지되어 일관성 확보에 유리함&lt;/p&gt;
 &lt;p&gt;간단 사용 예시&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CreateUserDto&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;@ApiProperty&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;사용자 이름&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;John Doe&amp;#34;&lt;/span&gt; })
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
+&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;class CreateUserDto {
+  @ApiProperty({ description: &amp;#34;사용자 이름&amp;#34;, example: &amp;#34;John Doe&amp;#34; })
+  name: string;
+}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
     </item>
     <item>
       <title>NestJS Guard로 요청 보호하기 — CanActivate, UseGuards, Bearer 인증 예시</title>

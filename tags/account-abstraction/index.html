@@ -1,5 +1,72 @@
 <!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Account-Abstraction | HandsLog</title>
-<meta name=keywords content><meta name=description content><meta name=author content><link rel=canonical href=https://blog.jsontapose.com/tags/account-abstraction/><link crossorigin=anonymous href=/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.jsontapose.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.jsontapose.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.jsontapose.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.jsontapose.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.jsontapose.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://blog.jsontapose.com/tags/account-abstraction/index.xml><link rel=alternate hreflang=en href=https://blog.jsontapose.com/tags/account-abstraction/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NKJRT1NC1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6NKJRT1NC1")</script><meta name=google-adsense-account content="ca-pub-6022353980017733"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022353980017733" crossorigin=anonymous></script><meta property="og:url" content="https://blog.jsontapose.com/tags/account-abstraction/"><meta property="og:site_name" content="HandsLog"><meta property="og:title" content="Account-Abstraction"><meta property="og:locale" content="ko-kr"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Account-Abstraction"><meta name=twitter:description content></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://blog.jsontapose.com/ accesskey=h title="HandsLog (Alt + H)">HandsLog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://blog.jsontapose.com/search/ title="search (Alt + /)" accesskey=/><span>search</span></a></li><li><a href=https://blog.jsontapose.com/categories/ title=categories><span>categories</span></a></li><li><a href=https://jsontapose.com/ title="compare JSON"><span>compare JSON</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://blog.jsontapose.com/>Home</a>&nbsp;»&nbsp;<a href=https://blog.jsontapose.com/tags/>Tags</a></div><h1>Account-Abstraction</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Abstract L2 체인 개요와 설계 핵심: ZK Rollup, ZK Stack, 네이티브 계정 추상화, AGW</h2></header><div class=entry-content><p>개요 Abstract는 이더리움 보안을 상속하는 ZK Rollup 기반 L2 체인으로, 고비용·저처리량 한계를 완화하는 확장 층 제공 목표 ZK Stack으로 구축되어 체인 개발과 운영 구성 요소를 모듈화하고, 데이터 가용성은 EIP-4844 블롭을 활용해 비용을 절감하는 방향 추구 핵심 차별점은 네이티브 계정 추상화 기반의 트랜잭션 수명주기와 글로벌 지갑 레이어를 통한 사용자 온보딩 간소화에 있음
+<meta name=keywords content><meta name=description content><meta name=author content><link rel=canonical href=https://blog.jsontapose.com/tags/account-abstraction/><link crossorigin=anonymous href=/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.jsontapose.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.jsontapose.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.jsontapose.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.jsontapose.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.jsontapose.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://blog.jsontapose.com/tags/account-abstraction/index.xml><link rel=alternate hreflang=en href=https://blog.jsontapose.com/tags/account-abstraction/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=module>
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+
+  const isDark = () =>
+    document.body.classList.contains("dark") ||
+    window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+
+  const getThemeOptions = () => {
+    const dark = isDark();
+    return {
+      startOnLoad: false,
+      securityLevel: "loose", 
+      theme: dark ? "dark" : "default",
+      themeVariables: dark
+        ? {
+            primaryColor: "#0f172a"  ,
+            primaryTextColor: "#e5e7eb"  ,
+            primaryBorderColor: "#94a3b8"  ,
+            lineColor: "#94a3b8",
+            textColor: "#e5e7eb",
+            nodeTextColor: "#e5e7eb",
+            edgeLabelBackground: "#0f172a",
+          }
+        : {
+            primaryColor: "#f8fafc"  ,
+            primaryTextColor: "#111827",
+            primaryBorderColor: "#374151",
+            lineColor: "#374151",
+            textColor: "#111827",
+            nodeTextColor: "#111827",
+            edgeLabelBackground: "#ffffff",
+          },
+    };
+  };
+
+  const renderMermaid = () => {
+    
+    document.querySelectorAll(".mermaid[data-processed]").forEach((el) => {
+      el.removeAttribute("data-processed");
+    });
+    mermaid.initialize(getThemeOptions());
+    mermaid.run({ querySelector: ".mermaid" });
+  };
+
+  
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderMermaid, {
+      once: true,
+    });
+  } else {
+    renderMermaid();
+  }
+
+  
+  const btn = document.getElementById("theme-toggle");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      
+      setTimeout(renderMermaid, 0);
+    });
+  }
+
+  
+  const mql = window.matchMedia?.("(prefers-color-scheme: dark)");
+  if (mql && mql.addEventListener) {
+    mql.addEventListener("change", renderMermaid);
+  }
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NKJRT1NC1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6NKJRT1NC1")</script><meta name=google-adsense-account content="ca-pub-6022353980017733"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022353980017733" crossorigin=anonymous></script><meta property="og:url" content="https://blog.jsontapose.com/tags/account-abstraction/"><meta property="og:site_name" content="HandsLog"><meta property="og:title" content="Account-Abstraction"><meta property="og:locale" content="ko-kr"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Account-Abstraction"><meta name=twitter:description content></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://blog.jsontapose.com/ accesskey=h title="HandsLog (Alt + H)">HandsLog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://blog.jsontapose.com/search/ title="search (Alt + /)" accesskey=/><span>search</span></a></li><li><a href=https://blog.jsontapose.com/categories/ title=categories><span>categories</span></a></li><li><a href=https://jsontapose.com/ title="compare JSON"><span>compare JSON</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://blog.jsontapose.com/>Home</a>&nbsp;»&nbsp;<a href=https://blog.jsontapose.com/tags/>Tags</a></div><h1>Account-Abstraction</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Abstract L2 체인 개요와 설계 핵심: ZK Rollup, ZK Stack, 네이티브 계정 추상화, AGW</h2></header><div class=entry-content><p>개요 Abstract는 이더리움 보안을 상속하는 ZK Rollup 기반 L2 체인으로, 고비용·저처리량 한계를 완화하는 확장 층 제공 목표 ZK Stack으로 구축되어 체인 개발과 운영 구성 요소를 모듈화하고, 데이터 가용성은 EIP-4844 블롭을 활용해 비용을 절감하는 방향 추구 핵심 차별점은 네이티브 계정 추상화 기반의 트랜잭션 수명주기와 글로벌 지갑 레이어를 통한 사용자 온보딩 간소화에 있음
 배경과 목적 이더리움 메인넷의 처리량은 대략 초당 수십 건 수준이며, 수수료 변동성도 큼 저가치 대량 트랜잭션을 직접 L1에서 처리하는 것은 비현실적 L2의 목표는 탈중앙성과 보안을 유지하면서 처리량과 비용 효율을 동시에 개선하는 것 ZK Rollup은 유효성 증명을 통해 상태 전이를 압축·검증하여 온체인 데이터 요구량과 확정 시간을 줄이는 확장 경로 제공
 ...</p></div><footer class=entry-footer><span title='2025-10-03 13:07:57.754 +0000 UTC'>October 3, 2025</span></footer><a class=entry-link aria-label="post link to Abstract L2 체인 개요와 설계 핵심: ZK Rollup, ZK Stack, 네이티브 계정 추상화, AGW" href=https://blog.jsontapose.com/posts/abstract-l2-zk-rollup-zk-stack-account-abstraction-agw-dc7ec0/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
 <span>Powered by

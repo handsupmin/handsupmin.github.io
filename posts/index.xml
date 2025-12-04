@@ -108,23 +108,60 @@
 &lt;p&gt;ReplicaSet&lt;/p&gt;</description>
     </item>
     <item>
-      <title>NestJS에서 Axios vs Fetch 선택 가이드 — RxJS 통합 vs 표준 가벼움</title>
-      <link>https://blog.jsontapose.com/posts/nestjs-axios-vs-fetch-choose-guide-4fb655/</link>
+      <title>이벤트 루프와 비동기, await에 대한 오해</title>
+      <link>https://blog.jsontapose.com/posts/nodejs-event-loop-async-await-guide-4552e4/</link>
       <pubDate>Wed, 03 Dec 2025 13:13:33 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/nestjs-axios-vs-fetch-choose-guide-4fb655/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;NestJS 환경에서 Axios와 Fetch 선택은 RxJS 중심의 생태계 통합성 vs 표준 API의 가벼움 사이 트레이드오프 이슈임
-Node.js 18 이상부터 fetch가 내장되면서 의존성 없이도 표준 HTTP 클라이언트를 쓸 수 있게 되었음&lt;/p&gt;
-&lt;h3 id=&#34;axios--nestjs-권장-경로&#34;&gt;Axios — NestJS 권장 경로&lt;/h3&gt;
-&lt;p&gt;NestJS는 @nestjs/axios 기반 HttpModule을 제공하며 HttpService로 Observable 응답을 다루는 흐름을 권장함. Nest 애플리케이션 전반에서 RxJS를 쓰는 경우 자연스럽게 결합됨&lt;/p&gt;
-&lt;p&gt;장점&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;RxJS와 자연스러운 통합. HttpService 응답이 Observable 형태라 스트림 연산자(map, tap, catchError) 조합 용이&lt;/li&gt;
-&lt;li&gt;인터셉터 지원 강력. 요청/응답 로깅, 공통 헤더 삽입, 에러 표준화 같은 횡단 관심사 구현이 쉬움&lt;/li&gt;
-&lt;li&gt;편의 기능 제공. 자동 JSON 변환, 4xx/5xx 발생 시 예외 throw, 타임아웃과 요청 취소 지원&lt;/li&gt;
-&lt;li&gt;테스트 용이성 우수. HttpService mocking이 쉬워 단위 테스트 작성 비용 낮음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;단점&lt;/p&gt;</description>
+      <guid>https://blog.jsontapose.com/posts/nodejs-event-loop-async-await-guide-4552e4/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;-nodejs-기본-구조&#34;&gt;🧠 Node.js 기본 구조&lt;/h2&gt;
+&lt;div class=&#34;mermaid&#34;&gt;graph TB
+    subgraph STACK[Call Stack]
+        S1[현재 실행 중인 함수]
+    end
+
+    subgraph LOOP[Event Loop]
+        EL[Call Stack 비었나?&lt;br/&gt;→ Queue에서 가져오기]
+    end
+
+    subgraph QUEUES[Queues]
+        MQ[Microtask Queue&lt;br/&gt;Promise, await 완료]
+        TQ[Task Queue&lt;br/&gt;setTimeout, I/O, Cron]
+    end
+
+    STACK --&gt; |비어있을 때만| LOOP
+    LOOP --&gt; MQ
+    MQ --&gt; |비었으면| TQ
+    TQ --&gt; STACK
+
+    style STACK fill:#ff6b6b
+    style MQ fill:#4ecdc4
+    style TQ fill:#45b7d1&lt;/div&gt;&lt;p&gt;&lt;strong&gt;핵심 규칙: Call Stack이 비어야만 다음 작업 실행&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-오해-1-settimeout0은-즉시-실행된다&#34;&gt;❌ 오해 1: &amp;ldquo;setTimeout(0)은 즉시 실행된다&amp;rdquo;&lt;/h2&gt;
+&lt;h3 id=&#34;코드&#34;&gt;코드&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-jsx&#34;&gt;console.log(&amp;#34;1&amp;#34;);
+setTimeout(() =&amp;gt; console.log(&amp;#34;2&amp;#34;), 0);
+console.log(&amp;#34;3&amp;#34;);&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;실행-흐름&#34;&gt;실행 흐름&lt;/h3&gt;
+&lt;div class=&#34;mermaid&#34;&gt;sequenceDiagram
+    participant CS as Call Stack
+    participant TQ as Task Queue
+    participant OUT as 출력
+
+    Note over CS: console.log(&#39;1&#39;)
+    CS-&gt;&gt;OUT: &#34;1&#34;
+
+    Note over CS: setTimeout 등록
+    CS-&gt;&gt;TQ: 콜백 등록 (0ms여도!)
+
+    Note over CS: console.log(&#39;3&#39;)
+    CS-&gt;&gt;OUT: &#34;3&#34;
+
+    Note over CS: Call Stack 비었음!
+    TQ-&gt;&gt;CS: 콜백 가져오기
+
+    Note over CS: 콜백 실행
+    CS-&gt;&gt;OUT: &#34;2&#34;&lt;/div&gt;&lt;h3 id=&#34;출력-1--3--2&#34;&gt;출력: &lt;code&gt;1 → 3 → 2&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;setTimeout(0)은 &amp;ldquo;다음 Event Loop에 실행&amp;quot;이라는 뜻!&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>TypeScript Record 제대로 이해하기 — 인덱스 시그니처와 맵드 타입 비교, 선택 기준</title>
@@ -165,25 +202,13 @@ Node.js 18 이상부터 fetch가 내장되면서 의존성 없이도 표준 HTTP
 분기문 없이 스프레드 연산자만으로 가독성 유지&lt;/p&gt;
 &lt;h3 id=&#34;사용법예시&#34;&gt;사용법/예시&lt;/h3&gt;
 &lt;p&gt;배열은 피연산자가 이터러블이어야 하므로 삼항 연산자 사용&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arr&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...(&lt;span style=&#34;color:#a6e22e&#34;&gt;cond&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; []),
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// cond === true =&amp;gt; [1, 2, 3, 4, 5, 6]
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// cond === false =&amp;gt; [4, 5, 6]
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;객체는 원시값을 스프레드해도 자체 속성이 없어 무시됨
-불리언화로 안전성 확보&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;obj&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...(&lt;span style=&#34;color:#f92672&#34;&gt;!!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cond&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; }),
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// cond === true =&amp;gt; { a: 1, b: 2, c: 3, d: 4 }
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// cond === false =&amp;gt; { c: 3, d: 4 }
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주의-사항&#34;&gt;주의 사항&lt;/h3&gt;
-&lt;p&gt;배열에서 &amp;hellip;(cond &amp;amp;&amp;amp; [1,2,3]) 사용 금지, cond가 false면 이터러블 아님 오류 발생
-객체에서 null이나 undefined를 그대로 스프레드하면 오류 가능, !!cond로 불리언화하거나 cond ? {..} : {} 형태 권장
-타입스크립트에서는 &amp;amp;&amp;amp; 패턴이 타입 좁히기 미흡할 수 있음, 삼항으로 빈 객체 반환 또는 적절한 타입 주석 권장&lt;/p&gt;</description>
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const arr = [
+  ...(cond ? [1, 2, 3] : []),
+  4, 5, 6,
+]
+// cond === true =&amp;gt; [1, 2, 3, 4, 5, 6]
+// cond === false =&amp;gt; [4, 5, 6]&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;객체는 원시값을 스프레드해도 자체 속성이 없어 무시됨
+불리언화로 안전성 확보&lt;/p&gt;</description>
     </item>
     <item>
       <title>InnoDB 복합 인덱스와 Left-most Prefix 원칙 정리</title>
@@ -267,13 +292,12 @@ Node.js 18 이상부터 fetch가 내장되면서 의존성 없이도 표준 HTTP
 반대로 falsy는 정해진 값만 해당됨 false, 0, -0, 0n, &amp;ldquo;&amp;rdquo;, null, undefined, NaN&lt;/p&gt;
 &lt;h3 id=&#34;예시&#34;&gt;예시&lt;/h3&gt;
 &lt;p&gt;다음은 빈 배열이 조건문에서 어떻게 평가되는지 확인하는 간단한 코드&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; ([]) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;빈 배열은 truthy입니다!&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;} &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;빈 배열은 falsy입니다!&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 출력: &amp;#34;빈 배열은 truthy입니다!&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;배열이 비어 있는지를 논리적으로 구분하려면 길이를 확인해야 함&lt;/p&gt;</description>
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;if ([]) {
+  console.log(&amp;#34;빈 배열은 truthy입니다!&amp;#34;)
+} else {
+  console.log(&amp;#34;빈 배열은 falsy입니다!&amp;#34;)
+}
+// 출력: &amp;#34;빈 배열은 truthy입니다!&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;배열이 비어 있는지를 논리적으로 구분하려면 길이를 확인해야 함&lt;/p&gt;</description>
     </item>
     <item>
       <title>백오프 Backoff 재시도 전략 정리 고정·선형·지수·지터</title>
@@ -366,22 +390,18 @@ Retry-After 등 서버가 제시하는 대기 힌트가 있으면 우선 적용&
 &lt;ul&gt;
 &lt;li&gt;단일 테이블 이름 변경&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;RENAME&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; old_table &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; new_table;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;RENAME TABLE old_table TO new_table;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;단일 테이블 이름 변경 ALTER 사용&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ALTER&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; old_table &lt;span style=&#34;color:#66d9ef&#34;&gt;RENAME&lt;/span&gt; new_table;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;ALTER TABLE old_table RENAME new_table;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;다수 테이블 이름 일괄 변경&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;RENAME&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; old_table1 &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; new_table1,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;             old_table2 &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; new_table2,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;             old_table3 &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; new_table3;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;RENAME TABLE old_table1 TO new_table1,
+             old_table2 TO new_table2,
+             old_table3 TO new_table3;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;다른 데이터베이스로 이동 같은 서버 내&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;RENAME&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; current_db.&lt;span style=&#34;color:#66d9ef&#34;&gt;table_name&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; other_db.&lt;span style=&#34;color:#66d9ef&#34;&gt;table_name&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주의-사항&#34;&gt;주의 사항&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;RENAME TABLE current_db.table_name TO other_db.table_name;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;주의-사항&#34;&gt;주의 사항&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;대상 이름이 이미 존재하면 실패&lt;/li&gt;
 &lt;li&gt;교차 서버 이동 불가, 같은 서버 인스턴스 내 스키마 간 이동만 가능&lt;/li&gt;
@@ -469,19 +489,18 @@ SQL을 직접 작성하지 않고 데이터 접근 로직을 일관된 API로 �
 &lt;li&gt;특히 자식이 없는 경우 every는 기본적으로 참으로 평가되어 부모가 포함됨. 빈 결과를 제외하려면 추가 조건 필요&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;간단-예시&#34;&gt;간단 예시&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model Post {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  id       Int       @id @default(autoincrement())
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  title    String
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  comments Comment[]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model Comment {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  id     Int    @id @default(autoincrement())
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  text   String
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  postId Int
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  post   Post   @relation(fields: [postId], references: [id])
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;댓글 text가 &amp;lsquo;interesting&amp;rsquo;인 항목을 기준으로 게시글을 거르는 케이스를 가정&lt;/p&gt;</description>
+&lt;pre&gt;&lt;code class=&#34;language-plain&#34;&gt;model Post {
+  id       Int       @id @default(autoincrement())
+  title    String
+  comments Comment[]
+}
+
+model Comment {
+  id     Int    @id @default(autoincrement())
+  text   String
+  postId Int
+  post   Post   @relation(fields: [postId], references: [id])
+}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;댓글 text가 &amp;lsquo;interesting&amp;rsquo;인 항목을 기준으로 게시글을 거르는 케이스를 가정&lt;/p&gt;</description>
     </item>
     <item>
       <title>JavaScript Array.prototype.map 개념과 사용법 정리</title>
@@ -492,10 +511,9 @@ SQL을 직접 작성하지 않고 데이터 접근 로직을 일관된 API로 �
 &lt;p&gt;Array.prototype.map은 배열의 각 요소에 대해 콜백을 호출해 변환된 결과로 새 배열을 만드는 메서드임
 원본 배열 불변 유지, 동일 길이의 새 배열 생성이 핵심 특징임&lt;/p&gt;
 &lt;h3 id=&#34;기본-문법&#34;&gt;기본 문법&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;newArray&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;((&lt;span style=&#34;color:#a6e22e&#34;&gt;element&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;) =&amp;gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;element&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const newArray = array.map((element, index, array) =&amp;gt; {
+  return element;
+});&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;element 현재 요소&lt;/li&gt;
 &lt;li&gt;index 현재 인덱스&lt;/li&gt;
 &lt;li&gt;array 원본 배열 참조&lt;/li&gt;
@@ -503,10 +521,9 @@ SQL을 직접 작성하지 않고 데이터 접근 로직을 일관된 API로 �
 &lt;p&gt;콜백은 요소 수만큼 호출되고, 콜백의 반환값이 새 배열의 같은 위치에 배치됨&lt;/p&gt;
 &lt;h3 id=&#34;사용-예시&#34;&gt;사용 예시&lt;/h3&gt;
 &lt;p&gt;숫자 배열 변환&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;numbers&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;];
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;doubled&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;numbers&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;((&lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;);
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// [2, 4, 6, 8, 10]
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;객체 배열에서 특정 속성 추출&lt;/p&gt;</description>
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map((n) =&amp;gt; n * 2);
+// [2, 4, 6, 8, 10]&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;객체 배열에서 특정 속성 추출&lt;/p&gt;</description>
     </item>
     <item>
       <title>커링과 부분 적용 이해하기: 함수형 자바스크립트 핵심 패턴</title>
@@ -547,33 +564,30 @@ n개의 인자를 받는 함수 → n번에 걸쳐 한 개 인자씩 받는 함�
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;잘못된 예시&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// findUnique에 관계 필터 결합 시도 → 타입 에러
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// (User(1) → Post(N) → Metadata(1) 관계)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;db&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findUnique&lt;/span&gt;({
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;userId&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// &amp;#39;posts&amp;#39;는 유니크 필드가 아니므로 &amp;#39;where&amp;#39;에서 관계 필터링 불가
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;posts&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;some&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;metadata&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;editorEmail&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;email&lt;/span&gt; } } },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;// findUnique에 관계 필터 결합 시도 → 타입 에러
+// (User(1) → Post(N) → Metadata(1) 관계)
+await db.user.findUnique({
+  where: {
+    id: userId,
+    // &amp;#39;posts&amp;#39;는 유니크 필드가 아니므로 &amp;#39;where&amp;#39;에서 관계 필터링 불가
+    posts: { some: { metadata: { editorEmail: email } } },
+  },
+});&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;올바른 최소 조건&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;db&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findUnique&lt;/span&gt;({
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;userId&lt;/span&gt; }, &lt;span style=&#34;color:#75715e&#34;&gt;// &amp;#39;id&amp;#39;는 유니크 필드
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;});
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;await db.user.findUnique({
+  where: { id: userId }, // &amp;#39;id&amp;#39;는 유니크 필드
+});&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;관계 조건이 필요하면 findFirst 또는 findMany 사용&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// &amp;#39;findUnique&amp;#39;가 아닌 &amp;#39;findFirst&amp;#39;를 사용하면
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// &amp;#39;where&amp;#39;에 관계 필터를 포함할 수 있음
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;db&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findFirst&lt;/span&gt;({
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;userId&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;posts&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;some&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;metadata&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;editorEmail&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;email&lt;/span&gt; } } },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;요약하면 &lt;code&gt;findUnique&lt;/code&gt;에는 유니크 조건만, 관계 기반 필터는 &lt;code&gt;findFirst&lt;/code&gt; 또는 &lt;code&gt;findMany&lt;/code&gt;로 처리함&lt;/p&gt;</description>
+&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;// &amp;#39;findUnique&amp;#39;가 아닌 &amp;#39;findFirst&amp;#39;를 사용하면
+// &amp;#39;where&amp;#39;에 관계 필터를 포함할 수 있음
+await db.user.findFirst({
+  where: {
+    id: userId,
+    posts: { some: { metadata: { editorEmail: email } } },
+  },
+});&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;요약하면 &lt;code&gt;findUnique&lt;/code&gt;에는 유니크 조건만, 관계 기반 필터는 &lt;code&gt;findFirst&lt;/code&gt; 또는 &lt;code&gt;findMany&lt;/code&gt;로 처리함&lt;/p&gt;</description>
     </item>
     <item>
       <title>Node.js 실행 흐름과 이벤트 루프 단계 정리</title>
@@ -602,14 +616,13 @@ n개의 인자를 받는 함수 → n번에 걸쳐 한 개 인자씩 받는 함�
 &lt;li&gt;이벤트 루프 진입&lt;/li&gt;
 &lt;li&gt;비동기 콜백 처리 반복&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD
-A[Node 시작] --&amp;gt; B[V8, libuv 초기화]
-B --&amp;gt; C[모듈 로딩]
-C --&amp;gt; D[파싱 및 컴파일]
-D --&amp;gt; E[최상위 코드 실행]
-E --&amp;gt; F[이벤트 루프]
-F --&amp;gt; G[비동기 처리 반복]
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;단계별-동작&#34;&gt;단계별 동작&lt;/h3&gt;
+&lt;div class=&#34;mermaid&#34;&gt;graph TD
+A[Node 시작] --&gt; B[V8, libuv 초기화]
+B --&gt; C[모듈 로딩]
+C --&gt; D[파싱 및 컴파일]
+D --&gt; E[최상위 코드 실행]
+E --&gt; F[이벤트 루프]
+F --&gt; G[비동기 처리 반복]&lt;/div&gt;&lt;h3 id=&#34;단계별-동작&#34;&gt;단계별 동작&lt;/h3&gt;
 &lt;h4 id=&#34;1단계-node-바이너리-시작&#34;&gt;1단계 Node 바이너리 시작&lt;/h4&gt;
 &lt;p&gt;node yourfile.js 실행으로 C++ 엔트리 포인트가 기동됨
 V8, libuv, 내부 바인딩 계층이 초기화되고 런타임 전역 상태가 준비됨&lt;/p&gt;</description>
@@ -671,12 +684,11 @@ V8, libuv, 내부 바인딩 계층이 초기화되고 런타임 전역 상태가
 &lt;p&gt;Parameters는 TypeScript가 제공하는 제네릭 유틸리티 타입으로, 특정 함수 타입의 매개변수 타입들을 튜플로 추출하는 데 사용됨
 함수 래핑, 고차 함수, 어댑터 계층에서 기존 함수 시그니처를 재사용해 타입 안정성을 유지하고 중복 선언을 줄이는 목적에 적합함&lt;/p&gt;
 &lt;h3 id=&#34;문법&#34;&gt;문법&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Parameters&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;...args&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; (
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...&lt;span style=&#34;color:#a6e22e&#34;&gt;args&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;infer&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;any&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;P&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  : &lt;span style=&#34;color:#66d9ef&#34;&gt;never&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;type Parameters&amp;lt;T extends (...args: any) =&amp;gt; any&amp;gt; = T extends (
+  ...args: infer P
+) =&amp;gt; any
+  ? P
+  : never;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;T가 함수 타입이면 매개변수 목록을 튜플 타입 P로 추출&lt;/li&gt;
 &lt;li&gt;T가 함수 타입이 아니면 never 반환&lt;/li&gt;
 &lt;li&gt;추출 결과는 튜플이므로 인덱스 접근, 스프레드, 부분 적용 등 튜플 연산과 조합 가능&lt;/li&gt;
@@ -723,11 +735,10 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
 타입, 설명, 예시, 필수 여부 등을 정의해 Swagger UI에 명확한 스키마 제공
 코드와 문서가 한 소스에서 유지되어 일관성 확보에 유리함&lt;/p&gt;
 &lt;p&gt;간단 사용 예시&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CreateUserDto&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;@ApiProperty&lt;/span&gt;({ &lt;span style=&#34;color:#a6e22e&#34;&gt;description&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;사용자 이름&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;example&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;John Doe&amp;#34;&lt;/span&gt; })
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
+&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;class CreateUserDto {
+  @ApiProperty({ description: &amp;#34;사용자 이름&amp;#34;, example: &amp;#34;John Doe&amp;#34; })
+  name: string;
+}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prisma cursor 기반 페이지네이션 동작 원리와 skip: 1의 의미</title>
@@ -741,23 +752,21 @@ skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으
 &lt;ul&gt;
 &lt;li&gt;cursor는 그 지점부터 시작&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;({
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;cursor&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;100&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;take&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;5&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;asc&amp;#34;&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 결과: 100부터 시작해 5개 반환
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;await prisma.user.findMany({
+  cursor: { id: 100 },
+  take: 5,
+  orderBy: { id: &amp;#34;asc&amp;#34; },
+});
+// 결과: 100부터 시작해 5개 반환&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;skip: 1은 cursor에 해당하는 레코드를 건너뜀&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;({
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;cursor&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;100&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;skip&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;1&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;take&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;5&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;orderBy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;asc&amp;#34;&lt;/span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 결과: 101부터 5개 반환
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;예시로-보는-차이&#34;&gt;예시로 보는 차이&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;await prisma.user.findMany({
+  cursor: { id: 100 },
+  skip: 1,
+  take: 5,
+  orderBy: { id: &amp;#34;asc&amp;#34; },
+});
+// 결과: 101부터 5개 반환&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;예시로-보는-차이&#34;&gt;예시로 보는 차이&lt;/h3&gt;
 &lt;p&gt;데이터가 아래와 같다고 가정&lt;/p&gt;</description>
     </item>
     <item>
@@ -772,8 +781,7 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
 옵션 조합으로 조건 기반 조회를 간결하게 구성 가능&lt;/p&gt;
 &lt;h3 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h3&gt;
 &lt;p&gt;가장 단순한 호출 형태&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;users&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prisma&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;user&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;findMany&lt;/span&gt;();
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주요-옵션&#34;&gt;주요 옵션&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;const users = await prisma.user.findMany();&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;주요-옵션&#34;&gt;주요 옵션&lt;/h3&gt;
 &lt;p&gt;옵션은 필요한 것만 선택적으로 사용&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;where: 조건 필터링&lt;/li&gt;
@@ -804,11 +812,9 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
 &lt;/ul&gt;
 &lt;h3 id=&#34;간단-예시&#34;&gt;간단 예시&lt;/h3&gt;
 &lt;p&gt;변수에 할당&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;greet&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`Hello, &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;인수로 전달&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;run&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;fn&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt;) =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fn&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;v&lt;/span&gt;);
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;run&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;greet&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;);
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;반환값으로 사용 및 클로저&lt;/p&gt;</description>
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const greet = (name) =&amp;gt; `Hello, ${name}`;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;인수로 전달&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const run = (fn, v) =&amp;gt; fn(v);
+run(greet, &amp;#34;Bob&amp;#34;);&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;반환값으로 사용 및 클로저&lt;/p&gt;</description>
     </item>
     <item>
       <title>InnoDB에서 PK 없는 테이블의 동작과 트레이드오프</title>
@@ -861,11 +867,10 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;예시&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;enum&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;BooleanType&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;False&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;True&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;컴파일 결과는 즉시실행함수 형태로 양방향 맵 객체 생성됨&lt;/p&gt;</description>
+&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;enum BooleanType {
+  False = 0,
+  True = 1,
+}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;컴파일 결과는 즉시실행함수 형태로 양방향 맵 객체 생성됨&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQL LIMIT와 OFFSET 사용법 정리: 행 개수 제한과 페이징</title>
@@ -876,24 +881,21 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
 &lt;p&gt;LIMIT는 SELECT 결과에서 반환할 행 수를 제한하는 구문
 WHERE와 ORDER BY 뒤, 즉 SELECT 문 끝에 위치&lt;/p&gt;
 &lt;p&gt;두 가지 형태 사용&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;컬럼명&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;테이블명&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;LIMIT&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;개수&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;컬럼명&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;테이블명&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;LIMIT&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;개수&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;OFFSET&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;시작&lt;/span&gt;_인덱스
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;일부 dialect에서는 아래 축약형도 존재&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- MySQL, SQLite
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;컬럼명&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;테이블명&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;LIMIT&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;시작&lt;/span&gt;_인덱스, &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;개수&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;1-limit-개수&#34;&gt;1. LIMIT 개수&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT 컬럼명
+FROM 테이블명
+LIMIT 개수
+
+SELECT 컬럼명
+FROM 테이블명
+LIMIT 개수 OFFSET 시작_인덱스&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;일부 dialect에서는 아래 축약형도 존재&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;-- MySQL, SQLite
+SELECT 컬럼명
+FROM 테이블명
+LIMIT 시작_인덱스, 개수&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;1-limit-개수&#34;&gt;1. LIMIT 개수&lt;/h3&gt;
 &lt;p&gt;LIMIT 뒤 숫자는 인덱스가 아닌 개수&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; Book
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;LIMIT&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;현재 정렬 기준에서 맨 위 행 1개만 반환
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT *
+FROM Book
+LIMIT 1&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;현재 정렬 기준에서 맨 위 행 1개만 반환
 ORDER BY가 없으면 반환되는 행은 비결정적일 수 있음&lt;/p&gt;</description>
     </item>
     <item>
@@ -981,22 +983,21 @@ canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하�
 핵심은 단일 진실 소스에 원하는 상태를 기록하고, 이를 지속적으로 감시하고 조정해 실제 상태를 일치시키는 루프
 각 컴포넌트의 역할과 상호작용을 이해하면 장애 대응, 스케일링, 성능 튜닝의 기준점 확보 가능&lt;/p&gt;
 &lt;h3 id=&#34;구성요소-관계-한눈에&#34;&gt;구성요소 관계 한눈에&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kubectl / CI
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    │
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ▼
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kube-apiserver ──&amp;gt; etcd
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    │  ▲
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    │  └(상태 영속)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    │
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├─ kube-scheduler(어디 배치할지 결정)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    └─ kube-controller-manager(원하는 상태로 맞춤: ReplicaSet 등)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[각 워커 노드]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kubelet ──(CRI gRPC)──&amp;gt; container runtime ──(OCI)──&amp;gt; runc/crun ──&amp;gt; cgroup 설정 + 컨테이너 시작
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    │                                        │
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├─(CNI 호출) 네트워크/IP 할당            └─ 네임스페이스/마운트 등 격리
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    └─ kube-proxy(서비스 라우팅: iptables/ipvs)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-plain&#34;&gt;kubectl / CI
+    │
+    ▼
+kube-apiserver ──&amp;gt; etcd
+    │  ▲
+    │  └(상태 영속)
+    │
+    ├─ kube-scheduler(어디 배치할지 결정)
+    └─ kube-controller-manager(원하는 상태로 맞춤: ReplicaSet 등)
+
+[각 워커 노드]
+kubelet ──(CRI gRPC)──&amp;gt; container runtime ──(OCI)──&amp;gt; runc/crun ──&amp;gt; cgroup 설정 + 컨테이너 시작
+    │                                        │
+    ├─(CNI 호출) 네트워크/IP 할당            └─ 네임스페이스/마운트 등 격리
+    └─ kube-proxy(서비스 라우팅: iptables/ipvs)&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;모든 컴포넌트의 권위자이자 입구는 apiserver&lt;/li&gt;
 &lt;li&gt;etcd와 직접 통신하는 주체는 apiserver만 존재&lt;/li&gt;
 &lt;li&gt;kubelet은 apiserver를 watch하여 자신에게 배정된 파드 감지&lt;/li&gt;
@@ -1090,11 +1091,10 @@ canActivate가 true 또는 Promise&lt;!-- raw HTML omitted --&gt;을 반환하�
 &lt;li&gt;Extra에 Using filesort, Using temporary 부재&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;예시와-해석&#34;&gt;예시와 해석&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;type: ALL
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;possible_keys: NULL
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rows: 3527425
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Extra: Using where; Using filesort
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;type: ALL
+possible_keys: NULL
+rows: 3527425
+Extra: Using where; Using filesort&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;테이블 전체 스캔으로 많은 행을 읽게 됨&lt;/li&gt;
 &lt;li&gt;인덱스 후보와 실제 사용 인덱스가 없음&lt;/li&gt;
 &lt;li&gt;WHERE로 필터링하고 추가 정렬까지 수행하여 비용 상승&lt;/li&gt;

@@ -6,8 +6,64 @@
     <description>Recent content in Async on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 21 Nov 2025 13:09:50 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Dec 2025 13:13:33 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/async/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>이벤트 루프와 비동기, await에 대한 오해</title>
+      <link>https://blog.jsontapose.com/posts/nodejs-event-loop-async-await-guide-4552e4/</link>
+      <pubDate>Wed, 03 Dec 2025 13:13:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/nodejs-event-loop-async-await-guide-4552e4/</guid>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;-nodejs-기본-구조&#34;&gt;🧠 Node.js 기본 구조&lt;/h2&gt;
+&lt;div class=&#34;mermaid&#34;&gt;graph TB
+    subgraph STACK[Call Stack]
+        S1[현재 실행 중인 함수]
+    end
+
+    subgraph LOOP[Event Loop]
+        EL[Call Stack 비었나?&lt;br/&gt;→ Queue에서 가져오기]
+    end
+
+    subgraph QUEUES[Queues]
+        MQ[Microtask Queue&lt;br/&gt;Promise, await 완료]
+        TQ[Task Queue&lt;br/&gt;setTimeout, I/O, Cron]
+    end
+
+    STACK --&gt; |비어있을 때만| LOOP
+    LOOP --&gt; MQ
+    MQ --&gt; |비었으면| TQ
+    TQ --&gt; STACK
+
+    style STACK fill:#ff6b6b
+    style MQ fill:#4ecdc4
+    style TQ fill:#45b7d1&lt;/div&gt;&lt;p&gt;&lt;strong&gt;핵심 규칙: Call Stack이 비어야만 다음 작업 실행&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-오해-1-settimeout0은-즉시-실행된다&#34;&gt;❌ 오해 1: &amp;ldquo;setTimeout(0)은 즉시 실행된다&amp;rdquo;&lt;/h2&gt;
+&lt;h3 id=&#34;코드&#34;&gt;코드&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-jsx&#34;&gt;console.log(&amp;#34;1&amp;#34;);
+setTimeout(() =&amp;gt; console.log(&amp;#34;2&amp;#34;), 0);
+console.log(&amp;#34;3&amp;#34;);&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;실행-흐름&#34;&gt;실행 흐름&lt;/h3&gt;
+&lt;div class=&#34;mermaid&#34;&gt;sequenceDiagram
+    participant CS as Call Stack
+    participant TQ as Task Queue
+    participant OUT as 출력
+
+    Note over CS: console.log(&#39;1&#39;)
+    CS-&gt;&gt;OUT: &#34;1&#34;
+
+    Note over CS: setTimeout 등록
+    CS-&gt;&gt;TQ: 콜백 등록 (0ms여도!)
+
+    Note over CS: console.log(&#39;3&#39;)
+    CS-&gt;&gt;OUT: &#34;3&#34;
+
+    Note over CS: Call Stack 비었음!
+    TQ-&gt;&gt;CS: 콜백 가져오기
+
+    Note over CS: 콜백 실행
+    CS-&gt;&gt;OUT: &#34;2&#34;&lt;/div&gt;&lt;h3 id=&#34;출력-1--3--2&#34;&gt;출력: &lt;code&gt;1 → 3 → 2&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;setTimeout(0)은 &amp;ldquo;다음 Event Loop에 실행&amp;quot;이라는 뜻!&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>JavaScript Promise.all과 Map 정리 – 동시 비동기 처리와 키-값 컬렉션 기본</title>
       <link>https://blog.jsontapose.com/posts/javascript-promise-all-and-map-d2295e/</link>
@@ -50,14 +106,13 @@
 &lt;li&gt;이벤트 루프 진입&lt;/li&gt;
 &lt;li&gt;비동기 콜백 처리 반복&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD
-A[Node 시작] --&amp;gt; B[V8, libuv 초기화]
-B --&amp;gt; C[모듈 로딩]
-C --&amp;gt; D[파싱 및 컴파일]
-D --&amp;gt; E[최상위 코드 실행]
-E --&amp;gt; F[이벤트 루프]
-F --&amp;gt; G[비동기 처리 반복]
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;단계별-동작&#34;&gt;단계별 동작&lt;/h3&gt;
+&lt;div class=&#34;mermaid&#34;&gt;graph TD
+A[Node 시작] --&gt; B[V8, libuv 초기화]
+B --&gt; C[모듈 로딩]
+C --&gt; D[파싱 및 컴파일]
+D --&gt; E[최상위 코드 실행]
+E --&gt; F[이벤트 루프]
+F --&gt; G[비동기 처리 반복]&lt;/div&gt;&lt;h3 id=&#34;단계별-동작&#34;&gt;단계별 동작&lt;/h3&gt;
 &lt;h4 id=&#34;1단계-node-바이너리-시작&#34;&gt;1단계 Node 바이너리 시작&lt;/h4&gt;
 &lt;p&gt;node yourfile.js 실행으로 C++ 엔트리 포인트가 기동됨
 V8, libuv, 내부 바인딩 계층이 초기화되고 런타임 전역 상태가 준비됨&lt;/p&gt;</description>

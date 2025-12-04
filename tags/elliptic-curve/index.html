@@ -1,5 +1,72 @@
 <!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Elliptic-Curve | HandsLog</title>
-<meta name=keywords content><meta name=description content><meta name=author content><link rel=canonical href=https://blog.jsontapose.com/tags/elliptic-curve/><link crossorigin=anonymous href=/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.jsontapose.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.jsontapose.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.jsontapose.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.jsontapose.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.jsontapose.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://blog.jsontapose.com/tags/elliptic-curve/index.xml><link rel=alternate hreflang=en href=https://blog.jsontapose.com/tags/elliptic-curve/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NKJRT1NC1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6NKJRT1NC1")</script><meta name=google-adsense-account content="ca-pub-6022353980017733"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022353980017733" crossorigin=anonymous></script><meta property="og:url" content="https://blog.jsontapose.com/tags/elliptic-curve/"><meta property="og:site_name" content="HandsLog"><meta property="og:title" content="Elliptic-Curve"><meta property="og:locale" content="ko-kr"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Elliptic-Curve"><meta name=twitter:description content></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://blog.jsontapose.com/ accesskey=h title="HandsLog (Alt + H)">HandsLog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://blog.jsontapose.com/search/ title="search (Alt + /)" accesskey=/><span>search</span></a></li><li><a href=https://blog.jsontapose.com/categories/ title=categories><span>categories</span></a></li><li><a href=https://jsontapose.com/ title="compare JSON"><span>compare JSON</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://blog.jsontapose.com/>Home</a>&nbsp;»&nbsp;<a href=https://blog.jsontapose.com/tags/>Tags</a></div><h1>Elliptic-Curve</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이</h2></header><div class=entry-content><p>개요 영지식 증명은 어떤 명제가 참임을 설득하면서도 그 근거가 되는 비밀은 끝까지 숨기는 절차를 말함 블록체인과 프라이버시 보존 컴퓨팅에서 핵심 도구로 자리 잡았고 범용 계산의 유효성을 작은 증명으로 압축해 전달하는 현대 프로토콜의 기초로 쓰임 이 글은 기본 개념과 직관, 수학적 성질, 대화형과 비대화형의 차이, 디지털 서명과의 구분, 이산로그 기반 간단 Σ-프로토콜까지 한 번에 정리함
+<meta name=keywords content><meta name=description content><meta name=author content><link rel=canonical href=https://blog.jsontapose.com/tags/elliptic-curve/><link crossorigin=anonymous href=/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.jsontapose.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.jsontapose.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.jsontapose.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.jsontapose.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.jsontapose.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://blog.jsontapose.com/tags/elliptic-curve/index.xml><link rel=alternate hreflang=en href=https://blog.jsontapose.com/tags/elliptic-curve/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=module>
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+
+  const isDark = () =>
+    document.body.classList.contains("dark") ||
+    window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+
+  const getThemeOptions = () => {
+    const dark = isDark();
+    return {
+      startOnLoad: false,
+      securityLevel: "loose", 
+      theme: dark ? "dark" : "default",
+      themeVariables: dark
+        ? {
+            primaryColor: "#0f172a"  ,
+            primaryTextColor: "#e5e7eb"  ,
+            primaryBorderColor: "#94a3b8"  ,
+            lineColor: "#94a3b8",
+            textColor: "#e5e7eb",
+            nodeTextColor: "#e5e7eb",
+            edgeLabelBackground: "#0f172a",
+          }
+        : {
+            primaryColor: "#f8fafc"  ,
+            primaryTextColor: "#111827",
+            primaryBorderColor: "#374151",
+            lineColor: "#374151",
+            textColor: "#111827",
+            nodeTextColor: "#111827",
+            edgeLabelBackground: "#ffffff",
+          },
+    };
+  };
+
+  const renderMermaid = () => {
+    
+    document.querySelectorAll(".mermaid[data-processed]").forEach((el) => {
+      el.removeAttribute("data-processed");
+    });
+    mermaid.initialize(getThemeOptions());
+    mermaid.run({ querySelector: ".mermaid" });
+  };
+
+  
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderMermaid, {
+      once: true,
+    });
+  } else {
+    renderMermaid();
+  }
+
+  
+  const btn = document.getElementById("theme-toggle");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      
+      setTimeout(renderMermaid, 0);
+    });
+  }
+
+  
+  const mql = window.matchMedia?.("(prefers-color-scheme: dark)");
+  if (mql && mql.addEventListener) {
+    mql.addEventListener("change", renderMermaid);
+  }
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NKJRT1NC1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6NKJRT1NC1")</script><meta name=google-adsense-account content="ca-pub-6022353980017733"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022353980017733" crossorigin=anonymous></script><meta property="og:url" content="https://blog.jsontapose.com/tags/elliptic-curve/"><meta property="og:site_name" content="HandsLog"><meta property="og:title" content="Elliptic-Curve"><meta property="og:locale" content="ko-kr"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Elliptic-Curve"><meta name=twitter:description content></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://blog.jsontapose.com/ accesskey=h title="HandsLog (Alt + H)">HandsLog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://blog.jsontapose.com/search/ title="search (Alt + /)" accesskey=/><span>search</span></a></li><li><a href=https://blog.jsontapose.com/categories/ title=categories><span>categories</span></a></li><li><a href=https://jsontapose.com/ title="compare JSON"><span>compare JSON</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://blog.jsontapose.com/>Home</a>&nbsp;»&nbsp;<a href=https://blog.jsontapose.com/tags/>Tags</a></div><h1>Elliptic-Curve</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이</h2></header><div class=entry-content><p>개요 영지식 증명은 어떤 명제가 참임을 설득하면서도 그 근거가 되는 비밀은 끝까지 숨기는 절차를 말함 블록체인과 프라이버시 보존 컴퓨팅에서 핵심 도구로 자리 잡았고 범용 계산의 유효성을 작은 증명으로 압축해 전달하는 현대 프로토콜의 기초로 쓰임 이 글은 기본 개념과 직관, 수학적 성질, 대화형과 비대화형의 차이, 디지털 서명과의 구분, 이산로그 기반 간단 Σ-프로토콜까지 한 번에 정리함
 목적과 맥락 비밀을 공개하지 않고 유효성만 검증하려는 요구 증가 퍼블릭 블록체인에서 데이터 비공개 유지와 정합성 보장 필요 확대 오프체인 연산을 온체인에 작은 증명으로 제출해 확장성과 비용 개선 추구 핵심 개념과 정의 Prover 비밀을 가진 참여자. 비밀을 공개하지 않고 명제의 참을 설득하려는 주체 Verifier 검증자. Prover가 비밀을 가진 사실 또는 명제가 참이라는 사실만 확인하려는 주체 Witness 또는 Secret 명제의 참을 뒷받침하는 비밀 값 또는 비밀 지식 Statement 공개 가능한 명제 표현. 예 y = g^x mod p에서 x를 알고 있음을 증명 Challenge 검증자가 제시하는 무작위 도전값. 조작 불가와 예측 불가가 전제 Transcript 또는 View 대화형 상호작용의 기록. 시뮬레이터가 동일 분포로 재현 가능해야 영지식 성립 영지식 증명의 세 가지 성질 완전성 Completeness 정직한 Prover가 비밀을 가지고 있으면 정직한 Verifier는 높은 확률로 설득됨 건전성 Soundness 비밀이 없으면 Prover가 속일 확률이 매우 낮음. 도전 공간 확대나 반복으로 속임 확률을 지수적으로 낮춤 영지식성 Zero-Knowledge Verifier는 명제가 참이라는 사실 외 추가 정보를 얻지 못함. 시뮬레이터가 실제와 구별 불가한 트랜스크립트를 비밀 없이 생성 가능해야 함 직관적 예시 알리바바 동굴 동굴의 두 갈래 A와 B 사이를 가로막는 문이 있고 비밀 주문을 알면 반대편으로 넘어올 수 있음 검증자는 Prover가 들어간 뒤 무작위로 A 또는 B로 나오라고 요구함 Prover가 주문을 모르면 자신이 들어간 쪽을 요구받을 때만 성공 가능. 1회 성공 확률 1/2 k회 독립 반복하면 모두 속일 확률 2^-k로 급감 검증자는 주문 내용은 모르지만 Prover가 주문을 안다는 사실만 높은 확률로 확신 가능함 핵심 포인트
 ...</p></div><footer class=entry-footer><span title='2025-09-29 13:10:22.716 +0000 UTC'>September 29, 2025</span></footer><a class=entry-link aria-label="post link to 영지식 증명 ZKP의 개념과 동작 원리, 디지털 서명과의 차이" href=https://blog.jsontapose.com/posts/zkp-concepts-and-how-it-works-vs-digital-signatures-1338b0/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
 <span>Powered by
