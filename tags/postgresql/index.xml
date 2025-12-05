@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Postgresql on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/postgresql/</link>
+    <description>Recent content in Postgresql on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 05 Dec 2025 13:11:35 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VARCHAR(n) 길이 기준 정리 — 글자 수인가 바이트 수인가</title>
+      <link>https://blog.jsontapose.com/posts/varchar-n-length-characters-vs-bytes-99b017/</link>
+      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/varchar-n-length-characters-vs-bytes-99b017/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;VARCHAR(n)에서 n을 글자 수로 볼지 바이트 수로 볼지 혼동 많음
+표준 SQL의 character varying(n)은 최대 글자 수 의미이나, 실제 구현은 DBMS와 문자셋 설정에 따라 달라짐
+멀티바이트 문자셋에서는 저장 바이트 수와 글자 수가 다름. 길이 제한은 글자 수 기준일 수 있으나 내부 저장은 바이트 단위로 이뤄짐&lt;/p&gt;
+&lt;h3 id=&#34;dbms별-동작&#34;&gt;DBMS별 동작&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;MySQL
+&lt;ul&gt;
+&lt;li&gt;VARCHAR(n)에서 n은 글자 수 의미&lt;/li&gt;
+&lt;li&gt;utf8mb4 사용 시 글자 하나가 최대 4바이트까지 소요. 행 크기 제한 등으로 인해 저장 가능 여부는 바이트 한계에도 영향 받음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PostgreSQL
+&lt;ul&gt;
+&lt;li&gt;character varying(n)에서 n은 글자 수 의미&lt;/li&gt;
+&lt;li&gt;저장은 바이트 단위이나 제약은 글자 수 기준으로 평가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SQL Server
+&lt;ul&gt;
+&lt;li&gt;varchar(n)은 n이 바이트 수. 멀티바이트 문자 사용 시 같은 n이라도 담을 수 있는 글자 수 감소&lt;/li&gt;
+&lt;li&gt;nvarchar(n)은 n이 글자 수. 유니코드 2바이트 단위 저장. 글자 수 기준 제약 필요 시 nvarchar 사용 권장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Oracle
+&lt;ul&gt;
+&lt;li&gt;VARCHAR2(n)은 기본이 바이트 기준. 세션/시스템에서 CHAR semantics 또는 컬럼 정의 시 VARCHAR2(n CHAR)로 명시하면 글자 수 기준&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;실무-팁&#34;&gt;실무 팁&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;한글 100자, 영어 100자 모두 허용 기대라면 글자 수 기준 타입 필요
+&lt;ul&gt;
+&lt;li&gt;MySQL VARCHAR(100), PostgreSQL varchar(100), SQL Server에서는 nvarchar(100), Oracle에서는 VARCHAR2(100 CHAR) 선택&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;저장 바이트 한계 고려 필요. MySQL은 행 크기 한계, Oracle/SQL Server도 페이지 크기 등 제약 존재&lt;/li&gt;
+&lt;li&gt;길이 함수 차이 주의. 바이트 길이와 글자 길이 함수가 다른 경우 존재. 예를 들어 글자 길이 검증은 문자 길이 함수 사용 권장&lt;/li&gt;
+&lt;li&gt;이모지, 결합 문자 등 특수 유니코드 조합은 사용자 체감 글자 수와 코드 포인트 수가 다를 수 있음. 제품 요구사항에 맞는 길이 기준 정의 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;정리&#34;&gt;정리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;VARCHAR(n)이 항상 바이트 무관이라는 주장은 오해&lt;/li&gt;
+&lt;li&gt;많은 DBMS에서 n은 글자 수지만, SQL Server의 varchar처럼 바이트 기준인 구현 존재&lt;/li&gt;
+&lt;li&gt;문자셋과 저장 한계를 함께 고려해야 안정적인 길이 설계 가능&lt;/li&gt;
+&lt;li&gt;한글도 100글자, 영어도 100글자라는 기대를 보장하려면 글자 수 기준 타입과 설정을 명시적으로 선택할 것&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;참고자료&#34;&gt;참고자료&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dev.mysql.com/doc/refman/8.0/en/char.html&#34;&gt;https://dev.mysql.com/doc/refman/8.0/en/char.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.postgresql.org/docs/current/datatype-character.html&#34;&gt;https://www.postgresql.org/docs/current/datatype-character.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/sql/t-sql/data-types/char-and-varchar-transact-sql&#34;&gt;https://learn.microsoft.com/sql/t-sql/data-types/char-and-varchar-transact-sql&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Data-Types.html#GUID-3B0B0A24-FA05-4A1F-902E-2E6D0BF85673&#34;&gt;https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Data-Types.html#GUID-3B0B0A24-FA05-4A1F-902E-2E6D0BF85673&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

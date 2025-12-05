@@ -6,8 +6,64 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 04 Dec 2025 13:13:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Dec 2025 13:11:35 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Character-Encoding</title>
+      <link>https://blog.jsontapose.com/tags/character-encoding/</link>
+      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/character-encoding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://blog.jsontapose.com/tags/database/</link>
+      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mysql</title>
+      <link>https://blog.jsontapose.com/tags/mysql/</link>
+      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/mysql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oracle</title>
+      <link>https://blog.jsontapose.com/tags/oracle/</link>
+      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/oracle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Postgresql</title>
+      <link>https://blog.jsontapose.com/tags/postgresql/</link>
+      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sql</title>
+      <link>https://blog.jsontapose.com/tags/sql/</link>
+      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sql-Server</title>
+      <link>https://blog.jsontapose.com/tags/sql-server/</link>
+      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sql-server/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Varchar</title>
+      <link>https://blog.jsontapose.com/tags/varchar/</link>
+      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/varchar/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Autoscaling</title>
       <link>https://blog.jsontapose.com/tags/autoscaling/</link>
@@ -184,13 +240,6 @@
       <description></description>
     </item>
     <item>
-      <title>Mysql</title>
-      <link>https://blog.jsontapose.com/tags/mysql/</link>
-      <pubDate>Sun, 30 Nov 2025 13:07:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/mysql/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Query-Optimization</title>
       <link>https://blog.jsontapose.com/tags/query-optimization/</link>
       <pubDate>Sun, 30 Nov 2025 13:07:58 +0000</pubDate>
@@ -317,13 +366,6 @@
       <description></description>
     </item>
     <item>
-      <title>Sql</title>
-      <link>https://blog.jsontapose.com/tags/sql/</link>
-      <pubDate>Mon, 24 Nov 2025 13:12:08 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Active-Record</title>
       <link>https://blog.jsontapose.com/tags/active-record/</link>
       <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
@@ -335,13 +377,6 @@
       <link>https://blog.jsontapose.com/tags/data-mapper/</link>
       <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/data-mapper/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://blog.jsontapose.com/tags/database/</link>
-      <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/database/</guid>
       <description></description>
     </item>
     <item>

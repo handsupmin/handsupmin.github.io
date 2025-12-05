@@ -6,8 +6,15 @@
     <description>Recent content in Categories on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 04 Dec 2025 13:13:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Dec 2025 13:11:35 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database</title>
+      <link>https://blog.jsontapose.com/categories/database/</link>
+      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/categories/database/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Kubernetes</title>
       <link>https://blog.jsontapose.com/categories/kubernetes/</link>
@@ -34,13 +41,6 @@
       <link>https://blog.jsontapose.com/categories/javascript/</link>
       <pubDate>Mon, 01 Dec 2025 13:13:20 +0000</pubDate>
       <guid>https://blog.jsontapose.com/categories/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://blog.jsontapose.com/categories/database/</link>
-      <pubDate>Sun, 30 Nov 2025 13:07:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/categories/database/</guid>
       <description></description>
     </item>
     <item>
