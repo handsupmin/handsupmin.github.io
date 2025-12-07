@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 06 Dec 2025 13:08:38 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Dec 2025 13:07:35 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,65 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NestJS forRoot()와 forFeature의 의미와 사용 패턴</title>
+      <link>https://blog.jsontapose.com/posts/nestjs-forroot-forfeature-usage-patterns-922927/</link>
+      <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/nestjs-forroot-forfeature-usage-patterns-922927/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;forRoot()는 모듈이 동작하기 위한 전역 설정을 애플리케이션에 한 번만 주입하기 위한 관례적 팩토리 메서드임. 루트 모듈에서 호출해 싱글톤 리소스와 전역 프로바이더를 구성하는 용도에 해당함&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;일반 import: 기능 모듈을 여러 곳에서 자유롭게 가져오는 방식&lt;/li&gt;
+&lt;li&gt;forRoot(): 설정과 함께 모듈을 초기화하는 진입점. 애플리케이션 전역 단 한 번 호출 전제&lt;/li&gt;
+&lt;li&gt;위치: 루트 모듈 또는 엔트리 모듈에서만 사용 권장&lt;/li&gt;
+&lt;li&gt;대표 예시: ConfigModule.forRoot, TypeOrmModule.forRoot, ScheduleModule.forRoot 등&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리&#34;&gt;동작 원리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NestJS 동적 모듈 패턴 기반. forRoot()는 내부적으로 DynamicModule을 반환해 프로바이더와 설정 값을 주입&lt;/li&gt;
+&lt;li&gt;전역 리소스 초기화 책임을 가짐. 예) 데이터베이스 커넥션 풀, 작업 스케줄러, 구성 설정 캐시 등 싱글톤 리소스&lt;/li&gt;
+&lt;li&gt;isGlobal 옵션을 제공하는 경우 전역 범위로 프로바이더를 노출하도록 설계됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;일반-import-vs-forroot-비교&#34;&gt;일반 import vs forRoot 비교&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;일반 모듈: 재사용 기능 제공, 여러 모듈에서 중복 import 가능&lt;/li&gt;
+&lt;li&gt;forRoot 모듈: 전역 설정 + 리소스 초기화, 한 번만 호출해야 함&lt;/li&gt;
+&lt;li&gt;잘못된 사용 시 문제: 전역 리소스가 중복 생성되어 의도치 않은 다중 실행, 커넥션 중복, 메모리 증가 등 부작용 유발 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;schedulemoduleforroot-동작&#34;&gt;ScheduleModule.forRoot 동작&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Cron 기반 스케줄러 싱글톤 생성&lt;/li&gt;
+&lt;li&gt;@Cron 등 데코레이터로 선언된 작업 탐색 및 등록 수행&lt;/li&gt;
+&lt;li&gt;타이머 시작으로 실제 스케줄 실행 트리거&lt;/li&gt;
+&lt;li&gt;두 번 호출 시 스케줄러와 작업 등록이 중복되어 동일 작업이 두 번 이상 실행되는 현상 발생&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;forroot--forfeature-구분&#34;&gt;forRoot / forFeature 구분&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;forRoot: 앱 전역 설정과 초기화 담당. 호출 1회 원칙&lt;/li&gt;
+&lt;li&gt;forFeature: 특정 기능 단위 등록용. 예) ORM 엔티티, 리포지토리, 서브기능. 필요 모듈에서 여러 번 호출 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;베스트-프랙티스&#34;&gt;베스트 프랙티스&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;전역 리소스 초기화가 필요한 모듈만 forRoot 사용&lt;/li&gt;
+&lt;li&gt;forRoot는 루트 모듈 또는 해당 기능을 대표하는 엔트리 모듈 한 곳에서만 호출&lt;/li&gt;
+&lt;li&gt;기능 단위 확장은 forFeature로 분리하여 의존성 범위를 최소화&lt;/li&gt;
+&lt;li&gt;전역 설정이 필요하면 isGlobal 옵션 고려. 불필요한 재노출 방지를 위해 범위 최소화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;간단-예시&#34;&gt;간단 예시&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;// 루트 모듈에서만 전역 초기화 수행
+@Module({
+  imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
+    TypeOrmModule.forRoot({ host: &amp;#39;localhost&amp;#39; }),
+    ScheduleModule.forRoot(),
+  ],
+})
+class AppModule {}&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;// 기능 모듈에서는 필요한 리소스만 forFeature로 등록
+@Module({ imports: [TypeOrmModule.forFeature([UserEntity, PostEntity])] })
+class FeatureModule {}&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
+&lt;p&gt;forRoot()는 전역 초기화와 설정 전달을 한 번에 묶는 패턴. 위치와 호출 횟수를 통제하지 않으면 전역 리소스 중복 문제로 이어짐. 전역은 forRoot, 기능 단위는 forFeature로 역할을 분리하고, 루트에서 한 번만 초기화하는 규칙을 지키는 것이 핵심임&lt;/p&gt;</description>
     </item>
     <item>
       <title>전략 패턴으로 행위를 동적으로 교체하기 — OCP 관점과 Java 활용 포인트</title>
