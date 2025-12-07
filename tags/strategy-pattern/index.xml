@@ -9,18 +9,40 @@
     <lastBuildDate>Sat, 06 Dec 2025 13:08:38 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/strategy-pattern/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>전략 패턴으로 행위를 동적으로 교체하기 — OCP 관점과 Java 활용 포인트</title>
-      <link>https://blog.jsontapose.com/posts/strategy-pattern-dynamic-behavior-swap-ocp-java-6618f4/</link>
+      <title>전략 패턴 (Strategy Pattern) - 유연한 코드 만들기</title>
+      <link>https://blog.jsontapose.com/posts/strategy-pattern-with-typescript-mermaid-6618f4/</link>
       <pubDate>Sat, 06 Dec 2025 13:08:38 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/strategy-pattern-dynamic-behavior-swap-ocp-java-6618f4/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;전략 패턴은 객체의 행위를 직접 수정하지 않고, 행위를 캡슐화한 전략 객체를 갈아끼우는 방식으로 동작을 교체하는 설계 방식임
-핵심은 상속보다 합성 위주 설계와 인터페이스 기반 위임이며, 런타임에 전략을 바꾸어도 클라이언트 코드는 안정적으로 유지 가능함&lt;/p&gt;
-&lt;h3 id=&#34;왜-필요한가&#34;&gt;왜 필요한가&lt;/h3&gt;
-&lt;p&gt;버스와 기차 같은 운송 수단이 있고 move라는 동일 행위를 제공한다고 가정
-처음에는 버스는 도로, 기차는 선로를 따른다고 구현했다고 하자
-이후 선로를 따라 움직이는 버스 요구가 생기면 기존 Bus의 move 구현을 직접 바꾸게 됨
-이는 OCP(Open-Closed Principle) 위배 가능성 높음&lt;/p&gt;</description>
+      <guid>https://blog.jsontapose.com/posts/strategy-pattern-with-typescript-mermaid-6618f4/</guid>
+      <description>&lt;h3 id=&#34;전략-패턴이란&#34;&gt;전략 패턴이란?&lt;/h3&gt;
+&lt;p&gt;객체의 특정 행동(알고리즘)을 직접 구현하지 않고, &lt;strong&gt;외부에서 &amp;lsquo;전략&amp;rsquo;을 주입받아 갈아 끼우는 방식&lt;/strong&gt;임
+쉽게 말해 &amp;ldquo;본체는 그대로 두고, 부품만 바꿔서 기능을 바꾸는 것&amp;quot;이라 보면 됨&lt;/p&gt;
+&lt;h3 id=&#34;구조-설계&#34;&gt;구조 설계&lt;/h3&gt;
+&lt;p&gt;복잡한 거 다 빼고 핵심 관계만 보면 이럼
+&lt;code&gt;Vehicle&lt;/code&gt;(본체)은 &lt;code&gt;MoveStrategy&lt;/code&gt;(부품)를 가지고 있고, 필요할 때 이 부품만 바꿈&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;classDiagram
+    class MoveStrategy {
+        &lt;&lt;interface&gt;&gt;
+        +move()
+    }
+
+    class RailStrategy {
+        +move()
+    }
+    class RoadStrategy {
+        +move()
+    }
+
+    class Vehicle {
+        -strategy: MoveStrategy
+        +setStrategy()
+        +move()
+    }
+
+    MoveStrategy &lt;|.. RailStrategy
+    MoveStrategy &lt;|.. RoadStrategy
+    Vehicle o-- MoveStrategy&lt;/div&gt;&lt;h3 id=&#34;typescript-구현&#34;&gt;TypeScript 구현&lt;/h3&gt;
+&lt;h4 id=&#34;1-전략strategy-정의&#34;&gt;1. 전략(Strategy) 정의&lt;/h4&gt;
+&lt;p&gt;&amp;ldquo;어떻게 움직일지&amp;quot;에 대한 부품들임&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

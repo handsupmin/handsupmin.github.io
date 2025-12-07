@@ -98,12 +98,13 @@
 검증에 성공하면, 컨트랙트는 약속된 작업을 수행함 (예: 가스비 대납, 아이템 지급 등)</p></li></ol><h3 id=3-핵심-원리-컨트랙트의-서명-검증-과정>3. 핵심 원리: 컨트랙트의 서명 검증 과정<a hidden class=anchor aria-hidden=true href=#3-핵심-원리-컨트랙트의-서명-검증-과정>#</a></h3><p>컨트랙트는 서버의 개인키를 모르는데, 어떻게 서버가 서명했다는 것을 신뢰할 수 있을까?
 이 과정은 암호학적 원리를 이용해 세 단계로 진행됨</p><h3 id=1단계-데이터-해시hash-재구성>1단계: 데이터 해시(Hash) 재구성<a hidden class=anchor aria-hidden=true href=#1단계-데이터-해시hash-재구성>#</a></h3><p>컨트랙트는 사용자가 제출한 파라미터들(userAddress, expiryTimestamp 등)을 받아, 서버가 서명을 생성했을 때와 완벽히 동일한 구조와 순서로 이 데이터들을 조합하여 해시(hash) 값을 다시 계산함</p><p>이때 EIP-712 표준에 따라 컨트랙트의 이름, 버전, 체인 ID 등이 포함된 <strong>도메인 분리자</strong>(Domain Separator)가 해시와 함께 사용되어 다른 컨트랙트에서 서명이 재사용되는 것을 막음</p><pre><code class=language-solidity>// 1. 전달받은 파라미터로 해시 재계산
 bytes32 hash = keccak256(abi.encode(
-SIGNATURE_TYPEHASH,
-userAddress,
-expiryTimestamp,
-recommendedGasLimit,
-recommendedGasPrice
+  SIGNATURE_TYPEHASH,
+  userAddress,
+  expiryTimestamp,
+  recommendedGasLimit,
+  recommendedGasPrice
 ));
+
 bytes32 digest = hashTypedDataV4(hash); // 도메인 분리자와 결합</code></pre><h3 id=2단계-서명자-주소-복원>2단계: 서명자 주소 복원<a hidden class=anchor aria-hidden=true href=#2단계-서명자-주소-복원>#</a></h3><p>ecrecover라는 암호학적 함수는 <strong>메시지 해시</strong>(digest)와 서명값(signature), 이 두 가지를 입력받아 해당 서명을 만들 수 있는 유일한 공개키, 즉 서명자의 주소를 역으로 계산해냄
 이 과정에서 서버의 개인키는 절대 노출되지 않음</p><pre><code class=language-solidity>// 2. 서명에서 주소 복원
 address recoveredAddress = digest.recover(signature);</code></pre><h3 id=3단계-서명자-주소-비교>3단계: 서명자 주소 비교<a hidden class=anchor aria-hidden=true href=#3단계-서명자-주소-비교>#</a></h3><p>마지막으로, 2단계에서 복원된 주소가 스마트 컨트랙트에 미리 저장된 신뢰할 수 있는 서버의 주소(signer)와 일치하는지 비교함
