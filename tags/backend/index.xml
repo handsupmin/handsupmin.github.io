@@ -86,21 +86,23 @@ skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으
 &lt;ul&gt;
 &lt;li&gt;cursor는 그 지점부터 시작&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;await prisma.user.findMany({
-  cursor: { id: 100 },
-  take: 5,
-  orderBy: { id: &amp;#34;asc&amp;#34; },
-});
-// 결과: 100부터 시작해 5개 반환&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; prisma&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;findMany&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  cursor&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; id: &lt;span style=&#34;color:#81a1c1&#34;&gt;100&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  take: &lt;span style=&#34;color:#81a1c1&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  orderBy&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; id&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;asc&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 결과: 100부터 시작해 5개 반환
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;skip: 1은 cursor에 해당하는 레코드를 건너뜀&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;await prisma.user.findMany({
-  cursor: { id: 100 },
-  skip: 1,
-  take: 5,
-  orderBy: { id: &amp;#34;asc&amp;#34; },
-});
-// 결과: 101부터 5개 반환&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;예시로-보는-차이&#34;&gt;예시로 보는 차이&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; prisma&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;findMany&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  cursor&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; id: &lt;span style=&#34;color:#81a1c1&#34;&gt;100&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  skip: &lt;span style=&#34;color:#81a1c1&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  take: &lt;span style=&#34;color:#81a1c1&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  orderBy&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; id&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;asc&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 결과: 101부터 5개 반환
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;예시로-보는-차이&#34;&gt;예시로 보는 차이&lt;/h3&gt;
 &lt;p&gt;데이터가 아래와 같다고 가정&lt;/p&gt;</description>
     </item>
     <item>

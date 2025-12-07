@@ -19,28 +19,28 @@
 &lt;h3 id=&#34;구조-설계&#34;&gt;구조 설계&lt;/h3&gt;
 &lt;p&gt;복잡한 거 다 빼고 핵심 관계만 보면 이럼
 &lt;code&gt;Vehicle&lt;/code&gt;(본체)은 &lt;code&gt;MoveStrategy&lt;/code&gt;(부품)를 가지고 있고, 필요할 때 이 부품만 바꿈&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;classDiagram
+&lt;pre class=&#34;mermaid&#34;&gt;classDiagram
     class MoveStrategy {
-        &lt;&lt;interface&gt;&gt;
-        +move()
+        &amp;lt;&amp;lt;interface&amp;gt;&amp;gt;
+        &amp;#43;move()
     }
 
     class RailStrategy {
-        +move()
+        &amp;#43;move()
     }
     class RoadStrategy {
-        +move()
+        &amp;#43;move()
     }
 
     class Vehicle {
         -strategy: MoveStrategy
-        +setStrategy()
-        +move()
+        &amp;#43;setStrategy()
+        &amp;#43;move()
     }
 
-    MoveStrategy &lt;|.. RailStrategy
-    MoveStrategy &lt;|.. RoadStrategy
-    Vehicle o-- MoveStrategy&lt;/div&gt;&lt;h3 id=&#34;typescript-구현&#34;&gt;TypeScript 구현&lt;/h3&gt;
+    MoveStrategy &amp;lt;|.. RailStrategy
+    MoveStrategy &amp;lt;|.. RoadStrategy
+    Vehicle o-- MoveStrategy&lt;/pre&gt;&lt;h3 id=&#34;typescript-구현&#34;&gt;TypeScript 구현&lt;/h3&gt;
 &lt;h4 id=&#34;1-전략strategy-정의&#34;&gt;1. 전략(Strategy) 정의&lt;/h4&gt;
 &lt;p&gt;&amp;ldquo;어떻게 움직일지&amp;quot;에 대한 부품들임&lt;/p&gt;</description>
     </item>

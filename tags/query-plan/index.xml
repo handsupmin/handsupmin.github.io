@@ -59,10 +59,10 @@
 &lt;li&gt;Extra에 Using filesort, Using temporary 부재&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;예시와-해석&#34;&gt;예시와 해석&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;type: ALL
-possible_keys: NULL
-rows: 3527425
-Extra: Using where; Using filesort&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;type: ALL
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;possible_keys: NULL
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rows: 3527425
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Extra: Using where; Using filesort&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;테이블 전체 스캔으로 많은 행을 읽게 됨&lt;/li&gt;
 &lt;li&gt;인덱스 후보와 실제 사용 인덱스가 없음&lt;/li&gt;
 &lt;li&gt;WHERE로 필터링하고 추가 정렬까지 수행하여 비용 상승&lt;/li&gt;

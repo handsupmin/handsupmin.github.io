@@ -75,6 +75,7 @@ where: 조건 필터링 select: 필드 서브셋 선택 include: 관계 데이�
 SELECT 컬럼명 FROM 테이블명 LIMIT 개수 SELECT 컬럼명 FROM 테이블명 LIMIT 개수 OFFSET 시작_인덱스일부 dialect에서는 아래 축약형도 존재
 -- MySQL, SQLite SELECT 컬럼명 FROM 테이블명 LIMIT 시작_인덱스, 개수1. LIMIT 개수 LIMIT 뒤 숫자는 인덱스가 아닌 개수
 SELECT * FROM Book LIMIT 1현재 정렬 기준에서 맨 위 행 1개만 반환 ORDER BY가 없으면 반환되는 행은 비결정적일 수 있음
+2. LIMIT 개수 OFFSET 시작 OFFSET은 0부터 시작 다음 예시는 4번째 행부터 1개 반환
 ...</p></div><footer class=entry-footer><span title='2025-10-20 13:10:30.355 +0000 UTC'>October 20, 2025</span></footer><a class=entry-link aria-label="post link to SQL LIMIT와 OFFSET 사용법 정리: 행 개수 제한과 페이징" href=https://blog.jsontapose.com/posts/sql-limit-offset-basics-4a9880/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

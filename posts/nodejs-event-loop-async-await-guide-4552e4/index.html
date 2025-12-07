@@ -1,18 +1,18 @@
 <!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>이벤트 루프와 비동기, await에 대한 오해 | HandsLog</title>
 <meta name=keywords content="nodejs,event-loop,async,await"><meta name=description content='
-🧠 Node.js 기본 구조
+Node.js 기본 구조
 graph TB
     subgraph STACK[Call Stack]
         S1[현재 실행 중인 함수]
     end
 
     subgraph LOOP[Event Loop]
-        EL[Call Stack 비었나?→ Queue에서 가져오기]
+        EL[Call Stack 비었나?<br/>→ Queue에서 가져오기]
     end
 
     subgraph QUEUES[Queues]
-        MQ[Microtask QueuePromise, await 완료]
-        TQ[Task QueuesetTimeout, I/O, Cron]
+        MQ[Microtask Queue<br/>Promise, await 완료]
+        TQ[Task Queue<br/>setTimeout, I/O, Cron]
     end
 
     STACK --> |비어있을 때만| LOOP
@@ -24,7 +24,7 @@ graph TB
     style MQ fill:#4ecdc4
     style TQ fill:#45b7d1핵심 규칙: Call Stack이 비어야만 다음 작업 실행
 
-❌ 오해 1: &ldquo;setTimeout(0)은 즉시 실행된다&rdquo;
+오해 1: &ldquo;setTimeout(0)은 즉시 실행된다&rdquo;
 코드
 console.log("1");
 setTimeout(() => console.log("2"), 0);
@@ -115,21 +115,21 @@ setTimeout(0)은 &ldquo;다음 Event Loop에 실행"이라는 뜻!'><meta name=a
   if (mql && mql.addEventListener) {
     mql.addEventListener("change", renderMermaid);
   }
-</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NKJRT1NC1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6NKJRT1NC1")</script><meta name=google-adsense-account content="ca-pub-6022353980017733"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022353980017733" crossorigin=anonymous></script><meta property="og:url" content="https://blog.jsontapose.com/posts/nodejs-event-loop-async-await-guide-4552e4/"><meta property="og:site_name" content="HandsLog"><meta property="og:title" content="이벤트 루프와 비동기, await에 대한 오해"><meta property="og:description" content=' 🧠 Node.js 기본 구조 graph TB subgraph STACK[Call Stack] S1[현재 실행 중인 함수] end subgraph LOOP[Event Loop] EL[Call Stack 비었나?→ Queue에서 가져오기] end subgraph QUEUES[Queues] MQ[Microtask QueuePromise, await 완료] TQ[Task QueuesetTimeout, I/O, Cron] end STACK --> |비어있을 때만| LOOP LOOP --> MQ MQ --> |비었으면| TQ TQ --> STACK style STACK fill:#ff6b6b style MQ fill:#4ecdc4 style TQ fill:#45b7d1핵심 규칙: Call Stack이 비어야만 다음 작업 실행
-❌ 오해 1: “setTimeout(0)은 즉시 실행된다” 코드 console.log("1"); setTimeout(() => console.log("2"), 0); console.log("3");실행 흐름 sequenceDiagram participant CS as Call Stack participant TQ as Task Queue participant OUT as 출력 Note over CS: console.log(&#39;1&#39;) CS->>OUT: "1" Note over CS: setTimeout 등록 CS->>TQ: 콜백 등록 (0ms여도!) Note over CS: console.log(&#39;3&#39;) CS->>OUT: "3" Note over CS: Call Stack 비었음! TQ->>CS: 콜백 가져오기 Note over CS: 콜백 실행 CS->>OUT: "2"출력: 1 → 3 → 2 setTimeout(0)은 “다음 Event Loop에 실행"이라는 뜻!'><meta property="og:locale" content="ko-kr"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-12-03T13:13:33+00:00"><meta property="article:modified_time" content="2025-12-03T13:13:33+00:00"><meta property="article:tag" content="Nodejs"><meta property="article:tag" content="Event-Loop"><meta property="article:tag" content="Async"><meta property="article:tag" content="Await"><meta name=twitter:card content="summary"><meta name=twitter:title content="이벤트 루프와 비동기, await에 대한 오해"><meta name=twitter:description content='
-🧠 Node.js 기본 구조
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NKJRT1NC1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6NKJRT1NC1")</script><meta name=google-adsense-account content="ca-pub-6022353980017733"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022353980017733" crossorigin=anonymous></script><meta property="og:url" content="https://blog.jsontapose.com/posts/nodejs-event-loop-async-await-guide-4552e4/"><meta property="og:site_name" content="HandsLog"><meta property="og:title" content="이벤트 루프와 비동기, await에 대한 오해"><meta property="og:description" content=' Node.js 기본 구조 graph TB subgraph STACK[Call Stack] S1[현재 실행 중인 함수] end subgraph LOOP[Event Loop] EL[Call Stack 비었나?<br/>→ Queue에서 가져오기] end subgraph QUEUES[Queues] MQ[Microtask Queue<br/>Promise, await 완료] TQ[Task Queue<br/>setTimeout, I/O, Cron] end STACK --> |비어있을 때만| LOOP LOOP --> MQ MQ --> |비었으면| TQ TQ --> STACK style STACK fill:#ff6b6b style MQ fill:#4ecdc4 style TQ fill:#45b7d1핵심 규칙: Call Stack이 비어야만 다음 작업 실행
+오해 1: “setTimeout(0)은 즉시 실행된다” 코드 console.log("1"); setTimeout(() => console.log("2"), 0); console.log("3");실행 흐름 sequenceDiagram participant CS as Call Stack participant TQ as Task Queue participant OUT as 출력 Note over CS: console.log(&#39;1&#39;) CS->>OUT: "1" Note over CS: setTimeout 등록 CS->>TQ: 콜백 등록 (0ms여도!) Note over CS: console.log(&#39;3&#39;) CS->>OUT: "3" Note over CS: Call Stack 비었음! TQ->>CS: 콜백 가져오기 Note over CS: 콜백 실행 CS->>OUT: "2"출력: 1 → 3 → 2 setTimeout(0)은 “다음 Event Loop에 실행"이라는 뜻!'><meta property="og:locale" content="ko-kr"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-12-03T13:13:33+00:00"><meta property="article:modified_time" content="2025-12-03T13:13:33+00:00"><meta property="article:tag" content="Nodejs"><meta property="article:tag" content="Event-Loop"><meta property="article:tag" content="Async"><meta property="article:tag" content="Await"><meta name=twitter:card content="summary"><meta name=twitter:title content="이벤트 루프와 비동기, await에 대한 오해"><meta name=twitter:description content='
+Node.js 기본 구조
 graph TB
     subgraph STACK[Call Stack]
         S1[현재 실행 중인 함수]
     end
 
     subgraph LOOP[Event Loop]
-        EL[Call Stack 비었나?→ Queue에서 가져오기]
+        EL[Call Stack 비었나?<br/>→ Queue에서 가져오기]
     end
 
     subgraph QUEUES[Queues]
-        MQ[Microtask QueuePromise, await 완료]
-        TQ[Task QueuesetTimeout, I/O, Cron]
+        MQ[Microtask Queue<br/>Promise, await 완료]
+        TQ[Task Queue<br/>setTimeout, I/O, Cron]
     end
 
     STACK --> |비어있을 때만| LOOP
@@ -141,7 +141,7 @@ graph TB
     style MQ fill:#4ecdc4
     style TQ fill:#45b7d1핵심 규칙: Call Stack이 비어야만 다음 작업 실행
 
-❌ 오해 1: &ldquo;setTimeout(0)은 즉시 실행된다&rdquo;
+오해 1: &ldquo;setTimeout(0)은 즉시 실행된다&rdquo;
 코드
 console.log("1");
 setTimeout(() => console.log("2"), 0);
@@ -165,134 +165,164 @@ sequenceDiagram
 
     Note over CS: 콜백 실행
     CS->>OUT: "2"출력: 1 → 3 → 2
-setTimeout(0)은 &ldquo;다음 Event Loop에 실행"이라는 뜻!'><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://blog.jsontapose.com/posts/"},{"@type":"ListItem","position":2,"name":"이벤트 루프와 비동기, await에 대한 오해","item":"https://blog.jsontapose.com/posts/nodejs-event-loop-async-await-guide-4552e4/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"이벤트 루프와 비동기, await에 대한 오해","name":"이벤트 루프와 비동기, await에 대한 오해","description":" 🧠 Node.js 기본 구조 graph TB subgraph STACK[Call Stack] S1[현재 실행 중인 함수] end subgraph LOOP[Event Loop] EL[Call Stack 비었나?→ Queue에서 가져오기] end subgraph QUEUES[Queues] MQ[Microtask QueuePromise, await 완료] TQ[Task QueuesetTimeout, I/O, Cron] end STACK --\u003e |비어있을 때만| LOOP LOOP --\u003e MQ MQ --\u003e |비었으면| TQ TQ --\u003e STACK style STACK fill:#ff6b6b style MQ fill:#4ecdc4 style TQ fill:#45b7d1핵심 규칙: Call Stack이 비어야만 다음 작업 실행\n❌ 오해 1: \u0026ldquo;setTimeout(0)은 즉시 실행된다\u0026rdquo; 코드 console.log(\u0026#34;1\u0026#34;); setTimeout(() =\u0026gt; console.log(\u0026#34;2\u0026#34;), 0); console.log(\u0026#34;3\u0026#34;);실행 흐름 sequenceDiagram participant CS as Call Stack participant TQ as Task Queue participant OUT as 출력 Note over CS: console.log('1') CS-\u003e\u003eOUT: \"1\" Note over CS: setTimeout 등록 CS-\u003e\u003eTQ: 콜백 등록 (0ms여도!) Note over CS: console.log('3') CS-\u003e\u003eOUT: \"3\" Note over CS: Call Stack 비었음! TQ-\u003e\u003eCS: 콜백 가져오기 Note over CS: 콜백 실행 CS-\u003e\u003eOUT: \"2\"출력: 1 → 3 → 2 setTimeout(0)은 \u0026ldquo;다음 Event Loop에 실행\u0026quot;이라는 뜻!\n","keywords":["nodejs","event-loop","async","await"],"articleBody":" 🧠 Node.js 기본 구조 graph TB subgraph STACK[Call Stack] S1[현재 실행 중인 함수] end subgraph LOOP[Event Loop] EL[Call Stack 비었나?→ Queue에서 가져오기] end subgraph QUEUES[Queues] MQ[Microtask QueuePromise, await 완료] TQ[Task QueuesetTimeout, I/O, Cron] end STACK --\u003e |비어있을 때만| LOOP LOOP --\u003e MQ MQ --\u003e |비었으면| TQ TQ --\u003e STACK style STACK fill:#ff6b6b style MQ fill:#4ecdc4 style TQ fill:#45b7d1핵심 규칙: Call Stack이 비어야만 다음 작업 실행\n❌ 오해 1: “setTimeout(0)은 즉시 실행된다” 코드 console.log(\"1\"); setTimeout(() =\u003e console.log(\"2\"), 0); console.log(\"3\");실행 흐름 sequenceDiagram participant CS as Call Stack participant TQ as Task Queue participant OUT as 출력 Note over CS: console.log('1') CS-\u003e\u003eOUT: \"1\" Note over CS: setTimeout 등록 CS-\u003e\u003eTQ: 콜백 등록 (0ms여도!) Note over CS: console.log('3') CS-\u003e\u003eOUT: \"3\" Note over CS: Call Stack 비었음! TQ-\u003e\u003eCS: 콜백 가져오기 Note over CS: 콜백 실행 CS-\u003e\u003eOUT: \"2\"출력: 1 → 3 → 2 setTimeout(0)은 “다음 Event Loop에 실행\"이라는 뜻!\n❌ 오해 2: “await은 프로그램을 멈춘다” 코드 async function fetchData() { console.log(\"fetch 시작\"); await sleep(3000); console.log(\"fetch 끝\"); } fetchData(); console.log(\"다음 코드\");실행 흐름 sequenceDiagram participant CS as Call Stack participant MQ as Microtask Queue participant OUT as 출력 Note over CS: fetchData() 실행 CS-\u003e\u003eOUT: \"fetch 시작\" Note over CS: await 만남! CS--\u003e\u003eMQ: Promise 등록, 제어권 반환 Note over CS: fetchData 일시 중단 Note over CS: 다음 코드 실행 가능! CS-\u003e\u003eOUT: \"다음 코드\" Note over CS: Call Stack 비었음 Note over MQ: 3초 후 Promise 완료 MQ-\u003e\u003eCS: fetchData 재개 CS-\u003e\u003eOUT: \"fetch 끝\"출력: fetch 시작 → 다음 코드 → (3초 후) fetch 끝 ❌ 오해 3: “Promise와 setTimeout은 같은 우선순위” 코드 console.log(\"1\"); setTimeout(() =\u003e console.log(\"timeout\"), 0); Promise.resolve().then(() =\u003e console.log(\"promise\")); console.log(\"2\");실행 흐름 sequenceDiagram participant CS as Call Stack participant MQ as Microtask Queue participant TQ as Task Queue participant OUT as 출력 Note over CS: 동기 코드 실행 CS-\u003e\u003eOUT: \"1\" CS-\u003e\u003eTQ: setTimeout 콜백 등록 CS-\u003e\u003eMQ: Promise.then 등록 CS-\u003e\u003eOUT: \"2\" Note over CS: Call Stack 비었음! Note over MQ: Microtask 먼저! MQ-\u003e\u003eCS: Promise 콜백 CS-\u003e\u003eOUT: \"promise\" Note over TQ: 그 다음 Task TQ-\u003e\u003eCS: setTimeout 콜백 CS-\u003e\u003eOUT: \"timeout\"출력: 1 → 2 → promise → timeout ❌ 오해 4: “await은 동기처럼 동작한다” 비교 graph LR subgraph SYNC[진짜 동기 대기] A1[while로 CPU 점유] --\u003e A2[전체 프로그램 블록] A2 --\u003e A3[아무것도 못함] end subgraph AWAIT[await 대기] B1[Promise 등록] --\u003e B2[제어권 반환] B2 --\u003e B3[다른 코드 실행 가능!] end style A3 fill:#ff6b6b style B3 fill:#4ecdc4// ❌ 진짜 동기 (전체 블록) function syncWait(ms) { const end = Date.now() + ms; while (Date.now() \u003c end) {} // CPU 점유! } // ✅ await (해당 함수만 중단) await new Promise((r) =\u003e setTimeout(r, 3000)); ❌ 오해 5: “for 안의 await은 병렬” 순차 실행 (기본) gantt title for-await 순차 실행 dateFormat X axisFormat %s초 section 처리 item 1 :0, 1 item 2 :1, 2 item 3 :2, 3for (const item of items) { await processItem(item); // 하나씩 순차! } // 총 3초병렬 실행 (Promise.all) gantt title Promise.all 병렬 실행 dateFormat X axisFormat %s초 section 처리 item 1 :0, 1 item 2 :0, 1 item 3 :0, 1await Promise.all(items.map((item) =\u003e processItem(item))); // 총 1초! 📊 Event Loop 흐름도 (핵심!) flowchart TD START([시작]) --\u003e CS{Call Stack에동기 코드 있음?} CS --\u003e|예| EXEC[실행!끝날 때까지 독점] EXEC --\u003e POP[Call Stack에서 제거] POP --\u003e CS CS --\u003e|아니오| MQ{Microtask Queue에작업 있음?} MQ --\u003e|예| MICRO[모든 Microtask 실행Promise.then, await 완료] MICRO --\u003e MQ MQ --\u003e|아니오| TQ{Task Queue에작업 있음?} TQ --\u003e|예| TASK[하나만 Call Stack에올려서 실행] TASK --\u003e CS TQ --\u003e|아니오| IDLE[대기 idle] IDLE --\u003e CS style EXEC fill:#ff6b6b style MICRO fill:#4ecdc4 style TASK fill:#45b7d1우선순위 graph LR A[1️⃣ Call Stack동기 코드] --\u003e B[2️⃣ Microtask QueuePromise, await] B --\u003e C[3️⃣ Task QueuesetTimeout, I/O] style A fill:#ff6b6b,color:#fff style B fill:#4ecdc4,color:#fff style C fill:#45b7d1,color:#fff 💡 핵심 요약 오해 실제 setTimeout(0)은 즉시 실행 ❌ Task Queue 경유 후 실행 await은 프로그램을 멈춤 ❌ 해당 함수만 중단, 다른 코드 실행 가능 Promise와 setTimeout 우선순위 같음 ❌ Microtask(Promise)가 먼저 await은 동기 코드 ❌ 비동기, Event Loop에 제어권 반환 for-await은 병렬 ❌ 순차 실행, 병렬은 Promise.all 🎯 한 줄 정리 await = “나(이 함수)는 여기서 기다릴게, Event Loop는 그 동안 다른 일 해!”\n","wordCount":"652","inLanguage":"en","datePublished":"2025-12-03T13:13:33.138Z","dateModified":"2025-12-03T13:13:33.138Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.jsontapose.com/posts/nodejs-event-loop-async-await-guide-4552e4/"},"publisher":{"@type":"Organization","name":"HandsLog","logo":{"@type":"ImageObject","url":"https://blog.jsontapose.com/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://blog.jsontapose.com/ accesskey=h title="HandsLog (Alt + H)">HandsLog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://blog.jsontapose.com/search/ title="search (Alt + /)" accesskey=/><span>search</span></a></li><li><a href=https://blog.jsontapose.com/categories/ title=categories><span>categories</span></a></li><li><a href=https://jsontapose.com/ title="compare JSON"><span>compare JSON</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://blog.jsontapose.com/>Home</a>&nbsp;»&nbsp;<a href=https://blog.jsontapose.com/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">이벤트 루프와 비동기, await에 대한 오해</h1><div class=post-meta><span title='2025-12-03 13:13:33.138 +0000 UTC'>December 3, 2025</span></div></header><div class=post-content><hr><h2 id=-nodejs-기본-구조>🧠 Node.js 기본 구조<a hidden class=anchor aria-hidden=true href=#-nodejs-기본-구조>#</a></h2><div class=mermaid>graph TB
-subgraph STACK[Call Stack]
-S1[현재 실행 중인 함수]
-end
-subgraph LOOP[Event Loop]
-EL[Call Stack 비었나?<br>→ Queue에서 가져오기]
-end
-subgraph QUEUES[Queues]
-MQ[Microtask Queue<br>Promise, await 완료]
-TQ[Task Queue<br>setTimeout, I/O, Cron]
-end
-STACK --> |비어있을 때만| LOOP
-LOOP --> MQ
-MQ --> |비었으면| TQ
-TQ --> STACK
-style STACK fill:#ff6b6b
-style MQ fill:#4ecdc4
-style TQ fill:#45b7d1</div><p><strong>핵심 규칙: Call Stack이 비어야만 다음 작업 실행</strong></p><hr><h2 id=-오해-1-settimeout0은-즉시-실행된다>❌ 오해 1: &ldquo;setTimeout(0)은 즉시 실행된다&rdquo;<a hidden class=anchor aria-hidden=true href=#-오해-1-settimeout0은-즉시-실행된다>#</a></h2><h3 id=코드>코드<a hidden class=anchor aria-hidden=true href=#코드>#</a></h3><pre><code class=language-jsx>console.log(&#34;1&#34;);
-setTimeout(() =&gt; console.log(&#34;2&#34;), 0);
-console.log(&#34;3&#34;);</code></pre><h3 id=실행-흐름>실행 흐름<a hidden class=anchor aria-hidden=true href=#실행-흐름>#</a></h3><div class=mermaid>sequenceDiagram
-participant CS as Call Stack
-participant TQ as Task Queue
-participant OUT as 출력
-Note over CS: console.log('1')
-CS->>OUT: "1"
-Note over CS: setTimeout 등록
-CS->>TQ: 콜백 등록 (0ms여도!)
-Note over CS: console.log('3')
-CS->>OUT: "3"
-Note over CS: Call Stack 비었음!
-TQ->>CS: 콜백 가져오기
-Note over CS: 콜백 실행
-CS->>OUT: "2"</div><h3 id=출력-1--3--2>출력: <code>1 → 3 → 2</code><a hidden class=anchor aria-hidden=true href=#출력-1--3--2>#</a></h3><p><strong>setTimeout(0)은 &ldquo;다음 Event Loop에 실행"이라는 뜻!</strong></p><hr><h2 id=-오해-2-await은-프로그램을-멈춘다>❌ 오해 2: &ldquo;await은 프로그램을 멈춘다&rdquo;<a hidden class=anchor aria-hidden=true href=#-오해-2-await은-프로그램을-멈춘다>#</a></h2><h3 id=코드-1>코드<a hidden class=anchor aria-hidden=true href=#코드-1>#</a></h3><pre><code class=language-jsx>async function fetchData() {
-  console.log(&#34;fetch 시작&#34;);
-  await sleep(3000);
-  console.log(&#34;fetch 끝&#34;);
-}
+setTimeout(0)은 &ldquo;다음 Event Loop에 실행"이라는 뜻!'><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://blog.jsontapose.com/posts/"},{"@type":"ListItem","position":2,"name":"이벤트 루프와 비동기, await에 대한 오해","item":"https://blog.jsontapose.com/posts/nodejs-event-loop-async-await-guide-4552e4/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"이벤트 루프와 비동기, await에 대한 오해","name":"이벤트 루프와 비동기, await에 대한 오해","description":" Node.js 기본 구조 graph TB subgraph STACK[Call Stack] S1[현재 실행 중인 함수] end subgraph LOOP[Event Loop] EL[Call Stack 비었나?\u0026lt;br/\u0026gt;→ Queue에서 가져오기] end subgraph QUEUES[Queues] MQ[Microtask Queue\u0026lt;br/\u0026gt;Promise, await 완료] TQ[Task Queue\u0026lt;br/\u0026gt;setTimeout, I/O, Cron] end STACK --\u0026gt; |비어있을 때만| LOOP LOOP --\u0026gt; MQ MQ --\u0026gt; |비었으면| TQ TQ --\u0026gt; STACK style STACK fill:#ff6b6b style MQ fill:#4ecdc4 style TQ fill:#45b7d1핵심 규칙: Call Stack이 비어야만 다음 작업 실행\n오해 1: \u0026ldquo;setTimeout(0)은 즉시 실행된다\u0026rdquo; 코드 console.log(\u0026#34;1\u0026#34;); setTimeout(() =\u0026gt; console.log(\u0026#34;2\u0026#34;), 0); console.log(\u0026#34;3\u0026#34;);실행 흐름 sequenceDiagram participant CS as Call Stack participant TQ as Task Queue participant OUT as 출력 Note over CS: console.log(\u0026#39;1\u0026#39;) CS-\u0026gt;\u0026gt;OUT: \u0026#34;1\u0026#34; Note over CS: setTimeout 등록 CS-\u0026gt;\u0026gt;TQ: 콜백 등록 (0ms여도!) Note over CS: console.log(\u0026#39;3\u0026#39;) CS-\u0026gt;\u0026gt;OUT: \u0026#34;3\u0026#34; Note over CS: Call Stack 비었음! TQ-\u0026gt;\u0026gt;CS: 콜백 가져오기 Note over CS: 콜백 실행 CS-\u0026gt;\u0026gt;OUT: \u0026#34;2\u0026#34;출력: 1 → 3 → 2 setTimeout(0)은 \u0026ldquo;다음 Event Loop에 실행\u0026quot;이라는 뜻!\n","keywords":["nodejs","event-loop","async","await"],"articleBody":" Node.js 기본 구조 graph TB subgraph STACK[Call Stack] S1[현재 실행 중인 함수] end subgraph LOOP[Event Loop] EL[Call Stack 비었나?→ Queue에서 가져오기] end subgraph QUEUES[Queues] MQ[Microtask QueuePromise, await 완료] TQ[Task QueuesetTimeout, I/O, Cron] end STACK --\u003e |비어있을 때만| LOOP LOOP --\u003e MQ MQ --\u003e |비었으면| TQ TQ --\u003e STACK style STACK fill:#ff6b6b style MQ fill:#4ecdc4 style TQ fill:#45b7d1핵심 규칙: Call Stack이 비어야만 다음 작업 실행\n오해 1: “setTimeout(0)은 즉시 실행된다” 코드 console.log(\"1\"); setTimeout(() =\u003e console.log(\"2\"), 0); console.log(\"3\");실행 흐름 sequenceDiagram participant CS as Call Stack participant TQ as Task Queue participant OUT as 출력 Note over CS: console.log('1') CS-\u003e\u003eOUT: \"1\" Note over CS: setTimeout 등록 CS-\u003e\u003eTQ: 콜백 등록 (0ms여도!) Note over CS: console.log('3') CS-\u003e\u003eOUT: \"3\" Note over CS: Call Stack 비었음! TQ-\u003e\u003eCS: 콜백 가져오기 Note over CS: 콜백 실행 CS-\u003e\u003eOUT: \"2\"출력: 1 → 3 → 2 setTimeout(0)은 “다음 Event Loop에 실행\"이라는 뜻!\n오해 2: “await은 프로그램을 멈춘다” 코드 async function fetchData() { console.log(\"fetch 시작\"); await sleep(3000); console.log(\"fetch 끝\"); } fetchData(); console.log(\"다음 코드\");실행 흐름 sequenceDiagram participant CS as Call Stack participant MQ as Microtask Queue participant OUT as 출력 Note over CS: fetchData() 실행 CS-\u003e\u003eOUT: \"fetch 시작\" Note over CS: await 만남! CS--\u003e\u003eMQ: Promise 등록, 제어권 반환 Note over CS: fetchData 일시 중단 Note over CS: 다음 코드 실행 가능! CS-\u003e\u003eOUT: \"다음 코드\" Note over CS: Call Stack 비었음 Note over MQ: 3초 후 Promise 완료 MQ-\u003e\u003eCS: fetchData 재개 CS-\u003e\u003eOUT: \"fetch 끝\"출력: fetch 시작 → 다음 코드 → (3초 후) fetch 끝 오해 3: “Promise와 setTimeout은 같은 우선순위” 코드 console.log(\"1\"); setTimeout(() =\u003e console.log(\"timeout\"), 0); Promise.resolve().then(() =\u003e console.log(\"promise\")); console.log(\"2\");실행 흐름 sequenceDiagram participant CS as Call Stack participant MQ as Microtask Queue participant TQ as Task Queue participant OUT as 출력 Note over CS: 동기 코드 실행 CS-\u003e\u003eOUT: \"1\" CS-\u003e\u003eTQ: setTimeout 콜백 등록 CS-\u003e\u003eMQ: Promise.then 등록 CS-\u003e\u003eOUT: \"2\" Note over CS: Call Stack 비었음! Note over MQ: Microtask 먼저! MQ-\u003e\u003eCS: Promise 콜백 CS-\u003e\u003eOUT: \"promise\" Note over TQ: 그 다음 Task TQ-\u003e\u003eCS: setTimeout 콜백 CS-\u003e\u003eOUT: \"timeout\"출력: 1 → 2 → promise → timeout 오해 4: “await은 동기처럼 동작한다” 비교 graph LR subgraph SYNC[진짜 동기 대기] A1[while로 CPU 점유] --\u003e A2[전체 프로그램 블록] A2 --\u003e A3[아무것도 못함] end subgraph AWAIT[await 대기] B1[Promise 등록] --\u003e B2[제어권 반환] B2 --\u003e B3[다른 코드 실행 가능!] end style A3 fill:#ff6b6b style B3 fill:#4ecdc4// ❌ 진짜 동기 (전체 블록) function syncWait(ms) { const end = Date.now() + ms; while (Date.now() \u003c end) {} // CPU 점유! } // ✅ await (해당 함수만 중단) await new Promise((r) =\u003e setTimeout(r, 3000)); 오해 5: “for 안의 await은 병렬” 순차 실행 (기본) gantt title for-await 순차 실행 dateFormat X axisFormat %s초 section 처리 item 1 :0, 1 item 2 :1, 2 item 3 :2, 3for (const item of items) { await processItem(item); // 하나씩 순차! } // 총 3초병렬 실행 (Promise.all) gantt title Promise.all 병렬 실행 dateFormat X axisFormat %s초 section 처리 item 1 :0, 1 item 2 :0, 1 item 3 :0, 1await Promise.all(items.map((item) =\u003e processItem(item))); // 총 1초! Event Loop 흐름도 (핵심!) flowchart TD START([시작]) --\u003e CS{Call Stack에동기 코드 있음?} CS --\u003e|예| EXEC[실행!끝날 때까지 독점] EXEC --\u003e POP[Call Stack에서 제거] POP --\u003e CS CS --\u003e|아니오| MQ{Microtask Queue에작업 있음?} MQ --\u003e|예| MICRO[모든 Microtask 실행Promise.then, await 완료] MICRO --\u003e MQ MQ --\u003e|아니오| TQ{Task Queue에작업 있음?} TQ --\u003e|예| TASK[하나만 Call Stack에올려서 실행] TASK --\u003e CS TQ --\u003e|아니오| IDLE[대기 idle] IDLE --\u003e CS style EXEC fill:#ff6b6b style MICRO fill:#4ecdc4 style TASK fill:#45b7d1우선순위 graph LR A[1️⃣ Call Stack동기 코드] --\u003e B[2️⃣ Microtask QueuePromise, await] B --\u003e C[3️⃣ Task QueuesetTimeout, I/O] style A fill:#ff6b6b,color:#fff style B fill:#4ecdc4,color:#fff style C fill:#45b7d1,color:#fff 핵심 요약 오해 실제 setTimeout(0)은 즉시 실행 ❌ Task Queue 경유 후 실행 await은 프로그램을 멈춤 ❌ 해당 함수만 중단, 다른 코드 실행 가능 Promise와 setTimeout 우선순위 같음 ❌ Microtask(Promise)가 먼저 await은 동기 코드 ❌ 비동기, Event Loop에 제어권 반환 for-await은 병렬 ❌ 순차 실행, 병렬은 Promise.all 한 줄 정리 await = “나(이 함수)는 여기서 기다릴게, Event Loop는 그 동안 다른 일 해!”\n","wordCount":"643","inLanguage":"en","datePublished":"2025-12-03T13:13:33.138Z","dateModified":"2025-12-03T13:13:33.138Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.jsontapose.com/posts/nodejs-event-loop-async-await-guide-4552e4/"},"publisher":{"@type":"Organization","name":"HandsLog","logo":{"@type":"ImageObject","url":"https://blog.jsontapose.com/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://blog.jsontapose.com/ accesskey=h title="HandsLog (Alt + H)">HandsLog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://blog.jsontapose.com/search/ title="search (Alt + /)" accesskey=/><span>search</span></a></li><li><a href=https://blog.jsontapose.com/categories/ title=categories><span>categories</span></a></li><li><a href=https://jsontapose.com/ title="compare JSON"><span>compare JSON</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://blog.jsontapose.com/>Home</a>&nbsp;»&nbsp;<a href=https://blog.jsontapose.com/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">이벤트 루프와 비동기, await에 대한 오해</h1><div class=post-meta><span title='2025-12-03 13:13:33.138 +0000 UTC'>December 3, 2025</span></div></header><div class=post-content><hr><h2 id=nodejs-기본-구조>Node.js 기본 구조<a hidden class=anchor aria-hidden=true href=#nodejs-기본-구조>#</a></h2><pre class=mermaid>graph TB
+    subgraph STACK[Call Stack]
+        S1[현재 실행 중인 함수]
+    end
 
-fetchData();
-console.log(&#34;다음 코드&#34;);</code></pre><h3 id=실행-흐름-1>실행 흐름<a hidden class=anchor aria-hidden=true href=#실행-흐름-1>#</a></h3><div class=mermaid>sequenceDiagram
-participant CS as Call Stack
-participant MQ as Microtask Queue
-participant OUT as 출력
-Note over CS: fetchData() 실행
-CS->>OUT: "fetch 시작"
-Note over CS: await 만남!
-CS-->>MQ: Promise 등록, 제어권 반환
-Note over CS: fetchData 일시 중단
-Note over CS: 다음 코드 실행 가능!
-CS->>OUT: "다음 코드"
-Note over CS: Call Stack 비었음
-Note over MQ: 3초 후 Promise 완료
-MQ->>CS: fetchData 재개
-CS->>OUT: "fetch 끝"</div><h3 id=출력-fetch-시작--다음-코드--3초-후-fetch-끝>출력: <code>fetch 시작 → 다음 코드 → (3초 후) fetch 끝</code><a hidden class=anchor aria-hidden=true href=#출력-fetch-시작--다음-코드--3초-후-fetch-끝>#</a></h3><hr><h2 id=-오해-3-promise와-settimeout은-같은-우선순위>❌ 오해 3: &ldquo;Promise와 setTimeout은 같은 우선순위&rdquo;<a hidden class=anchor aria-hidden=true href=#-오해-3-promise와-settimeout은-같은-우선순위>#</a></h2><h3 id=코드-2>코드<a hidden class=anchor aria-hidden=true href=#코드-2>#</a></h3><pre><code class=language-jsx>console.log(&#34;1&#34;);
-setTimeout(() =&gt; console.log(&#34;timeout&#34;), 0);
-Promise.resolve().then(() =&gt; console.log(&#34;promise&#34;));
-console.log(&#34;2&#34;);</code></pre><h3 id=실행-흐름-2>실행 흐름<a hidden class=anchor aria-hidden=true href=#실행-흐름-2>#</a></h3><div class=mermaid>sequenceDiagram
-participant CS as Call Stack
-participant MQ as Microtask Queue
-participant TQ as Task Queue
-participant OUT as 출력
-Note over CS: 동기 코드 실행
-CS->>OUT: "1"
-CS->>TQ: setTimeout 콜백 등록
-CS->>MQ: Promise.then 등록
-CS->>OUT: "2"
-Note over CS: Call Stack 비었음!
-Note over MQ: Microtask 먼저!
-MQ->>CS: Promise 콜백
-CS->>OUT: "promise"
-Note over TQ: 그 다음 Task
-TQ->>CS: setTimeout 콜백
-CS->>OUT: "timeout"</div><h3 id=출력-1--2--promise--timeout>출력: <code>1 → 2 → promise → timeout</code><a hidden class=anchor aria-hidden=true href=#출력-1--2--promise--timeout>#</a></h3><hr><h2 id=-오해-4-await은-동기처럼-동작한다>❌ 오해 4: &ldquo;await은 동기처럼 동작한다&rdquo;<a hidden class=anchor aria-hidden=true href=#-오해-4-await은-동기처럼-동작한다>#</a></h2><h3 id=비교>비교<a hidden class=anchor aria-hidden=true href=#비교>#</a></h3><div class=mermaid>graph LR
-subgraph SYNC[진짜 동기 대기]
-A1[while로 CPU 점유] --> A2[전체 프로그램 블록]
-A2 --> A3[아무것도 못함]
-end
-subgraph AWAIT[await 대기]
-B1[Promise 등록] --> B2[제어권 반환]
-B2 --> B3[다른 코드 실행 가능!]
-end
-style A3 fill:#ff6b6b
-style B3 fill:#4ecdc4</div><pre><code class=language-jsx>// ❌ 진짜 동기 (전체 블록)
-function syncWait(ms) {
-  const end = Date.now() + ms;
-  while (Date.now() &lt; end) {} // CPU 점유!
-}
+    subgraph LOOP[Event Loop]
+        EL[Call Stack 비었나?&lt;br/&gt;→ Queue에서 가져오기]
+    end
 
-// ✅ await (해당 함수만 중단)
-await new Promise((r) =&gt; setTimeout(r, 3000));</code></pre><hr><h2 id=-오해-5-for-안의-await은-병렬>❌ 오해 5: &ldquo;for 안의 await은 병렬&rdquo;<a hidden class=anchor aria-hidden=true href=#-오해-5-for-안의-await은-병렬>#</a></h2><h3 id=순차-실행-기본>순차 실행 (기본)<a hidden class=anchor aria-hidden=true href=#순차-실행-기본>#</a></h3><div class=mermaid>gantt
-title for-await 순차 실행
-dateFormat X
-axisFormat %s초
-section 처리
-item 1 :0, 1
-item 2 :1, 2
-item 3 :2, 3</div><pre><code class=language-jsx>for (const item of items) {
-  await processItem(item); // 하나씩 순차!
-}
-// 총 3초</code></pre><h3 id=병렬-실행-promiseall>병렬 실행 (Promise.all)<a hidden class=anchor aria-hidden=true href=#병렬-실행-promiseall>#</a></h3><div class=mermaid>gantt
-title Promise.all 병렬 실행
-dateFormat X
-axisFormat %s초
-section 처리
-item 1 :0, 1
-item 2 :0, 1
-item 3 :0, 1</div><pre><code class=language-jsx>await Promise.all(items.map((item) =&gt; processItem(item)));
-// 총 1초!</code></pre><hr><h2 id=-event-loop-흐름도-핵심>📊 Event Loop 흐름도 (핵심!)<a hidden class=anchor aria-hidden=true href=#-event-loop-흐름도-핵심>#</a></h2><div class=mermaid>flowchart TD
-START([시작]) --> CS{Call Stack에<br>동기 코드 있음?}
-CS -->|예| EXEC[실행!<br>끝날 때까지 독점]
-EXEC --> POP[Call Stack에서 제거]
-POP --> CS
-CS -->|아니오| MQ{Microtask Queue에<br>작업 있음?}
-MQ -->|예| MICRO[모든 Microtask 실행<br>Promise.then, await 완료]
-MICRO --> MQ
-MQ -->|아니오| TQ{Task Queue에<br>작업 있음?}
-TQ -->|예| TASK[하나만 Call Stack에<br>올려서 실행]
-TASK --> CS
-TQ -->|아니오| IDLE[대기 idle]
-IDLE --> CS
-style EXEC fill:#ff6b6b
-style MICRO fill:#4ecdc4
-style TASK fill:#45b7d1</div><h3 id=우선순위>우선순위<a hidden class=anchor aria-hidden=true href=#우선순위>#</a></h3><div class=mermaid>graph LR
-A[1️⃣ Call Stack<br>동기 코드] --> B[2️⃣ Microtask Queue<br>Promise, await]
-B --> C[3️⃣ Task Queue<br>setTimeout, I/O]
-style A fill:#ff6b6b,color:#fff
-style B fill:#4ecdc4,color:#fff
-style C fill:#45b7d1,color:#fff</div><hr><h2 id=-핵심-요약>💡 핵심 요약<a hidden class=anchor aria-hidden=true href=#-핵심-요약>#</a></h2><table><thead><tr><th>오해</th><th>실제</th></tr></thead><tbody><tr><td>setTimeout(0)은 즉시 실행</td><td>❌ Task Queue 경유 후 실행</td></tr><tr><td>await은 프로그램을 멈춤</td><td>❌ 해당 함수만 중단, 다른 코드 실행 가능</td></tr><tr><td>Promise와 setTimeout 우선순위 같음</td><td>❌ Microtask(Promise)가 먼저</td></tr><tr><td>await은 동기 코드</td><td>❌ 비동기, Event Loop에 제어권 반환</td></tr><tr><td>for-await은 병렬</td><td>❌ 순차 실행, 병렬은 Promise.all</td></tr></tbody></table><hr><h2 id=-한-줄-정리>🎯 한 줄 정리<a hidden class=anchor aria-hidden=true href=#-한-줄-정리>#</a></h2><blockquote><p>await = &ldquo;나(이 함수)는 여기서 기다릴게, Event Loop는 그 동안 다른 일 해!&rdquo;</p></blockquote></div><footer class=post-footer><ul class=post-tags><li><a href=https://blog.jsontapose.com/tags/nodejs/>Nodejs</a></li><li><a href=https://blog.jsontapose.com/tags/event-loop/>Event-Loop</a></li><li><a href=https://blog.jsontapose.com/tags/async/>Async</a></li><li><a href=https://blog.jsontapose.com/tags/await/>Await</a></li></ul><nav class=paginav><a class=prev href=https://blog.jsontapose.com/posts/kubernetes-controllers-core-practical-guide-ecd5cd/><span class=title>« Prev</span><br><span>Kubernetes Controllers 핵심 개념과 실전 가이드</span>
+    subgraph QUEUES[Queues]
+        MQ[Microtask Queue&lt;br/&gt;Promise, await 완료]
+        TQ[Task Queue&lt;br/&gt;setTimeout, I/O, Cron]
+    end
+
+    STACK --&gt; |비어있을 때만| LOOP
+    LOOP --&gt; MQ
+    MQ --&gt; |비었으면| TQ
+    TQ --&gt; STACK
+
+    style STACK fill:#ff6b6b
+    style MQ fill:#4ecdc4
+    style TQ fill:#45b7d1</pre><p><strong>핵심 규칙: Call Stack이 비어야만 다음 작업 실행</strong></p><hr><h2 id=오해-1-settimeout0은-즉시-실행된다>오해 1: &ldquo;setTimeout(0)은 즉시 실행된다&rdquo;<a hidden class=anchor aria-hidden=true href=#오해-1-settimeout0은-즉시-실행된다>#</a></h2><h3 id=코드>코드<a hidden class=anchor aria-hidden=true href=#코드>#</a></h3><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jsx data-lang=jsx><span style=display:flex><span>console<span style=color:#eceff4>.</span>log<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;1&#34;</span><span style=color:#eceff4>);</span>
+</span></span><span style=display:flex><span>setTimeout<span style=color:#eceff4>(()</span> <span style=color:#eceff4>=&gt;</span> console<span style=color:#eceff4>.</span>log<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;2&#34;</span><span style=color:#eceff4>),</span> <span style=color:#b48ead>0</span><span style=color:#eceff4>);</span>
+</span></span><span style=display:flex><span>console<span style=color:#eceff4>.</span>log<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;3&#34;</span><span style=color:#eceff4>);</span></span></span></code></pre></div><h3 id=실행-흐름>실행 흐름<a hidden class=anchor aria-hidden=true href=#실행-흐름>#</a></h3><pre class=mermaid>sequenceDiagram
+    participant CS as Call Stack
+    participant TQ as Task Queue
+    participant OUT as 출력
+
+    Note over CS: console.log(&#39;1&#39;)
+    CS-&gt;&gt;OUT: &#34;1&#34;
+
+    Note over CS: setTimeout 등록
+    CS-&gt;&gt;TQ: 콜백 등록 (0ms여도!)
+
+    Note over CS: console.log(&#39;3&#39;)
+    CS-&gt;&gt;OUT: &#34;3&#34;
+
+    Note over CS: Call Stack 비었음!
+    TQ-&gt;&gt;CS: 콜백 가져오기
+
+    Note over CS: 콜백 실행
+    CS-&gt;&gt;OUT: &#34;2&#34;</pre><h3 id=출력-1--3--2>출력: <code>1 → 3 → 2</code><a hidden class=anchor aria-hidden=true href=#출력-1--3--2>#</a></h3><p><strong>setTimeout(0)은 &ldquo;다음 Event Loop에 실행"이라는 뜻!</strong></p><hr><h2 id=오해-2-await은-프로그램을-멈춘다>오해 2: &ldquo;await은 프로그램을 멈춘다&rdquo;<a hidden class=anchor aria-hidden=true href=#오해-2-await은-프로그램을-멈춘다>#</a></h2><h3 id=코드-1>코드<a hidden class=anchor aria-hidden=true href=#코드-1>#</a></h3><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jsx data-lang=jsx><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>async</span> <span style=color:#81a1c1;font-weight:700>function</span> fetchData<span style=color:#eceff4>()</span> <span style=color:#eceff4>{</span>
+</span></span><span style=display:flex><span>  console<span style=color:#eceff4>.</span>log<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;fetch 시작&#34;</span><span style=color:#eceff4>);</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1;font-weight:700>await</span> sleep<span style=color:#eceff4>(</span><span style=color:#b48ead>3000</span><span style=color:#eceff4>);</span>
+</span></span><span style=display:flex><span>  console<span style=color:#eceff4>.</span>log<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;fetch 끝&#34;</span><span style=color:#eceff4>);</span>
+</span></span><span style=display:flex><span><span style=color:#eceff4>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>fetchData<span style=color:#eceff4>();</span>
+</span></span><span style=display:flex><span>console<span style=color:#eceff4>.</span>log<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;다음 코드&#34;</span><span style=color:#eceff4>);</span></span></span></code></pre></div><h3 id=실행-흐름-1>실행 흐름<a hidden class=anchor aria-hidden=true href=#실행-흐름-1>#</a></h3><pre class=mermaid>sequenceDiagram
+    participant CS as Call Stack
+    participant MQ as Microtask Queue
+    participant OUT as 출력
+
+    Note over CS: fetchData() 실행
+    CS-&gt;&gt;OUT: &#34;fetch 시작&#34;
+
+    Note over CS: await 만남!
+    CS--&gt;&gt;MQ: Promise 등록, 제어권 반환
+    Note over CS: fetchData 일시 중단
+
+    Note over CS: 다음 코드 실행 가능!
+    CS-&gt;&gt;OUT: &#34;다음 코드&#34;
+
+    Note over CS: Call Stack 비었음
+
+    Note over MQ: 3초 후 Promise 완료
+    MQ-&gt;&gt;CS: fetchData 재개
+    CS-&gt;&gt;OUT: &#34;fetch 끝&#34;</pre><h3 id=출력-fetch-시작--다음-코드--3초-후-fetch-끝>출력: <code>fetch 시작 → 다음 코드 → (3초 후) fetch 끝</code><a hidden class=anchor aria-hidden=true href=#출력-fetch-시작--다음-코드--3초-후-fetch-끝>#</a></h3><hr><h2 id=오해-3-promise와-settimeout은-같은-우선순위>오해 3: &ldquo;Promise와 setTimeout은 같은 우선순위&rdquo;<a hidden class=anchor aria-hidden=true href=#오해-3-promise와-settimeout은-같은-우선순위>#</a></h2><h3 id=코드-2>코드<a hidden class=anchor aria-hidden=true href=#코드-2>#</a></h3><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jsx data-lang=jsx><span style=display:flex><span>console<span style=color:#eceff4>.</span>log<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;1&#34;</span><span style=color:#eceff4>);</span>
+</span></span><span style=display:flex><span>setTimeout<span style=color:#eceff4>(()</span> <span style=color:#eceff4>=&gt;</span> console<span style=color:#eceff4>.</span>log<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;timeout&#34;</span><span style=color:#eceff4>),</span> <span style=color:#b48ead>0</span><span style=color:#eceff4>);</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1>Promise</span><span style=color:#eceff4>.</span>resolve<span style=color:#eceff4>().</span>then<span style=color:#eceff4>(()</span> <span style=color:#eceff4>=&gt;</span> console<span style=color:#eceff4>.</span>log<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;promise&#34;</span><span style=color:#eceff4>));</span>
+</span></span><span style=display:flex><span>console<span style=color:#eceff4>.</span>log<span style=color:#eceff4>(</span><span style=color:#a3be8c>&#34;2&#34;</span><span style=color:#eceff4>);</span></span></span></code></pre></div><h3 id=실행-흐름-2>실행 흐름<a hidden class=anchor aria-hidden=true href=#실행-흐름-2>#</a></h3><pre class=mermaid>sequenceDiagram
+    participant CS as Call Stack
+    participant MQ as Microtask Queue
+    participant TQ as Task Queue
+    participant OUT as 출력
+
+    Note over CS: 동기 코드 실행
+    CS-&gt;&gt;OUT: &#34;1&#34;
+    CS-&gt;&gt;TQ: setTimeout 콜백 등록
+    CS-&gt;&gt;MQ: Promise.then 등록
+    CS-&gt;&gt;OUT: &#34;2&#34;
+
+    Note over CS: Call Stack 비었음!
+
+    Note over MQ: Microtask 먼저!
+    MQ-&gt;&gt;CS: Promise 콜백
+    CS-&gt;&gt;OUT: &#34;promise&#34;
+
+    Note over TQ: 그 다음 Task
+    TQ-&gt;&gt;CS: setTimeout 콜백
+    CS-&gt;&gt;OUT: &#34;timeout&#34;</pre><h3 id=출력-1--2--promise--timeout>출력: <code>1 → 2 → promise → timeout</code><a hidden class=anchor aria-hidden=true href=#출력-1--2--promise--timeout>#</a></h3><hr><h2 id=오해-4-await은-동기처럼-동작한다>오해 4: &ldquo;await은 동기처럼 동작한다&rdquo;<a hidden class=anchor aria-hidden=true href=#오해-4-await은-동기처럼-동작한다>#</a></h2><h3 id=비교>비교<a hidden class=anchor aria-hidden=true href=#비교>#</a></h3><pre class=mermaid>graph LR
+    subgraph SYNC[진짜 동기 대기]
+        A1[while로 CPU 점유] --&gt; A2[전체 프로그램 블록]
+        A2 --&gt; A3[아무것도 못함]
+    end
+
+    subgraph AWAIT[await 대기]
+        B1[Promise 등록] --&gt; B2[제어권 반환]
+        B2 --&gt; B3[다른 코드 실행 가능!]
+    end
+
+    style A3 fill:#ff6b6b
+    style B3 fill:#4ecdc4</pre><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jsx data-lang=jsx><span style=display:flex><span><span style=color:#616e87;font-style:italic>// ❌ 진짜 동기 (전체 블록)
+</span></span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic></span><span style=color:#81a1c1;font-weight:700>function</span> syncWait<span style=color:#eceff4>(</span>ms<span style=color:#eceff4>)</span> <span style=color:#eceff4>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1;font-weight:700>const</span> end <span style=color:#81a1c1>=</span> <span style=color:#81a1c1>Date</span><span style=color:#eceff4>.</span>now<span style=color:#eceff4>()</span> <span style=color:#81a1c1>+</span> ms<span style=color:#eceff4>;</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1;font-weight:700>while</span> <span style=color:#eceff4>(</span><span style=color:#81a1c1>Date</span><span style=color:#eceff4>.</span>now<span style=color:#eceff4>()</span> <span style=color:#81a1c1>&lt;</span> end<span style=color:#eceff4>)</span> <span style=color:#eceff4>{}</span> <span style=color:#616e87;font-style:italic>// CPU 점유!
+</span></span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic></span><span style=color:#eceff4>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic>// ✅ await (해당 함수만 중단)
+</span></span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic></span><span style=color:#81a1c1;font-weight:700>await</span> <span style=color:#81a1c1;font-weight:700>new</span> <span style=color:#81a1c1>Promise</span><span style=color:#eceff4>((</span>r<span style=color:#eceff4>)</span> <span style=color:#eceff4>=&gt;</span> setTimeout<span style=color:#eceff4>(</span>r<span style=color:#eceff4>,</span> <span style=color:#b48ead>3000</span><span style=color:#eceff4>));</span></span></span></code></pre></div><hr><h2 id=오해-5-for-안의-await은-병렬>오해 5: &ldquo;for 안의 await은 병렬&rdquo;<a hidden class=anchor aria-hidden=true href=#오해-5-for-안의-await은-병렬>#</a></h2><h3 id=순차-실행-기본>순차 실행 (기본)<a hidden class=anchor aria-hidden=true href=#순차-실행-기본>#</a></h3><pre class=mermaid>gantt
+    title for-await 순차 실행
+    dateFormat X
+    axisFormat %s초
+
+    section 처리
+    item 1 :0, 1
+    item 2 :1, 2
+    item 3 :2, 3</pre><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jsx data-lang=jsx><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>for</span> <span style=color:#eceff4>(</span><span style=color:#81a1c1;font-weight:700>const</span> item <span style=color:#81a1c1;font-weight:700>of</span> items<span style=color:#eceff4>)</span> <span style=color:#eceff4>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#81a1c1;font-weight:700>await</span> processItem<span style=color:#eceff4>(</span>item<span style=color:#eceff4>);</span> <span style=color:#616e87;font-style:italic>// 하나씩 순차!
+</span></span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic></span><span style=color:#eceff4>}</span>
+</span></span><span style=display:flex><span><span style=color:#bf616a>// 총 3초</span></span></span></code></pre></div><h3 id=병렬-실행-promiseall>병렬 실행 (Promise.all)<a hidden class=anchor aria-hidden=true href=#병렬-실행-promiseall>#</a></h3><pre class=mermaid>gantt
+    title Promise.all 병렬 실행
+    dateFormat X
+    axisFormat %s초
+
+    section 처리
+    item 1 :0, 1
+    item 2 :0, 1
+    item 3 :0, 1</pre><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jsx data-lang=jsx><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>await</span> <span style=color:#81a1c1>Promise</span><span style=color:#eceff4>.</span>all<span style=color:#eceff4>(</span>items<span style=color:#eceff4>.</span>map<span style=color:#eceff4>((</span>item<span style=color:#eceff4>)</span> <span style=color:#eceff4>=&gt;</span> processItem<span style=color:#eceff4>(</span>item<span style=color:#eceff4>)));</span>
+</span></span><span style=display:flex><span><span style=color:#bf616a>// 총 1초!</span></span></span></code></pre></div><hr><h2 id=event-loop-흐름도-핵심>Event Loop 흐름도 (핵심!)<a hidden class=anchor aria-hidden=true href=#event-loop-흐름도-핵심>#</a></h2><pre class=mermaid>flowchart TD
+    START([시작]) --&gt; CS{Call Stack에&lt;br/&gt;동기 코드 있음?}
+
+    CS --&gt;|예| EXEC[실행!&lt;br/&gt;끝날 때까지 독점]
+    EXEC --&gt; POP[Call Stack에서 제거]
+    POP --&gt; CS
+
+    CS --&gt;|아니오| MQ{Microtask Queue에&lt;br/&gt;작업 있음?}
+
+    MQ --&gt;|예| MICRO[모든 Microtask 실행&lt;br/&gt;Promise.then, await 완료]
+    MICRO --&gt; MQ
+
+    MQ --&gt;|아니오| TQ{Task Queue에&lt;br/&gt;작업 있음?}
+
+    TQ --&gt;|예| TASK[하나만 Call Stack에&lt;br/&gt;올려서 실행]
+    TASK --&gt; CS
+
+    TQ --&gt;|아니오| IDLE[대기 idle]
+    IDLE --&gt; CS
+
+    style EXEC fill:#ff6b6b
+    style MICRO fill:#4ecdc4
+    style TASK fill:#45b7d1</pre><h3 id=우선순위>우선순위<a hidden class=anchor aria-hidden=true href=#우선순위>#</a></h3><pre class=mermaid>graph LR
+    A[1️⃣ Call Stack&lt;br/&gt;동기 코드] --&gt; B[2️⃣ Microtask Queue&lt;br/&gt;Promise, await]
+    B --&gt; C[3️⃣ Task Queue&lt;br/&gt;setTimeout, I/O]
+
+    style A fill:#ff6b6b,color:#fff
+    style B fill:#4ecdc4,color:#fff
+    style C fill:#45b7d1,color:#fff</pre><hr><h2 id=핵심-요약>핵심 요약<a hidden class=anchor aria-hidden=true href=#핵심-요약>#</a></h2><table><thead><tr><th>오해</th><th>실제</th></tr></thead><tbody><tr><td>setTimeout(0)은 즉시 실행</td><td>❌ Task Queue 경유 후 실행</td></tr><tr><td>await은 프로그램을 멈춤</td><td>❌ 해당 함수만 중단, 다른 코드 실행 가능</td></tr><tr><td>Promise와 setTimeout 우선순위 같음</td><td>❌ Microtask(Promise)가 먼저</td></tr><tr><td>await은 동기 코드</td><td>❌ 비동기, Event Loop에 제어권 반환</td></tr><tr><td>for-await은 병렬</td><td>❌ 순차 실행, 병렬은 Promise.all</td></tr></tbody></table><hr><h2 id=한-줄-정리>한 줄 정리<a hidden class=anchor aria-hidden=true href=#한-줄-정리>#</a></h2><blockquote><p>await = &ldquo;나(이 함수)는 여기서 기다릴게, Event Loop는 그 동안 다른 일 해!&rdquo;</p></blockquote></div><footer class=post-footer><ul class=post-tags><li><a href=https://blog.jsontapose.com/tags/nodejs/>Nodejs</a></li><li><a href=https://blog.jsontapose.com/tags/event-loop/>Event-Loop</a></li><li><a href=https://blog.jsontapose.com/tags/async/>Async</a></li><li><a href=https://blog.jsontapose.com/tags/await/>Await</a></li></ul><nav class=paginav><a class=prev href=https://blog.jsontapose.com/posts/kubernetes-controllers-core-practical-guide-ecd5cd/><span class=title>« Prev</span><br><span>Kubernetes Controllers 핵심 개념과 실전 가이드</span>
 </a><a class=next href=https://blog.jsontapose.com/posts/typescript-record-mapped-type-index-signature-d67f80/><span class=title>Next »</span><br><span>TypeScript Record 제대로 이해하기 — 인덱스 시그니처와 맵드 타입 비교, 선택 기준</span></a></nav><ul class=share-buttons><li><a target=_blank rel="noopener noreferrer" aria-label="share 이벤트 루프와 비동기, await에 대한 오해 on x" href="https://x.com/intent/tweet/?text=%ec%9d%b4%eb%b2%a4%ed%8a%b8%20%eb%a3%a8%ed%94%84%ec%99%80%c2%a0%eb%b9%84%eb%8f%99%ea%b8%b0%2c%20await%ec%97%90%c2%a0%eb%8c%80%ed%95%9c%20%ec%98%a4%ed%95%b4&amp;url=https%3a%2f%2fblog.jsontapose.com%2fposts%2fnodejs-event-loop-async-await-guide-4552e4%2f&amp;hashtags=nodejs%2cevent-loop%2casync%2cawait"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446C483.971.0 512 28.03 512 62.554zM269.951 190.75 182.567 75.216H56L207.216 272.95 63.9 436.783h61.366L235.9 310.383l96.667 126.4H456L298.367 228.367l134-153.151H371.033zM127.633 110h36.468l219.38 290.065H349.5z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share 이벤트 루프와 비동기, await에 대한 오해 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fblog.jsontapose.com%2fposts%2fnodejs-event-loop-async-await-guide-4552e4%2f&amp;title=%ec%9d%b4%eb%b2%a4%ed%8a%b8%20%eb%a3%a8%ed%94%84%ec%99%80%c2%a0%eb%b9%84%eb%8f%99%ea%b8%b0%2c%20await%ec%97%90%c2%a0%eb%8c%80%ed%95%9c%20%ec%98%a4%ed%95%b4&amp;summary=%ec%9d%b4%eb%b2%a4%ed%8a%b8%20%eb%a3%a8%ed%94%84%ec%99%80%c2%a0%eb%b9%84%eb%8f%99%ea%b8%b0%2c%20await%ec%97%90%c2%a0%eb%8c%80%ed%95%9c%20%ec%98%a4%ed%95%b4&amp;source=https%3a%2f%2fblog.jsontapose.com%2fposts%2fnodejs-event-loop-async-await-guide-4552e4%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share 이벤트 루프와 비동기, await에 대한 오해 on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fblog.jsontapose.com%2fposts%2fnodejs-event-loop-async-await-guide-4552e4%2f&title=%ec%9d%b4%eb%b2%a4%ed%8a%b8%20%eb%a3%a8%ed%94%84%ec%99%80%c2%a0%eb%b9%84%eb%8f%99%ea%b8%b0%2c%20await%ec%97%90%c2%a0%eb%8c%80%ed%95%9c%20%ec%98%a4%ed%95%b4"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share 이벤트 루프와 비동기, await에 대한 오해 on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.jsontapose.com%2fposts%2fnodejs-event-loop-async-await-guide-4552e4%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share 이벤트 루프와 비동기, await에 대한 오해 on whatsapp" href="https://api.whatsapp.com/send?text=%ec%9d%b4%eb%b2%a4%ed%8a%b8%20%eb%a3%a8%ed%94%84%ec%99%80%c2%a0%eb%b9%84%eb%8f%99%ea%b8%b0%2c%20await%ec%97%90%c2%a0%eb%8c%80%ed%95%9c%20%ec%98%a4%ed%95%b4%20-%20https%3a%2f%2fblog.jsontapose.com%2fposts%2fnodejs-event-loop-async-await-guide-4552e4%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share 이벤트 루프와 비동기, await에 대한 오해 on telegram" href="https://telegram.me/share/url?text=%ec%9d%b4%eb%b2%a4%ed%8a%b8%20%eb%a3%a8%ed%94%84%ec%99%80%c2%a0%eb%b9%84%eb%8f%99%ea%b8%b0%2c%20await%ec%97%90%c2%a0%eb%8c%80%ed%95%9c%20%ec%98%a4%ed%95%b4&amp;url=https%3a%2f%2fblog.jsontapose.com%2fposts%2fnodejs-event-loop-async-await-guide-4552e4%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentcolor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share 이벤트 루프와 비동기, await에 대한 오해 on ycombinator" href="https://news.ycombinator.com/submitlink?t=%ec%9d%b4%eb%b2%a4%ed%8a%b8%20%eb%a3%a8%ed%94%84%ec%99%80%c2%a0%eb%b9%84%eb%8f%99%ea%b8%b0%2c%20await%ec%97%90%c2%a0%eb%8c%80%ed%95%9c%20%ec%98%a4%ed%95%b4&u=https%3a%2f%2fblog.jsontapose.com%2fposts%2fnodejs-event-loop-async-await-guide-4552e4%2f"><svg width="30" height="30" viewBox="0 0 512 512" fill="currentcolor" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"><path d="M449.446.0C483.971.0 512 28.03 512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446zM183.8767 87.9921h-62.034L230.6673 292.4508V424.0079h50.6655V292.4508L390.1575 87.9921H328.1233L256 238.2489z"/></svg></a></li></ul></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

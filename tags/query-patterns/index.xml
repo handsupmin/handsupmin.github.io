@@ -27,30 +27,30 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;잘못된 예시&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;// findUnique에 관계 필터 결합 시도 → 타입 에러
-// (User(1) → Post(N) → Metadata(1) 관계)
-await db.user.findUnique({
-  where: {
-    id: userId,
-    // &amp;#39;posts&amp;#39;는 유니크 필드가 아니므로 &amp;#39;where&amp;#39;에서 관계 필터링 불가
-    posts: { some: { metadata: { editorEmail: email } } },
-  },
-});&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// findUnique에 관계 필터 결합 시도 → 타입 에러
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// (User(1) → Post(N) → Metadata(1) 관계)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; db&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;findUnique&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  where&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    id: &lt;span style=&#34;color:#81a1c1&#34;&gt;userId&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// &amp;#39;posts&amp;#39;는 유니크 필드가 아니므로 &amp;#39;where&amp;#39;에서 관계 필터링 불가
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;    posts&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; some&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; metadata&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; editorEmail: &lt;span style=&#34;color:#81a1c1&#34;&gt;email&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;});&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;올바른 최소 조건&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;await db.user.findUnique({
-  where: { id: userId }, // &amp;#39;id&amp;#39;는 유니크 필드
-});&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; db&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;findUnique&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  where&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; id: &lt;span style=&#34;color:#81a1c1&#34;&gt;userId&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt; &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// &amp;#39;id&amp;#39;는 유니크 필드
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;});&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;관계 조건이 필요하면 findFirst 또는 findMany 사용&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;// &amp;#39;findUnique&amp;#39;가 아닌 &amp;#39;findFirst&amp;#39;를 사용하면
-// &amp;#39;where&amp;#39;에 관계 필터를 포함할 수 있음
-await db.user.findFirst({
-  where: {
-    id: userId,
-    posts: { some: { metadata: { editorEmail: email } } },
-  },
-});&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;요약하면 &lt;code&gt;findUnique&lt;/code&gt;에는 유니크 조건만, 관계 기반 필터는 &lt;code&gt;findFirst&lt;/code&gt; 또는 &lt;code&gt;findMany&lt;/code&gt;로 처리함&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// &amp;#39;findUnique&amp;#39;가 아닌 &amp;#39;findFirst&amp;#39;를 사용하면
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// &amp;#39;where&amp;#39;에 관계 필터를 포함할 수 있음
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; db&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;findFirst&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  where&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    id: &lt;span style=&#34;color:#81a1c1&#34;&gt;userId&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    posts&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; some&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; metadata&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; editorEmail: &lt;span style=&#34;color:#81a1c1&#34;&gt;email&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;});&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;요약하면 &lt;code&gt;findUnique&lt;/code&gt;에는 유니크 조건만, 관계 기반 필터는 &lt;code&gt;findFirst&lt;/code&gt; 또는 &lt;code&gt;findMany&lt;/code&gt;로 처리함&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

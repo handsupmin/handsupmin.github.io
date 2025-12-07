@@ -19,28 +19,28 @@
 &lt;h3 id=&#34;구조-설계&#34;&gt;구조 설계&lt;/h3&gt;
 &lt;p&gt;복잡한 거 다 빼고 핵심 관계만 보면 이럼
 &lt;code&gt;Vehicle&lt;/code&gt;(본체)은 &lt;code&gt;MoveStrategy&lt;/code&gt;(부품)를 가지고 있고, 필요할 때 이 부품만 바꿈&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;classDiagram
+&lt;pre class=&#34;mermaid&#34;&gt;classDiagram
     class MoveStrategy {
-        &lt;&lt;interface&gt;&gt;
-        +move()
+        &amp;lt;&amp;lt;interface&amp;gt;&amp;gt;
+        &amp;#43;move()
     }
 
     class RailStrategy {
-        +move()
+        &amp;#43;move()
     }
     class RoadStrategy {
-        +move()
+        &amp;#43;move()
     }
 
     class Vehicle {
         -strategy: MoveStrategy
-        +setStrategy()
-        +move()
+        &amp;#43;setStrategy()
+        &amp;#43;move()
     }
 
-    MoveStrategy &lt;|.. RailStrategy
-    MoveStrategy &lt;|.. RoadStrategy
-    Vehicle o-- MoveStrategy&lt;/div&gt;&lt;h3 id=&#34;typescript-구현&#34;&gt;TypeScript 구현&lt;/h3&gt;
+    MoveStrategy &amp;lt;|.. RailStrategy
+    MoveStrategy &amp;lt;|.. RoadStrategy
+    Vehicle o-- MoveStrategy&lt;/pre&gt;&lt;h3 id=&#34;typescript-구현&#34;&gt;TypeScript 구현&lt;/h3&gt;
 &lt;h4 id=&#34;1-전략strategy-정의&#34;&gt;1. 전략(Strategy) 정의&lt;/h4&gt;
 &lt;p&gt;&amp;ldquo;어떻게 움직일지&amp;quot;에 대한 부품들임&lt;/p&gt;</description>
     </item>
@@ -83,13 +83,25 @@
 분기문 없이 스프레드 연산자만으로 가독성 유지&lt;/p&gt;
 &lt;h3 id=&#34;사용법예시&#34;&gt;사용법/예시&lt;/h3&gt;
 &lt;p&gt;배열은 피연산자가 이터러블이어야 하므로 삼항 연산자 사용&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const arr = [
-  ...(cond ? [1, 2, 3] : []),
-  4, 5, 6,
-]
-// cond === true =&amp;gt; [1, 2, 3, 4, 5, 6]
-// cond === false =&amp;gt; [4, 5, 6]&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;객체는 원시값을 스프레드해도 자체 속성이 없어 무시됨
-불리언화로 안전성 확보&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; arr &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;...(&lt;/span&gt;cond &lt;span style=&#34;color:#81a1c1&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[]),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#b48ead&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// cond === true =&amp;gt; [1, 2, 3, 4, 5, 6]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// cond === false =&amp;gt; [4, 5, 6]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;객체는 원시값을 스프레드해도 자체 속성이 없어 무시됨
+불리언화로 안전성 확보&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; obj &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;...(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;!!&lt;/span&gt;cond &lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; a&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; b&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  c&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  d&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// cond === true =&amp;gt; { a: 1, b: 2, c: 3, d: 4 }
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// cond === false =&amp;gt; { c: 3, d: 4 }
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주의-사항&#34;&gt;주의 사항&lt;/h3&gt;
+&lt;p&gt;배열에서 &amp;hellip;(cond &amp;amp;&amp;amp; [1,2,3]) 사용 금지, cond가 false면 이터러블 아님 오류 발생
+객체에서 null이나 undefined를 그대로 스프레드하면 오류 가능, !!cond로 불리언화하거나 cond ? {..} : {} 형태 권장
+타입스크립트에서는 &amp;amp;&amp;amp; 패턴이 타입 좁히기 미흡할 수 있음, 삼항으로 빈 객체 반환 또는 적절한 타입 주석 권장&lt;/p&gt;</description>
     </item>
     <item>
       <title>JavaScript Promise.all과 Map 정리 – 동시 비동기 처리와 키-값 컬렉션 기본</title>
@@ -135,18 +147,18 @@
 &lt;li&gt;특히 자식이 없는 경우 every는 기본적으로 참으로 평가되어 부모가 포함됨. 빈 결과를 제외하려면 추가 조건 필요&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;간단-예시&#34;&gt;간단 예시&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-plain&#34;&gt;model Post {
-  id       Int       @id @default(autoincrement())
-  title    String
-  comments Comment[]
-}
-
-model Comment {
-  id     Int    @id @default(autoincrement())
-  text   String
-  postId Int
-  post   Post   @relation(fields: [postId], references: [id])
-}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;댓글 text가 &amp;lsquo;interesting&amp;rsquo;인 항목을 기준으로 게시글을 거르는 케이스를 가정&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model Post {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  id       Int       @id @default(autoincrement())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  title    String
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  comments Comment[]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;model Comment {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  id     Int    @id @default(autoincrement())
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  text   String
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  postId Int
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  post   Post   @relation(fields: [postId], references: [id])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;댓글 text가 &amp;lsquo;interesting&amp;rsquo;인 항목을 기준으로 게시글을 거르는 케이스를 가정&lt;/p&gt;</description>
     </item>
     <item>
       <title>커링과 부분 적용 이해하기: 함수형 자바스크립트 핵심 패턴</title>
@@ -187,30 +199,30 @@ n개의 인자를 받는 함수 → n번에 걸쳐 한 개 인자씩 받는 함�
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;잘못된 예시&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;// findUnique에 관계 필터 결합 시도 → 타입 에러
-// (User(1) → Post(N) → Metadata(1) 관계)
-await db.user.findUnique({
-  where: {
-    id: userId,
-    // &amp;#39;posts&amp;#39;는 유니크 필드가 아니므로 &amp;#39;where&amp;#39;에서 관계 필터링 불가
-    posts: { some: { metadata: { editorEmail: email } } },
-  },
-});&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// findUnique에 관계 필터 결합 시도 → 타입 에러
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// (User(1) → Post(N) → Metadata(1) 관계)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; db&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;findUnique&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  where&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    id: &lt;span style=&#34;color:#81a1c1&#34;&gt;userId&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// &amp;#39;posts&amp;#39;는 유니크 필드가 아니므로 &amp;#39;where&amp;#39;에서 관계 필터링 불가
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;    posts&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; some&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; metadata&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; editorEmail: &lt;span style=&#34;color:#81a1c1&#34;&gt;email&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;});&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;올바른 최소 조건&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;await db.user.findUnique({
-  where: { id: userId }, // &amp;#39;id&amp;#39;는 유니크 필드
-});&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; db&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;findUnique&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  where&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; id: &lt;span style=&#34;color:#81a1c1&#34;&gt;userId&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt; &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// &amp;#39;id&amp;#39;는 유니크 필드
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;});&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;관계 조건이 필요하면 findFirst 또는 findMany 사용&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;// &amp;#39;findUnique&amp;#39;가 아닌 &amp;#39;findFirst&amp;#39;를 사용하면
-// &amp;#39;where&amp;#39;에 관계 필터를 포함할 수 있음
-await db.user.findFirst({
-  where: {
-    id: userId,
-    posts: { some: { metadata: { editorEmail: email } } },
-  },
-});&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;요약하면 &lt;code&gt;findUnique&lt;/code&gt;에는 유니크 조건만, 관계 기반 필터는 &lt;code&gt;findFirst&lt;/code&gt; 또는 &lt;code&gt;findMany&lt;/code&gt;로 처리함&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// &amp;#39;findUnique&amp;#39;가 아닌 &amp;#39;findFirst&amp;#39;를 사용하면
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// &amp;#39;where&amp;#39;에 관계 필터를 포함할 수 있음
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; db&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;findFirst&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  where&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    id: &lt;span style=&#34;color:#81a1c1&#34;&gt;userId&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    posts&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; some&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; metadata&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; editorEmail: &lt;span style=&#34;color:#81a1c1&#34;&gt;email&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;});&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;요약하면 &lt;code&gt;findUnique&lt;/code&gt;에는 유니크 조건만, 관계 기반 필터는 &lt;code&gt;findFirst&lt;/code&gt; 또는 &lt;code&gt;findMany&lt;/code&gt;로 처리함&lt;/p&gt;</description>
     </item>
     <item>
       <title>TypeScript Parameters 유틸리티 타입 개념과 안전한 활용</title>
@@ -221,11 +233,11 @@ await db.user.findFirst({
 &lt;p&gt;Parameters는 TypeScript가 제공하는 제네릭 유틸리티 타입으로, 특정 함수 타입의 매개변수 타입들을 튜플로 추출하는 데 사용됨
 함수 래핑, 고차 함수, 어댑터 계층에서 기존 함수 시그니처를 재사용해 타입 안정성을 유지하고 중복 선언을 줄이는 목적에 적합함&lt;/p&gt;
 &lt;h3 id=&#34;문법&#34;&gt;문법&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;type Parameters&amp;lt;T extends (...args: any) =&amp;gt; any&amp;gt; = T extends (
-  ...args: infer P
-) =&amp;gt; any
-  ? P
-  : never;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;type&lt;/span&gt; Parameters&lt;span style=&#34;color:#eceff4&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#8fbcbb&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#8fbcbb&#34;&gt;...args&lt;/span&gt;&lt;span style=&#34;color:#bf616a&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#8fbcbb&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#bf616a&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; T &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;...&lt;/span&gt;args: &lt;span style=&#34;color:#81a1c1&#34;&gt;infer&lt;/span&gt; P
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;any&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1&#34;&gt;?&lt;/span&gt; P
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  : &lt;span style=&#34;color:#81a1c1&#34;&gt;never&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;T가 함수 타입이면 매개변수 목록을 튜플 타입 P로 추출&lt;/li&gt;
 &lt;li&gt;T가 함수 타입이 아니면 never 반환&lt;/li&gt;
 &lt;li&gt;추출 결과는 튜플이므로 인덱스 접근, 스프레드, 부분 적용 등 튜플 연산과 조합 가능&lt;/li&gt;
@@ -247,10 +259,10 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
 타입, 설명, 예시, 필수 여부 등을 정의해 Swagger UI에 명확한 스키마 제공
 코드와 문서가 한 소스에서 유지되어 일관성 확보에 유리함&lt;/p&gt;
 &lt;p&gt;간단 사용 예시&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;class CreateUserDto {
-  @ApiProperty({ description: &amp;#34;사용자 이름&amp;#34;, example: &amp;#34;John Doe&amp;#34; })
-  name: string;
-}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;class&lt;/span&gt; CreateUserDto &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;@ApiProperty&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt; description&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;사용자 이름&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; example&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;John Doe&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  name: &lt;span style=&#34;color:#81a1c1&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prisma cursor 기반 페이지네이션 동작 원리와 skip: 1의 의미</title>
@@ -264,21 +276,23 @@ skip: 1은 해당 cursor 레코드를 결과에서 제외하기 위한 옵션으
 &lt;ul&gt;
 &lt;li&gt;cursor는 그 지점부터 시작&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;await prisma.user.findMany({
-  cursor: { id: 100 },
-  take: 5,
-  orderBy: { id: &amp;#34;asc&amp;#34; },
-});
-// 결과: 100부터 시작해 5개 반환&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; prisma&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;findMany&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  cursor&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; id: &lt;span style=&#34;color:#81a1c1&#34;&gt;100&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  take: &lt;span style=&#34;color:#81a1c1&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  orderBy&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; id&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;asc&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 결과: 100부터 시작해 5개 반환
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;skip: 1은 cursor에 해당하는 레코드를 건너뜀&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;await prisma.user.findMany({
-  cursor: { id: 100 },
-  skip: 1,
-  take: 5,
-  orderBy: { id: &amp;#34;asc&amp;#34; },
-});
-// 결과: 101부터 5개 반환&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;예시로-보는-차이&#34;&gt;예시로 보는 차이&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; prisma&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;findMany&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  cursor&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; id: &lt;span style=&#34;color:#81a1c1&#34;&gt;100&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  skip: &lt;span style=&#34;color:#81a1c1&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  take: &lt;span style=&#34;color:#81a1c1&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  orderBy&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; id&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;asc&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 결과: 101부터 5개 반환
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;예시로-보는-차이&#34;&gt;예시로 보는 차이&lt;/h3&gt;
 &lt;p&gt;데이터가 아래와 같다고 가정&lt;/p&gt;</description>
     </item>
     <item>
@@ -293,7 +307,7 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
 옵션 조합으로 조건 기반 조회를 간결하게 구성 가능&lt;/p&gt;
 &lt;h3 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h3&gt;
 &lt;p&gt;가장 단순한 호출 형태&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;const users = await prisma.user.findMany();&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;주요-옵션&#34;&gt;주요 옵션&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; users &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; prisma&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;findMany&lt;span style=&#34;color:#eceff4&#34;&gt;();&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주요-옵션&#34;&gt;주요 옵션&lt;/h3&gt;
 &lt;p&gt;옵션은 필요한 것만 선택적으로 사용&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;where: 조건 필터링&lt;/li&gt;
@@ -325,10 +339,10 @@ where 필터, select/include, 정렬, 페이징, 중복 제거 등 옵션 지원
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;예시&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;enum BooleanType {
-  False = 0,
-  True = 1,
-}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;컴파일 결과는 즉시실행함수 형태로 양방향 맵 객체 생성됨&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;enum&lt;/span&gt; BooleanType &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  False &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  True &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;컴파일 결과는 즉시실행함수 형태로 양방향 맵 객체 생성됨&lt;/p&gt;</description>
     </item>
     <item>
       <title>NestJS Guard로 요청 보호하기 — CanActivate, UseGuards, Bearer 인증 예시</title>

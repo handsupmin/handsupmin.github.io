@@ -46,11 +46,11 @@
 &lt;p&gt;Parameters는 TypeScript가 제공하는 제네릭 유틸리티 타입으로, 특정 함수 타입의 매개변수 타입들을 튜플로 추출하는 데 사용됨
 함수 래핑, 고차 함수, 어댑터 계층에서 기존 함수 시그니처를 재사용해 타입 안정성을 유지하고 중복 선언을 줄이는 목적에 적합함&lt;/p&gt;
 &lt;h3 id=&#34;문법&#34;&gt;문법&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;type Parameters&amp;lt;T extends (...args: any) =&amp;gt; any&amp;gt; = T extends (
-  ...args: infer P
-) =&amp;gt; any
-  ? P
-  : never;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;type&lt;/span&gt; Parameters&lt;span style=&#34;color:#eceff4&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#8fbcbb&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#8fbcbb&#34;&gt;...args&lt;/span&gt;&lt;span style=&#34;color:#bf616a&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#8fbcbb&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#bf616a&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; T &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;...&lt;/span&gt;args: &lt;span style=&#34;color:#81a1c1&#34;&gt;infer&lt;/span&gt; P
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;any&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1&#34;&gt;?&lt;/span&gt; P
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  : &lt;span style=&#34;color:#81a1c1&#34;&gt;never&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;T가 함수 타입이면 매개변수 목록을 튜플 타입 P로 추출&lt;/li&gt;
 &lt;li&gt;T가 함수 타입이 아니면 never 반환&lt;/li&gt;
 &lt;li&gt;추출 결과는 튜플이므로 인덱스 접근, 스프레드, 부분 적용 등 튜플 연산과 조합 가능&lt;/li&gt;
@@ -77,10 +77,10 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;예시&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-ts&#34;&gt;enum BooleanType {
-  False = 0,
-  True = 1,
-}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;컴파일 결과는 즉시실행함수 형태로 양방향 맵 객체 생성됨&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;enum&lt;/span&gt; BooleanType &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  False &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  True &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;컴파일 결과는 즉시실행함수 형태로 양방향 맵 객체 생성됨&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

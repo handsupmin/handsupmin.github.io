@@ -159,18 +159,18 @@
 &lt;ul&gt;
 &lt;li&gt;단일 테이블 이름 변경&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;RENAME TABLE old_table TO new_table;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;RENAME&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;TABLE&lt;/span&gt; old_table &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;TO&lt;/span&gt; new_table&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;단일 테이블 이름 변경 ALTER 사용&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;ALTER TABLE old_table RENAME new_table;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;ALTER&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;TABLE&lt;/span&gt; old_table &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;RENAME&lt;/span&gt; new_table&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;다수 테이블 이름 일괄 변경&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;RENAME TABLE old_table1 TO new_table1,
-             old_table2 TO new_table2,
-             old_table3 TO new_table3;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;RENAME&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;TABLE&lt;/span&gt; old_table1 &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;TO&lt;/span&gt; new_table1&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;             old_table2 &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;TO&lt;/span&gt; new_table2&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;             old_table3 &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;TO&lt;/span&gt; new_table3&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;다른 데이터베이스로 이동 같은 서버 내&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;RENAME TABLE current_db.table_name TO other_db.table_name;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;주의-사항&#34;&gt;주의 사항&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;RENAME&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;TABLE&lt;/span&gt; current_db&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;table_name&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;TO&lt;/span&gt; other_db&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;table_name&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주의-사항&#34;&gt;주의 사항&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;대상 이름이 이미 존재하면 실패&lt;/li&gt;
 &lt;li&gt;교차 서버 이동 불가, 같은 서버 인스턴스 내 스키마 간 이동만 가능&lt;/li&gt;
@@ -191,22 +191,25 @@
 &lt;p&gt;LIMIT는 SELECT 결과에서 반환할 행 수를 제한하는 구문
 WHERE와 ORDER BY 뒤, 즉 SELECT 문 끝에 위치&lt;/p&gt;
 &lt;p&gt;두 가지 형태 사용&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT 컬럼명
-FROM 테이블명
-LIMIT 개수
-
-SELECT 컬럼명
-FROM 테이블명
-LIMIT 개수 OFFSET 시작_인덱스&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;일부 dialect에서는 아래 축약형도 존재&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;-- MySQL, SQLite
-SELECT 컬럼명
-FROM 테이블명
-LIMIT 시작_인덱스, 개수&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;1-limit-개수&#34;&gt;1. LIMIT 개수&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;컬럼명&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;테이블명&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;LIMIT&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;개수&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;컬럼명&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;테이블명&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;LIMIT&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;개수&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;OFFSET&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;시작&lt;/span&gt;_인덱스&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;일부 dialect에서는 아래 축약형도 존재&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;-- MySQL, SQLite
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;컬럼명&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;테이블명&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;LIMIT&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;시작&lt;/span&gt;_인덱스&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;개수&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;1-limit-개수&#34;&gt;1. LIMIT 개수&lt;/h3&gt;
 &lt;p&gt;LIMIT 뒤 숫자는 인덱스가 아닌 개수&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT *
-FROM Book
-LIMIT 1&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;현재 정렬 기준에서 맨 위 행 1개만 반환
-ORDER BY가 없으면 반환되는 행은 비결정적일 수 있음&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;FROM&lt;/span&gt; Book
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;LIMIT&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;현재 정렬 기준에서 맨 위 행 1개만 반환
+ORDER BY가 없으면 반환되는 행은 비결정적일 수 있음&lt;/p&gt;
+&lt;h3 id=&#34;2-limit-개수-offset-시작&#34;&gt;2. LIMIT 개수 OFFSET 시작&lt;/h3&gt;
+&lt;p&gt;OFFSET은 0부터 시작
+다음 예시는 4번째 행부터 1개 반환&lt;/p&gt;</description>
     </item>
     <item>
       <title>MySQL EXPLAIN 실행 계획 해석 가이드</title>
@@ -259,10 +262,10 @@ ORDER BY가 없으면 반환되는 행은 비결정적일 수 있음&lt;/p&gt;</
 &lt;li&gt;Extra에 Using filesort, Using temporary 부재&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;예시와-해석&#34;&gt;예시와 해석&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;type: ALL
-possible_keys: NULL
-rows: 3527425
-Extra: Using where; Using filesort&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;type: ALL
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;possible_keys: NULL
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rows: 3527425
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Extra: Using where; Using filesort&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;테이블 전체 스캔으로 많은 행을 읽게 됨&lt;/li&gt;
 &lt;li&gt;인덱스 후보와 실제 사용 인덱스가 없음&lt;/li&gt;
 &lt;li&gt;WHERE로 필터링하고 추가 정렬까지 수행하여 비용 상승&lt;/li&gt;

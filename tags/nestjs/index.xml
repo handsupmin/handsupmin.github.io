@@ -50,10 +50,10 @@ DTO(Data Transfer Object) 클래스에 메타데이터를 부여해 타입과 �
 타입, 설명, 예시, 필수 여부 등을 정의해 Swagger UI에 명확한 스키마 제공
 코드와 문서가 한 소스에서 유지되어 일관성 확보에 유리함&lt;/p&gt;
 &lt;p&gt;간단 사용 예시&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-typescript&#34;&gt;class CreateUserDto {
-  @ApiProperty({ description: &amp;#34;사용자 이름&amp;#34;, example: &amp;#34;John Doe&amp;#34; })
-  name: string;
-}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;class&lt;/span&gt; CreateUserDto &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;@ApiProperty&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt; description&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;사용자 이름&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; example&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;John Doe&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  name: &lt;span style=&#34;color:#81a1c1&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 속성 정의만으로 Swagger 스키마에 name 필드의 설명과 예시가 노출됨&lt;/p&gt;</description>
     </item>
     <item>
       <title>NestJS Guard로 요청 보호하기 — CanActivate, UseGuards, Bearer 인증 예시</title>

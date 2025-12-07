@@ -18,13 +18,25 @@
 분기문 없이 스프레드 연산자만으로 가독성 유지&lt;/p&gt;
 &lt;h3 id=&#34;사용법예시&#34;&gt;사용법/예시&lt;/h3&gt;
 &lt;p&gt;배열은 피연산자가 이터러블이어야 하므로 삼항 연산자 사용&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const arr = [
-  ...(cond ? [1, 2, 3] : []),
-  4, 5, 6,
-]
-// cond === true =&amp;gt; [1, 2, 3, 4, 5, 6]
-// cond === false =&amp;gt; [4, 5, 6]&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;객체는 원시값을 스프레드해도 자체 속성이 없어 무시됨
-불리언화로 안전성 확보&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; arr &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;...(&lt;/span&gt;cond &lt;span style=&#34;color:#81a1c1&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[]),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#b48ead&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// cond === true =&amp;gt; [1, 2, 3, 4, 5, 6]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// cond === false =&amp;gt; [4, 5, 6]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;객체는 원시값을 스프레드해도 자체 속성이 없어 무시됨
+불리언화로 안전성 확보&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; obj &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;...(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;!!&lt;/span&gt;cond &lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; a&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; b&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  c&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  d&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// cond === true =&amp;gt; { a: 1, b: 2, c: 3, d: 4 }
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// cond === false =&amp;gt; { c: 3, d: 4 }
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주의-사항&#34;&gt;주의 사항&lt;/h3&gt;
+&lt;p&gt;배열에서 &amp;hellip;(cond &amp;amp;&amp;amp; [1,2,3]) 사용 금지, cond가 false면 이터러블 아님 오류 발생
+객체에서 null이나 undefined를 그대로 스프레드하면 오류 가능, !!cond로 불리언화하거나 cond ? {..} : {} 형태 권장
+타입스크립트에서는 &amp;amp;&amp;amp; 패턴이 타입 좁히기 미흡할 수 있음, 삼항으로 빈 객체 반환 또는 적절한 타입 주석 권장&lt;/p&gt;</description>
     </item>
     <item>
       <title>JavaScript에서 빈 배열은 truthy인가 falsy인가</title>
@@ -38,12 +50,13 @@
 반대로 falsy는 정해진 값만 해당됨 false, 0, -0, 0n, &amp;ldquo;&amp;rdquo;, null, undefined, NaN&lt;/p&gt;
 &lt;h3 id=&#34;예시&#34;&gt;예시&lt;/h3&gt;
 &lt;p&gt;다음은 빈 배열이 조건문에서 어떻게 평가되는지 확인하는 간단한 코드&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;if ([]) {
-  console.log(&amp;#34;빈 배열은 truthy입니다!&amp;#34;)
-} else {
-  console.log(&amp;#34;빈 배열은 falsy입니다!&amp;#34;)
-}
-// 출력: &amp;#34;빈 배열은 truthy입니다!&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;배열이 비어 있는지를 논리적으로 구분하려면 길이를 확인해야 함&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;([])&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  console&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;log&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;빈 배열은 truthy입니다!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  console&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;log&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;빈 배열은 falsy입니다!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 출력: &amp;#34;빈 배열은 truthy입니다!&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;배열이 비어 있는지를 논리적으로 구분하려면 길이를 확인해야 함&lt;/p&gt;</description>
     </item>
     <item>
       <title>JavaScript Promise.all과 Map 정리 – 동시 비동기 처리와 키-값 컬렉션 기본</title>
@@ -69,9 +82,9 @@
 &lt;p&gt;Array.prototype.map은 배열의 각 요소에 대해 콜백을 호출해 변환된 결과로 새 배열을 만드는 메서드임
 원본 배열 불변 유지, 동일 길이의 새 배열 생성이 핵심 특징임&lt;/p&gt;
 &lt;h3 id=&#34;기본-문법&#34;&gt;기본 문법&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const newArray = array.map((element, index, array) =&amp;gt; {
-  return element;
-});&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; newArray &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; array&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;map&lt;span style=&#34;color:#eceff4&#34;&gt;((&lt;/span&gt;element&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; index&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; array&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;return&lt;/span&gt; element&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;});&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;element 현재 요소&lt;/li&gt;
 &lt;li&gt;index 현재 인덱스&lt;/li&gt;
 &lt;li&gt;array 원본 배열 참조&lt;/li&gt;
@@ -79,9 +92,10 @@
 &lt;p&gt;콜백은 요소 수만큼 호출되고, 콜백의 반환값이 새 배열의 같은 위치에 배치됨&lt;/p&gt;
 &lt;h3 id=&#34;사용-예시&#34;&gt;사용 예시&lt;/h3&gt;
 &lt;p&gt;숫자 배열 변환&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const numbers = [1, 2, 3, 4, 5];
-const doubled = numbers.map((n) =&amp;gt; n * 2);
-// [2, 4, 6, 8, 10]&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;객체 배열에서 특정 속성 추출&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; numbers &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;];&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; doubled &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; numbers&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;map&lt;span style=&#34;color:#eceff4&#34;&gt;((&lt;/span&gt;n&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;=&amp;gt;&lt;/span&gt; n &lt;span style=&#34;color:#81a1c1&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// [2, 4, 6, 8, 10]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;객체 배열에서 특정 속성 추출&lt;/p&gt;</description>
     </item>
     <item>
       <title>커링과 부분 적용 이해하기: 함수형 자바스크립트 핵심 패턴</title>
@@ -141,9 +155,11 @@ n개의 인자를 받는 함수 → n번에 걸쳐 한 개 인자씩 받는 함�
 &lt;/ul&gt;
 &lt;h3 id=&#34;간단-예시&#34;&gt;간단 예시&lt;/h3&gt;
 &lt;p&gt;변수에 할당&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const greet = (name) =&amp;gt; `Hello, ${name}`;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;인수로 전달&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const run = (fn, v) =&amp;gt; fn(v);
-run(greet, &amp;#34;Bob&amp;#34;);&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;반환값으로 사용 및 클로저&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; greet &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;name&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;`Hello, &lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;${&lt;/span&gt;name&lt;span style=&#34;color:#a3be8c&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;`&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;인수로 전달&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; run &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;fn&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; v&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;=&amp;gt;&lt;/span&gt; fn&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;v&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;run&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;greet&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;Bob&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;반환값으로 사용 및 클로저&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; mul &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;m&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;v&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;=&amp;gt;&lt;/span&gt; v &lt;span style=&#34;color:#81a1c1&#34;&gt;*&lt;/span&gt; m&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mul&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)(&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;객체 프로퍼티로 저장해 메서드 구성&lt;/p&gt;</description>
     </item>
     <item>
       <title>Node.js 환경에서 디버깅하기</title>
