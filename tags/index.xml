@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 07 Dec 2025 13:07:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Dec 2025 13:13:12 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Controller</title>
+      <link>https://blog.jsontapose.com/tags/controller/</link>
+      <pubDate>Mon, 08 Dec 2025 13:13:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/controller/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nestjs</title>
+      <link>https://blog.jsontapose.com/tags/nestjs/</link>
+      <pubDate>Mon, 08 Dec 2025 13:13:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Separation-of-Concerns</title>
+      <link>https://blog.jsontapose.com/tags/separation-of-concerns/</link>
+      <pubDate>Mon, 08 Dec 2025 13:13:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/separation-of-concerns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Service-Layer</title>
+      <link>https://blog.jsontapose.com/tags/service-layer/</link>
+      <pubDate>Mon, 08 Dec 2025 13:13:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/service-layer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Single-Responsibility</title>
+      <link>https://blog.jsontapose.com/tags/single-responsibility/</link>
+      <pubDate>Mon, 08 Dec 2025 13:13:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/single-responsibility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Validation</title>
+      <link>https://blog.jsontapose.com/tags/validation/</link>
+      <pubDate>Mon, 08 Dec 2025 13:13:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/validation/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Backend</title>
       <link>https://blog.jsontapose.com/tags/backend/</link>
@@ -27,13 +69,6 @@
       <link>https://blog.jsontapose.com/tags/module/</link>
       <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/module/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nestjs</title>
-      <link>https://blog.jsontapose.com/tags/nestjs/</link>
-      <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
       <description></description>
     </item>
     <item>

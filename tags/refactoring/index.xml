@@ -14,35 +14,26 @@
       <pubDate>Sat, 06 Dec 2025 13:08:38 +0000</pubDate>
       <guid>https://blog.jsontapose.com/posts/strategy-pattern-with-typescript-mermaid-6618f4/</guid>
       <description>&lt;h3 id=&#34;전략-패턴이란&#34;&gt;전략 패턴이란?&lt;/h3&gt;
-&lt;p&gt;객체의 특정 행동(알고리즘)을 직접 구현하지 않고, &lt;strong&gt;외부에서 &amp;lsquo;전략&amp;rsquo;을 주입받아 갈아 끼우는 방식&lt;/strong&gt;임
-쉽게 말해 &amp;ldquo;본체는 그대로 두고, 부품만 바꿔서 기능을 바꾸는 것&amp;quot;이라 보면 됨&lt;/p&gt;
-&lt;h3 id=&#34;구조-설계&#34;&gt;구조 설계&lt;/h3&gt;
-&lt;p&gt;복잡한 거 다 빼고 핵심 관계만 보면 이럼
-&lt;code&gt;Vehicle&lt;/code&gt;(본체)은 &lt;code&gt;MoveStrategy&lt;/code&gt;(부품)를 가지고 있고, 필요할 때 이 부품만 바꿈&lt;/p&gt;
-&lt;pre class=&#34;mermaid&#34;&gt;classDiagram
-    class MoveStrategy {
-        &amp;lt;&amp;lt;interface&amp;gt;&amp;gt;
-        &amp;#43;move()
-    }
-
-    class RailStrategy {
-        &amp;#43;move()
-    }
-    class RoadStrategy {
-        &amp;#43;move()
-    }
-
-    class Vehicle {
-        -strategy: MoveStrategy
-        &amp;#43;setStrategy()
-        &amp;#43;move()
-    }
-
-    MoveStrategy &amp;lt;|.. RailStrategy
-    MoveStrategy &amp;lt;|.. RoadStrategy
-    Vehicle o-- MoveStrategy&lt;/pre&gt;&lt;h3 id=&#34;typescript-구현&#34;&gt;TypeScript 구현&lt;/h3&gt;
-&lt;h4 id=&#34;1-전략strategy-정의&#34;&gt;1. 전략(Strategy) 정의&lt;/h4&gt;
-&lt;p&gt;&amp;ldquo;어떻게 움직일지&amp;quot;에 대한 부품들임&lt;/p&gt;</description>
+&lt;p&gt;객체의 특정 행동(알고리즘)을 직접 구현하지 않고, &lt;strong&gt;외부에서 &amp;lsquo;전략&amp;rsquo;을 주입받아 갈아 끼우는 방식&lt;/strong&gt;임&lt;/p&gt;
+&lt;p&gt;쉽게 말해 &amp;ldquo;본체는 그대로 두고, 부품만 바꿔서 기능을 바꾸는 것&amp;quot;이라 보면 됨&lt;/p&gt;
+&lt;h3 id=&#34;전략-패턴이-적용되지-않은-코드&#34;&gt;전략 패턴이 적용되지 않은 코드&lt;/h3&gt;
+&lt;p&gt;전략 패턴을 쓰지 않으면 보통 이렇게 구현하게 됨&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;class&lt;/span&gt; Vehicle &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;constructor&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;road&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;rail&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  move() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;road&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      console&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;log&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;부릉부릉 도로로 감 🚌&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;rail&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      console&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;log&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;칙칙폭폭 선로로 감 🚂&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 방식이 가지는 문제는 다음과 같음&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;조건문이 계속 늘어남
+새로운 이동 방식이 생길 때마다 move()를 수정해야 함
+→ OCP(Open-Closed Principle) 위반&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
