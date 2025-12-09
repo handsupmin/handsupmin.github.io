@@ -6,20 +6,69 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 08 Dec 2025 13:13:12 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Dec 2025 13:13:40 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Controller</title>
-      <link>https://blog.jsontapose.com/tags/controller/</link>
-      <pubDate>Mon, 08 Dec 2025 13:13:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/controller/</guid>
+      <title>Cron</title>
+      <link>https://blog.jsontapose.com/tags/cron/</link>
+      <pubDate>Tue, 09 Dec 2025 13:13:40 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/cron/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dynamic-Modules</title>
+      <link>https://blog.jsontapose.com/tags/dynamic-modules/</link>
+      <pubDate>Tue, 09 Dec 2025 13:13:40 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dynamic-modules/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forroot</title>
+      <link>https://blog.jsontapose.com/tags/forroot/</link>
+      <pubDate>Tue, 09 Dec 2025 13:13:40 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/forroot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Global-Module</title>
+      <link>https://blog.jsontapose.com/tags/global-module/</link>
+      <pubDate>Tue, 09 Dec 2025 13:13:40 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/global-module/</guid>
       <description></description>
     </item>
     <item>
       <title>Nestjs</title>
       <link>https://blog.jsontapose.com/tags/nestjs/</link>
-      <pubDate>Mon, 08 Dec 2025 13:13:12 +0000</pubDate>
+      <pubDate>Tue, 09 Dec 2025 13:13:40 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Providers</title>
+      <link>https://blog.jsontapose.com/tags/providers/</link>
+      <pubDate>Tue, 09 Dec 2025 13:13:40 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/providers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Schedule</title>
+      <link>https://blog.jsontapose.com/tags/schedule/</link>
+      <pubDate>Tue, 09 Dec 2025 13:13:40 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/schedule/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Singleton</title>
+      <link>https://blog.jsontapose.com/tags/singleton/</link>
+      <pubDate>Tue, 09 Dec 2025 13:13:40 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/singleton/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Controller</title>
+      <link>https://blog.jsontapose.com/tags/controller/</link>
+      <pubDate>Mon, 08 Dec 2025 13:13:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/controller/</guid>
       <description></description>
     </item>
     <item>
@@ -69,13 +118,6 @@
       <link>https://blog.jsontapose.com/tags/module/</link>
       <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/module/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Schedule</title>
-      <link>https://blog.jsontapose.com/tags/schedule/</link>
-      <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/schedule/</guid>
       <description></description>
     </item>
     <item>

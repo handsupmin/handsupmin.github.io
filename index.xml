@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 08 Dec 2025 13:13:12 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Dec 2025 13:13:40 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,46 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NestJS forRoot는 싱글톤 보장 아님, global true로는 중복 호출 못 막음</title>
+      <link>https://blog.jsontapose.com/posts/nestjs-forroot-not-singleton-global-true-duplicate-call-9aeb54/</link>
+      <pubDate>Tue, 09 Dec 2025 13:13:40 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/nestjs-forroot-not-singleton-global-true-duplicate-call-9aeb54/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;forRoot 패턴이 자동으로 싱글톤을 보장하지 않음
+동일 모듈에서 forRoot를 여러 번 호출하면 호출 횟수만큼 프로바이더 인스턴스가 만들어짐
+@nestjs/schedule의 ScheduleModule도 예외 아님&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;dynamic module forRoot
+&lt;ul&gt;
+&lt;li&gt;forRoot는 DynamicModule을 반환하는 팩토리 패턴&lt;/li&gt;
+&lt;li&gt;호출할 때마다 새로운 동적 모듈 토큰 생성, 별개의 모듈 인스턴스로 취급됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;global true의 의미
+&lt;ul&gt;
+&lt;li&gt;모듈을 전역 스코프로 노출하여 재임포트 없이 프로바이더 주입 가능하게 함&lt;/li&gt;
+&lt;li&gt;전역 노출일 뿐, 중복 생성 방지 수단은 아님&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;간단 스니펫&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;static&lt;/span&gt; forRoot&lt;span style=&#34;color:#eceff4&#34;&gt;(...)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;global&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    module: &lt;span style=&#34;color:#81a1c1&#34;&gt;ScheduleModule&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    providers&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;ScheduleExplorer&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; SchedulerRegistry&lt;span style=&#34;color:#eceff4&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    exports&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;SchedulerRegistry&lt;span style=&#34;color:#eceff4&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;동작-원리&#34;&gt;동작 원리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ScheduleExplorer는 OnModuleInit 훅에서 애플리케이션 프로바이더를 스캔하고 @Cron 메서드를 등록함&lt;/li&gt;
+&lt;li&gt;forRoot를 두 번 호출하면 ScheduleExplorer 인스턴스가 2개 생성됨&lt;/li&gt;
+&lt;li&gt;각 인스턴스가 같은 @Cron 메서드를 각각 등록하므로 작업이 중복 등록됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;개념 스니펫&lt;/p&gt;</description>
     </item>
     <item>
       <title>Controller와 Service에서 Validation을 나누는 기준</title>
