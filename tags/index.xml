@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 10 Dec 2025 13:14:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Dec 2025 13:14:28 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Devops</title>
+      <link>https://blog.jsontapose.com/tags/devops/</link>
+      <pubDate>Thu, 11 Dec 2025 13:14:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Health-Check</title>
+      <link>https://blog.jsontapose.com/tags/health-check/</link>
+      <pubDate>Thu, 11 Dec 2025 13:14:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/health-check/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>https://blog.jsontapose.com/tags/kubernetes/</link>
+      <pubDate>Thu, 11 Dec 2025 13:14:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Liveness-Probe</title>
+      <link>https://blog.jsontapose.com/tags/liveness-probe/</link>
+      <pubDate>Thu, 11 Dec 2025 13:14:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/liveness-probe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Thu, 11 Dec 2025 13:14:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Readiness-Probe</title>
+      <link>https://blog.jsontapose.com/tags/readiness-probe/</link>
+      <pubDate>Thu, 11 Dec 2025 13:14:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/readiness-probe/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Array</title>
       <link>https://blog.jsontapose.com/tags/array/</link>
@@ -191,13 +233,6 @@
       <description></description>
     </item>
     <item>
-      <title>Kubernetes</title>
-      <link>https://blog.jsontapose.com/tags/kubernetes/</link>
-      <pubDate>Thu, 04 Dec 2025 13:13:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Operators</title>
       <link>https://blog.jsontapose.com/tags/operators/</link>
       <pubDate>Thu, 04 Dec 2025 13:13:58 +0000</pubDate>
@@ -230,13 +265,6 @@
       <link>https://blog.jsontapose.com/tags/event-loop/</link>
       <pubDate>Wed, 03 Dec 2025 13:13:33 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/event-loop/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Wed, 03 Dec 2025 13:13:33 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
       <description></description>
     </item>
     <item>
@@ -972,13 +1000,6 @@
       <link>https://blog.jsontapose.com/tags/control-plane/</link>
       <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/control-plane/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Devops</title>
-      <link>https://blog.jsontapose.com/tags/devops/</link>
-      <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/devops/</guid>
       <description></description>
     </item>
     <item>
