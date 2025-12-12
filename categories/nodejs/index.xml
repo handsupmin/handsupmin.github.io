@@ -6,8 +6,46 @@
     <description>Recent content in Nodejs on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 03 Dec 2025 13:13:33 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 13:13:05 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js 글로벌 에러 핸들러 가이드</title>
+      <link>https://blog.jsontapose.com/posts/nodejs-global-error-handler-3ae1d7/</link>
+      <pubDate>Fri, 12 Dec 2025 13:13:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/nodejs-global-error-handler-3ae1d7/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;Node.js 프로세스 레벨에서 잡히지 않은 에러를 마지막으로 처리하는 안전망을 두는 목적 정리
+애플리케이션 어디에서도 처리되지 못한 오류를 기록하고 종료 경로를 일관되게 관리하기 위함
+프로덕션 환경에서 원인 파악과 사후 조치 자동화를 위한 최소 장치로 간주&lt;/p&gt;
+&lt;h3 id=&#34;핵심-이벤트&#34;&gt;핵심 이벤트&lt;/h3&gt;
+&lt;p&gt;두 가지 이벤트가 글로벌 핸들러의 대상&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;uncaughtException
+&lt;ul&gt;
+&lt;li&gt;try-catch로 포착되지 않은 동기 오류가 호출 스택 끝까지 전파될 때 발생&lt;/li&gt;
+&lt;li&gt;핸들러가 없으면 프로세스가 비정상 종료됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 동기 에러가 상위에서 잡히지 않은 경우
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;function&lt;/span&gt; boom&lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;throw&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;Error&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;폭발&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;boom&lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;unhandledRejection
+&lt;ul&gt;
+&lt;li&gt;Promise가 reject되었으나 await 혹은 .catch로 처리되지 않은 경우 발생&lt;/li&gt;
+&lt;li&gt;Node.js 15+ 기본 동작은 핸들러가 없을 때 프로세스 종료&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// reject가 소비되지 않은 경우
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;function&lt;/span&gt; asyncBoom&lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;throw&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;Error&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;비동기 폭발&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;asyncBoom&lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;왜-글로벌-핸들러인가&#34;&gt;왜 글로벌 핸들러인가&lt;/h3&gt;
+&lt;p&gt;코드 최상위에서 아무도 잡지 못한 에러에 대한 마지막 안전망 역할&lt;/p&gt;</description>
+    </item>
     <item>
       <title>이벤트 루프와 비동기, await에 대한 오해</title>
       <link>https://blog.jsontapose.com/posts/nodejs-event-loop-async-await-guide-4552e4/</link>
