@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Observability on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/observability/</link>
+    <description>Recent content in Observability on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 13 Dec 2025 13:09:08 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/observability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>사이드카 패턴 이해와 도입 판단 가이드: 마이크로서비스·쿠버네티스에서의 활용</title>
+      <link>https://blog.jsontapose.com/posts/sidecar-pattern-explained-for-kubernetes-and-microservices-d48084/</link>
+      <pubDate>Sat, 13 Dec 2025 13:09:08 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/sidecar-pattern-explained-for-kubernetes-and-microservices-d48084/</guid>
+      <description>&lt;h3 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h3&gt;
+&lt;p&gt;마이크로서비스로 분산이 심화되면 로깅, 모니터링, 보안, 네트워킹 같은 공통 기능을 어디에 둘지 결정이 어려워짐
+애플리케이션 코드에 공통 기능을 계속 끼워 넣으면 침투와 중복 증가, 배포와 버전 관리 복잡도 상승
+사이드카 패턴은 공통 기능을 별도 컨테이너로 분리해 메인 서비스는 비즈니스 로직에 집중하게 하는 접근법
+컨테이너 오케스트레이션 환경에서 일관된 운영 모델을 제공한다는 점이 실무적 장점&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;p&gt;사이드카 패턴의 구성 요소&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;메인 컨테이너: 비즈니스 로직 담당, 웹 서비스나 API 서버 등&lt;/li&gt;
+&lt;li&gt;사이드카 컨테이너: 횡단 관심사 처리, 로그 수집, 모니터링 에이전트, 프록시, 보안 검사 등
+같은 파드 내 배치로 네트워크 네임스페이스와 볼륨 공유 가능, 표준 출력/공유 볼륨 등을 통해 데이터 연계
+업데이트와 배포를 컨테이너 단위로 분리해 독립적 버전 관리 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리&#34;&gt;동작 원리&lt;/h3&gt;
+&lt;p&gt;하나의 파드에 메인 컨테이너와 사이드카 컨테이너를 함께 배치&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
