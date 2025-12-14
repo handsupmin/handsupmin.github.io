@@ -6,8 +6,15 @@
     <description>Recent content in Categories on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 13 Dec 2025 13:09:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Dec 2025 13:09:03 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database</title>
+      <link>https://blog.jsontapose.com/categories/database/</link>
+      <pubDate>Sun, 14 Dec 2025 13:09:03 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/categories/database/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cloud-Native-Architecture</title>
       <link>https://blog.jsontapose.com/categories/cloud-native-architecture/</link>
@@ -48,13 +55,6 @@
       <link>https://blog.jsontapose.com/categories/design-patterns/</link>
       <pubDate>Sat, 06 Dec 2025 13:08:38 +0000</pubDate>
       <guid>https://blog.jsontapose.com/categories/design-patterns/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://blog.jsontapose.com/categories/database/</link>
-      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/categories/database/</guid>
       <description></description>
     </item>
     <item>

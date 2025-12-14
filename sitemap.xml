@@ -25,12 +25,17 @@
   </url>
   <url>
     <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2025-12-13T13:09:08+00:00</lastmod>
+    <lastmod>2025-12-14T13:09:03+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/mysql-clustered-vs-nonclustered-index-f925e0/</loc>
+    <lastmod>2025-12-14T13:09:03+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
-    <lastmod>2025-12-13T13:09:08+00:00</lastmod>
+    <lastmod>2025-12-14T13:09:03+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
