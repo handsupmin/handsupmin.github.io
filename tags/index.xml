@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 14 Dec 2025 13:09:03 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 13:15:00 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blockchain</title>
+      <link>https://blog.jsontapose.com/tags/blockchain/</link>
+      <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eip-1559</title>
+      <link>https://blog.jsontapose.com/tags/eip-1559/</link>
+      <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/eip-1559/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ethereum</title>
+      <link>https://blog.jsontapose.com/tags/ethereum/</link>
+      <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evm</title>
+      <link>https://blog.jsontapose.com/tags/evm/</link>
+      <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/evm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gas</title>
+      <link>https://blog.jsontapose.com/tags/gas/</link>
+      <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/gas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gas-Limit</title>
+      <link>https://blog.jsontapose.com/tags/gas-limit/</link>
+      <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/gas-limit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gas-Price</title>
+      <link>https://blog.jsontapose.com/tags/gas-price/</link>
+      <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/gas-price/</guid>
+      <description></description>
+    </item>
     <item>
       <title>B-Tree</title>
       <link>https://blog.jsontapose.com/tags/b-tree/</link>
@@ -1220,13 +1269,6 @@
       <description></description>
     </item>
     <item>
-      <title>Blockchain</title>
-      <link>https://blog.jsontapose.com/tags/blockchain/</link>
-      <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/blockchain/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Dapp</title>
       <link>https://blog.jsontapose.com/tags/dapp/</link>
       <pubDate>Mon, 13 Oct 2025 13:10:20 +0000</pubDate>
@@ -1336,13 +1378,6 @@
       <link>https://blog.jsontapose.com/tags/consensus/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/consensus/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ethereum</title>
-      <link>https://blog.jsontapose.com/tags/ethereum/</link>
-      <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
       <description></description>
     </item>
     <item>

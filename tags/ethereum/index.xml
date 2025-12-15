@@ -6,8 +6,31 @@
     <description>Recent content in Ethereum on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 06 Oct 2025 13:09:34 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 13:15:00 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/ethereum/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>이더리움 가스 이해하기: Gas Limit, Gas Price, EIP-1559 정리</title>
+      <link>https://blog.jsontapose.com/posts/ethereum-gas-gas-limit-gas-price-eip-1559-157947/</link>
+      <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/ethereum-gas-gas-limit-gas-price-eip-1559-157947/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;EVM 트랜잭션 수수료 모델은 자동차 연료 비유가 직관적임
+Gas는 연료, 트랜잭션 수행은 목적지까지 주행이라는 맥락으로 이해하면 됨
+핵심은 두 파라미터, Gas Limit와 Gas Price이며 EIP-1559 이후에는 Base Fee와 Priority Fee로 세분됨&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Gas Limit&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;이 트랜잭션이 최대 얼마만큼의 연산을 사용할 수 있는지에 대한 상한&lt;/li&gt;
+&lt;li&gt;단순 ETH 송금은 21,000 가스 고정값 수준&lt;/li&gt;
+&lt;li&gt;컨트랙트 실행은 로직 복잡도, 저장소 접근, 반복 등에 비례해 증가&lt;/li&gt;
+&lt;li&gt;사용하지 않은 가스는 환불, 부족하면 Out of Gas로 실패 후 사용한 가스 비용만큼 청구&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gas Price&lt;/p&gt;</description>
+    </item>
     <item>
       <title>블록체인 채굴 개념과 동작 원리 PoW 보상 구조 이더리움 전환 사례</title>
       <link>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>
