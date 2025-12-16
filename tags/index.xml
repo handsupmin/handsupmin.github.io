@@ -6,8 +6,71 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 15 Dec 2025 13:15:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Dec 2025 13:14:04 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bundling</title>
+      <link>https://blog.jsontapose.com/tags/bundling/</link>
+      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/bundling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Commonjs</title>
+      <link>https://blog.jsontapose.com/tags/commonjs/</link>
+      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/commonjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esm</title>
+      <link>https://blog.jsontapose.com/tags/esm/</link>
+      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/esm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modules</title>
+      <link>https://blog.jsontapose.com/tags/modules/</link>
+      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/modules/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodenext</title>
+      <link>https://blog.jsontapose.com/tags/nodenext/</link>
+      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodenext/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tree-Shaking</title>
+      <link>https://blog.jsontapose.com/tags/tree-shaking/</link>
+      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/tree-shaking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blockchain</title>
       <link>https://blog.jsontapose.com/tags/blockchain/</link>
@@ -184,13 +247,6 @@
       <description></description>
     </item>
     <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Fri, 12 Dec 2025 13:13:05 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Production</title>
       <link>https://blog.jsontapose.com/tags/production/</link>
       <pubDate>Fri, 12 Dec 2025 13:13:05 +0000</pubDate>
@@ -254,13 +310,6 @@
       <description></description>
     </item>
     <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Wed, 10 Dec 2025 13:14:08 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Backend</title>
       <link>https://blog.jsontapose.com/tags/backend/</link>
       <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
@@ -321,13 +370,6 @@
       <link>https://blog.jsontapose.com/tags/strategy-pattern/</link>
       <pubDate>Sat, 06 Dec 2025 13:08:38 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/strategy-pattern/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Sat, 06 Dec 2025 13:08:38 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -772,13 +814,6 @@
       <description></description>
     </item>
     <item>
-      <title>Commonjs</title>
-      <link>https://blog.jsontapose.com/tags/commonjs/</link>
-      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/commonjs/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Es-Modules</title>
       <link>https://blog.jsontapose.com/tags/es-modules/</link>
       <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
@@ -1091,13 +1126,6 @@
       <link>https://blog.jsontapose.com/tags/literal-types/</link>
       <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/literal-types/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tree-Shaking</title>
-      <link>https://blog.jsontapose.com/tags/tree-shaking/</link>
-      <pubDate>Tue, 21 Oct 2025 13:12:21 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/tree-shaking/</guid>
       <description></description>
     </item>
     <item>

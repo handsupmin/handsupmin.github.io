@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Esm on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/esm/</link>
+    <description>Recent content in Esm on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 16 Dec 2025 13:14:04 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/esm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js 모듈 시스템 정리: CommonJS와 ESM의 차이, 선택 기준, 상호 운용</title>
+      <link>https://blog.jsontapose.com/posts/nodejs-module-system-commonjs-vs-esm-0fed74/</link>
+      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/nodejs-module-system-commonjs-vs-esm-0fed74/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Node.js에서 CommonJS(CJS)와 ESM(ES Modules)은 공존 상태이며, 신규 프로젝트는 ESM으로 전환되는 추세임. 두 시스템의 차이를 이해하면 번들 크기, 로딩 성능, 정적 분석, 생태계 호환에서 불필요한 시행착오 감소 가능&lt;/p&gt;
+&lt;h3 id=&#34;배경&#34;&gt;배경&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2009년 Node.js는 표준 모듈 시스템이 없던 시기라 CommonJS 채택&lt;/li&gt;
+&lt;li&gt;2015년 ES6에서 ESM이 언어 차원의 공식 표준으로 확정&lt;/li&gt;
+&lt;li&gt;2020년대 들어 Node.js가 ESM을 정식 지원, 브라우저와 규약 수렴 진행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;commonjs-요약&#34;&gt;CommonJS 요약&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// export
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;module&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;exports &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; foo&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;exports&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;bar &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// import
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; foo&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; bar &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; require&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;./utils&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;특성&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
