@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 16 Dec 2025 13:14:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Dec 2025 13:13:49 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Date-Fns</title>
+      <link>https://blog.jsontapose.com/tags/date-fns/</link>
+      <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/date-fns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Formatting</title>
+      <link>https://blog.jsontapose.com/tags/formatting/</link>
+      <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/formatting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>I18n</title>
+      <link>https://blog.jsontapose.com/tags/i18n/</link>
+      <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/i18n/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parsing</title>
+      <link>https://blog.jsontapose.com/tags/parsing/</link>
+      <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/parsing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Time</title>
+      <link>https://blog.jsontapose.com/tags/time/</link>
+      <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/time/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Timezone</title>
+      <link>https://blog.jsontapose.com/tags/timezone/</link>
+      <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/timezone/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Bundling</title>
       <link>https://blog.jsontapose.com/tags/bundling/</link>
@@ -27,13 +76,6 @@
       <link>https://blog.jsontapose.com/tags/esm/</link>
       <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/esm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>

@@ -24,17 +24,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2025-12-16T13:14:04+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/date-fns-javascript-date-time-23-patterns-d70145/</loc>
+    <lastmod>2025-12-17T13:13:49+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/nodejs-module-system-commonjs-vs-esm-0fed74/</loc>
-    <lastmod>2025-12-16T13:14:04+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/</loc>
+    <lastmod>2025-12-17T13:13:49+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2025-12-17T13:13:49+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/nodejs-module-system-commonjs-vs-esm-0fed74/</loc>
     <lastmod>2025-12-16T13:14:04+00:00</lastmod>
     <priority>0.5</priority>
   </url>
