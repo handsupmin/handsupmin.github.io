@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 18 Dec 2025 13:13:27 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Dec 2025 13:12:12 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend-Architecture</title>
+      <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
+      <pubDate>Fri, 19 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/backend-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dependency-Injection</title>
+      <link>https://blog.jsontapose.com/tags/dependency-injection/</link>
+      <pubDate>Fri, 19 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dependency-injection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nestjs</title>
+      <link>https://blog.jsontapose.com/tags/nestjs/</link>
+      <pubDate>Fri, 19 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Fri, 19 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Fri, 19 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Career</title>
       <link>https://blog.jsontapose.com/tags/career/</link>
@@ -128,13 +163,6 @@
       <description></description>
     </item>
     <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Nodenext</title>
       <link>https://blog.jsontapose.com/tags/nodenext/</link>
       <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
@@ -146,13 +174,6 @@
       <link>https://blog.jsontapose.com/tags/tree-shaking/</link>
       <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/tree-shaking/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Tue, 16 Dec 2025 13:14:04 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -401,24 +422,10 @@
       <description></description>
     </item>
     <item>
-      <title>Dependency-Injection</title>
-      <link>https://blog.jsontapose.com/tags/dependency-injection/</link>
-      <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/dependency-injection/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Module</title>
       <link>https://blog.jsontapose.com/tags/module/</link>
       <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/module/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nestjs</title>
-      <link>https://blog.jsontapose.com/tags/nestjs/</link>
-      <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
       <description></description>
     </item>
     <item>
@@ -1112,13 +1119,6 @@
       <link>https://blog.jsontapose.com/tags/primary-key/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/primary-key/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Backend-Architecture</title>
-      <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
-      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/backend-architecture/</guid>
       <description></description>
     </item>
     <item>

@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 18 Dec 2025 13:13:27 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Dec 2025 13:12:12 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,22 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NestJS 핵심 개념과 11.x 변화 정리 — 구조, DI, 데코레이터, 성능 업데이트</title>
+      <link>https://blog.jsontapose.com/posts/nestjs-core-concepts-and-11x-updates-8dc68e/</link>
+      <pubDate>Fri, 19 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/nestjs-core-concepts-and-11x-updates-8dc68e/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;NestJS는 대규모 서버 애플리케이션을 위한 구조화된 Node.js 프레임워크임
+핵심은 Angular 스타일의 아키텍처, 강력한 의존성 주입 컨테이너, 데코레이터 기반 메타프로그래밍 조합
+팀 규모가 커질수록 일관성과 유지보수성이 살아나는 타입스크립트 퍼스트 선택지임&lt;/p&gt;
+&lt;h3 id=&#34;구조적-강제의-이점&#34;&gt;구조적 강제의 이점&lt;/h3&gt;
+&lt;p&gt;Nest는 모듈 Module, 컨트롤러 Controller, 서비스 Service 구조를 강제함
+계층 분리 패턴 BLL, DAL, 도메인 레이어 등 적용 용이
+아키텍처가 일관되게 유지되어 4~10명 규모 팀에서 코드 스타일과 책임 경계가 흐트러지지 않음&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Fastify, Express 같은 미니멀 프레임워크 대비 생산성과 일관성 측면에서 팀 단위 효율 우위&lt;/p&gt;</description>
     </item>
     <item>
       <title>개발자 커리어에서 마주치는 임포스터와 우월감 증후군 정리</title>
