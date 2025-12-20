@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 19 Dec 2025 13:12:12 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Dec 2025 13:08:51 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eip-712</title>
+      <link>https://blog.jsontapose.com/tags/eip-712/</link>
+      <pubDate>Sat, 20 Dec 2025 13:08:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/eip-712/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ethereum</title>
+      <link>https://blog.jsontapose.com/tags/ethereum/</link>
+      <pubDate>Sat, 20 Dec 2025 13:08:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ethers</title>
+      <link>https://blog.jsontapose.com/tags/ethers/</link>
+      <pubDate>Sat, 20 Dec 2025 13:08:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ethers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sign-Typed-Data</title>
+      <link>https://blog.jsontapose.com/tags/sign-typed-data/</link>
+      <pubDate>Sat, 20 Dec 2025 13:08:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sign-typed-data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wallet</title>
+      <link>https://blog.jsontapose.com/tags/wallet/</link>
+      <pubDate>Sat, 20 Dec 2025 13:08:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/wallet/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Backend-Architecture</title>
       <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
@@ -188,13 +223,6 @@
       <link>https://blog.jsontapose.com/tags/eip-1559/</link>
       <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/eip-1559/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ethereum</title>
-      <link>https://blog.jsontapose.com/tags/ethereum/</link>
-      <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
       <description></description>
     </item>
     <item>
@@ -1605,13 +1633,6 @@
       <description></description>
     </item>
     <item>
-      <title>Wallet</title>
-      <link>https://blog.jsontapose.com/tags/wallet/</link>
-      <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/wallet/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Web3</title>
       <link>https://blog.jsontapose.com/tags/web3/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
@@ -1700,13 +1721,6 @@
       <link>https://blog.jsontapose.com/tags/consensus-algorithm/</link>
       <pubDate>Mon, 22 Sep 2025 13:10:11 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/consensus-algorithm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Eip-712</title>
-      <link>https://blog.jsontapose.com/tags/eip-712/</link>
-      <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/eip-712/</guid>
       <description></description>
     </item>
     <item>

@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 19 Dec 2025 13:12:12 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Dec 2025 13:08:51 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,154 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>EIP-712 기반 signTypedData 가이드와 지갑 연동 핵심</title>
+      <link>https://blog.jsontapose.com/posts/eip-712-signtypeddata-guide-29efde/</link>
+      <pubDate>Sat, 20 Dec 2025 13:08:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/eip-712-signtypeddata-guide-29efde/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;signTypedData는 EIP-712 표준을 구현한 서명 메서드로 구조화된 데이터에 서명하기 위한 표준 인터페이스를 제공함
+지갑은 사람이 읽을 수 있는 형태로 서명 내용을 표시하고, 서명은 특정 도메인과 체인에 귀속되어 재사용 공격을 줄임&lt;/p&gt;
+&lt;h3 id=&#34;signtypeddata와-eip-712의-관계&#34;&gt;signTypedData와 EIP-712의 관계&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;정의
+&lt;ul&gt;
+&lt;li&gt;signTypedData는 EIP-712 규격을 따르는 구조화 데이터 서명 메서드&lt;/li&gt;
+&lt;li&gt;이더리움 지갑 및 제공자에서 eth_signTypedData, eth_signTypedData_v3, eth_signTypedData_v4 형태로 노출&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;버전
+&lt;ul&gt;
+&lt;li&gt;signTypedData 최초 버전&lt;/li&gt;
+&lt;li&gt;signTypedData_v3&lt;/li&gt;
+&lt;li&gt;signTypedData_v4 가장 널리 사용되는 최신 버전&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;라이브러리 사용
+&lt;ul&gt;
+&lt;li&gt;ethers에서는 _signTypedData로 제공&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; signature &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; signer&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;_signTypedData&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;domain&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; types&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; value&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;지갑 연동은 일반적으로 provider에 직접 요청하는 방식 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; signature &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; ethereum&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;request&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  method&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;eth_signTypedData_v4&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  params&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;account&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; JSON&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;stringify&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt; domain&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; types&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; message&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; value &lt;span style=&#34;color:#eceff4&#34;&gt;})],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;})&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;동작-원리-요약&#34;&gt;동작 원리 요약&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;타입화된 구조체 정의
+&lt;ul&gt;
+&lt;li&gt;예시 구조체와 필드 타입을 정형화해 명세&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;도메인 분리자 사용
+&lt;ul&gt;
+&lt;li&gt;이름, 버전, 체인 ID, 검증 컨트랙트 주소를 포함해 서명 범위 고정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;타입 해시와 데이터 해시 생성
+&lt;ul&gt;
+&lt;li&gt;타입 정의를 keccak256으로 해싱 후 데이터 인코딩 해시 생성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;최종 해시에 서명 및 검증
+&lt;ul&gt;
+&lt;li&gt;지갑에서 서명 생성, 컨트랙트에서 도메인과 타입을 동일하게 재현해 검증&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;사용-예시&#34;&gt;사용 예시&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;간단한 도메인, 타입, 메시지 구성 예시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; domain &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; name&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;MyApp&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; version&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;1&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; chainId&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; verifyingContract &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; types &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; Action&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; name&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;user&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; type&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;address&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;},&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; name&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;amount&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; type&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;uint256&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; value &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; user&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; userAddress&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; amount &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// ethers 서명
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; sig &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; signer&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;_signTypedData&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;domain&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; types&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; value&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 지갑 요청 v4 서명
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; sig2 &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; ethereum&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;request&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  method&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;eth_signTypedData_v4&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  params&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;account&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; JSON&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;stringify&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt; domain&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; types&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; message&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; value &lt;span style=&#34;color:#eceff4&#34;&gt;})],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;})&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;컨트랙트 검증 예시 요약&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-solidity&#34; data-lang=&#34;solidity&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// OpenZeppelin EIP712, ECDSA 사용 가정
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;bytes32&lt;/span&gt; digest &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; _hashTypedDataV4&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1&#34;&gt;keccak256&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;abi&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;encode&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#81a1c1&#34;&gt;keccak256&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;Action(address user,uint256 amount)&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    user&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    amount
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;ECDSA&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;recover&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;digest&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; signature&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;==&lt;/span&gt; signer&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;Invalid signature&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;eip-712-핵심-개념-정리&#34;&gt;EIP-712 핵심 개념 정리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;목적
+&lt;ul&gt;
+&lt;li&gt;사람이 읽을 수 있는 서명 메시지 제공&lt;/li&gt;
+&lt;li&gt;도메인에 귀속된 서명으로 리플레이 공격 저감&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;구조
+&lt;ul&gt;
+&lt;li&gt;타입화된 데이터 스키마와 도메인 분리자&lt;/li&gt;
+&lt;li&gt;타입 해시와 데이터 해시를 조합한 최종 해시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;장점
+&lt;ul&gt;
+&lt;li&gt;지갑 UI에서 의미 있는 정보 노출로 UX 개선&lt;/li&gt;
+&lt;li&gt;다른 dApp이나 체인에서 재사용 어려움으로 보안 강화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;주의사항과-팁&#34;&gt;주의사항과 팁&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;v4 사용 권장
+&lt;ul&gt;
+&lt;li&gt;v4는 가장 널리 지원되고 구조체 및 배열 표현이 안정적임&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;provider 요청 방식
+&lt;ul&gt;
+&lt;li&gt;web3 라이브러리 함수보다 ethereum.request의 eth_signTypedData_v4 사용이 호환성 측면에서 안전함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;타입 정의 일치
+&lt;ul&gt;
+&lt;li&gt;컨트랙트와 클라이언트의 타입 이름, 필드 순서, 정수 크기 등 완전 일치 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;도메인 정합성
+&lt;ul&gt;
+&lt;li&gt;chainId와 verifyingContract가 실제 네트워크와 배포 주소와 일치해야 검증 성공&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;데이터 인코딩
+&lt;ul&gt;
+&lt;li&gt;JS 측 정수값은 문자열 또는 BigNumber 형태 사용 권장, 오버플로와 반올림 이슈 회피&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ethers 사용 시
+&lt;ul&gt;
+&lt;li&gt;types에 EIP712Domain을 포함하지 않음, _signTypedData가 도메인을 별도로 처리함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;v4 메시지 포맷
+&lt;ul&gt;
+&lt;li&gt;params에 JSON.stringify로 { domain, types, message } 형태 전달 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
+&lt;p&gt;signTypedData는 곧 EIP-712 사용을 의미하며 구조화된 데이터에 대한 안전한 서명을 가능하게 함
+ethers의 _signTypedData 또는 지갑의 eth_signTypedData_v4를 사용해 서명하고, 컨트랙트에서는 동일한 도메인과 타입으로 해시를 재현해 검증하면 됨
+명세 일치와 도메인 정합성만 확보하면 안전하고 예측 가능한 서명 흐름을 구현 가능&lt;/p&gt;</description>
     </item>
     <item>
       <title>NestJS 핵심 개념과 11.x 변화 정리 — 구조, DI, 데코레이터, 성능 업데이트</title>
