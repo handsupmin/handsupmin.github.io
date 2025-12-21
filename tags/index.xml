@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 20 Dec 2025 13:08:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Dec 2025 13:09:33 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data-Structures</title>
+      <link>https://blog.jsontapose.com/tags/data-structures/</link>
+      <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Map</title>
+      <link>https://blog.jsontapose.com/tags/map/</link>
+      <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://blog.jsontapose.com/tags/performance/</link>
+      <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Set</title>
+      <link>https://blog.jsontapose.com/tags/set/</link>
+      <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/set/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weakmap</title>
+      <link>https://blog.jsontapose.com/tags/weakmap/</link>
+      <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/weakmap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weakset</title>
+      <link>https://blog.jsontapose.com/tags/weakset/</link>
+      <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/weakset/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Eip-712</title>
       <link>https://blog.jsontapose.com/tags/eip-712/</link>
@@ -139,13 +188,6 @@
       <link>https://blog.jsontapose.com/tags/i18n/</link>
       <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/i18n/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -814,13 +856,6 @@
       <description></description>
     </item>
     <item>
-      <title>Map</title>
-      <link>https://blog.jsontapose.com/tags/map/</link>
-      <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/map/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Promise</title>
       <link>https://blog.jsontapose.com/tags/promise/</link>
       <pubDate>Fri, 21 Nov 2025 13:09:50 +0000</pubDate>
@@ -1042,13 +1077,6 @@
       <link>https://blog.jsontapose.com/tags/caching/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/caching/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Performance</title>
-      <link>https://blog.jsontapose.com/tags/performance/</link>
-      <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/performance/</guid>
       <description></description>
     </item>
     <item>
