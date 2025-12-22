@@ -6,8 +6,32 @@
     <description>Recent content in Security on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 06 Oct 2025 13:09:34 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 13:12:42 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes 아키텍처와 핵심 컴포넌트 정리</title>
+      <link>https://blog.jsontapose.com/posts/kubernetes-architecture-core-components-ebe5f4/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/kubernetes-architecture-core-components-ebe5f4/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;쿠버네티스는 명령을 조율하는 Control Plane과 실제 워크로드가 실행되는 Data Plane으로 구성됨
+각 컴포넌트의 역할과 흐름을 이해하면 트러블슈팅, 성능 최적화, 보안 구성에 필요한 기준이 생김
+클라우드 매니지드 쿠버네티스의 경우 Control Plane은 보통 제공자가 관리하지만 동작 원리 이해는 필수&lt;/p&gt;
+&lt;h3 id=&#34;control-plane&#34;&gt;Control Plane&lt;/h3&gt;
+&lt;p&gt;API Server&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;클러스터 유일 진입점&lt;/li&gt;
+&lt;li&gt;모든 컴포넌트와 사용자는 API Server를 통해 통신&lt;/li&gt;
+&lt;li&gt;인증과 권한 확인 수행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;etcd&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;클러스터 상태와 스펙을 보관하는 분산 키밸류 저장소&lt;/li&gt;
+&lt;li&gt;API Server만 직접 접근 가능&lt;/li&gt;
+&lt;li&gt;상태 복구의 근간이 되는 데이터 원장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Scheduler&lt;/p&gt;</description>
+    </item>
     <item>
       <title>블록체인 채굴 개념과 동작 원리 PoW 보상 구조 이더리움 전환 사례</title>
       <link>https://blog.jsontapose.com/posts/blockchain-mining-explained-pow-rewards-ethereum-merge-1c487a/</link>

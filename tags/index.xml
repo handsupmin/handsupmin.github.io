@@ -6,8 +6,106 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 21 Dec 2025 13:09:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 13:12:42 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Architecture</title>
+      <link>https://blog.jsontapose.com/tags/architecture/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Autoscaling</title>
+      <link>https://blog.jsontapose.com/tags/autoscaling/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/autoscaling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Control-Plane</title>
+      <link>https://blog.jsontapose.com/tags/control-plane/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/control-plane/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Plane</title>
+      <link>https://blog.jsontapose.com/tags/data-plane/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/data-plane/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gitops</title>
+      <link>https://blog.jsontapose.com/tags/gitops/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/gitops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Helm</title>
+      <link>https://blog.jsontapose.com/tags/helm/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/helm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>K8s</title>
+      <link>https://blog.jsontapose.com/tags/k8s/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/k8s/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>https://blog.jsontapose.com/tags/kubernetes/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>https://blog.jsontapose.com/tags/networking/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Observability</title>
+      <link>https://blog.jsontapose.com/tags/observability/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/observability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Operators</title>
+      <link>https://blog.jsontapose.com/tags/operators/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/operators/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pods</title>
+      <link>https://blog.jsontapose.com/tags/pods/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/pods/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://blog.jsontapose.com/tags/security/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Storage</title>
+      <link>https://blog.jsontapose.com/tags/storage/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/storage/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Data-Structures</title>
       <link>https://blog.jsontapose.com/tags/data-structures/</link>
@@ -366,24 +464,10 @@
       <description></description>
     </item>
     <item>
-      <title>Kubernetes</title>
-      <link>https://blog.jsontapose.com/tags/kubernetes/</link>
-      <pubDate>Sat, 13 Dec 2025 13:09:08 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Microservices</title>
       <link>https://blog.jsontapose.com/tags/microservices/</link>
       <pubDate>Sat, 13 Dec 2025 13:09:08 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/microservices/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Observability</title>
-      <link>https://blog.jsontapose.com/tags/observability/</link>
-      <pubDate>Sat, 13 Dec 2025 13:09:08 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/observability/</guid>
       <description></description>
     </item>
     <item>
@@ -583,13 +667,6 @@
       <description></description>
     </item>
     <item>
-      <title>Autoscaling</title>
-      <link>https://blog.jsontapose.com/tags/autoscaling/</link>
-      <pubDate>Thu, 04 Dec 2025 13:13:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/autoscaling/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Controllers</title>
       <link>https://blog.jsontapose.com/tags/controllers/</link>
       <pubDate>Thu, 04 Dec 2025 13:13:58 +0000</pubDate>
@@ -608,13 +685,6 @@
       <link>https://blog.jsontapose.com/tags/karpenter/</link>
       <pubDate>Thu, 04 Dec 2025 13:13:58 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/karpenter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Operators</title>
-      <link>https://blog.jsontapose.com/tags/operators/</link>
-      <pubDate>Thu, 04 Dec 2025 13:13:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/operators/</guid>
       <description></description>
     </item>
     <item>
@@ -1304,13 +1374,6 @@
       <description></description>
     </item>
     <item>
-      <title>Control-Plane</title>
-      <link>https://blog.jsontapose.com/tags/control-plane/</link>
-      <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/control-plane/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Eks</title>
       <link>https://blog.jsontapose.com/tags/eks/</link>
       <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
@@ -1574,13 +1637,6 @@
       <link>https://blog.jsontapose.com/tags/proof-of-work/</link>
       <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/proof-of-work/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>https://blog.jsontapose.com/tags/security/</link>
-      <pubDate>Mon, 06 Oct 2025 13:09:34 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/security/</guid>
       <description></description>
     </item>
     <item>

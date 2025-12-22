@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 21 Dec 2025 13:09:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 13:12:42 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -90,6 +90,30 @@
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Kubernetes 아키텍처와 핵심 컴포넌트 정리</title>
+      <link>https://blog.jsontapose.com/posts/kubernetes-architecture-core-components-ebe5f4/</link>
+      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/kubernetes-architecture-core-components-ebe5f4/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;쿠버네티스는 명령을 조율하는 Control Plane과 실제 워크로드가 실행되는 Data Plane으로 구성됨
+각 컴포넌트의 역할과 흐름을 이해하면 트러블슈팅, 성능 최적화, 보안 구성에 필요한 기준이 생김
+클라우드 매니지드 쿠버네티스의 경우 Control Plane은 보통 제공자가 관리하지만 동작 원리 이해는 필수&lt;/p&gt;
+&lt;h3 id=&#34;control-plane&#34;&gt;Control Plane&lt;/h3&gt;
+&lt;p&gt;API Server&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;클러스터 유일 진입점&lt;/li&gt;
+&lt;li&gt;모든 컴포넌트와 사용자는 API Server를 통해 통신&lt;/li&gt;
+&lt;li&gt;인증과 권한 확인 수행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;etcd&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;클러스터 상태와 스펙을 보관하는 분산 키밸류 저장소&lt;/li&gt;
+&lt;li&gt;API Server만 직접 접근 가능&lt;/li&gt;
+&lt;li&gt;상태 복구의 근간이 되는 데이터 원장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Scheduler&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>JavaScript에서 객체 대신 Map/Set을 선택해야 하는 경우와 이유</title>
       <link>https://blog.jsontapose.com/posts/use-maps-and-sets-instead-of-objects-3cd24d/</link>
       <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
@@ -106,14 +130,14 @@
 &lt;li&gt;비문자열 키가 필요한 경우&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 객체 기반 임의 키-값 해시맵 패턴은 delete에서 성능 불리할 수 있음
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; mapOfThingsObj &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mapOfThingsObj&lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;thing&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; thing
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;delete&lt;/span&gt; mapOfThingsObj&lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;thing&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; mapOfThingsObj &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{};&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mapOfThingsObj&lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;thing&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; thing&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;delete&lt;/span&gt; mapOfThingsObj&lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;thing&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#eceff4&#34;&gt;];&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// Map은 동적 추가·삭제에 최적화
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; mapOfThings &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;new&lt;/span&gt; Map&lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mapOfThings&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;thing&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; thing&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mapOfThings&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;delete&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;thing&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;성능-배경&#34;&gt;성능 배경&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; mapOfThings &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;new&lt;/span&gt; Map&lt;span style=&#34;color:#eceff4&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mapOfThings&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;set&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;thing&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; thing&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mapOfThings&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;delete&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;thing&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;성능-배경&#34;&gt;성능 배경&lt;/h3&gt;
 &lt;p&gt;객체는 VM이 숨은 클래스/셰이프를 가정해 최적화하는 경향이 있어 구조가 변동하면 디옵티마이즈 유발 가능성 존재
 Map은 해시맵 사용에 맞춰 키 추가·삭제가 빈번한 경우를 목표로 설계됨
 마이크로벤치마크는 한계가 있으므로 실제 워크로드에서 측정 권장, 다만 Map이 해당 패턴에 맞춰 설계된 점은 문서로 확인 가능&lt;/p&gt;</description>
@@ -292,11 +316,15 @@ ethers의 _signTypedData 또는 지갑의 eth_signTypedData_v4를 사용해 서�
 이 환경에서 임포스터 증후군과 우월감 증후군은 자주 관찰되는 심리 상태이며, 같은 사람이 커리어 단계에 따라 두 상태를 오가기도 함
 핵심 개념과 개발자 맥락에서의 징후, 발생 배경, 성장 곡선 상의 위치, 건강한 마인드셋을 정리함&lt;/p&gt;
 &lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;임포스터 증후군&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;스스로 실력을 과소평가하고 운이나 타인의 공 덕분에 현재 위치에 있다고 여기는 불안 심리&lt;/li&gt;
 &lt;li&gt;들킬 것 같은 두려움이 동반됨&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;개발자 맥락에서 보이는 징후&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;구글링 의존을 부끄러워하며 자신을 가짜 개발자로 규정함&lt;/li&gt;
@@ -304,6 +332,8 @@ ethers의 _signTypedData 또는 지갑의 eth_signTypedData_v4를 사용해 서�
 &lt;li&gt;질문을 회피하고 비난을 두려워해 홀로 고립됨&lt;/li&gt;
 &lt;li&gt;더 알수록 모르는 영역이 보이며 시니어가 되어도 불안 증가&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;우월감 증후군&lt;/p&gt;</description>
     </item>
     <item>
