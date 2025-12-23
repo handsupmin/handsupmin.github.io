@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 22 Dec 2025 13:12:42 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Dec 2025 13:13:24 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,19 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>자바스크립트에서 균등한 배열 셔플 구현 피셔‑예이츠와 sort&#43;random 편향 이슈</title>
+      <link>https://blog.jsontapose.com/posts/javascript-fisher-yates-shuffle-and-sort-random-bias-96c3c0/</link>
+      <pubDate>Tue, 23 Dec 2025 13:13:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/javascript-fisher-yates-shuffle-and-sort-random-bias-96c3c0/</guid>
+      <description>&lt;h3 id=&#34;개념과-배경&#34;&gt;개념과 배경&lt;/h3&gt;
+&lt;p&gt;배열을 무작위로 섞을 때 Array.prototype.sort와 Math.random을 조합한 패턴이 흔히 보임&lt;/p&gt;
+&lt;p&gt;array.sort(() =&amp;gt; Math.random() - 0.5) 형태는 간단해 보이지만 결과 분포가 한쪽으로 치우치는 편향이 발생함&lt;/p&gt;
+&lt;p&gt;간단한 실험으로 [1, 2, 3]을 백만 회 섞어 빈도를 집계해 보면 특정 순열이 과도하게 많이 나오거나 적게 나오는 경향 관찰됨&lt;/p&gt;
+&lt;p&gt;핵심은 Math.random 자체보다 sort에 전달된 비교 함수가 랜덤하게 일관성 없이 값을 내놓는 구조라는 점임&lt;/p&gt;
+&lt;h3 id=&#34;왜-sort--random이-편향되는가&#34;&gt;왜 sort + random이 편향되는가&lt;/h3&gt;
+&lt;p&gt;정렬 알고리즘은 비교 함수가 다음 성질을 만족한다고 가정함&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kubernetes 아키텍처와 핵심 컴포넌트 정리</title>

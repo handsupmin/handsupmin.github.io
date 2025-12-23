@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 22 Dec 2025 13:12:42 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Dec 2025 13:13:24 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithms</title>
+      <link>https://blog.jsontapose.com/tags/algorithms/</link>
+      <pubDate>Tue, 23 Dec 2025 13:13:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Array-Sort</title>
+      <link>https://blog.jsontapose.com/tags/array-sort/</link>
+      <pubDate>Tue, 23 Dec 2025 13:13:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/array-sort/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fisher-Yates</title>
+      <link>https://blog.jsontapose.com/tags/fisher-yates/</link>
+      <pubDate>Tue, 23 Dec 2025 13:13:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/fisher-yates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Tue, 23 Dec 2025 13:13:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Randomness</title>
+      <link>https://blog.jsontapose.com/tags/randomness/</link>
+      <pubDate>Tue, 23 Dec 2025 13:13:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/randomness/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shuffle</title>
+      <link>https://blog.jsontapose.com/tags/shuffle/</link>
+      <pubDate>Tue, 23 Dec 2025 13:13:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/shuffle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Crypto</title>
+      <link>https://blog.jsontapose.com/tags/web-crypto/</link>
+      <pubDate>Tue, 23 Dec 2025 13:13:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/web-crypto/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Architecture</title>
       <link>https://blog.jsontapose.com/tags/architecture/</link>
@@ -111,13 +160,6 @@
       <link>https://blog.jsontapose.com/tags/data-structures/</link>
       <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/data-structures/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
