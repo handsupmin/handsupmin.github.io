@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 23 Dec 2025 13:13:24 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Dec 2025 13:11:44 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eks</title>
+      <link>https://blog.jsontapose.com/tags/eks/</link>
+      <pubDate>Wed, 24 Dec 2025 13:11:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/eks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>https://blog.jsontapose.com/tags/kubernetes/</link>
+      <pubDate>Wed, 24 Dec 2025 13:11:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scheduling</title>
+      <link>https://blog.jsontapose.com/tags/scheduling/</link>
+      <pubDate>Wed, 24 Dec 2025 13:11:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/scheduling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Taints</title>
+      <link>https://blog.jsontapose.com/tags/taints/</link>
+      <pubDate>Wed, 24 Dec 2025 13:11:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/taints/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tolerations</title>
+      <link>https://blog.jsontapose.com/tags/tolerations/</link>
+      <pubDate>Wed, 24 Dec 2025 13:11:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/tolerations/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Algorithms</title>
       <link>https://blog.jsontapose.com/tags/algorithms/</link>
@@ -104,13 +139,6 @@
       <link>https://blog.jsontapose.com/tags/k8s/</link>
       <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/k8s/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kubernetes</title>
-      <link>https://blog.jsontapose.com/tags/kubernetes/</link>
-      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>
@@ -1413,13 +1441,6 @@
       <link>https://blog.jsontapose.com/tags/cloud/</link>
       <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Eks</title>
-      <link>https://blog.jsontapose.com/tags/eks/</link>
-      <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/eks/</guid>
       <description></description>
     </item>
     <item>

@@ -6,8 +6,22 @@
     <description>Recent content in Eks on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 18 Oct 2025 13:06:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Dec 2025 13:11:44 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/eks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes 스케줄링 제어를 위한 Taints와 Tolerations 개념과 사용법</title>
+      <link>https://blog.jsontapose.com/posts/kubernetes-taints-tolerations-c1d4eb/</link>
+      <pubDate>Wed, 24 Dec 2025 13:11:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/kubernetes-taints-tolerations-c1d4eb/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Kubernetes에서 Taints는 노드에 거는 출입 제한 설정이고 Tolerations는 파드가 가진 출입 허용 키에 해당함
+이 조합으로 스케줄러가 특정 파드를 특정 노드에서 배제하거나 허용하도록 제어 가능
+비용이 높은 노드 보호, 장애 노드 격리, 점검 중 노드 비우기 같은 운영 시나리오에서 효과적임&lt;/p&gt;
+&lt;h3 id=&#34;비유로-이해하기&#34;&gt;비유로 이해하기&lt;/h3&gt;
+&lt;p&gt;노드가 VIP 라운지, Taint는 라운지 입구의 안내 표지, 파드는 손님, Toleration은 출입증에 해당함
+Taint가 있는 노드에는 아무 파드나 배치되지 않음
+해당 Taint를 허용하는 Toleration을 가진 파드만 스케줄링 가능&lt;/p&gt;</description>
+    </item>
     <item>
       <title>쿠버네티스 컨트롤 플레인 핵심 개념과 EKS 비교</title>
       <link>https://blog.jsontapose.com/posts/kubernetes-control-plane-eks-2af164/</link>
