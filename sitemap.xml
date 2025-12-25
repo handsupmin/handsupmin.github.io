@@ -24,17 +24,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2025-12-24T13:11:44+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/api-error-code-enum-best-practices-3f75b7/</loc>
+    <lastmod>2025-12-25T13:11:57+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/kubernetes-taints-tolerations-c1d4eb/</loc>
-    <lastmod>2025-12-24T13:11:44+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/</loc>
+    <lastmod>2025-12-25T13:11:57+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2025-12-25T13:11:57+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/kubernetes-taints-tolerations-c1d4eb/</loc>
     <lastmod>2025-12-24T13:11:44+00:00</lastmod>
     <priority>0.5</priority>
   </url>

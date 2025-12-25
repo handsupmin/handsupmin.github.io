@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 24 Dec 2025 13:11:44 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Dec 2025 13:11:57 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Api-Design</title>
+      <link>https://blog.jsontapose.com/tags/api-design/</link>
+      <pubDate>Thu, 25 Dec 2025 13:11:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/api-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backend</title>
+      <link>https://blog.jsontapose.com/tags/backend/</link>
+      <pubDate>Thu, 25 Dec 2025 13:11:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Error-Handling</title>
+      <link>https://blog.jsontapose.com/tags/error-handling/</link>
+      <pubDate>Thu, 25 Dec 2025 13:11:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/error-handling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rest</title>
+      <link>https://blog.jsontapose.com/tags/rest/</link>
+      <pubDate>Thu, 25 Dec 2025 13:11:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/rest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Thu, 25 Dec 2025 13:11:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Eks</title>
       <link>https://blog.jsontapose.com/tags/eks/</link>
@@ -289,13 +324,6 @@
       <description></description>
     </item>
     <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Fri, 19 Dec 2025 13:12:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Career</title>
       <link>https://blog.jsontapose.com/tags/career/</link>
       <pubDate>Thu, 18 Dec 2025 13:13:27 +0000</pubDate>
@@ -555,13 +583,6 @@
       <description></description>
     </item>
     <item>
-      <title>Error-Handling</title>
-      <link>https://blog.jsontapose.com/tags/error-handling/</link>
-      <pubDate>Fri, 12 Dec 2025 13:13:05 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/error-handling/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Exceptions</title>
       <link>https://blog.jsontapose.com/tags/exceptions/</link>
       <pubDate>Fri, 12 Dec 2025 13:13:05 +0000</pubDate>
@@ -636,13 +657,6 @@
       <link>https://blog.jsontapose.com/tags/flatmap/</link>
       <pubDate>Wed, 10 Dec 2025 13:14:08 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/flatmap/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Backend</title>
-      <link>https://blog.jsontapose.com/tags/backend/</link>
-      <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/backend/</guid>
       <description></description>
     </item>
     <item>
