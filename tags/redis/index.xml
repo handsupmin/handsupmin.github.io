@@ -6,7 +6,7 @@
     <description>Recent content in Redis on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 25 Oct 2025 13:06:24 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Dec 2025 13:12:06 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSE란? 실시간 이벤트 전달 프로토콜 (Server-Sent Events)</title>
@@ -20,6 +20,32 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;sse-vs-웹소켓-그리고-한계&#34;&gt;SSE vs 웹소켓, 그리고 한계&lt;/h2&gt;
 &lt;p&gt;SSE는 실시간 이벤트 전송에 유용하지만 만능은 아님. 웹소켓과 비교했을 때 명확한 장단점이 존재함&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>백프레셔 Backpressure 개념 정리와 스트림·큐·RxJS 적용 패턴</title>
+      <link>https://blog.jsontapose.com/posts/backpressure-flow-control-stream-rxjs-351e4c/</link>
+      <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/backpressure-flow-control-stream-rxjs-351e4c/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;백프레셔 Backpressure는 소비자가 생산자의 처리 속도를 따라가지 못할 때, 소비자가 생산자의 속도를 조절하도록 피드백을 주는 흐름 제어 메커니즘을 의미함
+직관적 비유로 좁은 깔때기 소비자에 높은 수압 생산자를 연결했을 때, 깔때기 내부에 물이 차며 더 유입되지 않도록 압력이 올라가거나 수도를 잠그라는 신호를 보내는 상황과 동일함&lt;/p&gt;
+&lt;h3 id=&#34;왜-중요한가&#34;&gt;왜 중요한가&lt;/h3&gt;
+&lt;p&gt;처리 속도 불균형이 누적되면 메모리 초과와 지연 폭증으로 이어짐&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;생산자 1000 req/s, 소비자 100 req/s 가정&lt;/li&gt;
+&lt;li&gt;매초 900개가 버퍼에 쌓여 메모리 증가, 결국 OOM 위험&lt;/li&gt;
+&lt;li&gt;큐 대기열이 길어져 tail-latency 증가, 사실상 영구 대기 상태 발생 가능
+백프레셔는 이런 누적을 초기에 억제해 시스템 안정성 확보와 자원 보호에 기여함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Producer: 데이터를 생성·전송하는 주체&lt;/li&gt;
+&lt;li&gt;Consumer: 데이터를 수신·처리하는 주체&lt;/li&gt;
+&lt;li&gt;Backpressure: 소비자가 처리 가능한 속도로 생산자에 역방향 피드백을 전달해 유량을 제어하는 행위&lt;/li&gt;
+&lt;li&gt;전략 축: 조절 Control, 버퍼링 Buffering, 드롭 Dropping&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리전략&#34;&gt;동작 원리/전략&lt;/h3&gt;
+&lt;p&gt;A. 조절 Control/Throttling&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
