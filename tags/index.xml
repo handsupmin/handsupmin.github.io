@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 26 Dec 2025 13:12:06 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Dec 2025 13:09:54 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data-Transformation</title>
+      <link>https://blog.jsontapose.com/tags/data-transformation/</link>
+      <pubDate>Sat, 27 Dec 2025 13:09:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/data-transformation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Es2017</title>
+      <link>https://blog.jsontapose.com/tags/es2017/</link>
+      <pubDate>Sat, 27 Dec 2025 13:09:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/es2017/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iteration</title>
+      <link>https://blog.jsontapose.com/tags/iteration/</link>
+      <pubDate>Sat, 27 Dec 2025 13:09:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/iteration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Sat, 27 Dec 2025 13:09:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Object-Entries</title>
+      <link>https://blog.jsontapose.com/tags/object-entries/</link>
+      <pubDate>Sat, 27 Dec 2025 13:09:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/object-entries/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Sat, 27 Dec 2025 13:09:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Backpressure</title>
       <link>https://blog.jsontapose.com/tags/backpressure/</link>
@@ -100,13 +142,6 @@
       <description></description>
     </item>
     <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Thu, 25 Dec 2025 13:11:57 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Eks</title>
       <link>https://blog.jsontapose.com/tags/eks/</link>
       <pubDate>Wed, 24 Dec 2025 13:11:44 +0000</pubDate>
@@ -160,13 +195,6 @@
       <link>https://blog.jsontapose.com/tags/fisher-yates/</link>
       <pubDate>Tue, 23 Dec 2025 13:13:24 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/fisher-yates/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Tue, 23 Dec 2025 13:13:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Iteration on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/iteration/</link>
+    <description>Recent content in Iteration on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 27 Dec 2025 13:09:54 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/iteration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Object.entries 사용법과 주의사항</title>
+      <link>https://blog.jsontapose.com/posts/object-entries-usage-and-notes-329c74/</link>
+      <pubDate>Sat, 27 Dec 2025 13:09:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/object-entries-usage-and-notes-329c74/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Object.entries는 객체의 키-값 쌍을 [key, value] 형태의 배열 리스트로 반환하는 표준 메서드임. 객체를 배열로 바꿔 순회, 변환, 자료구조 간 변환 같은 작업을 단순화하는 데 유용함&lt;/p&gt;
+&lt;h3 id=&#34;문법&#34;&gt;문법&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;Object&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;entries&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;obj&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;매개변수 obj: 키-값 쌍을 가진 객체 값&lt;/li&gt;
+&lt;li&gt;반환값: [key, value] 쌍의 2차원 배열&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;기본-예시&#34;&gt;기본 예시&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; user &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; name&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;Alice&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; age&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;25&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;Object&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;entries&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;user&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// [[&amp;#39;name&amp;#39;, &amp;#39;Alice&amp;#39;], [&amp;#39;age&amp;#39;, 25]]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;배열로 변환되므로 for&amp;hellip;of, map 같은 배열 API에 바로 연결 가능&lt;/p&gt;
+&lt;h3 id=&#34;순회와-변환&#34;&gt;순회와 변환&lt;/h3&gt;
+&lt;p&gt;for&amp;hellip;of로 키와 값을 동시에 순회 가능&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
