@@ -6,8 +6,64 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 27 Dec 2025 13:09:54 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 13:10:48 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Design-Patterns</title>
+      <link>https://blog.jsontapose.com/tags/design-patterns/</link>
+      <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/design-patterns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event-Driven</title>
+      <link>https://blog.jsontapose.com/tags/event-driven/</link>
+      <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/event-driven/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Observer-Pattern</title>
+      <link>https://blog.jsontapose.com/tags/observer-pattern/</link>
+      <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/observer-pattern/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pub-Sub</title>
+      <link>https://blog.jsontapose.com/tags/pub-sub/</link>
+      <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/pub-sub/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rxjs</title>
+      <link>https://blog.jsontapose.com/tags/rxjs/</link>
+      <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/rxjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software-Architecture</title>
+      <link>https://blog.jsontapose.com/tags/software-architecture/</link>
+      <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/software-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Data-Transformation</title>
       <link>https://blog.jsontapose.com/tags/data-transformation/</link>
@@ -30,24 +86,10 @@
       <description></description>
     </item>
     <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Sat, 27 Dec 2025 13:09:54 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Object-Entries</title>
       <link>https://blog.jsontapose.com/tags/object-entries/</link>
       <pubDate>Sat, 27 Dec 2025 13:09:54 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/object-entries/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Sat, 27 Dec 2025 13:09:54 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -90,13 +132,6 @@
       <link>https://blog.jsontapose.com/tags/redis/</link>
       <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/redis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rxjs</title>
-      <link>https://blog.jsontapose.com/tags/rxjs/</link>
-      <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/rxjs/</guid>
       <description></description>
     </item>
     <item>
@@ -751,13 +786,6 @@
       <description></description>
     </item>
     <item>
-      <title>Design-Patterns</title>
-      <link>https://blog.jsontapose.com/tags/design-patterns/</link>
-      <pubDate>Sat, 06 Dec 2025 13:08:38 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/design-patterns/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Oop</title>
       <link>https://blog.jsontapose.com/tags/oop/</link>
       <pubDate>Sat, 06 Dec 2025 13:08:38 +0000</pubDate>
@@ -1406,13 +1434,6 @@
       <link>https://blog.jsontapose.com/tags/primary-key/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/primary-key/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pub-Sub</title>
-      <link>https://blog.jsontapose.com/tags/pub-sub/</link>
-      <pubDate>Sat, 25 Oct 2025 13:06:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/pub-sub/</guid>
       <description></description>
     </item>
     <item>

@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 27 Dec 2025 13:09:54 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 13:10:48 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,45 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Observer 패턴 제대로 이해하기 — 동작 원리와 RxJS 확장</title>
+      <link>https://blog.jsontapose.com/posts/observer-pattern-basics-and-rxjs-66e936/</link>
+      <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/observer-pattern-basics-and-rxjs-66e936/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;한 객체의 상태 변화나 이벤트를 여러 객체가 자동으로 감지하고 반응하게 만드는 구조를 Observer 패턴이라 부름
+발행자와 구독자의 관계로도 설명됨. Publisher가 이벤트를 내보내고 Subscribers가 이를 받는 흐름
+핵심은 느슨한 결합과 자동 알림 흐름 유지&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념과-구성요소&#34;&gt;핵심 개념과 구성요소&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Subject 또는 Observable
+&lt;ul&gt;
+&lt;li&gt;이벤트를 발생시키는 주체&lt;/li&gt;
+&lt;li&gt;Observer 목록을 관리&lt;/li&gt;
+&lt;li&gt;상태가 변하면 observers에 알림 전파&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Observer
+&lt;ul&gt;
+&lt;li&gt;상태 변화를 알고 싶은 소비자&lt;/li&gt;
+&lt;li&gt;update 같은 콜백 보유&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;notify
+&lt;ul&gt;
+&lt;li&gt;Subject가 모든 Observer에게 브로드캐스트하는 동작&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리&#34;&gt;동작 원리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Observer가 Subject에 구독 등록&lt;/li&gt;
+&lt;li&gt;Subject 상태 변화 발생&lt;/li&gt;
+&lt;li&gt;Subject가 notify 실행, 등록된 Observer의 콜백 호출&lt;/li&gt;
+&lt;li&gt;Observer는 전달된 값에 따라 자체 로직 수행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;필수 인터페이스의 최소 형태는 아래와 같음&lt;/p&gt;</description>
     </item>
     <item>
       <title>Object.entries 사용법과 주의사항</title>
