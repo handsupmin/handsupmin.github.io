@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Canary-Deployment on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/canary-deployment/</link>
+    <description>Recent content in Canary-Deployment on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 29 Dec 2025 13:13:58 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/canary-deployment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>트래픽을 일정 비율로 안전하게 나누는 방법: 해시 코호트와 구성 기반 롤아웃</title>
+      <link>https://blog.jsontapose.com/posts/safe-traffic-splitting-with-hash-cohorts-and-config-rollout-f5b03f/</link>
+      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/safe-traffic-splitting-with-hash-cohorts-and-config-rollout-f5b03f/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;운영 중인 서비스에서 전체 트래픽을 한 번에 신규 기능이나 신규 인프라로 전환하지 않고, 일정 비율만 점진적으로 이동하는 전략이 필요함&lt;/p&gt;
+&lt;p&gt;주요 활용 맥락&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A/B 테스트로 실험군과 통제군 분리&lt;/li&gt;
+&lt;li&gt;카나리 배포로 신규 버전을 소수 사용자에게만 적용&lt;/li&gt;
+&lt;li&gt;신규 데이터베이스, 캐시, 인덱스 전환 검증&lt;/li&gt;
+&lt;li&gt;신규 알고리즘, 추천 엔진, 정책 점진 적용&lt;/li&gt;
+&lt;li&gt;서버 비용 최적화를 위한 점진적 트래픽 이동&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;아래는 대부분의 시나리오에 적용 가능한 일반화된 트래픽 분배 기법 정리&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;요구-조건&#34;&gt;요구 조건&lt;/h3&gt;
+&lt;h4 id=&#34;deterministic--같은-사용자나-리소스는-항상-같은-그룹에-속해야-함&#34;&gt;Deterministic — 같은 사용자나 리소스는 항상 같은 그룹에 속해야 함&lt;/h4&gt;
+&lt;p&gt;요청마다 그룹이 바뀌면 실험 신뢰성이 떨어지고 디버깅이 어려움
+안정적 해시 기반 결정 방식 필요&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

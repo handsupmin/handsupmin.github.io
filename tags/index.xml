@@ -6,8 +6,64 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 28 Dec 2025 13:10:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 13:13:58 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ab-Testing</title>
+      <link>https://blog.jsontapose.com/tags/ab-testing/</link>
+      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ab-testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backend-Architecture</title>
+      <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
+      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/backend-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Canary-Deployment</title>
+      <link>https://blog.jsontapose.com/tags/canary-deployment/</link>
+      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/canary-deployment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Feature-Flags</title>
+      <link>https://blog.jsontapose.com/tags/feature-flags/</link>
+      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/feature-flags/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hash-Routing</title>
+      <link>https://blog.jsontapose.com/tags/hash-routing/</link>
+      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/hash-routing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Observability</title>
+      <link>https://blog.jsontapose.com/tags/observability/</link>
+      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/observability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rollout</title>
+      <link>https://blog.jsontapose.com/tags/rollout/</link>
+      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/rollout/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Traffic-Splitting</title>
+      <link>https://blog.jsontapose.com/tags/traffic-splitting/</link>
+      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/traffic-splitting/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Design-Patterns</title>
       <link>https://blog.jsontapose.com/tags/design-patterns/</link>
@@ -310,13 +366,6 @@
       <description></description>
     </item>
     <item>
-      <title>Observability</title>
-      <link>https://blog.jsontapose.com/tags/observability/</link>
-      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/observability/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Operators</title>
       <link>https://blog.jsontapose.com/tags/operators/</link>
       <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
@@ -412,13 +461,6 @@
       <link>https://blog.jsontapose.com/tags/wallet/</link>
       <pubDate>Sat, 20 Dec 2025 13:08:51 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/wallet/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Backend-Architecture</title>
-      <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
-      <pubDate>Fri, 19 Dec 2025 13:12:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/backend-architecture/</guid>
       <description></description>
     </item>
     <item>
