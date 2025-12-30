@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 29 Dec 2025 13:13:58 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Dec 2025 13:13:42 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,33 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TypeScript 객체 구조 분해 할당으로 프로퍼티 이름 변경하기</title>
+      <link>https://blog.jsontapose.com/posts/typescript-object-destructuring-rename-property-ba20ff/</link>
+      <pubDate>Tue, 30 Dec 2025 13:13:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/typescript-object-destructuring-rename-property-ba20ff/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;객체 구조 분해 할당에서 프로퍼티 이름을 바꾸는 기본형은 { 기존프로퍼티명: 새변수명 } 형태임&lt;/p&gt;
+&lt;h3 id=&#34;사용법예시&#34;&gt;사용법/예시&lt;/h3&gt;
+&lt;p&gt;아래는 request 프로퍼티를 revealRequest라는 이름으로 받는 예시&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; request: &lt;span style=&#34;color:#81a1c1&#34;&gt;revealRequest&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; client&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;doSomething&lt;span style=&#34;color:#eceff4&#34;&gt;({...})&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;의미는 다음과 같음&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;doSomething이 반환하는 객체에서 request 프로퍼티 추출&lt;/li&gt;
+&lt;li&gt;추출한 값을 revealRequest 변수에 바인딩&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;아래 전개 코드와 동일함&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; result &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; client&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;doSomething&lt;span style=&#34;color:#eceff4&#34;&gt;({...})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; revealRequest &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; result&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;request&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;왜-쓰는가&#34;&gt;왜 쓰는가&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;코드 간결화&lt;/li&gt;
+&lt;li&gt;필요한 프로퍼티만 선택 추출&lt;/li&gt;
+&lt;li&gt;문맥에 맞게 변수명 명확화, 의도 드러남&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;참고자료&#34;&gt;참고자료&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>트래픽을 일정 비율로 안전하게 나누는 방법: 해시 코호트와 구성 기반 롤아웃</title>
