@@ -6,8 +6,71 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 30 Dec 2025 13:13:42 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 31 Dec 2025 13:12:12 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Api-Design</title>
+      <link>https://blog.jsontapose.com/tags/api-design/</link>
+      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/api-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backend</title>
+      <link>https://blog.jsontapose.com/tags/backend/</link>
+      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Error-Handling</title>
+      <link>https://blog.jsontapose.com/tags/error-handling/</link>
+      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/error-handling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Http-Status-Codes</title>
+      <link>https://blog.jsontapose.com/tags/http-status-codes/</link>
+      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/http-status-codes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>I18n</title>
+      <link>https://blog.jsontapose.com/tags/i18n/</link>
+      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/i18n/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Observability</title>
+      <link>https://blog.jsontapose.com/tags/observability/</link>
+      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/observability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rest</title>
+      <link>https://blog.jsontapose.com/tags/rest/</link>
+      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/rest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rfc-7807</title>
+      <link>https://blog.jsontapose.com/tags/rfc-7807/</link>
+      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/rfc-7807/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Validation</title>
+      <link>https://blog.jsontapose.com/tags/validation/</link>
+      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/validation/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Clean-Code</title>
       <link>https://blog.jsontapose.com/tags/clean-code/</link>
@@ -76,13 +139,6 @@
       <link>https://blog.jsontapose.com/tags/hash-routing/</link>
       <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/hash-routing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Observability</title>
-      <link>https://blog.jsontapose.com/tags/observability/</link>
-      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/observability/</guid>
       <description></description>
     </item>
     <item>
@@ -223,34 +279,6 @@
       <link>https://blog.jsontapose.com/tags/streams/</link>
       <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/streams/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Api-Design</title>
-      <link>https://blog.jsontapose.com/tags/api-design/</link>
-      <pubDate>Thu, 25 Dec 2025 13:11:57 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/api-design/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Backend</title>
-      <link>https://blog.jsontapose.com/tags/backend/</link>
-      <pubDate>Thu, 25 Dec 2025 13:11:57 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/backend/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Error-Handling</title>
-      <link>https://blog.jsontapose.com/tags/error-handling/</link>
-      <pubDate>Thu, 25 Dec 2025 13:11:57 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/error-handling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rest</title>
-      <link>https://blog.jsontapose.com/tags/rest/</link>
-      <pubDate>Thu, 25 Dec 2025 13:11:57 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/rest/</guid>
       <description></description>
     </item>
     <item>
@@ -552,13 +580,6 @@
       <link>https://blog.jsontapose.com/tags/formatting/</link>
       <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/formatting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>I18n</title>
-      <link>https://blog.jsontapose.com/tags/i18n/</link>
-      <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/i18n/</guid>
       <description></description>
     </item>
     <item>

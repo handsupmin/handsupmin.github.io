@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 30 Dec 2025 13:13:42 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 31 Dec 2025 13:12:12 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,32 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>API 에러 응답 설계 가이드 — HTTP Status는 대분류, 비즈니스 의미는 바디</title>
+      <link>https://blog.jsontapose.com/posts/api-error-response-design-guide-738261/</link>
+      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/api-error-response-design-guide-738261/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;HTTP Status Code만으로는 서비스 로직의 원인을 전달하기 부족함
+400대와 500대는 네트워크 관점의 대분류 신호에 가깝고 실제로 필요한 것은 비즈니스 맥락의 구체적 사유임
+결론은 단순함
+HTTP Status는 대분류 신호로 두고 실제 의미와 추가 컨텍스트는 Response Body에 싣는 구조가 현실적 해법임&lt;/p&gt;
+&lt;h3 id=&#34;핵심-원칙&#34;&gt;핵심 원칙&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP Status는 큰 범주 신호등 역할
+&lt;ul&gt;
+&lt;li&gt;2xx 성공&lt;/li&gt;
+&lt;li&gt;4xx 클라이언트 오류&lt;/li&gt;
+&lt;li&gt;5xx 서버 오류&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;비즈니스 의미는 Response Body의 커스텀 에러 구조로 표현&lt;/li&gt;
+&lt;li&gt;클라이언트가 코드 기반으로 분기하고 UI를 결정할 수 있어야 함&lt;/li&gt;
+&lt;li&gt;운영 관측을 위해 traceId 제공&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;업계에서-검증된-기본-구조&#34;&gt;업계에서 검증된 기본 구조&lt;/h3&gt;
+&lt;p&gt;아래 형태가 가장 보편적으로 쓰이는 패턴임&lt;/p&gt;</description>
     </item>
     <item>
       <title>TypeScript 객체 구조 분해 할당으로 프로퍼티 이름 변경하기</title>

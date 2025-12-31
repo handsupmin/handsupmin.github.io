@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Rest on HandsLog</title>
-    <link>https://blog.jsontapose.com/tags/rest/</link>
-    <description>Recent content in Rest on HandsLog</description>
+    <title>Validation on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/validation/</link>
+    <description>Recent content in Validation on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Wed, 31 Dec 2025 13:12:12 +0000</lastBuildDate>
-    <atom:link href="https://blog.jsontapose.com/tags/rest/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/validation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>API 에러 응답 설계 가이드 — HTTP Status는 대분류, 비즈니스 의미는 바디</title>
       <link>https://blog.jsontapose.com/posts/api-error-response-design-guide-738261/</link>
@@ -33,30 +33,6 @@ HTTP Status는 대분류 신호로 두고 실제 의미와 추가 컨텍스트�
 &lt;/ul&gt;
 &lt;h3 id=&#34;업계에서-검증된-기본-구조&#34;&gt;업계에서 검증된 기본 구조&lt;/h3&gt;
 &lt;p&gt;아래 형태가 가장 보편적으로 쓰이는 패턴임&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>API ErrorCode Enum 설계 베스트 프랙티스</title>
-      <link>https://blog.jsontapose.com/posts/api-error-code-enum-best-practices-3f75b7/</link>
-      <pubDate>Thu, 25 Dec 2025 13:11:57 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/api-error-code-enum-best-practices-3f75b7/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;API 에러 규격의 핵심은 에러를 안정적으로 식별할 수 있는 Code 체계 확보임
-HTTP Status만으로는 부족하고 메시지는 언어·맥락에 따라 바뀔 수 있음
-실제로 계약으로서 신뢰할 수 있는 값은 error.code 임
-아래는 다수의 글로벌 서비스에서 공통적으로 쓰는 Error Code 설계 원칙 정리&lt;/p&gt;
-&lt;h3 id=&#34;설계-원칙&#34;&gt;설계 원칙&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;error.code 는 서비스 전반의 안정적인 식별자여야 함&lt;/li&gt;
-&lt;li&gt;메시지나 HTTP Status는 변경 가능하지만 error.code 는 변경 불가&lt;/li&gt;
-&lt;li&gt;구버전 클라이언트도 동일 코드를 신뢰해야 하므로 호환성 보장 필수&lt;/li&gt;
-&lt;li&gt;숫자형 대신 의미가 드러나는 문자열 기반 Enum 권장
-&lt;ul&gt;
-&lt;li&gt;숫자형은 의미 파악 어려움, 매뉴얼 의존, 협업 비용 증가&lt;/li&gt;
-&lt;li&gt;문자열 Enum은 가독성, 검색성, 커뮤니케이션 효율 우수&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;예시&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
