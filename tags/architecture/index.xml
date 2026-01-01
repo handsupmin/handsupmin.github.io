@@ -6,8 +6,31 @@
     <description>Recent content in Architecture on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 22 Dec 2025 13:12:42 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2026 13:12:42 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>좋은 시스템 설계 가이드: 상태 최소화와 검증된 컴포넌트 조합의 원칙</title>
+      <link>https://blog.jsontapose.com/posts/good-system-design-guide-484b40/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/good-system-design-guide-484b40/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;좋은 시스템 설계는 복잡해 보이지 않고 긴 시간 동안 별문제 없이 돌아가는 상태를 말함
+핵심은 상태를 최소화하고, 검증된 단순한 컴포넌트를 필요할 때만 조합하는 방향
+과설계나 과도한 신기술 도입은 문제를 감추거나 유지보수 비용을 키우는 경향
+최소 기능의 단순 구조에서 시작 후 관측 기반으로 점진 개선 권장&lt;/p&gt;
+&lt;h3 id=&#34;시스템-설계의-정의와-접근&#34;&gt;시스템 설계의 정의와 접근&lt;/h3&gt;
+&lt;p&gt;소프트웨어 설계가 코드 조립이라면 시스템 설계는 서비스를 조합하는 일이라는 관점
+주요 구성 요소 팔레트&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;앱 서버&lt;/li&gt;
+&lt;li&gt;데이터베이스&lt;/li&gt;
+&lt;li&gt;캐시&lt;/li&gt;
+&lt;li&gt;큐와 잡 러너&lt;/li&gt;
+&lt;li&gt;이벤트 버스&lt;/li&gt;
+&lt;li&gt;프록시와 게이트웨이&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;좋은 설계의 징후&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Kubernetes 아키텍처와 핵심 컴포넌트 정리</title>
       <link>https://blog.jsontapose.com/posts/kubernetes-architecture-core-components-ebe5f4/</link>

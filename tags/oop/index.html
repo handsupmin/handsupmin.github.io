@@ -71,7 +71,7 @@
 전략 패턴이 적용되지 않은 코드 전략 패턴을 쓰지 않으면 보통 이렇게 구현하게 됨
 class Vehicle { constructor(private type: "road" | "rail") {} move() { if (this.type === "road") { console.log("부릉부릉 도로로 감 🚌"); } else if (this.type === "rail") { console.log("칙칙폭폭 선로로 감 🚂"); } } }이 방식이 가지는 문제는 다음과 같음
 조건문이 계속 늘어남 새로운 이동 방식이 생길 때마다 move()를 수정해야 함 → OCP(Open-Closed Principle) 위반
-...</p></div><footer class=entry-footer><span title='2025-12-06 13:08:38.695 +0000 UTC'>December 6, 2025</span></footer><a class=entry-link aria-label="post link to 전략 패턴 (Strategy Pattern) - 유연한 코드 만들기" href=https://blog.jsontapose.com/posts/strategy-pattern-with-typescript-mermaid-6618f4/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
+...</p></div><footer class=entry-footer><span title='2025-12-06 13:08:38.695 +0000 UTC'>December 6, 2025</span></footer><a class=entry-link aria-label="post link to 전략 패턴 (Strategy Pattern) - 유연한 코드 만들기" href=https://blog.jsontapose.com/posts/strategy-pattern-with-typescript-mermaid-6618f4/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>

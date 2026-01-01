@@ -70,7 +70,7 @@
 Primary Key 지정 시 클러스터드 인덱스 생성 Unique 제약은 보조 인덱스(논클러스터드 인덱스, InnoDB에선 Secondary Index)로 생성 MySQL의 InnoDB는 B+Tree 기반 인덱스를 사용하며, 데이터 저장 구조와 접근 패턴이 인덱스 유형별로 상이함
 핵심 개념 정리 클러스터드 인덱스
 테이블 데이터가 인덱스 키 순서로 정리되는 구조 테이블당 하나만 존재 리프 노드가 실제 레코드(전체 컬럼)를 보유 InnoDB에서 Primary Key가 곧 클러스터드 인덱스가 됨 PK가 없으면 첫 번째 유니크 not null 인덱스를 사용, 그것도 없으면 내부적으로 보이지 않는 6바이트 Row ID를 생성해 클러스터링 키로 사용 논클러스터드 인덱스(보조 인덱스, Secondary Index)
-...</p></div><footer class=entry-footer><span title='2025-12-14 13:09:03.639 +0000 UTC'>December 14, 2025</span></footer><a class=entry-link aria-label="post link to MySQL 클러스터드 인덱스와 논클러스터드 인덱스 이해와 선택 기준" href=https://blog.jsontapose.com/posts/mysql-clustered-vs-nonclustered-index-f925e0/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
+...</p></div><footer class=entry-footer><span title='2025-12-14 13:09:03.639 +0000 UTC'>December 14, 2025</span></footer><a class=entry-link aria-label="post link to MySQL 클러스터드 인덱스와 논클러스터드 인덱스 이해와 선택 기준" href=https://blog.jsontapose.com/posts/mysql-clustered-vs-nonclustered-index-f925e0/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>

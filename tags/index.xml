@@ -6,8 +6,92 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 31 Dec 2025 13:12:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2026 13:12:42 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Architecture</title>
+      <link>https://blog.jsontapose.com/tags/architecture/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Caching</title>
+      <link>https://blog.jsontapose.com/tags/caching/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/caching/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://blog.jsontapose.com/tags/database/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event-Driven</title>
+      <link>https://blog.jsontapose.com/tags/event-driven/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/event-driven/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Indexing</title>
+      <link>https://blog.jsontapose.com/tags/indexing/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/indexing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Observability</title>
+      <link>https://blog.jsontapose.com/tags/observability/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/observability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://blog.jsontapose.com/tags/performance/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Queues</title>
+      <link>https://blog.jsontapose.com/tags/queues/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/queues/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Resilience</title>
+      <link>https://blog.jsontapose.com/tags/resilience/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/resilience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalability</title>
+      <link>https://blog.jsontapose.com/tags/scalability/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/scalability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>State-Management</title>
+      <link>https://blog.jsontapose.com/tags/state-management/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/state-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>System-Design</title>
+      <link>https://blog.jsontapose.com/tags/system-design/</link>
+      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/system-design/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Api-Design</title>
       <link>https://blog.jsontapose.com/tags/api-design/</link>
@@ -41,13 +125,6 @@
       <link>https://blog.jsontapose.com/tags/i18n/</link>
       <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/i18n/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Observability</title>
-      <link>https://blog.jsontapose.com/tags/observability/</link>
-      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/observability/</guid>
       <description></description>
     </item>
     <item>
@@ -163,13 +240,6 @@
       <description></description>
     </item>
     <item>
-      <title>Event-Driven</title>
-      <link>https://blog.jsontapose.com/tags/event-driven/</link>
-      <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/event-driven/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Observer-Pattern</title>
       <link>https://blog.jsontapose.com/tags/observer-pattern/</link>
       <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
@@ -247,13 +317,6 @@
       <description></description>
     </item>
     <item>
-      <title>Performance</title>
-      <link>https://blog.jsontapose.com/tags/performance/</link>
-      <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/performance/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Queue</title>
       <link>https://blog.jsontapose.com/tags/queue/</link>
       <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
@@ -265,13 +328,6 @@
       <link>https://blog.jsontapose.com/tags/redis/</link>
       <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/redis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scalability</title>
-      <link>https://blog.jsontapose.com/tags/scalability/</link>
-      <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/scalability/</guid>
       <description></description>
     </item>
     <item>
@@ -356,13 +412,6 @@
       <link>https://blog.jsontapose.com/tags/web-crypto/</link>
       <pubDate>Tue, 23 Dec 2025 13:13:24 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/web-crypto/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Architecture</title>
-      <link>https://blog.jsontapose.com/tags/architecture/</link>
-      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/architecture/</guid>
       <description></description>
     </item>
     <item>
@@ -709,13 +758,6 @@
       <description></description>
     </item>
     <item>
-      <title>Indexing</title>
-      <link>https://blog.jsontapose.com/tags/indexing/</link>
-      <pubDate>Sun, 14 Dec 2025 13:09:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/indexing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Innodb</title>
       <link>https://blog.jsontapose.com/tags/innodb/</link>
       <pubDate>Sun, 14 Dec 2025 13:09:03 +0000</pubDate>
@@ -895,13 +937,6 @@
       <link>https://blog.jsontapose.com/tags/character-encoding/</link>
       <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/character-encoding/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://blog.jsontapose.com/tags/database/</link>
-      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/database/</guid>
       <description></description>
     </item>
     <item>
@@ -1087,13 +1122,6 @@
       <description></description>
     </item>
     <item>
-      <title>Resilience</title>
-      <link>https://blog.jsontapose.com/tags/resilience/</link>
-      <pubDate>Fri, 28 Nov 2025 13:10:38 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/resilience/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Retry</title>
       <link>https://blog.jsontapose.com/tags/retry/</link>
       <pubDate>Fri, 28 Nov 2025 13:10:38 +0000</pubDate>
@@ -1231,13 +1259,6 @@
       <link>https://blog.jsontapose.com/tags/structured-thinking/</link>
       <pubDate>Thu, 20 Nov 2025 13:10:44 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/structured-thinking/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>System-Design</title>
-      <link>https://blog.jsontapose.com/tags/system-design/</link>
-      <pubDate>Thu, 20 Nov 2025 13:10:44 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/system-design/</guid>
       <description></description>
     </item>
     <item>
@@ -1406,13 +1427,6 @@
       <link>https://blog.jsontapose.com/tags/buffer-pool/</link>
       <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/buffer-pool/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Caching</title>
-      <link>https://blog.jsontapose.com/tags/caching/</link>
-      <pubDate>Fri, 31 Oct 2025 13:10:20 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/caching/</guid>
       <description></description>
     </item>
     <item>

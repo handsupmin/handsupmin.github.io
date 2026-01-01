@@ -70,7 +70,7 @@
 쉽게 말해, 자주 쓰는 데이터와 인덱스를 디스크 대신 메모리에 올려두고 처리하는 구조임
 버퍼 풀 구성 요소 버퍼 풀에는 주로 이런 페이지(기본 16KB)가 올라옴
 데이터 페이지: 실제 테이블 로우(Row)가 저장된 페이지 인덱스 페이지: B-Tree 인덱스 노드 페이지 (PK 및 세컨더리 인덱스 포함) 기타 관리 페이지: UNDO 페이지, 트랜잭션/MVCC 관리에 필요한 메타데이터 등 핵심 개념 페이지 캐싱 InnoDB는 디스크 데이터를 페이지 단위로 다룸 클라이언트가 특정 로우를 읽고 싶어 하면, 그 로우가 속한 페이지 전체를 버퍼 풀로 가져옴 이후 같은 페이지에 있는 다른 로우를 읽을 때는 디스크를 다시 보지 않고 버퍼 풀(메모리)에서 바로 조회함
-...</p></div><footer class=entry-footer><span title='2025-10-31 13:10:20.37 +0000 UTC'>October 31, 2025</span></footer><a class=entry-link aria-label="post link to MySQL InnoDB 버퍼 풀 개념과 동작 원리, 크기 설정 가이드" href=https://blog.jsontapose.com/posts/mysql-innodb-buffer-pool-c63a29/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
+...</p></div><footer class=entry-footer><span title='2025-10-31 13:10:20.37 +0000 UTC'>October 31, 2025</span></footer><a class=entry-link aria-label="post link to MySQL InnoDB 버퍼 풀 개념과 동작 원리, 크기 설정 가이드" href=https://blog.jsontapose.com/posts/mysql-innodb-buffer-pool-c63a29/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
