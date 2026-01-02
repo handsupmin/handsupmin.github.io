@@ -25,12 +25,17 @@
   </url>
   <url>
     <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-01-01T13:12:42+00:00</lastmod>
+    <lastmod>2026-01-02T13:11:49+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
-    <lastmod>2026-01-01T13:12:42+00:00</lastmod>
+    <lastmod>2026-01-02T13:11:49+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/single-source-of-truth-ssot-meaning-and-examples-1eabe5/</loc>
+    <lastmod>2026-01-02T13:11:49+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>

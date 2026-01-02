@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 01 Jan 2026 13:12:42 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jan 2026 13:11:49 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database-Design</title>
+      <link>https://blog.jsontapose.com/tags/database-design/</link>
+      <pubDate>Fri, 02 Jan 2026 13:11:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Single-Source-of-Truth</title>
+      <link>https://blog.jsontapose.com/tags/single-source-of-truth/</link>
+      <pubDate>Fri, 02 Jan 2026 13:11:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/single-source-of-truth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software-Architecture</title>
+      <link>https://blog.jsontapose.com/tags/software-architecture/</link>
+      <pubDate>Fri, 02 Jan 2026 13:11:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/software-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ssot</title>
+      <link>https://blog.jsontapose.com/tags/ssot/</link>
+      <pubDate>Fri, 02 Jan 2026 13:11:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ssot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>State-Management</title>
+      <link>https://blog.jsontapose.com/tags/state-management/</link>
+      <pubDate>Fri, 02 Jan 2026 13:11:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/state-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Fri, 02 Jan 2026 13:11:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Architecture</title>
       <link>https://blog.jsontapose.com/tags/architecture/</link>
@@ -76,13 +118,6 @@
       <link>https://blog.jsontapose.com/tags/scalability/</link>
       <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/scalability/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>State-Management</title>
-      <link>https://blog.jsontapose.com/tags/state-management/</link>
-      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/state-management/</guid>
       <description></description>
     </item>
     <item>
@@ -177,13 +212,6 @@
       <description></description>
     </item>
     <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Tue, 30 Dec 2025 13:13:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Ab-Testing</title>
       <link>https://blog.jsontapose.com/tags/ab-testing/</link>
       <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
@@ -258,13 +286,6 @@
       <link>https://blog.jsontapose.com/tags/rxjs/</link>
       <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/rxjs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Software-Architecture</title>
-      <link>https://blog.jsontapose.com/tags/software-architecture/</link>
-      <pubDate>Sun, 28 Dec 2025 13:10:48 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/software-architecture/</guid>
       <description></description>
     </item>
     <item>
@@ -1497,13 +1518,6 @@
       <link>https://blog.jsontapose.com/tags/higher-order-functions/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/higher-order-functions/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database-Design</title>
-      <link>https://blog.jsontapose.com/tags/database-design/</link>
-      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/database-design/</guid>
       <description></description>
     </item>
     <item>
