@@ -6,8 +6,85 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 02 Jan 2026 13:11:49 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Jan 2026 13:10:13 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Distributed-Tracing</title>
+      <link>https://blog.jsontapose.com/tags/distributed-tracing/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/distributed-tracing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Grpc</title>
+      <link>https://blog.jsontapose.com/tags/grpc/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/grpc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Http</title>
+      <link>https://blog.jsontapose.com/tags/http/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/http/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kafka</title>
+      <link>https://blog.jsontapose.com/tags/kafka/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/kafka/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microservices</title>
+      <link>https://blog.jsontapose.com/tags/microservices/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/microservices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Observability</title>
+      <link>https://blog.jsontapose.com/tags/observability/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/observability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opentelemetry</title>
+      <link>https://blog.jsontapose.com/tags/opentelemetry/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/opentelemetry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rabbitmq</title>
+      <link>https://blog.jsontapose.com/tags/rabbitmq/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/rabbitmq/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sqs</title>
+      <link>https://blog.jsontapose.com/tags/sqs/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sqs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>W3c-Trace-Context</title>
+      <link>https://blog.jsontapose.com/tags/w3c-trace-context/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/w3c-trace-context/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Websocket</title>
+      <link>https://blog.jsontapose.com/tags/websocket/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/websocket/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Database-Design</title>
       <link>https://blog.jsontapose.com/tags/database-design/</link>
@@ -83,13 +160,6 @@
       <link>https://blog.jsontapose.com/tags/indexing/</link>
       <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/indexing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Observability</title>
-      <link>https://blog.jsontapose.com/tags/observability/</link>
-      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/observability/</guid>
       <description></description>
     </item>
     <item>
@@ -818,13 +888,6 @@
       <link>https://blog.jsontapose.com/tags/devops/</link>
       <pubDate>Sat, 13 Dec 2025 13:09:08 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/devops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Microservices</title>
-      <link>https://blog.jsontapose.com/tags/microservices/</link>
-      <pubDate>Sat, 13 Dec 2025 13:09:08 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/microservices/</guid>
       <description></description>
     </item>
     <item>

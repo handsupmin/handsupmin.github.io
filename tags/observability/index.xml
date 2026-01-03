@@ -6,8 +6,40 @@
     <description>Recent content in Observability on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 01 Jan 2026 13:12:42 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Jan 2026 13:10:13 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/observability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>분산 추적 표준 패턴 정리: HTTP 헤더와 메시지 페이로드, OpenTelemetry와 W3C Trace Context</title>
+      <link>https://blog.jsontapose.com/posts/distributed-tracing-standard-patterns-333ccc/</link>
+      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/distributed-tracing-standard-patterns-333ccc/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;분산 추적 컨텍스트를 어디에 어떻게 실어 나를지에 대한 표준 패턴 정리. HTTP 같은 동기식 통신과 메시지 큐 같은 비동기식 통신은 전달 수단이 다름. 업계 표준은 W3C Trace Context와 이를 구현한 OpenTelemetry를 따르는 흐름임&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;trace-id, span-id, sampling 플래그 등 추적 컨텍스트 전달 필요&lt;/li&gt;
+&lt;li&gt;동기식 요청/응답 채널은 헤더 기반 메타데이터 전달이 자연스러움&lt;/li&gt;
+&lt;li&gt;비동기 메시징은 메시지 자체가 전달 단위이므로 페이로드 또는 메시지 속성 이용&lt;/li&gt;
+&lt;li&gt;채널이 헤더 개념을 지원하면 헤더 우선, 없으면 페이로드에 포함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;통신별-패턴&#34;&gt;통신별 패턴&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP/REST 통신: 요청/응답 헤더에 trace 컨텍스트 실어 전달&lt;/li&gt;
+&lt;li&gt;gRPC: 메타데이터(헤더 개념)로 전달&lt;/li&gt;
+&lt;li&gt;Kafka: 메시지 헤더 지원. 가능하면 헤더 사용 권장&lt;/li&gt;
+&lt;li&gt;RabbitMQ: 메시지 프로퍼티의 headers 사용 가능&lt;/li&gt;
+&lt;li&gt;AWS SQS: Message Attributes 사용 가능. 미지원 시 Body에 포함&lt;/li&gt;
+&lt;li&gt;BullMQ/Redis 기반 잡 큐: 헤더 개념 없음. Job data에 포함&lt;/li&gt;
+&lt;li&gt;WebSocket: 초기 핸드셰이크 단계에서 허용된 메타데이터 채널 또는 쿼리로 전달, 이후 각 메시지 페이로드에 포함. 환경 제약으로 커스텀 헤더 불가한 경우 존재&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;산업-표준&#34;&gt;산업 표준&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;OpenTelemetry는 W3C Trace Context를 구현하는 업계 표준 스택&lt;/li&gt;
+&lt;li&gt;HTTP는 W3C traceparent, tracestate 헤더 사용&lt;/li&gt;
+&lt;li&gt;비동기 메시징은 채널이 헤더를 지원하면 헤더 사용, 아니면 데이터에 포함하는 전략 일반화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;예시&lt;/p&gt;</description>
+    </item>
     <item>
       <title>좋은 시스템 설계 가이드: 상태 최소화와 검증된 컴포넌트 조합의 원칙</title>
       <link>https://blog.jsontapose.com/posts/good-system-design-guide-484b40/</link>
