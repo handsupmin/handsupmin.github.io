@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 03 Jan 2026 13:10:13 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jan 2026 13:10:43 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,74 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>유한 상태 머신(FSM) 기본 개념과 적용 포인트</title>
+      <link>https://blog.jsontapose.com/posts/finite-state-machine-fsm-basics-and-usage-points-ed7623/</link>
+      <pubDate>Sun, 04 Jan 2026 13:10:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/finite-state-machine-fsm-basics-and-usage-points-ed7623/</guid>
+      <description>&lt;p&gt;유한 상태 머신(FSM, Finite State Machine)은 시스템이 가질 수 있는 상태와 그 사이 전이를 명확히 정의하는 모델
+복잡한 비즈니스 로직을 단순화하고 예측 가능하게 만들어 결제나 주문처럼 순서와 무결성이 중요한 도메인에 적합&lt;/p&gt;
+&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;상태와 규칙을 명시적으로 모델링해 허용되지 않은 동작을 구조적으로 차단하는 접근
+요구사항이 늘어도 상태 전이 규칙을 중심으로 변경 범위를 제한해 안정성 확보에 유리&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;상태 State
+시스템이 존재할 수 있는 유한한 조건 집합
+예 로그인 전, 로그인 후, 결제 대기, 결제 완료&lt;/li&gt;
+&lt;li&gt;이벤트 또는 입력 Event/Input
+상태 변화를 유발하는 외부 행위나 신호
+예 버튼 클릭, 네트워크 끊김, 시간 초과&lt;/li&gt;
+&lt;li&gt;전이 또는 규칙 Transition/Rule
+어떤 상태에서 어떤 이벤트가 발생하면 다음 상태로 이동한다는 정의
+규칙에 없는 전이는 거부 또는 무시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리&#34;&gt;동작 원리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;현재 상태와 입력을 받아 다음 상태를 결정하는 전이 함수 관점으로 해석 가능 f(state, event) -&amp;gt; nextState 형태&lt;/li&gt;
+&lt;li&gt;전이에는 가드 조건과 부수효과가 수반될 수 있음
+가드는 전이 허용 여부 판단, 부수효과는 알림 전송이나 로그 기록 등 외부 행동을 명시적으로 수행&lt;/li&gt;
+&lt;li&gt;정의되지 않은 전이를 막아 비정상 흐름 차단
+재진입이나 중복 이벤트 처리 시에도 일관된 행동을 보장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;예시-자판기-모델&#34;&gt;예시 자판기 모델&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;상태 대기 중, 이벤트 동전 투입 -&amp;gt; 다음 상태 금액 충족
+돈이 들어와야만 다음 상태로 이동&lt;/li&gt;
+&lt;li&gt;상태 금액 충족, 이벤트 상품 버튼 누름 -&amp;gt; 다음 상태 상품 배출 중
+상품 선택 가능&lt;/li&gt;
+&lt;li&gt;상태 상품 배출 중, 이벤트 배출 완료 -&amp;gt; 다음 상태 대기 중
+초기 상태로 복귀&lt;/li&gt;
+&lt;li&gt;상태 대기 중, 이벤트 상품 버튼 누름 -&amp;gt; 상태 변화 없음
+금액 미충족 시 입력 무시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;장점과-효과&#34;&gt;장점과 효과&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;정합성 보장
+정의된 전이 외 동작 불가하므로 데이터 꼬임 예방
+결제가 완료 상태에서 결제 요청 이벤트가 다시 들어오면 규칙에 없는 전이로 처리되어 거부 또는 무시되어 중복 결제 차단에 기여 멱등 처리 전략과 결합 시 효과적&lt;/li&gt;
+&lt;li&gt;예측 가능성 향상
+몇 개의 상태와 전이 규칙으로 복잡도를 축소해 로직 이해와 디버깅 용이&lt;/li&gt;
+&lt;li&gt;테스트 용이성
+상태 x 이벤트 조합별로 기대 결과가 명확해 단위 테스트 케이스 설계가 단순&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;주의와-베스트-프랙티스&#34;&gt;주의와 베스트 프랙티스&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;상태 폭발 주의
+의미 있는 상태만 유지하고 파생 속성은 별도 데이터로 관리&lt;/li&gt;
+&lt;li&gt;전이 정의의 단일 소스 유지
+가드와 부수효과를 전이 정의 근처에 모아 산재된 분기 로직을 제거&lt;/li&gt;
+&lt;li&gt;잘못된 전이 로깅과 모니터링 활성화
+무시된 입력을 계측해 모델 누락이나 외부 시스템 이상 조기 탐지&lt;/li&gt;
+&lt;li&gt;멱등성 고려
+중복 이벤트 재수신 가능 환경에서는 전이와 부수효과를 멱등하게 설계&lt;/li&gt;
+&lt;li&gt;분산 환경에서는 상태 영속화와 재시도 정책을 명시
+크래시 후 재기동 시 일관성 있는 상태 복원 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
+&lt;p&gt;FSM은 상태와 전이를 중심으로 시스템 동작을 제한하고 드러내며, 규칙 밖 동작을 원천 차단해 안정성을 끌어올림
+결제나 주문 같은 순서 기반 도메인에 특히 유용하며, 상태 정의와 전이 규칙만 명확히 유지하면 변경에도 견고하게 대응 가능&lt;/p&gt;</description>
     </item>
     <item>
       <title>분산 추적 표준 패턴 정리: HTTP 헤더와 메시지 페이로드, OpenTelemetry와 W3C Trace Context</title>

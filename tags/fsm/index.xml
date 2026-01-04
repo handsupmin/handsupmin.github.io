@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Testing on HandsLog</title>
-    <link>https://blog.jsontapose.com/tags/testing/</link>
-    <description>Recent content in Testing on HandsLog</description>
+    <title>Fsm on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/fsm/</link>
+    <description>Recent content in Fsm on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 04 Jan 2026 13:10:43 +0000</lastBuildDate>
-    <atom:link href="https://blog.jsontapose.com/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/fsm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>유한 상태 머신(FSM) 기본 개념과 적용 포인트</title>
       <link>https://blog.jsontapose.com/posts/finite-state-machine-fsm-basics-and-usage-points-ed7623/</link>
@@ -75,26 +75,6 @@
 &lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
 &lt;p&gt;FSM은 상태와 전이를 중심으로 시스템 동작을 제한하고 드러내며, 규칙 밖 동작을 원천 차단해 안정성을 끌어올림
 결제나 주문 같은 순서 기반 도메인에 특히 유용하며, 상태 정의와 전이 규칙만 명확히 유지하면 변경에도 견고하게 대응 가능&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DI가 결합도를 낮추는 원리와 최소 예시</title>
-      <link>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</link>
-      <pubDate>Sun, 09 Nov 2025 13:06:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/why-di-reduces-coupling-b59160/</guid>
-      <description>&lt;h2 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h2&gt;
-&lt;p&gt;DI(Dependency Injection, 의존성 주입)의 핵심 아이디어는 명확함
-&lt;strong&gt;객체가 자신이 사용할 의존 객체를 스스로 생성하지 않고, 외부로부터 전달받아 사용&lt;/strong&gt;하는 것임
-이 단순한 설계 변경만으로도 코드의 변경 용이성, 테스트 편의성, 그리고 전체 시스템의 확장성에서 거대한 차이가 발생함&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;문제-상황-강한-결합-tight-coupling&#34;&gt;문제 상황: 강한 결합 (Tight Coupling)&lt;/h2&gt;
-&lt;p&gt;전형적인 문제 패턴은 클래스 내부에서 다른 &lt;strong&gt;구체적인 클래스&lt;/strong&gt;(Concrete Class)를 &lt;code&gt;new&lt;/code&gt; 키워드로 직접 생성하여 사용하는 것임&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;의존 대상의 구현이 변경되면, 해당 객체를 사용하는 클래스 내부 코드도 &lt;strong&gt;반드시 함께 수정&lt;/strong&gt;해야 함&lt;/li&gt;
-&lt;li&gt;단위 테스트(Unit Test)를 작성할 때, 테스트 대상 객체가 의존하는 실제 객체들까지 모두 함께 엮여 들어와 테스트가 복잡하고 무거워짐&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;예를 들어 &lt;code&gt;Gamer&lt;/code&gt;가 &lt;code&gt;BlueSwitchKeyboard&lt;/code&gt;를 직접 생성해 사용한다면, &lt;code&gt;Gamer&lt;/code&gt;는 &lt;code&gt;BlueSwitchKeyboard&lt;/code&gt;라는 구체적인 구현에 영구적으로 고정됨
-만약 키보드 종류를 &lt;code&gt;RedSwitchSilentKeyboard&lt;/code&gt;로 바꾸려면 &lt;code&gt;Gamer&lt;/code&gt; 클래스의 내부 코드를 직접 수정해야 함
-이 상태를 &lt;strong&gt;결합도가 높다&lt;/strong&gt;고 부름&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
