@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 04 Jan 2026 13:10:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 13:15:15 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,19 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MySQL 인덱스와 디스크 I/O 이해로 시작하는 쿼리 튜닝 기본</title>
+      <link>https://blog.jsontapose.com/posts/mysql-index-io-basics-query-tuning-1-0f2ad2/</link>
+      <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/mysql-index-io-basics-query-tuning-1-0f2ad2/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;인덱스는 데이터베이스 성능 최적화의 출발점임을 부정하기 어려움
+MySQL은 스토리지 엔진에 따라 인덱싱과 검색 방식이 달라질 수 있어 기본 개념을 정확히 이해하는 것이 쿼리 튜닝의 기반이 됨
+또한 디스크 접근 특성인 랜덤 I/O와 순차 I/O의 차이는 실무 성능에 직접적인 영향을 주므로 반드시 짚고 가야 함&lt;/p&gt;
+&lt;h3 id=&#34;디스크-io가-성능을-좌우하는-이유&#34;&gt;디스크 I/O가 성능을 좌우하는 이유&lt;/h3&gt;
+&lt;p&gt;CPU와 메모리 성능은 가파르게 개선됐지만 디스크 장치는 물리적 한계로 개선 속도가 상대적으로 느림
+DB 성능 튜닝의 많은 부분이 디스크 I/O를 얼마나 줄이느냐로 귀결됨&lt;/p&gt;</description>
     </item>
     <item>
       <title>유한 상태 머신(FSM) 기본 개념과 적용 포인트</title>

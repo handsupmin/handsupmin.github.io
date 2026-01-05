@@ -6,8 +6,71 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 04 Jan 2026 13:10:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 13:15:15 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Btree</title>
+      <link>https://blog.jsontapose.com/tags/btree/</link>
+      <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/btree/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database-Performance</title>
+      <link>https://blog.jsontapose.com/tags/database-performance/</link>
+      <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database-performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Indexes</title>
+      <link>https://blog.jsontapose.com/tags/indexes/</link>
+      <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/indexes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Innodb</title>
+      <link>https://blog.jsontapose.com/tags/innodb/</link>
+      <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/innodb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mysql</title>
+      <link>https://blog.jsontapose.com/tags/mysql/</link>
+      <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/mysql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Query-Tuning</title>
+      <link>https://blog.jsontapose.com/tags/query-tuning/</link>
+      <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/query-tuning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Random-Io</title>
+      <link>https://blog.jsontapose.com/tags/random-io/</link>
+      <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/random-io/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sequential-Io</title>
+      <link>https://blog.jsontapose.com/tags/sequential-io/</link>
+      <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sequential-io/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Storage-Engine</title>
+      <link>https://blog.jsontapose.com/tags/storage-engine/</link>
+      <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/storage-engine/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Backend</title>
       <link>https://blog.jsontapose.com/tags/backend/</link>
@@ -874,20 +937,6 @@
       <link>https://blog.jsontapose.com/tags/execution-plan/</link>
       <pubDate>Sun, 14 Dec 2025 13:09:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/execution-plan/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Innodb</title>
-      <link>https://blog.jsontapose.com/tags/innodb/</link>
-      <pubDate>Sun, 14 Dec 2025 13:09:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/innodb/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mysql</title>
-      <link>https://blog.jsontapose.com/tags/mysql/</link>
-      <pubDate>Sun, 14 Dec 2025 13:09:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/mysql/</guid>
       <description></description>
     </item>
     <item>
