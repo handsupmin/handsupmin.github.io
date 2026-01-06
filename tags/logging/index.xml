@@ -6,8 +6,34 @@
     <description>Recent content in Logging on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 12 Dec 2025 13:13:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jan 2026 13:13:56 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/logging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TID 전파 베스트 프랙티스: HTTP 헤더와 메시지 큐 Payload 기준</title>
+      <link>https://blog.jsontapose.com/posts/tid-propagation-best-practices-http-header-vs-queue-payload-b25f8e/</link>
+      <pubDate>Tue, 06 Jan 2026 13:13:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/tid-propagation-best-practices-http-header-vs-queue-payload-b25f8e/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;마이크로서비스와 비동기 작업이 섞인 환경에서 요청의 전 흐름을 좇기 위한 상관 식별자 필요
+일반적으로 trace id를 tid로 표기해 서비스 경계를 넘나들며 전파함
+HTTP 같은 동기 호출과 메시지 큐 같은 비동기 처리의 전파 매체가 다르므로 매체별 규칙을 명확히 두는 것이 핵심
+산업 표준은 W3C Trace Context와 OpenTelemetry가 사실상 기본값
+프로세스 내부 전파에는 비동기 컨텍스트 저장소 사용 권장&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;TID(trace id)와 span id 구분, tid는 전체 요청 상관을 위한 루트 식별자 역할&lt;/li&gt;
+&lt;li&gt;W3C Trace Context의 traceparent와 tracestate 헤더로 표준 전파&lt;/li&gt;
+&lt;li&gt;OpenTelemetry는 위 표준을 구현하고 언어별 SDK 제공&lt;/li&gt;
+&lt;li&gt;프로세스 내 컨텍스트 전파는 AsyncLocalStorage 등 런타임 컨텍스트로 처리&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;표준-패턴&#34;&gt;표준 패턴&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP 및 gRPC 같은 동기 네트워크 통신은 헤더 사용이 기본 원칙&lt;/li&gt;
+&lt;li&gt;메시지 큐나 비동기 작업은 메시지 Body 또는 시스템이 제공하는 메시지 속성 사용&lt;/li&gt;
+&lt;li&gt;지원되는 경우 메시지 헤더를 우선 사용, 없으면 Payload에 포함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;요약&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Node.js 글로벌 에러 핸들러 가이드</title>
       <link>https://blog.jsontapose.com/posts/nodejs-global-error-handler-3ae1d7/</link>
