@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 06 Jan 2026 13:13:56 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 13:14:32 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Erc-1155</title>
+      <link>https://blog.jsontapose.com/tags/erc-1155/</link>
+      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/erc-1155/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Erc-721</title>
+      <link>https://blog.jsontapose.com/tags/erc-721/</link>
+      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/erc-721/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ethereum</title>
+      <link>https://blog.jsontapose.com/tags/ethereum/</link>
+      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NFT</title>
+      <link>https://blog.jsontapose.com/tags/nft/</link>
+      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nft/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Semi-Fungible-Tokens</title>
+      <link>https://blog.jsontapose.com/tags/semi-fungible-tokens/</link>
+      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/semi-fungible-tokens/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart-Contracts</title>
+      <link>https://blog.jsontapose.com/tags/smart-contracts/</link>
+      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/smart-contracts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solidity</title>
+      <link>https://blog.jsontapose.com/tags/solidity/</link>
+      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/solidity/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Async-Context</title>
       <link>https://blog.jsontapose.com/tags/async-context/</link>
@@ -755,13 +804,6 @@
       <link>https://blog.jsontapose.com/tags/eip-712/</link>
       <pubDate>Sat, 20 Dec 2025 13:08:51 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/eip-712/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ethereum</title>
-      <link>https://blog.jsontapose.com/tags/ethereum/</link>
-      <pubDate>Sat, 20 Dec 2025 13:08:51 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
       <description></description>
     </item>
     <item>
@@ -2137,13 +2179,6 @@
       <description></description>
     </item>
     <item>
-      <title>Smart-Contracts</title>
-      <link>https://blog.jsontapose.com/tags/smart-contracts/</link>
-      <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/smart-contracts/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Viem</title>
       <link>https://blog.jsontapose.com/tags/viem/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
@@ -2256,13 +2291,6 @@
       <description></description>
     </item>
     <item>
-      <title>Solidity</title>
-      <link>https://blog.jsontapose.com/tags/solidity/</link>
-      <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/solidity/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Zksync</title>
       <link>https://blog.jsontapose.com/tags/zksync/</link>
       <pubDate>Sun, 21 Sep 2025 03:11:23 +0000</pubDate>
@@ -2344,13 +2372,6 @@
       <link>https://blog.jsontapose.com/tags/marketplace/</link>
       <pubDate>Sat, 20 Sep 2025 16:56:17 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/marketplace/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NFT</title>
-      <link>https://blog.jsontapose.com/tags/nft/</link>
-      <pubDate>Sat, 20 Sep 2025 16:56:17 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nft/</guid>
       <description></description>
     </item>
     <item>

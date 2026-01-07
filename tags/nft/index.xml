@@ -6,8 +6,37 @@
     <description>Recent content in NFT on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 20 Sep 2025 16:56:17 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 13:14:32 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/nft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ERC-1155 vs ERC-721: 멀티 토큰 표준과 단일 NFT 표준의 차이와 선택 기준</title>
+      <link>https://blog.jsontapose.com/posts/erc-1155-vs-erc-721-multi-token-standard-vs-single-nft-03f5a7/</link>
+      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/erc-1155-vs-erc-721-multi-token-standard-vs-single-nft-03f5a7/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;ERC-1155는 게임 아이템처럼 대량의 토큰을 효율적으로 관리하기 위해 등장한 멀티 토큰 표준으로, ERC-721의 전송·배포 측면 비효율을 줄이려는 목적을 가짐&lt;/p&gt;
+&lt;p&gt;편의점 비유로 직관화 가능&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ERC-721 개별 포장 모델, 물건 10개 결제에 결제 10번·영수증 10장&lt;/li&gt;
+&lt;li&gt;ERC-1155 장바구니 모델, 물건 10개를 한 번에 결제·영수증 1장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ERC-721 단일 NFT 표준, 토큰 ID 하나가 유일한 자산을 대표&lt;/li&gt;
+&lt;li&gt;ERC-1155 멀티 토큰 표준, 하나의 컨트랙트에서 다수의 ID 발행과 각 ID별 수량 관리&lt;/li&gt;
+&lt;li&gt;동일 ID에 수량이 붙는 구조로 FT·NFT·SFT를 한 컨트랙트에서 혼합 가능&lt;/li&gt;
+&lt;li&gt;세미 펀지블 SFT, 같은 ID를 공유하는 동일 품질의 여러 개 토큰을 표현&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작과-구조&#34;&gt;동작과 구조&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;단일 컨트랙트에 다수의 tokenId와 balance 맵핑 보유&lt;/li&gt;
+&lt;li&gt;전송 함수 &lt;code&gt;safeTransferFrom&lt;/code&gt; 단건, &lt;code&gt;safeBatchTransferFrom&lt;/code&gt; 묶음 전송 지원&lt;/li&gt;
+&lt;li&gt;이벤트는 &lt;code&gt;TransferSingle&lt;/code&gt;과 &lt;code&gt;TransferBatch&lt;/code&gt;로 발행, 동일 ID 다건 이동에 최적화&lt;/li&gt;
+&lt;li&gt;메타데이터는 ID 기반 템플릿 URI 방식 활용이 일반적 &lt;code&gt;{id}&lt;/code&gt; 플레이스홀더 패턴 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;장점-비교&#34;&gt;장점 비교&lt;/h3&gt;
+&lt;p&gt;A. 가스비 및 처리량 개선&lt;/p&gt;</description>
+    </item>
     <item>
       <title>NFT 핵심 용어 정리</title>
       <link>https://blog.jsontapose.com/posts/nft-23q12akw/</link>
