@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 07 Jan 2026 13:14:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jan 2026 13:15:01 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Character-Set</title>
+      <link>https://blog.jsontapose.com/tags/character-set/</link>
+      <pubDate>Thu, 08 Jan 2026 13:15:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/character-set/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Collation</title>
+      <link>https://blog.jsontapose.com/tags/collation/</link>
+      <pubDate>Thu, 08 Jan 2026 13:15:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/collation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://blog.jsontapose.com/tags/database/</link>
+      <pubDate>Thu, 08 Jan 2026 13:15:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encoding</title>
+      <link>https://blog.jsontapose.com/tags/encoding/</link>
+      <pubDate>Thu, 08 Jan 2026 13:15:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/encoding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Internationalization</title>
+      <link>https://blog.jsontapose.com/tags/internationalization/</link>
+      <pubDate>Thu, 08 Jan 2026 13:15:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/internationalization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sql</title>
+      <link>https://blog.jsontapose.com/tags/sql/</link>
+      <pubDate>Thu, 08 Jan 2026 13:15:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sql/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Erc-1155</title>
       <link>https://blog.jsontapose.com/tags/erc-1155/</link>
@@ -342,13 +384,6 @@
       <link>https://blog.jsontapose.com/tags/caching/</link>
       <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/caching/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://blog.jsontapose.com/tags/database/</link>
-      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/database/</guid>
       <description></description>
     </item>
     <item>
@@ -1189,13 +1224,6 @@
       <link>https://blog.jsontapose.com/tags/postgresql/</link>
       <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/postgresql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sql</title>
-      <link>https://blog.jsontapose.com/tags/sql/</link>
-      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sql/</guid>
       <description></description>
     </item>
     <item>
