@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 08 Jan 2026 13:15:01 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jan 2026 13:14:16 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,46 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TypeScript에서 type과 interface 차이와 선택 기준</title>
+      <link>https://blog.jsontapose.com/posts/typescript-type-vs-interface-b3670b/</link>
+      <pubDate>Fri, 09 Jan 2026 13:14:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/typescript-type-vs-interface-b3670b/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;TypeScript에서 type과 interface는 겹치는 부분이 많지만 용도와 확장 방식이 다름
+객체 구조 설계와 복잡한 타입 표현 중 무엇을 우선하느냐에 따라 선택 달라짐
+핵심 차이 포인트 중심으로 정리&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;type&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;타입 별칭 정의 수단&lt;/li&gt;
+&lt;li&gt;기본 타입, 유니언, 튜플, 교차 타입 등 복합 표현에 유리&lt;/li&gt;
+&lt;li&gt;선언 병합 불가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;interface&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;객체의 구조 정의 수단&lt;/li&gt;
+&lt;li&gt;확장과 선언 병합 지원&lt;/li&gt;
+&lt;li&gt;주로 객체와 클래스와의 계약 정의에 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// type 별칭 최소 예시
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;type&lt;/span&gt; ID &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;number&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;type&lt;/span&gt; Point &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;number&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;number&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;type&lt;/span&gt; Person &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; name: &lt;span style=&#34;color:#81a1c1&#34;&gt;string&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; age: &lt;span style=&#34;color:#81a1c1&#34;&gt;number&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// interface 최소 예시
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;interface&lt;/span&gt; User &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; name: &lt;span style=&#34;color:#81a1c1&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt; age: &lt;span style=&#34;color:#81a1c1&#34;&gt;number&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;interface&lt;/span&gt; Employee &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;extends&lt;/span&gt; User &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; employeeId: &lt;span style=&#34;color:#81a1c1&#34;&gt;number&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;차이점과-동작&#34;&gt;차이점과 동작&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;표현 범위&lt;/p&gt;</description>
     </item>
     <item>
       <title>데이터베이스 Collation 정렬·비교 규칙과 인코딩 차이</title>

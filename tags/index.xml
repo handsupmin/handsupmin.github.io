@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 08 Jan 2026 13:15:01 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jan 2026 13:14:16 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interface</title>
+      <link>https://blog.jsontapose.com/tags/interface/</link>
+      <pubDate>Fri, 09 Jan 2026 13:14:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/interface/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Intersection</title>
+      <link>https://blog.jsontapose.com/tags/intersection/</link>
+      <pubDate>Fri, 09 Jan 2026 13:14:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/intersection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type-Alias</title>
+      <link>https://blog.jsontapose.com/tags/type-alias/</link>
+      <pubDate>Fri, 09 Jan 2026 13:14:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/type-alias/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type-System</title>
+      <link>https://blog.jsontapose.com/tags/type-system/</link>
+      <pubDate>Fri, 09 Jan 2026 13:14:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/type-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Fri, 09 Jan 2026 13:14:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Union</title>
+      <link>https://blog.jsontapose.com/tags/union/</link>
+      <pubDate>Fri, 09 Jan 2026 13:14:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/union/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Character-Set</title>
       <link>https://blog.jsontapose.com/tags/character-set/</link>
@@ -363,13 +405,6 @@
       <link>https://blog.jsontapose.com/tags/state-management/</link>
       <pubDate>Fri, 02 Jan 2026 13:11:49 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/state-management/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Fri, 02 Jan 2026 13:11:49 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>

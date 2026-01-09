@@ -25,12 +25,17 @@
   </url>
   <url>
     <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-01-08T13:15:01+00:00</lastmod>
+    <lastmod>2026-01-09T13:14:16+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
-    <lastmod>2026-01-08T13:15:01+00:00</lastmod>
+    <lastmod>2026-01-09T13:14:16+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/typescript-type-vs-interface-b3670b/</loc>
+    <lastmod>2026-01-09T13:14:16+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
