@@ -6,8 +6,34 @@
     <description>Recent content in Nodejs on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 06 Jan 2026 13:13:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Jan 2026 13:10:30 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>자바스크립트 비동기와 이터레이터 정리 — 기다림, 동시성, 백프레셔</title>
+      <link>https://blog.jsontapose.com/posts/javascript-async-iterators-waiting-concurrency-backpressure-e200bd/</link>
+      <pubDate>Sat, 10 Jan 2026 13:10:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/javascript-async-iterators-waiting-concurrency-backpressure-e200bd/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;비동기는 강력한 도구임. 다만 배열과 스트림 같은 이터레이터와 결합되면 누가 무엇을 언제 기다리는지 불명확해지기 쉬움
+핵심 포인트 세 가지 기억&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;완료 보장 확보했는지&lt;/li&gt;
+&lt;li&gt;동시성 제어를 명시했는지&lt;/li&gt;
+&lt;li&gt;백프레셔로 생산 속도 ≤ 소비 속도 유지했는지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;비동기가-의도대로-동작하지-않는-케이스&#34;&gt;비동기가 의도대로 동작하지 않는 케이스&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;forEach + async 사용&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;콜백이 반환한 프로미스를 외부가 수집하지 않음 → 완료 보장 깨짐, 레이스와 누락 가능성 증가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;items&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;forEach&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; doAsync&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 외부에서 기다리지 않음
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;})&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;map + async 이후 기다리지 않음&lt;/p&gt;</description>
+    </item>
     <item>
       <title>TID 전파 베스트 프랙티스: HTTP 헤더와 메시지 큐 Payload 기준</title>
       <link>https://blog.jsontapose.com/posts/tid-propagation-best-practices-http-header-vs-queue-payload-b25f8e/</link>

@@ -6,8 +6,15 @@
     <description>Recent content in Categories on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 09 Jan 2026 13:14:16 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Jan 2026 13:10:30 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/categories/javascript/</link>
+      <pubDate>Sat, 10 Jan 2026 13:10:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/categories/javascript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Typescript</title>
       <link>https://blog.jsontapose.com/categories/typescript/</link>
@@ -55,13 +62,6 @@
       <link>https://blog.jsontapose.com/categories/api-design/</link>
       <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
       <guid>https://blog.jsontapose.com/categories/api-design/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/categories/javascript/</link>
-      <pubDate>Tue, 30 Dec 2025 13:13:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/categories/javascript/</guid>
       <description></description>
     </item>
     <item>

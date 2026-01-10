@@ -6,8 +6,64 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 09 Jan 2026 13:14:16 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Jan 2026 13:10:30 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Async</title>
+      <link>https://blog.jsontapose.com/tags/async/</link>
+      <pubDate>Sat, 10 Jan 2026 13:10:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/async/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backpressure</title>
+      <link>https://blog.jsontapose.com/tags/backpressure/</link>
+      <pubDate>Sat, 10 Jan 2026 13:10:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/backpressure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Concurrency-Control</title>
+      <link>https://blog.jsontapose.com/tags/concurrency-control/</link>
+      <pubDate>Sat, 10 Jan 2026 13:10:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/concurrency-control/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iterators</title>
+      <link>https://blog.jsontapose.com/tags/iterators/</link>
+      <pubDate>Sat, 10 Jan 2026 13:10:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/iterators/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Sat, 10 Jan 2026 13:10:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Sat, 10 Jan 2026 13:10:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Promises</title>
+      <link>https://blog.jsontapose.com/tags/promises/</link>
+      <pubDate>Sat, 10 Jan 2026 13:10:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/promises/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Streams</title>
+      <link>https://blog.jsontapose.com/tags/streams/</link>
+      <pubDate>Sat, 10 Jan 2026 13:10:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/streams/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Interface</title>
       <link>https://blog.jsontapose.com/tags/interface/</link>
@@ -202,13 +258,6 @@
       <link>https://blog.jsontapose.com/tags/message-queue/</link>
       <pubDate>Tue, 06 Jan 2026 13:13:56 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/message-queue/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Tue, 06 Jan 2026 13:13:56 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
       <description></description>
     </item>
     <item>
@@ -534,13 +583,6 @@
       <description></description>
     </item>
     <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Tue, 30 Dec 2025 13:13:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Syntax</title>
       <link>https://blog.jsontapose.com/tags/syntax/</link>
       <pubDate>Tue, 30 Dec 2025 13:13:42 +0000</pubDate>
@@ -646,13 +688,6 @@
       <description></description>
     </item>
     <item>
-      <title>Backpressure</title>
-      <link>https://blog.jsontapose.com/tags/backpressure/</link>
-      <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/backpressure/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Flow-Control</title>
       <link>https://blog.jsontapose.com/tags/flow-control/</link>
       <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
@@ -671,13 +706,6 @@
       <link>https://blog.jsontapose.com/tags/redis/</link>
       <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/redis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Streams</title>
-      <link>https://blog.jsontapose.com/tags/streams/</link>
-      <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/streams/</guid>
       <description></description>
     </item>
     <item>
@@ -1150,13 +1178,6 @@
       <description></description>
     </item>
     <item>
-      <title>Promises</title>
-      <link>https://blog.jsontapose.com/tags/promises/</link>
-      <pubDate>Fri, 12 Dec 2025 13:13:05 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/promises/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Reliability</title>
       <link>https://blog.jsontapose.com/tags/reliability/</link>
       <pubDate>Fri, 12 Dec 2025 13:13:05 +0000</pubDate>
@@ -1301,13 +1322,6 @@
       <link>https://blog.jsontapose.com/tags/workloads/</link>
       <pubDate>Thu, 04 Dec 2025 13:13:58 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/workloads/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Async</title>
-      <link>https://blog.jsontapose.com/tags/async/</link>
-      <pubDate>Wed, 03 Dec 2025 13:13:33 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/async/</guid>
       <description></description>
     </item>
     <item>
