@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 10 Jan 2026 13:10:30 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 13:10:56 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dependency-Injection</title>
+      <link>https://blog.jsontapose.com/tags/dependency-injection/</link>
+      <pubDate>Sun, 11 Jan 2026 13:10:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dependency-injection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dynamic-Module</title>
+      <link>https://blog.jsontapose.com/tags/dynamic-module/</link>
+      <pubDate>Sun, 11 Jan 2026 13:10:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dynamic-module/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Factory-Provider</title>
+      <link>https://blog.jsontapose.com/tags/factory-provider/</link>
+      <pubDate>Sun, 11 Jan 2026 13:10:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/factory-provider/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forroot</title>
+      <link>https://blog.jsontapose.com/tags/forroot/</link>
+      <pubDate>Sun, 11 Jan 2026 13:10:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/forroot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Module</title>
+      <link>https://blog.jsontapose.com/tags/module/</link>
+      <pubDate>Sun, 11 Jan 2026 13:10:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/module/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nestjs</title>
+      <link>https://blog.jsontapose.com/tags/nestjs/</link>
+      <pubDate>Sun, 11 Jan 2026 13:10:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Sun, 11 Jan 2026 13:10:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Async</title>
       <link>https://blog.jsontapose.com/tags/async/</link>
@@ -90,13 +139,6 @@
       <link>https://blog.jsontapose.com/tags/type-system/</link>
       <pubDate>Fri, 09 Jan 2026 13:14:16 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/type-system/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Fri, 09 Jan 2026 13:14:16 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -926,20 +968,6 @@
       <description></description>
     </item>
     <item>
-      <title>Dependency-Injection</title>
-      <link>https://blog.jsontapose.com/tags/dependency-injection/</link>
-      <pubDate>Fri, 19 Dec 2025 13:12:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/dependency-injection/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nestjs</title>
-      <link>https://blog.jsontapose.com/tags/nestjs/</link>
-      <pubDate>Fri, 19 Dec 2025 13:12:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nestjs/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Career</title>
       <link>https://blog.jsontapose.com/tags/career/</link>
       <pubDate>Thu, 18 Dec 2025 13:13:27 +0000</pubDate>
@@ -1224,13 +1252,6 @@
       <link>https://blog.jsontapose.com/tags/flatmap/</link>
       <pubDate>Wed, 10 Dec 2025 13:14:08 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/flatmap/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Module</title>
-      <link>https://blog.jsontapose.com/tags/module/</link>
-      <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/module/</guid>
       <description></description>
     </item>
     <item>

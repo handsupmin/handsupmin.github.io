@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Module on HandsLog</title>
-    <link>https://blog.jsontapose.com/tags/module/</link>
-    <description>Recent content in Module on HandsLog</description>
+    <title>Factory-Provider on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/factory-provider/</link>
+    <description>Recent content in Factory-Provider on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 11 Jan 2026 13:10:56 +0000</lastBuildDate>
-    <atom:link href="https://blog.jsontapose.com/tags/module/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/factory-provider/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NestJS @Module 핵심 정리: imports, providers, exports, forRoot, Symbol 토큰, useFactory</title>
       <link>https://blog.jsontapose.com/posts/nestjs-module-imports-providers-exports-forroot-symbol-usefactory-025aae/</link>
@@ -45,21 +45,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;exports&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;JSON_REPOSITORY&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; LogRepository&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;정리하면 providers는 내부 생성, imports는 외부 수입, exports는 외부 공개 대상 지정임&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NestJS forRoot()의 동작 원리와 싱글톤에 대한 오해</title>
-      <link>https://blog.jsontapose.com/posts/nestjs-forroot-and-singleton-myth-922927/</link>
-      <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/nestjs-forroot-and-singleton-myth-922927/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;NestJS을 다루다 보면 &lt;code&gt;ConfigModule.forRoot()&lt;/code&gt;, &lt;code&gt;TypeOrmModule.forRoot()&lt;/code&gt; 같은 코드를 보게 됨
-보통 &amp;ldquo;이건 전역 설정이니까 한 번만 하면 끝이고 알아서 싱글톤 유지되겠지?&amp;ldquo;라고 생각하기 쉬움&lt;/p&gt;
-&lt;p&gt;하지만 &lt;code&gt;forRoot()&lt;/code&gt;를 호출한다고 프레임워크가 알아서 물리적인 싱글톤 인스턴스를 강제하는 건 아님
-특히 &lt;code&gt;ScheduleModule&lt;/code&gt;처럼 사이드 이펙트(이벤트 리스너, 타이머 등)를 유발하는 모듈을 잘못 다루면, 기능이 중복 실행되는 심각한 버그가 터질 수 있음&lt;/p&gt;
-&lt;p&gt;이 글에서는 &lt;code&gt;forRoot()&lt;/code&gt;의 진짜 의미와 내부 동작, 그리고 &lt;code&gt;ScheduleModule&lt;/code&gt; 중복 실행 문제가 왜 생기는지 코드로 뜯어보겠음&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;forroot란-무엇인가&#34;&gt;forRoot()란 무엇인가&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;forRoot()&lt;/code&gt;는 NestJS의 &lt;strong&gt;동적 모듈&lt;/strong&gt;(Dynamic Module)을 생성하기 위해 관례적으로 쓰는 메서드 이름임&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

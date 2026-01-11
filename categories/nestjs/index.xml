@@ -6,8 +6,46 @@
     <description>Recent content in Nestjs on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 07 Dec 2025 13:07:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 13:10:56 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/nestjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NestJS @Module 핵심 정리: imports, providers, exports, forRoot, Symbol 토큰, useFactory</title>
+      <link>https://blog.jsontapose.com/posts/nestjs-module-imports-providers-exports-forroot-symbol-usefactory-025aae/</link>
+      <pubDate>Sun, 11 Jan 2026 13:10:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/nestjs-module-imports-providers-exports-forroot-symbol-usefactory-025aae/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;NestJS에서 @Module은 기능 단위 의존성을 묶는 단위이자 DI 경계를 정의하는 컨테이너 개념임
+핵심은 imports로 외부 의존성 수입, providers로 내부 의존성 등록, exports로 외부 공개 대상을 결정하는 흐름 이해가 전부임&lt;/p&gt;
+&lt;h3 id=&#34;module의-imports-providers-exports&#34;&gt;Module의 imports, providers, exports&lt;/h3&gt;
+&lt;p&gt;@Module 선언의 기본 형태&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;@Module&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;({&lt;/span&gt; imports&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[...],&lt;/span&gt; providers&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[...],&lt;/span&gt; exports&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[...]&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;class&lt;/span&gt; SomeModule &lt;span style=&#34;color:#eceff4&#34;&gt;{}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;providers
+&lt;ul&gt;
+&lt;li&gt;이 모듈에서 새로 생성해 DI 컨테이너에 등록할 대상 목록&lt;/li&gt;
+&lt;li&gt;@Injectable 클래스들 중심 Service, Repository, Adapter 등&lt;/li&gt;
+&lt;li&gt;예시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;providers&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;BatchService&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; PortFetcher&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; StoreService&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; MergeService&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;imports
+&lt;ul&gt;
+&lt;li&gt;다른 모듈이 exports로 공개한 provider를 이 모듈에서 사용하겠다는 선언&lt;/li&gt;
+&lt;li&gt;예시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;imports&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;RepositoryModule&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; HttpModule&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; LoggerModule&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;exports
+&lt;ul&gt;
+&lt;li&gt;이 모듈 바깥에서도 사용 가능하도록 내보낼 provider 목록&lt;/li&gt;
+&lt;li&gt;예시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;exports&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;JSON_REPOSITORY&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; LogRepository&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;정리하면 providers는 내부 생성, imports는 외부 수입, exports는 외부 공개 대상 지정임&lt;/p&gt;</description>
+    </item>
     <item>
       <title>NestJS forRoot()의 동작 원리와 싱글톤에 대한 오해</title>
       <link>https://blog.jsontapose.com/posts/nestjs-forroot-and-singleton-myth-922927/</link>
