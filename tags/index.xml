@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 11 Jan 2026 13:10:56 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jan 2026 13:15:30 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Atomic-Swap</title>
+      <link>https://blog.jsontapose.com/tags/atomic-swap/</link>
+      <pubDate>Mon, 12 Jan 2026 13:15:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/atomic-swap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blockchain</title>
+      <link>https://blog.jsontapose.com/tags/blockchain/</link>
+      <pubDate>Mon, 12 Jan 2026 13:15:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Escrow</title>
+      <link>https://blog.jsontapose.com/tags/escrow/</link>
+      <pubDate>Mon, 12 Jan 2026 13:15:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/escrow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evm</title>
+      <link>https://blog.jsontapose.com/tags/evm/</link>
+      <pubDate>Mon, 12 Jan 2026 13:15:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/evm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Htlc</title>
+      <link>https://blog.jsontapose.com/tags/htlc/</link>
+      <pubDate>Mon, 12 Jan 2026 13:15:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/htlc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NFT</title>
+      <link>https://blog.jsontapose.com/tags/nft/</link>
+      <pubDate>Mon, 12 Jan 2026 13:15:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nft/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart-Contracts</title>
+      <link>https://blog.jsontapose.com/tags/smart-contracts/</link>
+      <pubDate>Mon, 12 Jan 2026 13:15:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/smart-contracts/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Dependency-Injection</title>
       <link>https://blog.jsontapose.com/tags/dependency-injection/</link>
@@ -212,24 +261,10 @@
       <description></description>
     </item>
     <item>
-      <title>NFT</title>
-      <link>https://blog.jsontapose.com/tags/nft/</link>
-      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nft/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Semi-Fungible-Tokens</title>
       <link>https://blog.jsontapose.com/tags/semi-fungible-tokens/</link>
       <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/semi-fungible-tokens/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Smart-Contracts</title>
-      <link>https://blog.jsontapose.com/tags/smart-contracts/</link>
-      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/smart-contracts/</guid>
       <description></description>
     </item>
     <item>
@@ -1087,24 +1122,10 @@
       <description></description>
     </item>
     <item>
-      <title>Blockchain</title>
-      <link>https://blog.jsontapose.com/tags/blockchain/</link>
-      <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/blockchain/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Eip-1559</title>
       <link>https://blog.jsontapose.com/tags/eip-1559/</link>
       <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/eip-1559/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Evm</title>
-      <link>https://blog.jsontapose.com/tags/evm/</link>
-      <pubDate>Mon, 15 Dec 2025 13:15:00 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/evm/</guid>
       <description></description>
     </item>
     <item>

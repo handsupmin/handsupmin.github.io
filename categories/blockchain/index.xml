@@ -6,7 +6,7 @@
     <description>Recent content in Blockchain on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 07 Jan 2026 13:14:32 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jan 2026 13:15:30 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -75,6 +75,24 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Atomic Swap 스마트 컨트랙트 개념과 설계 포인트</title>
+      <link>https://blog.jsontapose.com/posts/atomic-swap-smart-contract-3c92dc/</link>
+      <pubDate>Mon, 12 Jan 2026 13:15:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/atomic-swap-smart-contract-3c92dc/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Atomic Swap 스마트 컨트랙트는 블록체인에서 두 당사자의 자산을 맞교환할 때 모든 동작이 한 번에 완료되거나 전혀 일어나지 않음을 보장하는 메커니즘을 제공함
+사용자 간 신뢰 없이도 안전하게 교환할 수 있게 만드는 자동화 에스크로 역할의 코드임&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념-원자성&#34;&gt;핵심 개념: 원자성&lt;/h3&gt;
+&lt;p&gt;원자성은 트랜잭션이 더 쪼갤 수 없는 단위로 실행됨을 의미함&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;성공 시: A가 B에게 자산 X를 이전 AND B가 A에게 자산 Y를 이전, 두 동작이 한 묶음으로 처리됨&lt;/li&gt;
+&lt;li&gt;실패 시: 아무 변경 없음, 각자 자산 유지
+중간 상태가 발생하지 않도록 보장하는 것이 핵심임&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;왜-필요한가&#34;&gt;왜 필요한가&lt;/h3&gt;
+&lt;p&gt;서로 신뢰가 없을 때 누가 먼저 보낼지에 대한 교착 상태 발생함&lt;/p&gt;</description>
     </item>
     <item>
       <title>ERC-1155 vs ERC-721: 멀티 토큰 표준과 단일 NFT 표준의 차이와 선택 기준</title>
