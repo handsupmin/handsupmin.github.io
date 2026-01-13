@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Monitoring on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/monitoring/</link>
+    <description>Recent content in Monitoring on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 13 Jan 2026 13:15:30 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>API 성능 테스트와 모니터링 표준 가이드</title>
+      <link>https://blog.jsontapose.com/posts/api-performance-testing-and-monitoring-guide-2b9e24/</link>
+      <pubDate>Tue, 13 Jan 2026 13:15:30 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/api-performance-testing-and-monitoring-guide-2b9e24/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;신규 API 개발 또는 로직 변경 시 서비스의 안정성과 성능을 사전에 검증하기 위한 표준 테스트 프로세스 정의 목적
+코드 수준의 비효율 제거와 인프라 병목 식별을 분리해 진행하며, 동일 스택으로 로컬과 서버 환경을 일관되게 관찰하는 것을 권장&lt;/p&gt;
+&lt;h3 id=&#34;테스트-전략-개요&#34;&gt;테스트 전략 개요&lt;/h3&gt;
+&lt;p&gt;성능 테스트는 환경과 목적에 따라 두 단계로 구분&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Phase 1 Local
+&lt;ul&gt;
+&lt;li&gt;목표  코드 레벨 최적화와 비효율 제거&lt;/li&gt;
+&lt;li&gt;관점  CPU 스파이크, 메모리 누수, 이벤트 루프 지연, 불필요한 I O 대기&lt;/li&gt;
+&lt;li&gt;도구  k6 로컬, Clinic.js&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Phase 2 Dev 서버
+&lt;ul&gt;
+&lt;li&gt;목표  시스템 레벨 검증과 병목 지점 확인&lt;/li&gt;
+&lt;li&gt;관점  DB Redis MQ 한계, 연결 풀 고갈, 큐 적체, 에러율&lt;/li&gt;
+&lt;li&gt;도구  k6 원격, Prometheus Grafana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;도구-구성&#34;&gt;도구 구성&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;부하 생성  k6
+&lt;ul&gt;
+&lt;li&gt;JS 기반 스크립팅으로 학습 비용 낮음&lt;/li&gt;
+&lt;li&gt;CI CD 파이프라인 연동 용이&lt;/li&gt;
+&lt;li&gt;로컬과 서버 환경 모두에서 실행 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;모니터링  Grafana Prometheus
+&lt;ul&gt;
+&lt;li&gt;인프라 통합 관제에 적합 Redis DB MQ WAS 지표를 일관된 대시보드로 관찰&lt;/li&gt;
+&lt;li&gt;테스트 중 실시간 병목 구간 가시화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;프로파일링  Clinic.js
+&lt;ul&gt;
+&lt;li&gt;Node.js 내부 지표 심층 분석에 특화&lt;/li&gt;
+&lt;li&gt;CPU 스파이크, 메모리 누수, 이벤트 루프 지연 원인 파악에 유용&lt;/li&gt;
+&lt;li&gt;로컬 디버깅 우선 권장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;단계별-진행&#34;&gt;단계별 진행&lt;/h3&gt;
+&lt;h4 id=&#34;step-1-로컬-프로파일링-local-profiling&#34;&gt;Step 1 로컬 프로파일링 Local Profiling&lt;/h4&gt;
+&lt;p&gt;질문  내 코드에 논리적 비효율이 없는가
+배포 전 로컬에서 가벼운 부하를 주고 코드 결함을 조기에 식별&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
