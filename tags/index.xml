@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 13 Jan 2026 13:15:30 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jan 2026 13:15:05 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Approval</title>
+      <link>https://blog.jsontapose.com/tags/approval/</link>
+      <pubDate>Wed, 14 Jan 2026 13:15:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/approval/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Erc-721</title>
+      <link>https://blog.jsontapose.com/tags/erc-721/</link>
+      <pubDate>Wed, 14 Jan 2026 13:15:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/erc-721/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ethereum</title>
+      <link>https://blog.jsontapose.com/tags/ethereum/</link>
+      <pubDate>Wed, 14 Jan 2026 13:15:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NFT</title>
+      <link>https://blog.jsontapose.com/tags/nft/</link>
+      <pubDate>Wed, 14 Jan 2026 13:15:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nft/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart-Contracts</title>
+      <link>https://blog.jsontapose.com/tags/smart-contracts/</link>
+      <pubDate>Wed, 14 Jan 2026 13:15:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/smart-contracts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solidity</title>
+      <link>https://blog.jsontapose.com/tags/solidity/</link>
+      <pubDate>Wed, 14 Jan 2026 13:15:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/solidity/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Api</title>
       <link>https://blog.jsontapose.com/tags/api/</link>
@@ -111,20 +153,6 @@
       <link>https://blog.jsontapose.com/tags/htlc/</link>
       <pubDate>Mon, 12 Jan 2026 13:15:30 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/htlc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NFT</title>
-      <link>https://blog.jsontapose.com/tags/nft/</link>
-      <pubDate>Mon, 12 Jan 2026 13:15:30 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nft/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Smart-Contracts</title>
-      <link>https://blog.jsontapose.com/tags/smart-contracts/</link>
-      <pubDate>Mon, 12 Jan 2026 13:15:30 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/smart-contracts/</guid>
       <description></description>
     </item>
     <item>
@@ -310,31 +338,10 @@
       <description></description>
     </item>
     <item>
-      <title>Erc-721</title>
-      <link>https://blog.jsontapose.com/tags/erc-721/</link>
-      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/erc-721/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ethereum</title>
-      <link>https://blog.jsontapose.com/tags/ethereum/</link>
-      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Semi-Fungible-Tokens</title>
       <link>https://blog.jsontapose.com/tags/semi-fungible-tokens/</link>
       <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/semi-fungible-tokens/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Solidity</title>
-      <link>https://blog.jsontapose.com/tags/solidity/</link>
-      <pubDate>Wed, 07 Jan 2026 13:14:32 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/solidity/</guid>
       <description></description>
     </item>
     <item>
