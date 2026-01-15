@@ -6,8 +6,15 @@
     <description>Recent content in Categories on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 14 Jan 2026 13:15:05 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jan 2026 13:14:49 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security</title>
+      <link>https://blog.jsontapose.com/categories/security/</link>
+      <pubDate>Thu, 15 Jan 2026 13:14:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/categories/security/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Smart-Contracts</title>
       <link>https://blog.jsontapose.com/categories/smart-contracts/</link>
