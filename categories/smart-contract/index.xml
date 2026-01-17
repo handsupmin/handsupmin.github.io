@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Smart-Contract on HandsLog</title>
-    <link>https://blog.jsontapose.com/tags/smart-contract/</link>
+    <link>https://blog.jsontapose.com/categories/smart-contract/</link>
     <description>Recent content in Smart-Contract on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sat, 17 Jan 2026 13:10:03 +0000</lastBuildDate>
-    <atom:link href="https://blog.jsontapose.com/tags/smart-contract/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/categories/smart-contract/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CEI 패턴 Checks-Effects-Interactions로 재진입 방어</title>
       <link>https://blog.jsontapose.com/posts/cei-pattern-checks-effects-interactions-940c92/</link>
@@ -39,25 +39,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 3. Effects ← 너무 늦음
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;    balances&lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;sender&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;-=&lt;/span&gt; amount&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;문제점&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>스마트 컨트랙트 재진입 공격 방지 가이드 — CEI 패턴과 ReentrancyGuard</title>
-      <link>https://blog.jsontapose.com/posts/smart-contract-reentrancy-defense-cei-reentrancy-guard-229684/</link>
-      <pubDate>Thu, 15 Jan 2026 13:14:49 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/smart-contract-reentrancy-defense-cei-reentrancy-guard-229684/</guid>
-      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
-&lt;p&gt;리엔트란시 재진입은 외부 호출 중 컨트랙트의 같은 함수 또는 다른 함수가 다시 호출되는 상황을 의미함
-상태 변경 전 외부 호출이 발생하면 공격자가 재진입을 통해 상태 검증을 우회하거나 중복 실행을 유도할 수 있음
-대표적 피해 사례로 The DAO 사건이 알려져 있음&lt;/p&gt;
-&lt;p&gt;실무 기본 원칙은 CEI 패턴 Checks-Effects-Interactions 준수와 ReentrancyGuard를 통한 보강 적용임
-두 방법을 함께 쓰는 것이 표준에 가까움&lt;/p&gt;
-&lt;h3 id=&#34;유명한-사례와-최소-취약-패턴&#34;&gt;유명한 사례와 최소 취약 패턴&lt;/h3&gt;
-&lt;p&gt;취약한 순서 패턴 핵심&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;외부 전송 또는 외부 컨트랙트 호출이 상태 변경보다 먼저 발생&lt;/li&gt;
-&lt;li&gt;이후 상태 변경이 이루어져도 재진입 시점에는 이전 상태가 유효하여 중복 집행 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;최소 취약 스니펫 예시&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

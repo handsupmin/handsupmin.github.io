@@ -24,17 +24,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-01-16T13:13:56+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/cei-pattern-checks-effects-interactions-940c92/</loc>
+    <lastmod>2026-01-17T13:10:03+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/nestjs-global-exception-filter-standard-error-response-81191e/</loc>
-    <lastmod>2026-01-16T13:13:56+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/</loc>
+    <lastmod>2026-01-17T13:10:03+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2026-01-17T13:10:03+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/nestjs-global-exception-filter-standard-error-response-81191e/</loc>
     <lastmod>2026-01-16T13:13:56+00:00</lastmod>
     <priority>0.5</priority>
   </url>

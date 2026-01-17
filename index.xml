@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 16 Jan 2026 13:13:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Jan 2026 13:10:03 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,38 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CEI 패턴 Checks-Effects-Interactions로 재진입 방어</title>
+      <link>https://blog.jsontapose.com/posts/cei-pattern-checks-effects-interactions-940c92/</link>
+      <pubDate>Sat, 17 Jan 2026 13:10:03 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/cei-pattern-checks-effects-interactions-940c92/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;CEI 패턴은 Checks-Effects-Interactions의 약자
+스마트 컨트랙트 함수에서 실행 순서를 명확히 해 재진입 공격을 줄이는 코드 규칙
+핵심은 검증 후 상태 변경을 먼저 완료하고, 외부 호출을 마지막에 수행하는 흐름 유지&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3단계-순서&#34;&gt;3단계 순서&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;1. Checks (검증)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2. Effects (상태 변경)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;3. Interactions (외부 호출)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이 순서를 지키면 외부로 제어권이 나가기 전에 내부 상태가 이미 안전하게 반영됨
+재진입 시도는 변경된 상태에 의해 자연스럽게 차단됨&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;예시로-이해하기&#34;&gt;예시로 이해하기&lt;/h3&gt;
+&lt;h4 id=&#34;잘못된-순서-위험&#34;&gt;잘못된 순서 위험&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-solidity&#34; data-lang=&#34;solidity&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#88c0d0&#34;&gt;withdraw&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;uint256&lt;/span&gt; amount&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;external&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 1. Checks
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#81a1c1&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;balances&lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;sender&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;gt;=&lt;/span&gt; amount&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 2. Interactions ← 너무 빠름
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;bool&lt;/span&gt; success&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;sender&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;call&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; amount&lt;span style=&#34;color:#eceff4&#34;&gt;}(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#81a1c1&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;success&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 3. Effects ← 너무 늦음
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;    balances&lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;sender&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;-=&lt;/span&gt; amount&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;문제점&lt;/p&gt;</description>
     </item>
     <item>
       <title>NestJS 전역 예외 필터와 표준 오류 응답 설계 가이드</title>
