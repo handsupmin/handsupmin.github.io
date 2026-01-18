@@ -6,8 +6,36 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 17 Jan 2026 13:10:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Jan 2026 13:10:06 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Immutability</title>
+      <link>https://blog.jsontapose.com/tags/immutability/</link>
+      <pubDate>Sun, 18 Jan 2026 13:10:06 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/immutability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Readonly</title>
+      <link>https://blog.jsontapose.com/tags/readonly/</link>
+      <pubDate>Sun, 18 Jan 2026 13:10:06 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/readonly/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type-System</title>
+      <link>https://blog.jsontapose.com/tags/type-system/</link>
+      <pubDate>Sun, 18 Jan 2026 13:10:06 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/type-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Sun, 18 Jan 2026 13:10:06 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cei-Pattern</title>
       <link>https://blog.jsontapose.com/tags/cei-pattern/</link>
@@ -90,13 +118,6 @@
       <link>https://blog.jsontapose.com/tags/observability/</link>
       <pubDate>Fri, 16 Jan 2026 13:13:56 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/observability/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Fri, 16 Jan 2026 13:13:56 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -349,13 +370,6 @@
       <link>https://blog.jsontapose.com/tags/type-alias/</link>
       <pubDate>Fri, 09 Jan 2026 13:14:16 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/type-alias/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Type-System</title>
-      <link>https://blog.jsontapose.com/tags/type-system/</link>
-      <pubDate>Fri, 09 Jan 2026 13:14:16 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/type-system/</guid>
       <description></description>
     </item>
     <item>
