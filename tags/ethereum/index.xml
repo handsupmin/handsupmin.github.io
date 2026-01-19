@@ -6,8 +6,32 @@
     <description>Recent content in Ethereum on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 17 Jan 2026 13:10:03 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 13:16:36 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/ethereum/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ERC-4337 Account Abstraction의 장단점과 EntryPoint 병목 정리</title>
+      <link>https://blog.jsontapose.com/posts/erc-4337-account-abstraction-pros-cons-entrypoint-bottleneck-221231/</link>
+      <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/erc-4337-account-abstraction-pros-cons-entrypoint-bottleneck-221231/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;Account Abstraction(AA, 계정 추상화)은 키 기반 EOA에 고정된 지갑 모델을 스마트 컨트랙트로 일반화해 UX를 끌어올리는 접근법. ERC-4337은 이를 프로토콜 변경 없이 애플리케이션 레이어에서 구현하는 표준. 목적은 블록체인을 몰라도 쓸 수 있는 경험을 제공하는 것. 대가로 추가 가스비와 인프라 복잡도가 뒤따름&lt;/p&gt;
+&lt;h3 id=&#34;장점-요약&#34;&gt;장점 요약&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;가스비 대납과 가스 추상화 지원. Paymaster를 통해 사용자가 ETH 없이도 트랜잭션 가능. 서비스가 대납하거나 보유 토큰으로 지불하는 경로 구성 가능&lt;/li&gt;
+&lt;li&gt;소셜 복구 및 프로그래머블 보안. 시드 문구 분실 시 다중 승인 기반 복구, 전송 한도, 화이트리스트 등 정책 내장 가능&lt;/li&gt;
+&lt;li&gt;트랜잭션 배치. Approve → Swap 같은 연속 작업을 한 번의 서명으로 처리, 서명 피로와 왕복 비용 감소&lt;/li&gt;
+&lt;li&gt;세션 키. 제한된 권한과 기간으로 자동 서명 흐름 구성 가능. 게임 등 빈번한 액션에 유효&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;단점-요약&#34;&gt;단점 요약&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;높은 가스비. EntryPoint를 경유하며 검증/실행 로직이 추가되어 오버헤드 발생. 메인넷에서는 체감 비용 큼, L2에서는 상대적으로 부담 완화 가능&lt;/li&gt;
+&lt;li&gt;인프라 복잡도 증가. 노드만으로 부족, Bundler·Paymaster·Aggregator 등 별도 컴포넌트 필요. 이들 장애 시 트랜잭션 정지 리스크 존재&lt;/li&gt;
+&lt;li&gt;DApp 호환성 이슈. EOA 전제 코드와 충돌 가능. EIP-1271 기반 서명 검증 경로를 지원하지 않는 레거시 DApp에서 로그인/서명 실패 발생 여지&lt;/li&gt;
+&lt;li&gt;지갑 생성 비용. AA 지갑은 컨트랙트이므로 최초 배포 비용 발생. 첫 트랜잭션 시 지연 배포로 UX 노출 최소화 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;entrypoint-병목-구조&#34;&gt;EntryPoint 병목 구조&lt;/h3&gt;
+&lt;p&gt;ERC-4337에서는 사용자 요청(UserOperation)이 단일 싱글톤 컨트랙트인 EntryPoint를 통해 처리됨. Bundler가 여러 UserOp를 모아 EntryPoint의 &lt;code&gt;handleOps&lt;/code&gt;를 호출하는 구조. 병목의 핵심은 서버 과부하라기보다 가스비 오버헤드와 검증 복잡도 증가&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CEI 패턴 Checks-Effects-Interactions로 재진입 방어</title>
       <link>https://blog.jsontapose.com/posts/cei-pattern-checks-effects-interactions-940c92/</link>

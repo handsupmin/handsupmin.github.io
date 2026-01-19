@@ -6,8 +6,71 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 18 Jan 2026 13:10:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 13:16:36 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Account-Abstraction</title>
+      <link>https://blog.jsontapose.com/tags/account-abstraction/</link>
+      <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/account-abstraction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bundler</title>
+      <link>https://blog.jsontapose.com/tags/bundler/</link>
+      <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/bundler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Erc-4337</title>
+      <link>https://blog.jsontapose.com/tags/erc-4337/</link>
+      <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/erc-4337/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ethereum</title>
+      <link>https://blog.jsontapose.com/tags/ethereum/</link>
+      <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gas-Fees</title>
+      <link>https://blog.jsontapose.com/tags/gas-fees/</link>
+      <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/gas-fees/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Paymaster</title>
+      <link>https://blog.jsontapose.com/tags/paymaster/</link>
+      <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/paymaster/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://blog.jsontapose.com/tags/security/</link>
+      <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart-Contract</title>
+      <link>https://blog.jsontapose.com/tags/smart-contract/</link>
+      <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/smart-contract/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web3</title>
+      <link>https://blog.jsontapose.com/tags/web3/</link>
+      <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/web3/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Immutability</title>
       <link>https://blog.jsontapose.com/tags/immutability/</link>
@@ -44,31 +107,10 @@
       <description></description>
     </item>
     <item>
-      <title>Ethereum</title>
-      <link>https://blog.jsontapose.com/tags/ethereum/</link>
-      <pubDate>Sat, 17 Jan 2026 13:10:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Reentrancy</title>
       <link>https://blog.jsontapose.com/tags/reentrancy/</link>
       <pubDate>Sat, 17 Jan 2026 13:10:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/reentrancy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>https://blog.jsontapose.com/tags/security/</link>
-      <pubDate>Sat, 17 Jan 2026 13:10:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Smart-Contract</title>
-      <link>https://blog.jsontapose.com/tags/smart-contract/</link>
-      <pubDate>Sat, 17 Jan 2026 13:10:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/smart-contract/</guid>
       <description></description>
     </item>
     <item>
@@ -2347,13 +2389,6 @@
       <description></description>
     </item>
     <item>
-      <title>Account-Abstraction</title>
-      <link>https://blog.jsontapose.com/tags/account-abstraction/</link>
-      <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/account-abstraction/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Eip-1271</title>
       <link>https://blog.jsontapose.com/tags/eip-1271/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
@@ -2372,13 +2407,6 @@
       <link>https://blog.jsontapose.com/tags/layer-2/</link>
       <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/layer-2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Paymaster</title>
-      <link>https://blog.jsontapose.com/tags/paymaster/</link>
-      <pubDate>Fri, 03 Oct 2025 13:07:57 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/paymaster/</guid>
       <description></description>
     </item>
     <item>
@@ -2414,13 +2442,6 @@
       <link>https://blog.jsontapose.com/tags/viem/</link>
       <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/viem/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web3</title>
-      <link>https://blog.jsontapose.com/tags/web3/</link>
-      <pubDate>Thu, 02 Oct 2025 13:07:56 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/web3/</guid>
       <description></description>
     </item>
     <item>
