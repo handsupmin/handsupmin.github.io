@@ -6,7 +6,7 @@
     <description>Recent content in Solidity on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 17 Jan 2026 13:10:03 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jan 2026 13:17:15 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/solidity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -30,6 +30,33 @@
 아무리 좋은 서비스를 만들어도, 사용자가 지갑에 가스비로 쓸 코인(ETH 등)을 보유하고 있어야 한다는 점은 대중화를 가로막는 결정적인 요인임
 이 문제를 해결해 사용자가 가스비 걱정 없이 서비스 핵심 가치에만 집중하게 만드는 것, 즉 &lt;strong&gt;가스리스 트랜잭션&lt;/strong&gt;(Gasless Transaction)을 구현하는 것이 이번 개발의 최종 목표였음&lt;/p&gt;
 &lt;p&gt;zkSync Era는 이를 위해 &lt;strong&gt;페이마스터&lt;/strong&gt;(Paymaster)라는 강력한 시스템을 제공함. 페이마스터는 서비스 제공자 같은 제3자가 사용자를 대신해 트랜잭션 수수료를 지불할 수 있게 해주는 스마트 컨트랙트임&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>이더리움 단위 정리: ETH, Gwei, Wei와 ERC-20 decimals 18</title>
+      <link>https://blog.jsontapose.com/posts/ethereum-units-eth-gwei-wei-decimals-18-83ba11/</link>
+      <pubDate>Tue, 20 Jan 2026 13:17:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/ethereum-units-eth-gwei-wei-decimals-18-83ba11/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;이더리움 단위 체계는 10의 지수 기반으로 딱 떨어지게 설계됨
+EVM은 부동소수점을 지원하지 않으므로 모든 값은 정수로 표현, 단위 나눔과 스케일링이 필수&lt;/p&gt;
+&lt;h3 id=&#34;단위-환산&#34;&gt;단위 환산&lt;/h3&gt;
+&lt;p&gt;1 ETH = 10^9 Gwei = 10^18 Wei&lt;/p&gt;
+&lt;p&gt;풀어서 보면 다음과 같음&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ETH&lt;/li&gt;
+&lt;li&gt;= 1,000,000,000 Gwei (10억 그웨이)&lt;/li&gt;
+&lt;li&gt;= 1,000,000,000,000,000,000 Wei (100경 웨이)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;용도별-구분&#34;&gt;용도별 구분&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Wei: 최소 단위, 스마트 컨트랙트 내부 연산에 사용. Solidity에 소수점 개념 없음&lt;/li&gt;
+&lt;li&gt;Gwei: 10^9 Wei. 가스 가격 표시 단위로 사용, 사람이 읽고 비교하기 쉬움&lt;/li&gt;
+&lt;li&gt;Ether: 10^18 Wei. 지갑 잔고, 일상적 송금 금액 표시에 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;개발자-상식-erc-20-decimals--18&#34;&gt;개발자 상식: ERC-20 decimals = 18&lt;/h3&gt;
+&lt;p&gt;ERC-20 토큰에서 decimals를 18로 두는 관례는 이더리움 기본 최소 단위(Wei) 스케일을 그대로 따름
+의미: 토큰 1개가 10^18의 최소 단위로 분할 가능
+예외: 스테이블 코인처럼 법정화폐 소수 자리를 맞추는 토큰은 decimals 6 등으로 설정하는 경우 있음&lt;/p&gt;</description>
     </item>
     <item>
       <title>CEI 패턴 Checks-Effects-Interactions로 재진입 방어</title>

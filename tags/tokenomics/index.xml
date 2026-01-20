@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tokenomics on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/tokenomics/</link>
+    <description>Recent content in Tokenomics on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 20 Jan 2026 13:17:15 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/tokenomics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>이더리움 단위 정리: ETH, Gwei, Wei와 ERC-20 decimals 18</title>
+      <link>https://blog.jsontapose.com/posts/ethereum-units-eth-gwei-wei-decimals-18-83ba11/</link>
+      <pubDate>Tue, 20 Jan 2026 13:17:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/ethereum-units-eth-gwei-wei-decimals-18-83ba11/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;이더리움 단위 체계는 10의 지수 기반으로 딱 떨어지게 설계됨
+EVM은 부동소수점을 지원하지 않으므로 모든 값은 정수로 표현, 단위 나눔과 스케일링이 필수&lt;/p&gt;
+&lt;h3 id=&#34;단위-환산&#34;&gt;단위 환산&lt;/h3&gt;
+&lt;p&gt;1 ETH = 10^9 Gwei = 10^18 Wei&lt;/p&gt;
+&lt;p&gt;풀어서 보면 다음과 같음&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 ETH&lt;/li&gt;
+&lt;li&gt;= 1,000,000,000 Gwei (10억 그웨이)&lt;/li&gt;
+&lt;li&gt;= 1,000,000,000,000,000,000 Wei (100경 웨이)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;용도별-구분&#34;&gt;용도별 구분&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Wei: 최소 단위, 스마트 컨트랙트 내부 연산에 사용. Solidity에 소수점 개념 없음&lt;/li&gt;
+&lt;li&gt;Gwei: 10^9 Wei. 가스 가격 표시 단위로 사용, 사람이 읽고 비교하기 쉬움&lt;/li&gt;
+&lt;li&gt;Ether: 10^18 Wei. 지갑 잔고, 일상적 송금 금액 표시에 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;개발자-상식-erc-20-decimals--18&#34;&gt;개발자 상식: ERC-20 decimals = 18&lt;/h3&gt;
+&lt;p&gt;ERC-20 토큰에서 decimals를 18로 두는 관례는 이더리움 기본 최소 단위(Wei) 스케일을 그대로 따름
+의미: 토큰 1개가 10^18의 최소 단위로 분할 가능
+예외: 스테이블 코인처럼 법정화폐 소수 자리를 맞추는 토큰은 decimals 6 등으로 설정하는 경우 있음&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

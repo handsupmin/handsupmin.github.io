@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 19 Jan 2026 13:16:36 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jan 2026 13:17:15 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Erc-20</title>
+      <link>https://blog.jsontapose.com/tags/erc-20/</link>
+      <pubDate>Tue, 20 Jan 2026 13:17:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/erc-20/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ethereum</title>
+      <link>https://blog.jsontapose.com/tags/ethereum/</link>
+      <pubDate>Tue, 20 Jan 2026 13:17:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gas-Fee</title>
+      <link>https://blog.jsontapose.com/tags/gas-fee/</link>
+      <pubDate>Tue, 20 Jan 2026 13:17:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/gas-fee/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gwei</title>
+      <link>https://blog.jsontapose.com/tags/gwei/</link>
+      <pubDate>Tue, 20 Jan 2026 13:17:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/gwei/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solidity</title>
+      <link>https://blog.jsontapose.com/tags/solidity/</link>
+      <pubDate>Tue, 20 Jan 2026 13:17:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/solidity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tokenomics</title>
+      <link>https://blog.jsontapose.com/tags/tokenomics/</link>
+      <pubDate>Tue, 20 Jan 2026 13:17:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/tokenomics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wei</title>
+      <link>https://blog.jsontapose.com/tags/wei/</link>
+      <pubDate>Tue, 20 Jan 2026 13:17:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/wei/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Account-Abstraction</title>
       <link>https://blog.jsontapose.com/tags/account-abstraction/</link>
@@ -27,13 +76,6 @@
       <link>https://blog.jsontapose.com/tags/erc-4337/</link>
       <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/erc-4337/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ethereum</title>
-      <link>https://blog.jsontapose.com/tags/ethereum/</link>
-      <pubDate>Mon, 19 Jan 2026 13:16:36 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/ethereum/</guid>
       <description></description>
     </item>
     <item>
@@ -111,13 +153,6 @@
       <link>https://blog.jsontapose.com/tags/reentrancy/</link>
       <pubDate>Sat, 17 Jan 2026 13:10:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/reentrancy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Solidity</title>
-      <link>https://blog.jsontapose.com/tags/solidity/</link>
-      <pubDate>Sat, 17 Jan 2026 13:10:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/solidity/</guid>
       <description></description>
     </item>
     <item>
