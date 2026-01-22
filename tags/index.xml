@@ -6,8 +6,78 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 21 Jan 2026 13:16:50 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Jan 2026 13:16:57 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cpu</title>
+      <link>https://blog.jsontapose.com/tags/cpu/</link>
+      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/cpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event-Loop</title>
+      <link>https://blog.jsontapose.com/tags/event-loop/</link>
+      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/event-loop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Io</title>
+      <link>https://blog.jsontapose.com/tags/io/</link>
+      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/io/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Libuv</title>
+      <link>https://blog.jsontapose.com/tags/libuv/</link>
+      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/libuv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux-Kernel</title>
+      <link>https://blog.jsontapose.com/tags/linux-kernel/</link>
+      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/linux-kernel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://blog.jsontapose.com/tags/performance/</link>
+      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Profiling</title>
+      <link>https://blog.jsontapose.com/tags/profiling/</link>
+      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/profiling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalability</title>
+      <link>https://blog.jsontapose.com/tags/scalability/</link>
+      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/scalability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Worker-Threads</title>
+      <link>https://blog.jsontapose.com/tags/worker-threads/</link>
+      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/worker-threads/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Eoa</title>
       <link>https://blog.jsontapose.com/tags/eoa/</link>
@@ -317,24 +387,10 @@
       <description></description>
     </item>
     <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Tue, 13 Jan 2026 13:15:30 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Performance-Testing</title>
       <link>https://blog.jsontapose.com/tags/performance-testing/</link>
       <pubDate>Tue, 13 Jan 2026 13:15:30 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/performance-testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Profiling</title>
-      <link>https://blog.jsontapose.com/tags/profiling/</link>
-      <pubDate>Tue, 13 Jan 2026 13:15:30 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/profiling/</guid>
       <description></description>
     </item>
     <item>
@@ -807,13 +863,6 @@
       <description></description>
     </item>
     <item>
-      <title>Performance</title>
-      <link>https://blog.jsontapose.com/tags/performance/</link>
-      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/performance/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Queues</title>
       <link>https://blog.jsontapose.com/tags/queues/</link>
       <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
@@ -825,13 +874,6 @@
       <link>https://blog.jsontapose.com/tags/resilience/</link>
       <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/resilience/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scalability</title>
-      <link>https://blog.jsontapose.com/tags/scalability/</link>
-      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/scalability/</guid>
       <description></description>
     </item>
     <item>
@@ -1591,13 +1633,6 @@
       <description></description>
     </item>
     <item>
-      <title>Event-Loop</title>
-      <link>https://blog.jsontapose.com/tags/event-loop/</link>
-      <pubDate>Wed, 03 Dec 2025 13:13:33 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/event-loop/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Index-Signature</title>
       <link>https://blog.jsontapose.com/tags/index-signature/</link>
       <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
@@ -1910,13 +1945,6 @@
       <link>https://blog.jsontapose.com/tags/es-modules/</link>
       <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/es-modules/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Libuv</title>
-      <link>https://blog.jsontapose.com/tags/libuv/</link>
-      <pubDate>Tue, 11 Nov 2025 13:11:22 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/libuv/</guid>
       <description></description>
     </item>
     <item>

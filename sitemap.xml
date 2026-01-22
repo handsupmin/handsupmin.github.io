@@ -24,17 +24,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-01-21T13:16:50+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/nodejs-cpu-event-loop-threadpool-b27011/</loc>
+    <lastmod>2026-01-22T13:16:57+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/ethereum-transaction-nonce-states-7cf0f0/</loc>
-    <lastmod>2026-01-21T13:16:50+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/</loc>
+    <lastmod>2026-01-22T13:16:57+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2026-01-22T13:16:57+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/ethereum-transaction-nonce-states-7cf0f0/</loc>
     <lastmod>2026-01-21T13:16:50+00:00</lastmod>
     <priority>0.5</priority>
   </url>

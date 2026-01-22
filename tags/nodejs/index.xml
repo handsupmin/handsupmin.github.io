@@ -6,8 +6,30 @@
     <description>Recent content in Nodejs on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 13 Jan 2026 13:15:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Jan 2026 13:16:57 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CPU 자원 관점에서 보는 Node.js 이벤트 루프와 스레드풀 상호작용</title>
+      <link>https://blog.jsontapose.com/posts/nodejs-cpu-event-loop-threadpool-b27011/</link>
+      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/nodejs-cpu-event-loop-threadpool-b27011/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;목표  이벤트 루프, 스레드풀, 커널이 실제 CPU 코어와 어떻게 상호작용하는지 CPU 관점에서 명확히 이해하기
+Node.js가 어디서 CPU를 쓰고 어디서 기다리는지 구분해야 병목을 제대로 잡을 수 있음&lt;/p&gt;
+&lt;h3 id=&#34;cpu-코어와-os-스레드의-물리적-의미&#34;&gt;CPU 코어와 OS 스레드의 물리적 의미&lt;/h3&gt;
+&lt;p&gt;하드웨어와 OS 레벨 정의를 먼저 정리&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU 코어 1개 ≈ 특정 시점에 물리적으로 실행 가능한 OS 스레드 1개&lt;/li&gt;
+&lt;li&gt;스레드  OS 스케줄러가 CPU를 할당하는 최소 단위&lt;/li&gt;
+&lt;li&gt;동시성 vs 병렬성
+&lt;ul&gt;
+&lt;li&gt;코어 1개면 수백 스레드도 시분할로 번갈아 실행되는 동시성&lt;/li&gt;
+&lt;li&gt;코어 여러 개일 때만 실제 병렬 실행 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CPU 관점의 핵심 비용&lt;/p&gt;</description>
+    </item>
     <item>
       <title>API 성능 테스트와 모니터링 표준 가이드</title>
       <link>https://blog.jsontapose.com/posts/api-performance-testing-and-monitoring-guide-2b9e24/</link>
