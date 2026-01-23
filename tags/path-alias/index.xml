@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Path-Alias on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/path-alias/</link>
+    <description>Recent content in Path-Alias on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 23 Jan 2026 13:15:57 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/path-alias/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TypeScript/ESM import 경로 정리: &#39;@&#39;, &#39;#&#39;, 상대 경로의 의미와 설정</title>
+      <link>https://blog.jsontapose.com/posts/typescript-esm-import-path-atsign-hash-relative-a9f97e/</link>
+      <pubDate>Fri, 23 Jan 2026 13:15:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/typescript-esm-import-path-atsign-hash-relative-a9f97e/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;TypeScript와 ESM에서 자주 보이는 세 가지 import 패턴&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;import &amp;hellip; from &amp;lsquo;@&amp;hellip;&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;import &amp;hellip; from &amp;lsquo;&amp;hellip;&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;import &amp;hellip; from &amp;lsquo;#&amp;hellip;&amp;rsquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;표기만 비슷할 뿐, 해석 주체와 동작 범위가 다름&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lsquo;@&amp;lsquo;는 경로 별칭 또는 npm 스코프 패키지 의미 가능&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;&amp;hellip;&amp;lsquo;는 상대·절대 경로로 파일 시스템 기준 해석&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;#&amp;lsquo;는 Node.js 패키지 imports 또는 브라우저 import maps에서의 별칭으로 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;아래에서 각 패턴의 의미, 설정 지점, 주의사항을 정리함&lt;/p&gt;
+&lt;h3 id=&#34;-경로의-두-가지-의미&#34;&gt;&amp;lsquo;@&amp;hellip;&amp;rsquo; 경로의 두 가지 의미&lt;/h3&gt;
+&lt;h4 id=&#34;1-경로-별칭-path-alias&#34;&gt;1) 경로 별칭 path alias&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;의도: 길고 복잡한 상대 경로를 짧게 추상화&lt;/li&gt;
+&lt;li&gt;설정 지점: tsconfig.json 의 compilerOptions.paths와 baseUrl&lt;/li&gt;
+&lt;li&gt;예시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;#34;compilerOptions&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;#34;baseUrl&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;./&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;#34;paths&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;#34;@models/*&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;src/models/*&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;#34;@utils/*&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;src/utils/*&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; User &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;@models/User&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; calculate &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;@utils/math&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;장점
+&lt;ul&gt;
+&lt;li&gt;상대 경로를 단순화, 가독성 및 리팩터링 내성 향상&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;주의
+&lt;ul&gt;
+&lt;li&gt;tsconfig paths는 타입 체크러와 에디터가 이해하는 별칭일 뿐, 런타임 해석자는 아님&lt;/li&gt;
+&lt;li&gt;Node.js 런타임은 tsconfig paths를 모름. 번들러 설정별 alias 또는 전용 로더를 함께 구성 필요&lt;/li&gt;
+&lt;li&gt;예: Vite, Webpack, ts-node, tsconfig-paths 등 도구별 설정 일치 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-스코프된-패키지-scoped-package&#34;&gt;2) 스코프된 패키지 scoped package&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;의미: npm 조직·팀·프로젝트 네임스페이스로 묶인 패키지 집합&lt;/li&gt;
+&lt;li&gt;표기: @scope/package-name 형태
+&lt;ul&gt;
+&lt;li&gt;@nestjs/swagger, @angular/core 등&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;사용 이유
+&lt;ul&gt;
+&lt;li&gt;네임스페이스로 이름 충돌 회피&lt;/li&gt;
+&lt;li&gt;관련 패키지의 그룹화와 공개·비공개 관리&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;설치&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;npm install @nestjs/swagger&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;해석
+&lt;ul&gt;
+&lt;li&gt;이 경우 &amp;lsquo;@&amp;lsquo;는 경로 별칭이 아닌 패키지 이름의 일부로 동작&lt;/li&gt;
+&lt;li&gt;tsconfig paths와 무관. Node/npm가 패키지 이름으로 직접 해석&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-상대절대-경로-import&#34;&gt;&amp;lsquo;&amp;hellip;&amp;rsquo; 상대·절대 경로 import&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;상대 경로 &amp;lsquo;./&amp;rsquo;, &amp;lsquo;../&amp;rsquo; 기준으로 현재 파일 위치에서 탐색&lt;/li&gt;
+&lt;li&gt;절대 경로 &amp;lsquo;/path&amp;rsquo;는 실행 환경마다 기준이 다름
+&lt;ul&gt;
+&lt;li&gt;브라우저 ESM에서는 오리진 기준 절대 URL 경로 해석&lt;/li&gt;
+&lt;li&gt;Node.js에서는 파일 시스템 루트 절대 경로로 해석되어 이식성 낮음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;예시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; User &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;./models/User&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; calculate &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;../utils/math&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;장점
+&lt;ul&gt;
+&lt;li&gt;추가 설정 없이 즉시 동작, 모든 환경 공통 동작 모델&lt;/li&gt;
+&lt;li&gt;모듈 간 물리적 의존 관계가 드러남&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;단점
+&lt;ul&gt;
+&lt;li&gt;디렉터리 깊어질수록 ../../../ 형태로 복잡도 상승&lt;/li&gt;
+&lt;li&gt;구조 변경 시 경로 대량 수정 발생&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-경로의-의미&#34;&gt;&amp;lsquo;#&amp;hellip;&amp;rsquo; 경로의 의미&lt;/h3&gt;
+&lt;p&gt;&amp;lsquo;#{name}&amp;rsquo; 표기는 두 가지 서로 다른 맥락에서 등장함. 혼동 주의&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
