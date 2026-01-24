@@ -6,8 +6,36 @@
     <description>Recent content in Streams on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 10 Jan 2026 13:10:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Jan 2026 13:11:22 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/streams/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RxJS 핵심 가이드와 내부 동작 이해 Observable Subject Teardown Scheduler Operator</title>
+      <link>https://blog.jsontapose.com/posts/rxjs-core-guide-internal-observable-subject-teardown-scheduler-operators-18d2d1/</link>
+      <pubDate>Sat, 24 Jan 2026 13:11:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/rxjs-core-guide-internal-observable-subject-teardown-scheduler-operators-18d2d1/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;RxJS는 Reactive Extensions for JavaScript의 약자이며 비동기 데이터 흐름을 스트림 Observable로 다루는 라이브러리임
+이벤트, API 응답, 클릭, WebSocket처럼 시간에 따라 변하는 값을 하나의 연속 흐름으로 모델링 가능&lt;/p&gt;
+&lt;p&gt;핵심 비교&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Promise는 값 1개 처리&lt;/li&gt;
+&lt;li&gt;Observable은 값 0개부터 무한대까지 처리&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;observable-핵심&#34;&gt;Observable 핵심&lt;/h3&gt;
+&lt;p&gt;정의&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;시간에 따라 변경되는 데이터를 push 기반 스트림으로 표현한 객체&lt;/li&gt;
+&lt;li&gt;구독 subscribe 시점에만 실행되는 lazy 특성&lt;/li&gt;
+&lt;li&gt;구독 해제 unsubscribe 시 리소스 정리 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;특징&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lazy 실행으로 불필요한 작업 방지&lt;/li&gt;
+&lt;li&gt;cancel 가능으로 누수 방지&lt;/li&gt;
+&lt;li&gt;0~무한개의 값 연속 처리&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;간단 예시&lt;/p&gt;</description>
+    </item>
     <item>
       <title>자바스크립트 비동기와 이터레이터 정리 — 기다림, 동시성, 백프레셔</title>
       <link>https://blog.jsontapose.com/posts/javascript-async-iterators-waiting-concurrency-backpressure-e200bd/</link>
