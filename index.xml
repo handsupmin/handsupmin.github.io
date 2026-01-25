@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 24 Jan 2026 13:11:22 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jan 2026 13:12:10 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,37 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TypeScript 고급 타입 패턴 정리 — 제네릭, 유니온·인터섹션, 매핑, 조건부, 유틸리티</title>
+      <link>https://blog.jsontapose.com/posts/typescript-advanced-type-patterns-d8ee0f/</link>
+      <pubDate>Sun, 25 Jan 2026 13:12:10 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/typescript-advanced-type-patterns-d8ee0f/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;TypeScript의 고급 타입은 단순 오류 방지 수준을 넘어 재사용성과 유지보수성을 끌어올리는 핵심 도구임
+제네릭, 유니온·인터섹션, 매핑 타입, 조건부 타입, 그리고 실무에서 자주 쓰는 유틸리티 타입을 간단 예시와 함께 정리함&lt;/p&gt;
+&lt;h3 id=&#34;제네릭&#34;&gt;제네릭&lt;/h3&gt;
+&lt;p&gt;타입을 값처럼 받아서 사용하는 패턴으로, 선언 시점이 아니라 사용 시점에 타입을 결정함
+any 대비 타입 정보를 잃지 않으면서 다양한 타입을 수용 가능&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;기본 형태 &lt;!-- raw HTML omitted --&gt; 사용&lt;/li&gt;
+&lt;li&gt;입력과 출력 타입의 관계를 보존하는 데 초점&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;function&lt;/span&gt; wrap&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;value: &lt;span style=&#34;color:#81a1c1&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; value &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;function&lt;/span&gt; wrapBox&lt;span style=&#34;color:#eceff4&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;T&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;&amp;gt;(&lt;/span&gt;value: &lt;span style=&#34;color:#81a1c1&#34;&gt;T&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; value &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; stringBox &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; wrapBox&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; numberBox &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; wrapBox&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;123&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;T는 관습적 이름이며 의미가 드러나는 이름 사용 권장&lt;/li&gt;
+&lt;li&gt;제네릭 제한이 필요한 경우 extends를 사용해 제약 가능 ex) &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;유니온과-인터섹션&#34;&gt;유니온과 인터섹션&lt;/h3&gt;
+&lt;p&gt;여러 타입을 조합해 표현력을 높이는 방법&lt;/p&gt;</description>
     </item>
     <item>
       <title>RxJS 핵심 가이드와 내부 동작 이해 Observable Subject Teardown Scheduler Operator</title>

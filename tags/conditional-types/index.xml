@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Generics on HandsLog</title>
-    <link>https://blog.jsontapose.com/tags/generics/</link>
-    <description>Recent content in Generics on HandsLog</description>
+    <title>Conditional-Types on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/conditional-types/</link>
+    <description>Recent content in Conditional-Types on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 25 Jan 2026 13:12:10 +0000</lastBuildDate>
-    <atom:link href="https://blog.jsontapose.com/tags/generics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.jsontapose.com/tags/conditional-types/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TypeScript 고급 타입 패턴 정리 — 제네릭, 유니온·인터섹션, 매핑, 조건부, 유틸리티</title>
       <link>https://blog.jsontapose.com/posts/typescript-advanced-type-patterns-d8ee0f/</link>
@@ -38,27 +38,6 @@ any 대비 타입 정보를 잃지 않으면서 다양한 타입을 수용 가�
 &lt;/ul&gt;
 &lt;h3 id=&#34;유니온과-인터섹션&#34;&gt;유니온과 인터섹션&lt;/h3&gt;
 &lt;p&gt;여러 타입을 조합해 표현력을 높이는 방법&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>TypeScript Parameters 유틸리티 타입 개념과 안전한 활용</title>
-      <link>https://blog.jsontapose.com/posts/typescript-parameters-utility-type-913b5f/</link>
-      <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/posts/typescript-parameters-utility-type-913b5f/</guid>
-      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
-&lt;p&gt;Parameters는 TypeScript가 제공하는 제네릭 유틸리티 타입으로, 특정 함수 타입의 매개변수 타입들을 튜플로 추출하는 데 사용됨
-함수 래핑, 고차 함수, 어댑터 계층에서 기존 함수 시그니처를 재사용해 타입 안정성을 유지하고 중복 선언을 줄이는 목적에 적합함&lt;/p&gt;
-&lt;h3 id=&#34;문법&#34;&gt;문법&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;type&lt;/span&gt; Parameters&lt;span style=&#34;color:#eceff4&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#8fbcbb&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#8fbcbb&#34;&gt;...args&lt;/span&gt;&lt;span style=&#34;color:#bf616a&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#8fbcbb&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#bf616a&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#bf616a&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; T &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;...&lt;/span&gt;args: &lt;span style=&#34;color:#81a1c1&#34;&gt;infer&lt;/span&gt; P
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;any&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1&#34;&gt;?&lt;/span&gt; P
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  : &lt;span style=&#34;color:#81a1c1&#34;&gt;never&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;T가 함수 타입이면 매개변수 목록을 튜플 타입 P로 추출&lt;/li&gt;
-&lt;li&gt;T가 함수 타입이 아니면 never 반환&lt;/li&gt;
-&lt;li&gt;추출 결과는 튜플이므로 인덱스 접근, 스프레드, 부분 적용 등 튜플 연산과 조합 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;사용-예시&#34;&gt;사용 예시&lt;/h3&gt;
-&lt;p&gt;기본 추출&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -6,8 +6,64 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 24 Jan 2026 13:11:22 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jan 2026 13:12:10 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conditional-Types</title>
+      <link>https://blog.jsontapose.com/tags/conditional-types/</link>
+      <pubDate>Sun, 25 Jan 2026 13:12:10 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/conditional-types/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Generics</title>
+      <link>https://blog.jsontapose.com/tags/generics/</link>
+      <pubDate>Sun, 25 Jan 2026 13:12:10 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/generics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Intersection-Types</title>
+      <link>https://blog.jsontapose.com/tags/intersection-types/</link>
+      <pubDate>Sun, 25 Jan 2026 13:12:10 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/intersection-types/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mapped-Types</title>
+      <link>https://blog.jsontapose.com/tags/mapped-types/</link>
+      <pubDate>Sun, 25 Jan 2026 13:12:10 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/mapped-types/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type-System</title>
+      <link>https://blog.jsontapose.com/tags/type-system/</link>
+      <pubDate>Sun, 25 Jan 2026 13:12:10 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/type-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Sun, 25 Jan 2026 13:12:10 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Union-Types</title>
+      <link>https://blog.jsontapose.com/tags/union-types/</link>
+      <pubDate>Sun, 25 Jan 2026 13:12:10 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/union-types/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Utility-Types</title>
+      <link>https://blog.jsontapose.com/tags/utility-types/</link>
+      <pubDate>Sun, 25 Jan 2026 13:12:10 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/utility-types/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Javascript</title>
       <link>https://blog.jsontapose.com/tags/javascript/</link>
@@ -62,13 +118,6 @@
       <link>https://blog.jsontapose.com/tags/subject/</link>
       <pubDate>Sat, 24 Jan 2026 13:11:22 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/subject/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Sat, 24 Jan 2026 13:11:22 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
@@ -342,13 +391,6 @@
       <link>https://blog.jsontapose.com/tags/readonly/</link>
       <pubDate>Sun, 18 Jan 2026 13:10:06 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/readonly/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Type-System</title>
-      <link>https://blog.jsontapose.com/tags/type-system/</link>
-      <pubDate>Sun, 18 Jan 2026 13:10:06 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/type-system/</guid>
       <description></description>
     </item>
     <item>
@@ -1703,13 +1745,6 @@
       <description></description>
     </item>
     <item>
-      <title>Mapped-Types</title>
-      <link>https://blog.jsontapose.com/tags/mapped-types/</link>
-      <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/mapped-types/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Record</title>
       <link>https://blog.jsontapose.com/tags/record/</link>
       <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
@@ -1721,13 +1756,6 @@
       <link>https://blog.jsontapose.com/tags/type-vs-interface/</link>
       <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/type-vs-interface/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Utility-Types</title>
-      <link>https://blog.jsontapose.com/tags/utility-types/</link>
-      <pubDate>Tue, 02 Dec 2025 13:13:21 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/utility-types/</guid>
       <description></description>
     </item>
     <item>
@@ -2057,13 +2085,6 @@
       <link>https://blog.jsontapose.com/tags/software-design/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/software-design/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Generics</title>
-      <link>https://blog.jsontapose.com/tags/generics/</link>
-      <pubDate>Sat, 01 Nov 2025 13:06:40 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/generics/</guid>
       <description></description>
     </item>
     <item>
