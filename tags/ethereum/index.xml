@@ -6,8 +6,30 @@
     <description>Recent content in Ethereum on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 21 Jan 2026 13:16:50 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jan 2026 13:16:23 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/ethereum/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>이더리움 PoS 노드의 종류와 역할 정리</title>
+      <link>https://blog.jsontapose.com/posts/ethereum-pos-node-types-and-roles-e8a3b8/</link>
+      <pubDate>Mon, 26 Jan 2026 13:16:23 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/ethereum-pos-node-types-and-roles-e8a3b8/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;이더리움 PoS 환경에서 노드 역할은 레이어 분리로 명확해졌음. 실행을 담당하는 EL, 합의를 담당하는 CL, 검증자 키와 서명을 담당하는 VC로 나뉨. 이 조합으로 일반 풀노드와 밸리데이터 노드가 구성됨. 아래는 각 컴포넌트와 노드 타입의 역할 차이를 실무 관점에서 정리함&lt;/p&gt;
+&lt;h3 id=&#34;레이어-기준-정의&#34;&gt;레이어 기준 정의&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;EL (Execution Layer)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;트랜잭션 실행과 상태 전이 수행&lt;/li&gt;
+&lt;li&gt;EVM 실행과 가스 계산 담당&lt;/li&gt;
+&lt;li&gt;mempool 유지 및 트랜잭션 선별&lt;/li&gt;
+&lt;li&gt;블록 본문에 담기는 실제 tx 처리 관할&lt;/li&gt;
+&lt;li&gt;무슨 일이 일어났는지 계산하는 층&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CL (Consensus Layer)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>nonce가 꼬인다? 트랜잭션 상태별 nonce의 변화</title>
       <link>https://blog.jsontapose.com/posts/ethereum-transaction-nonce-states-7cf0f0/</link>
