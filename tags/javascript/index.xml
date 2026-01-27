@@ -6,8 +6,24 @@
     <description>Recent content in Javascript on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 24 Jan 2026 13:11:22 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jan 2026 13:17:16 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript 배열 순회 패턴과 forEach 비동기 한계, 값·참조 전달 정리</title>
+      <link>https://blog.jsontapose.com/posts/javascript-iteration-patterns-foreach-async-pass-by-value-reference-67c6f3/</link>
+      <pubDate>Tue, 27 Jan 2026 13:17:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/javascript-iteration-patterns-foreach-async-pass-by-value-reference-67c6f3/</guid>
+      <description>&lt;p&gt;배열을 순회하는 방법은 여러 가지가 있음. 전통적인 for, Array.prototype.forEach, ES6 for&amp;hellip;of, 그리고 객체 속성에 적합한 for&amp;hellip;in. 여기에 forEach의 비동기 제어 한계와 값/참조 전달 의미 차이를 함께 정리함&lt;/p&gt;
+&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;자바스크립트에서 순회는 목적과 제약에 맞춰 선택하는 문제임&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;for 인덱스 제어, 경계 조건, 성능 미세 조정, 조기 종료 필요 시 유용&lt;/li&gt;
+&lt;li&gt;forEach 선언적 스타일, 반환값 없음, 조기 종료 불가, 비동기 완료 제어 불가&lt;/li&gt;
+&lt;li&gt;for&amp;hellip;of 이터러블 값 순회에 적합, 인덱스 필요 없을 때 간결, await와 결합 가능&lt;/li&gt;
+&lt;li&gt;for&amp;hellip;in 객체의 열거 가능 속성 순회용. 배열에는 권장하지 않음. 키 순서와 상속 프로퍼티 이슈 존재&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이터러블과 이터레이터 프로토콜을 따르는 객체에 for&amp;hellip;of를 적용 가능. 배열, 문자열, Map, Set 등이 대표적임&lt;/p&gt;</description>
+    </item>
     <item>
       <title>RxJS 핵심 가이드와 내부 동작 이해 Observable Subject Teardown Scheduler Operator</title>
       <link>https://blog.jsontapose.com/posts/rxjs-core-guide-internal-observable-subject-teardown-scheduler-operators-18d2d1/</link>
