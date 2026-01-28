@@ -25,16 +25,21 @@
   </url>
   <url>
     <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-01-27T13:17:16+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.jsontapose.com/posts/javascript-iteration-patterns-foreach-async-pass-by-value-reference-67c6f3/</loc>
-    <lastmod>2026-01-27T13:17:16+00:00</lastmod>
+    <lastmod>2026-01-28T13:17:37+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2026-01-28T13:17:37+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/ethereum-pos-tx-to-finality-ef6889/</loc>
+    <lastmod>2026-01-28T13:17:37+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/javascript-iteration-patterns-foreach-async-pass-by-value-reference-67c6f3/</loc>
     <lastmod>2026-01-27T13:17:16+00:00</lastmod>
     <priority>0.5</priority>
   </url>

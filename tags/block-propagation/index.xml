@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Block-Propagation on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/block-propagation/</link>
+    <description>Recent content in Block-Propagation on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 28 Jan 2026 13:17:37 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/block-propagation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>이더리움 PoS에서 트랜잭션이 블록에 포함되고 최종화되기까지</title>
+      <link>https://blog.jsontapose.com/posts/ethereum-pos-tx-to-finality-ef6889/</link>
+      <pubDate>Wed, 28 Jan 2026 13:17:37 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/ethereum-pos-tx-to-finality-ef6889/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;이더리움 PoS에서 한 트랜잭션이 네트워크에 전파되고 블록에 포함된 뒤 최종화되기까지의 핵심 흐름 정리
+노드별 로컬 mempool, 슬롯 기반 제안자 선정, 검증자 attestation, 포크 선택, 최종화 순서로 진행
+현실적으로 일부 제안자는 외부 빌더를 사용할 수 있으나 프로토콜 관점의 기본 흐름을 기준으로 설명&lt;/p&gt;
+&lt;h3 id=&#34;전체-흐름&#34;&gt;전체 흐름&lt;/h3&gt;
+&lt;p&gt;1 트랜잭션 발생 및 전파&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;사용자가 서명된 트랜잭션 전송&lt;/li&gt;
+&lt;li&gt;여러 노드가 트랜잭션을 수신하고 각자 로컬 mempool에 저장&lt;/li&gt;
+&lt;li&gt;mempool은 전역 공유가 아닌 노드 로컬 데이터 구조&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2 슬롯과 제안자 선정&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
