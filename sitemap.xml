@@ -25,12 +25,17 @@
   </url>
   <url>
     <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-01-28T13:17:37+00:00</lastmod>
+    <lastmod>2026-01-29T13:23:24+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
-    <lastmod>2026-01-28T13:17:37+00:00</lastmod>
+    <lastmod>2026-01-29T13:23:24+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/tsconfig-json-module-module-resolution-guide-05bc37/</loc>
+    <lastmod>2026-01-29T13:23:24+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>

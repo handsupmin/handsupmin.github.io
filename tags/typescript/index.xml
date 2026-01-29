@@ -6,8 +6,41 @@
     <description>Recent content in Typescript on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 27 Jan 2026 13:17:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jan 2026 13:23:24 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tsconfig.json 핵심 옵션 가이드: module과 moduleResolution</title>
+      <link>https://blog.jsontapose.com/posts/tsconfig-json-module-module-resolution-guide-05bc37/</link>
+      <pubDate>Thu, 29 Jan 2026 13:23:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/tsconfig-json-module-module-resolution-guide-05bc37/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;tsconfig.json은 TypeScript 컴파일러 tsc의 설정 파일이며 프로젝트를 어떻게 컴파일할지 정의함&lt;/p&gt;
+&lt;p&gt;TypeScript 코드가 JavaScript로 변환되는 경로에 대한 스위치 보드 역할 수행&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;TypeScript (.ts)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [ tsc ]  ← tsconfig.json이 규칙 제공
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;JavaScript (.js)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;module-옵션&#34;&gt;module 옵션&lt;/h3&gt;
+&lt;p&gt;출력되는 JavaScript의 모듈 시스템 선택&lt;/p&gt;
+&lt;p&gt;모듈 시스템의 변화 요약&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;없음, 전역 스코프 공유&lt;/li&gt;
+&lt;li&gt;CommonJS, require/module.exports 중심&lt;/li&gt;
+&lt;li&gt;AMD, 브라우저 환경 define/require&lt;/li&gt;
+&lt;li&gt;ES Modules, 표준 import/export&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;주요 값과 용도&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;commonjs  Node.js 구버전 호환&lt;/li&gt;
+&lt;li&gt;es2015/es6  표준 ESM, 브라우저·번들러 환경&lt;/li&gt;
+&lt;li&gt;es2020  ESM + dynamic import 사용 환경&lt;/li&gt;
+&lt;li&gt;es2022  ESM + top-level await 사용 환경&lt;/li&gt;
+&lt;li&gt;esnext  최신 ESM 기능 추적&lt;/li&gt;
+&lt;li&gt;nodenext  Node.js 16+의 ESM 출력·해석 규칙 반영&lt;/li&gt;
+&lt;li&gt;node16  Node.js 16의 ESM과 CJS 혼합 환경 대응&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;같은 코드의 다른 출력 예시&lt;/p&gt;</description>
+    </item>
     <item>
       <title>JavaScript 배열 순회 패턴과 forEach 비동기 한계, 값·참조 전달 정리</title>
       <link>https://blog.jsontapose.com/posts/javascript-iteration-patterns-foreach-async-pass-by-value-reference-67c6f3/</link>
