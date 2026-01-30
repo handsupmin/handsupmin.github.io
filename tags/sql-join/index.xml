@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sql-Join on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/sql-join/</link>
+    <description>Recent content in Sql-Join on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 30 Jan 2026 13:22:31 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/sql-join/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TypeORM JOIN vs 코드 레벨 매핑 선택 기준과 실무 트레이드오프</title>
+      <link>https://blog.jsontapose.com/posts/typeorm-join-vs-code-level-mapping-a0eaa9/</link>
+      <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/typeorm-join-vs-code-level-mapping-a0eaa9/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;동일한 문제를 TypeORM의 JOIN으로 해결할 수도 있고, 각 테이블을 개별 조회한 뒤 코드에서 매핑할 수도 있음
+어떤 접근이 더 효율적인지는 데이터 크기, 관계 복잡도, 인덱스 상태, 네트워크 제약, 성능 요구사항에 따라 달라짐
+핵심 장단점과 선택 기준을 정리함&lt;/p&gt;
+&lt;h3 id=&#34;typeorm에서-join-사용하는-경우&#34;&gt;TypeORM에서 JOIN 사용하는 경우&lt;/h3&gt;
+&lt;p&gt;장점&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;단일 쿼리로 필요한 데이터 수집 가능, 왕복 횟수 감소로 지연시간 이점&lt;/li&gt;
+&lt;li&gt;DB가 JOIN과 실행계획을 최적화하는 경우 비용 최소화 기대&lt;/li&gt;
+&lt;li&gt;1:N, N:M 같은 관계 질의를 쿼리로 명시적으로 표현 가능&lt;/li&gt;
+&lt;li&gt;필터링, 정렬, 그룹화 등 집계성 처리에서 DB 연산 활용 용이&lt;/li&gt;
+&lt;li&gt;페이지네이션과 함께 일관된 결과를 만들기 수월함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;단점&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

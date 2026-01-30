@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 29 Jan 2026 13:23:24 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jan 2026 13:22:31 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Caching</title>
+      <link>https://blog.jsontapose.com/tags/caching/</link>
+      <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/caching/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://blog.jsontapose.com/tags/database/</link>
+      <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orm</title>
+      <link>https://blog.jsontapose.com/tags/orm/</link>
+      <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/orm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://blog.jsontapose.com/tags/performance/</link>
+      <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sql-Join</title>
+      <link>https://blog.jsontapose.com/tags/sql-join/</link>
+      <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sql-join/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typeorm</title>
+      <link>https://blog.jsontapose.com/tags/typeorm/</link>
+      <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typeorm/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Commonjs</title>
       <link>https://blog.jsontapose.com/tags/commonjs/</link>
@@ -41,13 +90,6 @@
       <link>https://blog.jsontapose.com/tags/module-resolution/</link>
       <pubDate>Thu, 29 Jan 2026 13:23:24 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/module-resolution/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Thu, 29 Jan 2026 13:23:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
       <description></description>
     </item>
     <item>
@@ -349,13 +391,6 @@
       <link>https://blog.jsontapose.com/tags/linux-kernel/</link>
       <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/linux-kernel/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Performance</title>
-      <link>https://blog.jsontapose.com/tags/performance/</link>
-      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/performance/</guid>
       <description></description>
     </item>
     <item>
@@ -800,13 +835,6 @@
       <description></description>
     </item>
     <item>
-      <title>Database</title>
-      <link>https://blog.jsontapose.com/tags/database/</link>
-      <pubDate>Thu, 08 Jan 2026 13:15:01 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/database/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Encoding</title>
       <link>https://blog.jsontapose.com/tags/encoding/</link>
       <pubDate>Thu, 08 Jan 2026 13:15:01 +0000</pubDate>
@@ -1084,13 +1112,6 @@
       <link>https://blog.jsontapose.com/tags/architecture/</link>
       <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/architecture/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Caching</title>
-      <link>https://blog.jsontapose.com/tags/caching/</link>
-      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/caching/</guid>
       <description></description>
     </item>
     <item>
@@ -2008,13 +2029,6 @@
       <link>https://blog.jsontapose.com/tags/join/</link>
       <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/join/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Orm</title>
-      <link>https://blog.jsontapose.com/tags/orm/</link>
-      <pubDate>Sun, 23 Nov 2025 13:06:21 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/orm/</guid>
       <description></description>
     </item>
     <item>
