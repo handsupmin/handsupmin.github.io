@@ -6,8 +6,26 @@
     <description>Recent content in Dto on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 30 Oct 2025 13:11:03 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Jan 2026 13:16:01 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/dto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>class-transformer의 @Expose/@Exclude, @Type, plainToInstance, excludeExtraneousValues 정확히 이해하고 쓰기</title>
+      <link>https://blog.jsontapose.com/posts/class-transformer-expose-exclude-type-plain-to-instance-exclude-extraneous-values-8baf8a/</link>
+      <pubDate>Sat, 31 Jan 2026 13:16:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/class-transformer-expose-exclude-type-plain-to-instance-exclude-extraneous-values-8baf8a/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;API DTO를 다룰 때 class-transformer의 @Expose, @Exclude, @Type와 plainToInstance, excludeExtraneousValues 옵션을 정확히 이해해야 데이터 노출 제어와 변환 일관성을 확보할 수 있음
+아래는 개념 정의와 동작 방향, 자주 생기는 오해 정리 및 최소 예시&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;expose와-exclude&#34;&gt;@Expose와 @Exclude&lt;/h3&gt;
+&lt;p&gt;핵심 개념&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;@Expose: 변환 대상으로 명시적 노출 표시&lt;/li&gt;
+&lt;li&gt;@Exclude: 변환에서 제외 표시&lt;/li&gt;
+&lt;li&gt;기본 전략은 include-all에 가까움. 즉 아무 옵션 없이 변환하면 대부분의 필드가 그대로 따라옴. 진짜 필드 필터링을 원하면 @Exclude 사용 또는 excludeExtraneousValues 옵션과 함께 @Expose 사용 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;동작 원리&lt;/p&gt;</description>
+    </item>
     <item>
       <title>NestJS Swagger 가이드 — ApiProperty와 PickType/OmitType/PartialType 사용법</title>
       <link>https://blog.jsontapose.com/posts/nestjs-swagger-apiproperty-picktype-omittype-partialtype-200c9b/</link>
