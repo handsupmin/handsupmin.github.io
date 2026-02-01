@@ -6,8 +6,45 @@
     <description>Recent content in Typescript on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 31 Jan 2026 13:16:01 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Feb 2026 13:16:32 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vitest 완벽 가이드</title>
+      <link>https://blog.jsontapose.com/posts/vitest-complete-guide-3d3f4f/</link>
+      <pubDate>Sun, 01 Feb 2026 13:16:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/vitest-complete-guide-3d3f4f/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Vite 기반의 테스트 프레임워크 Vitest 소개 및 실무 사용 패턴 정리
+Jest와 거의 동일한 API를 제공하고, Vite의 ESM/HMR을 활용해 빠른 재실행을 제공함
+Vite 프로젝트에서는 최소 설정으로 바로 사용 가능&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;빠른 실행과 재실행, watch 효율 높음&lt;/li&gt;
+&lt;li&gt;Jest API 호환성 높아 러닝 커브 낮음&lt;/li&gt;
+&lt;li&gt;TypeScript 네이티브 지원&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-기본-구조&#34;&gt;1. 기본 구조&lt;/h2&gt;
+&lt;h3 id=&#34;테스트-파일-명명-규칙&#34;&gt;테스트 파일 명명 규칙&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;*.spec.ts     또는     *.test.ts&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;describename-fn&#34;&gt;describe(name, fn)&lt;/h3&gt;
+&lt;p&gt;관련 테스트를 그룹화하는 컨테이너&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; describe&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; it&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; expect &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;vitest&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;describe&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;계산기&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  it&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;두 수를 더한다&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    expect&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;).&lt;/span&gt;toBe&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  it&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;두 수를 뺀다&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    expect&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;).&lt;/span&gt;toBe&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;})&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;})&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;첫 번째 인자: 그룹 이름&lt;/li&gt;
+&lt;li&gt;두 번째 인자: 테스트 콜백&lt;/li&gt;
+&lt;li&gt;중첩 describe 구성 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;itname-fn--testname-fn&#34;&gt;it(name, fn) / test(name, fn)&lt;/h3&gt;
+&lt;p&gt;개별 테스트 케이스 정의, 두 API는 동일 동작&lt;/p&gt;</description>
+    </item>
     <item>
       <title>class-transformer의 @Expose/@Exclude, @Type, plainToInstance, excludeExtraneousValues 정확히 이해하고 쓰기</title>
       <link>https://blog.jsontapose.com/posts/class-transformer-expose-exclude-type-plain-to-instance-exclude-extraneous-values-8baf8a/</link>
