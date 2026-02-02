@@ -6,8 +6,64 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 01 Feb 2026 13:16:32 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 13:24:37 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build-Tool</title>
+      <link>https://blog.jsontapose.com/tags/build-tool/</link>
+      <pubDate>Mon, 02 Feb 2026 13:24:37 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/build-tool/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esbuild</title>
+      <link>https://blog.jsontapose.com/tags/esbuild/</link>
+      <pubDate>Mon, 02 Feb 2026 13:24:37 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/esbuild/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esm</title>
+      <link>https://blog.jsontapose.com/tags/esm/</link>
+      <pubDate>Mon, 02 Feb 2026 13:24:37 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/esm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frontend</title>
+      <link>https://blog.jsontapose.com/tags/frontend/</link>
+      <pubDate>Mon, 02 Feb 2026 13:24:37 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/frontend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hmr</title>
+      <link>https://blog.jsontapose.com/tags/hmr/</link>
+      <pubDate>Mon, 02 Feb 2026 13:24:37 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/hmr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rollup</title>
+      <link>https://blog.jsontapose.com/tags/rollup/</link>
+      <pubDate>Mon, 02 Feb 2026 13:24:37 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/rollup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vite</title>
+      <link>https://blog.jsontapose.com/tags/vite/</link>
+      <pubDate>Mon, 02 Feb 2026 13:24:37 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/vite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vitest</title>
+      <link>https://blog.jsontapose.com/tags/vitest/</link>
+      <pubDate>Mon, 02 Feb 2026 13:24:37 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/vitest/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cli</title>
       <link>https://blog.jsontapose.com/tags/cli/</link>
@@ -62,20 +118,6 @@
       <link>https://blog.jsontapose.com/tags/unit-testing/</link>
       <pubDate>Sun, 01 Feb 2026 13:16:32 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/unit-testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vite</title>
-      <link>https://blog.jsontapose.com/tags/vite/</link>
-      <pubDate>Sun, 01 Feb 2026 13:16:32 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/vite/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vitest</title>
-      <link>https://blog.jsontapose.com/tags/vitest/</link>
-      <pubDate>Sun, 01 Feb 2026 13:16:32 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/vitest/</guid>
       <description></description>
     </item>
     <item>
@@ -188,13 +230,6 @@
       <link>https://blog.jsontapose.com/tags/compiler-options/</link>
       <pubDate>Thu, 29 Jan 2026 13:23:24 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/compiler-options/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Esm</title>
-      <link>https://blog.jsontapose.com/tags/esm/</link>
-      <pubDate>Thu, 29 Jan 2026 13:23:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/esm/</guid>
       <description></description>
     </item>
     <item>
@@ -2197,13 +2232,6 @@
       <link>https://blog.jsontapose.com/tags/es6/</link>
       <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/es6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Frontend</title>
-      <link>https://blog.jsontapose.com/tags/frontend/</link>
-      <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/frontend/</guid>
       <description></description>
     </item>
     <item>

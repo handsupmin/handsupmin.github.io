@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Esbuild on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/esbuild/</link>
+    <description>Recent content in Esbuild on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 02 Feb 2026 13:24:37 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/esbuild/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vite 개요와 작동 원리 — ESM 기반 개발 서버, esbuild 프리번들, Rollup 빌드</title>
+      <link>https://blog.jsontapose.com/posts/vite-esm-esbuild-rollup-overview-dc5ca1/</link>
+      <pubDate>Mon, 02 Feb 2026 13:24:37 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/vite-esm-esbuild-rollup-overview-dc5ca1/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;차세대 프론트엔드 빌드 도구 Vite 요약
+Vue.js 창시자 Evan You가 만들었고, 개발 중 대기 시간을 줄이는 데 초점 맞춤
+프랑스어로 vite는 빠름을 의미함&lt;/p&gt;
+&lt;p&gt;핵심 가치&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;개발 서버 즉시 기동에 가까운 체감 속도&lt;/li&gt;
+&lt;li&gt;HMR이 가볍고 빠르게 동작&lt;/li&gt;
+&lt;li&gt;의존성 프리번들을 esbuild로 처리해 개발 경험 가속&lt;/li&gt;
+&lt;li&gt;프로덕션 빌드는 Rollup으로 안정적 번들 생성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;배경과-문제&#34;&gt;배경과 문제&lt;/h3&gt;
+&lt;p&gt;기존 번들러(Webpack) 방식은 시작 시 전체 그래프를 사전 번들링하는 구조&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;프로젝트 규모가 커질수록 첫 기동이 지연&lt;/li&gt;
+&lt;li&gt;코드 변경 반영 또한 번들 재생성 비용으로 지연 발생&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;개발 체감 문제&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
