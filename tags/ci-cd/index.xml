@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ci-Cd on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/ci-cd/</link>
+    <description>Recent content in Ci-Cd on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 03 Feb 2026 13:24:57 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/ci-cd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SWC로 TypeScript/JavaScript 빌드 가속하기 — Babel·tsc 대비 장점과 NestJS 적용 포인트</title>
+      <link>https://blog.jsontapose.com/posts/swc-typescript-javascript-build-acceleration-babel-tsc-nestjs-c942ce/</link>
+      <pubDate>Tue, 03 Feb 2026 13:24:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/swc-typescript-javascript-build-acceleration-babel-tsc-nestjs-c942ce/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;SWC는 Rust로 작성된 초고속 TypeScript/JavaScript 컴파일러 겸 트랜스파일러
+동일한 작업을 수행하는 Babel이나 tsc 대비 10~20배 수준의 성능 향상이 보고됨
+Rust로 구현되어 JS 런타임 기반 도구 대비 낮은 오버헤드와 높은 병렬 처리 효율 확보&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;p&gt;목적  TS/JS 소스 코드를 목표 런타임에서 실행 가능한 코드로 빠르게 변환
+특징  타입 체크 미포함, 변환에 집중해 극단적 속도 추구
+적용 범위  컴파일 단계와 테스트 실행, 개발 서버 부팅, CI 빌드 가속에 유효
+채택 사례  Next.js에 기본 통합됨, 서버 프레임워크에서도 선택지로 확산 중&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
