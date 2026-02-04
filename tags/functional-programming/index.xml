@@ -6,8 +6,27 @@
     <description>Recent content in Functional-Programming on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 15 Nov 2025 13:07:01 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Feb 2026 13:25:03 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ramda 핵심 개념 정리와 R.prop 안전한 속성 접근, 커링·조합·주의사항</title>
+      <link>https://blog.jsontapose.com/posts/ramda-core-and-r-prop-currying-composition-caveats-f3fa82/</link>
+      <pubDate>Wed, 04 Feb 2026 13:25:03 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/ramda-core-and-r-prop-currying-composition-caveats-f3fa82/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Ramda는 JavaScript와 TypeScript에서 함수형 프로그래밍을 실용적으로 적용하기 위한 유틸리티 모음집임
+순수 함수, 불변성, 커링, 함수 조합을 일관된 인터페이스로 제공하며, 매개변수 순서를 함수 → 데이터로 통일해 조합과 부분 적용을 자연스럽게 만듦
+이 글은 R.prop을 중심으로 Ramda 핵심 함수의 개념과 사용법, 타입 고려사항, 흔한 함정과 우회 전략을 정리함&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;rprop-개념과-문법&#34;&gt;R.prop 개념과 문법&lt;/h3&gt;
+&lt;p&gt;목적과 동작 원리&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;객체의 특정 속성 값을 안전하게 조회하는 읽기 전용 도구&lt;/li&gt;
+&lt;li&gt;속성이 없거나 undefined일 수 있는 상황에서 런타임 예외 없이 undefined 반환&lt;/li&gt;
+&lt;li&gt;커링 지원으로 속성 이름을 고정해 재사용 가능한 픽커 함수 구성에 유리함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;시그니처&lt;/p&gt;</description>
+    </item>
     <item>
       <title>JavaScript Array.prototype.map 개념과 사용법 정리</title>
       <link>https://blog.jsontapose.com/posts/javascript-array-prototype-map-01352e/</link>
