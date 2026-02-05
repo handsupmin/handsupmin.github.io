@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Structured-Clone on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/structured-clone/</link>
+    <description>Recent content in Structured-Clone on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 05 Feb 2026 13:26:26 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/structured-clone/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript 깊은 복사 vs 얕은 복사, structuredClone 사용 가이드</title>
+      <link>https://blog.jsontapose.com/posts/javascript-structuredclone-deep-copy-shallow-copy-7cdc3a/</link>
+      <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/javascript-structuredclone-deep-copy-shallow-copy-7cdc3a/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;값 복사에서 가장 흔한 실수는 얕은 복사와 깊은 복사의 차이를 간과하는 것임
+이 글은 JSON 해킹이나 라이브러리 대신 브라우저와 런타임이 제공하는 structuredClone으로 깊은 복사를 안정적으로 수행하는 방법과 주의점을 정리함&lt;/p&gt;
+&lt;h3 id=&#34;얕은-복사&#34;&gt;얕은 복사&lt;/h3&gt;
+&lt;p&gt;JavaScript의 전개 연산자 &amp;hellip;로 만드는 복사는 기본적으로 얕은 복사임
+겉 모양과 1단계 속성은 복제되지만 중첩된 객체는 동일 참조를 공유함&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; myOriginal &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  someProp&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;with a string value&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  anotherProp&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    withAnotherProp&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    andAnotherProp&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; myShallowCopy &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;...&lt;/span&gt;myOriginal &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;myShallowCopy&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;aNewProp &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;a new value&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;console&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;log&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;myOriginal&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;aNewProp&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// ^ logs `undefined`
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;myShallowCopy&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;anotherProp&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;aNewProp &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;a new value&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;console&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;log&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;myOriginal&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;anotherProp&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;aNewProp&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// ^ logs `a new value`
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;기본형 값은 값 자체가 복사되지만 객체 같은 참조형은 레퍼런스가 복사됨
+따라서 중첩된 구조를 안전하게 분리하려면 깊은 복사가 필요함&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 04 Feb 2026 13:25:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Feb 2026 13:26:26 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep-Copy</title>
+      <link>https://blog.jsontapose.com/tags/deep-copy/</link>
+      <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/deep-copy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shallow-Copy</title>
+      <link>https://blog.jsontapose.com/tags/shallow-copy/</link>
+      <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/shallow-copy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Structured-Clone</title>
+      <link>https://blog.jsontapose.com/tags/structured-clone/</link>
+      <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/structured-clone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Apis</title>
+      <link>https://blog.jsontapose.com/tags/web-apis/</link>
+      <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/web-apis/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Composition</title>
       <link>https://blog.jsontapose.com/tags/composition/</link>
@@ -34,13 +76,6 @@
       <link>https://blog.jsontapose.com/tags/immutability/</link>
       <pubDate>Wed, 04 Feb 2026 13:25:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/immutability/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Wed, 04 Feb 2026 13:25:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -279,13 +314,6 @@
       <link>https://blog.jsontapose.com/tags/database/</link>
       <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/database/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
       <description></description>
     </item>
     <item>
