@@ -6,20 +6,55 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 05 Feb 2026 13:26:26 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 13:24:46 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Deep-Copy</title>
-      <link>https://blog.jsontapose.com/tags/deep-copy/</link>
-      <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/deep-copy/</guid>
+      <title>Ambient-Declarations</title>
+      <link>https://blog.jsontapose.com/tags/ambient-declarations/</link>
+      <pubDate>Fri, 06 Feb 2026 13:24:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ambient-declarations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Declaration-Files</title>
+      <link>https://blog.jsontapose.com/tags/declaration-files/</link>
+      <pubDate>Fri, 06 Feb 2026 13:24:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/declaration-files/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interop</title>
+      <link>https://blog.jsontapose.com/tags/interop/</link>
+      <pubDate>Fri, 06 Feb 2026 13:24:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/interop/</guid>
       <description></description>
     </item>
     <item>
       <title>Javascript</title>
       <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
+      <pubDate>Fri, 06 Feb 2026 13:24:46 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type-Declarations</title>
+      <link>https://blog.jsontapose.com/tags/type-declarations/</link>
+      <pubDate>Fri, 06 Feb 2026 13:24:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/type-declarations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Typescript</title>
+      <link>https://blog.jsontapose.com/tags/typescript/</link>
+      <pubDate>Fri, 06 Feb 2026 13:24:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deep-Copy</title>
+      <link>https://blog.jsontapose.com/tags/deep-copy/</link>
+      <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/deep-copy/</guid>
       <description></description>
     </item>
     <item>
@@ -83,13 +118,6 @@
       <link>https://blog.jsontapose.com/tags/ramda/</link>
       <pubDate>Wed, 04 Feb 2026 13:25:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/ramda/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Typescript</title>
-      <link>https://blog.jsontapose.com/tags/typescript/</link>
-      <pubDate>Wed, 04 Feb 2026 13:25:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/typescript/</guid>
       <description></description>
     </item>
     <item>

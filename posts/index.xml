@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 05 Feb 2026 13:26:26 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 13:24:46 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,35 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TypeScript에서 declare function의 개념과 사용 시점</title>
+      <link>https://blog.jsontapose.com/posts/typescript-declare-function-53e697/</link>
+      <pubDate>Fri, 06 Feb 2026 13:24:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/typescript-declare-function-53e697/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;TypeScript의 declare 키워드는 외부에서 이미 구현된 값의 타입 정보를 컴파일러에 알려주는 용도임
+실제 구현은 다른 런타임 환경이나 스크립트에 존재하고, TypeScript는 타입 검사만 수행함
+선언은 자바스크립트 코드로 출력되지 않음&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;declare function: 외부에 존재하는 함수의 시그니처만 제공하는 선언&lt;/li&gt;
+&lt;li&gt;사용 위치: 주로 .d.ts 선언 파일, 필요 시 .ts에서도 가능하지만 빌드 결과물에는 코드가 생성되지 않음&lt;/li&gt;
+&lt;li&gt;목적: 컴파일 타임에 타입을 인지시켜 오류를 줄이고, IDE 보조 기능을 활성화함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;언제-사용하나&#34;&gt;언제 사용하나&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;타입 정보가 없는 외부 자바스크립트 라이브러리 사용 시&lt;/li&gt;
+&lt;li&gt;글로벌로 노출된 함수나 변수를 TypeScript가 모를 때&lt;/li&gt;
+&lt;li&gt;JS와 TS 혼용 프로젝트에서 점진적 마이그레이션을 진행할 때&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;예시&#34;&gt;예시&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;글로벌 함수 선언&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 이미 어딘가에서 구현된 전역 함수가 있다고 가정
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// my-globals.d.ts
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;declare&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;function&lt;/span&gt; myGlobalFunction&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;msg: &lt;span style=&#34;color:#81a1c1&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;void&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이렇게 선언하면 TypeScript가 함수 존재와 시그니처를 인식함&lt;/p&gt;</description>
     </item>
     <item>
       <title>JavaScript 깊은 복사 vs 얕은 복사, structuredClone 사용 가이드</title>
