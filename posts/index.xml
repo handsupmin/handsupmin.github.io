@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 06 Feb 2026 13:24:46 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Feb 2026 13:16:22 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,48 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>class-transformer와 class-validator로 DTO 변환·검증 패턴 정리</title>
+      <link>https://blog.jsontapose.com/posts/class-transformer-class-validator-dto-7d4133/</link>
+      <pubDate>Sat, 07 Feb 2026 13:16:22 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/class-transformer-class-validator-dto-7d4133/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;클라이언트에서 서버로 들어오는 요청 데이터를 DTO로 다루면 변환과 검증의 경계를 명확히 유지 가능함
+class-transformer는 입력을 클래스 인스턴스로 변환하는 역할, class-validator는 변환된 인스턴스의 유효성 검증 역할
+두 라이브러리를 함께 쓰면 DTO 레이어에서 데이터 정합성을 선제적으로 보장 가능함&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;DTO 데이터 전송 객체, 외부 입력을 내부 도메인으로 들이기 전 구조와 제약을 고정하는 경계&lt;/li&gt;
+&lt;li&gt;class-transformer plain object ↔ 클래스 인스턴스 변환, 노출/제외 필드 제어&lt;/li&gt;
+&lt;li&gt;class-validator 데코레이터 기반 유효성 규칙 선언, 실행 시 검증 에러 수집&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;설치&#34;&gt;설치&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;npm install class-transformer class-validator&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;사용-흐름과-최소-예시&#34;&gt;사용 흐름과 최소 예시&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;입력 JSON 수신 → DTO 클래스로 변환 → DTO 인스턴스 검증 → 실패 시 에러 응답, 성공 시 비즈니스 로직으로 전달&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; Expose&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; Exclude&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; plainToInstance &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;class-transformer&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; IsInt&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; IsString&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; validate &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;class-validator&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;class&lt;/span&gt; UserDTO &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;@IsString&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;@Expose&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  name: &lt;span style=&#34;color:#81a1c1&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;@IsInt&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;@Expose&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  age: &lt;span style=&#34;color:#81a1c1&#34;&gt;number&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;@Exclude&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  password?: &lt;span style=&#34;color:#81a1c1&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; dto &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; plainToInstance&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;UserDTO&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; payload&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;const&lt;/span&gt; errors &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;await&lt;/span&gt; validate&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;dto&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;errors&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;length&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 검증 실패 처리
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;포인트&lt;/p&gt;</description>
     </item>
     <item>
       <title>TypeScript에서 declare function의 개념과 사용 시점</title>
