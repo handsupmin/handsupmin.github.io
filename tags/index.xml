@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 07 Feb 2026 13:16:22 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 13:16:54 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Array</title>
+      <link>https://blog.jsontapose.com/tags/array/</link>
+      <pubDate>Sun, 08 Feb 2026 13:16:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/array/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Functional-Programming</title>
+      <link>https://blog.jsontapose.com/tags/functional-programming/</link>
+      <pubDate>Sun, 08 Feb 2026 13:16:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/functional-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Sun, 08 Feb 2026 13:16:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Language-Api</title>
+      <link>https://blog.jsontapose.com/tags/language-api/</link>
+      <pubDate>Sun, 08 Feb 2026 13:16:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/language-api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reduce</title>
+      <link>https://blog.jsontapose.com/tags/reduce/</link>
+      <pubDate>Sun, 08 Feb 2026 13:16:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/reduce/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Class-Transformer</title>
       <link>https://blog.jsontapose.com/tags/class-transformer/</link>
@@ -72,13 +107,6 @@
       <description></description>
     </item>
     <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Fri, 06 Feb 2026 13:24:46 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Type-Declarations</title>
       <link>https://blog.jsontapose.com/tags/type-declarations/</link>
       <pubDate>Fri, 06 Feb 2026 13:24:46 +0000</pubDate>
@@ -132,13 +160,6 @@
       <link>https://blog.jsontapose.com/tags/currying/</link>
       <pubDate>Wed, 04 Feb 2026 13:25:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/currying/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Functional-Programming</title>
-      <link>https://blog.jsontapose.com/tags/functional-programming/</link>
-      <pubDate>Wed, 04 Feb 2026 13:25:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/functional-programming/</guid>
       <description></description>
     </item>
     <item>
@@ -2022,13 +2043,6 @@
       <link>https://blog.jsontapose.com/tags/readiness-probe/</link>
       <pubDate>Thu, 11 Dec 2025 13:14:28 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/readiness-probe/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Array</title>
-      <link>https://blog.jsontapose.com/tags/array/</link>
-      <pubDate>Wed, 10 Dec 2025 13:14:08 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/array/</guid>
       <description></description>
     </item>
     <item>
