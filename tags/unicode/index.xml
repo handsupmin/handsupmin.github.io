@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Unicode on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/unicode/</link>
+    <description>Recent content in Unicode on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 09 Feb 2026 13:28:52 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/unicode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL Server nvarchar와 nchar 길이 단위 오해 바로잡기</title>
+      <link>https://blog.jsontapose.com/posts/sql-server-nvarchar-nchar-length-misconception-c1f1aa/</link>
+      <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/sql-server-nvarchar-nchar-length-misconception-c1f1aa/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;nvarchar와 nchar를 사용할 때 n이 곧 문자 개수라고 가정하는 경우가 많음
+하지만 SQL Server에서 nchar(n), nvarchar(n)의 n은 문자 개수가 아니라 2바이트 단위의 길이, 즉 바이트 페어(byte-pair) 개수로 정의됨
+문자 집합 범위에 따라 한 문자가 1개 혹은 2개의 바이트 페어를 사용할 수 있어 저장 가능한 문자의 실제 개수는 달라짐&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;nchar(n), nvarchar(n)의 n은 0~4000 바이트 페어 범위의 길이 의미&lt;/li&gt;
+&lt;li&gt;하나의 바이트 페어는 2바이트로, 내부적으로 UTF-16 코드 유닛 단위로 이해 가능&lt;/li&gt;
+&lt;li&gt;유니코드 BMP 범위(0~65,535) 문자는 보통 1 바이트 페어 사용&lt;/li&gt;
+&lt;li&gt;보조 평면 범위(65,536~1,114,111) 문자는 서러게이트 페어로 2 바이트 페어 사용&lt;/li&gt;
+&lt;li&gt;따라서 n이 문자의 최대 개수를 보장하지 않음&lt;/li&gt;
+&lt;li&gt;char(n), varchar(n)은 n이 바이트 수 의미라는 점에서 유사한 맥락이나, nvarchar/nchar는 바이트 페어 기준이라는 차이 존재&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;추가 기본값 규칙&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

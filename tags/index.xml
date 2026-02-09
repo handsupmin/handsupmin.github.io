@@ -6,8 +6,64 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 08 Feb 2026 13:16:54 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Feb 2026 13:28:52 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Collation</title>
+      <link>https://blog.jsontapose.com/tags/collation/</link>
+      <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/collation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Types</title>
+      <link>https://blog.jsontapose.com/tags/data-types/</link>
+      <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/data-types/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nchar</title>
+      <link>https://blog.jsontapose.com/tags/nchar/</link>
+      <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nchar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nvarchar</title>
+      <link>https://blog.jsontapose.com/tags/nvarchar/</link>
+      <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nvarchar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sql-Server</title>
+      <link>https://blog.jsontapose.com/tags/sql-server/</link>
+      <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sql-server/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Storage</title>
+      <link>https://blog.jsontapose.com/tags/storage/</link>
+      <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/storage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unicode</title>
+      <link>https://blog.jsontapose.com/tags/unicode/</link>
+      <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/unicode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Utf-16</title>
+      <link>https://blog.jsontapose.com/tags/utf-16/</link>
+      <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/utf-16/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Array</title>
       <link>https://blog.jsontapose.com/tags/array/</link>
@@ -1136,13 +1192,6 @@
       <description></description>
     </item>
     <item>
-      <title>Collation</title>
-      <link>https://blog.jsontapose.com/tags/collation/</link>
-      <pubDate>Thu, 08 Jan 2026 13:15:01 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/collation/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Encoding</title>
       <link>https://blog.jsontapose.com/tags/encoding/</link>
       <pubDate>Thu, 08 Jan 2026 13:15:01 +0000</pubDate>
@@ -1738,13 +1787,6 @@
       <description></description>
     </item>
     <item>
-      <title>Storage</title>
-      <link>https://blog.jsontapose.com/tags/storage/</link>
-      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/storage/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Data-Structures</title>
       <link>https://blog.jsontapose.com/tags/data-structures/</link>
       <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
@@ -2106,13 +2148,6 @@
       <link>https://blog.jsontapose.com/tags/postgresql/</link>
       <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/postgresql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sql-Server</title>
-      <link>https://blog.jsontapose.com/tags/sql-server/</link>
-      <pubDate>Fri, 05 Dec 2025 13:11:35 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sql-server/</guid>
       <description></description>
     </item>
     <item>
