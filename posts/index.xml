@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 09 Feb 2026 13:28:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Feb 2026 13:29:20 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,24 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>window load vs document DOMContentLoaded 트리거 차이와 사용 시점</title>
+      <link>https://blog.jsontapose.com/posts/window-load-vs-document-domcontentloaded-b80cb4/</link>
+      <pubDate>Tue, 10 Feb 2026 13:29:20 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/window-load-vs-document-domcontentloaded-b80cb4/</guid>
+      <description>&lt;p&gt;window load는 js css 이미지 등 모든 리소스 로드 완료 시점 발생
+document DOMContentLoaded는 초기 DOM 파싱 완료 시점 발생, 외부 리소스 비대기&lt;/p&gt;
+&lt;p&gt;UI 바인딩 초기화는 DOMContentLoaded
+이미지 크기 등 전체 리소스 필요 계산은 load&lt;/p&gt;
+&lt;p&gt;body onload window.onload에 매핑됨 마지막 할당만 유효
+덮어쓰기 방지용 addEventListener 권장&lt;/p&gt;
+&lt;h3 id=&#34;참고자료&#34;&gt;참고자료&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload&#34;&gt;https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>SQL Server nvarchar와 nchar 길이 단위 오해 바로잡기</title>

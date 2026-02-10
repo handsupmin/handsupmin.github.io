@@ -6,20 +6,20 @@
     <description>Recent content in Categories on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 09 Feb 2026 13:28:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Feb 2026 13:29:20 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/categories/javascript/</link>
+      <pubDate>Tue, 10 Feb 2026 13:29:20 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/categories/javascript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Database</title>
       <link>https://blog.jsontapose.com/categories/database/</link>
       <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
       <guid>https://blog.jsontapose.com/categories/database/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/categories/javascript/</link>
-      <pubDate>Sun, 08 Feb 2026 13:16:54 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/categories/javascript/</guid>
       <description></description>
     </item>
     <item>
