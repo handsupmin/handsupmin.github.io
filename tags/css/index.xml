@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Css on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/css/</link>
+    <description>Recent content in Css on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 11 Feb 2026 13:29:11 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS 미디어 쿼리 기본기와 prefers-color-scheme 적용</title>
+      <link>https://blog.jsontapose.com/posts/css-media-queries-prefers-color-scheme-9b1dbe/</link>
+      <pubDate>Wed, 11 Feb 2026 13:29:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/css-media-queries-prefers-color-scheme-9b1dbe/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;미디어 쿼리는 뷰포트나 사용자 환경에 따라 CSS를 조건부로 적용하기 위한 기능임
+다른 언어의 if 조건문과 유사하게 조건이 참일 때만 특정 스타일이 활성화됨&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;p&gt;@media 규칙과 하나 이상의 조건으로 구성
+조건은 화면 폭, 해상도, 사용자 선호도 등 미디어 특성으로 표현됨
+조건이 참이면 블록 내부 스타일이 캐스케이딩에 참여하고 거짓이면 무시됨&lt;/p&gt;
+&lt;h3 id=&#34;문법과-구조&#34;&gt;문법과 구조&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;media&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;조건&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;/* 스타일 */&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;조건 예시&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;max-width: 상한 폭 이하에서 적용&lt;/li&gt;
+&lt;li&gt;min-width: 하한 폭 이상에서 적용&lt;/li&gt;
+&lt;li&gt;논리 결합 and, not 사용 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리&#34;&gt;동작 원리&lt;/h3&gt;
+&lt;p&gt;브라우저가 런타임에 조건을 평가함
+윈도우 리사이즈나 기기 회전, OS 설정 변경 시 즉시 재평가되어 스타일 재적용됨
+충돌 시 일반 CSS 우선순위 규칙을 따름 우선순위 &amp;gt; 특이성 &amp;gt; 선언 순서
+모바일 퍼스트 전략 권장 min-width 기준으로 점진적 확장 구성&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
