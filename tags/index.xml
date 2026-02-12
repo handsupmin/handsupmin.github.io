@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 11 Feb 2026 13:29:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Feb 2026 13:28:49 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Array</title>
+      <link>https://blog.jsontapose.com/tags/array/</link>
+      <pubDate>Thu, 12 Feb 2026 13:28:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/array/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Browser-Compatibility</title>
+      <link>https://blog.jsontapose.com/tags/browser-compatibility/</link>
+      <pubDate>Thu, 12 Feb 2026 13:28:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/browser-compatibility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Es5</title>
+      <link>https://blog.jsontapose.com/tags/es5/</link>
+      <pubDate>Thu, 12 Feb 2026 13:28:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/es5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Functional-Programming</title>
+      <link>https://blog.jsontapose.com/tags/functional-programming/</link>
+      <pubDate>Thu, 12 Feb 2026 13:28:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/functional-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Thu, 12 Feb 2026 13:28:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Map</title>
+      <link>https://blog.jsontapose.com/tags/map/</link>
+      <pubDate>Thu, 12 Feb 2026 13:28:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tips</title>
+      <link>https://blog.jsontapose.com/tags/tips/</link>
+      <pubDate>Thu, 12 Feb 2026 13:28:49 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/tips/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Color-Scheme</title>
       <link>https://blog.jsontapose.com/tags/color-scheme/</link>
@@ -48,13 +97,6 @@
       <link>https://blog.jsontapose.com/tags/dom/</link>
       <pubDate>Tue, 10 Feb 2026 13:29:20 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/dom/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Tue, 10 Feb 2026 13:29:20 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -118,20 +160,6 @@
       <link>https://blog.jsontapose.com/tags/utf-16/</link>
       <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/utf-16/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Array</title>
-      <link>https://blog.jsontapose.com/tags/array/</link>
-      <pubDate>Sun, 08 Feb 2026 13:16:54 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/array/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Functional-Programming</title>
-      <link>https://blog.jsontapose.com/tags/functional-programming/</link>
-      <pubDate>Sun, 08 Feb 2026 13:16:54 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/functional-programming/</guid>
       <description></description>
     </item>
     <item>
@@ -1833,13 +1861,6 @@
       <link>https://blog.jsontapose.com/tags/data-structures/</link>
       <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/data-structures/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Map</title>
-      <link>https://blog.jsontapose.com/tags/map/</link>
-      <pubDate>Sun, 21 Dec 2025 13:09:33 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/map/</guid>
       <description></description>
     </item>
     <item>
