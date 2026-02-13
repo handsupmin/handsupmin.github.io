@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Web-Performance on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/web-performance/</link>
+    <description>Recent content in Web-Performance on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 13 Feb 2026 13:25:25 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/web-performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>a 태그 새 탭 열기와 보안 가이드 target=_blank rel=noopener noreferrer</title>
+      <link>https://blog.jsontapose.com/posts/a-tag-open-in-new-tab-noopener-noreferrer-9d1fb5/</link>
+      <pubDate>Fri, 13 Feb 2026 13:25:25 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/a-tag-open-in-new-tab-noopener-noreferrer-9d1fb5/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;링크를 새 탭에서 열 때 a 태그에 target=&amp;quot;_blank&amp;quot;를 많이 사용함
+이 경우 window.opener로 원본 페이지에 접근 가능한 취약점과 리소스 간섭 이슈가 발생할 수 있음
+rel=&amp;ldquo;noopener noreferrer&amp;quot;를 함께 지정해 리버스 태브내빙(reverse tabnabbing) 방지와 리퍼러 차단을 적용하는 것이 권장됨&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;target: 링크 대상 브라우징 컨텍스트 지정&lt;/li&gt;
+&lt;li&gt;window.opener: 새 탭에서 원본 창을 참조하는 브라우저 객체&lt;/li&gt;
+&lt;li&gt;rel=noopener: 새 탭에서 window.opener를 끊어 원본 페이지 접근 불가로 만듦, 리버스 태브내빙 방지&lt;/li&gt;
+&lt;li&gt;rel=noreferrer: 새 탭으로 이동 시 Referer 헤더 전송 차단, 원본 페이지 URL 비공개&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;target-값-정리&#34;&gt;target 값 정리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;_self: 현재 탭에서 열기, 기본값이라 명시 생략 가능&lt;/li&gt;
+&lt;li&gt;_blank: 새 탭에서 열기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;target_blank만-사용할-때의-문제&#34;&gt;target=&amp;quot;_blank&amp;quot;만 사용할 때의 문제&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;보안 취약점 발생 가능
+악성 페이지가 window.opener를 통해 부모 창의 location을 임의 변경하여 피싱 페이지로 리디렉션하는 리버스 태브내빙 위험 존재
+원본 페이지의 데이터 접근 시도 등 추가 피해 가능성 있음&lt;/li&gt;
+&lt;li&gt;성능 간섭 가능성
+새 탭이 원본과 같은 브라우징 컨텍스트 그룹에서 실행될 수 있어 이벤트 루프나 리소스 경쟁으로 지연이 커질 수 있음
+무거운 스크립트가 열린 탭 간에 체감 성능 저하를 유발할 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;해결책&#34;&gt;해결책&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;rel=&amp;ldquo;noopener&amp;rdquo;
+새 탭의 window.opener를 null로 만들어 원본 페이지 참조 차단
+탭 간 연결이 끊겨 보안 위험과 리소스 간섭 완화&lt;/li&gt;
+&lt;li&gt;rel=&amp;ldquo;noreferrer&amp;rdquo;
+이동 시 Referer 헤더를 제거해 원본 URL과 경로 노출 방지
+분석이나 리퍼러 기반 측정이 필요한 경우에는 생략을 고려&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;사용-예시&#34;&gt;사용 예시&lt;/h3&gt;
+&lt;p&gt;필수 최소 속성만 명시&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
