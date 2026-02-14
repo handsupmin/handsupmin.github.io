@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 13 Feb 2026 13:25:25 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Feb 2026 13:16:48 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Collections</title>
+      <link>https://blog.jsontapose.com/tags/collections/</link>
+      <pubDate>Sat, 14 Feb 2026 13:16:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/collections/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Csharp</title>
+      <link>https://blog.jsontapose.com/tags/csharp/</link>
+      <pubDate>Sat, 14 Feb 2026 13:16:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/csharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dictionary</title>
+      <link>https://blog.jsontapose.com/tags/dictionary/</link>
+      <pubDate>Sat, 14 Feb 2026 13:16:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dictionary/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dotnet</title>
+      <link>https://blog.jsontapose.com/tags/dotnet/</link>
+      <pubDate>Sat, 14 Feb 2026 13:16:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Generics</title>
+      <link>https://blog.jsontapose.com/tags/generics/</link>
+      <pubDate>Sat, 14 Feb 2026 13:16:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/generics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hashtable</title>
+      <link>https://blog.jsontapose.com/tags/hashtable/</link>
+      <pubDate>Sat, 14 Feb 2026 13:16:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/hashtable/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://blog.jsontapose.com/tags/performance/</link>
+      <pubDate>Sat, 14 Feb 2026 13:16:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/performance/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Anchor</title>
       <link>https://blog.jsontapose.com/tags/anchor/</link>
@@ -153,13 +202,6 @@
       <link>https://blog.jsontapose.com/tags/dom/</link>
       <pubDate>Tue, 10 Feb 2026 13:29:20 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/dom/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Performance</title>
-      <link>https://blog.jsontapose.com/tags/performance/</link>
-      <pubDate>Tue, 10 Feb 2026 13:29:20 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/performance/</guid>
       <description></description>
     </item>
     <item>
@@ -741,13 +783,6 @@
       <link>https://blog.jsontapose.com/tags/conditional-types/</link>
       <pubDate>Sun, 25 Jan 2026 13:12:10 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/conditional-types/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Generics</title>
-      <link>https://blog.jsontapose.com/tags/generics/</link>
-      <pubDate>Sun, 25 Jan 2026 13:12:10 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/generics/</guid>
       <description></description>
     </item>
     <item>

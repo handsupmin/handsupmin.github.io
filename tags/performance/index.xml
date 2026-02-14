@@ -6,8 +6,31 @@
     <description>Recent content in Performance on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 10 Feb 2026 13:29:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Feb 2026 13:16:48 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C# Hashtable vs Dictionary 비교와 선택 기준</title>
+      <link>https://blog.jsontapose.com/posts/csharp-hashtable-vs-dictionary-f52312/</link>
+      <pubDate>Sat, 14 Feb 2026 13:16:48 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/csharp-hashtable-vs-dictionary-f52312/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;C#에서 키와 값으로 데이터를 저장하는 대표 컬렉션은 Hashtable과 Dictionary 두 가지가 있음
+표면적인 사용법은 비슷하지만 제네릭 지원 여부와 타입 처리 방식이 달라 성능과 안정성에서 차이 발생
+핵심 차이와 간단 예시, 선택 기준 정리&lt;/p&gt;
+&lt;h3 id=&#34;핵심-차이&#34;&gt;핵심 차이&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Hashtable&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;비제네릭 컬렉션, Key와 Value가 object로 저장됨&lt;/li&gt;
+&lt;li&gt;값 형식 저장 시 박싱 발생, 꺼낼 때 언박싱 또는 캐스팅 비용 발생&lt;/li&gt;
+&lt;li&gt;컴파일 타임 타입 체크 부재, 런타임 캐스팅 오류 위험 높음&lt;/li&gt;
+&lt;li&gt;레거시 코드와의 호환성은 높으나 일반적으로 권장되지 않음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dictionary&amp;lt;TKey, TValue&amp;gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>window load vs document DOMContentLoaded 트리거 차이와 사용 시점</title>
       <link>https://blog.jsontapose.com/posts/window-load-vs-document-domcontentloaded-b80cb4/</link>
