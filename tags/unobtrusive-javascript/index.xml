@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Unobtrusive-Javascript on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/unobtrusive-javascript/</link>
+    <description>Recent content in Unobtrusive-Javascript on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 15 Feb 2026 13:17:18 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/unobtrusive-javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unobtrusive JavaScript와 HTML·JS 분리 원칙</title>
+      <link>https://blog.jsontapose.com/posts/unobtrusive-javascript-html-js-separation-eec1ed/</link>
+      <pubDate>Sun, 15 Feb 2026 13:17:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/unobtrusive-javascript-html-js-separation-eec1ed/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;Unobtrusive JavaScript는 HTML 구조와 JS 동작을 분리하는 접근 철학
+HTML은 의미와 콘텐츠, CSS는 표현, JS는 상호작용과 상태 제어 담당
+인라인 스크립트와 이벤트 속성 제거, 외부 스크립트에서 안전하게 바인딩하는 방식 지향&lt;/p&gt;
+&lt;p&gt;핵심 목표는 접근성 보장, 점진적 향상, 유지보수성과 테스트 용이성 개선, 캐시 효율 상승, 보안 취약점 노출 감소&lt;/p&gt;
+&lt;h3 id=&#34;핵심-원칙&#34;&gt;핵심 원칙&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML은 의미 중심 마크업 유지&lt;/li&gt;
+&lt;li&gt;CSS는 표현만 담당&lt;/li&gt;
+&lt;li&gt;JS는 DOMContentLoaded 이후 동작 주입&lt;/li&gt;
+&lt;li&gt;인라인 onclick 등 이벤트 속성 사용 금지&lt;/li&gt;
+&lt;li&gt;기능 감지 우선, UA 스니핑 지양&lt;/li&gt;
+&lt;li&gt;데이터 훅은 data-* 속성 사용, 스타일 훅과 분리&lt;/li&gt;
+&lt;li&gt;JS 미동작 상황에서도 기본 기능 유지, 점진적 향상 고려&lt;/li&gt;
+&lt;li&gt;모듈 분리와 의존성 최소화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-방식&#34;&gt;동작 방식&lt;/h3&gt;
+&lt;p&gt;마크업은 링크와 폼이 기본 동작을 스스로 제공하도록 설계
+JS는 존재하면 기본 동작을 확장하거나 향상
+이벤트 바인딩은 외부 스크립트에서 선택자 기반으로 수행, 인라인 스크립트 제거&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
