@@ -6,8 +6,35 @@
     <description>Recent content in Database on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 30 Jan 2026 13:22:31 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 13:26:25 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CTE(Common Table Expression) 개념과 WITH 사용법 요약</title>
+      <link>https://blog.jsontapose.com/posts/cte-common-table-expression-with-usage-4e5d41/</link>
+      <pubDate>Mon, 16 Feb 2026 13:26:25 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/cte-common-table-expression-with-usage-4e5d41/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;CTE는 WITH로 정의하는 이름 있는 임시 결과셋
+바로 다음 한 개 DML에서만 참조 가능하며 실행이 끝나면 범위 소멸
+가독성 향상과 쿼리 구조 분리에 유용함&lt;/p&gt;
+&lt;h3 id=&#34;사용법&#34;&gt;사용법&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;WITH&lt;/span&gt; cte_name &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;col1&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; col2&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;AS&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DML&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;필요 시 컬럼 목록 생략 가능하나 명시를 권장&lt;/p&gt;
+&lt;h3 id=&#34;주의사항&#34;&gt;주의사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;일부 DBMS에서는 배치 내에서 CTE 앞에 오는 쿼리를 세미콜론으로 종료 필요&lt;/li&gt;
+&lt;li&gt;CTE 범위는 바로 뒤 한 개 DML로 한정됨&lt;/li&gt;
+&lt;li&gt;복잡한 쿼리에서 과도한 중첩 사용은 계획 복잡도 증가 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;참고자료&#34;&gt;참고자료&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://s2choco.tistory.com/34&#34;&gt;https://s2choco.tistory.com/34&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://learn.microsoft.com/sql/t-sql/queries/with-common-table-expression-transact-sql&#34;&gt;https://learn.microsoft.com/sql/t-sql/queries/with-common-table-expression-transact-sql&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>TypeORM JOIN vs 코드 레벨 매핑 선택 기준과 실무 트레이드오프</title>
       <link>https://blog.jsontapose.com/posts/typeorm-join-vs-code-level-mapping-a0eaa9/</link>
