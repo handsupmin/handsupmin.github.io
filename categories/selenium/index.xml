@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Selenium on HandsLog</title>
+    <link>https://blog.jsontapose.com/categories/selenium/</link>
+    <description>Recent content in Selenium on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 17 Feb 2026 13:27:05 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/categories/selenium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Selenium WebDriver pageLoadStrategy 동작 원리와 설정 가이드</title>
+      <link>https://blog.jsontapose.com/posts/selenium-webdriver-pageloadstrategy-guide-8cac26/</link>
+      <pubDate>Tue, 17 Feb 2026 13:27:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/selenium-webdriver-pageloadstrategy-guide-8cac26/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;pageLoadStrategy는 WebDriver가 페이지 이동 명령을 언제 완료로 판단할지 결정하는 세션 단위 설정값임. 핵심은 document.readyState 조회 시점을 어떻게 보느냐이며 전략별 대기 조건이 다름. 기본값은 normal이며, 네트워크 리소스가 많아 느린 페이지에서 eager 또는 none으로 바꿔 세션 체감 속도를 높일 수 있음&lt;/p&gt;
+&lt;p&gt;SPA처럼 자바스크립트가 동적으로 화면을 채우는 사이트에서는 readyState가 complete여도 실제 사용자 관점의 완료와 다를 수 있음. 전략 변경 시 명시적 대기 조합 설계가 필수임&lt;/p&gt;
+&lt;p&gt;주의할 점은 get 등 URL 기반 내비게이션과 달리, 클릭이나 폼 제출로 발생한 내비게이션에는 동일한 대기 규칙이 그대로 적용되지 않을 수 있음. 이 경우에도 별도의 대기 전략으로 안정성을 확보해야 함&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

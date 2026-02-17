@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 16 Feb 2026 13:26:25 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 13:27:05 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Document-Readystate</title>
+      <link>https://blog.jsontapose.com/tags/document-readystate/</link>
+      <pubDate>Tue, 17 Feb 2026 13:27:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/document-readystate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>https://blog.jsontapose.com/tags/java/</link>
+      <pubDate>Tue, 17 Feb 2026 13:27:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Page-Load-Strategy</title>
+      <link>https://blog.jsontapose.com/tags/page-load-strategy/</link>
+      <pubDate>Tue, 17 Feb 2026 13:27:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/page-load-strategy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://blog.jsontapose.com/tags/python/</link>
+      <pubDate>Tue, 17 Feb 2026 13:27:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Selenium</title>
+      <link>https://blog.jsontapose.com/tags/selenium/</link>
+      <pubDate>Tue, 17 Feb 2026 13:27:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/selenium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>https://blog.jsontapose.com/tags/testing/</link>
+      <pubDate>Tue, 17 Feb 2026 13:27:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webdriver</title>
+      <link>https://blog.jsontapose.com/tags/webdriver/</link>
+      <pubDate>Tue, 17 Feb 2026 13:27:05 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/webdriver/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cte</title>
       <link>https://blog.jsontapose.com/tags/cte/</link>
@@ -608,13 +657,6 @@
       <link>https://blog.jsontapose.com/tags/spying/</link>
       <pubDate>Sun, 01 Feb 2026 13:16:32 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/spying/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Testing</title>
-      <link>https://blog.jsontapose.com/tags/testing/</link>
-      <pubDate>Sun, 01 Feb 2026 13:16:32 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/testing/</guid>
       <description></description>
     </item>
     <item>
