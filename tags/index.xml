@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 17 Feb 2026 13:27:05 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 13:27:34 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Number</title>
+      <link>https://blog.jsontapose.com/tags/number/</link>
+      <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/number/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parseint</title>
+      <link>https://blog.jsontapose.com/tags/parseint/</link>
+      <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/parseint/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parsing</title>
+      <link>https://blog.jsontapose.com/tags/parsing/</link>
+      <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/parsing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type-Coercion</title>
+      <link>https://blog.jsontapose.com/tags/type-coercion/</link>
+      <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/type-coercion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unary-Plus</title>
+      <link>https://blog.jsontapose.com/tags/unary-plus/</link>
+      <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/unary-plus/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Document-Readystate</title>
       <link>https://blog.jsontapose.com/tags/document-readystate/</link>
@@ -251,13 +293,6 @@
       <link>https://blog.jsontapose.com/tags/functional-programming/</link>
       <pubDate>Thu, 12 Feb 2026 13:28:49 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/functional-programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Thu, 12 Feb 2026 13:28:49 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -2130,13 +2165,6 @@
       <description></description>
     </item>
     <item>
-      <title>Parsing</title>
-      <link>https://blog.jsontapose.com/tags/parsing/</link>
-      <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/parsing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Time</title>
       <link>https://blog.jsontapose.com/tags/time/</link>
       <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
@@ -2470,13 +2498,6 @@
       <link>https://blog.jsontapose.com/tags/truthy-falsy/</link>
       <pubDate>Sat, 29 Nov 2025 13:08:21 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/truthy-falsy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Type-Coercion</title>
-      <link>https://blog.jsontapose.com/tags/type-coercion/</link>
-      <pubDate>Sat, 29 Nov 2025 13:08:21 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/type-coercion/</guid>
       <description></description>
     </item>
     <item>

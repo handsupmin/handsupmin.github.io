@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 17 Feb 2026 13:27:05 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 13:27:34 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,122 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript에서 unary plus(&#43;)와 parseInt 비교 및 선택 기준</title>
+      <link>https://blog.jsontapose.com/posts/unary-plus-vs-parseint-160cb0/</link>
+      <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/unary-plus-vs-parseint-160cb0/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;자바스크립트에서 &lt;code&gt;+&lt;/code&gt; 단항 연산자는 &lt;code&gt;Number&lt;/code&gt; 호출의 축약형으로 동작함
+문자열이나 다양한 타입을 숫자로 바꾸려는 순간에 &lt;code&gt;+value&lt;/code&gt;와 &lt;code&gt;Number(value)&lt;/code&gt;는 같은 의미이고, &lt;code&gt;parseInt&lt;/code&gt;는 문자열에서 정수 접두부만 뽑아내는 파서에 가까움
+같아 보이지만 목적과 실패 조건이 다르므로 상황에 맞게 선택 필요&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;unary plus &lt;code&gt;+x&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;ECMAScript의 ToNumber 규칙 적용&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Number(x)&lt;/code&gt;와 동일한 변환 결과 반환&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Number(value)&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;숫자 전체 표현식이어야 함&lt;/li&gt;
+&lt;li&gt;공백 트림은 허용하지만 유효하지 않은 문자가 섞이면 &lt;code&gt;NaN&lt;/code&gt; 반환&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parseInt(string, radix)&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;문자열의 왼쪽부터 주어진 기수(radix, 2~36)로 해석 가능한 정수 접두부만 파싱&lt;/li&gt;
+&lt;li&gt;유효하지 않은 문자를 만나면 거기서 파싱 중단&lt;/li&gt;
+&lt;li&gt;접두부 숫자가 하나도 없으면 &lt;code&gt;NaN&lt;/code&gt; 반환&lt;/li&gt;
+&lt;li&gt;ES5+에서 기본 기수는 10이지만, &lt;code&gt;0x&lt;/code&gt;/&lt;code&gt;0X&lt;/code&gt; 접두사는 16진수로 처리됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-차이와-사례&#34;&gt;동작 차이와 사례&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;전체 일치 vs 접두 파싱
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Number(&#39;12px&#39;)&lt;/code&gt; → &lt;code&gt;NaN&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parseInt(&#39;12px&#39;, 10)&lt;/code&gt; → &lt;code&gt;12&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;소수와 지수 표기
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Number(&#39;10.5&#39;)&lt;/code&gt; → &lt;code&gt;10.5&lt;/code&gt;, &lt;code&gt;Number(&#39;1e3&#39;)&lt;/code&gt; → &lt;code&gt;1000&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parseInt(&#39;10.5&#39;, 10)&lt;/code&gt; → &lt;code&gt;10&lt;/code&gt; (소수부 절삭)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;빈 문자열과 공백
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Number(&#39;&#39;)&lt;/code&gt; → &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;Number(&#39;   &#39;)&lt;/code&gt; → &lt;code&gt;0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parseInt(&#39;&#39;)&lt;/code&gt; → &lt;code&gt;NaN&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;비문자열 입력
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;+true&lt;/code&gt; → &lt;code&gt;1&lt;/code&gt;, &lt;code&gt;+false&lt;/code&gt; → &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;+null&lt;/code&gt; → &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;+undefined&lt;/code&gt; → &lt;code&gt;NaN&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parseInt(true, 10)&lt;/code&gt; → &lt;code&gt;NaN&lt;/code&gt; (문자열로 변환 시 &amp;rsquo;true&amp;rsquo;라서 숫자 접두부 없음)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;진법 접두사 처리 차이
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Number(&#39;0x10&#39;)&lt;/code&gt; → &lt;code&gt;16&lt;/code&gt;, &lt;code&gt;parseInt(&#39;0x10&#39;)&lt;/code&gt; → &lt;code&gt;16&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Number(&#39;0b101&#39;)&lt;/code&gt; → &lt;code&gt;5&lt;/code&gt; (ES2015+), &lt;code&gt;parseInt(&#39;0b101&#39;)&lt;/code&gt; → &lt;code&gt;0&lt;/code&gt;&lt;br&gt;
+참고로 &lt;code&gt;parseInt(&#39;101&#39;, 2)&lt;/code&gt; → &lt;code&gt;5&lt;/code&gt; 처럼 radix를 명시해야 기대대로 동작함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BigInt 관련
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;+10n&lt;/code&gt;은 TypeError 발생&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Number(10n)&lt;/code&gt;은 &lt;code&gt;10&lt;/code&gt;으로 변환되나 정밀도 손실 가능성 존재&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;선택-기준&#34;&gt;선택 기준&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;전체 문자열이 유효한 숫자여야 하고 실수, 지수 표기도 허용해야 함
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;+value&lt;/code&gt; 또는 &lt;code&gt;Number(value)&lt;/code&gt; 선택&lt;/li&gt;
+&lt;li&gt;가독성 우선이면 &lt;code&gt;Number(value)&lt;/code&gt; 추천, 축약을 선호하면 &lt;code&gt;+value&lt;/code&gt; 선택&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;문자열 앞부분에서 정수만 뽑고 싶거나 비 10진수 파싱 필요
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;parseInt(str, radix)&lt;/code&gt; 선택&lt;/li&gt;
+&lt;li&gt;항상 &lt;code&gt;radix&lt;/code&gt; 명시 권장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;소수부를 보존하면서 부분 파싱이 필요
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;parseFloat&lt;/code&gt; 고려&lt;/li&gt;
+&lt;li&gt;다만 &lt;code&gt;parseFloat&lt;/code&gt;도 접두 파싱이므로 전체 일치 검증이 필요하면 &lt;code&gt;Number&lt;/code&gt; 사용 권장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;베스트-프랙티스&#34;&gt;베스트 프랙티스&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;숫자 변환 의도 전달이 중요할 때 &lt;code&gt;Number(value)&lt;/code&gt; 사용&lt;/li&gt;
+&lt;li&gt;정수 파싱 시 &lt;code&gt;parseInt(str, 10)&lt;/code&gt;처럼 radix를 항상 명시&lt;/li&gt;
+&lt;li&gt;사용자 입력 검증이 필요하면 정규식 또는 스키마 검증으로 전체 형식 검증 후 &lt;code&gt;Number&lt;/code&gt; 변환&lt;/li&gt;
+&lt;li&gt;성능 미세 최적화보다 가독성과 실패 조건의 명확성을 우선&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;간단-예시&#34;&gt;간단 예시&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;Number&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;12&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;      &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 12
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;12&amp;#39;&lt;/span&gt;             &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 12
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;parseInt&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;12&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 12
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;Number&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;12px&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;    &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// NaN
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;parseInt&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;12px&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 12
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;Number&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;0b101&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;   &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 5
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;parseInt&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;0b101&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 0, radix 명시 필요
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;parseInt&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;101&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#b48ead&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;// 5
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;결론&#34;&gt;결론&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;+&lt;/code&gt;는 &lt;code&gt;Number&lt;/code&gt;의 축약형이 맞음
+전체 숫자 표현식으로서의 유효성을 요구할 때 &lt;code&gt;+&lt;/code&gt; 또는 &lt;code&gt;Number&lt;/code&gt; 사용, 접두부 정수 추출이나 진법 파싱에는 &lt;code&gt;parseInt&lt;/code&gt; 사용
+의도를 코드에 드러내고, 실패 조건을 일관되게 가져가는 쪽으로 선택하는 것이 유지보수에 유리함&lt;/p&gt;</description>
     </item>
     <item>
       <title>Selenium WebDriver pageLoadStrategy 동작 원리와 설정 가이드</title>

@@ -1,0 +1,76 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Number | HandsLog</title>
+<meta name=keywords content><meta name=description content><meta name=author content><link rel=canonical href=https://blog.jsontapose.com/tags/number/><link crossorigin=anonymous href=/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.jsontapose.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.jsontapose.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.jsontapose.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.jsontapose.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.jsontapose.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://blog.jsontapose.com/tags/number/index.xml><link rel=alternate hreflang=en href=https://blog.jsontapose.com/tags/number/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=module>
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+
+  const isDark = () =>
+    document.body.classList.contains("dark") ||
+    window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+
+  const getThemeOptions = () => {
+    const dark = isDark();
+    return {
+      startOnLoad: false,
+      securityLevel: "loose", 
+      theme: dark ? "dark" : "default",
+      themeVariables: dark
+        ? {
+            primaryColor: "#0f172a"  ,
+            primaryTextColor: "#e5e7eb"  ,
+            primaryBorderColor: "#94a3b8"  ,
+            lineColor: "#94a3b8",
+            textColor: "#e5e7eb",
+            nodeTextColor: "#e5e7eb",
+            edgeLabelBackground: "#0f172a",
+          }
+        : {
+            primaryColor: "#f8fafc"  ,
+            primaryTextColor: "#111827",
+            primaryBorderColor: "#374151",
+            lineColor: "#374151",
+            textColor: "#111827",
+            nodeTextColor: "#111827",
+            edgeLabelBackground: "#ffffff",
+          },
+    };
+  };
+
+  const renderMermaid = () => {
+    
+    document.querySelectorAll(".mermaid[data-processed]").forEach((el) => {
+      el.removeAttribute("data-processed");
+    });
+    mermaid.initialize(getThemeOptions());
+    mermaid.run({ querySelector: ".mermaid" });
+  };
+
+  
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderMermaid, {
+      once: true,
+    });
+  } else {
+    renderMermaid();
+  }
+
+  
+  const btn = document.getElementById("theme-toggle");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      
+      setTimeout(renderMermaid, 0);
+    });
+  }
+
+  
+  const mql = window.matchMedia?.("(prefers-color-scheme: dark)");
+  if (mql && mql.addEventListener) {
+    mql.addEventListener("change", renderMermaid);
+  }
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NKJRT1NC1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6NKJRT1NC1")</script><meta name=google-adsense-account content="ca-pub-6022353980017733"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022353980017733" crossorigin=anonymous></script><meta property="og:url" content="https://blog.jsontapose.com/tags/number/"><meta property="og:site_name" content="HandsLog"><meta property="og:title" content="Number"><meta property="og:locale" content="ko-kr"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Number"><meta name=twitter:description content></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://blog.jsontapose.com/ accesskey=h title="HandsLog (Alt + H)">HandsLog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://blog.jsontapose.com/search/ title="search (Alt + /)" accesskey=/><span>search</span></a></li><li><a href=https://blog.jsontapose.com/categories/ title=categories><span>categories</span></a></li><li><a href=https://jsontapose.com/ title="compare JSON"><span>compare JSON</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://blog.jsontapose.com/>Home</a>&nbsp;»&nbsp;<a href=https://blog.jsontapose.com/tags/>Tags</a></div><h1>Number</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>JavaScript에서 unary plus(+)와 parseInt 비교 및 선택 기준</h2></header><div class=entry-content><p>개요 자바스크립트에서 + 단항 연산자는 Number 호출의 축약형으로 동작함 문자열이나 다양한 타입을 숫자로 바꾸려는 순간에 +value와 Number(value)는 같은 의미이고, parseInt는 문자열에서 정수 접두부만 뽑아내는 파서에 가까움 같아 보이지만 목적과 실패 조건이 다르므로 상황에 맞게 선택 필요
+핵심 개념 unary plus +x ECMAScript의 ToNumber 규칙 적용 Number(x)와 동일한 변환 결과 반환 Number(value) 숫자 전체 표현식이어야 함 공백 트림은 허용하지만 유효하지 않은 문자가 섞이면 NaN 반환 parseInt(string, radix) 문자열의 왼쪽부터 주어진 기수(radix, 2~36)로 해석 가능한 정수 접두부만 파싱 유효하지 않은 문자를 만나면 거기서 파싱 중단 접두부 숫자가 하나도 없으면 NaN 반환 ES5+에서 기본 기수는 10이지만, 0x/0X 접두사는 16진수로 처리됨 동작 차이와 사례 전체 일치 vs 접두 파싱 Number('12px') → NaN parseInt('12px', 10) → 12 소수와 지수 표기 Number('10.5') → 10.5, Number('1e3') → 1000 parseInt('10.5', 10) → 10 (소수부 절삭) 빈 문자열과 공백 Number('') → 0, Number(' ') → 0 parseInt('') → NaN 비문자열 입력 +true → 1, +false → 0, +null → 0, +undefined → NaN parseInt(true, 10) → NaN (문자열로 변환 시 ’true’라서 숫자 접두부 없음) 진법 접두사 처리 차이 Number('0x10') → 16, parseInt('0x10') → 16 Number('0b101') → 5 (ES2015+), parseInt('0b101') → 0
+참고로 parseInt('101', 2) → 5 처럼 radix를 명시해야 기대대로 동작함 BigInt 관련 +10n은 TypeError 발생 Number(10n)은 10으로 변환되나 정밀도 손실 가능성 존재 선택 기준 전체 문자열이 유효한 숫자여야 하고 실수, 지수 표기도 허용해야 함 +value 또는 Number(value) 선택 가독성 우선이면 Number(value) 추천, 축약을 선호하면 +value 선택 문자열 앞부분에서 정수만 뽑고 싶거나 비 10진수 파싱 필요 parseInt(str, radix) 선택 항상 radix 명시 권장 소수부를 보존하면서 부분 파싱이 필요 parseFloat 고려 다만 parseFloat도 접두 파싱이므로 전체 일치 검증이 필요하면 Number 사용 권장 베스트 프랙티스 숫자 변환 의도 전달이 중요할 때 Number(value) 사용 정수 파싱 시 parseInt(str, 10)처럼 radix를 항상 명시 사용자 입력 검증이 필요하면 정규식 또는 스키마 검증으로 전체 형식 검증 후 Number 변환 성능 미세 최적화보다 가독성과 실패 조건의 명확성을 우선 간단 예시 Number('12') // 12 +'12' // 12 parseInt('12',10) // 12 Number('12px') // NaN parseInt('12px',10) // 12 Number('0b101') // 5 parseInt('0b101') // 0, radix 명시 필요 parseInt('101', 2) // 5 결론 +는 Number의 축약형이 맞음 전체 숫자 표현식으로서의 유효성을 요구할 때 + 또는 Number 사용, 접두부 정수 추출이나 진법 파싱에는 parseInt 사용 의도를 코드에 드러내고, 실패 조건을 일관되게 가져가는 쪽으로 선택하는 것이 유지보수에 유리함
+...</p></div><footer class=entry-footer><span title='2026-02-18 13:27:34.663 +0000 UTC'>February 18, 2026</span></footer><a class=entry-link aria-label="post link to JavaScript에서 unary plus(+)와 parseInt 비교 및 선택 기준" href=https://blog.jsontapose.com/posts/unary-plus-vs-parseint-160cb0/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
