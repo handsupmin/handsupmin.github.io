@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 18 Feb 2026 13:27:34 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Feb 2026 13:28:26 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,54 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Foreign Key 컬럼은 NULL을 가질 수 있는가</title>
+      <link>https://blog.jsontapose.com/posts/foreign-key-nullable-5cab66/</link>
+      <pubDate>Thu, 19 Feb 2026 13:28:26 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/foreign-key-nullable-5cab66/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;결론부터 말하면 가능함
+Foreign Key 컬럼의 NULL 허용 여부는 해당 컬럼의 NULL 혹은 NOT NULL 제약으로 결정됨
+FK 제약은 NULL이 아닌 값만 검증하므로 값이 NULL인 경우 참조 무결성 검사를 생략함&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;컬럼이 NOT NULL이면 NULL 저장 불가&lt;/li&gt;
+&lt;li&gt;컬럼이 NULL 허용이면 NULL 저장 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;FK 제약은 입력값이 존재할 때만 참조 대상 테이블에 키가 있는지 검사&lt;/li&gt;
+&lt;li&gt;NULL은 미지정 상태로 간주되어 검증 대상 아님&lt;/li&gt;
+&lt;li&gt;대부분의 RDBMS에서 기본은 NULL 허용 컬럼이며, 명시적으로 NOT NULL을 지정해야 함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리&#34;&gt;동작 원리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;INSERT 또는 UPDATE 시 FK 컬럼이 NULL이면 무결성 검사 스킵&lt;/li&gt;
+&lt;li&gt;값이 존재하면 참조 테이블의 대상 키 존재 여부 검사&lt;/li&gt;
+&lt;li&gt;복합 FK의 경우 참조 컬럼 중 하나라도 NULL이면 전체 FK 검사를 생략하는 동작이 일반적임&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;간단-예시&#34;&gt;간단 예시&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;TABLE&lt;/span&gt; parent &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  id &lt;span style=&#34;color:#81a1c1&#34;&gt;INT&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;PRIMARY&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;KEY&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;TABLE&lt;/span&gt; child &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  parent_id &lt;span style=&#34;color:#81a1c1&#34;&gt;INT&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;FOREIGN&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;KEY&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;parent_id&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;REFERENCES&lt;/span&gt; parent&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;id&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;child.parent_id는 기본적으로 NULL 허용 상태&lt;/li&gt;
+&lt;li&gt;parent_id에 NULL을 넣어도 FK 위반 아님&lt;/li&gt;
+&lt;li&gt;parent_id에 NOT NULL을 추가하면 parent에 존재하는 id만 허용됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;주의-사항&#34;&gt;주의 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ON DELETE SET NULL을 사용할 경우 FK 컬럼이 NULL 허용이어야 함&lt;/li&gt;
+&lt;li&gt;FK 컬럼 인덱스는 필수는 아니나 삭제·업데이트 시 성능과 잠금 범위 측면에서 권장&lt;/li&gt;
+&lt;li&gt;관계가 필수라면 애플리케이션 규칙이 아닌 스키마에서 NOT NULL로 모델링하는 편이 안전함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
+&lt;p&gt;FK 컬럼은 NULL 허용 설정이면 NULL을 저장할 수 있으며, 이 경우 FK 검사는 수행되지 않음
+NULL을 금지하고 참조 무결성을 강제하려면 NOT NULL을 함께 적용하면 됨&lt;/p&gt;</description>
     </item>
     <item>
       <title>JavaScript에서 unary plus(&#43;)와 parseInt 비교 및 선택 기준</title>
