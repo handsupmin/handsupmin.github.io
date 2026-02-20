@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Seo on HandsLog</title>
+    <link>https://blog.jsontapose.com/categories/seo/</link>
+    <description>Recent content in Seo on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 20 Feb 2026 13:24:06 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/categories/seo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>robots.txt 기초와 전체 사이트 크롤링 차단 예시</title>
+      <link>https://blog.jsontapose.com/posts/robots-txt-block-all-crawling-60f08c/</link>
+      <pubDate>Fri, 20 Feb 2026 13:24:06 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/robots-txt-block-all-crawling-60f08c/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;robots.txt는 검색 엔진 크롤러에 대한 크롤링 규칙을 선언하는 공개 텍스트 파일임
+사이트 루트 경로에 위치하며 접근 제어나 보안 수단으로 사용 불가&lt;/p&gt;
+&lt;h3 id=&#34;전체-차단-예시&#34;&gt;전체 차단 예시&lt;/h3&gt;
+&lt;p&gt;모든 크롤러에 대해 사이트 전체 경로 크롤링 금지 설정
+User-agent: *
+Disallow: /
+위 규칙은 크롤링 거부 의사를 표명하는 표준 관례이며 비준수 크롤러까지 강제 불가&lt;/p&gt;
+&lt;h3 id=&#34;주의&#34;&gt;주의&lt;/h3&gt;
+&lt;p&gt;운영 환경 적용 시 검색 트래픽 전면 차단 위험
+크롤링 차단과 인덱싱 차단은 다름
+이미 색인된 문서는 별도 제거 절차 필요&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
