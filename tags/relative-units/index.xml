@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Relative-Units on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/relative-units/</link>
+    <description>Recent content in Relative-Units on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 21 Feb 2026 13:16:03 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/relative-units/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS 상대 단위 em과 rem: 기준, 계산, 선택 가이드</title>
+      <link>https://blog.jsontapose.com/posts/css-em-rem-guide-e17481/</link>
+      <pubDate>Sat, 21 Feb 2026 13:16:03 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/css-em-rem-guide-e17481/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;반응형 레이아웃과 접근성 요구가 커지면서 px 고정값 대신 em, rem 같은 상대 단위 사용 빈도 증가
+두 단위 모두 글꼴 크기(font-size)를 기준으로 동작하지만 기준점이 다름
+핵심은 기준이 어디인지 명확히 이해하고 일관된 스케일로 적용하는 것&lt;/p&gt;
+&lt;p&gt;콘텐츠가 없어도 블록 요소 높이를 유지해야 하는 경우 같은 실무 이슈에서 min-height를 em이나 rem로 정의해 타이포 스케일에 연동하는 방식 유용함&lt;/p&gt;
+&lt;h3 id=&#34;상대-단위-개념&#34;&gt;상대 단위 개념&lt;/h3&gt;
+&lt;p&gt;상대(relative) 단위는 주어진 기준에 따라 유동적으로 값이 변하는 길이 단위
+em, rem, %, vw, vh 등이 대표
+절대(absolute) 단위는 상황과 무관하게 고정된 길이로 취급하는 단위군으로 px, pt, cm, in 등이 포함됨
+참고 기준으로 CSS에서 1px는 1/96in에 해당하는 길이로 정의됨. 실제 디바이스의 물리 픽셀과는 분리된 개념&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
