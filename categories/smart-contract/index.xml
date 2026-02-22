@@ -6,8 +6,27 @@
     <description>Recent content in Smart-Contract on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 17 Jan 2026 13:10:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 13:17:04 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/smart-contract/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenZeppelin contracts-upgradeable로 UUPS·Transparent 프록시 배포와 업그레이드 가이드</title>
+      <link>https://blog.jsontapose.com/posts/openzeppelin-contracts-upgradeable-uups-transparent-hardhat-guide-25ea23/</link>
+      <pubDate>Sun, 22 Feb 2026 13:17:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/openzeppelin-contracts-upgradeable-uups-transparent-hardhat-guide-25ea23/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;OpenZeppelin의 contracts-upgradeable은 업그레이드 가능한 스마트 컨트랙트를 안전하게 구현하기 위한 베이스 라이브러리
+프록시 Proxy 패턴으로 사용자 호출 주소와 로직 컨트랙트를 분리하고 delegatecall로 로직을 실행
+Transparent Proxy와 UUPS 두 방식을 공식 지원&lt;/p&gt;
+&lt;p&gt;이 글은 Hardhat 환경에서 @openzeppelin/hardhat-upgrades 플러그인과 함께 UUPS를 중심으로 배포와 업그레이드 흐름을 정리하고, Transparent와의 차이점을 요약&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Proxy 컨트랙트와 Implementation 컨트랙트를 분리하여 배포&lt;/li&gt;
+&lt;li&gt;사용자는 Proxy 주소로 상호작용, Proxy는 delegatecall로 Implementation의 로직 실행&lt;/li&gt;
+&lt;li&gt;업그레이드는 Proxy가 가리키는 Implementation 주소를 교체하는 방식&lt;/li&gt;
+&lt;li&gt;EIP-1967 표준 슬롯을 사용해 Implementation 주소 보관&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;방식 요약&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CEI 패턴 Checks-Effects-Interactions로 재진입 방어</title>
       <link>https://blog.jsontapose.com/posts/cei-pattern-checks-effects-interactions-940c92/</link>

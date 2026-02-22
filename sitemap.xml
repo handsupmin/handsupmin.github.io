@@ -24,17 +24,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/css-em-rem-guide-e17481/</loc>
-    <lastmod>2026-02-21T13:16:03+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/</loc>
+    <lastmod>2026-02-22T13:17:04+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-02-21T13:16:03+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/openzeppelin-contracts-upgradeable-uups-transparent-hardhat-guide-25ea23/</loc>
+    <lastmod>2026-02-22T13:17:04+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2026-02-22T13:17:04+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/css-em-rem-guide-e17481/</loc>
     <lastmod>2026-02-21T13:16:03+00:00</lastmod>
     <priority>0.5</priority>
   </url>
