@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 22 Feb 2026 13:17:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 13:27:43 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data-Attributes</title>
+      <link>https://blog.jsontapose.com/tags/data-attributes/</link>
+      <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/data-attributes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dataset</title>
+      <link>https://blog.jsontapose.com/tags/dataset/</link>
+      <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dataset/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dom</title>
+      <link>https://blog.jsontapose.com/tags/dom/</link>
+      <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://blog.jsontapose.com/tags/html/</link>
+      <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Standards</title>
+      <link>https://blog.jsontapose.com/tags/web-standards/</link>
+      <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/web-standards/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Eip-1822</title>
       <link>https://blog.jsontapose.com/tags/eip-1822/</link>
@@ -163,13 +205,6 @@
       <description></description>
     </item>
     <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Number</title>
       <link>https://blog.jsontapose.com/tags/number/</link>
       <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
@@ -268,24 +303,10 @@
       <description></description>
     </item>
     <item>
-      <title>Dom</title>
-      <link>https://blog.jsontapose.com/tags/dom/</link>
-      <pubDate>Sun, 15 Feb 2026 13:17:18 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/dom/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Event-Handling</title>
       <link>https://blog.jsontapose.com/tags/event-handling/</link>
       <pubDate>Sun, 15 Feb 2026 13:17:18 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/event-handling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Html</title>
-      <link>https://blog.jsontapose.com/tags/html/</link>
-      <pubDate>Sun, 15 Feb 2026 13:17:18 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/html/</guid>
       <description></description>
     </item>
     <item>
