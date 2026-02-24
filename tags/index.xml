@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 23 Feb 2026 13:27:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Feb 2026 13:28:16 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Caching</title>
+      <link>https://blog.jsontapose.com/tags/caching/</link>
+      <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/caching/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forward-Proxy</title>
+      <link>https://blog.jsontapose.com/tags/forward-proxy/</link>
+      <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/forward-proxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Load-Balancing</title>
+      <link>https://blog.jsontapose.com/tags/load-balancing/</link>
+      <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/load-balancing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>https://blog.jsontapose.com/tags/networking/</link>
+      <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reverse-Proxy</title>
+      <link>https://blog.jsontapose.com/tags/reverse-proxy/</link>
+      <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/reverse-proxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tls-Termination</title>
+      <link>https://blog.jsontapose.com/tags/tls-termination/</link>
+      <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/tls-termination/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Architecture</title>
+      <link>https://blog.jsontapose.com/tags/web-architecture/</link>
+      <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/web-architecture/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Data-Attributes</title>
       <link>https://blog.jsontapose.com/tags/data-attributes/</link>
@@ -867,13 +916,6 @@
       <link>https://blog.jsontapose.com/tags/swagger/</link>
       <pubDate>Sat, 31 Jan 2026 13:16:01 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/swagger/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Caching</title>
-      <link>https://blog.jsontapose.com/tags/caching/</link>
-      <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/caching/</guid>
       <description></description>
     </item>
     <item>
@@ -2155,13 +2197,6 @@
       <link>https://blog.jsontapose.com/tags/k8s/</link>
       <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/k8s/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Networking</title>
-      <link>https://blog.jsontapose.com/tags/networking/</link>
-      <pubDate>Mon, 22 Dec 2025 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/networking/</guid>
       <description></description>
     </item>
     <item>
