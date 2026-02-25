@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 24 Feb 2026 13:28:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 13:28:01 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data-Synchronization</title>
+      <link>https://blog.jsontapose.com/tags/data-synchronization/</link>
+      <pubDate>Wed, 25 Feb 2026 13:28:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/data-synchronization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Merge</title>
+      <link>https://blog.jsontapose.com/tags/merge/</link>
+      <pubDate>Wed, 25 Feb 2026 13:28:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/merge/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sql-Server</title>
+      <link>https://blog.jsontapose.com/tags/sql-server/</link>
+      <pubDate>Wed, 25 Feb 2026 13:28:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sql-server/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>T-Sql</title>
+      <link>https://blog.jsontapose.com/tags/t-sql/</link>
+      <pubDate>Wed, 25 Feb 2026 13:28:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/t-sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Upsert</title>
+      <link>https://blog.jsontapose.com/tags/upsert/</link>
+      <pubDate>Wed, 25 Feb 2026 13:28:01 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/upsert/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Caching</title>
       <link>https://blog.jsontapose.com/tags/caching/</link>
@@ -559,13 +594,6 @@
       <link>https://blog.jsontapose.com/tags/nvarchar/</link>
       <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/nvarchar/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sql-Server</title>
-      <link>https://blog.jsontapose.com/tags/sql-server/</link>
-      <pubDate>Mon, 09 Feb 2026 13:28:52 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sql-server/</guid>
       <description></description>
     </item>
     <item>
