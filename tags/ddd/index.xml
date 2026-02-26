@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ddd on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/ddd/</link>
+    <description>Recent content in Ddd on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 26 Feb 2026 13:28:12 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/ddd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CQRS 개념과 적용 레벨 정리: 단일 DB 분리부터 이벤트 소싱까지</title>
+      <link>https://blog.jsontapose.com/posts/cqrs-overview-and-application-levels-952a4f/</link>
+      <pubDate>Thu, 26 Feb 2026 13:28:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/cqrs-overview-and-application-levels-952a4f/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;CQRS(Command and Query Responsibility Segregation)는 쓰기 명령과 읽기 쿼리의 책임을 분리하는 아키텍처 패턴
+CQS를 제안한 Bertrand Meyer의 아이디어가 뿌리이고, 실무적 CQRS 패턴을 알린 인물로 Greg Young이 널리 알려짐
+핵심은 CUD(Command: Create, Update, Delete)와 R(Query: Read)을 하나의 모델로 처리하지 않고 분리해 복잡도와 결합도를 낮추는 것&lt;/p&gt;
+&lt;h3 id=&#34;왜-분리하는가&#34;&gt;왜 분리하는가&lt;/h3&gt;
+&lt;p&gt;전통적인 CRUD 중심 구조에서는 단일 도메인 모델이 쓰기와 읽기 모두를 떠안음
+변화 무쌍한 도메인 규칙과 고도화된 UX 요구로 인해 모델이 비대해지고, 유지보수 비용과 리스크가 누적됨
+실제 비즈니스 룰과 제약은 쓰기 경로에서 주로 발생하고, 읽기는 상대적으로 단순 조회나 집계 중심인 경우가 많음
+두 책임을 하나의 모델로 끌어안으면 불필요한 속성과 검증 로직이 뒤섞여 모델이 설계 의도에서 이탈함
+CQRS는 책임을 분리해 각 경로를 그 목적에 맞게 최적화할 수 있게 함&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

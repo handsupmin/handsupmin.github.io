@@ -24,13 +24,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://blog.jsontapose.com/posts/cqrs-overview-and-application-levels-952a4f/</loc>
+    <lastmod>2026-02-26T13:28:12+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-02-25T13:28:01+00:00</lastmod>
+    <lastmod>2026-02-26T13:28:12+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
-    <lastmod>2026-02-25T13:28:01+00:00</lastmod>
+    <lastmod>2026-02-26T13:28:12+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>

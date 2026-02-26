@@ -6,8 +6,64 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 25 Feb 2026 13:28:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 13:28:12 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean-Architecture</title>
+      <link>https://blog.jsontapose.com/tags/clean-architecture/</link>
+      <pubDate>Thu, 26 Feb 2026 13:28:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/clean-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cqrs</title>
+      <link>https://blog.jsontapose.com/tags/cqrs/</link>
+      <pubDate>Thu, 26 Feb 2026 13:28:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/cqrs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ddd</title>
+      <link>https://blog.jsontapose.com/tags/ddd/</link>
+      <pubDate>Thu, 26 Feb 2026 13:28:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ddd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event-Sourcing</title>
+      <link>https://blog.jsontapose.com/tags/event-sourcing/</link>
+      <pubDate>Thu, 26 Feb 2026 13:28:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/event-sourcing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microservices</title>
+      <link>https://blog.jsontapose.com/tags/microservices/</link>
+      <pubDate>Thu, 26 Feb 2026 13:28:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/microservices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Polyglot-Persistence</title>
+      <link>https://blog.jsontapose.com/tags/polyglot-persistence/</link>
+      <pubDate>Thu, 26 Feb 2026 13:28:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/polyglot-persistence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Read-Model</title>
+      <link>https://blog.jsontapose.com/tags/read-model/</link>
+      <pubDate>Thu, 26 Feb 2026 13:28:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/read-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software-Architecture</title>
+      <link>https://blog.jsontapose.com/tags/software-architecture/</link>
+      <pubDate>Thu, 26 Feb 2026 13:28:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/software-architecture/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Data-Synchronization</title>
       <link>https://blog.jsontapose.com/tags/data-synchronization/</link>
@@ -1857,24 +1913,10 @@
       <description></description>
     </item>
     <item>
-      <title>Software-Architecture</title>
-      <link>https://blog.jsontapose.com/tags/software-architecture/</link>
-      <pubDate>Sun, 04 Jan 2026 13:10:43 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/software-architecture/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>State-Machine</title>
       <link>https://blog.jsontapose.com/tags/state-machine/</link>
       <pubDate>Sun, 04 Jan 2026 13:10:43 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/state-machine/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Microservices</title>
-      <link>https://blog.jsontapose.com/tags/microservices/</link>
-      <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/microservices/</guid>
       <description></description>
     </item>
     <item>
