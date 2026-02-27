@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 26 Feb 2026 13:28:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 13:23:46 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code-Style</title>
+      <link>https://blog.jsontapose.com/tags/code-style/</link>
+      <pubDate>Fri, 27 Feb 2026 13:23:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/code-style/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>https://blog.jsontapose.com/tags/css/</link>
+      <pubDate>Fri, 27 Feb 2026 13:23:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frontend-Architecture</title>
+      <link>https://blog.jsontapose.com/tags/frontend-architecture/</link>
+      <pubDate>Fri, 27 Feb 2026 13:23:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/frontend-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://blog.jsontapose.com/tags/html/</link>
+      <pubDate>Fri, 27 Feb 2026 13:23:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maintainability</title>
+      <link>https://blog.jsontapose.com/tags/maintainability/</link>
+      <pubDate>Fri, 27 Feb 2026 13:23:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/maintainability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Naming</title>
+      <link>https://blog.jsontapose.com/tags/naming/</link>
+      <pubDate>Fri, 27 Feb 2026 13:23:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/naming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalability</title>
+      <link>https://blog.jsontapose.com/tags/scalability/</link>
+      <pubDate>Fri, 27 Feb 2026 13:23:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/scalability/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Clean-Architecture</title>
       <link>https://blog.jsontapose.com/tags/clean-architecture/</link>
@@ -170,13 +219,6 @@
       <description></description>
     </item>
     <item>
-      <title>Html</title>
-      <link>https://blog.jsontapose.com/tags/html/</link>
-      <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/html/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Javascript</title>
       <link>https://blog.jsontapose.com/tags/javascript/</link>
       <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
@@ -251,13 +293,6 @@
       <link>https://blog.jsontapose.com/tags/uups/</link>
       <pubDate>Sun, 22 Feb 2026 13:17:04 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/uups/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Css</title>
-      <link>https://blog.jsontapose.com/tags/css/</link>
-      <pubDate>Sat, 21 Feb 2026 13:16:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/css/</guid>
       <description></description>
     </item>
     <item>
@@ -1329,13 +1364,6 @@
       <link>https://blog.jsontapose.com/tags/profiling/</link>
       <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/profiling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scalability</title>
-      <link>https://blog.jsontapose.com/tags/scalability/</link>
-      <pubDate>Thu, 22 Jan 2026 13:16:57 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/scalability/</guid>
       <description></description>
     </item>
     <item>
@@ -2953,13 +2981,6 @@
       <link>https://blog.jsontapose.com/tags/engineering-principles/</link>
       <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/engineering-principles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Maintainability</title>
-      <link>https://blog.jsontapose.com/tags/maintainability/</link>
-      <pubDate>Mon, 03 Nov 2025 13:10:46 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/maintainability/</guid>
       <description></description>
     </item>
     <item>

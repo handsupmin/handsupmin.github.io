@@ -6,8 +6,19 @@
     <description>Recent content in Maintainability on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 03 Nov 2025 13:10:46 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 13:23:46 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/maintainability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>유지보수와 확장성을 고려한 HTML/CSS 구조 전략</title>
+      <link>https://blog.jsontapose.com/posts/maintainable-scalable-html-css-structure-strategy-6905d0/</link>
+      <pubDate>Fri, 27 Feb 2026 13:23:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/maintainable-scalable-html-css-structure-strategy-6905d0/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;작은 규칙의 일관성이 유지보수성과 확장성을 만든다고 봄. 아래 세 가지 원칙은 팀 합의만 되면 즉시 적용 가능하며, 코드 리뷰와 리팩터링 부담을 낮추는 효과가 큼&lt;/p&gt;
+&lt;h3 id=&#34;classname-네이밍은-하이픈-사용-권장&#34;&gt;className 네이밍은 하이픈 사용 권장&lt;/h3&gt;
+&lt;p&gt;camelCase, under_score보다 하이픈(-) 기준 분절이 명확해 가독성과 편집성이 좋음. 대소문자 전환 없이 입력 가능해 타이핑 피로도도 낮음&lt;/p&gt;
+&lt;p&gt;에디터 단어 단위 이동/선택이 직관적. camelCase나 under_score는 하나의 토큰으로 취급되는 경우가 많아 커서 이동이 번거로움. 하이픈은 공백처럼 인식되어 단어 경계 이동이 쉬움. 예시로 &lt;code&gt;sweetPotato&lt;/code&gt;, &lt;code&gt;sweet_potato&lt;/code&gt;, &lt;code&gt;sweet-potato&lt;/code&gt; 비교 추천&lt;/p&gt;</description>
+    </item>
     <item>
       <title>KISS 원리: 소프트웨어 설계에서 불필요한 복잡성 줄이기</title>
       <link>https://blog.jsontapose.com/posts/kiss-principle-software-design-799a74/</link>
