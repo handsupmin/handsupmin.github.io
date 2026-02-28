@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data-Modeling on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/data-modeling/</link>
+    <description>Recent content in Data-Modeling on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 28 Feb 2026 13:13:46 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/data-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EAV(Entity-Attribute-Value) 모델 개념과 구조, 장단점 정리</title>
+      <link>https://blog.jsontapose.com/posts/eav-entity-attribute-value-model-43c338/</link>
+      <pubDate>Sat, 28 Feb 2026 13:13:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/eav-entity-attribute-value-model-43c338/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;EAV는 Entity-Attribute-Value의 약자이며, 기존 정규화 스키마에서 컬럼으로 고정하던 속성을 행 단위로 분리해 저장하는 데이터 모델
+속성 집합이 사용자마다 다르거나 런타임에 추가되는 등 스키마를 선제 정의하기 어려운 경우 사용
+속성이 희소할 때 저장 공간 절약과 스키마 변경 부담 감소에 유리&lt;/p&gt;
+&lt;h3 id=&#34;구조&#34;&gt;구조&lt;/h3&gt;
+&lt;p&gt;일반적으로 세 컬럼 기반 테이블로 구성&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;entity  데이터의 주체 예 사용자, 제품&lt;/li&gt;
+&lt;li&gt;attribute  엔터티의 속성 예 이름, 색상&lt;/li&gt;
+&lt;li&gt;value  속성의 실제 값 예 김철수, 빨간색&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;예시&#34;&gt;예시&lt;/h3&gt;
+&lt;p&gt;엔터티가 사용자이고 속성이 이름, 나이, 이메일이라고 가정
+일반 테이블 예  Users(UserId, Name, Age, Email)
+EAV 표현 예&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

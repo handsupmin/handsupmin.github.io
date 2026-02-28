@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 27 Feb 2026 13:23:46 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 13:13:46 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data-Modeling</title>
+      <link>https://blog.jsontapose.com/tags/data-modeling/</link>
+      <pubDate>Sat, 28 Feb 2026 13:13:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/data-modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database-Design</title>
+      <link>https://blog.jsontapose.com/tags/database-design/</link>
+      <pubDate>Sat, 28 Feb 2026 13:13:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eav</title>
+      <link>https://blog.jsontapose.com/tags/eav/</link>
+      <pubDate>Sat, 28 Feb 2026 13:13:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/eav/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Relational-Database</title>
+      <link>https://blog.jsontapose.com/tags/relational-database/</link>
+      <pubDate>Sat, 28 Feb 2026 13:13:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/relational-database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Schema</title>
+      <link>https://blog.jsontapose.com/tags/schema/</link>
+      <pubDate>Sat, 28 Feb 2026 13:13:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/schema/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Code-Style</title>
       <link>https://blog.jsontapose.com/tags/code-style/</link>
@@ -1952,13 +1987,6 @@
       <link>https://blog.jsontapose.com/tags/sqs/</link>
       <pubDate>Sat, 03 Jan 2026 13:10:13 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/sqs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database-Design</title>
-      <link>https://blog.jsontapose.com/tags/database-design/</link>
-      <pubDate>Fri, 02 Jan 2026 13:11:49 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/database-design/</guid>
       <description></description>
     </item>
     <item>
