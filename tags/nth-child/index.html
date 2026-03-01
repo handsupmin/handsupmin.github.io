@@ -1,0 +1,76 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Nth-Child | HandsLog</title>
+<meta name=keywords content><meta name=description content><meta name=author content><link rel=canonical href=https://blog.jsontapose.com/tags/nth-child/><link crossorigin=anonymous href=/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.jsontapose.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.jsontapose.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.jsontapose.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.jsontapose.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.jsontapose.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://blog.jsontapose.com/tags/nth-child/index.xml><link rel=alternate hreflang=en href=https://blog.jsontapose.com/tags/nth-child/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=module>
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+
+  const isDark = () =>
+    document.body.classList.contains("dark") ||
+    window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+
+  const getThemeOptions = () => {
+    const dark = isDark();
+    return {
+      startOnLoad: false,
+      securityLevel: "loose", 
+      theme: dark ? "dark" : "default",
+      themeVariables: dark
+        ? {
+            primaryColor: "#0f172a"  ,
+            primaryTextColor: "#e5e7eb"  ,
+            primaryBorderColor: "#94a3b8"  ,
+            lineColor: "#94a3b8",
+            textColor: "#e5e7eb",
+            nodeTextColor: "#e5e7eb",
+            edgeLabelBackground: "#0f172a",
+          }
+        : {
+            primaryColor: "#f8fafc"  ,
+            primaryTextColor: "#111827",
+            primaryBorderColor: "#374151",
+            lineColor: "#374151",
+            textColor: "#111827",
+            nodeTextColor: "#111827",
+            edgeLabelBackground: "#ffffff",
+          },
+    };
+  };
+
+  const renderMermaid = () => {
+    
+    document.querySelectorAll(".mermaid[data-processed]").forEach((el) => {
+      el.removeAttribute("data-processed");
+    });
+    mermaid.initialize(getThemeOptions());
+    mermaid.run({ querySelector: ".mermaid" });
+  };
+
+  
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderMermaid, {
+      once: true,
+    });
+  } else {
+    renderMermaid();
+  }
+
+  
+  const btn = document.getElementById("theme-toggle");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      
+      setTimeout(renderMermaid, 0);
+    });
+  }
+
+  
+  const mql = window.matchMedia?.("(prefers-color-scheme: dark)");
+  if (mql && mql.addEventListener) {
+    mql.addEventListener("change", renderMermaid);
+  }
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NKJRT1NC1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6NKJRT1NC1")</script><meta name=google-adsense-account content="ca-pub-6022353980017733"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022353980017733" crossorigin=anonymous></script><meta property="og:url" content="https://blog.jsontapose.com/tags/nth-child/"><meta property="og:site_name" content="HandsLog"><meta property="og:title" content="Nth-Child"><meta property="og:locale" content="ko-kr"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Nth-Child"><meta name=twitter:description content></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://blog.jsontapose.com/ accesskey=h title="HandsLog (Alt + H)">HandsLog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://blog.jsontapose.com/search/ title="search (Alt + /)" accesskey=/><span>search</span></a></li><li><a href=https://blog.jsontapose.com/categories/ title=categories><span>categories</span></a></li><li><a href=https://jsontapose.com/ title="compare JSON"><span>compare JSON</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://blog.jsontapose.com/>Home</a>&nbsp;»&nbsp;<a href=https://blog.jsontapose.com/tags/>Tags</a></div><h1>Nth-Child</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>CSS :nth-child() 정확히 이해하기 — An+B 패턴, odd/even, nth-of-type 비교</h2></header><div class=entry-content><p>개요 CSS :nth-child() 의사 클래스는 같은 부모를 공유하는 형제 요소들 가운데 순서를 기준으로 요소를 선택하는 선택자임 인덱스는 1부터 시작함
+참고로 nth는 n-th 서수 개념을 뜻함
+핵심 개념 odd, even 키워드 지원 odd는 1, 3, 5처럼 형제 중 홀수번째 요소를 의미함 even은 2, 4, 6처럼 형제 중 짝수번째 요소를 의미함 함수형 표기 &lt;An+B> 지원 A는 정수 계수로 증가 간격을 의미함 B는 정수 오프셋 의미 n은 0 이상 정수 전체를 순회하는 변수 의미 An+B가 1 이상인 자연수로 평가되는 위치만 선택됨 :nth-child()는 요소 타입과 무관하게 형제 목록 전체를 기준으로 순서를 계산함 즉 span:nth-child(2n+1)에서 카운팅은 모든 자식 요소를 포함하고, 선택 자체만 span에 한정됨 타입별 순서를 기준으로 선택하려면 :nth-of-type() 사용 p:nth-child(n)은 형제 그룹 내 모든 p와 동일한 집합을 선택하나, 단순 p보다 명시도는 더 높음 p:nth-child(1) 또는 p:nth-child(0n+1)은 :first-child와 동일한 의미와 명시도를 가짐 동작 원리 An+B가 만드는 수열이 매칭 인덱스를 결정함 예) 5n은 0, 5, 10, 15, …를 생성하나 인덱스는 1부터 시작하므로 0은 매칭되지 않음 예) n+7은 7, 8, 9, …로 7번째 이후 전부 매칭됨 예) 3n+4는 4, 7, 10, 13, … 매칭됨 예) -n+3은 3, 2, 1 순으로 해석되어 결과적으로 앞의 3개가 매칭됨 카운팅 단위는 요소 노드 기준임 공백 텍스트 노드 등은 포함하지 않음 선택자 예시 tr:nth-child(odd) 또는 tr:nth-child(2n+1) HTML 표의 홀수번째 행 선택 tr:nth-child(even) 또는 tr:nth-child(2n) HTML 표의 짝수번째 행 선택 :nth-child(7) 임의의 7번째 요소 선택 :nth-child(5n) 5, 10, 15, …번째 요소 선택 0은 선택되지 않음 :nth-child(n+7) 7번째부터 끝까지 선택 :nth-child(3n+4) 4, 7, 10, 13, …번째 요소 선택 :nth-child(-n+3) 앞에서 3개 요소 선택 p:nth-child(n) 형제 그룹 내 모든 p 선택 단순 p보다 명시도 높음 p:nth-child(1) 또는 p:nth-child(0n+1) 형제 그룹 내 첫 번째 p 선택 :first-child와 동일 짧은 스니펫 /* 목록의 두 번째 &lt;li> 선택 */ li:nth-child(2) { color: lime; } /* 4의 배수 번째 요소 선택 */ :nth-child(4n) { color: lime; }주의사항 :nth-child()는 형제 전체를 기준으로 순서를 매김 타입이 섞여 있으면 카운트에 모두 포함됨 타입에 따라 카운트를 분리하고 싶다면 :nth-of-type() 사용 A, B는 정수만 허용 공백과 부호 위치는 CSS 구문 규칙을 따름 0 또는 음수로 평가되는 위치는 매칭되지 않음 명시도는 타입 선택자보다 높고, 클래스와 동일 계층의 의사 클래스 수준으로 취급됨 최신 사양에서는 of 구문을 통해 :nth-child(An+B of S)처럼 선택자 리스트를 한정하는 패턴이 가능함 브라우저 호환성은 문서와 지원 현황 확인 권장 베스트 프랙티스 단순 패턴은 odd, even으로 표현해 가독성 확보 복잡한 패턴은 An+B를 사용하되, 수열을 1 이상 범위로 명확히 환산해 주석으로 의도 기록 섞인 타입 환경에서의 혼동을 피하려면 가능하면 :nth-of-type() 우선 검토 특정 구간 필터링은 교집합 패턴을 사용 예 p:nth-child(n+8):nth-child(-n+15)로 8~15 범위를 표현 접근성 측면에서 시각 강조용 스타일만 바꾸는 경우 DOM 순서 의존 로직과 결합하지 않도록 주의 간단 비교 nth-child vs nth-of-type nth-child 형제 전체 기준 카운트 타입 섞임에 영향 받음 nth-of-type 동일 태그 타입만 카운트 다른 타입은 건너뜀 마무리 :nth-child()는 CSS에서 반복적 패턴과 구간 선택을 간결하게 표현하는 기본 도구임 An+B를 수열 관점으로 해석하고, 타입 혼재 여부에 따라 nth-child와 nth-of-type을 구분 적용하면 예측 가능한 스타일링이 가능함 필요 시 최신 of 구문과 명시도 특성을 함께 고려해 유지보수 비용을 낮추는 전략 추천
+...</p></div><footer class=entry-footer><span title='2026-03-01 13:15:02.914 +0000 UTC'>March 1, 2026</span></footer><a class=entry-link aria-label="post link to CSS :nth-child() 정확히 이해하기 — An+B 패턴, odd/even, nth-of-type 비교" href=https://blog.jsontapose.com/posts/css-nth-child-90a3e9/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Web on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/web/</link>
+    <description>Recent content in Web on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 01 Mar 2026 13:15:02 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS :nth-child() 정확히 이해하기 — An&#43;B 패턴, odd/even, nth-of-type 비교</title>
+      <link>https://blog.jsontapose.com/posts/css-nth-child-90a3e9/</link>
+      <pubDate>Sun, 01 Mar 2026 13:15:02 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/css-nth-child-90a3e9/</guid>
+      <description>&lt;h1 id=&#34;개요&#34;&gt;개요&lt;/h1&gt;
+&lt;p&gt;CSS :nth-child() 의사 클래스는 같은 부모를 공유하는 형제 요소들 가운데 순서를 기준으로 요소를 선택하는 선택자임
+인덱스는 1부터 시작함&lt;/p&gt;
+&lt;p&gt;참고로 nth는 n-th 서수 개념을 뜻함&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;odd, even 키워드 지원
+&lt;ul&gt;
+&lt;li&gt;odd는 1, 3, 5처럼 형제 중 홀수번째 요소를 의미함&lt;/li&gt;
+&lt;li&gt;even은 2, 4, 6처럼 형제 중 짝수번째 요소를 의미함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;함수형 표기 &amp;lt;An+B&amp;gt; 지원
+&lt;ul&gt;
+&lt;li&gt;A는 정수 계수로 증가 간격을 의미함&lt;/li&gt;
+&lt;li&gt;B는 정수 오프셋 의미&lt;/li&gt;
+&lt;li&gt;n은 0 이상 정수 전체를 순회하는 변수 의미&lt;/li&gt;
+&lt;li&gt;An+B가 1 이상인 자연수로 평가되는 위치만 선택됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;:nth-child()는 요소 타입과 무관하게 형제 목록 전체를 기준으로 순서를 계산함
+&lt;ul&gt;
+&lt;li&gt;즉 span:nth-child(2n+1)에서 카운팅은 모든 자식 요소를 포함하고, 선택 자체만 span에 한정됨&lt;/li&gt;
+&lt;li&gt;타입별 순서를 기준으로 선택하려면 :nth-of-type() 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;p:nth-child(n)은 형제 그룹 내 모든 p와 동일한 집합을 선택하나, 단순 p보다 명시도는 더 높음&lt;/li&gt;
+&lt;li&gt;p:nth-child(1) 또는 p:nth-child(0n+1)은 :first-child와 동일한 의미와 명시도를 가짐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리&#34;&gt;동작 원리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;An+B가 만드는 수열이 매칭 인덱스를 결정함
+&lt;ul&gt;
+&lt;li&gt;예) 5n은 0, 5, 10, 15, &amp;hellip;를 생성하나 인덱스는 1부터 시작하므로 0은 매칭되지 않음&lt;/li&gt;
+&lt;li&gt;예) n+7은 7, 8, 9, &amp;hellip;로 7번째 이후 전부 매칭됨&lt;/li&gt;
+&lt;li&gt;예) 3n+4는 4, 7, 10, 13, &amp;hellip; 매칭됨&lt;/li&gt;
+&lt;li&gt;예) -n+3은 3, 2, 1 순으로 해석되어 결과적으로 앞의 3개가 매칭됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;카운팅 단위는 요소 노드 기준임
+&lt;ul&gt;
+&lt;li&gt;공백 텍스트 노드 등은 포함하지 않음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;선택자-예시&#34;&gt;선택자 예시&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;tr:nth-child(odd) 또는 tr:nth-child(2n+1)  HTML 표의 홀수번째 행 선택&lt;/li&gt;
+&lt;li&gt;tr:nth-child(even) 또는 tr:nth-child(2n)  HTML 표의 짝수번째 행 선택&lt;/li&gt;
+&lt;li&gt;:nth-child(7)  임의의 7번째 요소 선택&lt;/li&gt;
+&lt;li&gt;:nth-child(5n)  5, 10, 15, &amp;hellip;번째 요소 선택  0은 선택되지 않음&lt;/li&gt;
+&lt;li&gt;:nth-child(n+7)  7번째부터 끝까지 선택&lt;/li&gt;
+&lt;li&gt;:nth-child(3n+4)  4, 7, 10, 13, &amp;hellip;번째 요소 선택&lt;/li&gt;
+&lt;li&gt;:nth-child(-n+3)  앞에서 3개 요소 선택&lt;/li&gt;
+&lt;li&gt;p:nth-child(n)  형제 그룹 내 모든 p 선택  단순 p보다 명시도 높음&lt;/li&gt;
+&lt;li&gt;p:nth-child(1) 또는 p:nth-child(0n+1)  형제 그룹 내 첫 번째 p 선택  :first-child와 동일&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;짧은-스니펫&#34;&gt;짧은 스니펫&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;/* 목록의 두 번째 &amp;lt;li&amp;gt; 선택 */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;li&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#d08770&#34;&gt;nth-child&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;lime&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;/* 4의 배수 번째 요소 선택 */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#d08770&#34;&gt;nth-child&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;4n&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;lime&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;주의사항&#34;&gt;주의사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;:nth-child()는 형제 전체를 기준으로 순서를 매김  타입이 섞여 있으면 카운트에 모두 포함됨
+&lt;ul&gt;
+&lt;li&gt;타입에 따라 카운트를 분리하고 싶다면 :nth-of-type() 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A, B는 정수만 허용  공백과 부호 위치는 CSS 구문 규칙을 따름&lt;/li&gt;
+&lt;li&gt;0 또는 음수로 평가되는 위치는 매칭되지 않음&lt;/li&gt;
+&lt;li&gt;명시도는 타입 선택자보다 높고, 클래스와 동일 계층의 의사 클래스 수준으로 취급됨&lt;/li&gt;
+&lt;li&gt;최신 사양에서는 of 구문을 통해 :nth-child(An+B of S)처럼 선택자 리스트를 한정하는 패턴이 가능함  브라우저 호환성은 문서와 지원 현황 확인 권장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;베스트-프랙티스&#34;&gt;베스트 프랙티스&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;단순 패턴은 odd, even으로 표현해 가독성 확보&lt;/li&gt;
+&lt;li&gt;복잡한 패턴은 An+B를 사용하되, 수열을 1 이상 범위로 명확히 환산해 주석으로 의도 기록&lt;/li&gt;
+&lt;li&gt;섞인 타입 환경에서의 혼동을 피하려면 가능하면 :nth-of-type() 우선 검토&lt;/li&gt;
+&lt;li&gt;특정 구간 필터링은 교집합 패턴을 사용  예 p:nth-child(n+8):nth-child(-n+15)로 8~15 범위를 표현&lt;/li&gt;
+&lt;li&gt;접근성 측면에서 시각 강조용 스타일만 바꾸는 경우 DOM 순서 의존 로직과 결합하지 않도록 주의&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;간단-비교--nth-child-vs-nth-of-type&#34;&gt;간단 비교  nth-child vs nth-of-type&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;nth-child  형제 전체 기준 카운트  타입 섞임에 영향 받음&lt;/li&gt;
+&lt;li&gt;nth-of-type  동일 태그 타입만 카운트  다른 타입은 건너뜀&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
+&lt;p&gt;:nth-child()는 CSS에서 반복적 패턴과 구간 선택을 간결하게 표현하는 기본 도구임
+An+B를 수열 관점으로 해석하고, 타입 혼재 여부에 따라 nth-child와 nth-of-type을 구분 적용하면 예측 가능한 스타일링이 가능함
+필요 시 최신 of 구문과 명시도 특성을 함께 고려해 유지보수 비용을 낮추는 전략 추천&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
