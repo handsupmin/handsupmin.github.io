@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 01 Mar 2026 13:15:02 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 13:24:24 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend</title>
+      <link>https://blog.jsontapose.com/tags/backend/</link>
+      <pubDate>Mon, 02 Mar 2026 13:24:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Django</title>
+      <link>https://blog.jsontapose.com/tags/django/</link>
+      <pubDate>Mon, 02 Mar 2026 13:24:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/django/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Django-Rest-Framework</title>
+      <link>https://blog.jsontapose.com/tags/django-rest-framework/</link>
+      <pubDate>Mon, 02 Mar 2026 13:24:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/django-rest-framework/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Http</title>
+      <link>https://blog.jsontapose.com/tags/http/</link>
+      <pubDate>Mon, 02 Mar 2026 13:24:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/http/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Middleware</title>
+      <link>https://blog.jsontapose.com/tags/middleware/</link>
+      <pubDate>Mon, 02 Mar 2026 13:24:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/middleware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://blog.jsontapose.com/tags/performance/</link>
+      <pubDate>Mon, 02 Mar 2026 13:24:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://blog.jsontapose.com/tags/python/</link>
+      <pubDate>Mon, 02 Mar 2026 13:24:24 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/python/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Css</title>
       <link>https://blog.jsontapose.com/tags/css/</link>
@@ -499,13 +548,6 @@
       <description></description>
     </item>
     <item>
-      <title>Python</title>
-      <link>https://blog.jsontapose.com/tags/python/</link>
-      <pubDate>Tue, 17 Feb 2026 13:27:05 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Selenium</title>
       <link>https://blog.jsontapose.com/tags/selenium/</link>
       <pubDate>Tue, 17 Feb 2026 13:27:05 +0000</pubDate>
@@ -608,13 +650,6 @@
       <link>https://blog.jsontapose.com/tags/hashtable/</link>
       <pubDate>Sat, 14 Feb 2026 13:16:48 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/hashtable/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Performance</title>
-      <link>https://blog.jsontapose.com/tags/performance/</link>
-      <pubDate>Sat, 14 Feb 2026 13:16:48 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/performance/</guid>
       <description></description>
     </item>
     <item>
@@ -1633,13 +1668,6 @@
       <description></description>
     </item>
     <item>
-      <title>Backend</title>
-      <link>https://blog.jsontapose.com/tags/backend/</link>
-      <pubDate>Tue, 13 Jan 2026 13:15:30 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/backend/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Grafana</title>
       <link>https://blog.jsontapose.com/tags/grafana/</link>
       <pubDate>Tue, 13 Jan 2026 13:15:30 +0000</pubDate>
@@ -1861,13 +1889,6 @@
       <link>https://blog.jsontapose.com/tags/grpc/</link>
       <pubDate>Tue, 06 Jan 2026 13:13:56 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/grpc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Http</title>
-      <link>https://blog.jsontapose.com/tags/http/</link>
-      <pubDate>Tue, 06 Jan 2026 13:13:56 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/http/</guid>
       <description></description>
     </item>
     <item>
@@ -3282,13 +3303,6 @@
       <link>https://blog.jsontapose.com/tags/guard/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/guard/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Middleware</title>
-      <link>https://blog.jsontapose.com/tags/middleware/</link>
-      <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/middleware/</guid>
       <description></description>
     </item>
     <item>
