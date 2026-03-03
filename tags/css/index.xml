@@ -6,8 +6,33 @@
     <description>Recent content in Css on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 01 Mar 2026 13:15:02 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 13:23:32 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS 선택자 핵심 정리와 명시도 가이드</title>
+      <link>https://blog.jsontapose.com/posts/css-selectors-core-ef4aea/</link>
+      <pubDate>Tue, 03 Mar 2026 13:23:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/css-selectors-core-ef4aea/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;CSS에서 선택자는 DOM에서 스타일을 적용할 대상 요소 집합을 정의하는 식
+컴포넌트 스코프와 일관된 스타일링, 유지보수 비용에 직접 영향
+핵심 유형과 매칭 원리, 명시도와 베스트프랙티스 중심 요약&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;타입 선택자 &lt;code&gt;tag&lt;/code&gt; 특정 태그 타깃&lt;/li&gt;
+&lt;li&gt;클래스 선택자 &lt;code&gt;.class&lt;/code&gt; 재사용 가능한 스타일 단위에 적합&lt;/li&gt;
+&lt;li&gt;아이디 선택자 &lt;code&gt;#id&lt;/code&gt; 고유 요소 타깃, 명시도 높음&lt;/li&gt;
+&lt;li&gt;속성 선택자 &lt;code&gt;[attr]&lt;/code&gt;, &lt;code&gt;[attr=value]&lt;/code&gt;, &lt;code&gt;[attr*=substr]&lt;/code&gt; 속성 값 기반 매칭&lt;/li&gt;
+&lt;li&gt;가상 클래스 &lt;code&gt;:hover&lt;/code&gt;, &lt;code&gt;:focus&lt;/code&gt;, &lt;code&gt;:active&lt;/code&gt;, &lt;code&gt;:not()&lt;/code&gt;, &lt;code&gt;:is()&lt;/code&gt; 상태나 집합 표현&lt;/li&gt;
+&lt;li&gt;가상 요소 &lt;code&gt;::before&lt;/code&gt;, &lt;code&gt;::after&lt;/code&gt; 논리적 하위 요소 생성&lt;/li&gt;
+&lt;li&gt;결합자 &lt;code&gt;A B&lt;/code&gt; 하위, &lt;code&gt;A &amp;gt; B&lt;/code&gt; 자식, &lt;code&gt;A + B&lt;/code&gt; 인접 형제, &lt;code&gt;A ~ B&lt;/code&gt; 일반 형제 관계 표현&lt;/li&gt;
+&lt;li&gt;그룹 &lt;code&gt;A, B&lt;/code&gt; 동일 스타일의 대상 묶음&lt;/li&gt;
+&lt;li&gt;최신 선택자 &lt;code&gt;:has()&lt;/code&gt; 부모가 특정 자식을 가질 때 매칭, 브라우저 지원 범위 확인 권장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리와-명시도&#34;&gt;동작 원리와 명시도&lt;/h3&gt;
+&lt;p&gt;브라우저는 각 규칙의 선택자를 DOM 노드에 대조해 매칭된 규칙을 수집 후 명시도와 소스 순서로 충돌 해결
+명시도 계산 규칙 요약&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CSS :nth-child() 정확히 이해하기 — An&#43;B 패턴, odd/even, nth-of-type 비교</title>
       <link>https://blog.jsontapose.com/posts/css-nth-child-90a3e9/</link>

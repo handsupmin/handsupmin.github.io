@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 02 Mar 2026 13:24:24 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 13:23:32 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Css</title>
+      <link>https://blog.jsontapose.com/tags/css/</link>
+      <pubDate>Tue, 03 Mar 2026 13:23:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frontend</title>
+      <link>https://blog.jsontapose.com/tags/frontend/</link>
+      <pubDate>Tue, 03 Mar 2026 13:23:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/frontend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Selectors</title>
+      <link>https://blog.jsontapose.com/tags/selectors/</link>
+      <pubDate>Tue, 03 Mar 2026 13:23:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/selectors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Specificity</title>
+      <link>https://blog.jsontapose.com/tags/specificity/</link>
+      <pubDate>Tue, 03 Mar 2026 13:23:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/specificity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web</title>
+      <link>https://blog.jsontapose.com/tags/web/</link>
+      <pubDate>Tue, 03 Mar 2026 13:23:32 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/web/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Backend</title>
       <link>https://blog.jsontapose.com/tags/backend/</link>
@@ -58,20 +93,6 @@
       <description></description>
     </item>
     <item>
-      <title>Css</title>
-      <link>https://blog.jsontapose.com/tags/css/</link>
-      <pubDate>Sun, 01 Mar 2026 13:15:02 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/css/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Frontend</title>
-      <link>https://blog.jsontapose.com/tags/frontend/</link>
-      <pubDate>Sun, 01 Mar 2026 13:15:02 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/frontend/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Nth-Child</title>
       <link>https://blog.jsontapose.com/tags/nth-child/</link>
       <pubDate>Sun, 01 Mar 2026 13:15:02 +0000</pubDate>
@@ -83,20 +104,6 @@
       <link>https://blog.jsontapose.com/tags/pseudo-classes/</link>
       <pubDate>Sun, 01 Mar 2026 13:15:02 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/pseudo-classes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Selectors</title>
-      <link>https://blog.jsontapose.com/tags/selectors/</link>
-      <pubDate>Sun, 01 Mar 2026 13:15:02 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/selectors/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web</title>
-      <link>https://blog.jsontapose.com/tags/web/</link>
-      <pubDate>Sun, 01 Mar 2026 13:15:02 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/web/</guid>
       <description></description>
     </item>
     <item>
