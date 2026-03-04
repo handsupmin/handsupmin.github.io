@@ -6,8 +6,46 @@
     <description>Recent content in Networking on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 24 Feb 2026 13:28:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 13:22:56 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DNS TTL(Time To Live) 이해와 실무 설정 가이드</title>
+      <link>https://blog.jsontapose.com/posts/dns-ttl-time-to-live-guide-ac2ed4/</link>
+      <pubDate>Wed, 04 Mar 2026 13:22:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/dns-ttl-time-to-live-guide-ac2ed4/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;DNS TTL은 레코드가 캐시로 유지되는 시간의 기준값으로 초 단위 설정값임. 권한 네임서버가 응답에 TTL을 포함하고, 재귀 리졸버와 클라이언트가 이 시간 동안 결과를 기억함. TTL이 만료되면 다시 질의가 발생함&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;TTL Time To Live&lt;/li&gt;
+&lt;li&gt;DNS 응답을 브라우저나 재귀 DNS 서버가 얼마 동안 캐시할지 정하는 값&lt;/li&gt;
+&lt;li&gt;예 TTL이 300이면 해당 레코드는 5분간 캐시 유지, 이후 재질의 발생&lt;/li&gt;
+&lt;li&gt;부존재 응답 NXDOMAIN 역시 SOA 설정에 따라 일정 시간 캐시됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;왜-중요한가&#34;&gt;왜 중요한가&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;TTL이 짧으면 변경 사항이 빠르게 반영됨
+&lt;ul&gt;
+&lt;li&gt;트래픽 변화 대응 용이&lt;/li&gt;
+&lt;li&gt;대신 DNS 요청 수 증가로 지연과 비용 증가 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TTL이 길면 질의 수가 줄어 효율적이고 안정적임
+&lt;ul&gt;
+&lt;li&gt;캐시 적중률 상승&lt;/li&gt;
+&lt;li&gt;대신 변경 반영이 느림&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;권장-ttl-값-가이드&#34;&gt;권장 TTL 값 가이드&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;일반 웹사이트 300&lt;del&gt;600 5&lt;/del&gt;10분&lt;/li&gt;
+&lt;li&gt;트래픽 변화가 잦은 API 60~300&lt;/li&gt;
+&lt;li&gt;안정적이고 변경이 드문 서비스 3600&lt;del&gt;86400 1시간&lt;/del&gt;하루&lt;/li&gt;
+&lt;li&gt;레코드 변경 직전 예 이관 60 이하로 낮춰 사전 준비&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;참고 사항&lt;/p&gt;</description>
+    </item>
     <item>
       <title>리버스 프록시와 포워드 프록시 개념과 차이</title>
       <link>https://blog.jsontapose.com/posts/reverse-proxy-vs-forward-proxy-beb389/</link>

@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 03 Mar 2026 13:23:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 13:22:56 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Caching</title>
+      <link>https://blog.jsontapose.com/tags/caching/</link>
+      <pubDate>Wed, 04 Mar 2026 13:22:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/caching/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devops</title>
+      <link>https://blog.jsontapose.com/tags/devops/</link>
+      <pubDate>Wed, 04 Mar 2026 13:22:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dns</title>
+      <link>https://blog.jsontapose.com/tags/dns/</link>
+      <pubDate>Wed, 04 Mar 2026 13:22:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>https://blog.jsontapose.com/tags/networking/</link>
+      <pubDate>Wed, 04 Mar 2026 13:22:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ttl</title>
+      <link>https://blog.jsontapose.com/tags/ttl/</link>
+      <pubDate>Wed, 04 Mar 2026 13:22:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ttl/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Css</title>
       <link>https://blog.jsontapose.com/tags/css/</link>
@@ -275,13 +310,6 @@
       <description></description>
     </item>
     <item>
-      <title>Caching</title>
-      <link>https://blog.jsontapose.com/tags/caching/</link>
-      <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/caching/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Forward-Proxy</title>
       <link>https://blog.jsontapose.com/tags/forward-proxy/</link>
       <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
@@ -293,13 +321,6 @@
       <link>https://blog.jsontapose.com/tags/load-balancing/</link>
       <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/load-balancing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Networking</title>
-      <link>https://blog.jsontapose.com/tags/networking/</link>
-      <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/networking/</guid>
       <description></description>
     </item>
     <item>
@@ -2610,13 +2631,6 @@
       <link>https://blog.jsontapose.com/tags/container-architecture/</link>
       <pubDate>Sat, 13 Dec 2025 13:09:08 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/container-architecture/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Devops</title>
-      <link>https://blog.jsontapose.com/tags/devops/</link>
-      <pubDate>Sat, 13 Dec 2025 13:09:08 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/devops/</guid>
       <description></description>
     </item>
     <item>
