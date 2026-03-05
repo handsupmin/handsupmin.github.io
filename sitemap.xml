@@ -24,17 +24,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/dns-ttl-time-to-live-guide-ac2ed4/</loc>
-    <lastmod>2026-03-04T13:22:56+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/grpc-http2-protocol-buffers-proto-encoding-4eb6b4/</loc>
+    <lastmod>2026-03-05T13:25:19+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-03-04T13:22:56+00:00</lastmod>
+    <lastmod>2026-03-05T13:25:19+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2026-03-05T13:25:19+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/dns-ttl-time-to-live-guide-ac2ed4/</loc>
     <lastmod>2026-03-04T13:22:56+00:00</lastmod>
     <priority>0.5</priority>
   </url>

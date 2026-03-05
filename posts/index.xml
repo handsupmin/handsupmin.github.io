@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 04 Mar 2026 13:22:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 13:25:19 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,23 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>gRPC 핵심 정리와 실전 가이드 HTTP/2, Protocol Buffers, Proto 파일과 인코딩 원리</title>
+      <link>https://blog.jsontapose.com/posts/grpc-http2-protocol-buffers-proto-encoding-4eb6b4/</link>
+      <pubDate>Thu, 05 Mar 2026 13:25:19 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/grpc-http2-protocol-buffers-proto-encoding-4eb6b4/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;소켓과 전통 RPC, 그리고 REST를 거쳐 gRPC가 등장한 배경과 핵심 특성 정리
+HTTP/2와 Protocol Buffers를 결합한 gRPC의 구조, Proto 파일 작성 규칙, 그리고 실제 인코딩 원리까지 흐름 중심으로 정리
+후반부에는 인증과 장애 상황에서의 동작 특성, 도입 적합 영역 요약&lt;/p&gt;
+&lt;h3 id=&#34;등장-배경&#34;&gt;등장 배경&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Server-Client 모델의 확산 배경
+초기 모놀리식 메인프레임 시대에는 네트워크 통신 중요도 낮음
+소형 컴퓨터와 워크스테이션 보급으로 기능 분산 필요성 증가
+네트워크 계층 표준화 진행과 함께 서버 간 통신이 핵심 과제로 부상&lt;/p&gt;</description>
     </item>
     <item>
       <title>DNS TTL(Time To Live) 이해와 실무 설정 가이드</title>

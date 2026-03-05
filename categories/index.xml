@@ -6,8 +6,15 @@
     <description>Recent content in Categories on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 04 Mar 2026 13:22:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 13:25:19 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Distributed-Systems</title>
+      <link>https://blog.jsontapose.com/categories/distributed-systems/</link>
+      <pubDate>Thu, 05 Mar 2026 13:25:19 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/categories/distributed-systems/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Dns</title>
       <link>https://blog.jsontapose.com/categories/dns/</link>
