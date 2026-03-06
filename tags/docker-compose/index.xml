@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Docker-Compose on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/docker-compose/</link>
+    <description>Recent content in Docker-Compose on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 06 Mar 2026 13:21:51 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac에서 docker: &#39;compose&#39; is not a docker command 오류 해결</title>
+      <link>https://blog.jsontapose.com/posts/fix-docker-compose-not-a-docker-command-macos-bb9708/</link>
+      <pubDate>Fri, 06 Mar 2026 13:21:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/fix-docker-compose-not-a-docker-command-macos-bb9708/</guid>
+      <description>&lt;h3 id=&#34;배경과-문제-정의&#34;&gt;배경과 문제 정의&lt;/h3&gt;
+&lt;p&gt;맥을 초기화하고 Homebrew cask로 Docker Desktop 설치 후 docker compose가 동작하지 않음
+터미널에 docker: &amp;lsquo;compose&amp;rsquo; is not a docker command 메시지 출력, buildx도 동일 증상
+재설치와 초기화를 반복했지만 변화 없음&lt;/p&gt;
+&lt;h3 id=&#34;환경&#34;&gt;환경&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS Ventura 13.0.1&lt;/li&gt;
+&lt;li&gt;Apple Silicon M1&lt;/li&gt;
+&lt;li&gt;Docker 20.10.21 build baeda1f&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;원인-가설&#34;&gt;원인 가설&lt;/h3&gt;
+&lt;p&gt;Docker Desktop에 포함된 CLI plugin 디렉터리가 docker가 검색하는 경로와 연결되지 않음
+compose와 buildx는 독립 바이너리가 아니라 CLI plugin으로 배포됨&lt;/p&gt;
+&lt;h3 id=&#34;해결&#34;&gt;해결&lt;/h3&gt;
+&lt;p&gt;CLI plugin 디렉터리에 심볼릭 링크 추가&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
