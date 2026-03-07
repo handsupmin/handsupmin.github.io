@@ -24,17 +24,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-03-06T13:21:51+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/django-orm-n-plus-one-lazy-loading-select-related-prefetch-related-54fcaa/</loc>
+    <lastmod>2026-03-07T13:14:54+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/fix-docker-compose-not-a-docker-command-macos-bb9708/</loc>
-    <lastmod>2026-03-06T13:21:51+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/</loc>
+    <lastmod>2026-03-07T13:14:54+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2026-03-07T13:14:54+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/fix-docker-compose-not-a-docker-command-macos-bb9708/</loc>
     <lastmod>2026-03-06T13:21:51+00:00</lastmod>
     <priority>0.5</priority>
   </url>

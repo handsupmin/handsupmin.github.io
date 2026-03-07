@@ -6,8 +6,15 @@
     <description>Recent content in Categories on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 06 Mar 2026 13:21:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2026 13:14:54 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django-Orm</title>
+      <link>https://blog.jsontapose.com/categories/django-orm/</link>
+      <pubDate>Sat, 07 Mar 2026 13:14:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/categories/django-orm/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Troubleshooting</title>
       <link>https://blog.jsontapose.com/categories/troubleshooting/</link>

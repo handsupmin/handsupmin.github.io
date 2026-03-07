@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Lazy-Loading on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/lazy-loading/</link>
+    <description>Recent content in Lazy-Loading on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 07 Mar 2026 13:14:54 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/lazy-loading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django ORM N&#43;1 쿼리와 Lazy Loading, select_related vs prefetch_related 가이드</title>
+      <link>https://blog.jsontapose.com/posts/django-orm-n-plus-one-lazy-loading-select-related-prefetch-related-54fcaa/</link>
+      <pubDate>Sat, 07 Mar 2026 13:14:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/django-orm-n-plus-one-lazy-loading-select-related-prefetch-related-54fcaa/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;N+1 쿼리 문제는 ORM에서 자주 발생하는 성능 이슈로, 기본 쿼리 1회 이후 연관 데이터를 접근하는 시점마다 추가 쿼리가 N회 발생하는 상황을 의미함
+Django ORM은 기본적으로 lazy-loading 전략을 사용하므로 관계 필드 접근 시점에 쿼리가 실행됨
+이 글에서는 N+1의 동작 맥락과 lazy-loading의 특성, 그리고 select_related와 prefetch_related로 N+1을 예방하는 방법을 정리함&lt;/p&gt;
+&lt;h3 id=&#34;n1-쿼리-문제-예시&#34;&gt;N+1 쿼리 문제 예시&lt;/h3&gt;
+&lt;p&gt;방문 기록 Visitor와 방문자 정보 Person이 외래키로 연결된 상황 가정&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;visitors &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; Visitor&lt;span style=&#34;color:#81a1c1&#34;&gt;.&lt;/span&gt;objects&lt;span style=&#34;color:#81a1c1&#34;&gt;.&lt;/span&gt;filter&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;visit_date__year&lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#b48ead&#34;&gt;2022&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;for&lt;/span&gt; v &lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;in&lt;/span&gt; visitors&lt;span style=&#34;color:#eceff4&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#81a1c1&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;v&lt;span style=&#34;color:#81a1c1&#34;&gt;.&lt;/span&gt;person&lt;span style=&#34;color:#81a1c1&#34;&gt;.&lt;/span&gt;name&lt;span style=&#34;color:#eceff4&#34;&gt;,&lt;/span&gt; v&lt;span style=&#34;color:#81a1c1&#34;&gt;.&lt;/span&gt;visit_date&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;위 코드는 다음 흐름으로 동작함&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

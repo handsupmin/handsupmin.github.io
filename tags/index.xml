@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 06 Mar 2026 13:21:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2026 13:14:54 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database-Performance</title>
+      <link>https://blog.jsontapose.com/tags/database-performance/</link>
+      <pubDate>Sat, 07 Mar 2026 13:14:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database-performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Django</title>
+      <link>https://blog.jsontapose.com/tags/django/</link>
+      <pubDate>Sat, 07 Mar 2026 13:14:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/django/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lazy-Loading</title>
+      <link>https://blog.jsontapose.com/tags/lazy-loading/</link>
+      <pubDate>Sat, 07 Mar 2026 13:14:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/lazy-loading/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>N-Plus-One</title>
+      <link>https://blog.jsontapose.com/tags/n-plus-one/</link>
+      <pubDate>Sat, 07 Mar 2026 13:14:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/n-plus-one/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orm</title>
+      <link>https://blog.jsontapose.com/tags/orm/</link>
+      <pubDate>Sat, 07 Mar 2026 13:14:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/orm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prefetch-Related</title>
+      <link>https://blog.jsontapose.com/tags/prefetch-related/</link>
+      <pubDate>Sat, 07 Mar 2026 13:14:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/prefetch-related/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Select-Related</title>
+      <link>https://blog.jsontapose.com/tags/select-related/</link>
+      <pubDate>Sat, 07 Mar 2026 13:14:54 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/select-related/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cli-Plugins</title>
       <link>https://blog.jsontapose.com/tags/cli-plugins/</link>
@@ -174,13 +223,6 @@
       <link>https://blog.jsontapose.com/tags/web/</link>
       <pubDate>Tue, 03 Mar 2026 13:23:32 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/web/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Django</title>
-      <link>https://blog.jsontapose.com/tags/django/</link>
-      <pubDate>Mon, 02 Mar 2026 13:24:24 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/django/</guid>
       <description></description>
     </item>
     <item>
@@ -1241,13 +1283,6 @@
       <description></description>
     </item>
     <item>
-      <title>Orm</title>
-      <link>https://blog.jsontapose.com/tags/orm/</link>
-      <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/orm/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Sql-Join</title>
       <link>https://blog.jsontapose.com/tags/sql-join/</link>
       <pubDate>Fri, 30 Jan 2026 13:22:31 +0000</pubDate>
@@ -2043,13 +2078,6 @@
       <link>https://blog.jsontapose.com/tags/btree/</link>
       <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/btree/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database-Performance</title>
-      <link>https://blog.jsontapose.com/tags/database-performance/</link>
-      <pubDate>Mon, 05 Jan 2026 13:15:15 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/database-performance/</guid>
       <description></description>
     </item>
     <item>
