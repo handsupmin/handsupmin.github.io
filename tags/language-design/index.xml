@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Language-Design on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/language-design/</link>
+    <description>Recent content in Language-Design on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 08 Mar 2026 13:15:18 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/language-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>자바스크립트는 왜 프로토타입을 선택했나</title>
+      <link>https://blog.jsontapose.com/posts/why-javascript-chose-prototypes-594642/</link>
+      <pubDate>Sun, 08 Mar 2026 13:15:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/why-javascript-chose-prototypes-594642/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;브라우저 스크립팅 수요와 10일 설계 제약
+클래스보다 구현 단순, 런타임 확장 유리한 위임 모델 채택&lt;/p&gt;
+&lt;h3 id=&#34;개념&#34;&gt;개념&lt;/h3&gt;
+&lt;p&gt;객체는 프로토타입 링크로 행동 위임
+프로퍼티 조회는 체인 상향 전파
+ES6 class는 프로토타입 문법 설탕&lt;/p&gt;
+&lt;h3 id=&#34;이유&#34;&gt;이유&lt;/h3&gt;
+&lt;p&gt;동적 합성 용이, 메모리 공유로 중복 감소, 런타임 교체 가능&lt;/p&gt;
+&lt;h3 id=&#34;주의&#34;&gt;주의&lt;/h3&gt;
+&lt;p&gt;깊은 체인 비용과 디버깅 난이도
+this 바인딩 혼동, 내장 프로토타입 오염 금지&lt;/p&gt;
+&lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
+&lt;p&gt;웹의 변화 속도에 맞춘 실용적 선택
+외형은 class 사용 가능하나 내부 모델은 프로토타입&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

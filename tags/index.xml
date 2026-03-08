@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 07 Mar 2026 13:14:54 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 13:15:18 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Es6-Class</title>
+      <link>https://blog.jsontapose.com/tags/es6-class/</link>
+      <pubDate>Sun, 08 Mar 2026 13:15:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/es6-class/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inheritance</title>
+      <link>https://blog.jsontapose.com/tags/inheritance/</link>
+      <pubDate>Sun, 08 Mar 2026 13:15:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/inheritance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Sun, 08 Mar 2026 13:15:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Language-Design</title>
+      <link>https://blog.jsontapose.com/tags/language-design/</link>
+      <pubDate>Sun, 08 Mar 2026 13:15:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/language-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oop</title>
+      <link>https://blog.jsontapose.com/tags/oop/</link>
+      <pubDate>Sun, 08 Mar 2026 13:15:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/oop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prototype</title>
+      <link>https://blog.jsontapose.com/tags/prototype/</link>
+      <pubDate>Sun, 08 Mar 2026 13:15:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/prototype/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Database-Performance</title>
       <link>https://blog.jsontapose.com/tags/database-performance/</link>
@@ -489,13 +531,6 @@
       <link>https://blog.jsontapose.com/tags/dom/</link>
       <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/dom/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -2806,13 +2841,6 @@
       <link>https://blog.jsontapose.com/tags/schedule/</link>
       <pubDate>Sun, 07 Dec 2025 13:07:35 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/schedule/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Oop</title>
-      <link>https://blog.jsontapose.com/tags/oop/</link>
-      <pubDate>Sat, 06 Dec 2025 13:08:38 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/oop/</guid>
       <description></description>
     </item>
     <item>
