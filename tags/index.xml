@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 08 Mar 2026 13:15:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 13:27:18 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dom</title>
+      <link>https://blog.jsontapose.com/tags/dom/</link>
+      <pubDate>Mon, 09 Mar 2026 13:27:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Mon, 09 Mar 2026 13:27:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jquery</title>
+      <link>https://blog.jsontapose.com/tags/jquery/</link>
+      <pubDate>Mon, 09 Mar 2026 13:27:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/jquery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Selectors</title>
+      <link>https://blog.jsontapose.com/tags/selectors/</link>
+      <pubDate>Mon, 09 Mar 2026 13:27:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/selectors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Traversal</title>
+      <link>https://blog.jsontapose.com/tags/traversal/</link>
+      <pubDate>Mon, 09 Mar 2026 13:27:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/traversal/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Es6-Class</title>
       <link>https://blog.jsontapose.com/tags/es6-class/</link>
@@ -20,13 +55,6 @@
       <link>https://blog.jsontapose.com/tags/inheritance/</link>
       <pubDate>Sun, 08 Mar 2026 13:15:18 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/inheritance/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Sun, 08 Mar 2026 13:15:18 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -244,13 +272,6 @@
       <link>https://blog.jsontapose.com/tags/frontend/</link>
       <pubDate>Tue, 03 Mar 2026 13:23:32 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/frontend/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Selectors</title>
-      <link>https://blog.jsontapose.com/tags/selectors/</link>
-      <pubDate>Tue, 03 Mar 2026 13:23:32 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/selectors/</guid>
       <description></description>
     </item>
     <item>
@@ -524,13 +545,6 @@
       <link>https://blog.jsontapose.com/tags/dataset/</link>
       <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/dataset/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dom</title>
-      <link>https://blog.jsontapose.com/tags/dom/</link>
-      <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/dom/</guid>
       <description></description>
     </item>
     <item>

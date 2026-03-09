@@ -6,8 +6,28 @@
     <description>Recent content in Selectors on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 03 Mar 2026 13:23:32 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 13:27:18 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/selectors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jQuery siblings와 DOM 형제 탐색 정리</title>
+      <link>https://blog.jsontapose.com/posts/jquery-siblings-and-dom-sibling-traversal-c922ea/</link>
+      <pubDate>Mon, 09 Mar 2026 13:27:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/jquery-siblings-and-dom-sibling-traversal-c922ea/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;jQuery siblings 계열 메서드와 브라우저 DOM API에서 형제 노드를 탐색하는 방법 정리
+jQuery는 요소 노드 기준으로 동작, DOM API의 일부 속성은 텍스트 노드를 포함하므로 차이 주의&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;.siblings([selector]) 선택한 요소의 형제 요소 중 선택자에 일치하는 모든 요소 선택&lt;/li&gt;
+&lt;li&gt;.next() 바로 다음 형제 요소 선택&lt;/li&gt;
+&lt;li&gt;.nextAll([selector]) 다음에 위치한 형제 요소 모두 선택, 선택자 지정 시 필터링&lt;/li&gt;
+&lt;li&gt;.nextUntil(selector) 지정한 선택자에 해당하는 요소 바로 이전까지의 모든 다음 형제 요소 선택, 종료 요소는 미포함&lt;/li&gt;
+&lt;li&gt;.prev() 바로 이전 형제 요소 선택&lt;/li&gt;
+&lt;li&gt;.prevAll([selector]) 이전에 위치한 형제 요소 모두 선택, 선택자 지정 시 필터링&lt;/li&gt;
+&lt;li&gt;.prevUntil(selector) 지정한 선택자에 해당하는 요소 바로 다음까지의 모든 이전 형제 요소 선택, 종료 요소는 미포함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;DOM 탐색 속성&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CSS 선택자 핵심 정리와 명시도 가이드</title>
       <link>https://blog.jsontapose.com/posts/css-selectors-core-ef4aea/</link>
