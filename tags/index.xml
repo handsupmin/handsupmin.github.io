@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 09 Mar 2026 13:27:18 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 13:25:47 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ci-Cd</title>
+      <link>https://blog.jsontapose.com/tags/ci-cd/</link>
+      <pubDate>Tue, 10 Mar 2026 13:25:47 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ci-cd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Qa</title>
+      <link>https://blog.jsontapose.com/tags/qa/</link>
+      <pubDate>Tue, 10 Mar 2026 13:25:47 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/qa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Release-Management</title>
+      <link>https://blog.jsontapose.com/tags/release-management/</link>
+      <pubDate>Tue, 10 Mar 2026 13:25:47 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/release-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sanity-Testing</title>
+      <link>https://blog.jsontapose.com/tags/sanity-testing/</link>
+      <pubDate>Tue, 10 Mar 2026 13:25:47 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sanity-testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smoke-Testing</title>
+      <link>https://blog.jsontapose.com/tags/smoke-testing/</link>
+      <pubDate>Tue, 10 Mar 2026 13:25:47 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/smoke-testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software-Testing</title>
+      <link>https://blog.jsontapose.com/tags/software-testing/</link>
+      <pubDate>Tue, 10 Mar 2026 13:25:47 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/software-testing/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Dom</title>
       <link>https://blog.jsontapose.com/tags/dom/</link>
@@ -1161,13 +1203,6 @@
       <link>https://blog.jsontapose.com/tags/build-performance/</link>
       <pubDate>Tue, 03 Feb 2026 13:24:57 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/build-performance/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ci-Cd</title>
-      <link>https://blog.jsontapose.com/tags/ci-cd/</link>
-      <pubDate>Tue, 03 Feb 2026 13:24:57 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/ci-cd/</guid>
       <description></description>
     </item>
     <item>
