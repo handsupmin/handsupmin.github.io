@@ -6,8 +6,35 @@
     <description>Recent content in Debugging on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 23 Oct 2025 13:11:27 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 13:26:15 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js console.log가 [Object]를 출력하는 이유와 util.inspect depth 동작 정리</title>
+      <link>https://blog.jsontapose.com/posts/nodejs-console-log-object-util-inspect-depth-858252/</link>
+      <pubDate>Wed, 11 Mar 2026 13:26:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/nodejs-console-log-object-util-inspect-depth-858252/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Node.js에서 console.log로 객체를 찍다 보면 [Object], [Array]로 축약돼 상세 구조가 보이지 않는 경우가 많음
+원인은 console.log가 내부적으로 util.inspect를 사용하고, 기본 depth가 2이기 때문임
+아래에서 동작 방식과 옵션, 실무에서 흔히 하는 설정을 정리함&lt;/p&gt;
+&lt;h3 id=&#34;consolelog가-object로-축약되는-이유&#34;&gt;console.log가 [Object]로 축약되는 이유&lt;/h3&gt;
+&lt;p&gt;console.log는 객체를 문자열로 만들 때 util.inspect를 사용함
+기본 동작은 depth 2까지 펼치고 그 이후는 축약 표시&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0단계 예시
+&lt;code&gt;{ args: [Object] }&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;1단계 예시
+&lt;code&gt;{ args: { take: 5, orderBy: [Array], where: [Object] } }&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;2단계 예시
+&lt;code&gt;{ args: { take: 5, orderBy: [ [Object] ], where: { userId: 123 } } }&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;3단계 예시
+&lt;code&gt;{ args: { take: 5, orderBy: [ { createdAt: &#39;desc&#39; } ], where: { ... } } }&lt;/code&gt;
+기본 depth가 2이므로 3단계 이상 중첩된 객체는 [Object], 배열은 [Array]로 축약 표시됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;utilinspect-간단-소개&#34;&gt;util.inspect 간단 소개&lt;/h3&gt;
+&lt;p&gt;util.inspect는 node:util 모듈에 있는 함수로, JS 값을 사람이 읽기 좋은 문자열로 직렬화하는 유틸리티
+console.log(obj)는 실질적으로 &lt;code&gt;util.inspect(obj, { depth: 2, colors: false })&lt;/code&gt;와 유사하게 동작함&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Node.js 환경에서 디버깅하기</title>
       <link>https://blog.jsontapose.com/posts/nodejs-debugging-inspect-node-inspect-vscode-27a058/</link>

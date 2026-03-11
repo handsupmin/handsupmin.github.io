@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 10 Mar 2026 13:25:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 13:26:15 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging</title>
+      <link>https://blog.jsontapose.com/tags/debugging/</link>
+      <pubDate>Wed, 11 Mar 2026 13:26:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/debugging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Wed, 11 Mar 2026 13:26:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logging</title>
+      <link>https://blog.jsontapose.com/tags/logging/</link>
+      <pubDate>Wed, 11 Mar 2026 13:26:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/logging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Wed, 11 Mar 2026 13:26:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Util-Inspect</title>
+      <link>https://blog.jsontapose.com/tags/util-inspect/</link>
+      <pubDate>Wed, 11 Mar 2026 13:26:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/util-inspect/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Ci-Cd</title>
       <link>https://blog.jsontapose.com/tags/ci-cd/</link>
@@ -55,13 +90,6 @@
       <link>https://blog.jsontapose.com/tags/dom/</link>
       <pubDate>Mon, 09 Mar 2026 13:27:18 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/dom/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Mon, 09 Mar 2026 13:27:18 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -1143,13 +1171,6 @@
       <description></description>
     </item>
     <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Shallow-Copy</title>
       <link>https://blog.jsontapose.com/tags/shallow-copy/</link>
       <pubDate>Thu, 05 Feb 2026 13:26:26 +0000</pubDate>
@@ -1847,13 +1868,6 @@
       <link>https://blog.jsontapose.com/tags/exception-filter/</link>
       <pubDate>Fri, 16 Jan 2026 13:13:56 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/exception-filter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Logging</title>
-      <link>https://blog.jsontapose.com/tags/logging/</link>
-      <pubDate>Fri, 16 Jan 2026 13:13:56 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/logging/</guid>
       <description></description>
     </item>
     <item>
@@ -3380,13 +3394,6 @@
       <link>https://blog.jsontapose.com/tags/chrome-devtools/</link>
       <pubDate>Thu, 23 Oct 2025 13:11:27 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/chrome-devtools/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Debugging</title>
-      <link>https://blog.jsontapose.com/tags/debugging/</link>
-      <pubDate>Thu, 23 Oct 2025 13:11:27 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/debugging/</guid>
       <description></description>
     </item>
     <item>
