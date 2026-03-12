@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 11 Mar 2026 13:26:15 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 13:25:53 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frontend</title>
+      <link>https://blog.jsontapose.com/tags/frontend/</link>
+      <pubDate>Thu, 12 Mar 2026 13:25:53 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/frontend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://blog.jsontapose.com/tags/html/</link>
+      <pubDate>Thu, 12 Mar 2026 13:25:53 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html-Elements</title>
+      <link>https://blog.jsontapose.com/tags/html-elements/</link>
+      <pubDate>Thu, 12 Mar 2026 13:25:53 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/html-elements/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reference</title>
+      <link>https://blog.jsontapose.com/tags/reference/</link>
+      <pubDate>Thu, 12 Mar 2026 13:25:53 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/reference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Semantic-Html</title>
+      <link>https://blog.jsontapose.com/tags/semantic-html/</link>
+      <pubDate>Thu, 12 Mar 2026 13:25:53 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/semantic-html/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Debugging</title>
       <link>https://blog.jsontapose.com/tags/debugging/</link>
@@ -338,13 +373,6 @@
       <description></description>
     </item>
     <item>
-      <title>Frontend</title>
-      <link>https://blog.jsontapose.com/tags/frontend/</link>
-      <pubDate>Tue, 03 Mar 2026 13:23:32 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/frontend/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Specificity</title>
       <link>https://blog.jsontapose.com/tags/specificity/</link>
       <pubDate>Tue, 03 Mar 2026 13:23:32 +0000</pubDate>
@@ -454,13 +482,6 @@
       <link>https://blog.jsontapose.com/tags/frontend-architecture/</link>
       <pubDate>Fri, 27 Feb 2026 13:23:46 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/frontend-architecture/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Html</title>
-      <link>https://blog.jsontapose.com/tags/html/</link>
-      <pubDate>Fri, 27 Feb 2026 13:23:46 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/html/</guid>
       <description></description>
     </item>
     <item>

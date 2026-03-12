@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Html-Elements on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/html-elements/</link>
+    <description>Recent content in Html-Elements on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 12 Mar 2026 13:25:53 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/html-elements/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML 요소 참고서 카테고리별 의미와 사용 시점</title>
+      <link>https://blog.jsontapose.com/posts/html-element-reference-by-category-b25fec/</link>
+      <pubDate>Thu, 12 Mar 2026 13:25:53 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/html-element-reference-by-category-b25fec/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;HTML 문서를 구성하는 요소들을 카테고리별로 묶어 핵심 의미와 사용 시점을 빠르게 파악하는 참고서
+시맨틱 마크업과 접근성, SEO에 직접적인 영향을 주는 요소 위주로 정리
+전체 목록과 세부 제약은 MDN 문서를 최종 기준으로 확인 권장&lt;/p&gt;
+&lt;h3 id=&#34;메인-루트와-구획-루트&#34;&gt;메인 루트와 구획 루트&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;html: 문서 루트 요소, 모든 요소의 조상이어야 함&lt;/li&gt;
+&lt;li&gt;body: 문서 본문 루트, 문서 내 하나만 존재&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;문서-메타데이터&#34;&gt;문서 메타데이터&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;head: 기계가 읽는 문서 메타데이터 컨테이너&lt;/li&gt;
+&lt;li&gt;base: 문서 내 상대 URL의 기준 URL 지정, 문서당 하나만 허용&lt;/li&gt;
+&lt;li&gt;link: 외부 리소스와의 관계 선언, CSS 연결과 파비콘 등&lt;/li&gt;
+&lt;li&gt;meta: title, style 등으로 표현 불가한 메타데이터 표현&lt;/li&gt;
+&lt;li&gt;style: 문서 범위의 스타일 선언&lt;/li&gt;
+&lt;li&gt;title: 브라우저 탭에 표시되는 문서 제목, 텍스트만 허용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;콘텐츠-구획&#34;&gt;콘텐츠 구획&lt;/h3&gt;
+&lt;p&gt;문서 구조와 내비게이션에 쓰이는 시맨틱 컨테이너&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
