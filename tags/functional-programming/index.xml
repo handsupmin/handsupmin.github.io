@@ -6,8 +6,36 @@
     <description>Recent content in Functional-Programming on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 12 Feb 2026 13:28:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 13:24:14 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LINQ 핵심 연산자 정리와 동작 관점: Select부터 GroupBy까지</title>
+      <link>https://blog.jsontapose.com/posts/linq-core-operators-overview-b5ada9/</link>
+      <pubDate>Fri, 13 Mar 2026 13:24:14 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/linq-core-operators-overview-b5ada9/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;LINQ의 주요 연산자를 개념과 동작 관점으로 정리함. 각 연산자가 입력 시퀀스를 어떻게 변환하는지, 결과 크기와 순서를 어떻게 보장하는지, 즉시 실행 여부와 예외 동작은 무엇인지에 초점을 둠. 설명은 가능한 한 단순한 정의와 함께 주의점 중심으로 구성함&lt;/p&gt;
+&lt;h3 id=&#34;기본-변환과-필터&#34;&gt;기본 변환과 필터&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Select&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;한 요소를 다른 형태로 사상하는 투영 연산&lt;/li&gt;
+&lt;li&gt;입력 개수 보존, 출력 개수는 입력과 동일&lt;/li&gt;
+&lt;li&gt;프로퍼티 선택, 새 익명 객체 구성, 스칼라 변환 등에 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;조건식이 true인 요소만 통과시키는 필터링 연산&lt;/li&gt;
+&lt;li&gt;결과 개수는 입력 이상이 될 수 없으며 같거나 더 작거나 빈 시퀀스가 될 수 있음&lt;/li&gt;
+&lt;li&gt;술어 평가가 false면 요소 제외, 지연 실행으로 조건이 충족될 때만 열거 진행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SelectMany&lt;/p&gt;</description>
+    </item>
     <item>
       <title>JavaScript Array.prototype.map 완전 가이드: 동작 원리, 주의점, 실전 패턴</title>
       <link>https://blog.jsontapose.com/posts/javascript-array-prototype-map-guide-17b880/</link>
