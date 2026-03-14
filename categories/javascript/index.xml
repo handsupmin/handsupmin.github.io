@@ -6,8 +6,25 @@
     <description>Recent content in Javascript on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 09 Mar 2026 13:27:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2026 13:17:27 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>자바스크립트 IIFE 정리: 함수 표현식과 스코프 격리, ES6 이후의 대안까지</title>
+      <link>https://blog.jsontapose.com/posts/javascript-iife-function-expression-and-scope-77ff55/</link>
+      <pubDate>Sat, 14 Mar 2026 13:17:27 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/javascript-iife-function-expression-and-scope-77ff55/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;즉시 실행 함수 표현 IIFE(Immediately Invoked Function Expression)는 정의 직후 바로 호출되는 함수 패턴을 의미함
+ES5 시기에는 클래스나 표준 모듈이 없어 전역 스코프 오염 방지와 초기화 코드 캡슐화에 널리 사용됨
+ES6 이후에는 모듈 export/import가 기본 선택지이나, 독립 실행 초기화 코드, 라이브러리 래퍼, 폴리필 등에서는 여전히 유효한 도구임&lt;/p&gt;
+&lt;h3 id=&#34;함수-선언과-함수-표현의-차이&#34;&gt;함수 선언과 함수 표현의 차이&lt;/h3&gt;
+&lt;p&gt;함수 선언 Function Declaration&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;선언이 호이스팅되어 해당 스코프의 시작 시점에 바인딩됨&lt;/li&gt;
+&lt;li&gt;선언 이전 호출 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;함수 표현 Function Expression&lt;/p&gt;</description>
+    </item>
     <item>
       <title>jQuery siblings와 DOM 형제 탐색 정리</title>
       <link>https://blog.jsontapose.com/posts/jquery-siblings-and-dom-sibling-traversal-c922ea/</link>
