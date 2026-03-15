@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 14 Mar 2026 13:17:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2026 13:18:31 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Browser</title>
+      <link>https://blog.jsontapose.com/tags/browser/</link>
+      <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/browser/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://blog.jsontapose.com/tags/html/</link>
+      <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Link-Rel</title>
+      <link>https://blog.jsontapose.com/tags/link-rel/</link>
+      <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/link-rel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reverse-Tabnabbing</title>
+      <link>https://blog.jsontapose.com/tags/reverse-tabnabbing/</link>
+      <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/reverse-tabnabbing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Security</title>
+      <link>https://blog.jsontapose.com/tags/web-security/</link>
+      <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/web-security/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Closures</title>
       <link>https://blog.jsontapose.com/tags/closures/</link>
@@ -97,13 +132,6 @@
       <link>https://blog.jsontapose.com/tags/frontend/</link>
       <pubDate>Thu, 12 Mar 2026 13:25:53 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/frontend/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Html</title>
-      <link>https://blog.jsontapose.com/tags/html/</link>
-      <pubDate>Thu, 12 Mar 2026 13:25:53 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/html/</guid>
       <description></description>
     </item>
     <item>

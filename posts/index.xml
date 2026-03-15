@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 14 Mar 2026 13:17:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2026 13:18:31 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,49 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reverse Tabnabbing과 target=_blank 안전 가이드</title>
+      <link>https://blog.jsontapose.com/posts/reverse-tabnabbing-target-blank-guide-c21dc5/</link>
+      <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/reverse-tabnabbing-target-blank-guide-c21dc5/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;Reverse Tabnabbing은 target=&amp;quot;_blank&amp;quot;로 연 새 탭이 window.opener를 통해 기존 탭을 피싱 페이지로 바꾸는 기법을 말함
+새 탭이 기존 탭에 대한 참조를 갖기 때문에 발생하며, 자바스크립트로 opener의 위치를 변경 가능함
+예시 &lt;code&gt;window.opener.location = &#39;https://cgn.example.com&#39;&lt;/code&gt;
+이 참조를 끊는 표준 방법은 링크에 rel=&amp;ldquo;noopener&amp;rdquo; 또는 rel=&amp;ldquo;noopener noreferrer&amp;quot;를 명시하는 것임&lt;/p&gt;
+&lt;h3 id=&#34;공격-시나리오&#34;&gt;공격 시나리오&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;사용자가 cgm.example.com 접속&lt;/li&gt;
+&lt;li&gt;happy.example.com 링크 클릭&lt;/li&gt;
+&lt;li&gt;새 탭에서 happy.example.com 열림 → 스크립트가 기존 탭을 피싱 사이트로 이동시킴 &lt;code&gt;window.opener.location=&#39;https://cgn.example.com&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;기존 탭으로 돌아온 사용자는 세션 만료로 오인 후 자격증명 입력&lt;/li&gt;
+&lt;li&gt;피싱 페이지가 정보를 수집 후 원래 페이지로 리다이렉션&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;방어-전략&#34;&gt;방어 전략&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;앵커 태그에 rel=&amp;ldquo;noopener&amp;rdquo; 최소 적용, 가능하면 rel=&amp;ldquo;noopener noreferrer&amp;rdquo; 적용 권장
+&lt;ul&gt;
+&lt;li&gt;noopener: 새 탭에서 window.opener가 null이 되어 기존 탭 제어 불가&lt;/li&gt;
+&lt;li&gt;noreferrer: 대부분 브라우저에서 opener 차단 + Referer 헤더 전송 차단&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;자바스크립트로 새 창을 열 경우 &lt;code&gt;window.open(url, &#39;_blank&#39;, &#39;noopener&#39;)&lt;/code&gt; 사용 고려&lt;/li&gt;
+&lt;li&gt;기존 코드 점검 시 target=&amp;quot;_blank&amp;rdquo; 링크에 rel 값 누락 여부 정적 분석 또는 린트 규칙으로 검출 권장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;주의-사항&#34;&gt;주의 사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;일부 최신 브라우저는 target=&amp;quot;_blank&amp;quot;에 대해 기본적으로 noopener를 적용하는 경향 있으나 브라우저·버전별 차이 존재, 명시적 rel 사용이 안전&lt;/li&gt;
+&lt;li&gt;noreferrer는 분석 도구에서 유입 경로 확인이 어려워질 수 있음, 트래픽 분석 요구가 있으면 noopener만 선택하는 운영 전략 고려&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;참고-noopener와-noreferrer&#34;&gt;참고: noopener와 noreferrer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;noopener: 새 탭의 Window.opener를 제거하여 원탭 조작 방지&lt;/li&gt;
+&lt;li&gt;noreferrer: Referer 헤더 차단, 대부분 환경에서 opener 제거 동작 동반&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;마무리&#34;&gt;마무리&lt;/h3&gt;
+&lt;p&gt;target=&amp;quot;_blank&amp;quot;는 편리하지만 기본 동작만으로는 탭 간 참조가 남아 공격면 존재
+모든 외부 링크에 rel=&amp;ldquo;noopener&amp;rdquo; 또는 필요에 따라 rel=&amp;ldquo;noopener noreferrer&amp;quot;를 일관 적용하는 것이 가장 단순하고 효과적인 방어 전략임&lt;/p&gt;</description>
     </item>
     <item>
       <title>자바스크립트 IIFE 정리: 함수 표현식과 스코프 격리, ES6 이후의 대안까지</title>
