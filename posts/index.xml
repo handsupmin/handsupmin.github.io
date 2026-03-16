@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 15 Mar 2026 13:18:31 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 13:29:29 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,47 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>파이썬 MRO(Method Resolution Order)와 super 동작 원리 정리</title>
+      <link>https://blog.jsontapose.com/posts/python-mro-method-resolution-order-and-super-173254/</link>
+      <pubDate>Mon, 16 Mar 2026 13:29:29 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/python-mro-method-resolution-order-and-super-173254/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;파이썬은 다중 상속을 지원하며 동일한 이름의 메소드가 여러 부모에 존재할 때 어떤 구현을 선택할지 결정해야 함
+이 결정 규칙이 MRO(Method Resolution Order)로, 클래스 계층 전체에서 메소드를 탐색하는 순서를 정의함
+MRO가 없다면 동일 시그니처 메소드가 교차 상속되는 상황에서 해석 모호성, 이른바 death diamond 문제가 발생함&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;MRO의 본질은 메소드 탐색 순서의 선형화&lt;/li&gt;
+&lt;li&gt;파이썬은 C3 linearization 알고리즘으로 일관된 순서를 계산함&lt;/li&gt;
+&lt;li&gt;규칙 요약
+&lt;ul&gt;
+&lt;li&gt;자식 클래스가 먼저&lt;/li&gt;
+&lt;li&gt;왼쪽에서 오른쪽으로 명시한 부모 순서를 존중&lt;/li&gt;
+&lt;li&gt;각 부모의 MRO를 안정적으로 병합하여 일관성 유지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;클래스 속성 &lt;strong&gt;mro&lt;/strong&gt; 또는 클래스 메소드 mro()로 확인 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리&#34;&gt;동작 원리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;탐색 순서 기본 형태
+&lt;ul&gt;
+&lt;li&gt;자식 클래스 → 명시된 순서의 부모들 → 각 부모의 상위 클래스들 → 최상위 object 순으로 선형화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;C3 linearization은 다음 제약을 동시에 만족하는 유일한 순서를 생성
+&lt;ul&gt;
+&lt;li&gt;자식은 항상 부모보다 앞선다&lt;/li&gt;
+&lt;li&gt;부모 목록의 왼쪽 우선 순서를 보존한다&lt;/li&gt;
+&lt;li&gt;부모들의 MRO 순서를 보존한다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;이 규칙으로 동일 이름 메소드가 다수 존재해도 첫 번째로 만나는 구현이 선택됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;사용법과-간단-예시&#34;&gt;사용법과 간단 예시&lt;/h3&gt;
+&lt;p&gt;다중 상속에서 실제 탐색 순서를 눈으로 확인하는 것이 가장 빠름&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reverse Tabnabbing과 target=_blank 안전 가이드</title>
