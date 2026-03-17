@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 16 Mar 2026 13:29:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 13:29:12 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Date-Time</title>
+      <link>https://blog.jsontapose.com/tags/date-time/</link>
+      <pubDate>Tue, 17 Mar 2026 13:29:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/date-time/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>I18n</title>
+      <link>https://blog.jsontapose.com/tags/i18n/</link>
+      <pubDate>Tue, 17 Mar 2026 13:29:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/i18n/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Intl-Api</title>
+      <link>https://blog.jsontapose.com/tags/intl-api/</link>
+      <pubDate>Tue, 17 Mar 2026 13:29:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/intl-api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Tue, 17 Mar 2026 13:29:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Tue, 17 Mar 2026 13:29:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Timezone</title>
+      <link>https://blog.jsontapose.com/tags/timezone/</link>
+      <pubDate>Tue, 17 Mar 2026 13:29:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/timezone/</guid>
+      <description></description>
+    </item>
     <item>
       <title>C3-Linearization</title>
       <link>https://blog.jsontapose.com/tags/c3-linearization/</link>
@@ -107,13 +149,6 @@
       <description></description>
     </item>
     <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Sat, 14 Mar 2026 13:17:27 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Module-Pattern</title>
       <link>https://blog.jsontapose.com/tags/module-pattern/</link>
       <pubDate>Sat, 14 Mar 2026 13:17:27 +0000</pubDate>
@@ -209,13 +244,6 @@
       <link>https://blog.jsontapose.com/tags/logging/</link>
       <pubDate>Wed, 11 Mar 2026 13:26:15 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/logging/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Wed, 11 Mar 2026 13:26:15 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
       <description></description>
     </item>
     <item>
@@ -2466,13 +2494,6 @@
       <description></description>
     </item>
     <item>
-      <title>I18n</title>
-      <link>https://blog.jsontapose.com/tags/i18n/</link>
-      <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/i18n/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Rest</title>
       <link>https://blog.jsontapose.com/tags/rest/</link>
       <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
@@ -2855,13 +2876,6 @@
       <link>https://blog.jsontapose.com/tags/time/</link>
       <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/time/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Timezone</title>
-      <link>https://blog.jsontapose.com/tags/timezone/</link>
-      <pubDate>Wed, 17 Dec 2025 13:13:49 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/timezone/</guid>
       <description></description>
     </item>
     <item>

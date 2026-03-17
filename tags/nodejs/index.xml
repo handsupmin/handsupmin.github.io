@@ -6,8 +6,23 @@
     <description>Recent content in Nodejs on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 11 Mar 2026 13:26:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 13:29:12 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>서버 타임존 확인과 Intl.DateTimeFormat 활용 가이드</title>
+      <link>https://blog.jsontapose.com/posts/server-timezone-check-intl-datetimeformat-d15eb6/</link>
+      <pubDate>Tue, 17 Mar 2026 13:29:12 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/server-timezone-check-intl-datetimeformat-d15eb6/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;Intl.DateTimeFormat은 JavaScript 국제화 API의 일부로, 추가 라이브러리 없이 날짜와 시간을 지역화된 형식으로 포맷하는 기능 제공
+브라우저와 Node.js에서 동작하며, 호스트의 기본 타임존 정보를 IANA 식별자 형태로 노출 가능
+서버가 어떤 타임존으로 실행 중인지 확인할 때 resolvedOptions().timeZone 사용&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념과-정의&#34;&gt;핵심 개념과 정의&lt;/h3&gt;
+&lt;p&gt;국제화 API: 로케일과 캘린더, 숫자 체계, 타임존 등을 기준으로 표기 형식을 결정하는 표준 인터페이스
+IANA 타임존 식별자: Asia/Seoul, UTC, America/New_York 같은 표준 명칭
+호스트 기본 타임존: 런타임이 인식한 시스템 타임존으로, resolvedOptions().timeZone에서 확인
+오프셋과 타임존의 차이: 오프셋은 시점별 UTC와의 분 단위 차이, 타임존은 DST 등 규칙을 포함하는 영역 개념&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Node.js console.log가 [Object]를 출력하는 이유와 util.inspect depth 동작 정리</title>
       <link>https://blog.jsontapose.com/posts/nodejs-console-log-object-util-inspect-depth-858252/</link>
