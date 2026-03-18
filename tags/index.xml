@@ -6,8 +6,92 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 17 Mar 2026 13:29:12 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 13:29:28 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Browser</title>
+      <link>https://blog.jsontapose.com/tags/browser/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/browser/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cors</title>
+      <link>https://blog.jsontapose.com/tags/cors/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/cors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Credentials</title>
+      <link>https://blog.jsontapose.com/tags/credentials/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/credentials/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Http-Headers</title>
+      <link>https://blog.jsontapose.com/tags/http-headers/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/http-headers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nginx</title>
+      <link>https://blog.jsontapose.com/tags/nginx/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nginx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodejs</title>
+      <link>https://blog.jsontapose.com/tags/nodejs/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Preflight</title>
+      <link>https://blog.jsontapose.com/tags/preflight/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/preflight/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proxy</title>
+      <link>https://blog.jsontapose.com/tags/proxy/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/proxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>S3</title>
+      <link>https://blog.jsontapose.com/tags/s3/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/s3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Same-Origin-Policy</title>
+      <link>https://blog.jsontapose.com/tags/same-origin-policy/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/same-origin-policy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spring</title>
+      <link>https://blog.jsontapose.com/tags/spring/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/spring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Security</title>
+      <link>https://blog.jsontapose.com/tags/web-security/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/web-security/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Date-Time</title>
       <link>https://blog.jsontapose.com/tags/date-time/</link>
@@ -34,13 +118,6 @@
       <link>https://blog.jsontapose.com/tags/javascript/</link>
       <pubDate>Tue, 17 Mar 2026 13:29:12 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://blog.jsontapose.com/tags/nodejs/</link>
-      <pubDate>Tue, 17 Mar 2026 13:29:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/nodejs/</guid>
       <description></description>
     </item>
     <item>
@@ -93,13 +170,6 @@
       <description></description>
     </item>
     <item>
-      <title>Browser</title>
-      <link>https://blog.jsontapose.com/tags/browser/</link>
-      <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/browser/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Html</title>
       <link>https://blog.jsontapose.com/tags/html/</link>
       <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
@@ -118,13 +188,6 @@
       <link>https://blog.jsontapose.com/tags/reverse-tabnabbing/</link>
       <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/reverse-tabnabbing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web-Security</title>
-      <link>https://blog.jsontapose.com/tags/web-security/</link>
-      <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/web-security/</guid>
       <description></description>
     </item>
     <item>
@@ -832,13 +895,6 @@
       <link>https://blog.jsontapose.com/tags/openzeppelin/</link>
       <pubDate>Sun, 22 Feb 2026 13:17:04 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/openzeppelin/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Proxy</title>
-      <link>https://blog.jsontapose.com/tags/proxy/</link>
-      <pubDate>Sun, 22 Feb 2026 13:17:04 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/proxy/</guid>
       <description></description>
     </item>
     <item>

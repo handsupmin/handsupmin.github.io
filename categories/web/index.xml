@@ -6,8 +6,37 @@
     <description>Recent content in Web on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 03 Mar 2026 13:23:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 13:29:28 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CORS 제대로 이해하고 해결하기: SOP, 프리플라이트, 인증 요청</title>
+      <link>https://blog.jsontapose.com/posts/cors-sop-preflight-credentials-guide-76ca09/</link>
+      <pubDate>Wed, 18 Mar 2026 13:29:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/cors-sop-preflight-credentials-guide-76ca09/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;브라우저에서 API 호출이 분명 성공한 것 같은데, 콘솔에는 CORS 에러가 뜨는 상황 자주 마주함
+문제의 본질은 서버가 망가진 게 아니라 브라우저의 보안 정책에 의해 응답 사용이 차단된 것임
+CORS는 차단을 풀기 위한 협상 절차이자 규칙 세트이며, 정확히 이해하면 재현과 해결이 쉬워짐&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Origin 정의&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Origin = scheme + host + port 조합&lt;/li&gt;
+&lt;li&gt;세 요소 중 하나라도 다르면 서로 다른 출처로 판단&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOP(Same-Origin Policy)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;동일 출처 간 상호작용 허용, 교차 출처는 기본 차단하는 브라우저 보안 정책&lt;/li&gt;
+&lt;li&gt;XSS, CSRF 등 교차 사이트 공격 리스크 완화 목적&lt;/li&gt;
+&lt;li&gt;출처 비교와 차단 판단 주체는 서버가 아니라 브라우저&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;예외적으로 허용되는 리소스&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CSS 선택자 핵심 정리와 명시도 가이드</title>
       <link>https://blog.jsontapose.com/posts/css-selectors-core-ef4aea/</link>
