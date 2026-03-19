@@ -6,8 +6,33 @@
     <description>Recent content in Functions on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 27 Oct 2025 13:11:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 13:28:18 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/functions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python의 Call by Object Reference 정확히 이해하기</title>
+      <link>https://blog.jsontapose.com/posts/python-call-by-object-reference-6c66e8/</link>
+      <pubDate>Thu, 19 Mar 2026 13:28:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/python-call-by-object-reference-6c66e8/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;파이썬 변수와 함수 인수 전달 방식을 정리함
+주요 키워드 세 가지 정리&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;call by value&lt;/li&gt;
+&lt;li&gt;call by reference&lt;/li&gt;
+&lt;li&gt;call by object reference (aka call by sharing)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;헷갈리는 포인트는 call by reference와 call by object reference의 차이임
+파이썬에서 실제로 일어나는 바인딩과 가변성의 조합으로 이해 필요&lt;/p&gt;
+&lt;h2 id=&#34;호출-방식-개념-정리&#34;&gt;호출 방식 개념 정리&lt;/h2&gt;
+&lt;h3 id=&#34;call-by-value&#34;&gt;Call by Value&lt;/h3&gt;
+&lt;p&gt;인수 전달 시 값의 복사 전달
+함수 내부에서 인자를 변경해도 호출자 쪽 원본에는 영향 없음&lt;/p&gt;
+&lt;h3 id=&#34;call-by-reference&#34;&gt;Call by Reference&lt;/h3&gt;
+&lt;p&gt;인수 전달 시 변수 자체를 참조로 전달하는 모델
+함수 내부 변경이 호출자 변수에 그대로 반영됨
+특정 언어에서만 엄밀히 지원되는 개념이며, C는 포인터를 값으로 전달해 유사 동작을 만들 수 있으나 언어 차원의 call by reference와는 구분 필요
+Java는 참조 자체를 값으로 전달하므로 call by reference가 아님에 주의&lt;/p&gt;</description>
+    </item>
     <item>
       <title>JavaScript 함수는 왜 일급 객체인가 — 의미와 활용</title>
       <link>https://blog.jsontapose.com/posts/javascript-first-class-functions-5dcc7e/</link>

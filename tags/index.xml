@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 18 Mar 2026 13:29:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 13:28:18 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Call-by-Sharing</title>
+      <link>https://blog.jsontapose.com/tags/call-by-sharing/</link>
+      <pubDate>Thu, 19 Mar 2026 13:28:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/call-by-sharing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Functions</title>
+      <link>https://blog.jsontapose.com/tags/functions/</link>
+      <pubDate>Thu, 19 Mar 2026 13:28:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/functions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mutability</title>
+      <link>https://blog.jsontapose.com/tags/mutability/</link>
+      <pubDate>Thu, 19 Mar 2026 13:28:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/mutability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parameter-Passing</title>
+      <link>https://blog.jsontapose.com/tags/parameter-passing/</link>
+      <pubDate>Thu, 19 Mar 2026 13:28:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/parameter-passing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://blog.jsontapose.com/tags/python/</link>
+      <pubDate>Thu, 19 Mar 2026 13:28:18 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/python/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Browser</title>
       <link>https://blog.jsontapose.com/tags/browser/</link>
@@ -153,13 +188,6 @@
       <link>https://blog.jsontapose.com/tags/oop/</link>
       <pubDate>Mon, 16 Mar 2026 13:29:29 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/oop/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://blog.jsontapose.com/tags/python/</link>
-      <pubDate>Mon, 16 Mar 2026 13:29:29 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/python/</guid>
       <description></description>
     </item>
     <item>
@@ -3527,13 +3555,6 @@
       <link>https://blog.jsontapose.com/tags/first-class-functions/</link>
       <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/first-class-functions/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Functions</title>
-      <link>https://blog.jsontapose.com/tags/functions/</link>
-      <pubDate>Mon, 27 Oct 2025 13:11:11 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/functions/</guid>
       <description></description>
     </item>
     <item>
