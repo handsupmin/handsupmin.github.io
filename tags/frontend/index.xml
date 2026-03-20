@@ -6,8 +6,35 @@
     <description>Recent content in Frontend on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 12 Mar 2026 13:25:53 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2026 13:24:26 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS 사용자 지정 속성(CSS Variables) 기본 개념과 다크 모드 적용 패턴</title>
+      <link>https://blog.jsontapose.com/posts/css-custom-properties-variables-dark-mode-cf4ccc/</link>
+      <pubDate>Fri, 20 Mar 2026 13:24:26 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/css-custom-properties-variables-dark-mode-cf4ccc/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;CSS 사용자 지정 속성(CSS Variables, Custom Properties)은 재사용 가능한 값을 선언하고 문서 전반에서 참조하기 위한 메커니즘
+반복되는 색상, 간격, Z-index 같은 값을 의미 있는 이름으로 관리해 전역 치환 리스크를 줄이고 테마 전환 같은 요구에 유연하게 대응 가능
+사용자 지정 속성은 일반 CSS 규칙에 포함되어 캐스케이딩과 상속의 영향을 받음&lt;/p&gt;
+&lt;h3 id=&#34;핵심-개념&#34;&gt;핵심 개념&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;표기 규칙: 이름은 두 개의 대시로 시작, 예) &amp;ndash;main-color&lt;/li&gt;
+&lt;li&gt;대소문자 구분: &amp;ndash;my-color와 &amp;ndash;My-color는 서로 다른 속성&lt;/li&gt;
+&lt;li&gt;참조 방식: var(&amp;ndash;name) 형태로 값 참조&lt;/li&gt;
+&lt;li&gt;기본값 지원: var(&amp;ndash;name, fallback) 형태로 값이 없을 때 대체값 지정 가능&lt;/li&gt;
+&lt;li&gt;속성 값 위치에서만 사용 가능, 선택자나 미디어 쿼리 조건, 속성 이름에는 사용 불가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;동작-원리와-스코프&#34;&gt;동작 원리와 스코프&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;사용자 지정 속성은 선언된 규칙의 선택자 범위에만 유효&lt;/li&gt;
+&lt;li&gt;상속 특성 보유, 상위에서 선언하면 하위에서 참조 가능&lt;/li&gt;
+&lt;li&gt;:root에 선언하면 문서 전역 범위의 기본값으로 동작&lt;/li&gt;
+&lt;li&gt;동일한 변수 이름을 더 구체적인 선택자나 조건에서 재정의하면 캐스케이드에 따라 해당 범위에서 우선 적용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;사용법과-짧은-예시&#34;&gt;사용법과 짧은 예시&lt;/h3&gt;
+&lt;p&gt;전역 선언과 기본 참조&lt;/p&gt;</description>
+    </item>
     <item>
       <title>HTML 요소 참고서 카테고리별 의미와 사용 시점</title>
       <link>https://blog.jsontapose.com/posts/html-element-reference-by-category-b25fec/</link>
