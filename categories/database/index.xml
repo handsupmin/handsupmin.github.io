@@ -6,8 +6,31 @@
     <description>Recent content in Database on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 25 Feb 2026 13:28:01 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2026 13:16:02 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL Server에서 현재 DB에 걸린 트랜잭션 락 확인 방법</title>
+      <link>https://blog.jsontapose.com/posts/sql-server-current-db-transaction-locks-994bf7/</link>
+      <pubDate>Sat, 21 Mar 2026 13:16:02 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/sql-server-current-db-transaction-locks-994bf7/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;운영 중 특정 데이터베이스에서 대기나 블로킹이 의심될 때, 현재 걸린 트랜잭션 락을 직접 확인하는 것이 우선임
+SQL Server의 동적 관리 뷰 sys.dm_tran_locks는 활성 잠금 정보를 제공하며 데이터베이스 단위로 필터링 가능&lt;/p&gt;
+&lt;h3 id=&#34;사용법예시&#34;&gt;사용법/예시&lt;/h3&gt;
+&lt;p&gt;아래 쿼리로 대상 DB에 설정된 잠금 목록 조회&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#81a1c1&#34;&gt;*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;FROM&lt;/span&gt; sys&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;dm_tran_locks
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#81a1c1;font-weight:bold&#34;&gt;WHERE&lt;/span&gt; resource_database_id &lt;span style=&#34;color:#81a1c1&#34;&gt;=&lt;/span&gt; DB_ID&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#39;MY_DB&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;요점 컬럼 참고&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;request_session_id: 잠금 보유 또는 대기 세션 ID&lt;/li&gt;
+&lt;li&gt;resource_type, resource_associated_entity_id: 잠금 대상 리소스 식별&lt;/li&gt;
+&lt;li&gt;request_mode: 잠금 모드 (S, X 등)&lt;/li&gt;
+&lt;li&gt;request_status: GRANT 또는 WAIT 상태&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;추가-확인-포인트&#34;&gt;추가 확인 포인트&lt;/h3&gt;
+&lt;p&gt;블로킹 체인 파악 필요 시 sys.dm_exec_requests, sys.dm_os_waiting_tasks와 조합하여 대기 중인 세션과 차단 세션 상관분석 권장
+식별된 차단 세션은 영향 분석 후 종료 여부 판단&lt;/p&gt;</description>
+    </item>
     <item>
       <title>SQL Server MERGE로 소스·타깃 동기화하기 패턴과 주의점</title>
       <link>https://blog.jsontapose.com/posts/sql-server-merge-source-target-sync-patterns-cautions-da99e5/</link>
