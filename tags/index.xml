@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 21 Mar 2026 13:16:02 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 13:17:09 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging</title>
+      <link>https://blog.jsontapose.com/tags/debugging/</link>
+      <pubDate>Sun, 22 Mar 2026 13:17:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/debugging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Sun, 22 Mar 2026 13:17:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nan</title>
+      <link>https://blog.jsontapose.com/tags/nan/</link>
+      <pubDate>Sun, 22 Mar 2026 13:17:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Number</title>
+      <link>https://blog.jsontapose.com/tags/number/</link>
+      <pubDate>Sun, 22 Mar 2026 13:17:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/number/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type-Coercion</title>
+      <link>https://blog.jsontapose.com/tags/type-coercion/</link>
+      <pubDate>Sun, 22 Mar 2026 13:17:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/type-coercion/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Dmv</title>
       <link>https://blog.jsontapose.com/tags/dmv/</link>
@@ -219,13 +254,6 @@
       <description></description>
     </item>
     <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Tue, 17 Mar 2026 13:29:12 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Timezone</title>
       <link>https://blog.jsontapose.com/tags/timezone/</link>
       <pubDate>Tue, 17 Mar 2026 13:29:12 +0000</pubDate>
@@ -384,13 +412,6 @@
       <link>https://blog.jsontapose.com/tags/semantic-html/</link>
       <pubDate>Thu, 12 Mar 2026 13:25:53 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/semantic-html/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Debugging</title>
-      <link>https://blog.jsontapose.com/tags/debugging/</link>
-      <pubDate>Wed, 11 Mar 2026 13:26:15 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/debugging/</guid>
       <description></description>
     </item>
     <item>
@@ -1080,13 +1101,6 @@
       <description></description>
     </item>
     <item>
-      <title>Number</title>
-      <link>https://blog.jsontapose.com/tags/number/</link>
-      <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/number/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Parseint</title>
       <link>https://blog.jsontapose.com/tags/parseint/</link>
       <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
@@ -1098,13 +1112,6 @@
       <link>https://blog.jsontapose.com/tags/parsing/</link>
       <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/parsing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Type-Coercion</title>
-      <link>https://blog.jsontapose.com/tags/type-coercion/</link>
-      <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/type-coercion/</guid>
       <description></description>
     </item>
     <item>

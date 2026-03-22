@@ -6,8 +6,27 @@
     <description>Recent content in Debugging on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 11 Mar 2026 13:26:15 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 13:17:09 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript에서 NaN 정확히 판별하기 Number.isNaN vs isNaN와 자기비교 트릭</title>
+      <link>https://blog.jsontapose.com/posts/javascript-nan-detection-number-isnan-vs-isnan-self-compare-39818e/</link>
+      <pubDate>Sun, 22 Mar 2026 13:17:09 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/javascript-nan-detection-number-isnan-vs-isnan-self-compare-39818e/</guid>
+      <description>&lt;h3 id=&#34;개념배경&#34;&gt;개념/배경&lt;/h3&gt;
+&lt;p&gt;NaN은 JavaScript 숫자 타입의 특별한 값으로 계산 불능을 의미함
+NaN은 어떤 값과도 같지 않으며 자기 자신과도 같지 않음
+동등 비교 연산으로는 판별 불가&lt;/p&gt;
+&lt;h3 id=&#34;올바른-판별-방법&#34;&gt;올바른 판별 방법&lt;/h3&gt;
+&lt;p&gt;Number.isNaN 값이 실제 NaN인지만 검사, 타입 강제 변환 수행 안 함
+isNaN 전달된 값을 숫자로 변환한 뒤 검사, 문자열 등에서 오탐 가능
+x !== x는 오로지 NaN에서만 참이 되는 성질 활용 가능&lt;/p&gt;
+&lt;h3 id=&#34;주의할-점&#34;&gt;주의할 점&lt;/h3&gt;
+&lt;p&gt;외부 입력이 문자열인 경우 숫자로 명시 변환 후 Number.isNaN으로 확인 권장
+빈 문자열 Number(&amp;rsquo;&amp;rsquo;)는 0, parseInt(&amp;rsquo;&amp;rsquo;)는 NaN 반환 차이 주의
+0/0, Math.sqrt(-1) 같은 계산에서 NaN 발생 가능
+동등 비교나 switch 키로 NaN을 식별하려 하지 말 것&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Node.js console.log가 [Object]를 출력하는 이유와 util.inspect depth 동작 정리</title>
       <link>https://blog.jsontapose.com/posts/nodejs-console-log-object-util-inspect-depth-858252/</link>
