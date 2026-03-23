@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 22 Mar 2026 13:17:09 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 13:28:56 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Containerization</title>
+      <link>https://blog.jsontapose.com/tags/containerization/</link>
+      <pubDate>Mon, 23 Mar 2026 13:28:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/containerization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deployment</title>
+      <link>https://blog.jsontapose.com/tags/deployment/</link>
+      <pubDate>Mon, 23 Mar 2026 13:28:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/deployment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devops</title>
+      <link>https://blog.jsontapose.com/tags/devops/</link>
+      <pubDate>Mon, 23 Mar 2026 13:28:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://blog.jsontapose.com/tags/docker/</link>
+      <pubDate>Mon, 23 Mar 2026 13:28:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Packaging</title>
+      <link>https://blog.jsontapose.com/tags/packaging/</link>
+      <pubDate>Mon, 23 Mar 2026 13:28:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/packaging/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Debugging</title>
       <link>https://blog.jsontapose.com/tags/debugging/</link>
@@ -583,13 +618,6 @@
       <description></description>
     </item>
     <item>
-      <title>Docker</title>
-      <link>https://blog.jsontapose.com/tags/docker/</link>
-      <pubDate>Fri, 06 Mar 2026 13:21:51 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Docker-Compose</title>
       <link>https://blog.jsontapose.com/tags/docker-compose/</link>
       <pubDate>Fri, 06 Mar 2026 13:21:51 +0000</pubDate>
@@ -678,13 +706,6 @@
       <link>https://blog.jsontapose.com/tags/caching/</link>
       <pubDate>Wed, 04 Mar 2026 13:22:56 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/caching/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Devops</title>
-      <link>https://blog.jsontapose.com/tags/devops/</link>
-      <pubDate>Wed, 04 Mar 2026 13:22:56 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/devops/</guid>
       <description></description>
     </item>
     <item>
