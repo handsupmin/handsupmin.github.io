@@ -6,8 +6,25 @@
     <description>Recent content in Event-Loop on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 22 Jan 2026 13:16:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 13:29:07 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/event-loop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FastAPI 비동기 처리와 이벤트 루프 이해 — uvicorn, uvloop, asyncio, libuv</title>
+      <link>https://blog.jsontapose.com/posts/fastapi-async-event-loop-uvicorn-uvloop-asyncio-libuv-32b91a/</link>
+      <pubDate>Tue, 24 Mar 2026 13:29:07 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/fastapi-async-event-loop-uvicorn-uvloop-asyncio-libuv-32b91a/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;FastAPI의 비동기 처리 흐름을 이벤트 루프 관점에서 정리
+Node.js의 libuv 기반 모델을 기준선으로, Python의 asyncio와 uvloop, 그리고 Uvicorn이 FastAPI 요청을 어떻게 비동기로 처리하는지 비교
+I/O 바운드 중심의 동작 원리와 GIL 제약, 실무에서의 주의점을 함께 정리&lt;/p&gt;
+&lt;h3 id=&#34;nodejs-이벤트-루프-요약&#34;&gt;Node.js 이벤트 루프 요약&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;싱글 스레드 논블로킹 모델의 핵심은 이벤트 루프와 비동기 I/O 위임&lt;/li&gt;
+&lt;li&gt;Node.js는 C로 구현된 libuv를 통해 커널 비동기 I/O를 활용하거나, 미지원 경우 스레드풀로 오프로드&lt;/li&gt;
+&lt;li&gt;기본 스레드풀 크기는 4로 시작, 환경변수로 조정 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;libuv가 커널 비동기 I/O를 직접 쓰는 경우와 아닌 경우의 차이 참고&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CPU 자원 관점에서 보는 Node.js 이벤트 루프와 스레드풀 상호작용</title>
       <link>https://blog.jsontapose.com/posts/nodejs-cpu-event-loop-threadpool-b27011/</link>
