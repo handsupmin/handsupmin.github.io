@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 25 Mar 2026 13:29:03 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 04:35:04 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Architecture</title>
+      <link>https://blog.jsontapose.com/tags/architecture/</link>
+      <pubDate>Fri, 10 Apr 2026 04:35:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Least-Connections</title>
+      <link>https://blog.jsontapose.com/tags/least-connections/</link>
+      <pubDate>Fri, 10 Apr 2026 04:35:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/least-connections/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Load-Balancing</title>
+      <link>https://blog.jsontapose.com/tags/load-balancing/</link>
+      <pubDate>Fri, 10 Apr 2026 04:35:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/load-balancing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network</title>
+      <link>https://blog.jsontapose.com/tags/network/</link>
+      <pubDate>Fri, 10 Apr 2026 04:35:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Round-Robin</title>
+      <link>https://blog.jsontapose.com/tags/round-robin/</link>
+      <pubDate>Fri, 10 Apr 2026 04:35:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/round-robin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scalability</title>
+      <link>https://blog.jsontapose.com/tags/scalability/</link>
+      <pubDate>Fri, 10 Apr 2026 04:35:04 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/scalability/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Dynamic-Sql</title>
       <link>https://blog.jsontapose.com/tags/dynamic-sql/</link>
@@ -947,13 +989,6 @@
       <description></description>
     </item>
     <item>
-      <title>Scalability</title>
-      <link>https://blog.jsontapose.com/tags/scalability/</link>
-      <pubDate>Fri, 27 Feb 2026 13:23:46 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/scalability/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Clean-Architecture</title>
       <link>https://blog.jsontapose.com/tags/clean-architecture/</link>
       <pubDate>Thu, 26 Feb 2026 13:28:12 +0000</pubDate>
@@ -1028,13 +1063,6 @@
       <link>https://blog.jsontapose.com/tags/forward-proxy/</link>
       <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/forward-proxy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Load-Balancing</title>
-      <link>https://blog.jsontapose.com/tags/load-balancing/</link>
-      <pubDate>Tue, 24 Feb 2026 13:28:16 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/load-balancing/</guid>
       <description></description>
     </item>
     <item>
@@ -2666,13 +2694,6 @@
       <link>https://blog.jsontapose.com/tags/state-management/</link>
       <pubDate>Fri, 02 Jan 2026 13:11:49 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/state-management/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Architecture</title>
-      <link>https://blog.jsontapose.com/tags/architecture/</link>
-      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/architecture/</guid>
       <description></description>
     </item>
     <item>
