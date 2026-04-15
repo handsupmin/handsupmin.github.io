@@ -6,8 +6,21 @@
     <description>Recent content in Html on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 15 Mar 2026 13:18:31 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 13:30:27 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML 요소(Element)와 태그(Tag), 정확히 무엇이 다른가</title>
+      <link>https://blog.jsontapose.com/posts/html-element-vs-tag-difference-db37e0/</link>
+      <pubDate>Wed, 15 Apr 2026 13:30:27 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/html-element-vs-tag-difference-db37e0/</guid>
+      <description>&lt;h3 id=&#34;개념-구분-요소는-태그가-아니다&#34;&gt;개념 구분: 요소는 태그가 아니다&lt;/h3&gt;
+&lt;p&gt;HTML을 다룰 때 &amp;lsquo;요소(Element)&amp;lsquo;와 &amp;lsquo;태그(Tag)&amp;lsquo;를 혼용하는 경우가 많다
+흔히 &amp;ldquo;p 태그&amp;quot;처럼 부르지만 두 개념은 엄연히 다르다
+이 차이는 HTML 4.01 명세부터 명확히 강조되었다&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;요소는 태그가 아니다. 어떤 이들은 요소를 태그라 부르기도 한다(예: &amp;ldquo;the P tag&amp;rdquo;). 하지만 요소와 태그(시작 태그든 종료 태그든)는 별개임을 기억해야 한다. 예를 들어, HEAD 요소는 마크업에 시작 태그와 종료 태그가 모두 생략되더라도 항상 존재한다.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;즉, 요소는 문서의 구조적 구성원을 의미하며, 태그는 이 요소의 시작과 끝을 마크업에 표기하는 구문일 뿐이다&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Reverse Tabnabbing과 target=_blank 안전 가이드</title>
       <link>https://blog.jsontapose.com/posts/reverse-tabnabbing-target-blank-guide-c21dc5/</link>

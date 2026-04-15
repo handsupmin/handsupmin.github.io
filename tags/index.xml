@@ -6,8 +6,36 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 10 Apr 2026 04:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 13:30:27 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dom</title>
+      <link>https://blog.jsontapose.com/tags/dom/</link>
+      <pubDate>Wed, 15 Apr 2026 13:30:27 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>https://blog.jsontapose.com/tags/html/</link>
+      <pubDate>Wed, 15 Apr 2026 13:30:27 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sgml</title>
+      <link>https://blog.jsontapose.com/tags/sgml/</link>
+      <pubDate>Wed, 15 Apr 2026 13:30:27 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sgml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Standards</title>
+      <link>https://blog.jsontapose.com/tags/web-standards/</link>
+      <pubDate>Wed, 15 Apr 2026 13:30:27 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/web-standards/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Architecture</title>
       <link>https://blog.jsontapose.com/tags/architecture/</link>
@@ -478,13 +506,6 @@
       <description></description>
     </item>
     <item>
-      <title>Html</title>
-      <link>https://blog.jsontapose.com/tags/html/</link>
-      <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/html/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Link-Rel</title>
       <link>https://blog.jsontapose.com/tags/link-rel/</link>
       <pubDate>Sun, 15 Mar 2026 13:18:31 +0000</pubDate>
@@ -650,13 +671,6 @@
       <link>https://blog.jsontapose.com/tags/software-testing/</link>
       <pubDate>Tue, 10 Mar 2026 13:25:47 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/software-testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dom</title>
-      <link>https://blog.jsontapose.com/tags/dom/</link>
-      <pubDate>Mon, 09 Mar 2026 13:27:18 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/dom/</guid>
       <description></description>
     </item>
     <item>
@@ -1098,13 +1112,6 @@
       <link>https://blog.jsontapose.com/tags/dataset/</link>
       <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/dataset/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web-Standards</title>
-      <link>https://blog.jsontapose.com/tags/web-standards/</link>
-      <pubDate>Mon, 23 Feb 2026 13:27:43 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/web-standards/</guid>
       <description></description>
     </item>
     <item>
