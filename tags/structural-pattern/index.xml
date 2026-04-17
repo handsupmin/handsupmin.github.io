@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Structural-Pattern on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/structural-pattern/</link>
+    <description>Recent content in Structural-Pattern on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 17 Apr 2026 13:29:11 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/structural-pattern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>복잡한 서브시스템을 감추는 외벽, 퍼사드 패턴(Facade Pattern) 이해하기</title>
+      <link>https://blog.jsontapose.com/posts/understanding-the-facade-pattern-0bed39/</link>
+      <pubDate>Fri, 17 Apr 2026 13:29:11 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/understanding-the-facade-pattern-0bed39/</guid>
+      <description>&lt;h3 id=&#34;퍼사드-패턴이란&#34;&gt;퍼사드 패턴이란&lt;/h3&gt;
+&lt;p&gt;퍼사드(Façade)는 프랑스어로 &amp;lsquo;건물의 정면&amp;rsquo;을 의미함. 소프트웨어 공학에서 퍼사드 패턴은 이 개념을 차용해 복잡한 서브시스템의 내부 구현을 숨기고, 클라이언트가 사용하기 쉬운 단일 인터페이스를 제공하는 역할을 함. GoF(Gang of Four)의 디자인 패턴 중 구조 패턴(Structural Pattern)으로 분류됨.&lt;/p&gt;
+&lt;p&gt;클라이언트는 복잡하게 얽힌 서브시스템에 직접 접근할 필요 없이, 퍼사드 객체가 제공하는 간결한 API를 통해 필요한 기능을 호출할 수 있음. 이를 통해 서브시스템과 클라이언트 간의 결합도(coupling)를 효과적으로 낮출 수 있음.&lt;/p&gt;
+&lt;h3 id=&#34;사용-목적과-장점&#34;&gt;사용 목적과 장점&lt;/h3&gt;
+&lt;p&gt;퍼사드 패턴의 주요 목적과 장점은 다음과 같음.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
