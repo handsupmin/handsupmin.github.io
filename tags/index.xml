@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 17 Apr 2026 13:29:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 13:29:56 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cron</title>
+      <link>https://blog.jsontapose.com/tags/cron/</link>
+      <pubDate>Fri, 24 Apr 2026 13:29:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/cron/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crontab</title>
+      <link>https://blog.jsontapose.com/tags/crontab/</link>
+      <pubDate>Fri, 24 Apr 2026 13:29:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/crontab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Job-Scheduler</title>
+      <link>https://blog.jsontapose.com/tags/job-scheduler/</link>
+      <pubDate>Fri, 24 Apr 2026 13:29:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/job-scheduler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://blog.jsontapose.com/tags/linux/</link>
+      <pubDate>Fri, 24 Apr 2026 13:29:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scheduler</title>
+      <link>https://blog.jsontapose.com/tags/scheduler/</link>
+      <pubDate>Fri, 24 Apr 2026 13:29:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/scheduler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unix</title>
+      <link>https://blog.jsontapose.com/tags/unix/</link>
+      <pubDate>Fri, 24 Apr 2026 13:29:56 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/unix/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Design-Pattern</title>
       <link>https://blog.jsontapose.com/tags/design-pattern/</link>
@@ -2085,13 +2127,6 @@
       <link>https://blog.jsontapose.com/tags/rxjs/</link>
       <pubDate>Sat, 24 Jan 2026 13:11:22 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/rxjs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scheduler</title>
-      <link>https://blog.jsontapose.com/tags/scheduler/</link>
-      <pubDate>Sat, 24 Jan 2026 13:11:22 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/scheduler/</guid>
       <description></description>
     </item>
     <item>
