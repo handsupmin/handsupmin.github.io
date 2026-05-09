@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 24 Apr 2026 13:29:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 13:28:43 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Array-From</title>
+      <link>https://blog.jsontapose.com/tags/array-from/</link>
+      <pubDate>Sat, 09 May 2026 13:28:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/array-from/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Es6</title>
+      <link>https://blog.jsontapose.com/tags/es6/</link>
+      <pubDate>Sat, 09 May 2026 13:28:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/es6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iterator</title>
+      <link>https://blog.jsontapose.com/tags/iterator/</link>
+      <pubDate>Sat, 09 May 2026 13:28:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/iterator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Sat, 09 May 2026 13:28:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodelist</title>
+      <link>https://blog.jsontapose.com/tags/nodelist/</link>
+      <pubDate>Sat, 09 May 2026 13:28:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/nodelist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spread-Syntax</title>
+      <link>https://blog.jsontapose.com/tags/spread-syntax/</link>
+      <pubDate>Sat, 09 May 2026 13:28:43 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/spread-syntax/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cron</title>
       <link>https://blog.jsontapose.com/tags/cron/</link>
@@ -307,13 +349,6 @@
       <link>https://blog.jsontapose.com/tags/debugging/</link>
       <pubDate>Sun, 22 Mar 2026 13:17:09 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/debugging/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Sun, 22 Mar 2026 13:17:09 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -3660,13 +3695,6 @@
       <link>https://blog.jsontapose.com/tags/array-methods/</link>
       <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/array-methods/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Es6</title>
-      <link>https://blog.jsontapose.com/tags/es6/</link>
-      <pubDate>Sat, 15 Nov 2025 13:07:01 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/es6/</guid>
       <description></description>
     </item>
     <item>
