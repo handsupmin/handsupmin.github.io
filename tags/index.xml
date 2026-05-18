@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 09 May 2026 13:28:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 01:06:46 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cpu-Limits</title>
+      <link>https://blog.jsontapose.com/tags/cpu-limits/</link>
+      <pubDate>Mon, 18 May 2026 01:06:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/cpu-limits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cpu-Requests</title>
+      <link>https://blog.jsontapose.com/tags/cpu-requests/</link>
+      <pubDate>Mon, 18 May 2026 01:06:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/cpu-requests/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes-Resources</title>
+      <link>https://blog.jsontapose.com/tags/kubernetes-resources/</link>
+      <pubDate>Mon, 18 May 2026 01:06:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/kubernetes-resources/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory-Requests</title>
+      <link>https://blog.jsontapose.com/tags/memory-requests/</link>
+      <pubDate>Mon, 18 May 2026 01:06:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/memory-requests/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oomkill</title>
+      <link>https://blog.jsontapose.com/tags/oomkill/</link>
+      <pubDate>Mon, 18 May 2026 01:06:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/oomkill/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Throttling</title>
+      <link>https://blog.jsontapose.com/tags/throttling/</link>
+      <pubDate>Mon, 18 May 2026 01:06:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/throttling/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Array-From</title>
       <link>https://blog.jsontapose.com/tags/array-from/</link>

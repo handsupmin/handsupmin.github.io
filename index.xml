@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 09 May 2026 13:28:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 01:06:46 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,18 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>쿠버네티스 CPU request vs limit 차이와 CPU limit 미적용 베스트 프랙티스</title>
+      <link>https://blog.jsontapose.com/posts/kubernetes-cpu-request-vs-limit-4662c7/</link>
+      <pubDate>Mon, 18 May 2026 01:06:46 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/kubernetes-cpu-request-vs-limit-4662c7/</guid>
+      <description>&lt;p&gt;컨테이너에 CPU와 메모리를 얼마나 줄지 정하는 설정은 크게 두 가지입니다. request는 최소 보장을 위한 값이고 limit은 최대 상한선입니다. 이 둘을 어떻게 설정하느냐에 따라 스케줄링과 런타임 동작이 달라집니다&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;request는-최소-이만큼은-보장해줘&#34;&gt;Request는 최소 이만큼은 보장해줘&lt;/h3&gt;
+&lt;p&gt;스케줄러는 pod를 노드에 배치할 때 request를 기준으로 자원을 예약합니다. 즉 이 컨테이너는 최소 이만큼 필요하다는 의미이며, 노드에 request만큼의 여유가 없으면 해당 노드에는 올라가지 못합니다. 또한 request만큼의 자원은 다른 pod가 아무리 바빠도 최소한으로는 확보된다고 이해하면 됩니다&lt;/p&gt;
+&lt;h3 id=&#34;limit은-최대-이만큼까지만-써라&#34;&gt;Limit은 최대 이만큼까지만 써라&lt;/h3&gt;
+&lt;p&gt;limit은 컨테이너가 넘을 수 없는 상한입니다. limit을 초과하려고 하면&lt;/p&gt;</description>
     </item>
     <item>
       <title>JavaScript 이터러블과 유사 배열 객체 변환: Spread Syntax vs. Array.from</title>
