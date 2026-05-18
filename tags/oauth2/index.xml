@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Oauth2 on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/oauth2/</link>
+    <description>Recent content in Oauth2 on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 18 May 2026 14:08:52 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/oauth2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTTP 인증을 레이어로 정리하는 방법 Basic, Session, JWT, OAuth2, mTLS까지</title>
+      <link>https://blog.jsontapose.com/posts/http-auth-layered-overview-basic-session-jwt-oauth2-mtls-013655/</link>
+      <pubDate>Mon, 18 May 2026 14:08:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/http-auth-layered-overview-basic-session-jwt-oauth2-mtls-013655/</guid>
+      <description>&lt;h2 id=&#34;개념을-먼저-레이어로-분리&#34;&gt;개념을 먼저 레이어로 분리&lt;/h2&gt;
+&lt;p&gt;HTTP에서 인증을 얘기할 때는 보통 아래 4축으로 보면 정리가 빠름&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;자격 증명을 매 요청에 직접 보내는 방식&lt;/li&gt;
+&lt;li&gt;서버가 저장한 상태를 식별자로 조회하는 방식&lt;/li&gt;
+&lt;li&gt;토큰 자체를 검증하는 방식&lt;/li&gt;
+&lt;li&gt;외부 인증 또는 권한 위임 프레임워크를 이용하는 방식&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;조금 더 구조적으로 나누면 다음처럼 분류 가능함&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Credential-based
+&lt;ul&gt;
+&lt;li&gt;Basic Auth&lt;/li&gt;
+&lt;li&gt;Digest Auth&lt;/li&gt;
+&lt;li&gt;API Key&lt;/li&gt;
+&lt;li&gt;Client Certificate mTLS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Stateful Identifier-based
+&lt;ul&gt;
+&lt;li&gt;Session ID&lt;/li&gt;
+&lt;li&gt;Opaque Token&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Stateless Token-based
+&lt;ul&gt;
+&lt;li&gt;JWT&lt;/li&gt;
+&lt;li&gt;PASETO&lt;/li&gt;
+&lt;li&gt;기타 signed token&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Authentication / Authorization Framework
+&lt;ul&gt;
+&lt;li&gt;OAuth 2.0&lt;/li&gt;
+&lt;li&gt;OpenID Connect&lt;/li&gt;
+&lt;li&gt;SAML HTTP 기반 웹 SSO 맥락&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;여기서 중요한 건 인증과 인가, 전달 메커니즘이 섞여서 헷갈리는 경우가 많다는 점임&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

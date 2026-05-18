@@ -6,8 +6,71 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 18 May 2026 01:06:46 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 14:08:52 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Authorization</title>
+      <link>https://blog.jsontapose.com/tags/authorization/</link>
+      <pubDate>Mon, 18 May 2026 14:08:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/authorization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Http-Authentication</title>
+      <link>https://blog.jsontapose.com/tags/http-authentication/</link>
+      <pubDate>Mon, 18 May 2026 14:08:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/http-authentication/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jwt</title>
+      <link>https://blog.jsontapose.com/tags/jwt/</link>
+      <pubDate>Mon, 18 May 2026 14:08:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/jwt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mtls</title>
+      <link>https://blog.jsontapose.com/tags/mtls/</link>
+      <pubDate>Mon, 18 May 2026 14:08:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/mtls/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oauth2</title>
+      <link>https://blog.jsontapose.com/tags/oauth2/</link>
+      <pubDate>Mon, 18 May 2026 14:08:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/oauth2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opaque-Token</title>
+      <link>https://blog.jsontapose.com/tags/opaque-token/</link>
+      <pubDate>Mon, 18 May 2026 14:08:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/opaque-token/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openid-Connect</title>
+      <link>https://blog.jsontapose.com/tags/openid-connect/</link>
+      <pubDate>Mon, 18 May 2026 14:08:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/openid-connect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Saml</title>
+      <link>https://blog.jsontapose.com/tags/saml/</link>
+      <pubDate>Mon, 18 May 2026 14:08:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/saml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Session-Management</title>
+      <link>https://blog.jsontapose.com/tags/session-management/</link>
+      <pubDate>Mon, 18 May 2026 14:08:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/session-management/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cpu-Limits</title>
       <link>https://blog.jsontapose.com/tags/cpu-limits/</link>
@@ -3982,13 +4045,6 @@
       <link>https://blog.jsontapose.com/tags/authentication/</link>
       <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/authentication/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Authorization</title>
-      <link>https://blog.jsontapose.com/tags/authorization/</link>
-      <pubDate>Fri, 17 Oct 2025 13:09:19 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/authorization/</guid>
       <description></description>
     </item>
     <item>

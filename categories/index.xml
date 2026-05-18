@@ -6,8 +6,15 @@
     <description>Recent content in Categories on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 18 May 2026 01:06:46 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 14:08:52 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend-Architecture</title>
+      <link>https://blog.jsontapose.com/categories/backend-architecture/</link>
+      <pubDate>Mon, 18 May 2026 14:08:52 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/categories/backend-architecture/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Devops</title>
       <link>https://blog.jsontapose.com/categories/devops/</link>
@@ -300,13 +307,6 @@
       <link>https://blog.jsontapose.com/categories/api-design/</link>
       <pubDate>Wed, 31 Dec 2025 13:12:12 +0000</pubDate>
       <guid>https://blog.jsontapose.com/categories/api-design/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Backend-Architecture</title>
-      <link>https://blog.jsontapose.com/categories/backend-architecture/</link>
-      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/categories/backend-architecture/</guid>
       <description></description>
     </item>
     <item>
