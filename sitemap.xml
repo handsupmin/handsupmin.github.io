@@ -24,17 +24,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-05-18T14:08:52+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/posts/codex-cli-and-claude-code-customization-orchestration-architecture-3c73b9/</loc>
+    <lastmod>2026-05-19T13:58:13+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.jsontapose.com/posts/http-auth-layered-overview-basic-session-jwt-oauth2-mtls-013655/</loc>
-    <lastmod>2026-05-18T14:08:52+00:00</lastmod>
+    <loc>https://blog.jsontapose.com/</loc>
+    <lastmod>2026-05-19T13:58:13+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
+    <lastmod>2026-05-19T13:58:13+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/http-auth-layered-overview-basic-session-jwt-oauth2-mtls-013655/</loc>
     <lastmod>2026-05-18T14:08:52+00:00</lastmod>
     <priority>0.5</priority>
   </url>

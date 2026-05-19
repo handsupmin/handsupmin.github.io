@@ -6,7 +6,7 @@
     <description>Recent content in Posts on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 18 May 2026 14:08:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 13:58:13 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,26 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Codex CLI와 Claude Code 커스터마이징에서 핵심은 orchestration layer 구조</title>
+      <link>https://blog.jsontapose.com/posts/codex-cli-and-claude-code-customization-orchestration-architecture-3c73b9/</link>
+      <pubDate>Tue, 19 May 2026 13:58:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/codex-cli-and-claude-code-customization-orchestration-architecture-3c73b9/</guid>
+      <description>&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;oh-my-codex&lt;/code&gt;, &lt;code&gt;oh-my-claudecode&lt;/code&gt;, &lt;code&gt;claw-code&lt;/code&gt;를 묶어 보면 에이전트형 코딩 도구는 모델 자체보다 “운영체제 같은 orchestration layer”로 확장된다는 결론으로 수렴한다. 여기서는 Codex CLI와 Claude Code가 skill, agent, sub-agent, tmux worker, PR review, verification loop 같은 자동화를 붙일 수 있는 이유와 바닥 런타임 구조를 층으로 정리한다&lt;/p&gt;
+&lt;p&gt;핵심은 모델 튜닝이 아니라 다음 조합으로 행동을 바꾸는 접근이다&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;상위 지시문&lt;/li&gt;
+&lt;li&gt;skill, prompt, agent 카탈로그&lt;/li&gt;
+&lt;li&gt;상태 파일과 산출물 디렉터리&lt;/li&gt;
+&lt;li&gt;hook 또는 세션 부트스트랩&lt;/li&gt;
+&lt;li&gt;서브에이전트와 tmux worker&lt;/li&gt;
+&lt;li&gt;검증, 리뷰, 커밋, PR 프로토콜&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;에이전트형-코딩-도구의-6개-층&#34;&gt;에이전트형 코딩 도구의 6개 층&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Codex CLI&lt;/code&gt;, &lt;code&gt;Claude Code&lt;/code&gt;, &lt;code&gt;claw-code&lt;/code&gt; 같은 도구는 보통 아래 6개 층으로 이해할 수 있다&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTTP 인증을 레이어로 정리하는 방법 Basic, Session, JWT, OAuth2, mTLS까지</title>

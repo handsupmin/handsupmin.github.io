@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 18 May 2026 14:08:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 13:58:13 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agent-Platform</title>
+      <link>https://blog.jsontapose.com/tags/agent-platform/</link>
+      <pubDate>Tue, 19 May 2026 13:58:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/agent-platform/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hook-System</title>
+      <link>https://blog.jsontapose.com/tags/hook-system/</link>
+      <pubDate>Tue, 19 May 2026 13:58:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/hook-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Llm-Tools</title>
+      <link>https://blog.jsontapose.com/tags/llm-tools/</link>
+      <pubDate>Tue, 19 May 2026 13:58:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/llm-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orchestration-Layer</title>
+      <link>https://blog.jsontapose.com/tags/orchestration-layer/</link>
+      <pubDate>Tue, 19 May 2026 13:58:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/orchestration-layer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pr-Automation</title>
+      <link>https://blog.jsontapose.com/tags/pr-automation/</link>
+      <pubDate>Tue, 19 May 2026 13:58:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/pr-automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt-Assembly</title>
+      <link>https://blog.jsontapose.com/tags/prompt-assembly/</link>
+      <pubDate>Tue, 19 May 2026 13:58:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/prompt-assembly/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Session-Persistence</title>
+      <link>https://blog.jsontapose.com/tags/session-persistence/</link>
+      <pubDate>Tue, 19 May 2026 13:58:13 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/session-persistence/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Authorization</title>
       <link>https://blog.jsontapose.com/tags/authorization/</link>
