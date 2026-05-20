@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 19 May 2026 13:58:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 13:49:51 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bullmq</title>
+      <link>https://blog.jsontapose.com/tags/bullmq/</link>
+      <pubDate>Wed, 20 May 2026 13:49:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/bullmq/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Latency-Issues</title>
+      <link>https://blog.jsontapose.com/tags/latency-issues/</link>
+      <pubDate>Wed, 20 May 2026 13:49:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/latency-issues/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory-Pressure</title>
+      <link>https://blog.jsontapose.com/tags/memory-pressure/</link>
+      <pubDate>Wed, 20 May 2026 13:49:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/memory-pressure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Queue-Design</title>
+      <link>https://blog.jsontapose.com/tags/queue-design/</link>
+      <pubDate>Wed, 20 May 2026 13:49:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/queue-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redis</title>
+      <link>https://blog.jsontapose.com/tags/redis/</link>
+      <pubDate>Wed, 20 May 2026 13:49:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/redis/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Agent-Platform</title>
       <link>https://blog.jsontapose.com/tags/agent-platform/</link>
@@ -2781,13 +2816,6 @@
       <description></description>
     </item>
     <item>
-      <title>Bullmq</title>
-      <link>https://blog.jsontapose.com/tags/bullmq/</link>
-      <pubDate>Tue, 06 Jan 2026 13:13:56 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/bullmq/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Distributed-Tracing</title>
       <link>https://blog.jsontapose.com/tags/distributed-tracing/</link>
       <pubDate>Tue, 06 Jan 2026 13:13:56 +0000</pubDate>
@@ -3128,13 +3156,6 @@
       <link>https://blog.jsontapose.com/tags/queue/</link>
       <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/queue/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Redis</title>
-      <link>https://blog.jsontapose.com/tags/redis/</link>
-      <pubDate>Fri, 26 Dec 2025 13:12:06 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/redis/</guid>
       <description></description>
     </item>
     <item>

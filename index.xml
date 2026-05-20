@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 19 May 2026 13:58:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 13:49:51 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,19 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BullMQ에서 job data가 커지면 Redis 지연과 OOM, 큐 무결성 이슈로 번질 수 있는 이유</title>
+      <link>https://blog.jsontapose.com/posts/bullmq-job-data-size-large-redis-latency-oom-queue-issues-7dbbc0/</link>
+      <pubDate>Wed, 20 May 2026 13:49:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/bullmq-job-data-size-large-redis-latency-oom-queue-issues-7dbbc0/</guid>
+      <description>&lt;p&gt;레디스가 싱글스레드라서 BullMQ에서 job data가 커지면 Redis가 터진다고 단순화해서 말하는 경우가 많음&lt;/p&gt;
+&lt;p&gt;하지만 실제로는 Redis가 큰 payload 처리 때문에 막히고, 그 지연이 메모리와 네트워크 문제로 이어지며 타임아웃이나 OOM 같은 연쇄 문제로 번지는 쪽이 더 큼&lt;/p&gt;
+&lt;h3 id=&#34;job-data가-커질-때-redis에서-바로-벌어지는-일&#34;&gt;job data가 커질 때 Redis에서 바로 벌어지는 일&lt;/h3&gt;
+&lt;h4 id=&#34;1-이벤트루프가-큰-값-때문에-오래-점유&#34;&gt;1) 이벤트루프가 큰 값 때문에 오래 점유&lt;/h4&gt;
+&lt;p&gt;BullMQ는 job을 만들 때 job data를 보통 Redis에 문자열이나 JSON 형태로 저장함&lt;/p&gt;
+&lt;p&gt;job data가 커지면 쓰기와 조회 모두에서 처리해야 하는 바이트가 늘어남
+SET이나 HSET 같은 쓰기, HGET 같은 조회가 한 명령당 처리해야 하는 바이트를 키움&lt;/p&gt;</description>
     </item>
     <item>
       <title>Codex CLI와 Claude Code 커스터마이징에서 핵심은 orchestration layer 구조</title>

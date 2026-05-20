@@ -6,7 +6,7 @@
     <description>Recent content in Redis on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 26 Dec 2025 13:12:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 13:49:51 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSE란? 실시간 이벤트 전달 프로토콜 (Server-Sent Events)</title>
@@ -20,6 +20,19 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;sse-vs-웹소켓-그리고-한계&#34;&gt;SSE vs 웹소켓, 그리고 한계&lt;/h2&gt;
 &lt;p&gt;SSE는 실시간 이벤트 전송에 유용하지만 만능은 아님. 웹소켓과 비교했을 때 명확한 장단점이 존재함&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BullMQ에서 job data가 커지면 Redis 지연과 OOM, 큐 무결성 이슈로 번질 수 있는 이유</title>
+      <link>https://blog.jsontapose.com/posts/bullmq-job-data-size-large-redis-latency-oom-queue-issues-7dbbc0/</link>
+      <pubDate>Wed, 20 May 2026 13:49:51 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/bullmq-job-data-size-large-redis-latency-oom-queue-issues-7dbbc0/</guid>
+      <description>&lt;p&gt;레디스가 싱글스레드라서 BullMQ에서 job data가 커지면 Redis가 터진다고 단순화해서 말하는 경우가 많음&lt;/p&gt;
+&lt;p&gt;하지만 실제로는 Redis가 큰 payload 처리 때문에 막히고, 그 지연이 메모리와 네트워크 문제로 이어지며 타임아웃이나 OOM 같은 연쇄 문제로 번지는 쪽이 더 큼&lt;/p&gt;
+&lt;h3 id=&#34;job-data가-커질-때-redis에서-바로-벌어지는-일&#34;&gt;job data가 커질 때 Redis에서 바로 벌어지는 일&lt;/h3&gt;
+&lt;h4 id=&#34;1-이벤트루프가-큰-값-때문에-오래-점유&#34;&gt;1) 이벤트루프가 큰 값 때문에 오래 점유&lt;/h4&gt;
+&lt;p&gt;BullMQ는 job을 만들 때 job data를 보통 Redis에 문자열이나 JSON 형태로 저장함&lt;/p&gt;
+&lt;p&gt;job data가 커지면 쓰기와 조회 모두에서 처리해야 하는 바이트가 늘어남
+SET이나 HSET 같은 쓰기, HGET 같은 조회가 한 명령당 처리해야 하는 바이트를 키움&lt;/p&gt;</description>
     </item>
     <item>
       <title>백프레셔 Backpressure 개념 정리와 스트림·큐·RxJS 적용 패턴</title>
