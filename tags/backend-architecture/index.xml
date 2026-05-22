@@ -6,7 +6,7 @@
     <description>Recent content in Backend-Architecture on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 29 Dec 2025 13:13:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 13:44:57 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/backend-architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSE란? 실시간 이벤트 전달 프로토콜 (Server-Sent Events)</title>
@@ -20,6 +20,22 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;sse-vs-웹소켓-그리고-한계&#34;&gt;SSE vs 웹소켓, 그리고 한계&lt;/h2&gt;
 &lt;p&gt;SSE는 실시간 이벤트 전송에 유용하지만 만능은 아님. 웹소켓과 비교했을 때 명확한 장단점이 존재함&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JSON-RPC가 transport agnostic인 이유</title>
+      <link>https://blog.jsontapose.com/posts/json-rpc-transport-agnostic-21d8bd/</link>
+      <pubDate>Fri, 22 May 2026 13:44:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/json-rpc-transport-agnostic-21d8bd/</guid>
+      <description>&lt;p&gt;JSON-RPC가 transport agnostic이라고 불리는 이유는 명세가 데이터의 모양을 정의하고 전송 방식은 강하게 제한하지 않기 때문입니다&lt;/p&gt;
+&lt;p&gt;프로토콜의 메시지 포맷을 고정해두면, 그 포맷을 어떤 통로로 보내는지는 구현 쪽 선택으로 분리할 수 있습니다&lt;/p&gt;
+&lt;h3 id=&#34;http의-기능에-강하게-기대지-않는-설계&#34;&gt;HTTP의 기능에 강하게 기대지 않는 설계&lt;/h3&gt;
+&lt;p&gt;REST는 HTTP의 기능을 비교적 직접적으로 활용합니다&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP method로 행위를 구분&lt;/li&gt;
+&lt;li&gt;HTTP status code로 성공과 에러를 표현&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;반면 JSON-RPC는 HTTP를 사용하더라도 보통 단일 엔드포인트와 단일 HTTP method 중심으로 동작하는 경우가 많습니다&lt;/p&gt;
+&lt;p&gt;성공 여부와 에러는 대체로 JSON 본문 안의 result 또는 error로 표현합니다&lt;/p&gt;</description>
     </item>
     <item>
       <title>트래픽을 일정 비율로 안전하게 나누는 방법: 해시 코호트와 구성 기반 롤아웃</title>

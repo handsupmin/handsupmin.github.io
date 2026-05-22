@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 20 May 2026 13:49:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 13:44:57 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Api-Architecture</title>
+      <link>https://blog.jsontapose.com/tags/api-architecture/</link>
+      <pubDate>Fri, 22 May 2026 13:44:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/api-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backend-Architecture</title>
+      <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
+      <pubDate>Fri, 22 May 2026 13:44:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/backend-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Http-vs-Rpc</title>
+      <link>https://blog.jsontapose.com/tags/http-vs-rpc/</link>
+      <pubDate>Fri, 22 May 2026 13:44:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/http-vs-rpc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Json-Rpc</title>
+      <link>https://blog.jsontapose.com/tags/json-rpc/</link>
+      <pubDate>Fri, 22 May 2026 13:44:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/json-rpc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transport-Agnostic</title>
+      <link>https://blog.jsontapose.com/tags/transport-agnostic/</link>
+      <pubDate>Fri, 22 May 2026 13:44:57 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/transport-agnostic/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Bullmq</title>
       <link>https://blog.jsontapose.com/tags/bullmq/</link>
@@ -3065,13 +3100,6 @@
       <link>https://blog.jsontapose.com/tags/ab-testing/</link>
       <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/ab-testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Backend-Architecture</title>
-      <link>https://blog.jsontapose.com/tags/backend-architecture/</link>
-      <pubDate>Mon, 29 Dec 2025 13:13:58 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/backend-architecture/</guid>
       <description></description>
     </item>
     <item>
