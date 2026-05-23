@@ -6,8 +6,36 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 22 May 2026 13:44:57 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 13:29:38 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Async-Generators</title>
+      <link>https://blog.jsontapose.com/tags/async-generators/</link>
+      <pubDate>Sat, 23 May 2026 13:29:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/async-generators/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Async-Iterators</title>
+      <link>https://blog.jsontapose.com/tags/async-iterators/</link>
+      <pubDate>Sat, 23 May 2026 13:29:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/async-iterators/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>For-Await-Of</title>
+      <link>https://blog.jsontapose.com/tags/for-await-of/</link>
+      <pubDate>Sat, 23 May 2026 13:29:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/for-await-of/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://blog.jsontapose.com/tags/javascript/</link>
+      <pubDate>Sat, 23 May 2026 13:29:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Api-Architecture</title>
       <link>https://blog.jsontapose.com/tags/api-architecture/</link>
@@ -251,13 +279,6 @@
       <link>https://blog.jsontapose.com/tags/iterator/</link>
       <pubDate>Sat, 09 May 2026 13:28:43 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/iterator/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://blog.jsontapose.com/tags/javascript/</link>
-      <pubDate>Sat, 09 May 2026 13:28:43 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
