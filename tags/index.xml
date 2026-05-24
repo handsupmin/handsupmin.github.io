@@ -6,8 +6,57 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 23 May 2026 13:29:38 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 13:29:44 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Embedding</title>
+      <link>https://blog.jsontapose.com/tags/embedding/</link>
+      <pubDate>Sun, 24 May 2026 13:29:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/embedding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Graph-Rag</title>
+      <link>https://blog.jsontapose.com/tags/graph-rag/</link>
+      <pubDate>Sun, 24 May 2026 13:29:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/graph-rag/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge-Graph</title>
+      <link>https://blog.jsontapose.com/tags/knowledge-graph/</link>
+      <pubDate>Sun, 24 May 2026 13:29:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/knowledge-graph/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ontology</title>
+      <link>https://blog.jsontapose.com/tags/ontology/</link>
+      <pubDate>Sun, 24 May 2026 13:29:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/ontology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rag</title>
+      <link>https://blog.jsontapose.com/tags/rag/</link>
+      <pubDate>Sun, 24 May 2026 13:29:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/rag/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Semantic-Search</title>
+      <link>https://blog.jsontapose.com/tags/semantic-search/</link>
+      <pubDate>Sun, 24 May 2026 13:29:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/semantic-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vector-Db</title>
+      <link>https://blog.jsontapose.com/tags/vector-db/</link>
+      <pubDate>Sun, 24 May 2026 13:29:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/vector-db/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Async-Generators</title>
       <link>https://blog.jsontapose.com/tags/async-generators/</link>

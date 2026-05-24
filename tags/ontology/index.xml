@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ontology on HandsLog</title>
+    <link>https://blog.jsontapose.com/tags/ontology/</link>
+    <description>Recent content in Ontology on HandsLog</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 24 May 2026 13:29:44 +0000</lastBuildDate>
+    <atom:link href="https://blog.jsontapose.com/tags/ontology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAG 임베딩 온톨로지 한 번에 정리. 검색 증강 생성부터 벡터 DB와 시맨틱 규칙까지</title>
+      <link>https://blog.jsontapose.com/posts/rag-embedding-ontology-summary-9a52c5/</link>
+      <pubDate>Sun, 24 May 2026 13:29:44 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/rag-embedding-ontology-summary-9a52c5/</guid>
+      <description>&lt;p&gt;요즘 트렌드에서 자주 같이 등장하는 RAG, 임베딩, 온톨로지를 엔지니어 관점에서 정리해봄&lt;/p&gt;
+&lt;p&gt;비유로 감을 잡고, 실제 동작에서 어떤 구성요소가 하는 일을 분리해서 보면 이해가 빠름&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;임베딩-embedding-텍스트를-고차원-벡터로-변환&#34;&gt;임베딩 Embedding. 텍스트를 고차원 벡터로 변환&lt;/h3&gt;
+&lt;p&gt;임베딩은 텍스트 같은 비정형 데이터를 컴퓨터가 계산 가능한 수치형 벡터로 매핑하는 기술임&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;기본 개념은 단어뿐 아니라 문장, 문서, 이미지 같은 다양한 입력을 공통의 의미 공간 semantic space에 배치하는 표현 방식임&lt;/li&gt;
+&lt;li&gt;흔히 2&lt;del&gt;3차원 예시로 설명하지만, 실제 임베딩 차원 수는 모델마다 다르고 수백&lt;/del&gt;수천 차원을 쓰는 경우가 많음. 다만 성능이 차원 수만으로 결정되진 않음&lt;/li&gt;
+&lt;li&gt;유사도 계산은 단순히 숫자 비슷함을 보는 수준을 넘어, 벡터 간 각도를 기준으로 코사인 유사도 Cosine Similarity 같은 지표를 사용해 의미적 거리를 계산함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;간단히 말하면 임베딩은 의미를 담아 숫자로 옮기는 도구임&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
