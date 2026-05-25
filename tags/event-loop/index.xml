@@ -6,8 +6,17 @@
     <description>Recent content in Event-Loop on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 24 Mar 2026 13:29:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 14:00:07 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/event-loop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Redis는 싱글스레드인가요 블로킹은 왜 체감이 다를까</title>
+      <link>https://blog.jsontapose.com/posts/redis-single-thread-blocking-scan-threaded-io-5145f5/</link>
+      <pubDate>Mon, 25 May 2026 14:00:07 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/redis-single-thread-blocking-scan-threaded-io-5145f5/</guid>
+      <description>&lt;p&gt;Redis를 두고 싱글 스레드라고 말할 때는 보통 명령어 실행 관점에서 이야기합니다. 어떤 명령이든 실행 순간에는 다른 요청이 대기할 수 있지만, 장애처럼 체감되는지는 그 대기 시간이 얼마나 길어지느냐에 달려 있습니다&lt;/p&gt;
+&lt;h3 id=&#34;블로킹이-없는-것처럼-보이는-이유&#34;&gt;블로킹이 없는 것처럼 보이는 이유&lt;/h3&gt;
+&lt;p&gt;Redis는 명령어를 순서대로 처리합니다. 그래서 한 명령이 실행되는 아주 짧은 구간에는 다른 요청이 그 명령이 끝날 때까지 대기합니다. 다만 &lt;code&gt;SET&lt;/code&gt;, &lt;code&gt;GET&lt;/code&gt;, &lt;code&gt;DEL&lt;/code&gt;, &lt;code&gt;HSET&lt;/code&gt; 같은 대부분의 명령은 보통 처리 시간이 짧아서 블로킹이 마이크로초 단위로 끝나는 경우가 많습니다&lt;/p&gt;</description>
+    </item>
     <item>
       <title>FastAPI 비동기 처리와 이벤트 루프 이해 — uvicorn, uvloop, asyncio, libuv</title>
       <link>https://blog.jsontapose.com/posts/fastapi-async-event-loop-uvicorn-uvloop-asyncio-libuv-32b91a/</link>

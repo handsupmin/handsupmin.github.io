@@ -25,12 +25,17 @@
   </url>
   <url>
     <loc>https://blog.jsontapose.com/</loc>
-    <lastmod>2026-05-24T13:29:44+00:00</lastmod>
+    <lastmod>2026-05-25T14:00:07+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.jsontapose.com/posts/</loc>
-    <lastmod>2026-05-24T13:29:44+00:00</lastmod>
+    <lastmod>2026-05-25T14:00:07+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.jsontapose.com/posts/redis-single-thread-blocking-scan-threaded-io-5145f5/</loc>
+    <lastmod>2026-05-25T14:00:07+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   <url>

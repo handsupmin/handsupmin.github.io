@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 24 May 2026 13:29:44 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 14:00:07 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blocking</title>
+      <link>https://blog.jsontapose.com/tags/blocking/</link>
+      <pubDate>Mon, 25 May 2026 14:00:07 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/blocking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event-Loop</title>
+      <link>https://blog.jsontapose.com/tags/event-loop/</link>
+      <pubDate>Mon, 25 May 2026 14:00:07 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/event-loop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Redis</title>
+      <link>https://blog.jsontapose.com/tags/redis/</link>
+      <pubDate>Mon, 25 May 2026 14:00:07 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/redis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scan-vs-Keys</title>
+      <link>https://blog.jsontapose.com/tags/scan-vs-keys/</link>
+      <pubDate>Mon, 25 May 2026 14:00:07 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/scan-vs-keys/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threading</title>
+      <link>https://blog.jsontapose.com/tags/threading/</link>
+      <pubDate>Mon, 25 May 2026 14:00:07 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/threading/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Embedding</title>
       <link>https://blog.jsontapose.com/tags/embedding/</link>
@@ -146,13 +181,6 @@
       <link>https://blog.jsontapose.com/tags/queue-design/</link>
       <pubDate>Wed, 20 May 2026 13:49:51 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/queue-design/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Redis</title>
-      <link>https://blog.jsontapose.com/tags/redis/</link>
-      <pubDate>Wed, 20 May 2026 13:49:51 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/redis/</guid>
       <description></description>
     </item>
     <item>
@@ -552,13 +580,6 @@
       <link>https://blog.jsontapose.com/tags/concurrency/</link>
       <pubDate>Tue, 24 Mar 2026 13:29:07 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/concurrency/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Event-Loop</title>
-      <link>https://blog.jsontapose.com/tags/event-loop/</link>
-      <pubDate>Tue, 24 Mar 2026 13:29:07 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/event-loop/</guid>
       <description></description>
     </item>
     <item>
