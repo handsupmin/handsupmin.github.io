@@ -6,8 +6,43 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 25 May 2026 14:00:07 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 13:59:38 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Atomicity</title>
+      <link>https://blog.jsontapose.com/tags/atomicity/</link>
+      <pubDate>Tue, 26 May 2026 13:59:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/atomicity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aws</title>
+      <link>https://blog.jsontapose.com/tags/aws/</link>
+      <pubDate>Tue, 26 May 2026 13:59:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://blog.jsontapose.com/tags/database/</link>
+      <pubDate>Tue, 26 May 2026 13:59:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distributed-System</title>
+      <link>https://blog.jsontapose.com/tags/distributed-system/</link>
+      <pubDate>Tue, 26 May 2026 13:59:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/distributed-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dynamodb</title>
+      <link>https://blog.jsontapose.com/tags/dynamodb/</link>
+      <pubDate>Tue, 26 May 2026 13:59:38 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/dynamodb/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blocking</title>
       <link>https://blog.jsontapose.com/tags/blocking/</link>
@@ -1630,13 +1665,6 @@
       <link>https://blog.jsontapose.com/tags/web-crawling/</link>
       <pubDate>Fri, 20 Feb 2026 13:24:06 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/web-crawling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://blog.jsontapose.com/tags/database/</link>
-      <pubDate>Thu, 19 Feb 2026 13:28:26 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/database/</guid>
       <description></description>
     </item>
     <item>
@@ -4206,13 +4234,6 @@
       <link>https://blog.jsontapose.com/tags/v8-inspector/</link>
       <pubDate>Sun, 19 Oct 2025 13:06:18 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/v8-inspector/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Aws</title>
-      <link>https://blog.jsontapose.com/tags/aws/</link>
-      <pubDate>Sat, 18 Oct 2025 13:06:16 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/aws/</guid>
       <description></description>
     </item>
     <item>

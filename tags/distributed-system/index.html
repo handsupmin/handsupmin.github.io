@@ -1,0 +1,76 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Distributed-System | HandsLog</title>
+<meta name=keywords content><meta name=description content><meta name=author content><link rel=canonical href=https://blog.jsontapose.com/tags/distributed-system/><link crossorigin=anonymous href=/assets/css/stylesheet.08f7d74f0ada0f975d29ae436285b61ed7a719d05f350cb888d00341642995a2.css integrity="sha256-CPfXTwraD5ddKa5DYoW2HtenGdBfNQy4iNADQWQplaI=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.jsontapose.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.jsontapose.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.jsontapose.com/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.jsontapose.com/apple-touch-icon.png><link rel=mask-icon href=https://blog.jsontapose.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://blog.jsontapose.com/tags/distributed-system/index.xml><link rel=alternate hreflang=en href=https://blog.jsontapose.com/tags/distributed-system/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=module>
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+
+  const isDark = () =>
+    document.body.classList.contains("dark") ||
+    window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+
+  const getThemeOptions = () => {
+    const dark = isDark();
+    return {
+      startOnLoad: false,
+      securityLevel: "loose", 
+      theme: dark ? "dark" : "default",
+      themeVariables: dark
+        ? {
+            primaryColor: "#0f172a"  ,
+            primaryTextColor: "#e5e7eb"  ,
+            primaryBorderColor: "#94a3b8"  ,
+            lineColor: "#94a3b8",
+            textColor: "#e5e7eb",
+            nodeTextColor: "#e5e7eb",
+            edgeLabelBackground: "#0f172a",
+          }
+        : {
+            primaryColor: "#f8fafc"  ,
+            primaryTextColor: "#111827",
+            primaryBorderColor: "#374151",
+            lineColor: "#374151",
+            textColor: "#111827",
+            nodeTextColor: "#111827",
+            edgeLabelBackground: "#ffffff",
+          },
+    };
+  };
+
+  const renderMermaid = () => {
+    
+    document.querySelectorAll(".mermaid[data-processed]").forEach((el) => {
+      el.removeAttribute("data-processed");
+    });
+    mermaid.initialize(getThemeOptions());
+    mermaid.run({ querySelector: ".mermaid" });
+  };
+
+  
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderMermaid, {
+      once: true,
+    });
+  } else {
+    renderMermaid();
+  }
+
+  
+  const btn = document.getElementById("theme-toggle");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      
+      setTimeout(renderMermaid, 0);
+    });
+  }
+
+  
+  const mql = window.matchMedia?.("(prefers-color-scheme: dark)");
+  if (mql && mql.addEventListener) {
+    mql.addEventListener("change", renderMermaid);
+  }
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6NKJRT1NC1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6NKJRT1NC1")</script><meta name=google-adsense-account content="ca-pub-6022353980017733"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6022353980017733" crossorigin=anonymous></script><meta property="og:url" content="https://blog.jsontapose.com/tags/distributed-system/"><meta property="og:site_name" content="HandsLog"><meta property="og:title" content="Distributed-System"><meta property="og:locale" content="ko-kr"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Distributed-System"><meta name=twitter:description content></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://blog.jsontapose.com/ accesskey=h title="HandsLog (Alt + H)">HandsLog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://blog.jsontapose.com/search/ title="search (Alt + /)" accesskey=/><span>search</span></a></li><li><a href=https://blog.jsontapose.com/categories/ title=categories><span>categories</span></a></li><li><a href=https://jsontapose.com/ title="compare JSON"><span>compare JSON</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://blog.jsontapose.com/>Home</a>&nbsp;»&nbsp;<a href=https://blog.jsontapose.com/tags/>Tags</a></div><h1>Distributed-System</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>DynamoDB UpdateItem의 원자성은 어떻게 보장되는가</h2></header><div class=entry-content><p>들어가며 DynamoDB의 UpdateItem API는 카운터 증감이나 상태 변경 같은 ‘읽기-수정-쓰기’ 연산을 단 한 번의 호출로 실행합니다. 이때 여러 클라이언트가 동시에 같은 아이템을 수정하려 할 때, 어떻게 데이터의 정합성과 원자성(Atomicity)을 보장하는지 그 내부 동작 원리가 궁금할 수 있습니다.
+결론부터 말하면, 특정 아이템이 속한 파티션의 모든 쓰기 요청을 단일 리더(Leader) 노드가 직렬화(Serialize)하여 순차 처리하기 때문입니다. 이 구조 덕분에 동시 쓰기 요청이 서로를 덮어쓰거나 유실되지 않고 안전하게 처리됩니다.
+핵심 원리 요약 개념 설명 단일 파티션 리더 특정 파티션 키에 대한 모든 쓰기 요청은 하나의 리더 노드가 전담함 쓰기 요청 직렬화 리더는 수신한 쓰기 요청을 큐처럼 순서대로 하나씩 처리함 동기식 복제 리더는 변경 사항을 다수의 팔로워 노드에 복제하고, 확인 응답을 받아야 최종 커밋함 원자성 보장 이 세 가지 요소가 결합되어 UpdateItem 연산의 원자성을 보장함 원자성 보장 메커니즘 상세 1. 파티션 기반 분산과 리더 선정 DynamoDB 테이블 데이터는 파티션 키(Partition Key)를 기준으로 여러 파티션에 분산 저장됨 각 파티션은 3개의 복제본(Replica)으로 구성되며, 서로 다른 가용 영역(AZ)에 배치됨 복제본 중 하나는 리더(Leader)가 되고 나머지는 팔로워(Follower) 역할을 수행함 2. 단일 리더로의 쓰기 요청 라우팅 클라이언트의 UpdateItem 요청은 먼저 DynamoDB 요청 라우터(Request Router)에 도달함 요청 라우터는 아이템의 파티션 키를 해싱하여 데이터가 속한 파티션을 찾고, 해당 파티션의 단일 리더 노드로 요청을 전달함 따라서 같은 아이템에 대한 모든 쓰기 요청은 항상 동일한 리더 노드가 처리하게 됨 3. 리더 노드의 쓰기 요청 직렬화 원자성 보장의 핵심으로, 리더 노드는 동시에 도착한 여러 쓰기 요청을 병렬로 처리하지 않음 대신, 요청을 내부적으로 큐에 넣고 하나씩 순서대로(Serially) 처리함. 이는 아이템에 대한 비관적 락(Pessimistic Lock)과 유사한 효과를 가져옴 예를 들어, 두 요청이 동시에 SET counter = counter + 1을 호출하면, 리더는 첫 번째 요청의 ‘읽기-수정-쓰기’ 사이클을 완전히 마친 후에야 두 번째 요청을 시작함 이로 인해 두 번째 요청은 첫 번째 요청이 변경한 최신 값을 읽게 되어 데이터 정합성이 깨지지 않음 4. 동기 복제를 통한 내구성 확보 리더는 쓰기 연산을 완료한 후, 변경 사항을 팔로워 노드들에게 **동기적으로 복제(Synchronous Replication)**함 리더는 쿼럼(Quorum), 즉 과반수 이상의 복제본에 데이터가 성공적으로 기록되었음을 확인한 뒤에 클라이언트에게 성공(200 OK) 응답을 보냄 이 과정 덕분에 UpdateItem 연산은 ‘전부 성공’하거나 ‘전부 실패’하는 원자적 특성을 가지며, 리더 장애 시에도 데이터 유실을 방지함 동시 업데이트 처리 과정 예시 두 클라이언트(A, B)가 counter 값이 0인 아이템에 SET counter = counter + 1 요청을 동시에 보냈다고 가정해 보겠습니다.
+...</p></div><footer class=entry-footer><span title='2026-05-26 13:59:38.727 +0000 UTC'>May 26, 2026</span></footer><a class=entry-link aria-label="post link to DynamoDB UpdateItem의 원자성은 어떻게 보장되는가" href=https://blog.jsontapose.com/posts/how-dynamodb-updateitem-guarantees-atomicity-3b2763/></a></article></main><footer class=footer><span>&copy; 2026 <a href=https://blog.jsontapose.com/>HandsLog</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
