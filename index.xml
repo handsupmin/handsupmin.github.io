@@ -6,7 +6,7 @@
     <description>Recent content on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 26 May 2026 13:59:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 14:06:37 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>오프체인 서명 검증(Off-chain Signature Verification)이란?</title>
@@ -88,6 +88,21 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;비트코인&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Soft Delete와 Hard Delete: 장단점과 올바른 선택 기준</title>
+      <link>https://blog.jsontapose.com/posts/soft-delete-vs-hard-delete-guide-ac121e/</link>
+      <pubDate>Wed, 27 May 2026 14:06:37 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/soft-delete-vs-hard-delete-guide-ac121e/</guid>
+      <description>&lt;h3 id=&#34;개념-soft-delete와-hard-delete&#34;&gt;개념: Soft Delete와 Hard Delete&lt;/h3&gt;
+&lt;p&gt;Soft Delete는 데이터를 물리적으로 삭제하지 않고, 삭제된 것처럼 &amp;lsquo;표시&amp;rsquo;만 하는 전략입니다. &lt;code&gt;DELETE&lt;/code&gt; 쿼리로 데이터를 완전히 제거하는 물리 삭제(Hard Delete)와 달리, Soft Delete는 &lt;code&gt;UPDATE&lt;/code&gt; 쿼리를 사용해 특정 컬럼 값을 변경합니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;deleted_at&lt;/code&gt; - 데이터가 삭제된 시점을 타임스탬프로 기록&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;is_deleted&lt;/code&gt; - 삭제 여부를 나타내는 플래그(flag)를 &lt;code&gt;true&lt;/code&gt;로 변경&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;요약하면 Soft Delete는 &amp;lsquo;삭제&amp;rsquo;를 데이터 파괴(Destroy)가 아닌 상태 변경(State Change)으로 다루는 접근법이며, Hard Delete는 데이터를 영구적으로 제거하는 것을 목적으로 합니다.&lt;/p&gt;
+&lt;h3 id=&#34;soft-delete의-장점과-목적&#34;&gt;Soft Delete의 장점과 목적&lt;/h3&gt;
+&lt;p&gt;Soft Delete를 도입하면 다음과 같은 이점을 얻을 수 있습니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DynamoDB UpdateItem의 원자성은 어떻게 보장되는가</title>
