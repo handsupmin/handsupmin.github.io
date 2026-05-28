@@ -6,8 +6,50 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 27 May 2026 14:06:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 14:13:15 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database</title>
+      <link>https://blog.jsontapose.com/tags/database/</link>
+      <pubDate>Thu, 28 May 2026 14:13:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Indexing</title>
+      <link>https://blog.jsontapose.com/tags/indexing/</link>
+      <pubDate>Thu, 28 May 2026 14:13:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/indexing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Partitioning</title>
+      <link>https://blog.jsontapose.com/tags/partitioning/</link>
+      <pubDate>Thu, 28 May 2026 14:13:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/partitioning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance-Tuning</title>
+      <link>https://blog.jsontapose.com/tags/performance-tuning/</link>
+      <pubDate>Thu, 28 May 2026 14:13:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/performance-tuning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Query-Optimization</title>
+      <link>https://blog.jsontapose.com/tags/query-optimization/</link>
+      <pubDate>Thu, 28 May 2026 14:13:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/query-optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sql</title>
+      <link>https://blog.jsontapose.com/tags/sql/</link>
+      <pubDate>Thu, 28 May 2026 14:13:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/sql/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Backend</title>
       <link>https://blog.jsontapose.com/tags/backend/</link>
@@ -20,13 +62,6 @@
       <link>https://blog.jsontapose.com/tags/data-modeling/</link>
       <pubDate>Wed, 27 May 2026 14:06:37 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/data-modeling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Database</title>
-      <link>https://blog.jsontapose.com/tags/database/</link>
-      <pubDate>Wed, 27 May 2026 14:06:37 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/database/</guid>
       <description></description>
     </item>
     <item>
@@ -1703,13 +1738,6 @@
       <description></description>
     </item>
     <item>
-      <title>Sql</title>
-      <link>https://blog.jsontapose.com/tags/sql/</link>
-      <pubDate>Thu, 19 Feb 2026 13:28:26 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Parseint</title>
       <link>https://blog.jsontapose.com/tags/parseint/</link>
       <pubDate>Wed, 18 Feb 2026 13:27:34 +0000</pubDate>
@@ -3159,13 +3187,6 @@
       <description></description>
     </item>
     <item>
-      <title>Indexing</title>
-      <link>https://blog.jsontapose.com/tags/indexing/</link>
-      <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/indexing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Queues</title>
       <link>https://blog.jsontapose.com/tags/queues/</link>
       <pubDate>Thu, 01 Jan 2026 13:12:42 +0000</pubDate>
@@ -3639,13 +3660,6 @@
       <link>https://blog.jsontapose.com/tags/execution-plan/</link>
       <pubDate>Sun, 14 Dec 2025 13:09:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/execution-plan/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Query-Optimization</title>
-      <link>https://blog.jsontapose.com/tags/query-optimization/</link>
-      <pubDate>Sun, 14 Dec 2025 13:09:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/query-optimization/</guid>
       <description></description>
     </item>
     <item>
@@ -4339,13 +4353,6 @@
       <link>https://blog.jsontapose.com/tags/explain/</link>
       <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/explain/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Performance-Tuning</title>
-      <link>https://blog.jsontapose.com/tags/performance-tuning/</link>
-      <pubDate>Wed, 15 Oct 2025 13:10:54 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/performance-tuning/</guid>
       <description></description>
     </item>
     <item>

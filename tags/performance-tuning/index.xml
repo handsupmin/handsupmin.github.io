@@ -6,8 +6,27 @@
     <description>Recent content in Performance-Tuning on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 15 Oct 2025 13:10:54 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 14:13:15 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/performance-tuning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1억 건 테이블 쿼리 최적화: 원인 진단과 실용적 해결 전략</title>
+      <link>https://blog.jsontapose.com/posts/100m-row-table-query-optimization-causes-and-solutions-00b5c8/</link>
+      <pubDate>Thu, 28 May 2026 14:13:15 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/100m-row-table-query-optimization-causes-and-solutions-00b5c8/</guid>
+      <description>&lt;h3 id=&#34;배경&#34;&gt;배경&lt;/h3&gt;
+&lt;p&gt;&amp;lsquo;테이블에 1억 건 데이터가 있으면 조회가 느리다&amp;rsquo;는 말은 항상 참이 아님. 성능 저하는 데이터 양 자체보다 &amp;lsquo;어떤 쿼리를 어떤 인덱스로 어떻게 읽는가&amp;rsquo;의 문제일 때가 많음. 이 글에서는 대용량 테이블에서 조회 성능이 저하되는 주된 원인을 진단하고, 각 상황에 맞는 해결 전략을 정리함.&lt;/p&gt;
+&lt;h3 id=&#34;느린-쿼리의-대표적인-원인&#34;&gt;느린 쿼리의 대표적인 원인&lt;/h3&gt;
+&lt;p&gt;대용량 테이블에서 쿼리가 느리다면 대부분 아래 원인 중 하나에 해당함.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Full Table Scan&lt;/strong&gt;: &lt;code&gt;WHERE&lt;/code&gt;나 &lt;code&gt;ORDER BY&lt;/code&gt; 절이 인덱스를 효과적으로 사용하지 못해 테이블 전체를 스캔&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;낮은 인덱스 선택도&lt;/strong&gt;: 인덱스를 사용하더라도, &lt;code&gt;status=&#39;ACTIVE&#39;&lt;/code&gt;처럼 대부분의 행이 해당하는 조건이라 읽어야 할 데이터가 너무 많음&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;메모리 외부 정렬/그룹화&lt;/strong&gt;: 정렬이나 그룹화할 데이터가 메모리 용량을 초과해 디스크 I/O가 발생하는 경우 (&lt;code&gt;External Sort&lt;/code&gt;, &lt;code&gt;Hash Aggregate&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;비효율적인 조인&lt;/strong&gt;: 조인 순서가 잘못되었거나 조인 키에 인덱스가 없어 비효율적으로 동작&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OFFSET 기반 페이지네이션&lt;/strong&gt;: &lt;code&gt;OFFSET 1000000&lt;/code&gt;처럼 앞부분의 데이터를 모두 읽고 버리는 비효율적인 방식&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;기타 운영 이슈&lt;/strong&gt;: 특정 행에 대한 동시 접근으로 인한 핫스팟(Hotspot), 잠금(Lock) 경합, 디스크 IOPS 부족, 캐시 미스 등&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;결론적으로 1억 건 테이블이라도 쿼리가 인덱스를 통해 소수의 행만 접근(&lt;code&gt;Index Seek&lt;/code&gt;)하고 짧은 범위만 스캔(&lt;code&gt;Range Scan&lt;/code&gt;)한다면 응답 속도는 충분히 빠를 수 있음.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>MySQL EXPLAIN 실행 계획 해석 가이드</title>
       <link>https://blog.jsontapose.com/posts/mysql-explain-execution-plan-guide-b7fb65/</link>
