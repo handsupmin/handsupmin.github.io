@@ -6,13 +6,41 @@
     <description>Recent content in Tags on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 28 May 2026 14:13:15 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 13:30:28 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Database</title>
       <link>https://blog.jsontapose.com/tags/database/</link>
-      <pubDate>Thu, 28 May 2026 14:13:15 +0000</pubDate>
+      <pubDate>Sun, 31 May 2026 13:30:28 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Performance</title>
+      <link>https://blog.jsontapose.com/tags/performance/</link>
+      <pubDate>Sun, 31 May 2026 13:30:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/performance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Primary-Key</title>
+      <link>https://blog.jsontapose.com/tags/primary-key/</link>
+      <pubDate>Sun, 31 May 2026 13:30:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/primary-key/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rfc-9562</title>
+      <link>https://blog.jsontapose.com/tags/rfc-9562/</link>
+      <pubDate>Sun, 31 May 2026 13:30:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/rfc-9562/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uuid</title>
+      <link>https://blog.jsontapose.com/tags/uuid/</link>
+      <pubDate>Sun, 31 May 2026 13:30:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/tags/uuid/</guid>
       <description></description>
     </item>
     <item>
@@ -622,13 +650,6 @@
       <link>https://blog.jsontapose.com/tags/parameterization/</link>
       <pubDate>Wed, 25 Mar 2026 13:29:03 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/parameterization/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Performance</title>
-      <link>https://blog.jsontapose.com/tags/performance/</link>
-      <pubDate>Wed, 25 Mar 2026 13:29:03 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/performance/</guid>
       <description></description>
     </item>
     <item>
@@ -4164,13 +4185,6 @@
       <link>https://blog.jsontapose.com/tags/oltp/</link>
       <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
       <guid>https://blog.jsontapose.com/tags/oltp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Primary-Key</title>
-      <link>https://blog.jsontapose.com/tags/primary-key/</link>
-      <pubDate>Sun, 26 Oct 2025 13:07:10 +0000</pubDate>
-      <guid>https://blog.jsontapose.com/tags/primary-key/</guid>
       <description></description>
     </item>
     <item>

@@ -6,8 +6,32 @@
     <description>Recent content in Performance on HandsLog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 25 Mar 2026 13:29:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 13:30:28 +0000</lastBuildDate>
     <atom:link href="https://blog.jsontapose.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>시간순 정렬이 가능한 UUID v7: 개념, 장점 및 데이터베이스 ID 전략</title>
+      <link>https://blog.jsontapose.com/posts/uuid-v7-concepts-and-database-id-strategy-37c675/</link>
+      <pubDate>Sun, 31 May 2026 13:30:28 +0000</pubDate>
+      <guid>https://blog.jsontapose.com/posts/uuid-v7-concepts-and-database-id-strategy-37c675/</guid>
+      <description>&lt;h3 id=&#34;개념&#34;&gt;개념&lt;/h3&gt;
+&lt;p&gt;UUID v7은 시간순으로 정렬 가능한(time-sortable) UUID임. 전체 128비트 길이와 표준 36자 형식(8-4-4-4-12)은 다른 버전과 동일하지만, 식별자 앞부분에 타임스탬프를 포함하는 것이 핵심적인 차이점임&lt;/p&gt;
+&lt;h3 id=&#34;uuid-v7의-구조&#34;&gt;UUID v7의 구조&lt;/h3&gt;
+&lt;p&gt;UUID의 13번째 문자는 버전을 나타냄&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;UUID v4&lt;/strong&gt;: 버전을 제외한 모든 비트가 무작위 값으로 채워짐&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UUID v7&lt;/strong&gt;: 앞 48비트가 Unix epoch 타임스탬프(밀리초 단위)로 구성되며, 그 뒤로 버전(7)과 나머지 랜덤 비트가 이어짐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;구조를 분해하면 다음과 같음
+&lt;code&gt;0192f0c1-2345-7abc-89de-1234567890ab&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;0192f0c12345&lt;/code&gt;: 48비트 타임스탬프&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;7&lt;/code&gt;: 버전 7&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;abc&lt;/code&gt;: 랜덤 비트&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;8&lt;/code&gt;: Variant (RFC 4122 호환)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;9de-1234567890ab&lt;/code&gt;: 나머지 랜덤 비트&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 구조 덕분에 UUID v7은 생성 순서와 정렬 순서가 거의 일치함. 나중에 생성된 ID가 사전순(lexicographical)으로 더 크므로, ID로 정렬하면 사실상 생성 시간순으로 정렬하는 효과를 냄&lt;/p&gt;</description>
+    </item>
     <item>
       <title>SQL Server 동적 쿼리 실행: EXEC와 sp_executesql 비교와 사용법</title>
       <link>https://blog.jsontapose.com/posts/sql-server-dynamic-query-exec-vs-sp-executesql-5a8e71/</link>
